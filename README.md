@@ -1,1 +1,0 @@
-# qwertycoin-org.github.io
