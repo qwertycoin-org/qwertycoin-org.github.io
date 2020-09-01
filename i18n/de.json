@@ -7,8 +7,8 @@
 		"locale": "de",
 		"message-documentation": "qqq"
 	},
-	"website-title":		"Qwertycoin | Qwertycoin is a secure and user-friendly worldwide digital currency.",
-	"website-desc" :		"Safe. Simple. Seamless. Secure. Qwertycoin is a decentralized communited based peer-to-peer protocol for safe payments worldwide. A secure and anonymous cryptocurrency, built with a focus on democracy and privacy. Contribute on Github Qwertycoin Releases About Qwertycoin Qwertycoin is a “real decentralized community Cryptocurrency”, a “decentralized digital asset” like Bitcoin. “Nobody owns or controls Qwertycoin”.",
+	"website-title":		"Qwertycoin | Qwertycoin ist eine sichere, anonyme und benutzerfreundliche Kryptowährung.",
+	"website-desc" :		"Anonym. Schnell. Sicher. Qwertycoin ist eine Community-verwaltete Kryptowährung für anonymes bezahlen weltweit. Privatsphäre ist unser Standard. Unterstütze uns auf GitHub und erschaffe dir die Währung von morgen.",
 
 	"menu-about":			"Über uns",
 	"menu-releases":		"Downloads",
@@ -16,13 +16,13 @@
 	"menu-community":		"Community",
 	"menu-development":		"Entwicklung",
 
-	"hero-slogan":			"Einfach. Sicher. Schnell. QWC.",
+	"hero-slogan":			"Sicher. Anonym. Weltweit: QWC",
 	"hero-slogan2":			"Qwertycoin ist eine dezentrale Kryptowährung für anonyme, sichere und sekundenschnelle Bezahlvorgänge weltweit.",
 	"hero-button1":			"Auf Github unterstützen",
-	"hero-button2":			"Wallet Downloaden",
+	"hero-button2":			"Wallet Download",
 
 	"about-title":			"Über Qwertycoin",
-	"about-slogan":			"Qwertycoin ist eine echte dezentrale Kryptowährung, ein dezentrales digitales Asset wie Bitcoin. “Niemand besitzt Qwertycoin”.",
+	"about-slogan":			"Qwertycoin ist eine echte dezentrale Kryptowährung, ein dezentral verwaltetes digitales Asset wie Bitcoin. “Niemand besitzt Qwertycoin”.",
 	"about-fea-1-title":	"Open-Source Plattform",
 	"about-fea-1-desc":		"Qwertycoin ist eine dezentrale Währung basierend auf unserer eigenen “Open-Source” CryptoNote Plattform. Jeder kann teilnehmen.",
 	"about-fea-2-title":	"Dezentralisiert und sicher",
