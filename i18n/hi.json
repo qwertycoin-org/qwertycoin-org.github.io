@@ -1,0 +1,96 @@
+{
+	"@metadata": {
+		"authors": [
+			"nnian"
+		],
+		"last-updated": "2020-08-31",
+		"locale": "hi",
+		"message-documentation": "qqq"
+	},
+	"website-title":		"Qwertycoin | Qwertycoin is a secure and user-friendly worldwide digital currency.",
+	"website-desc" :		"Safe. Simple. Seamless. Secure. Qwertycoin is a decentralized communited based peer-to-peer protocol for safe payments worldwide. A secure and anonymous cryptocurrency, built with a focus on democracy and privacy. Contribute on Github Qwertycoin Releases About Qwertycoin Qwertycoin is a “real decentralized community Cryptocurrency”, a “decentralized digital asset” like Bitcoin. “Nobody owns or controls Qwertycoin”.",
+
+	"menu-about":			"About",
+	"menu-releases":		"Releases",
+	"menu-environment":		"Environment",
+	"menu-community":		"Community",
+	"menu-development":		"Development",
+
+	"hero-slogan":			"Safe. Simple. Seamless. Secure.",
+	"hero-slogan2":			"Qwertycoin is a a decentralized peer to peer protocal for safe payment and communication worldwide.",
+	"hero-button1":			"Contribute on Github",
+	"hero-button2":			"Download Wallet",
+
+	"about-title":			"About Qwertycoin",
+	"about-slogan":			"Qwertycoin is a “real decentralized community Cryptocurrency”, a “decentralized digital asset” like Bitcoin. “Nobody owns or controls Qwertycoin”.",
+	"about-fea-1-title":	"Open-Source Platform",
+	"about-fea-1-desc":		"Qwertycoin is a “decentralized” currency based on an “Open-Source” CryptoNote “Platform”. Everyone can build and participate.",
+	"about-fea-2-title":	"Decentralized Community",
+	"about-fea-2-desc":		"Qwertycoin is “not” a private company funded through an ICO or pre-mining. Development is supported by its own “Community”.",
+	"about-fea-3-title":	"Democracy and Privacy",
+	"about-fea-3-desc":		"Members can participate in important “community decisions” via voting. Qwertycoin is totally “untraceable and anonymous”.",
+	"about-fea-4-title":	"Egalitarian Proof of Work (EPoW)",
+	"about-fea-4-desc": 	"CryptoNote Technology brings the voting equality through “Egalitarian Proof of Work” that utilizes for mining algorithm.",
+	"about-fea-5-title":	"Ultra-Fast Transaction",
+	"about-fea-5-desc":		"Transaction speeds are “Ultra-Fast” compared to other coins. Our technology allows fast transaction confirmation times.",
+	"about-fea-6-title":	"Egalitarian Proof of Service (EPoSe)",
+	"about-fea-6-desc":		"Qwertycoin’s transaction fee distribution among “Masternodes” based on Uptime as a measure of “Service”.",
+
+	"releases-title":		"Qwertycoin Releases",
+	"releases-slogan":		"Get the latest release from Qwertycoin – Mobile Wallet, Web Wallet, Paper Wallet, Zero Wallet, GUI Wallet, CLI Wallet and our Voting Platform!",
+	"releases-menu-1":		"Releases",
+	"releases-menu-2":		"Development Discussions",
+	"releases-menu-3":		"Community Voting",
+	"releases-wallet-web-title":	"Mobile & Web Wallet",
+	"releases-wallet-web-desc":		"Qwertycoin Mobile & Web Wallet",
+	"releases-wallet-gui-title":	"GUI Wallet",
+	"releases-wallet-gui-desc":		"Classic Qwertycoin Graphic UI Wallet (Desktop)",
+	"releases-wallet-paper-title":	"Paper Wallet",
+	"releases-wallet-paper-desc":	"All Qwertycoin Releases and Paper Wallet",
+	"releases-wallet-cli-title":	"CLI Wallet",
+	"releases-wallet-cli-desc":		"Qwertycoin >_Command-line Suite Wallet (Exchanges, Masternodes, Services)",
+	"releases-wallet-zero-title":	"Zero Wallet",
+	"releases-wallet-zero-desc":	"New Qwertycoin Light Wallet (Desktop)",
+	"releases-wallet-qwcx-title":	"QWCX",
+	"releases-wallet-qwcx-desc":	"– Qwertycoin Cross-Platform Wallet",
+
+	"environment-title":			"Qwertycoin Environment",
+	"environment-slogan":			"We’re growing the team around the world. Explore our job descriptions and reach out.",
+	"environment-menu-environment":	"Environment",
+	"environment-menu-mining":		"Mining",
+	"environment-menu-marketplaces":"Marketplaces",
+	"environment-menu-exchanges":	"Exchanges",
+	"environment-menu-partnerships":"Partnerships",
+
+	"community-title":				"Qwertycoin Community",
+	"community-slogan":				"Join the 24/7 Community discussions to be aware of all the latest Topics.",
+	"community-telegram-title":		"Telegram Community",
+	"community-menu-general":		"General",
+	"community-menu-groupsbycountry":"Groups by country",
+
+	"development-title":			"Qwertycoin Development",
+	"development-slogan":			"Everyone can contribute participate in Qwertycoin and be a part of building a blockchain service.",
+
+	"development-menu-title":		"Development",
+	"development-menu-1-title":		"Whitepaper",
+	"development-menu-1-desc":		"Qwertycoin Whitepaper",
+	"development-menu-2-title":		"Brand",
+	"development-menu-2-desc":		"Qwertycoin Brand & Assets",
+	"development-menu-3-title":		"Github",
+	"development-menu-3-desc":		"Qwertycoin Repositories",
+	"development-menu-4-title":		"Blockchain",
+	"development-menu-4-desc":		"Qwertycoin Blockchain",
+	"development-menu-5-title":		"Docs",
+	"development-menu-5-desc":		"Qwertycoin Documentations",
+	"development-menu-6-title":		"Releases",
+	"development-menu-6-desc":		"Qwertycoin Releases",
+
+	"team-core-title":				"Core-Team",
+	"team-core-slogan":				"Delivering simple relevant solutions by blending the best of real world operations with leading edge tech.",
+
+	"contributors-title":			"Contributor",
+	"contributors-external":		"(Extern Contributor)",
+
+	"backlog-title":				"Development Backlog"
+
+}
