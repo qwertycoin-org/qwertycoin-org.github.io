@@ -4,8 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:description" content="Safe. Simple. Seamless. Secure. Qwertycoin is a decentralized communited based peer-to-peer protocol for safe payments worldwide. A secure and anonymous cryptocurrency, built with a focus on democracy and privacy. Contribute on Github Qwertycoin Releases About Qwertycoin Qwertycoin is a “real decentralized community Cryptocurrency”, a “decentralized digital asset” like Bitcoin. “Nobody owns or controls Qwertycoin”.">
-    <title>Qwertycoin | Qwertycoin is a secure and user-friendly worldwide digital currency.</title>
+    <meta property="og:description" content="Safe. Simple. Seamless. Secure. Qwertycoin is a decentralized communited based peer-to-peer protocol for safe payments worldwide. A secure and anonymous cryptocurrency, built with a focus on democracy and privacy. Contribute on Github Qwertycoin Releases About Qwertycoin Qwertycoin is a “real decentralized community Cryptocurrency”, a “decentralized digital asset” like Bitcoin. “Nobody owns or controls Qwertycoin”." data-i18n="website-desc">
+    <title data-i18n="website-title">Qwertycoin | Qwertycoin is a secure and user-friendly worldwide digital currency.</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Open+Sans&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
@@ -44,21 +44,22 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                               <div class="navbar-nav menu__item">
-                                <a class="nav-item nav-link active menu__link" href="#about">About</a>
-                                <a class="nav-item nav-link menu__link" href="#releases">Releases</a>
-                                <a class="nav-item nav-link menu__link" href="#envir">Environment</a>
-                                <a class="nav-item nav-link menu__link" href="#community">Community</a>
-                                <a class="nav-item nav-link menu__link" href="#development">Development</a>
+                                <a class="nav-item nav-link active menu__link" href="#about" data-i18n="menu-about">About</a>
+                                <a class="nav-item nav-link menu__link" href="#releases" data-i18n="menu-releases">Releases</a>
+                                <a class="nav-item nav-link menu__link" href="#envir" data-i18n="menu-environment">Environment</a>
+                                <a class="nav-item nav-link menu__link" href="#community" data-i18n="menu-community">Community</a>
+                                <a class="nav-item nav-link menu__link" href="#development" data-i18n="menu-development">Development</a>
                                 <!-- TODO: Implement jekyll blog
                                 <a class="nav-item nav-link menu__link" href="#">News</a>
                                 -->
-                                <div class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="locale-switcher nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-locale="en" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                       EN
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                      <a class="dropdown-item" href="#">EN</a>
-                                      <a class="dropdown-item" href="#">CN</a>
+                                        <a class="dropdown-item" href="#" data-locale="en">EN</a>
+                                        <a class="dropdown-item" href="#" data-locale="de">DE</a>
+                                        <a class="dropdown-item" href="#" data-locale="cn">CN</a>
                                     </div>
                                 </div>
                               </div>
@@ -80,15 +81,15 @@
                 <div class="hero__bg-img">
                 <div class="hero__container container container-sm">
                     <div class="hero__row row">
-                        <div class="hero__h1 col-12">Safe. Simple. Seamless. Secure.</div>
-                        <div class="hero__subtitle col-12">Qwertycoin is a a decentralized peer to peer protocal for safe payment and communication worldwide.</div>
+                        <div class="hero__h1 col-12" data-i18n="hero-slogan">Safe. Simple. Seamless. Secure.</div>
+                        <div class="hero__subtitle col-12" data-i18n="hero-slogan2">Qwertycoin is a a decentralized peer to peer protocal for safe payment and communication worldwide.</div>
                         <div class="hero__buttom">
                             <a href="https://github.com/qwertycoin-org" target="_blank" class="buttom_normal">
                                 <span><i aria-hidden="true" class="fab fa-github"></i></span>
-                                <span>Contribute on Github</span></a>
+                                <span data-i18n="hero-button1">Contribute on Github</span></a>
                             <a href="#releases" class="buttom_outline">
                                 <span><i aria-hidden="true" class="fas fa-file-code"></i></span>
-                                <span>Download Wallet</span></a>
+                                <span data-i18n="hero-button2">Download Wallet</span></a>
                         </div>
                     </div>
                 </div>
@@ -101,8 +102,8 @@
             <section id="about" class="about">
                 <div class="about__container container">
                     <div class="about__row row">
-                        <h2 class="about__title title col-lg-12 col-md-12 col-12">About Qwertycoin</h2>
-                        <div class="about__subtitle subtitle justify-content-center col-12 col-lg-6 col-md-6">Qwertycoin is a “real decentralized community Cryptocurrency”, a “decentralized digital asset” like Bitcoin. “Nobody owns or controls Qwertycoin”.</div>
+                        <h2 class="about__title title col-lg-12 col-md-12 col-12" data-i18n="about-title">About Qwertycoin</h2>
+                        <div class="about__subtitle subtitle justify-content-center col-12 col-lg-6 col-md-6" data-i18n="about-slogan">Qwertycoin is a “real decentralized community Cryptocurrency”, a “decentralized digital asset” like Bitcoin. “Nobody owns or controls Qwertycoin”.</div>
                     </div>
                     <div class="about__row">
                         <div class="about__column">
@@ -111,22 +112,22 @@
                                     <div class="item-about__icon">
                                         <img src="./img/about_il_01.svg" alt="Open-Source Platform" class="item-about__img">
                                     </div>
-                                    <div class="item-about__title">Open-Source Platform</div>
-                                    <div class="item-about__text">Qwertycoin is a “decentralized” currency based on an “Open-Source” CryptoNote “Platform”. Everyone can build and participate.</div>
+                                    <div class="item-about__title" data-i18n="about-fea-1-title">Open-Source Platform</div>
+                                    <div class="item-about__text" data-i18n="about-fea-1-desc">Qwertycoin is a “decentralized” currency based on an “Open-Source” CryptoNote “Platform”. Everyone can build and participate.</div>
                                 </div>
                                 <div class="item-about col-sm-6 col-md-4 col-lg-4 col-12">
                                     <div class="item-about__icon">
                                         <img src="./img/about_il_02.svg" alt="Decentralized Community" class="item-about__img">
                                     </div>
-                                    <div class="item-about__title">Decentralized Community</div>
-                                    <div class="item-about__text">Qwertycoin is “not” a private company funded through an ICO or pre-mining. Development is supported by its own “Community”.</div>
+                                    <div class="item-about__title" data-i18n="about-fea-2-title">Decentralized Community</div>
+                                    <div class="item-about__text" data-i18n="about-fea-2-desc">Qwertycoin is “not” a private company funded through an ICO or pre-mining. Development is supported by its own “Community”.</div>
                                 </div>
                                 <div class="item-about col-sm-6 col-md-4 col-lg-4 col-12">
                                     <div class="item-about__icon">
                                         <img src="./img/about_il_03.svg" alt="Democracy and Privacy" class="item-about__img">
                                     </div>
-                                    <div class="item-about__title">Democracy and Privacy</div>
-                                    <div class="item-about__text">Members can participate in important “community decisions” via voting. Qwertycoin is totally “untraceable and anonymous”.</div>
+                                    <div class="item-about__title" data-i18n="about-fea-3-title">Democracy and Privacy</div>
+                                    <div class="item-about__text" data-i18n="about-fea-3-desc">Members can participate in important “community decisions” via voting. Qwertycoin is totally “untraceable and anonymous”.</div>
                                 </div>
                             </div>
                             <div class="about__item-row row">
@@ -134,22 +135,22 @@
                                     <div class="item-about__icon">
                                         <img src="./img/about_il_04.svg" alt="Egalitarian Proof of Work (EPoW)" class="item-about__img">
                                     </div>
-                                    <div class="item-about__title">Egalitarian Proof of Work (EPoW)</div>
-                                    <div class="item-about__text">CryptoNote Technology brings the voting equality through “Egalitarian Proof of Work” that utilizes for mining algorithm.</div>
+                                    <div class="item-about__title" data-i18n="about-fea-4-title">Egalitarian Proof of Work (EPoW)</div>
+                                    <div class="item-about__text" data-i18n="about-fea-4-desc">CryptoNote Technology brings the voting equality through “Egalitarian Proof of Work” that utilizes for mining algorithm.</div>
                                 </div>
                                 <div class="item-about col-sm-6 col-md-4 col-lg-4 col-12">
                                     <div class="item-about__icon">
                                         <img src="./img/about_il_05.svg" alt="Ultra-Fast Transaction" class="item-about__img">
                                     </div>
-                                    <div class="item-about__title">Ultra-Fast Transaction</div>
-                                    <div class="item-about__text">Transaction speeds are “Ultra-Fast” compared to other coins. Our technology allows fast transaction confirmation times.</div>
+                                    <div class="item-about__title" data-i18n="about-fea-5-title">Ultra-Fast Transaction</div>
+                                    <div class="item-about__text" data-i18n="about-fea-5-desc">Transaction speeds are “Ultra-Fast” compared to other coins. Our technology allows fast transaction confirmation times.</div>
                                 </div>
                                 <div class="item-about col-sm-6 col-md-4 col-lg-4 col-12">
                                     <div class="item-about__icon">
                                         <img src="./img/about_il_06.svg" alt="Egalitarian Proof of Service (EPoSe)" class="item-about__img">
                                     </div>
-                                    <div class="item-about__title">Egalitarian Proof of Service (EPoSe)</div>
-                                    <div class="item-about__text"> Qwertycoin’s transaction fee distribution among “Masternodes” based on Uptime as a measure of “Service”.</div>
+                                    <div class="item-about__title" data-i18n="about-fea-6-title">Egalitarian Proof of Service (EPoSe)</div>
+                                    <div class="item-about__text" data-i18n="about-fea-6-desc">Qwertycoin’s transaction fee distribution among “Masternodes” based on Uptime as a measure of “Service”.</div>
                                 </div>
                             </div>
                         </div>
@@ -166,8 +167,8 @@
             <section id="releases" class="releases">
                 <div class="releases__container container">
                     <div class="releases__row ">
-                        <h2 class="releases__title title">Qwertycoin Releases</h2>
-                        <div class="releases__subtitle subtitle">Get the latest release from Qwertycoin – Mobile Wallet, Web Wallet, Paper Wallet, Zero Wallet, GUI Wallet, CLI Wallet and our Voting Platform!</div>
+                        <h2 class="releases__title title" data-i18n="releases-title">Qwertycoin Releases</h2>
+                        <div class="releases__subtitle subtitle" data-i18n="releases-slogan">Get the latest release from Qwertycoin – Mobile Wallet, Web Wallet, Paper Wallet, Zero Wallet, GUI Wallet, CLI Wallet and our Voting Platform!</div>
                     </div>
                     <div class="releases__row">
                         <div class="releases__wrapper row">
@@ -175,13 +176,13 @@
                                 <div id="navigation-menu" class="releases__menu">
                                     <ul class="releases__menu-block">
                                         <li class="releases__linl">
-                                            <a href="#menu-1" class="scroll-to">Releases</a>
+                                            <a href="#menu-1" class="scroll-to" data-i18n="releases-menu-1">Releases</a>
                                         </li>
                                         <li class="releases__linl">
-                                            <a href="#menu-2" class="scroll-to">Development Discussions</a>
+                                            <a href="#menu-2" class="scroll-to" data-i18n="releases-menu-2">Development Discussions</a>
                                         </li>
                                         <li class="releases__linl">
-                                            <a href="#menu-3" class="scroll-to">Community Voting</a>
+                                            <a href="#menu-3" class="scroll-to" data-i18n="releases-menu-3">Community Voting</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -190,8 +191,8 @@
                                 <div id="menu-1" class="releases__row row">
                                     <div class="releases__item col col-12">
                                         <div class="item-releases item-releases_mobile">
-                                            <div class="item-releases__title">Mobile & Web Wallet</div>
-                                            <div class="item-releases__suntitle">Qwertycoin Mobile & Web Wallet</div>
+                                            <div class="item-releases__title" data-i18n="releases-wallet-web-title">Mobile & Web Wallet</div>
+                                            <div class="item-releases__suntitle" data-i18n="releases-wallet-web-desc">Qwertycoin Mobile & Web Wallet</div>
                                             <div class="item-releases__list-block">
                                                 <ul class="item-releases__list-item">
                                                     <li class="item-releases__list-item">
@@ -221,8 +222,8 @@
                                             </div>
                                         </div>
                                         <div class="item-releases item-releases_gui-Wallet">
-                                            <div class="item-releases__title">GUI Wallet</div>
-                                            <div class="item-releases__suntitle">Classic Qwertycoin Graphic UI Wallet (Desktop)</div>
+                                            <div class="item-releases__title" data-i18n="releases-wallet-gui-title">GUI Wallet</div>
+                                            <div class="item-releases__suntitle" data-i18n="releases-wallet-gui-desc">Classic Qwertycoin Graphic UI Wallet (Desktop)</div>
                                             <div class="item-releases__list-block">
                                                 <ul class="item-releases__list-item">
                                                     <li class="item-releases__list-item">
@@ -261,8 +262,8 @@
                                     </div>
                                     <div  class="releases__item col col-xs-12">
                                         <div class="item-releases item-releases_wallet">
-                                            <div class="item-releases__title">Paper Wallet</div>
-                                            <div class="item-releases__suntitle">All Qwertycoin Releases and Paper Wallet</div>
+                                            <div class="item-releases__title" data-i18n="releases-wallet-paper-title">Paper Wallet</div>
+                                            <div class="item-releases__suntitle" data-i18n="releases-wallet-paper-desc">All Qwertycoin Releases and Paper Wallet</div>
                                             <div class="item-releases__list-block">
                                                 <ul class="item-releases__list-item">
                                                     <li class="item-releases__list-item">
@@ -286,8 +287,8 @@
                                             </div>
                                         </div>
                                         <div class="item-releases item-releases_gli-Wallet">
-                                            <div class="item-releases__title">CLI Wallet</div>
-                                            <div class="item-releases__suntitle">Qwertycoin >_Command-line Suite Wallet (Exchanges, Masternodes, Services)</div>
+                                            <div class="item-releases__title" data-i18n="releases-wallet-cli-title">CLI Wallet</div>
+                                            <div class="item-releases__suntitle" data-i18n="releases-wallet-cli-desc">Qwertycoin >_Command-line Suite Wallet (Exchanges, Masternodes, Services)</div>
                                             <div class="item-releases__list-block">
                                                 <ul class="item-releases__list-item">
                                                     <li class="item-releases__list-item">
@@ -332,8 +333,8 @@
                                     </div>
                                     <div class="releases__item col col-xs-12">
                                         <div class="item-releases item-releases_zero-wallet">
-                                            <div class="item-releases__title">Zero Wallet</div>
-                                            <div class="item-releases__suntitle">New Qwertycoin Light Wallet (Desktop)</div>
+                                            <div class="item-releases__title" data-i18n="releases-wallet-zero-title">Zero Wallet</div>
+                                            <div class="item-releases__suntitle" data-i18n="releases-wallet-zero-desc">New Qwertycoin Light Wallet (Desktop)</div>
                                             <div class="item-releases__list-block">
                                                 <ul class="item-releases__list-item">
                                                     <li class="item-releases__list-item">
@@ -376,8 +377,8 @@
                                             </div>
                                         </div>
                                         <div class="item-releases item-releases_qwcx">
-                                            <div class="item-releases__title">QWCX</div>
-                                            <div class="item-releases__suntitle">– Qwertycoin Cross-Platform Wallet</div>
+                                            <div class="item-releases__title" data-i18n="releases-wallet-qwcx-title">QWCX</div>
+                                            <div class="item-releases__suntitle" data-i18n="releases-wallet-qwcx-title">– Qwertycoin Cross-Platform Wallet</div>
                                             <div class="item-releases__list-block">
                                                 <ul class="item-releases__list-item">
                                                     <li class="item-releases__list-item">
@@ -728,25 +729,25 @@
                 <div class="enviroment__container container">
                     <div class="enviroment__row row">
                         <div class="enviroment__col col-lg-4 col-md-12 col-12">
-                            <h2 class="enviroment__title title">Qwertycoin Environment</h2>
-                            <div class="enviroment__subtitle subtitle">We’re growing the team around the world. Explore our job descriptions and reach out.</div>
+                            <h2 class="enviroment__title title" data-i18n="environment-title">Qwertycoin Environment</h2>
+                            <div class="enviroment__subtitle subtitle" data-i18n="environment-slogan">We’re growing the team around the world. Explore our job descriptions and reach out.</div>
                         </div>
                         <div class="enviroment__col col-lg-8 col-md-12 col-12">
                             <ul class="nav nav-pills col-xs-12" id="pills-tab" role="tablist">
                                 <li class="nav-item">
-                                  <a class="nav-link" id="pills-environment-tab" data-toggle="pill" href="#pills-environment" role="tab" aria-controls="pills-environment" aria-selected="false">Environment</a>
+                                  <a class="nav-link" id="pills-environment-tab" data-toggle="pill" href="#pills-environment" role="tab" aria-controls="pills-environment" aria-selected="false" data-i18n="environment-menu-environment">Environment</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" id="pills-mining-tab" data-toggle="pill" href="#pills-mining" role="tab" aria-controls="pills-mining" aria-selected="false">Mining</a>
+                                  <a class="nav-link" id="pills-mining-tab" data-toggle="pill" href="#pills-mining" role="tab" aria-controls="pills-mining" aria-selected="false" data-i18n="environment-menu-mining">Mining</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" id="pills-marketplaces-tab" data-toggle="pill" href="#pills-marketplaces" role="tab" aria-controls="pills-marketplaces" aria-selected="false">Marketplaces</a>
+                                  <a class="nav-link" id="pills-marketplaces-tab" data-toggle="pill" href="#pills-marketplaces" role="tab" aria-controls="pills-marketplaces" aria-selected="false" data-i18n="environment-menu-marketplaces">Marketplaces</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="pills-exchanges-tab" data-toggle="pill" href="#pills-exchanges" role="tab" aria-controls="pills-exchanges" aria-selected="true">Exchanges</a>
+                                    <a class="nav-link active" id="pills-exchanges-tab" data-toggle="pill" href="#pills-exchanges" role="tab" aria-controls="pills-exchanges" aria-selected="true" data-i18n="environment-menu-exchanges">Exchanges</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="pills-partnerships-tab" data-toggle="pill" href="#pills-partnerships" role="tab" aria-controls="pills-partnerships" aria-selected="false">Partnerships</a>
+                                    <a class="nav-link" id="pills-partnerships-tab" data-toggle="pill" href="#pills-partnerships" role="tab" aria-controls="pills-partnerships" aria-selected="false" data-i18n="environment-menu-partnerships">Partnerships</a>
                                 </li>
                               </ul>
                               <div class="tab-content" id="pills-tabContent">
@@ -1373,8 +1374,8 @@
                             </div>
                         </div>
                         <div class="comunity__col col-12 col-lg-4 col-md-4">
-                            <div class="comunity__title title">Qwertycoin Community</div>
-                            <div class="comunity__subtitle subtitle">Join the 24/7 Community discussions to be aware of all the latest Topics.</div>
+                            <div class="comunity__title title" data-i18n="community-title">Qwertycoin Community</div>
+                            <div class="comunity__subtitle subtitle" data-i18n="community-slogan">Join the 24/7 Community discussions to be aware of all the latest Topics.</div>
                         </div>
                     </div>
                 </div>
@@ -1387,14 +1388,14 @@
                 <div class="telegram-com__container container">
                     <div class="telegram-com__row row">
                         <div class="telegram-com__col col-lg-4 col-12">
-                            <div class="telegram-com__title title">Telegram Community</div>
+                            <div class="telegram-com__title title" data-i18n="community-telegram-title">Telegram Community</div>
                         </div>
                     </div>
                     <div class="telegram-com__row row">
                         <div class="telegram-com__tab col-lg-3 col-xs-12">
                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                              <a class="nav-link active" id="v-pills-general-tab" data-toggle="pill" href="#v-pills-general" role="tab" aria-controls="v-pills-general" aria-selected="true">General</a>
-                              <a class="nav-link" id="v-pills-country-tab" data-toggle="pill" href="#v-pills-country" role="tab" aria-controls="v-pills-country" aria-selected="false">Groups by country</a>
+                              <a class="nav-link active" id="v-pills-general-tab" data-toggle="pill" href="#v-pills-general" role="tab" aria-controls="v-pills-general" aria-selected="true" data-i18n="community-menu-general">General</a>
+                              <a class="nav-link" id="v-pills-country-tab" data-toggle="pill" href="#v-pills-country" role="tab" aria-controls="v-pills-country" aria-selected="false" data-i18n="community-menu-groupsbycountry">Groups by country</a>
                             </div>
                           </div>
                           <div class="col-lg-9 col-xs-12">
@@ -1645,8 +1646,8 @@
                         <div class="development__title-img col-12">
                             <img src="./img/development__img-top.svg" alt="">
                         </div>
-                        <div class="development__title title col-12">Qwertycoin Development</div>
-                        <div class="development__subtitle subtitle col-12 col-md-10">Everyone can contribute participate in Qwertycoin and be a part of building a blockchain service.</div>
+                        <div class="development__title title col-12" data-i18n="development-title">Qwertycoin Development</div>
+                        <div class="development__subtitle subtitle col-12 col-md-10" data-i18n="development-slogan">Everyone can contribute participate in Qwertycoin and be a part of building a blockchain service.</div>
                     </div>
                 </div>
             </section>
@@ -1656,7 +1657,7 @@
             <section class="development-list">
                 <div class="development-list__container container">
                     <div class="development-list__row">
-                        <div class="development-list__title title">Development</div>
+                        <div class="development-list__title title" data-i18n="development-menu-title">Development</div>
                         <div class="development-list__line"></div>
                     </div>
                     <div class="development-list__row">
@@ -1668,8 +1669,8 @@
                                             <i aria-hidden="true" class="fas fa-file-alt"></i>
                                         </span>
                                     </div>
-                                    <div class="item-development__title">Whitepaper</div>
-                                    <div class="item-development__text">Qwertycoin Whitepaper</div>
+                                    <div class="item-development__title" data-i18n="development-menu-1-title">Whitepaper</div>
+                                    <div class="item-development__text" data-i18n="development-menu-1-desc">Qwertycoin Whitepaper</div>
                                 </a>
                                 <a href="https://github.com/qwertycoin-org/brand" target="_blank" class="item-development">
                                     <div class="item-development__icon">
@@ -1677,8 +1678,8 @@
                                             <i aria-hidden="true" class="fas fa-keyboard"></i>
                                         </span>
                                     </div>
-                                    <div class="item-development__title">Brand</div>
-                                    <div class="item-development__text">Qwertycoin Brand & Assets</div>
+                                    <div class="item-development__title" data-i18n="development-menu-2-title">Brand</div>
+                                    <div class="item-development__text" data-i18n="development-menu-2-desc">Qwertycoin Brand & Assets</div>
                                 </a>
                                 <a href="https://github.com/qwertycoin-org" target="_blank" class="item-development">
                                     <div class="item-development__icon">
@@ -1686,8 +1687,8 @@
                                             <i aria-hidden="true" class="fab fa-github"></i>
                                         </span>
                                     </div>
-                                    <div class="item-development__title">Github</div>
-                                    <div class="item-development__text">Qwertycoin Repositorys</div>
+                                    <div class="item-development__title" data-i18n="development-menu-3-title">Github</div>
+                                    <div class="item-development__text" data-i18n="development-menu-3-desc">Qwertycoin Repositorys</div>
                                 </a>
                                 <a href="https://blockchain.qwertycoin.org/" target="_blank" class="item-development">
                                     <div class="item-development__icon">
@@ -1695,8 +1696,8 @@
                                             <i aria-hidden="true" class="fas fa-link"></i>
                                         </span>
                                     </div>
-                                    <div class="item-development__title">Blockchain</div>
-                                    <div class="item-development__text">Qwertycoin Blockchain</div>
+                                    <div class="item-development__title" data-i18n="development-menu-4-title">Blockchain</div>
+                                    <div class="item-development__text" data-i18n="development-menu-4-desc">Qwertycoin Blockchain</div>
                                 </a>
                             </div>
                             <div class="development-list__row-block">
@@ -1706,8 +1707,8 @@
                                             <i aria-hidden="true" class="fas fa-file-invoice"></i>
                                         </span>
                                     </div>
-                                    <div class="item-development__title">Docs</div>
-                                    <div class="item-development__text">Qwertycoin Documents</div>
+                                    <div class="item-development__title" data-i18n="development-menu-5-title">Docs</div>
+                                    <div class="item-development__text" data-i18n="development-menu-5-desc">Qwertycoin Documents</div>
                                 </a>
                                 <a href="https://releases.qwertycoin.org" target="_blank" class="item-development">
                                     <div class="item-development__icon">
@@ -1715,8 +1716,8 @@
                                             <i aria-hidden="true" class="fas fa-file-code"></i>
                                         </span>
                                     </div>
-                                    <div class="item-development__title">Releases</div>
-                                    <div class="item-development__text">Qwertycoin Releases</div>
+                                    <div class="item-development__title" data-i18n="development-menu-6-title">Releases</div>
+                                    <div class="item-development__text" data-i18n="development-menu-6-desc">Qwertycoin Releases</div>
                                 </a>
                             </div>
                         </div>
@@ -1730,8 +1731,8 @@
                 <div class="core__container container">
                     <div class="core__row row">
                         <div class="core__col col-lg-4 col-xs-12">
-                            <div class="core__title title">Core-Team</div>
-                            <div class="core__subtitle subtitle">Delivering simple relevant solutions by blending the best of real world operations with leading edge tech.</div>
+                            <div class="core__title title" data-i18n="team-core-title">Core-Team</div>
+                            <div class="core__subtitle subtitle" data-i18n="team-core-slogan">Delivering simple relevant solutions by blending the best of real world operations with leading edge tech.</div>
                         </div>
                         <div class="core__col col-lg-8 col-sx-12">
                             <div class="core__team-row core__team-row_one">
@@ -1802,9 +1803,7 @@
             <section class="contributor">
                 <div class="contributor__container container">
                     <div class="contributor__row">
-                        <div class="contributor__title title">
-                            Contributor
-                        </div>
+                        <div class="contributor__title title" data-i18n="contributors-title">Contributor</div>
                     </div>
                     <div class="contributor__row row">
                         <div class="contributor__col col-6 col-md-3 col-lg-3">
@@ -1933,7 +1932,7 @@
                                         </span>
                                     </div>
                                     <div class="item__contributor-title">Spectr</div>
-                                    <div class="item__contributor-block__text">(Extern Contributor)</div>
+                                    <div class="item__contributor-block__text" data-i18n="contributors-external">(Extern Contributor)</div>
                                 </a>
                             </div>
                         </div>
@@ -1946,7 +1945,7 @@
                                         </span>
                                     </div>
                                     <div class="item__contributor-title">Blockinator</div>
-                                    <div class="item__contributor-block__text">(Extern Contributor)</div>
+                                    <div class="item__contributor-block__text" data-i18n="contributors-external">(Extern Contributor)</div>
                                 </a>
                             </div>
                         </div>
@@ -1959,7 +1958,7 @@
                                         </span>
                                     </div>
                                     <div class="item__contributor-title">Biz</div>
-                                    <div class="item__contributor-block__text">(Extern Contributor)</div>
+                                    <div class="item__contributor-block__text" data-i18n="contributors-external">(Extern Contributor)</div>
                                 </a>
                             </div>
                         </div>
@@ -1972,7 +1971,7 @@
             <section id="demos" class="backlog">
                 <div class="backlog__container container">
                     <div class="backlog__row">
-                        <div class="backlog__title title">Development Backlog</div>
+                        <div class="backlog__title title" data-i18n="backlog-title">Development Backlog</div>
                     </div>
                     <div class="backlog__row">
                         <!-- Set up your HTML -->
@@ -2164,7 +2163,16 @@
     </main>
 
 	<!-- Google CDN jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/CLDRPluralRuleParser.js"></script>
+    <script src="./js/jquery.i18n.js"></script>
+    <script src="./js/jquery.i18n.messagestore.js"></script>
+    <script src="./js/jquery.i18n.fallbacks.js"></script>
+    <script src="./js/jquery.i18n.language.js"></script>
+    <script src="./js/jquery.i18n.parser.js"></script>
+    <script src="./js/jquery.i18n.emitter.js"></script>
+    <script src="./js/jquery.i18n.emitter.bidi.js"></script>
+    <script src="./js/global.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
