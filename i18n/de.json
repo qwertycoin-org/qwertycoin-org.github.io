@@ -3,7 +3,7 @@
 		"authors": [
 			"nnian"
 		],
-		"last-updated": "2020-08-31",
+		"last-updated": "2020-09-01",
 		"locale": "de",
 		"message-documentation": "qqq"
 	},
@@ -15,6 +15,9 @@
 	"menu-environment":		"Environment",
 	"menu-community":		"Community",
 	"menu-development":		"Entwicklung",
+	"menu-privacypolicy":	"Datenschutz",
+	"menu-tos":				"AGB",
+	"menu-editwebsite":		"Webseite bearbeiten",
 
 	"hero-slogan":			"Sicher. Anonym. Weltweit: QWC",
 	"hero-slogan2":			"Qwertycoin ist eine dezentrale Kryptowährung für anonyme, sichere und sekundenschnelle Bezahlvorgänge weltweit.",
@@ -91,6 +94,20 @@
 	"contributors-title":			"Unterstützer",
 	"contributors-external":		"(Extern)",
 
-	"backlog-title":				"Entwicklungs-Zeitstrahl"
+	"backlog-title":				"Entwicklungs-Zeitstrahl",
+
+	"team-desc-alex":				"Gründer & Chef-Entwickler",
+	"team-desc-xecute":				"Teamleiter & CFO der Entwicklung",
+	"team-desc-dennis":				"Exchange Kommunikation",
+	"team-desc-jordan":				"Ehemaliger Webmaster",
+	"team-desc-jefflee":			"IT & Infrastruktur",
+	"team-desc-jefflee":			"Mitgründer",
+	"team-desc-pascal":				"System-Administrator",
+	"team-desc-ghost":				"Design & Grafiken",
+	"team-desc-pauloliva":			"Autor",
+	"team-desc-exploshot":			"Mobile-App-Entwickler",
+
+	"general-joinus":				"Beitreten",
+	"general-trackingkey":			"Tracking Key"
 
 }

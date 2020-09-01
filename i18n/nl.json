@@ -3,7 +3,7 @@
 		"authors": [
 			"nnian"
 		],
-		"last-updated": "2020-08-31",
+		"last-updated": "2020-09-01",
 		"locale": "nl",
 		"message-documentation": "qqq"
 	},
@@ -15,6 +15,9 @@
 	"menu-environment":		"Environment",
 	"menu-community":		"Community",
 	"menu-development":		"Development",
+	"menu-privacypolicy":	"Privacy Policy",
+	"menu-tos":				"Terms and Conditions",
+	"menu-editwebsite":		"Edit this Website",
 
 	"hero-slogan":			"Safe. Simple. Seamless. Secure.",
 	"hero-slogan2":			"Qwertycoin is a a decentralized peer to peer protocal for safe payment and communication worldwide.",
@@ -91,6 +94,20 @@
 	"contributors-title":			"Contributor",
 	"contributors-external":		"(Extern Contributor)",
 
-	"backlog-title":				"Development Backlog"
+	"backlog-title":				"Development Backlog",
+
+	"team-desc-alex":				"Founder & Lead Developer",
+	"team-desc-xecute":				"Team Lead & Finance Officer",
+	"team-desc-dennis":				"Exchange Communication",
+	"team-desc-jordan":				"Previous Webmaster",
+	"team-desc-jefflee":			"IT & Infrastructur",
+	"team-desc-jefflee":			"Co-Founder, former Developer",
+	"team-desc-pascal":				"System Administrator",
+	"team-desc-ghost":				"Design & Graphics",
+	"team-desc-pauloliva":			"Author",
+	"team-desc-exploshot":			"Mobile Developer",
+
+	"general-joinus":				"Join Us",
+	"general-trackingkey":			"Tracking Key"
 
 }

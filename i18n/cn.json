@@ -15,6 +15,9 @@
 	"menu-environment":		"环境",
 	"menu-community":		"社区",
 	"menu-development":		"发展历程",
+	"menu-privacypolicy":	"隐私政策",
+	"menu-tos":				"条款和条件",
+	"menu-editwebsite":		"编辑这个网站",
 
 	"hero-slogan":			"安全。 匿名。 快速",
 	"hero-slogan2":			"Qwertycoin is a a decentralized peer to peer protocal for safe payment and communication worldwide.",
@@ -36,11 +39,11 @@
 	"about-fea-6-title":	"Egalitarian Proof of Service (EPoSe)",
 	"about-fea-6-desc":		"Qwertycoin’s transaction fee distribution among “Masternodes” based on Uptime as a measure of “Service”.",
 
-	"releases-title":		"Qwertycoin Releases",
+	"releases-title":		"Qwertycoin发布",
 	"releases-slogan":		"Get the latest release from Qwertycoin – Mobile Wallet, Web Wallet, Paper Wallet, Zero Wallet, GUI Wallet, CLI Wallet and our Voting Platform!",
-	"releases-menu-1":		"Releases",
-	"releases-menu-2":		"Development Discussions",
-	"releases-menu-3":		"Community Voting",
+	"releases-menu-1":		"发布",
+	"releases-menu-2":		"发展讨论",
+	"releases-menu-3":		"社区投票",
 	"releases-wallet-web-title":	"Mobile & Web Wallet",
 	"releases-wallet-web-desc":		"Qwertycoin Mobile & Web Wallet",
 	"releases-wallet-gui-title":	"GUI Wallet",
@@ -91,6 +94,20 @@
 	"contributors-title":			"贡献者",
 	"contributors-external":		"(外部贡献者)",
 
-	"backlog-title":				"Development Backlog"
+	"backlog-title":				"Development Backlog",
+
+	"team-desc-alex":				"Founder & Lead Developer",
+	"team-desc-xecute":				"Team Lead & Finance Officer",
+	"team-desc-dennis":				"Exchange Communication",
+	"team-desc-jordan":				"Previous Webmaster",
+	"team-desc-jefflee":			"IT & Infrastructur",
+	"team-desc-jefflee":			"Co-Founder, former Developer",
+	"team-desc-pascal":				"System Administrator",
+	"team-desc-ghost":				"Design & Graphics",
+	"team-desc-pauloliva":			"Author",
+	"team-desc-exploshot":			"Mobile Developer",
+
+	"general-joinus":				"Join Us",
+	"general-trackingkey":			"Tracking Key"
 
 }
