@@ -34,7 +34,7 @@
                     <div class="header__block">
 
                         <nav id="navigation-menu" class="navbar navbar-expand-lg navbar-dark menu">
-                            <a class="navbar-brand" href="/#">
+                            <a class="navbar-brand" href="#">
                                 <div class="logo">
                                     <img src="./img/logo.png" alt="Qwertycoin" class="logo__img">
                                 </div>
@@ -44,21 +44,28 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                               <div class="navbar-nav menu__item">
-                                <a class="nav-item nav-link active menu__link" href="/#about">About</a>
-                                <a class="nav-item nav-link menu__link" href="/#releases">Releases</a>
-                                <a class="nav-item nav-link menu__link" href="/#envir">Environment</a>
-                                <a class="nav-item nav-link menu__link" href="/#community">Community</a>
-                                <a class="nav-item nav-link menu__link" href="/#development">Development</a>
+                                <a class="nav-item nav-link active menu__link" href="#about" data-i18n="menu-about">About</a>
+                                <a class="nav-item nav-link menu__link" href="#releases" data-i18n="menu-releases">Releases</a>
+                                <a class="nav-item nav-link menu__link" href="#envir" data-i18n="menu-environment">Environment</a>
+                                <a class="nav-item nav-link menu__link" href="#community" data-i18n="menu-community">Community</a>
+                                <a class="nav-item nav-link menu__link" href="#development" data-i18n="menu-development">Development</a>
                                 <!-- TODO: Implement jekyll blog
                                 <a class="nav-item nav-link menu__link" href="#">News</a>
                                 -->
-                                <div class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      EN
-                                    </a>
+                                <div class="locale-switcher nav-item dropdown">
+                                    <span class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Language</span>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                      <a class="dropdown-item" href="#">EN</a>
-                                      <a class="dropdown-item" href="#">CN</a>
+                                        <a class="dropdown-item" href="#" data-locale="cn">CN</a>
+                                        <a class="dropdown-item" href="#" data-locale="de">DE</a>
+                                        <a class="dropdown-item" href="#" data-locale="en"><b>EN</b></a>
+                                        <a class="dropdown-item" href="#" data-locale="es">ES</a>
+                                        <a class="dropdown-item" href="#" data-locale="fr">FR</a>
+                                        <a class="dropdown-item" href="#" data-locale="hi">HI</a>
+                                        <a class="dropdown-item" href="#" data-locale="it">ITA</a>
+                                        <a class="dropdown-item" href="#" data-locale="ko">KO</a>
+                                        <a class="dropdown-item" href="#" data-locale="nl">NL</a>
+                                        <a class="dropdown-item" href="#" data-locale="ru">RU</a>
+                                        <a class="dropdown-item" href="#" data-locale="ar">AR</a>
                                     </div>
                                 </div>
                               </div>
@@ -80,15 +87,15 @@
                 <div class="hero__bg-img">
                 <div class="hero__container container container-sm">
                     <div class="hero__row row">
-                        <div class="hero__h1 col-12">Safe. Simple. Seamless. Secure.</div>
-                        <div class="hero__subtitle col-12">Qwertycoin is a a decentralized peer to peer protocal for safe payment and communication worldwide.</div>
+                        <div class="hero__h1 col-12" data-i18n="hero-slogan">Safe. Simple. Seamless. Secure.</div>
+                        <div class="hero__subtitle col-12" data-i18n="hero-slogan2">Qwertycoin is a a decentralized peer to peer protocal for safe payment and communication worldwide.</div>
                         <div class="hero__buttom">
                             <a href="https://github.com/qwertycoin-org" target="_blank" class="buttom_normal">
                                 <span><i aria-hidden="true" class="fab fa-github"></i></span>
-                                <span>Contribute on Github</span></a>
-                            <a href="https://qwertycoin.org/#releases" target="_blank" class="buttom_outline">
+                                <span data-i18n="hero-button1">Contribute on Github</span></a>
+                            <a href="#releases" class="buttom_outline">
                                 <span><i aria-hidden="true" class="fas fa-file-code"></i></span>
-                                <span>Download Wallet</span></a>
+                                <span data-i18n="hero-button2">Download Wallet</span></a>
                         </div>
                     </div>
                 </div>
@@ -174,9 +181,9 @@
                         <div class="footer__col col-lg-3 col-md-3 col-12">
                             <div class="footer__title">2017 - 2020 © Qwertycoin.org</div>
                             <div class="footer__block-link">
-                                <a href="/privacy#privacy">Privacy Policy</a> | 
-                                <a href="/terms#tos">Terms and Conditions</a><br/>
-                                <a href="https://github.com/qwertycoin-org/qwertycoin-org.github.io" target="_blank"><strong>Edit this Website</strong></a>
+                                <a href="/privacy#privacy" data-i18n="menu-privacypolicy">Privacy Policy</a> | 
+                                <a href="/terms#tos" data-i18n="menu-tos">Terms and Conditions</a><br/>
+                                <a href="https://github.com/qwertycoin-org/qwertycoin-org.github.io" target="_blank"><strong  data-i18n="menu-editwebsite">Edit this Website</strong></a>
                             </div>
                         </div>
                         <div class="footer__col-r col-lg-9 col-md-10 col-12">
@@ -185,7 +192,7 @@
                                     <p>QWC1K6XEhCC1WsZzT9RRVpc1MLXXdHVKt2BUGSrsmkkXAvqh52sVnNc1pYmoF2TEXsAvZnyPaZu8MW3S8EWHNfAh7X2xa63P7Y</p>
                                 </div>
                                 <div class="footer_wall-1 footer_wall-1_s">
-                                    <p>Tracking Key: <br>
+                                    <p><span data-i18n="general-trackingkey">Tracking Key</span>: <br>
                                         33da5241b1031444f4dc32a8a7d14997b1c3aed8b7070ed01633e76b483b5b7382a612265904e6b52d889bc8323b5437ccfe8b594aada1675755893ab2abfe9c</p>
                                 </div>
                                 <div class="footer_wall-1 footer_wall-1_s">
