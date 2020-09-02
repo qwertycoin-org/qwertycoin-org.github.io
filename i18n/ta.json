@@ -4,12 +4,12 @@
 			"nnian"
 		],
 		"last-updated": "2020-09-02",
-		"locale": "it",
-		"usecase": "Italian",
+		"locale": "ta",
+		"usecase": "Tamil",
 		"message-documentation": "qqq"
 	},
 	"website-title":		"Qwertycoin | Qwertycoin is a secure and user-friendly worldwide digital currency.",
-	"website-desc":		"Safe. Simple. Seamless. Secure. Qwertycoin is a decentralized communited based peer-to-peer protocol for safe payments worldwide. A secure and anonymous cryptocurrency, built with a focus on democracy and privacy. Contribute on Github Qwertycoin Releases About Qwertycoin Qwertycoin is a “real decentralized community Cryptocurrency”, a “decentralized digital asset” like Bitcoin. “Nobody owns or controls Qwertycoin”.",
+	"website-desc":			"Safe. Simple. Seamless. Secure. Qwertycoin is a decentralized communited based peer-to-peer protocol for safe payments worldwide. A secure and anonymous cryptocurrency, built with a focus on democracy and privacy. Contribute on Github Qwertycoin Releases About Qwertycoin Qwertycoin is a “real decentralized community Cryptocurrency”, a “decentralized digital asset” like Bitcoin. “Nobody owns or controls Qwertycoin”.",
 
 	"menu-about":			"About",
 	"menu-releases":		"Releases",

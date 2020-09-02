@@ -5,6 +5,7 @@
 		],
 		"last-updated": "2020-09-02",
 		"locale": "de",
+		"usecase": "German",
 		"message-documentation": "qqq"
 	},
 	"website-title":		"Qwertycoin | Qwertycoin ist eine sichere, anonyme und benutzerfreundliche Kryptowährung.",
@@ -56,8 +57,8 @@
 	"releases-wallet-zero-desc":	"Unsere neue Qwertycoin Lite Wallet. Für den schnellen Start! (Desktop)",
 	"releases-wallet-qwcx-title":	"QWCX",
 	"releases-wallet-qwcx-desc":	"– Qwertycoin Cross-Plattform Wallet",
-	"releases-votingplatform-title":	"Voting Platform",
-	"releases-votingplatform-desc":	"Qwertycoin Voting Platform (Vote for Community Decisions)",
+	"releases-votingplatform-title":"Voting Platform",
+	"releases-votingplatform-desc":	"Qwertycoin Voting Plattform (Dieses System gibt jedem User die Möglichkeit an wichtigen Entscheidungen zu partizipieren)",
 
 	"environment-title":			"Qwertycoin Universum",
 	"environment-slogan":			"Wir erweitern das Team auf der ganzen Welt. Informieren Sie sich über unsere Projekte und unterstützen Sie uns.",
