@@ -8,7 +8,7 @@
 		"message-documentation": "qqq"
 	},
 	"website-title":		"Qwertycoin | Qwertycoin is a secure and user-friendly worldwide digital currency.",
-	"website-desc" :		"Safe. Simple. Seamless. Secure. Qwertycoin is a decentralized communited based peer-to-peer protocol for safe payments worldwide. A secure and anonymous cryptocurrency, built with a focus on democracy and privacy. Contribute on Github Qwertycoin Releases About Qwertycoin Qwertycoin is a “real decentralized community Cryptocurrency”, a “decentralized digital asset” like Bitcoin. “Nobody owns or controls Qwertycoin”.",
+	"website-desc":		"Safe. Simple. Seamless. Secure. Qwertycoin is a decentralized communited based peer-to-peer protocol for safe payments worldwide. A secure and anonymous cryptocurrency, built with a focus on democracy and privacy. Contribute on Github Qwertycoin Releases About Qwertycoin Qwertycoin is a “real decentralized community Cryptocurrency”, a “decentralized digital asset” like Bitcoin. “Nobody owns or controls Qwertycoin”.",
 
 	"menu-about":			"About",
 	"menu-releases":		"Releases",
@@ -56,6 +56,8 @@
 	"releases-wallet-zero-desc":	"New Qwertycoin Light Wallet (Desktop)",
 	"releases-wallet-qwcx-title":	"QWCX",
 	"releases-wallet-qwcx-desc":	"– Qwertycoin Cross-Platform Wallet",
+	"releases-votingplatform-title":	"Voting Platform",
+	"releases-votingplatform-desc":	"Qwertycoin Voting Platform (Vote for Community Decisions)",
 
 	"environment-title":			"Qwertycoin Environment",
 	"environment-slogan":			"We’re growing the team around the world. Explore our job descriptions and reach out.",
