@@ -3,7 +3,7 @@
 		"authors": [
 			"nnian"
 		],
-		"last-updated": "2020-09-01",
+		"last-updated": "2020-09-02",
 		"locale": "de",
 		"message-documentation": "qqq"
 	},
@@ -55,7 +55,7 @@
 	"releases-wallet-zero-title":	"Lite Wallet",
 	"releases-wallet-zero-desc":	"Unsere neue Qwertycoin Lite Wallet. Für den schnellen Start! (Desktop)",
 	"releases-wallet-qwcx-title":	"QWCX",
-	"releases-wallet-qwcx-desc":	"– Qwertycoin Cross-Platform Wallet",
+	"releases-wallet-qwcx-desc":	"– Qwertycoin Cross-Plattform Wallet",
 	"releases-votingplatform-title":	"Voting Platform",
 	"releases-votingplatform-desc":	"Qwertycoin Voting Platform (Vote for Community Decisions)",
 
@@ -74,7 +74,7 @@
 	"community-menu-groupsbycountry":"International",
 
 	"development-title":			"Qwertycoin Development",
-	"development-slogan":			"Jeder kann (s)einen Beitrag zum Erfolg von Qwertycoin leisten und Teil unserer Mission werden. Gemeinsam zum Erfolg.",
+	"development-slogan":			"Jeder kann (s)einen Beitrag zum Erfolg von Qwertycoin leisten und Teil unserer Mission werden. Gemeinsam und zusammen.",
 
 	"development-menu-title":		"Development",
 	"development-menu-1-title":		"Whitepaper",
@@ -91,7 +91,7 @@
 	"development-menu-6-desc":		"Qwertycoin Releases",
 
 	"team-core-title":				"Kernteam",
-	"team-core-slogan":				"Weiterentwicklung des Projekts und federführend für die Unterhaltung der Blockchain. Umsetzung innovativer Lösungen durch Kombination der besten Entwickler aus der Industrie und modernster Technologie.",
+	"team-core-slogan":				"Weiterentwicklung des Projekts und federführend für die Unterhaltung der Blockchain. Umsetzung innovativer Lösungen durch Kombination der besten Entwickler aus der Industrie und modernsten Technologien.",
 
 	"contributors-title":			"Unterstützer",
 	"contributors-external":		"(Extern)",
@@ -110,6 +110,63 @@
 	"team-desc-exploshot":			"Mobile-App-Entwickler",
 
 	"general-joinus":				"Beitreten",
-	"general-trackingkey":			"Tracking Key"
+	"general-trackingkey":			"Tracking Key",
+
+	"backlog-19-title":	"Release QWC v6.0.0",
+	"backlog-19-desc":	"Der Qwertycoin Algorithmus wurde geändert. Mehr dazu im <a href=\"https://wp.qwertycoin.org/\">Whitepaper</a>",
+
+	"backlog-18-title":	"Website Refresh",
+	"backlog-18-desc":	"Wechsel der Webseite zu einer Open-Source Version auf GitHub <a href=\"https://github.com/qwertycoin-org/qwertycoin-org.github.io\" target=\"_blank\">Hier gehts zum Repository</a>",
+
+	"backlog-17-title":	"Ende 2019 bis Mai 2020",
+	"backlog-17-desc":	"Wir haben die Software-Qualität unserer Repositories um ein vielfaches verbessert.",
+
+	"backlog-16-title":	"CoinMarketCap Listing!",
+	"backlog-16-desc":	"Nach langer Reise wurden wir auf <a href=\"https://coinmarketcap.com/currencies/qwertycoin/\" target=\"_blank\">coinmarketcap.com</a> gelistet. Ein Meilenstein",
+
+	"backlog-15-title":	"Release: Voting Platform",
+	"backlog-15-desc":	"Die <a href=\"https://voting.qwertycoin.org/\" target=\"_blank\">Qwertycoin Voting Plattform</a> gibt jedem QWC Anwender eine demokratische Stimme.",
+
+	"backlog-14-title":	"6. Börsennotierung",
+	"backlog-14-desc":	"Qwertycoin wurde an der BiteBTC-Börse mit einem BCH-, ETH- und DASH-Paar gestartet!",
+
+	"backlog-13-title":	"Qwertycoin v4.0.0",
+	"backlog-13-desc":	"Wechsel zum Anti ASIC Algorithmus CN-Heavy auf Höhe <a href=\"https://explorer.qwertycoin.org/?hash=da28b56d63c1be49b6c89f16b4c3d2da3da14dcc98ec38079aedef9b83e627ce#blockchain_block\" target=\"_blank\">110,520</a>",
+
+	"backlog-12-title":	"5. Börsennotierung",
+	"backlog-12-desc":	"Qwertycoin was launched on the Bitexlive Exchange with BTC and DOGE Pair",
+
+	"backlog-11-title":	"4. Börsennotierung",
+	"backlog-11-desc":	"Qwertycoin wurde an der Crex24 Exchange gelistet",
+
+	"backlog-10-title":	"3. Börsennotierung",
+	"backlog-10-desc":	"Integration im “AltExchange” erfolgte. (Exit-Scam im Juli 2018)",
+
+	"backlog-09-title":	"2. Börsennotierung",
+	"backlog-09-desc":	"CREP Exchange (Exchange wurde im April 2018 eingestellt)",
+
+	"backlog-08-title":	"1. Börsennotierung",
+	"backlog-08-desc":	"Vorläufige Auflistung von Qwertycoin an der Börse namens “<b>Octaex</b>”",
+
+	"backlog-07-title":	"Desktop Wallet Release",
+	"backlog-07-desc":	"Neue Wallets für Windows, MacOS und Ubuntu",
+
+	"backlog-06-title":	"Hardfork 1 in Höhe 8473",
+	"backlog-06-desc":	"Behebt “vanilla” Bug in CryptoNote v1.0",
+
+	"backlog-05-title":	"Offizieller Block Explorer",
+	"backlog-05-desc":	"Unser eigenständiger Block Explorer: <a target=\"_blank\" href=\"https://explorer.qwertycoin.org/\">explorer.qwertycoin.org</a>",
+
+	"backlog-04-title":	"Qwertycoin wird global",
+	"backlog-04-desc":	"Der Ankündigungsthread bei Bitcointalk.org",
+
+	"backlog-03-title":	"First Block",
+	"backlog-03-desc":	"The first Qwertycoin-Block was mined",
+
+	"backlog-02-title":	"Qwertycoin geht an die Öffentlichkeit",
+	"backlog-02-desc":	"Die offizielle Projektwebsite unter Qwertycoin.org wurde veröffentlicht",
+
+	"backlog-01-title":	"Planung von Qwertycoin",
+	"backlog-01-desc":	"Projekt- und Entwicklungsbeginn"
 
 }

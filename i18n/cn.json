@@ -3,7 +3,7 @@
 		"authors": [
 			"nnian"
 		],
-		"last-updated": "2020-09-01",
+		"last-updated": "2020-09-02",
 		"locale": "cn",
 		"message-documentation": "qqq"
 	},
@@ -110,6 +110,63 @@
 	"team-desc-exploshot":			"Mobile Developer",
 
 	"general-joinus":				"Join Us",
-	"general-trackingkey":			"Tracking Key"
+	"general-trackingkey":			"Tracking Key",
+
+	"backlog-19-title":	"Release QWC v6.0.0",
+	"backlog-19-desc":	"We changed the Qwertycoin Consensus. Read more in our <a href=\"https://wp.qwertycoin.org/\">Whitepaper</a>",
+
+	"backlog-18-title":	"Website Refresh",
+	"backlog-18-desc":	"We switched to an open source website Version on GitHub. Participate here: <a href=\"https://github.com/qwertycoin-org/qwertycoin-org.github.io\" target=\"_blank\">Qwertycoin</a>",
+
+	"backlog-17-title":	"End of 2019 to May 2020",
+	"backlog-17-desc":	"We redesigned our Core-Repositories to higher quality Coding Style",
+
+	"backlog-16-title":	"CoinMarketCap Listing!",
+	"backlog-16-desc":	"After long Journey we were listed on the <a href=\"https://coinmarketcap.com/currencies/qwertycoin/\" target=\"_blank\">coinmarketcap.com</a>",
+
+	"backlog-15-title":	"Release: Voting Platform",
+	"backlog-15-desc":	"Welcome to QWP (<a href=\"https://voting.qwertycoin.org/\" target=\"_blank\">Qwertycoin Voting Plattform</a>). This platform allows members to participate.",
+
+	"backlog-14-title":	"BiteBTC Listing",
+	"backlog-14-desc":	"Qwertycoin was launched on the BiteBTC Exchange with a BCH, ETH and DASH Pair!",
+
+	"backlog-13-title":	"Qwertycoin v4.0.0",
+	"backlog-13-desc":	"Switch to Cryptonight-Heavy / ASIC Resistant ON HEIGHT <a href=\"https://explorer.qwertycoin.org/?hash=da28b56d63c1be49b6c89f16b4c3d2da3da14dcc98ec38079aedef9b83e627ce#blockchain_block\" target=\"_blank\">110,520</a>",
+
+	"backlog-12-title":	"Bitexlive Listing",
+	"backlog-12-desc":	"Qwertycoin was launched on the Bitexlive Exchange with BTC and DOGE Pair",
+
+	"backlog-11-title":	"Crex24 Listing",
+	"backlog-11-desc":	"Qwertycoin was launched on the Crex24 Exchange",
+
+	"backlog-10-title":	"AltEx Listing",
+	"backlog-10-desc":	"Listing on the AltExchange took place. (Exit Scam in July 2018)",
+
+	"backlog-09-title":	"2nd exchange listing",
+	"backlog-09-desc":	"CREP Exchange (exchange ceased operation in April 2018)",
+
+	"backlog-08-title":	"1st Exchange listing",
+	"backlog-08-desc":	"Preliminary listing of Qwertycoin on Exchange called “<b>Octaex</b>”",
+
+	"backlog-07-title":	"Desktop Wallet Release",
+	"backlog-07-desc":	"New Wallets for Windows, MacOS and Ubuntu",
+
+	"backlog-06-title":	"Hardfork 1 at height 8473",
+	"backlog-06-desc":	"Hardfork was made to fix an Major “vanilla bug” CryptoNote",
+
+	"backlog-05-title":	"Official Block Explorer",
+	"backlog-05-desc":	"New standalone block explorer: <a target=\"_blank\" href=\"https://explorer.qwertycoin.org/\">explorer.qwertycoin.org</a>",
+
+	"backlog-04-title":	"Qwertycoin goes global",
+	"backlog-04-desc":	"The Announcement thread at Bitcointalk.org",
+
+	"backlog-03-title":	"First Block",
+	"backlog-03-desc":	"The first Qwertycoin-Block was mined",
+
+	"backlog-02-title":	"Qwertycoin goes public",
+	"backlog-02-desc":	"Official project website at Qwertycoin.org was published",
+
+	"backlog-01-title":	"Planning of Qwertycoin",
+	"backlog-01-desc":	"Project Beginning and starting development"
 
 }
