@@ -1,3 +1,11 @@
+$(document).ready(function() {
+	var language = 'en';
+	var url = window.location.href;
+	language = url.match(/lang=(.*)/)[1].replace(/#(.*)/,"");
+	$.i18n().locale = language;
+	setCookie('lang', language, 10000);
+});
+
 jQuery(function($) {
 	
 	var do_translate = function() {
