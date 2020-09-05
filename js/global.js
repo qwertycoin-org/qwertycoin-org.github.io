@@ -5,9 +5,29 @@ jQuery(function($) {
 	}
 
 	$.i18n().load({
-		'en': './i18n/en.json',
+		'ar': './i18n/ar.json',
+		'bh': './i18n/bh.json',
+		'bn': './i18n/bn.json',
 		'de': './i18n/de.json',
-		'cn': './i18n/cn.json'
+		'en': './i18n/en.json',
+		'es': './i18n/es.json',
+		'fa': './i18n/fa.json',
+		'fr': './i18n/fr.json',
+		'hi': './i18n/hi.json',
+		'it': './i18n/it.json',
+		'ja': './i18n/ja.json',
+		'ko': './i18n/ko.json',
+		'ms': './i18n/ms.json',
+		'nl': './i18n/nl.json',
+		'pa': './i18n/pa.json',
+		'pl': './i18n/pl.json',
+		'pt': './i18n/pt.json',
+		'ru': './i18n/ru.json',
+		'ta': './i18n/ta.json',
+		'tr': './i18n/tr.json',
+		'ur': './i18n/ur.json',
+		'vi': './i18n/vi.json',
+		'zh': './i18n/zh.json'
 	}).done(function() {
 
 		$('.locale-switcher').on('click', 'a', function(e) {
