@@ -39,7 +39,7 @@ jQuery(function($) {
 	}).done(function() {
 
 		$('.locale-switcher').on('click', 'a', function(e) {
-			e.preventDefault();
+			//e.preventDefault();
 			console.log($(this).data('locale'));
 			$.i18n().locale = $(this).data('locale');
 			setCookie('lang', $(this).data('locale'), 10000);
