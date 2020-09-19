@@ -21,6 +21,7 @@ jQuery(function($) {
 		'es': './i18n/es.json',
 		'fa': './i18n/fa.json',
 		'fr': './i18n/fr.json',
+		'he': './i18n/he.json',
 		'hi': './i18n/hi.json',
 		'it': './i18n/it.json',
 		'ja': './i18n/ja.json',
