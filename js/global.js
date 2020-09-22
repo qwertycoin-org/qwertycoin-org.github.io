@@ -1,9 +1,10 @@
 $(document).ready(function() {
-	var language = 'en';
 	var url = window.location.href;
-	language = url.match(/lang=(.*)/)[1].replace(/#(.*)/,"");
-	$.i18n().locale = language;
-	setCookie('lang', language, 10000);
+	var language = url.match(/lang=(.*)/)[1].replace(/#(.*)/,"");
+	if(matches !== null && matches.length > 1) {
+		$.i18n().locale = language;
+		setCookie('lang', language, 10000);
+	}
 });
 
 jQuery(function($) {
