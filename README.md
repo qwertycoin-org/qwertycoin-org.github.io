@@ -13,9 +13,9 @@ We're looking for Translators. Please help and translate our website to your loc
 - Chinese: [mainframer](https://github.com/mainframer)
 - English: [Nnian, Qwertycoin](https://github.com/qwertycoin-org)
 - German: [Nnian, Qwertycoin](https://github.com/qwertycoin-org)
-- Hebrew: Partial done, need some work to complete task
+- Hebrew: [Partial done, need some work to complete task](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/he.json)
 - Italian: Wintox, Telegram User
-- Spanish: coinvigilante, Telegram
+- Spanish: [coinvigilante, Telegram](https://www.coinvigilante.com/)
 
 #### Incomplete Translations:
 - [AR - Arabic](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/ar.json)
