@@ -56,7 +56,7 @@
 	"releases-wallet-zero-title":	"Zero Wallet",
 	"releases-wallet-zero-desc":	"New Qwertycoin Light Wallet (Desktop)",
 	"releases-wallet-qwcx-title":	"QWCX",
-	"releases-wallet-qwcx-desc":	"– Qwertycoin Cross-Platform Wallet",
+	"releases-wallet-qwcx-desc":	"Qwertycoin Cross-Platform Wallet",
 	"releases-votingplatform-title":	"Voting Platform",
 	"releases-votingplatform-desc":	"Qwertycoin Voting Platform (Vote for Community Decisions)",
 
@@ -106,9 +106,9 @@
 	"team-desc-jefflee":	"IT & Infrastructur",
 	"team-desc-jeka":	"Co-Founder, former Developer",
 	"team-desc-pascal":	"System Administrator",
-	"team-desc-ghost":	"Design & Graphics",
+	"team-desc-ghost":	"Graphic Designer",
 	"team-desc-pauloliva":	"Author",
-	"team-desc-exploshot":	"Mobile Developer",
+	"team-desc-exploshot":	"Core & Mobile Developer",
 
 	"general-joinus":	"Join Us",
 	"general-trackingkey":	"Tracking Key",
