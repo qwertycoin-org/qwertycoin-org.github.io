@@ -32,6 +32,7 @@ jQuery(function($) {
 		'pa': './i18n/pa.json',
 		'pl': './i18n/pl.json',
 		'pt': './i18n/pt.json',
+		'ro': './i18n/ro.json',
 		'ru': './i18n/ru.json',
 		'ta': './i18n/ta.json',
 		'tr': './i18n/tr.json',

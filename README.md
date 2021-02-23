@@ -31,6 +31,7 @@ We're looking for Translators. Please help and translate our website to your loc
 - [PA - Panjabi](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/pa.json)
 - [PL - Polish](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/pl.json)
 - [PT - Portuguese ](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/pt.json)
+- [RO - Romanian ](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/ro.json)
 - [TA - Tamil ](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/ta.json)
 - [TR - Turkish](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/tr.json)
 - [UR - Urdu](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/ur.json)
