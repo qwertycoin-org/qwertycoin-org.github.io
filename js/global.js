@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var url = window.location.href;
 	var language = url.match(/lang=(.*)/)[1].replace(/#(.*)/,"");
-	if(matches !== null && matches.length > 1) {
+	if(language !== null && language.length > 1) {
 		$.i18n().locale = language;
 		setCookie('lang', language, 10000);
 	}
