@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"nnian"
+			"mario"
 		],
-		"last-updated": "2020-09-02",
-		"locale": "en",
-		"usecase": "English Default",
+		"last-updated": "2021-02-27",
+		"locale": "fi",
+		"usecase": "Finnish Language File",
 		"message-documentation": "qqq"
 	},
 	"website-title":	"Qwertycoin | Qwertycoin is a secure and user-friendly worldwide digital currency.",
