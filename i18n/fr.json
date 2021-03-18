@@ -1,15 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"nnian"
+			"christelleleroy92"
 		],
-		"last-updated": "2020-09-02",
+		"last-updated": "2021-03-19",
 		"locale": "fr",
 		"usecase": "French",
 		"message-documentation": "qqq"
 	},
 	"website-title":		"Qwertycoin | Qwertycoin est une monnaie numérique mondiale sécurisée et conviviale.",
-	"website-desc":		"Sûr. Simple. Sans faille. Sécurisé. Qwertycoin est un protocole peer-to-peer décentralisé basé sur la communauté pour des paiements sécurisés dans le monde entier. Une crypto-monnaie sécurisée et anonyme, construite en mettant l'accent sur la démocratie et la vie privée. Contribuer sur Github Qwertycoin Releases À propos de Qwertycoin Qwertycoin est une véritable crypto-monnaie communautaire décentralisée", un "actif numérique décentralisé comme Bitcoin. Personne ne possède ou ne contrôle le Qwertycoin".",
+	"website-desc":		"Sûr. Simple. Sans faille. Sécurisé. Qwertycoin est un protocole peer-to-peer décentralisé basé sur la communauté pour des paiements sécurisés dans le monde entier. Une crypto-monnaie sécurisée et anonyme, construite en mettant l'accent sur la démocratie et la vie privée. Contribuer sur Github Qwertycoin Releases À propos de Qwertycoin Qwertycoin est une véritable crypto-monnaie communautaire décentralisée un \"actif numérique décentralisé comme Bitcoin. Personne ne possède ou ne contrôle le Qwertycoin\".",
 
 	"menu-about":			"À propos de",
 	"menu-releases":		"Communiqués",
