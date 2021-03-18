@@ -1,0 +1,173 @@
+{
+	"@metadata": {
+		"authors": [
+			"nnian"
+		],
+		"last-updated": "2020-09-02",
+		"locale": "fr",
+		"usecase": "French",
+		"message-documentation": "qqq"
+	},
+	"website-title":		"Qwertycoin | Qwertycoin est une monnaie numérique mondiale sécurisée et conviviale.",
+	"website-desc":		"Sûr. Simple. Sans faille. Sécurisé. Qwertycoin est un protocole peer-to-peer décentralisé basé sur la communauté pour des paiements sécurisés dans le monde entier. Une crypto-monnaie sécurisée et anonyme, construite en mettant l'accent sur la démocratie et la vie privée. Contribuer sur Github Qwertycoin Releases À propos de Qwertycoin Qwertycoin est une véritable crypto-monnaie communautaire décentralisée", un "actif numérique décentralisé comme Bitcoin. Personne ne possède ou ne contrôle le Qwertycoin".",
+
+	"menu-about":			"À propos de",
+	"menu-releases":		"Communiqués",
+	"menu-environment":		"Environnement",
+	"menu-community":		"Communauté",
+	"menu-development":		"Développement",
+	"menu-privacypolicy":	"Politique de confidentialité",
+	"menu-tos":				"Modalités et conditions",
+	"menu-editwebsite":		"Modifier ce site web", 
+
+	"hero-slogan":			"Sûr. Simple. Sans faille. Sûr.",
+	"hero-slogan2":			"Qwertycoin est un protocole peer to peer décentralisé pour le paiement et la communication sécurisés dans le monde entier.",
+	"hero-button1":			"Contribuer sur Github",
+	"hero-button2":			"Télécharger le portefeuille",
+
+	"about-title":			"À propos de Qwertycoin",
+	"about-slogan":			"Qwertycoin est une véritable crypto-monnaie communautaire décentralisée, un actif numérique décentralisé comme le bitcoin. Personne ne possède ou ne contrôle Qwertycoin.",
+	"about-fea-1-title":	"Plateforme Open-Source",
+	"about-fea-1-desc":		"Le Qwertycoin est une monnaie décentralisée basée sur une plateforme CryptoNote Open-Source. Tout le monde peut construire et participer.",
+	"about-fea-2-title":	"Communauté décentralisée",
+	"about-fea-2-desc":		"Qwertycoin n'est pas une entreprise privée financée par une ICO ou un pré-mineur. Le développement est soutenu par sa propre Communauté.",
+	"about-fea-3-title":	"Démocratie et vie privée",
+	"about-fea-3-desc":		"Les membres peuvent participer aux décisions importantes de la communauté en votant. Le Qwertycoin est totalement intraçable et anonyme.",
+	"about-fea-4-title":	"Preuve de travail égalitaire (EPoW)",
+	"about-fea-4-desc": 	"La technologie CryptoNote apporte l'égalité des votes grâce à la preuve de travail égalitaire qui utilise un algorithme de minage.",
+	"about-fea-5-title":	"Transaction ultra-rapide",
+	"about-fea-5-desc":		"Ultra-rapide La vitesse des transactions est ultra-rapide par rapport aux autres pièces. Notre technologie permet des temps de confirmation de transaction rapides.",
+	"about-fea-6-title":	"Preuve de service égalitaire (EPoSe)",
+	"about-fea-6-desc":		"La répartition des frais de transaction de Qwertycoin entre les Masternodes est basée sur le temps de fonctionnement comme mesure du service.",
+
+	"releases-title":		"Communiqués de presse Qwertycoin",
+	"releases-slogan":		"Obtenez la dernière version de Qwertycoin - Mobile Wallet, Web Wallet, Paper Wallet, Zero Wallet, GUI Wallet, CLI Wallet et notre plateforme de vote !",
+	"releases-menu-1":		"Communiqués",
+	"releases-menu-2":		"Discussions sur le développement", 
+	"releases-menu-3":		"Vote de la communauté",
+	"releases-wallet-web-title":	"Portefeuille mobile et Web", 
+	"releases-wallet-web-desc":		"Portefeuille mobile et Web Qwertycoin",
+	"releases-wallet-gui-title":	"Portefeuille GUI",
+	"releases-wallet-gui-desc":		"Portefeuille classique Qwertycoin Graphic UI (Desktop)",
+	"releases-wallet-paper-title":	"Portefeuille en papier",
+	"releases-wallet-paper-desc":	"Tous les communiqués de Qwertycoin et Paper Wallet",
+	"releases-wallet-cli-title":	"Portefeuille CLI",
+	"releases-wallet-cli-desc":		"Qwertycoin >_Command-line Suite Wallet (Échanges, Masternodes, Services)",
+	"releases-wallet-zero-title":	"Portefeuille zéro",
+	"releases-wallet-zero-desc":	"Nouveau porte-monnaie Qwertycoin Light (Desktop)",
+	"releases-wallet-qwcx-title":	"QWCX",
+	"releases-wallet-qwcx-desc":	"– Portefeuille multiplateforme Qwertycoin",
+	"releases-votingplatform-title":	"Plate-forme de vote",
+	"releases-votingplatform-desc":	"Plate-forme de vote Qwertycoin (votez pour les décisions de la communauté)",
+
+	"environment-title":			"Environnement Qwertycoin",
+	"environment-slogan":			"L'équipe s'agrandit dans le monde entier. Découvrez nos descriptions de postes et contactez-nous.",
+	"environment-menu-environment":	"Environnement",
+	"environment-menu-mining":		"Mining",
+	"environment-menu-marketplaces":"Places de marché",
+	"environment-menu-exchanges":	"Echanges",
+	"environment-menu-partnerships":"Partenariats",
+
+	"community-title":				"Communauté Qwertycoin",
+	"community-slogan":				"Rejoignez les discussions de la communauté 24/7 pour être au courant de tous les derniers sujets.",
+	"community-telegram-title":		"Communauté des Telegram",
+	"community-menu-general":		"Général",
+	"community-menu-groupsbycountry":"Groupes par pays",
+
+	"development-title":			"Développement de Qwertycoin",
+	"development-slogan":			"Tout le monde peut contribuer à Qwertycoin et participer à la construction d'un service de blockchain.",
+
+	"development-menu-title":		"Développement",
+	"development-menu-1-title":		"Whitepaper",
+	"development-menu-1-desc":		"Qwertycoin Whitepaper",
+	"development-menu-2-title":		"Marque",
+	"development-menu-2-desc":		"Marque et actifs de Qwertycoin",
+	"development-menu-3-title":		"Github",
+	"development-menu-3-desc":		"Dépôts de Qwertycoin",
+	"development-menu-4-title":		"Blockchain",
+	"development-menu-4-desc":		"Qwertycoin Blockchain",
+	"development-menu-5-title":		"Docs",
+	"development-menu-5-desc":		"Qwertycoin Documentations",
+	"development-menu-6-title":		"Communiqués",
+	"development-menu-6-desc":		"Communiqués de presse Qwertycoin",
+
+	"team-core-title":				"Équipe de base",
+	"team-core-slogan":				"Fournir des solutions simples et pertinentes en combinant le meilleur des opérations du monde réel avec des technologies de pointe.",
+
+	"contributors-title":			"Contributeur :",
+	"contributors-external":		"(Contributeur externe)",
+
+	"backlog-title":				"Carnet de développement",
+
+	"team-desc-alex":				"Fondateur et développeur principal",
+	"team-desc-xecute":				"Chef d'équipe et responsable des finances",
+	"team-desc-dennis":				"Communication par échange",
+	"team-desc-jordan":				"Précédent Webmaster",
+	"team-desc-jefflee":			"IT & Infrastructures",
+	"team-desc-jeka":			"Cofondateur, ancien développeur",
+	"team-desc-pascal":				"Administrateur système",
+	"team-desc-ghost":				"Conception et graphisme",
+	"team-desc-pauloliva":			"Auteur",
+	"team-desc-exploshot":			"Développeur mobile",
+
+	"general-joinus":				"Rejoignez-nous",
+	"general-trackingkey":			"Clé de suivi",
+
+	"backlog-19-title":	"Version QWC v6.0.0",
+	"backlog-19-desc":	"Nous avons modifié le consensus Qwertycoin. Pour en savoir plus, consultez notre <a href=\"https://wp.qwertycoin.org/\">Whitepaper</a>",
+
+	"backlog-18-title":	"Actualisation du site web",
+	"backlog-18-desc":	"Nous sommes passés à un site web open source Version sur GitHub. Participez ici : <a href=\"https://github.com/qwertycoin-org/qwertycoin-org.github.io\" target=\"_blank\">Qwertycoin</a>",
+
+	"backlog-17-title":	"de fin 2019 à mai 2020",
+	"backlog-17-desc":	"Nous avons remodelé nos dépôts de base pour un style de codage de meilleure qualité",
+
+	"backlog-16-title":	"CoinMarketCap Listing!",
+	"backlog-16-desc":	"Après un long voyage, nous avons été inscrits sur le site <a href=\"https://coinmarketcap.com/currencies/qwertycoin/\" target=\"_blank\">coinmarketcap.com</a>",
+
+	"backlog-15-title":	"Communiqué : Plate-forme de vote",
+	"backlog-15-desc":	"Bienvenue sur QWP (<a href=\"https://voting.qwertycoin.org/\" target=\"_blank\">Qwertycoin Voting Plattform</a>). Cette plateforme permet aux membres de participer.",
+
+	"backlog-14-title":	"BiteBTC Listing",
+	"backlog-14-desc":	"Qwertycoin a été lancé sur l'échange BiteBTC avec une paire BCH, ETH et DASH!",
+
+	"backlog-13-title":	"Qwertycoin v4.0.0",
+	"backlog-13-desc":	"Passage à la lumière crypté-lourd / résistant aux ASIC SUR HAUTEUR <a href=\"https://explorer.qwertycoin.org/?hash=da28b56d63c1be49b6c89f16b4c3d2da3da14dcc98ec38079aedef9b83e627ce#blockchain_block\" target=\"_blank\">110 520</a>",
+
+	"backlog-12-title":	"Bitexlive Listing",
+	"backlog-12-desc":	"Qwertycoin a été lancé sur l'échange Bitexlive avec la paire BTC et DOGE",
+
+	"backlog-11-title":	"Crex24 Listing",
+	"backlog-11-desc":	"Le Qwertycoin a été lancé sur la bourse Crex24",
+
+	"backlog-10-title":	"AltEx Listing",
+	"backlog-10-desc":	"La cotation sur l'AltExchange a eu lieu. (Exit Scam en juillet 2018)",
+
+	"backlog-09-title":	"2ème cotation en bourse",
+	"backlog-09-desc":	"Bourse CREP (la bourse a cessé de fonctionner en avril 2018)",
+
+	"backlog-08-title":	"1ère cotation en bourse",
+	"backlog-08-desc":	"Inscription préliminaire du Qwertycoin sur la bourse appelée <b>Octaex</b>”",
+
+	"backlog-07-title":	"Sortie du portefeuille de bureau",
+	"backlog-07-desc":	"Nouveaux portefeuilles pour Windows, MacOS et Ubuntu",
+
+	"backlog-06-title":	"Hardfork 1 à la hauteur 8473",
+	"backlog-06-desc":	"Hardfork a été fait pour corriger un bug vanille majeur CryptoNote",
+
+	"backlog-05-title":	"Explorateur officiel de blocs",
+	"backlog-05-desc":	"Nouvel explorateur de blocs autonome : <a target=\"_blank\" href=\"https://explorer.qwertycoin.org/\">explorer.qwertycoin.org</a>",
+
+	"backlog-04-title":	"Le Qwertycoin s'internationalise",
+	"backlog-04-desc":	"Le fil de discussion de l'annonce sur Bitcointalk.org",
+
+	"backlog-03-title":	"Premier bloc",
+	"backlog-03-desc":	"Le premier bloc de Qwertycoin a été extrait",
+
+	"backlog-02-title":	"Qwertycoin entre en bourse",
+	"backlog-02-desc":	"Le site officiel du projet, Qwertycoin.org, a été publié",
+
+	"backlog-01-title":	"Planification de Qwertycoin",
+	"backlog-01-desc":	"Début du projet et début du développement"
+
+}
