@@ -12,9 +12,11 @@ We're looking for Translators. Please help and translate our website to your loc
 #### Translations:
 - Chinese: [mainframer](https://github.com/mainframer)
 - English: [Nnian, Qwertycoin](https://github.com/qwertycoin-org)
+- French: [christelleleroy92](https://github.com/christelleleroy92)
 - German: [Nnian, Qwertycoin](https://github.com/qwertycoin-org)
-- Hebrew: [Partial done, need some work to complete task](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/he.json)
 - Italian: Wintox, Telegram User
+- Romania: [ghostx1x](https://github.com/ghostx1x)
+- Russian: [Aiwe](https://github.com/aivve), [Hamanosh](https://github.com/Hamanosh)
 - Spanish: [coinvigilante, Telegram](https://www.coinvigilante.com/)
 
 #### Incomplete Translations:
@@ -23,7 +25,6 @@ We're looking for Translators. Please help and translate our website to your loc
 - [BN - Bengali](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/bn.json)
 - [FA - Farsi](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/fa.json)
 - [FI - Finnish](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/fi.json)
-- [FR - French](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/fr.json)
 - [HE - Hebrew (partially done)](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/he.json)
 - [JA - Japanese ](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/ja.json)
 - [KO - Korean ](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/ko.json)
