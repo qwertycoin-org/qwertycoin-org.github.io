@@ -10,6 +10,7 @@ We're looking for Translators. Please help and translate our website to your loc
 - [Nnian - Qwertycoin](https://github.com/qwertycoin-org)
 
 #### Translations:
+- Arabic: [daoudhichem](https://github.com/daoudhichem)
 - Chinese: [mainframer](https://github.com/mainframer)
 - English: [Nnian, Qwertycoin](https://github.com/qwertycoin-org)
 - French: [christelleleroy92](https://github.com/christelleleroy92)
@@ -20,7 +21,6 @@ We're looking for Translators. Please help and translate our website to your loc
 - Spanish: [coinvigilante, Telegram](https://www.coinvigilante.com/)
 
 #### Incomplete Translations:
-- [AR - Arabic](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/ar.json)
 - [BH - Bhojpuri](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/bh.json)
 - [BN - Bengali](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/bn.json)
 - [FA - Farsi](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/fa.json)

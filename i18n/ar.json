@@ -1,15 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"nnian"
+			"daoudhichem"
 		],
-		"last-updated": "2020-09-02",
+		"last-updated": "2021-03-20",
 		"locale": "ar",
 		"usecase": "Arabic",
 		"message-documentation": "qqq"
 	},
 	"website-title":		"Qwertycoin هي عملة رقمية آمنة وسهلة الاستخدام في جميع أنحاء العالم.",
-	"website-desc":		"صندوق الامانات. بسيطه. سلس. تامين. Qwertycoin هو لا مركزي القائم على المجتمع الند للند بروتوكول للمدفوعات الآمنة في جميع أنحاء العالم. عملة مشفرة آمنة ومجهولة الهوية، تم بناؤها مع التركيز على الديمقراطية والخصوصية. المساهمة في Github Qwertycoin Releases about Qwertycoin Qwertycoin هي "عملة مشفرة لا مركزية حقيقية للمجتمع" ، وهي "أصل رقمي لامركزي" مثل Bitcoin. "لا أحد يملك أو يتحكم في Qwertycoin".",
+	"website-desc":			"Qwertycoin is a secure and anonymous cryptocurrency built with a focus on democracy and privacy. QWC is a real decentralized community Cryptocurrency. Nobody owns or controls Qwertycoin",
 
 	"menu-about":			"حولنا",
 	"menu-releases":		"الاصدارات",
@@ -21,24 +21,24 @@
 	"menu-editwebsite":		"تحرير هذا الموقع",
 
 	"hero-slogan":			"صندوق الامانات. بسيطه. سلس. تامين.",
-	"hero-slogan2":			"Qwertycoin هو نظير لا مركزي للند protocal للدفع الآمن والاتصالات في جميع أنحاء العالم.",
+	"hero-slogan2":			"Qwertycoin هو نظير لا مركزي للند protocol للدفع الآمن والاتصالات في جميع أنحاء العالم.",
 	"hero-button1":			"Contribute في Github",
 	"hero-button2":			"تحميل المحفظة",
 
 	"about-title":			"حول Qwertycoin",
-	"about-slogan":			"Qwertycoin هو "حقيقي المجتمع اللامركزي Cryptocurrency"، "الأصول الرقمية اللامركزية" مثل بيتكوين. "لا أحد يملك أو يتحكم في Qwertycoin".",
+	"about-slogan":			"Qwertycoin هو \"حقيقي المجتمع اللامركزي Cryptocurrency\"، \"الأصول الرقمية اللامركزية^\" مثل بيتكوين. \"لا أحد يملك أو يتحكم في Qwertycoin\".",
 	"about-fea-1-title":	"Open-Source منصه",
-	"about-fea-1-desc":		"Qwertycoin هو عملة "لامركزية" تستند إلى "المصدر المفتوح" CryptoNote "منصة". يمكن للجميع البناء والمشاركة.",
+	"about-fea-1-desc":		"Qwertycoin هو عملة \"لامركزية\" تستند إلى \"المصدر المفتوح\" CryptoNote \"منصة\". يمكن للجميع البناء والمشاركة.",
 	"about-fea-2-title":	"المجتمع اللامركزي",
-	"about-fea-2-desc":		"Qwertycoin هو "لا" شركة خاصة ممولة من خلال ICO أو ما قبل التعدين. وتدعم التنمية "مجتمعها" الخاص.",
+	"about-fea-2-desc":		"Qwertycoin هو \"لا\" شركة خاصة ممولة من خلال ICO أو ما قبل التعدين. وتدعم التنمية \"مجتمعها\" الخاص.",
 	"about-fea-3-title":	"الديمقراطية والخصوصية",
-	"about-fea-3-desc":		"يمكن للأعضاء المشاركة في "قرارات مجتمعية" مهمة عن طريق التصويت. Qwertycoin تماما "لا يمكن تعقبها ومجهول".",
+	"about-fea-3-desc":		"يمكن للأعضاء المشاركة في \"قرارات مجتمعية\" مهمة عن طريق التصويت. Qwertycoin تماما \"لا يمكن تعقبها ومجهول\".",
 	"about-fea-4-title":	"إثبات المساواة في العمل (EPoW)",
-	"about-fea-4-desc": 	"CryptoNote التكنولوجيا يجلب المساواة في التصويت من خلال "إثبات المساواة للعمل" التي تستخدم لخوارزمية التعدين.",
+	"about-fea-4-desc": 	"CryptoNote التكنولوجيا يجلب المساواة في التصويت من خلال \"إثبات المساواة للعمل\" التي تستخدم لخوارزمية التعدين.",
 	"about-fea-5-title":	"معاملة فائقة السرعة",
-	"about-fea-5-desc":		"سرعات المعاملات هي "فائقة السرعة" مقارنة مع القطع النقدية الأخرى. تسمح تقنيتنا بتسريع أوقات تأكيد المعاملات.",
+	"about-fea-5-desc":		"سرعات المعاملات هي \"فائقة السرعة\" مقارنة مع القطع النقدية الأخرى. تسمح تقنيتنا بتسريع أوقات تأكيد المعاملات.",
 	"about-fea-6-title":	"إثبات الخدمة على المساواة (EPoSe)",
-	"about-fea-6-desc":		"توزيع رسوم المعاملات من Qwertycoin بين "Masternodes" على أساس وقت التشغيل كمقياس لـ "الخدمة".",
+	"about-fea-6-desc":		"توزيع رسوم المعاملات من Qwertycoin بين \"Masternodes\" على أساس وقت التشغيل كمقياس لـ \"الخدمة\".",
 
 	"releases-title":		"Qwertycoin الاصدارات",
 	"releases-slogan":		"احصل على أحدث إصدار من Qwertycoin – محفظة الجوال، محفظة الويب، محفظة الورق، محفظة الصفر، محفظة GUI، محفظة CLI ومنصة التصويت لدينا!",
@@ -114,7 +114,7 @@
 	"general-trackingkey":			"مفتاح التعقب",
 
 	"backlog-19-title":	"الافراج عن QWC v6.0.0",
-	"backlog-19-desc":	"لقد غيرنا إجماع "كيورتيكوين". اقرأ المزيد في < href ="https://wp.qwertycoin.org/">والتي في الورقة</a>",
+	"backlog-19-desc":	"لقد غيرنا إجماع \"كيورتيكوين\". اقرأ المزيد في < href =\"https://wp.qwertycoin.org/\">والتي في الورقة</a>",
 
 	"backlog-18-title":	"تحديث موقع الويب",
 	"backlog-18-desc":	"لقد تحولنا إلى موقع مفتوح المصدر الإصدار على GitHub. شارك هنا: <a href=\"https://github.com/qwertycoin-org/qwertycoin-org.github.io\" target=\"_blank\">Qwertycoin</a>",
@@ -153,7 +153,7 @@
 	"backlog-07-desc":	"محافظ جديدة لنظام التشغيل Windows، MacOS و Ubuntu",
 
 	"backlog-06-title":	"هاردفورك 1 عند الارتفاع 8473",
-	"backlog-06-desc":	"تم إجراء Hardfork لإصلاح الرئيسية "علة الفانيليا" CryptoNote",
+	"backlog-06-desc":	"تم إجراء Hardfork لإصلاح الرئيسية \"علة الفانيليا\" CryptoNote",
 
 	"backlog-05-title":	"مستكشف كتلة الرسمية",
 	"backlog-05-desc":	"مستكشف كتلة مستقل جديد: <a target=\"_blank\" href=\"https://explorer.qwertycoin.org/\">explorer.qwertycoin.org</a>",
