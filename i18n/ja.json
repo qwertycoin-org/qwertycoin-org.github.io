@@ -113,6 +113,12 @@
 	"general-joinus":				"Join Us",
 	"general-trackingkey":			"Tracking Key",
 
+	"backlog-21-title":	"Qwertycoin 2021",
+	"backlog-21-desc":	"We increased our network strength for more stability and improved performance for future usecases.",
+
+	"backlog-20-title":	"Planning of QWC V7",
+	"backlog-20-desc":	"We started to redesign our consensus technology. Read more in our <a href=\"https://wp.qwertycoin.org/\">Whitepaper</a>",
+
 	"backlog-19-title":	"Release QWC v6.0.0",
 	"backlog-19-desc":	"We changed the Qwertycoin Consensus. Read more in our <a href=\"https://wp.qwertycoin.org/\">Whitepaper</a>",
 

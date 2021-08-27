@@ -114,6 +114,12 @@
 	"general-joinus":	"Alăturați-ne",
 	"general-trackingkey":	"Cheie de urmărire",
 
+	"backlog-21-title":	"Qwertycoin 2021",
+	"backlog-21-desc":	"We increased our network strength for more stability and improved performance for future usecases.",
+
+	"backlog-20-title":	"Planning of QWC V7",
+	"backlog-20-desc":	"We started to redesign our consensus technology. Read more in our <a href=\"https://wp.qwertycoin.org/\">Whitepaper</a>",
+
 	"backlog-19-title":	"Lansați QWC v6.0.0",
 	"backlog-19-desc":	"Am schimbat consensul Qwertycoin. Citiți mai multe în <a href=\"https://wp.qwertycoin.org/\">Whitepaper</a>",
 
