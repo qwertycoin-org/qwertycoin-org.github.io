@@ -100,25 +100,36 @@
   "general-joinus": "Unete a Nosotros",
   "general-trackingkey": "Clave de seguimiento",
 
+  "backlog-22-title": "Qwertycoin v6.0.7",
+  "backlog-22-desc":  "Release v6.0.7 for better peer handling and synchronization speed.",
+
   "backlog-21-title": "Qwertycoin 2021",
   "backlog-21-desc":  "We increased our network strength for more stability and improved performance for future usecases.",
 
   "backlog-20-title": "Planning of QWC V7",
   "backlog-20-desc":  "We started to redesign our consensus technology. Read more in our <a href=\"https://wp.qwertycoin.org/\">Whitepaper</a>",
+
   "backlog-19-title": "Lanzamiento QWC v6.0.0",
   "backlog-19-desc": "Cambiamos el Consenso de Qwertycoin. Leer más en nuestro <a href=\"https://wp.qwertycoin.org/\">Whitepaper</a>",
+
   "backlog-18-title": "Actualización del sitio web",
   "backlog-18-desc": "Cambiamos a una versión de sitio web de código abierto en GitHub. Participa aquí: <a href=\"https://github.com/qwertycoin-org/qwertycoin-org.github.io\" target=\"_blank\">Qwertycoin</a>",
+
   "backlog-17-title": "Finales de 2019 a mayo de 2020",
   "backlog-17-desc": "Rediseñamos nuestros repositorios centrales a un estilo de codificación de mayor calidad",
+
   "backlog-16-title": "Cotización en CoinMarketCap!",
   "backlog-16-desc": "Después de un largo viaje, fuimos incluidos en  <a href=\"https://coinmarketcap.com/currencies/qwertycoin/\" target=\"_blank\">coinmarketcap.com</a>",
+
   "backlog-15-title": "Lanzamiento: Plataforma de Votación",
   "backlog-15-desc": "Bienvenido a QWP (<a href=\"https://voting.qwertycoin.org/\" target=\"_blank\">Qwertycoin Voting Plattform</a>). Esta plataforma permite a los miembros participar.",
+
   "backlog-14-title": "Cotización BiteBTC",
   "backlog-14-desc": "Qwertycoin se lanzó en el Intercambio de BiteBTC con un par en BCH, ETH y DASH!",
+
   "backlog-13-title": "Qwertycoin v4.0.0",
   "backlog-13-desc": "Cambio a Cryptonight-Heavy / ASIC Resistant EN ALTURA <a href=\"https://explorer.qwertycoin.org/?hash=da28b56d63c1be49b6c89f16b4c3d2da3da14dcc98ec38079aedef9b83e627ce#blockchain_block\" target=\"_blank\">110,520</a>",
+
   "backlog-12-title": "Cotización Bitexlive",
   "backlog-12-desc": "Qwertycoin se lanzó en el Intercambio Bitexlive con par BTC y DOGE",
   "backlog-11-title": "Cotización Crex24",

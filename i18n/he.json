@@ -113,7 +113,10 @@
 	"general-joinus": "הצטרף אלינו",
 	"general-trackingkey": "מפתח מעקב",
 
-	"backlog-21-title":	"Qwertycoin 2021",
+	"backlog-22-title":	"Qwertycoin v6.0.7",
+"backlog-22-desc":	"Release v6.0.7 for better peer handling and synchronization speed.",
+
+"backlog-21-title":	"Qwertycoin 2021",
 	"backlog-21-desc":	"We increased our network strength for more stability and improved performance for future usecases.",
 
 	"backlog-20-title":	"Planning of QWC V7",
