@@ -100,7 +100,10 @@
   "general-joinus": "Unete a Nosotros",
   "general-trackingkey": "Clave de seguimiento",
 
-  "backlog-22-title": "Qwertycoin v6.0.8",
+  "backlog-23-title":	"Millionth Block",
+	"backlog-23-desc":	"We reached our 1,000,000 Block within a full stable Blockchain.",
+
+	"backlog-22-title": "Qwertycoin v6.0.8",
   "backlog-22-desc":  "Release v6.0.8 for better peer handling and synchronization speed.",
 
   "backlog-21-title": "Qwertycoin 2021",

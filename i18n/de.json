@@ -113,8 +113,11 @@
 	"general-joinus":				"Beitreten",
 	"general-trackingkey":			"Tracking Key",
 
+	"backlog-23-title":	"Der Millionste Block",
+	"backlog-23-desc":	"Block 1.000.000 wurde geschürft. Ein Erfolg für die QWC Blockchain.",
+
 	"backlog-22-title":	"Qwertycoin v6.0.8",
-	"backlog-22-desc":	"Release v6.0.8 mit besserer Verbindung und Geschwindigkeit.",
+	"backlog-22-desc":	"Release v6.0.8 mit verbesserter Performance.",
 
 	"backlog-21-title":	"Qwertycoin 2021",
 	"backlog-21-desc":	"Gesteigerte Netzwerk-Performance für mehr Stabilität und Sicherheit.",
