@@ -3,7 +3,7 @@
 		"authors": [
 			"nnian"
 		],
-		"last-updated": "2020-09-02",
+		"last-updated": "2023-11-05",
 		"locale": "de",
 		"usecase": "German",
 		"message-documentation": "qqq"
@@ -112,6 +112,12 @@
 
 	"general-joinus":				"Beitreten",
 	"general-trackingkey":			"Tracking Key",
+
+	"backlog-25-title":	"XEGGEX",
+	"backlog-25-desc":	"Neue Börsennotierung mit einem USDT- und DOGE-Paar macht den Wechsel einfach.",
+	
+	"backlog-24-title":	"QWC",
+	"backlog-24-desc":	"Verlust von Exchanges wegen rechtlicher Anpassungen, die Community steht hinter QWC.",
 
 	"backlog-23-title":	"Der Millionste Block",
 	"backlog-23-desc":	"Block 1.000.000 wurde geschürft. Ein Erfolg für die QWC Blockchain.",

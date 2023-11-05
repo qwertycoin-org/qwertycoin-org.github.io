@@ -113,8 +113,14 @@
 	"general-joinus":	"Join Us",
 	"general-trackingkey":	"Tracking Key",
 
+	"backlog-25-title":	"XEGGEX",
+	"backlog-25-desc":	"New Exchange Listing with an USDT and DOGE Pairing - Trading with QWC is easy again.",
+
+	"backlog-24-title":	"Rebuild QWC",
+	"backlog-24-desc":	"Loss of Exchanges, due to legal adjustment, but community was always behind QWC.",
+
 	"backlog-23-title":	"Millionth Block",
-	"backlog-23-desc":	"We reached our 1,000,000 Block within a full stable Blockchain.",
+	"backlog-23-desc":	"We reached our 1,000,000 Block in a stable Blockchain. Network is more stable than ever!",
 
 	"backlog-22-title":	"Qwertycoin v6.0.8",
 "backlog-22-desc":	"Release v6.0.8 for better peer handling and synchronization speed.",
