@@ -8,6 +8,7 @@ We're looking for Translators. Please help and translate our website to your loc
 
 #### Developers:
 - [Nnian - Qwertycoin](https://github.com/qwertycoin-org)
+- Swordfish
 
 #### Translations:
 - Arabic: [daoudhichem](https://github.com/daoudhichem)
@@ -42,13 +43,13 @@ We're looking for Translators. Please help and translate our website to your loc
 ### Donate
 
 ```
-QWC: QWC1K6XEhCC1WsZzT9RRVpc1MLXXdHVKt2BUGSrsmkkXAvqh52sVnNc1pYmoF2TEXsAvZnyPaZu8MW3S8EWHNfAh7X2xa63P7Y
+QWCT: 0x31eD4c875763A7134651BF1ABc1efD61236Fe80c
 ```
 ```
 BTC: 1DkocMNiqFkbjhCmG4sg9zYQbi4YuguFWw
 ```
 ```
-ETH: 0xA660Fb28C06542258bd740973c17F2632dff2517
+ETH: 0x31eD4c875763A7134651BF1ABc1efD61236Fe80c
 ```
 ```
 BCH: qz975ndvcechzywtz59xpkt2hhdzkzt3vvt8762yk9
