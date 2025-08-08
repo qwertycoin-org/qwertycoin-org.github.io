@@ -1,0 +1,13 @@
+name: qwertycoin-org
+recipe: lamp
+config:
+  webroot: public
+  xdebug: true
+proxy:
+  appserver:
+    - qwertycoin-org.lndo.site
+
+tooling:
+  composer:
+    service: appserver
+
