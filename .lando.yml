@@ -1,7 +1,7 @@
 name: qwertycoin-org
 recipe: lamp
 config:
-  webroot: public
+  webroot: .
   xdebug: true
 proxy:
   appserver:
@@ -10,4 +10,3 @@ proxy:
 tooling:
   composer:
     service: appserver
-
