@@ -4,7 +4,37 @@
 This Repository is for our official website. Everyone can participate.
 We're looking for Translators. Please help and translate our website to your local language.
 
-### Contributors and thanks
+## 1. Install Lando
+Download and install Lando from the official site:  
+🔗 [https://docs.lando.dev/getting-started/installation.html](https://docs.lando.dev/getting-started/installation.html)  
+
+Choose the correct package for your operating system (macOS, Windows, or Linux) and follow the installer instructions.
+
+## 2. Clone the Repository
+If you haven’t already cloned the project:
+```bash
+git clone https://github.com/qwertycoin-org/qwertycoin-org.github.io
+cd qwertycoin-org
+```
+
+## 3. Start the Lando Environment
+From inside the project directory:
+
+```bash
+lando start
+```
+
+Lando will:
+- Download and configure the required services.
+- Create a local development URL.
+
+## 4. Access the Website
+After startup, Lando will display the local URLs.
+By default, you can open:
+
+https://qwertycoin-org.lndo.site
+
+# Contributors and thanks
 
 #### Developers:
 - [Nnian - Qwertycoin](https://github.com/qwertycoin-org)
