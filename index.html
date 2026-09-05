@@ -1,1955 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- Required meta tags -->
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title data-i18n="website-title">Qwertycoin is a secure and user-friendly worldwide digital currency.</title>
-    <meta name="description" content="Qwertycoin is a decentralized communited based cryptocurrency for safe payments worldwide, built with a focus on democracy and privacy." />
-    <link rel="alternate" hreflang="ar" href="https://qwertycoin.org?lang=ar" />
-    <link rel="alternate" hreflang="zh" href="https://qwertycoin.org?lang=zh" />
-    <link rel="alternate" hreflang="de" href="https://qwertycoin.org?lang=de" />
-    <link rel="alternate" hreflang="it" href="https://qwertycoin.org?lang=it" />
-    <link rel="alternate" hreflang="he" href="https://qwertycoin.org?lang=he" />
-    <link rel="alternate" hreflang="es" href="https://qwertycoin.org?lang=es" />
-    <link rel="alternate" hreflang="ro" href="https://qwertycoin.org?lang=ro" />
-    <link rel="alternate" hreflang="ru" href="https://qwertycoin.org?lang=ru" />
-    <link rel="alternate" hreflang="hi" href="https://qwertycoin.org?lang=hi" />
-    <link rel="alternate" hreflang="fr" href="https://qwertycoin.org?lang=fr" />
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="https://qwertycoin.org/" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Qwertycoin is a secure and user-friendly worldwide digital currency." />
-    <meta property="og:description" content="Qwertycoin is a decentralized communited based cryptocurrency for safe payments worldwide, built with a focus on democracy and privacy." />
-    <meta property="og:url" content="https://qwertycoin.org/" />
-    <meta property="og:site_name" content="Qwertycoin Organization" />
-    <meta property="article:publisher" content="https://www.facebook.com/qwertycoin/" />
-    <meta property="article:author" content="https://www.facebook.com/qwertycoin/" />
-    <meta property="article:published_time" content="2021-08-26T17:33:43+00:00" />
-    <meta property="article:modified_time" content="2021-08-26T17:33:43+00:00" />
-    <meta property="og:image" content="https://qwertycoin.org/img/og/ogimage.jpg" />
-    <meta property="og:image:width" content="2048" />
-    <meta property="og:image:height" content="1366" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="@Qwertycoin_QWC" />
-    <meta name="twitter:site" content="@Qwertycoin_QWC" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/brands.min.css">
-    <!-- Icons -->
-    <link rel="icon" href="https://qwertycoin.org/img/og/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" href="https://qwertycoin.org/img/og/favicon-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="https://qwertycoin.org/img/og/favicon-180x180.png" />
-    <meta name="msapplication-TileImage" content="https://qwertycoin.org/img/og/favicon-270x270.png" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
-    <!-- javascript -->
-    <!-- Google CDN jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
-    <script src="./js/checkLang.js"></script>
-</head>
-
-<body>
-    <main>
-        <header class="header">
-            <div class="header__container container container-sm">
-                <div class="header__row">
-                    <div class="header__block">
-                        <nav id="navigation-menu" class="navbar navbar-expand-lg navbar-dark menu">
-                            <a class="navbar-brand" href="#">
-                                <div class="logo">
-                                    <img src="./img/logo.png" alt="Qwertycoin" class="logo__img">
-                                </div>
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <div class="navbar-nav menu__item">
-                                    <a class="nav-item nav-link active menu__link" href="#about" data-i18n="menu-about">About</a>
-                                    <a class="nav-item nav-link menu__link" href="#releases" data-i18n="menu-releases">Releases</a>
-                                    <a class="nav-item nav-link menu__link" href="#envir" data-i18n="menu-environment">Environment</a>
-                                    <a class="nav-item nav-link menu__link" href="#community" data-i18n="menu-community">Community</a>
-                                    <a class="nav-item nav-link menu__link" href="#development" data-i18n="menu-development">Development</a>
-                                    <!-- TODO: Implement jekyll blog
-                                <a class="nav-item nav-link menu__link" href="#">News</a>
-                                -->
-                                    <div class="locale-switcher nav-item dropdown">
-                                        <span class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Lang</span>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="dropdown-item" href="/?lang=en" data-locale="en"><b>EN</b></a>
-                                            <a class="dropdown-item" href="/?lang=ar" data-locale="ar">AR</a>
-                                            <a class="dropdown-item" href="/?lang=zh" data-locale="zh">CN</a>
-                                            <a class="dropdown-item" href="/?lang=de" data-locale="de">DE</a>
-                                            <a class="dropdown-item" href="/?lang=fr" data-locale="fr">FR</a>
-                                            <a class="dropdown-item" href="/?lang=it" data-locale="it">IT</a>
-                                            <a class="dropdown-item" href="/?lang=he" data-locale="he">HE</a>
-                                            <a class="dropdown-item" href="/?lang=es" data-locale="es">ES</a>
-                                            <a class="dropdown-item" href="/?lang=ru" data-locale="ru">RU</a>
-                                            <a class="dropdown-item" href="/?lang=hi" data-locale="hi">HI</a>
-                                            <a class="dropdown-item" href="/?lang=ro" data-locale="ro">RO</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!---- Content ---->
-        <div id="content" class="content">
-            <!---- Hero ---->
-            <section class="hero">
-                <div class="hero__bg-img">
-                    <div class="hero__container container container-sm">
-                        <div class="hero__row row">
-                            <h1 class="hero__h1 col-12" data-i18n="hero-slogan">Safe. Simple. Seamless. Secure.</h1>
-                            <h2 class="hero__subtitle col-12" data-i18n="hero-slogan2">Qwertycoin is a a decentralized peer to peer protocal for safe payment and communication worldwide.</h2>
-                            <div class="hero__buttom">
-                                <a href="https://github.com/qwertycoin-org" target="_blank" class="buttom_normal">
-                                    <span><i aria-hidden="true" class="fab fa-github"></i></span>
-                                    <span data-i18n="hero-button1">Contribute on Github</span></a>
-                                <a href="#releases" class="buttom_outline">
-                                    <span><i aria-hidden="true" class="fas fa-file-code"></i></span>
-                                    <span data-i18n="hero-button2">Download Wallet</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!---- Hero ---->
-            <!---- About ---->
-            <section id="about" class="about">
-                <div class="about__container container">
-                    <div class="about__row row">
-                        <h2 class="about__title title col-lg-12 col-md-12 col-12" data-i18n="about-title">About Qwertycoin</h2>
-                        <div class="about__subtitle subtitle justify-content-center col-12 col-lg-6 col-md-6" data-i18n="about-slogan">Qwertycoin is a “real decentralized community Cryptocurrency”, a “decentralized digital asset” like Bitcoin. “Nobody owns or controls Qwertycoin”.</div>
-                    </div>
-                    <div class="about__row">
-                        <div class="about__column">
-                            <div class="about__item-row about__item-row_one row">
-                                <div class="item-about col-sm-6 col-md-4 col-lg-4 col-12">
-                                    <div class="item-about__icon">
-                                        <img src="./img/about_il_01.svg" alt="Open-Source Platform" class="item-about__img">
-                                    </div>
-                                    <div class="item-about__title" data-i18n="about-fea-1-title">Open-Source Platform</div>
-                                    <div class="item-about__text" data-i18n="about-fea-1-desc">Qwertycoin is a “decentralized” currency based on an “Open-Source” CryptoNote “Platform”. Everyone can build and participate.</div>
-                                </div>
-                                <div class="item-about col-sm-6 col-md-4 col-lg-4 col-12">
-                                    <div class="item-about__icon">
-                                        <img src="./img/about_il_02.svg" alt="Decentralized Community" class="item-about__img">
-                                    </div>
-                                    <div class="item-about__title" data-i18n="about-fea-2-title">Decentralized Community</div>
-                                    <div class="item-about__text" data-i18n="about-fea-2-desc">Qwertycoin is “not” a private company funded through an ICO or pre-mining. Development is supported by its own “Community”.</div>
-                                </div>
-                                <div class="item-about col-sm-6 col-md-4 col-lg-4 col-12">
-                                    <div class="item-about__icon">
-                                        <img src="./img/about_il_03.svg" alt="Democracy and Privacy" class="item-about__img">
-                                    </div>
-                                    <div class="item-about__title" data-i18n="about-fea-3-title">Democracy and Privacy</div>
-                                    <div class="item-about__text" data-i18n="about-fea-3-desc">Members can participate in important “community decisions” via voting. Qwertycoin is totally “untraceable and anonymous”.</div>
-                                </div>
-                            </div>
-                            <div class="about__item-row row">
-                                <div class="item-about col-sm-6 col-md-4 col-lg-4 col-12">
-                                    <div class="item-about__icon">
-                                        <img src="./img/about_il_04.svg" alt="Egalitarian Proof of Work (EPoW)" class="item-about__img">
-                                    </div>
-                                    <div class="item-about__title" data-i18n="about-fea-4-title">Egalitarian Proof of Work (EPoW)</div>
-                                    <div class="item-about__text" data-i18n="about-fea-4-desc">CryptoNote Technology brings the voting equality through “Egalitarian Proof of Work” that utilizes for mining algorithm.</div>
-                                </div>
-                                <div class="item-about col-sm-6 col-md-4 col-lg-4 col-12">
-                                    <div class="item-about__icon">
-                                        <img src="./img/about_il_05.svg" alt="Ultra-Fast Transaction" class="item-about__img">
-                                    </div>
-                                    <div class="item-about__title" data-i18n="about-fea-5-title">Ultra-Fast Transaction</div>
-                                    <div class="item-about__text" data-i18n="about-fea-5-desc">Transaction speeds are “Ultra-Fast” compared to other coins. Our technology allows fast transaction confirmation times.</div>
-                                </div>
-                                <div class="item-about col-sm-6 col-md-4 col-lg-4 col-12">
-                                    <div class="item-about__icon">
-                                        <img src="./img/about_il_06.svg" alt="Egalitarian Proof of Service (EPoSe)" class="item-about__img">
-                                    </div>
-                                    <div class="item-about__title" data-i18n="about-fea-6-title">Egalitarian Proof of Service (EPoSe)</div>
-                                    <div class="item-about__text" data-i18n="about-fea-6-desc">Qwertycoin’s transaction fee distribution among “Masternodes” based on Uptime as a measure of “Service”.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about__img-bg">
-                        <img class="about__img-svg" src="./img/about_bg-01_img.svg" alt="About">
-                        <img class="about__img-svg_mobile" src="./img/about_bg_img-mobile.svg" alt="About">
-                    </div>
-                </div>
-            </section>
-            <!---- About ---->
-            <!---- Qwertycoin Releases ---->
-            <section id="releases" class="releases">
-                <div class="releases__container container">
-                    <div class="releases__row ">
-                        <h2 class="releases__title title" data-i18n="releases-title">Qwertycoin Releases</h2>
-                        <div class="releases__subtitle subtitle" data-i18n="releases-slogan">Get the latest release from Qwertycoin – Mobile Wallet, Web Wallet, Paper Wallet, Zero Wallet, GUI Wallet, CLI Wallet and our Voting Platform!</div>
-                    </div>
-                    <div class="releases__row">
-                        <div class="releases__wrapper row">
-                            <div class="releases__col col col-md-3 col-lg-4">
-                                <div id="navigation-menu" class="releases__menu">
-                                    <ul class="releases__menu-block">
-                                        <li class="releases__linl">
-                                            <a href="#menu-1" class="scroll-to" data-i18n="releases-menu-1">Releases</a>
-                                        </li>
-                                        <li class="releases__linl">
-                                            <a href="#menu-2" class="scroll-to" data-i18n="releases-menu-2">Development Discussions</a>
-                                        </li>
-                                        <li class="releases__linl">
-                                            <a href="#menu-3" class="scroll-to" data-i18n="releases-menu-3">Community Voting</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="releases__col col-lg-8 col-md-9 col-lg-8">
-                                <div id="menu-1" class="releases__row row">
-                                    <div class="releases__item col col-12">
-                                        <div class="item-releases item-releases_mobile">
-                                            <div class="item-releases__title" data-i18n="releases-wallet-web-title">Mobile & Web Wallet</div>
-                                            <div class="item-releases__suntitle" data-i18n="releases-wallet-web-desc">Qwertycoin Mobile & Web Wallet</div>
-                                            <div class="item-releases__list-block">
-                                                <ul class="item-releases__list-item">
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://play.google.com/store/apps/details?id=org.qwertycoin.wallet&hl=en" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-google-play"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">Mobile</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/android/latest" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-android"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">APK (MIRROR)</span></a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://my.qwertycoin.org/" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fas fa-tablet-alt"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">Web</span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="item-releases item-releases_gui-Wallet">
-                                            <div class="item-releases__title" data-i18n="releases-wallet-gui-title">GUI Wallet</div>
-                                            <div class="item-releases__suntitle" data-i18n="releases-wallet-gui-desc">Classic Qwertycoin Graphic UI Wallet (Desktop)</div>
-                                            <div class="item-releases__list-block">
-                                                <ul class="item-releases__list-item">
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/gui/latest/win64" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-windows"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">Win</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/gui/latest/macos" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-apple"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">Mac</span></a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/gui/latest/linux/deb" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fas fab fa-linux"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">DEB</span></a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/gui/latest/linux/rpm" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fas fab fa-linux"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">RPM</span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="releases__item col col-xs-12">
-                                        <div class="item-releases item-releases_wallet">
-                                            <div class="item-releases__title" data-i18n="releases-wallet-paper-title">Paper Wallet</div>
-                                            <div class="item-releases__suntitle" data-i18n="releases-wallet-paper-desc">All Qwertycoin Releases and Paper Wallet</div>
-                                            <div class="item-releases__list-block">
-                                                <ul class="item-releases__list-item">
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-google-play"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">RELEASES</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://explorer.qwertycoin.org/#paperwallet" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-android"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">Paper</span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="item-releases item-releases_gli-Wallet">
-                                            <div class="item-releases__title" data-i18n="releases-wallet-cli-title">CLI Wallet</div>
-                                            <div class="item-releases__suntitle" data-i18n="releases-wallet-cli-desc">Qwertycoin >_Command-line Suite Wallet (Exchanges, Masternodes, Services)</div>
-                                            <div class="item-releases__list-block">
-                                                <ul class="item-releases__list-item">
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/cli/latest/win64" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-windows"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">Win</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/cli/latest/macos" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-apple"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">Mac</span></a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/cli/latest/linux/deb" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fas fab fa-linux"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">DEB</span></a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/cli/latest/linux/rpm" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fas fab fa-linux"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">RPM</span></a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/cli/latest/arm64" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fas fab fa-linux"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">ARM</span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="releases__item col col-xs-12">
-                                        <div class="item-releases item-releases_zero-wallet">
-                                            <div class="item-releases__title" data-i18n="releases-wallet-zero-title">Zero Wallet</div>
-                                            <div class="item-releases__suntitle" data-i18n="releases-wallet-zero-desc">New Qwertycoin Light Wallet (Desktop)</div>
-                                            <div class="item-releases__list-block">
-                                                <ul class="item-releases__list-item">
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/cli/latest/win64" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-windows"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">Win</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/cli/latest/macos" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-apple"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">Mac</span></a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/cli/latest/linux/deb" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fas fab fa-linux"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">DEB</span></a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/cli/latest/linux/rpm" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fas fab fa-linux"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">RPM</span></a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://releases.qwertycoin.org/get/cli/latest/arm64" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fas fab fa-linux"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">ARM</span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="item-releases item-releases_qwcx">
-                                            <div class="item-releases__title" data-i18n="releases-wallet-qwcx-title">QWCX</div>
-                                            <div class="item-releases__suntitle" data-i18n="releases-wallet-qwcx-desc">Qwertycoin Cross-Platform Wallet</div>
-                                            <div class="item-releases__list-block">
-                                                <ul class="item-releases__list-item">
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://github.com/qwertycoin-org/qwcx/issues/1" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-github"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">In development by Spectr.</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="menu-2" class="releases__row row">
-                                    <div class="releases__item col col-xs-12">
-                                        <div class="item-releases item-releases_movement">
-                                            <div class="item-releases__title"><a href="https://github.com/qwertycoin-org/qwertycoin/issues/78" title="read it on GitHub">EPoSe Movement #1</a></div>
-                                            <div class="item-releases__suntitle">Proposing Changes in Block Reward Related Equation.</div>
-                                        </div>
-                                        <div class="item-releases item-releases_movement">
-                                            <div class="item-releases__title"><a href="https://github.com/qwertycoin-org/qwertycoin/issues/95" title="read it on GitHub">EPoSe Movement #2</a></div>
-                                            <div class="item-releases__suntitle">Proposing Changes in Mixin.</div>
-                                        </div>
-                                    </div>
-                                    <div class="releases__item col">
-                                        <div class="item-releases item-releases_movement">
-                                            <div class="item-releases__title"><a href="https://github.com/qwertycoin-org/qwcx/issues/1" title="read it on GitHub">QWCX v1.0.0 Release (Discussion)</a></div>
-                                            <div class="item-releases__suntitle">Qwertycoin Cross-Platform Wallet.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="menu-3" class="releases__row row">
-                                    <div class="releases__item col col-xs-12">
-                                        <div class="item-releases item-releases_platform">
-                                            <div class="item-releases__title" data-i18n="releases-votingplatform-title">Voting Platform</div>
-                                            <div class="item-releases__suntitle" data-i18n="releases-votingplatform-desc">Qwertycoin Voting Platform (Vote for Community Decisions)</div>
-                                            <div class="item-releases__list-block">
-                                                <ul class="item-releases__list-item">
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://voting.qwertycoin.org/" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-google-play"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">Vote</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://voting.qwertycoin.org/api/" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-android"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">Api</span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="releases__wrapper-mobite">
-                            <ul class="nav nav-pills col-xs-12" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="pills-releases-tab" data-toggle="pill" href="#pills-releases" role="tab" aria-controls="pills-releases" aria-selected="true" data-i18n="releases-menu-1">Releases</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-development-tab" data-toggle="pill" href="#pills-development" role="tab" aria-controls="pills-development" aria-selected="false" data-i18n="releases-menu-2">Development Discussions</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-community-tab" data-toggle="pill" href="#pills-community" role="tab" aria-controls="pills-community" aria-selected="false" data-i18n="releases-menu-3">Community Voting</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <!-- Tab 1 -->
-                                <div class="tab-pane fade show active" id="pills-releases" role="tabpanel" aria-labelledby="pills-releases-tab">
-                                    <div class="releases__row row">
-                                        <div class="releases__item col col-12">
-                                            <div class="item-releases item-releases_mobile">
-                                                <div class="item-releases__title" data-i18n="releases-wallet-web-title">Mobile & Web Wallet</div>
-                                                <div class="item-releases__suntitle" data-i18n="releases-wallet-web-desc">Qwertycoin Mobile & Web Wallet</div>
-                                                <div class="item-releases__list-block">
-                                                    <ul class="item-releases__list-item">
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://play.google.com/store/apps/details?id=org.qwertycoin.wallet&hl=en" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fas fa-google-play"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">Mobile</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/android/latest" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fab fa-android"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">APK (MIRROR)</span></a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://my.qwertycoin.org/" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fas fa-tablet-alt"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">Web</span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="item-releases item-releases_gui-Wallet">
-                                                <div class="item-releases__title" data-i18n="releases-wallet-gui-title">GUI Wallet</div>
-                                                <div class="item-releases__suntitle" data-i18n="releases-wallet-gui-desc">Classic Qwertycoin Graphic UI Wallet (Desktop)</div>
-                                                <div class="item-releases__list-block">
-                                                    <ul class="item-releases__list-item">
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/gui/latest/win64" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fab fa-google-play"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">Win</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/gui/latest/macos" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fab fa-android"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">Mac</span></a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/gui/latest/linux/deb" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fas fa-tablet-alt"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">DEB</span></a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/gui/latest/linux/rpm" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fas fa-tablet-alt"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">RPM</span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="releases__item col col-12">
-                                            <div class="item-releases item-releases_wallet">
-                                                <div class="item-releases__title" data-i18n="releases-wallet-paper-title">Paper Wallet</div>
-                                                <div class="item-releases__suntitle" data-i18n="releases-wallet-paper-desc">All Qwertycoin Releases and Paper Wallet</div>
-                                                <div class="item-releases__list-block">
-                                                    <ul class="item-releases__list-item">
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fab fa-google-play"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">RELEASES</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://explorer.qwertycoin.org/#paperwallet" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fab fa-android"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">Paper</span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="item-releases item-releases_gli-Wallet">
-                                                <div class="item-releases__title" data-i18n="releases-wallet-cli-title">CLI Wallet</div>
-                                                <div class="item-releases__suntitle" data-i18n="releases-wallet-cli-desc">Qwertycoin >_Command-line Suite Wallet (Exchanges, Masternodes, Services)</div>
-                                                <div class="item-releases__list-block">
-                                                    <ul class="item-releases__list-item">
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/cli/latest/win64" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fab fa-google-play"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">Win</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/cli/latest/macos" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fab fa-android"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">Mac</span></a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/cli/latest/linux/deb" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fas fa-tablet-alt"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">DEB</span></a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/cli/latest/linux/rpm" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fas fa-tablet-alt"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">RPM</span></a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/cli/latest/arm64" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fas fa-tablet-alt"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">ARM</span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="releases__item col col-xs-12">
-                                            <div class="item-releases item-releases_zero-wallet">
-                                                <div class="item-releases__title" data-i18n="releases-wallet-zero-title">Zero Wallet</div>
-                                                <div class="item-releases__suntitle" data-i18n="releases-wallet-zero-desc">New Qwertycoin Light Wallet (Desktop)</div>
-                                                <div class="item-releases__list-block">
-                                                    <ul class="item-releases__list-item">
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/cli/latest/win64" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fab fa-windows"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">Win</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/cli/latest/macos" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fab fa-apple"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">Mac</span></a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/cli/latest/linux/deb" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fab fa-linux"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">DEB</span></a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/cli/latest/linux/rpm" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fab fa-linux"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">RPM</span></a>
-                                                        </li>
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://releases.qwertycoin.org/get/cli/latest/arm64" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fab fa-linux"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">ARM</span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="item-releases item-releases_qwcx">
-                                                <div class="item-releases__title" data-i18n="releases-wallet-qwcx-title">QWCX</div>
-                                                <div class="item-releases__suntitle" data-i18n="releases-wallet-qwcx-desc">– Qwertycoin Cross-Platform Wallet</div>
-                                                <div class="item-releases__list-block">
-                                                    <ul class="item-releases__list-item">
-                                                        <li class="item-releases__list-item">
-                                                            <a href="https://github.com/qwertycoin-org/qwcx/issues/1" target="_blank">
-                                                                <span class="item-releases__icon">
-                                                                    <i aria-hidden="true" class="fab fa-github"></i>
-                                                                </span>
-                                                                <span class="item-releases__title-link">In development</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Tab 2 -->
-                                <div class="tab-pane fade" id="pills-development" role="tabpanel" aria-labelledby="pills-development-tab">
-                                    <div class="releases__row row">
-                                        <div class="releases__item col col-12">
-                                            <div class="item-releases item-releases_movement">
-                                                <div class="item-releases__title">EPoSe Movement #1</div>
-                                                <div class="item-releases__suntitle">Proposing Changes in Block Reward Related Equation.</div>
-                                            </div>
-                                            <div class="item-releases item-releases_movement">
-                                                <div class="item-releases__title">EPoSe Movement #2</div>
-                                                <div class="item-releases__suntitle">Proposing Changes in Mixin.</div>
-                                            </div>
-                                        </div>
-                                        <div class="releases__item col">
-                                            <div class="item-releases item-releases_movement">
-                                                <div class="item-releases__title">QWCX v1.0.0 Release (Discussion)</div>
-                                                <div class="item-releases__suntitle">Qwertycoin Cross-Platform Wallet.</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Tab 3 -->
-                                <div class="tab-pane fade" id="pills-community" role="tabpanel" aria-labelledby="pills-community-tab">
-                                    <div class="releases__item col-12">
-                                        <div class="item-releases item-releases_platform">
-                                            <div class="item-releases__title" data-i18n="releases-votingplatform-title">Voting Platform</div>
-                                            <div class="item-releases__suntitle" data-i18n="releases-votingplatform-desc">Qwertycoin Voting Platform (Vote for Community Decisions)</div>
-                                            <div class="item-releases__list-block">
-                                                <ul class="item-releases__list-item">
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://voting.qwertycoin.org/" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-google-play"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">Vote</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="item-releases__list-item">
-                                                        <a href="https://voting.qwertycoin.org/api/" target="_blank">
-                                                            <span class="item-releases__icon">
-                                                                <i aria-hidden="true" class="fab fa-android"></i>
-                                                            </span>
-                                                            <span class="item-releases__title-link">Api</span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!---- Qwertycoin Releases ---->
-            <!---- Qwertycoin Environment ---->
-            <section id="envir" class="enviroment">
-                <div class="enviroment__container container">
-                    <div class="enviroment__row row">
-                        <div class="enviroment__col col-lg-4 col-md-12 col-12">
-                            <h2 class="enviroment__title title" data-i18n="environment-title">Qwertycoin Environment</h2>
-                            <div class="enviroment__subtitle subtitle" data-i18n="environment-slogan">We’re growing the team around the world. Explore our job descriptions and reach out.</div>
-                        </div>
-                        <div class="enviroment__col col-lg-8 col-md-12 col-12">
-                            <ul class="nav nav-pills col-xs-12" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-environment-tab" data-toggle="pill" href="#pills-environment" role="tab" aria-controls="pills-environment" aria-selected="false" data-i18n="environment-menu-environment">Environment</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-mining-tab" data-toggle="pill" href="#pills-mining" role="tab" aria-controls="pills-mining" aria-selected="false" data-i18n="environment-menu-mining">Mining</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-marketplaces-tab" data-toggle="pill" href="#pills-marketplaces" role="tab" aria-controls="pills-marketplaces" aria-selected="false" data-i18n="environment-menu-marketplaces">Marketplaces</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="pills-exchanges-tab" data-toggle="pill" href="#pills-exchanges" role="tab" aria-controls="pills-exchanges" aria-selected="true" data-i18n="environment-menu-exchanges">Exchanges</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-partnerships-tab" data-toggle="pill" href="#pills-partnerships" role="tab" aria-controls="pills-partnerships" aria-selected="false" data-i18n="environment-menu-partnerships">Partnerships</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <!-- Tab 1 Environment -->
-                                <div class="tab-pane fade" id="pills-environment" role="tabpanel" aria-labelledby="pills-environment-tab">
-                                    <div class="enviroment__item-row">
-                                        <a href="https://explorer.qwertycoin.org/" target="_blank" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <i aria-hidden="true" class="fab fa-codepen"></i>
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Explorer</div>
-                                            <div class="item-enviroment__text">Qwertycoin Explorer</div>
-                                        </a>
-                                        <a href="https://explorer.qwertycoin.org/#network" target="_blank" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <i aria-hidden="true" class="fas fa-sitemap"></i>
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Network</div>
-                                            <div class="item-enviroment__text">Qwertycoin Network</div>
-                                        </a>
-                                        <a href="https://nodes.qwertycoin.org/" target="_blank" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <i aria-hidden="true" class="fas fa-map"></i>
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Node Map</div>
-                                            <div class="item-enviroment__text">Qwertycoin Node Map</div>
-                                        </a>
-                                        <a href="https://docs.qwertycoin.org/" target="_blank" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <i aria-hidden="true" class="fas fa-file-alt"></i>
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Guide</div>
-                                            <div class="item-enviroment__text">Qwertycoin Docs</div>
-                                        </a>
-                                        <a href="https://github.com/qwertycoin-org/qwertycoin/issues" target="_blank" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <i aria-hidden="true" class="far fa-comment-dots"></i>
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Development Discussion(s)</div>
-                                            <div class="item-enviroment__text">Qwertycoin Discussion(s)</div>
-                                        </a>
-                                        <a href="https://voting.qwertycoin.org/" target="_blank" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <i aria-hidden="true" class="fas fa-vote-yea"></i>
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Voting</div>
-                                            <div class="item-enviroment__text">Qwertycoin Voting</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Tab 2 Mining -->
-                                <div class="tab-pane fade" id="pills-mining" role="tabpanel" aria-labelledby="pills-mining-tab">
-                                    <div class="enviroment__item-row">
-                                        <a href="https://pool.qwertycoin.org/" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <i aria-hidden="true" class="fas fa-network-wired"></i>
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Mining Pool (DEV)</div>
-                                            <div class="item-enviroment__text">pool.qwertycoin.org</div>
-                                        </a>
-                                        <a href="https://pool.qwertycoin.org/" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <i aria-hidden="true" class="fas fa-network-wired"></i>
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Mining Pool (2)</div>
-                                            <div class="item-enviroment__text">loop.qwertycoin.org</div>
-                                        </a>
-                                        <a href="https://explorer.qwertycoin.org/#pools" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <i aria-hidden="true" class="fas fa-chart-pie"></i>
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Mining Pools</div>
-                                            <div class="item-enviroment__text">Qwertycoin Pools</div>
-                                        </a>
-                                        <a href="https://docs.qwertycoin.org/mining/mining-options" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <i aria-hidden="true" class="fas fa-file-alt"></i>
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Mining Guide</div>
-                                            <div class="item-enviroment__text">Qwertycoin Docs</div>
-                                        </a>
-                                        <a href="https://docs.qwertycoin.org/mining/creating-a-mining-pool" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <i aria-hidden="true" class="fas fa-file-alt"></i>
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Pool Guide</div>
-                                            <div class="item-enviroment__text">Qwertycoin Docs</div>
-                                        </a>
-                                        <a href="https://www.cryptunit.com/coin/QWC" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/cryptunit-blue-white-icon.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">CryptUnit</div>
-                                            <div class="item-enviroment__text">Mining Statistics</div>
-                                        </a>
-                                        <a href="https://minerstat.com/coin/QWC" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/minerst.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">minerstat</div>
-                                            <div class="item-enviroment__text">Mining Statistics</div>
-                                        </a>
-                                        <a href="https://cointomine.today/calculator/coin/QWC/" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/ctmt.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">CoinToMine</div>
-                                            <div class="item-enviroment__text">Mining Calculator</div>
-                                        </a>
-                                        <a href="https://miningpoolstats.stream/qwertycoin" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/mininpoolstats.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">MiningPoolStat</div>
-                                            <div class="item-enviroment__text">Mining Statistics</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Tab 3 -->
-                                <div class="tab-pane fade" id="pills-marketplaces" role="tabpanel" aria-labelledby="pills-marketplaces-tab">
-                                    <!-- Tab-row -->
-                                    <div class="enviroment__item-row">
-                                        <a href="https://docs.qwertycoin.org/guides/mining/Mining" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/cg.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">CoinGecko</div>
-                                            <div class="item-enviroment__text">360° Market Capitalization</div>
-                                        </a>
-                                        <a href="https://www.feixiaohao.com/currencies/qwertycoin/" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/faix.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Feixiaohao</div>
-                                            <div class="item-enviroment__text">Chinese Market Capitalization</div>
-                                        </a>
-                                        <a href="https://coinmarketcap.com/currencies/qwertycoin/" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/cmc.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">CoinMarketCap</div>
-                                            <div class="item-enviroment__text">No1 Market Capitalization</div>
-                                        </a>
-                                        <a href="https://coinlib.io/coin/QWC/Qwertycoin" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/coinlib.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Coinlib</div>
-                                            <div class="item-enviroment__text">Market Capitalization</div>
-                                        </a>
-                                        <a href="https://www.coinlore.com/coin/qwertycoin" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/coinlore.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">CoinLore</div>
-                                            <div class="item-enviroment__text">Market Capitalization</div>
-                                        </a>
-                                        <a href="https://www.livecoinwatch.com/price/Qwertycoin-QWC" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/lcw.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Livecoinwatch</div>
-                                            <div class="item-enviroment__text">Market Capitalization</div>
-                                        </a>
-                                        <a href="https://coincodex.com/crypto/qwertycoin/" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/ccodex.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">CoinCodex</div>
-                                            <div class="item-enviroment__text">Market Capitalization</div>
-                                        </a>
-                                        <a href="https://cmc.io/coins/qwertycoin" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/cmcio.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">CMC.IO</div>
-                                            <div class="item-enviroment__text">Market Capitalization</div>
-                                        </a>
-                                        <a href="https://coinpaprika.com/coin/qwc-qwertycoin/" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/coin-paprika.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">coinpaprika</div>
-                                            <div class="item-enviroment__text">Market Capitalization</div>
-                                        </a>
-                                        <a href="https://coinstats.app/en/coins/qwertycoin" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/coinstats.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Coin Stats</div>
-                                            <div class="item-enviroment__text">Crypto Portfolio</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Tab 5 Partnerships -->
-                                <div class="tab-pane fade" id="pills-partnerships" role="tabpanel" aria-labelledby="pills-partnerships-tab">
-                                    <!-- Tab-row-1-->
-                                    <div class="enviroment__item-row">
-                                        <a href="https://weaponupgrade.com/" target="_blank" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/weapon.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">WeaponUpgrade (US)</div>
-                                            <div class="item-enviroment__text">Hunting Accessories (Merchant)</div>
-                                        </a>
-                                        <a href="http://www.as-metallbau.de/1.html" target="_blank" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/as.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">AS Metallbau (GER)</div>
-                                            <div class="item-enviroment__text">Metal / Fence construction (Merchant)</div>
-                                        </a>
-                                        <a href="https://www.niubiquan.com/coin/qwertycoin-qwc/" target="_blank" class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <span>
-                                                    <img src="./img/niu-150x150.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div class="item-enviroment__title">Niubiquan</div>
-                                            <div class="item-enviroment__text">Cryptocurrency Info & News (Chinese)</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Tab 4 Exchanges -->
-                                <div class="tab-pane fade show active" id="pills-exchanges" role="tabpanel" aria-labelledby="pills-exchanges-tab">
-                                    <!-- Tab-row-1-->
-                                    <div class="enviroment__item-row">
-                                        <div class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <a href="https://xeggex.com/" target="_blank">
-                                                    <span>
-                                                        <img src="./img/exchange-icons/xeggex.webp" alt="">
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <a href="https://xeggex.com/" target="_blank">
-                                                <div class="item-enviroment__title">XEGGEX</div>
-                                            </a>
-                                            <div class="item-enviroment__text">XEGGES is a centralized cryptocurrency trading platform with low fees.</div>
-                                            <div class="item-enviroment__list-block">
-                                                <ul class="item-enviroment__list">
-                                                    <li class="item-enviroment__list-item">
-                                                        <a href="https://xeggex.com/market/QWC_USDT" target="_blank">USDT</a>
-                                                    </li>
-                                                    <li class="item-enviroment__list-item">
-                                                        <a href="https://xeggex.com/market/QWC_DOGE" target="_blank">DOGE</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="item-enviroment">
-                                            <div class="item-enviroment__icon">
-                                                <a href="https://qwwertycoin.com" target="_blank">
-                                                    <span>
-                                                        <img src="./img/members/team-07.png" alt="">
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <a href="https://qwwertycoin.com" target="_blank">
-                                                <div class="item-enviroment__title">Your Exchange</div>
-                                            </a>
-                                            <div class="item-enviroment__text">exchange@qwertycoin.org</div>
-                                            <div class="item-enviroment__list-block">
-                                                <ul class="item-enviroment__list">
-                                                    <li class="item-enviroment__list-item">
-                                                        <a href="mailto:exchange@qwertycoin.org" target="_blank">Listing Proposal</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            </section>
-            <!---- Qwertycoin Environment ---->
-            <!---- Qwertycoin Community ---->
-            <section id="community" class="comunity">
-                <div class="comunity__container container">
-                    <div class="comunity__row row">
-                        <div class="comunity__col col-lg-8 col-md-8 col-12">
-                            <div class="comunity__logos">
-                                <div class="comunity__logo comunity__logo--1">
-                                    <figure>
-                                        <a href="https://bitcointalk.org/index.php?topic=2881418.0" target="_blank">
-                                            <img src="./img/01.svg" alt="">
-                                        </a>
-                                    </figure>
-                                </div>
-                                <div class="comunity__logo comunity__logo--2">
-                                    <figure>
-                                        <a href="/img/wechat.jpg" target="_blank">
-                                            <img src="./img/02.svg" alt="">
-                                        </a>
-                                    </figure>
-                                </div>
-                                <div class="comunity__logo comunity__logo--3">
-                                    <figure>
-                                        <a href="https://medium.com/qwertycoin" target="_blank">
-                                            <img src="./img/03.svg" alt="">
-                                        </a>
-                                    </figure>
-                                </div>
-                                <div class="comunity__logo comunity__logo--4">
-                                    <figure>
-                                        <a href="https://open.kakao.com/o/g71LO2jb" target="_blank">
-                                            <img src="./img/04.svg" alt="">
-                                        </a>
-                                    </figure>
-                                </div>
-                                <div class="comunity__logo comunity__logo--5">
-                                    <figure>
-                                        <a href="/img/qq.jpg" target="_blank">
-                                            <img src="./img/05.svg" alt="">
-                                        </a>
-                                    </figure>
-                                </div>
-                                <div class="comunity__logo comunity__logo--6">
-                                    <figure>
-                                        <a href="https://reddit.com/r/qwertycoin" target="_blank">
-                                            <img src="./img/06.svg" alt="">
-                                        </a>
-                                    </figure>
-                                </div>
-                                <div class="comunity__logo comunity__logo--7">
-                                    <figure>
-                                        <a href="https://www.weibo.com/ntxchina" target="_blank">
-                                            <img src="./img/07.svg" alt="">
-                                        </a>
-                                    </figure>
-                                </div>
-                                <div class="comunity__logo comunity__logo--8">
-                                    <figure>
-                                        <a href="https://discord.gg/KZsW5wW" target="_blank">
-                                            <img src="./img/08.svg" alt="">
-                                        </a>
-                                    </figure>
-                                </div>
-                                <div class="comunity__logo comunity__logo--9">
-                                    <figure>
-                                        <a href="https://facebook.com/Qwertycoin-422694361519282" target="_blank">
-                                            <img src="./img/09.svg" alt="">
-                                        </a>
-                                    </figure>
-                                </div>
-                                <div class="comunity__logo comunity__logo--10">
-                                    <figure>
-                                        <a href="https://twitter.com/Qwertycoin_QWC" target="_blank">
-                                            <img src="./img/10.svg" alt="">
-                                        </a>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comunity__col col-12 col-lg-4 col-md-4">
-                            <div class="comunity__title title" data-i18n="community-title">Qwertycoin Community</div>
-                            <div class="comunity__subtitle subtitle" data-i18n="community-slogan">Join the 24/7 Community discussions to be aware of all the latest Topics.</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!---- Qwertycoin Community ---->
-            <!---- Telegram Community ---->
-            <section class="telegram-com">
-                <div class="telegram-com__container container">
-                    <div class="telegram-com__row row">
-                        <div class="telegram-com__col col-lg-4 col-12">
-                            <div class="telegram-com__title title" data-i18n="community-telegram-title">Telegram Community</div>
-                        </div>
-                    </div>
-                    <div class="telegram-com__row row">
-                        <div class="telegram-com__tab col-lg-3 col-xs-12">
-                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link active" id="v-pills-general-tab" data-toggle="pill" href="#v-pills-general" role="tab" aria-controls="v-pills-general" aria-selected="true" data-i18n="community-menu-general">General</a>
-                                <a class="nav-link" id="v-pills-country-tab" data-toggle="pill" href="#v-pills-country" role="tab" aria-controls="v-pills-country" aria-selected="false" data-i18n="community-menu-groupsbycountry">Groups by country</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-xs-12">
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel" aria-labelledby="v-pills-general-tab">
-                                    <div class="telegram-com__tab-row">
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Community</h6>
-                                                    <div class="item-telegram-com__follow">1,100 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text">Qwertycoin (QWC) - Community</div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_02.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Support</h6>
-                                                    <div class="item-telegram-com__follow">250 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text">Troubleshooting and support for the Qwertycoin project</div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwc_support" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_03.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Guide</h6>
-                                                    <div class="item-telegram-com__follow">10 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text">Specifications, Links and Rules about Qwertycoin</div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwc_guide" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-country" role="tabpanel" aria-labelledby="v-pills-country-tab">
-                                    <div class="telegram-com__tab-row">
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">German</h6>
-                                                    <div class="item-telegram-com__follow">100 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin_dach" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Chinese</h6>
-                                                    <div class="item-telegram-com__follow">50 following</div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin_china" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Korean</h6>
-                                                    <div class="item-telegram-com__follow">50 following</div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin_korea" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Russian</h6>
-                                                    <div class="item-telegram-com__follow">50 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin_russia" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Ukrainian</h6>
-                                                    <div class="item-telegram-com__follow">50 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoinua" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Spanish</h6>
-                                                    <div class="item-telegram-com__follow">50 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin_spain" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">French</h6>
-                                                    <div class="item-telegram-com__follow">500 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin_france" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Italian</h6>
-                                                    <div class="item-telegram-com__follow">50 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin_italy" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Finnish</h6>
-                                                    <div class="item-telegram-com__follow">250 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin_finland" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Romanian</h6>
-                                                    <div class="item-telegram-com__follow">200 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin_romania" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Indonesian</h6>
-                                                    <div class="item-telegram-com__follow">50 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin_indonesia" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Polish</h6>
-                                                    <div class="item-telegram-com__follow">10 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin_poland" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">African</h6>
-                                                    <div class="item-telegram-com__follow">500 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin_africa" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="telegram-com__tab-row">
-                                        <div class="item-telegram-com">
-                                            <div class="item-telegram-com__header">
-                                                <img src="./img/telegram_01.png" alt="" class="item-telegram-com__img">
-                                                <div class="item-telegram-com__title-block">
-                                                    <h6 class="item-telegram-com__title">Arabic</h6>
-                                                    <div class="item-telegram-com__follow">25 following </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-telegram-com__text"></div>
-                                            <div class="item-telegram-com__link">
-                                                <a href="https://t.me/qwertycoin_arabic" class="item-telegram-com__a item-telegram-com__link" target="_blank" data-i18n="general-joinus">Join Us</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="telegram-com__img-bg col-12">
-                    </div>
-                </div>
-            </section>
-            <!---- Telegram Community ---->
-            <!---- Development ---->
-            <section id="development" class="development">
-                <div class="development__container container">
-                    <div class="development__row development__row-top row">
-                        <div class="development__title-img col-12">
-                            <img src="./img/development__img-top.svg" alt="">
-                        </div>
-                        <div class="development__title title col-12" data-i18n="development-title">Qwertycoin Development</div>
-                        <div class="development__subtitle subtitle col-12 col-md-10" data-i18n="development-slogan">Everyone can contribute participate in Qwertycoin and be a part of building a blockchain service.</div>
-                    </div>
-                </div>
-            </section>
-            <!---- Development ---->
-            <!---- Development ---->
-            <section class="development-list">
-                <div class="development-list__container container">
-                    <div class="development-list__row">
-                        <div class="development-list__title title" data-i18n="development-menu-title">Development</div>
-                        <div class="development-list__line"></div>
-                    </div>
-                    <div class="development-list__row">
-                        <div class="development-list__block">
-                            <div class="development-list__row-block">
-                                <a href="https://wp.qwertycoin.org/" target="_blank" class="item-development col-xs-12">
-                                    <div class="item-development__icon">
-                                        <span>
-                                            <i aria-hidden="true" class="fas fa-file-alt"></i>
-                                        </span>
-                                    </div>
-                                    <div class="item-development__title" data-i18n="development-menu-1-title">Whitepaper</div>
-                                    <div class="item-development__text" data-i18n="development-menu-1-desc">Qwertycoin Whitepaper</div>
-                                </a>
-                                <a href="https://github.com/qwertycoin-org/brand" target="_blank" class="item-development">
-                                    <div class="item-development__icon">
-                                        <span>
-                                            <i aria-hidden="true" class="fas fa-keyboard"></i>
-                                        </span>
-                                    </div>
-                                    <div class="item-development__title" data-i18n="development-menu-2-title">Brand</div>
-                                    <div class="item-development__text" data-i18n="development-menu-2-desc">Qwertycoin Brand & Assets</div>
-                                </a>
-                                <a href="https://github.com/qwertycoin-org" target="_blank" class="item-development">
-                                    <div class="item-development__icon">
-                                        <span>
-                                            <i aria-hidden="true" class="fab fa-github"></i>
-                                        </span>
-                                    </div>
-                                    <div class="item-development__title" data-i18n="development-menu-3-title">Github</div>
-                                    <div class="item-development__text" data-i18n="development-menu-3-desc">Qwertycoin Repositorys</div>
-                                </a>
-                                <a href="https://blockchain.qwertycoin.org/" target="_blank" class="item-development">
-                                    <div class="item-development__icon">
-                                        <span>
-                                            <i aria-hidden="true" class="fas fa-link"></i>
-                                        </span>
-                                    </div>
-                                    <div class="item-development__title" data-i18n="development-menu-4-title">Blockchain</div>
-                                    <div class="item-development__text" data-i18n="development-menu-4-desc">Qwertycoin Blockchain</div>
-                                </a>
-                            </div>
-                            <div class="development-list__row-block">
-                                <a href="https://docs.qwertycoin.org/" target="_blank" class="item-development">
-                                    <div class="item-development__icon">
-                                        <span>
-                                            <i aria-hidden="true" class="fas fa-file-invoice"></i>
-                                        </span>
-                                    </div>
-                                    <div class="item-development__title" data-i18n="development-menu-5-title">Docs</div>
-                                    <div class="item-development__text" data-i18n="development-menu-5-desc">Qwertycoin Documents</div>
-                                </a>
-                                <a href="https://releases.qwertycoin.org" target="_blank" class="item-development">
-                                    <div class="item-development__icon">
-                                        <span>
-                                            <i aria-hidden="true" class="fas fa-file-code"></i>
-                                        </span>
-                                    </div>
-                                    <div class="item-development__title" data-i18n="development-menu-6-title">Releases</div>
-                                    <div class="item-development__text" data-i18n="development-menu-6-desc">Qwertycoin Releases</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!---- Development ---->
-            <!---- Core-team ---->
-            <section class="core">
-                <div class="core__container container">
-                    <div class="core__row row">
-                        <div class="core__col col-lg-4 col-xs-12">
-                            <div class="core__title title" data-i18n="team-core-title">Core-Team</div>
-                            <div class="core__subtitle subtitle" data-i18n="team-core-slogan">Delivering simple relevant solutions by blending the best of real world operations with leading edge tech.</div>
-                        </div>
-                        <div class="core__col col-lg-8 col-sx-12">
-                            <div class="core__team-row core__team-row_one">
-                                <div class="item-team">
-                                    <img src="https://avatars.githubusercontent.com/u/48366474?v=4" alt="" class="item-team__img">
-                                    <div class="item-team__title"><a href="https://github.com/nnian" title="Go and visit Alex on GitHub" target="_blank">Nnian</a></div>
-                                    <div class="item-team__text" data-i18n="team-desc-alex">Founder & Lead Developer</div>
-                                </div>
-                                <div class="item-team">
-                                    <img src="https://avatars.githubusercontent.com/u/9617859?v=4" alt="" class="item-team__img">
-                                    <div class="item-team__title"><a href="https://github.com/exploshot" title="Go and visit Marc on GitHub" target="_blank">ExploShot</a></div>
-                                    <div class="item-team__text" data-i18n="team-desc-exploshot">Co-Founder & Lead Developer</div>
-                                </div>
-                                <div class="item-team">
-                                    <img src="https://avatars.githubusercontent.com/u/9286873?v=4" alt="" class="item-team__img">
-                                    <div class="item-team__title">Jeka</div>
-                                    <div class="item-team__text" data-i18n="team-desc-jeka">Co-Founder</div>
-                                </div>
-                                <div class="item-team">
-                                    <img src="https://avatars.githubusercontent.com/u/38364793?v=4" alt="" class="item-team__img">
-                                    <div class="item-team__title"><a href="https://github.com/Xecute0101" title="Go and visit Xecute on GitHub" target="_blank">Xecute</a></div>
-                                    <div class="item-team__text" data-i18n="team-desc-xecute">Team Lead & Finance Officer</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="core__row row">
-                        <div class="core__col col">
-                            <div class="core__team-row">
-                                <div class="item-team">
-                                    <img src="./img/members/team-05.png" alt="" class="item-team__img">
-                                    <div class="item-team__title">Jeff Lee</div>
-                                    <div class="item-team__text" data-i18n="team-desc-jefflee">IT & Infrastructure</div>
-                                </div>
-                                <div class="item-team">
-                                    <img src="./img/members/team-07.png" alt="" class="item-team__img">
-                                    <div class="item-team__title">Pascal</div>
-                                    <div class="item-team__text" data-i18n="team-desc-pascal">System Administrator</div>
-                                </div>
-                                <div class="item-team">
-                                    <img src="./img/members/team-09.png" alt="" class="item-team__img">
-                                    <div class="item-team__title">ghostx1x</div>
-                                    <div class="item-team__text" data-i18n="team-desc-ghost">Previous Designer</div>
-                                </div>
-                                <div class="item-team">
-                                    <img src="./img/members/team-09.png" alt="" class="item-team__img">
-                                    <div class="item-team__title">Jordan</div>
-                                    <div class="item-team__text" data-i18n="team-desc-jordan">Previous Webmaster</div>
-                                </div>
-                                <div class="item-team">
-                                    <img src="./img/members/team-09.png" alt="" class="item-team__img">
-                                    <div class="item-team__title">Paul Oliva</div>
-                                    <div class="item-team__text" data-i18n="team-desc-pauloliva">Author</div>
-                                </div>
-                                <div class="item-team">
-                                    <img src="./img/members/team-09.png" alt="" class="item-team__img">
-                                    <div class="item-team__title">Dennis</div>
-                                    <div class="item-team__text" data-i18n="team-desc-dennis">Previous Supporter</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!---- Core-team ---->
-            <!---- Contributor ---->
-            <section class="contributor">
-                <div class="contributor__container container">
-                    <div class="contributor__row">
-                        <div class="contributor__title title" data-i18n="contributors-title">Contributor</div>
-                    </div>
-                    <div class="contributor__row row">
-                        <div class="contributor__col col-6 col-md-3 col-lg-3">
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">沧海 （） 中国社区意见领袖 </div>
-                                <div class="item__contributor__text">China community opinion leader</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">疯禽忘肿 （）中国社区精神领袖</div>
-                                <div class="item__contributor__text">China community spiritual leader</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">蔡先生 （）中国社区行政总裁</div>
-                                <div class="item__contributor__text">China community Chief Executive</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">孤狼傲月 （）中国社区宣传总监</div>
-                                <div class="item__contributor__text">China community publicity director</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">Paul 中国社区市场总监</div>
-                                <div class="item__contributor__text">China community Marketing Director</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">夜白（） 中国社区首席信息官</div>
-                                <div class="item__contributor__text">China community CIO</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">窝窝 （）中国社区首席运营总监</div>
-                                <div class="item__contributor__text">China community COO</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">行者（） 中国社区首席运营总监</div>
-                                <div class="item__contributor__text">China Community Deputy COO</div>
-                            </div>
-                        </div>
-                        <div class="contributor__col col-6 col-md-3 col-lg-3">
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">沧海 （） 中国社区意见领袖 </div>
-                                <div class="item__contributor__text">China community opinion leader</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">疯禽忘肿 （）中国社区精神领袖</div>
-                                <div class="item__contributor__text">China community spiritual leader</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">蔡先生 （）中国社区行政总裁</div>
-                                <div class="item__contributor__text">China community Chief Executive</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">孤狼傲月 （）中国社区宣传总监</div>
-                                <div class="item__contributor__text">China community publicity director</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">Paul 中国社区市场总监</div>
-                                <div class="item__contributor__text">China community Marketing Director</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">夜白（） 中国社区首席信息官</div>
-                                <div class="item__contributor__text">China community CIO</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">窝窝 （）中国社区首席运营总监</div>
-                                <div class="item__contributor__text">China community COO</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">行者（） 中国社区首席运营总监</div>
-                                <div class="item__contributor__text">China Community Deputy COO</div>
-                            </div>
-                        </div>
-                        <div class="contributor__col col-6 col-md-3 col-lg-3">
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">沧海 （） 中国社区意见领袖 </div>
-                                <div class="item__contributor__text">China community opinion leader</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">疯禽忘肿 （）中国社区精神领袖</div>
-                                <div class="item__contributor__text">China community spiritual leader</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">蔡先生 （）中国社区行政总裁</div>
-                                <div class="item__contributor__text">China community Chief Executive</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">孤狼傲月 （）中国社区宣传总监</div>
-                                <div class="item__contributor__text">China community publicity director</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">Paul 中国社区市场总监</div>
-                                <div class="item__contributor__text">China community Marketing Director</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">夜白（） 中国社区首席信息官</div>
-                                <div class="item__contributor__text">China community CIO</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">窝窝 （）中国社区首席运营总监</div>
-                                <div class="item__contributor__text">China community COO</div>
-                            </div>
-                            <div class="item__contributor">
-                                <div class="item__contributor__title">行者（） 中国社区首席运营总监</div>
-                                <div class="item__contributor__text">China Community Deputy COO</div>
-                            </div>
-                        </div>
-                        <div class="contributor__col col-6 col-md-3 col-lg-3">
-                            <div class="item__contributor-img">
-                                <div class="item__contributor-img-bg">
-                                    <img src="./img/Contributor__img-phone_bg.svg" alt="">
-                                </div>
-                                <img src="./img/Contributor-tel.png" alt="" class="item__contributor-img-tel">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contributor__row row">
-                        <div class="contributor__col col-6 col-md-3 col-lg-3">
-                            <div class="item__contributor-block">
-                                <a href="https://github.com/speqtr" target="_blank" class="">
-                                    <div class="item__contributor-block__icon">
-                                        <span>
-                                            <i aria-hidden="true" class="fab fa-github"></i>
-                                        </span>
-                                    </div>
-                                    <div class="item__contributor-title">Spectr</div>
-                                    <div class="item__contributor-block__text" data-i18n="contributors-external">(Extern Contributor)</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="contributor__col col-6 col-md-3 col-lg-3">
-                            <div class="item__contributor-block">
-                                <a href="https://github.com/blockinator" target="_blank" class="">
-                                    <div class="item__contributor-block__icon">
-                                        <span>
-                                            <i aria-hidden="true" target="_blank" class="fab fa-github"></i>
-                                        </span>
-                                    </div>
-                                    <div class="item__contributor-title">Blockinator</div>
-                                    <div class="item__contributor-block__text" data-i18n="contributors-external">(Extern Contributor)</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="contributor__col col-6 col-md-3 col-lg-3">
-                            <div class="item__contributor-block">
-                                <a href="https://github.com/who-biz" target="_blank" class="">
-                                    <div class="item__contributor-block__icon">
-                                        <span>
-                                            <i aria-hidden="true" class="fab fa-github"></i>
-                                        </span>
-                                    </div>
-                                    <div class="item__contributor-title">Biz</div>
-                                    <div class="item__contributor-block__text" data-i18n="contributors-external">(Extern Contributor)</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!---- Contributor ---->
-            <!---- Backlog ---->
-            <section id="demos" class="backlog">
-                <div class="backlog__container container">
-                    <div class="backlog__row">
-                        <div class="backlog__title title" data-i18n="backlog-title">Development Backlog</div>
-                    </div>
-                    <div class="backlog__row">
-                        <!-- Set up your HTML -->
-                        <div class="owl-carousel owl-theme">
-                            <div class="item item-log">
-                                <div class="item-log__caption">2023 to present</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-25-title">XEGGEX</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-25-desc">New Exchange Listing with an USDT and DOGE Pairing - Trading with QWC is easy again.</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2022</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-24-title">Rebirth of QWC</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-24-desc">Loss of Exchanges, due to legal adjustment, but community was always behind QWC.</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2021, December 15</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-23-title">Millionth Block</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-23-desc">We reached our 1,000,000 Block in a stable Blockchain. Network is more stable than ever!</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2021, September 05</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-22-title">Qwertycoin v6.0.8</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-22-desc">Release v6.0.8 for better peer handling and synchronization speed.</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2021, August 27</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-21-title">Qwertycoin 2021</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-21-desc">Increased network strength for more stability and improved performance.</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2021, February</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-20-title">Planning of QWC V7</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-20-desc">We started to redesign our consensus technology. Read more about this in the <a href="https://wp.qwertycoin.org/">Whitepaper</a></div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2020, August 23</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-19-title">Release QWC v6.0.0</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-19-desc">We changed the Qwertycoin Consensus. Read more in our <a href="https://wp.qwertycoin.org/">Whitepaper</a></div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2020, May 31</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-18-title">Website Refresh</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-18-desc">We switched to an open source website Version on GitHub. Participate here: <a href="https://github.com/qwertycoin-org/qwertycoin-org.github.io" target="_blank">Qwertycoin</a></div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2019, November 1</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-17-title">End of 2019 to May 2020</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-17-desc">We redesigned our Core-Repositories to higher quality Coding Style</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2019, May 16</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-16-title">CoinMarketCap Listing!</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-16-desc">After long Journey we were listed on the <a href="https://coinmarketcap.com/currencies/qwertycoin/" target="_blank">coinmarketcap.com</a></div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, October 29</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-15-title">Release: Voting Platform</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-15-desc">Welcome to QWP (<a href="https://voting.qwertycoin.org/" target="_blank">Qwertycoin Voting Plattform</a>). This platform allows members to participate.</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, September 19</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-14-title">BiteBTC Listing</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-14-desc">Qwertycoin was launched on the BiteBTC Exchange with a BCH, ETH and DASH Pair!</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, July 10</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-13-title">Qwertycoin v4.0.0</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-13-desc">Switch to Cryptonight-Heavy / ASIC Resistant ON HEIGHT <a href="https://explorer.qwertycoin.org/?hash=da28b56d63c1be49b6c89f16b4c3d2da3da14dcc98ec38079aedef9b83e627ce#blockchain_block" target="_blank">110,520</a></div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, May 23</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-12-title">Bitexlive Listing</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-12-desc">Qwertycoin was launched on the Bitexlive Exchange with BTC and DOGE Pair</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, April 25</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-11-title">Crex24 Listing</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-11-desc">Qwertycoin was launched on the Crex24 Exchange</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, March 24</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-10-title">AltEx Listing</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-10-desc">Listing on the AltExchange took place. (Exit Scam in July 2018)</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, April 1</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-09-title">2nd exchange listing</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-09-desc">CREP Exchange (exchange ceased operation in April 2018)</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, February 25</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-08-title">1st Exchange listing</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-08-desc">Preliminary listing of Qwertycoin on Exchange called “<b>Octaex</b>”</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, February 14</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-07-title">Desktop Wallet Release</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-07-desc">New Wallets for Windows, MacOS and Ubuntu</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, February 10</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-06-title">Hardfork 1 at height 8473</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-06-desc">Hardfork was made to fix an Major “vanilla bug” CryptoNote</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, February 8</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-05-title">Official Block Explorer</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-05-desc">New standalone block explorer: <a target="_blank" href="https://explorer.qwertycoin.org/">explorer.qwertycoin.org</a></div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, February 4</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-04-title">Qwertycoin goes global</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-04-desc">The Announcement thread at Bitcointalk.org</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, January 27</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-03-title">First Block</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-03-desc">The first Qwertycoin-Block was mined</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2018, January 15</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-02-title">Qwertycoin goes public</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-02-desc">Official project website at Qwertycoin.org was published</div>
-                            </div>
-                            <div class="item item-log">
-                                <div class="item-log__caption">2017, November 9</div>
-                                <div class="item-log__title" data-i18n="[html]backlog-01-title">Planning of Qwertycoin</div>
-                                <div class="item-log__text" data-i18n="[html]backlog-01-desc">Project Beginning and starting development</div>
-                            </div>
-                        </div>
-                        <div class="backlog__row">
-                            <div class="backlog__line">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!---- Backlog ---->
-            <footer class="footer">
-                <div class="footer__container container">
-                    <div class="footer__row row">
-                        <div class="footer__col col-lg-3 col-md-3 col-12">
-                            <div class="footer__title">2017 - 2025 © Qwertycoin.org</div>
-                            <div class="footer__block-link">
-                                <a href="/privacy#privacy" data-i18n="menu-privacypolicy">Privacy Policy</a> |
-                                <a href="/terms#tos" data-i18n="menu-tos">Terms and Conditions</a><br />
-                                <a href="https://github.com/qwertycoin-org/qwertycoin-org.github.io/edit/master/index.html" target="_blank"><strong data-i18n="menu-editwebsite">Edit this Website</strong></a>
-                            </div>
-                        </div>
-                        <div class="footer__col-r col-lg-9 col-md-10 col-12">
-                            <div class="footer__block-wall">
-                                <div class="footer_wall-1">
-                                    <p>QWC1K6XEhCC1WsZzT9RRVpc1MLXXdHVKt2BUGSrsmkkXAvqh52sVnNc1pYmoF2TEXsAvZnyPaZu8MW3S8EWHNfAh7X2xa63P7Y</p>
-                                </div>
-                                <div class="footer_wall-1 footer_wall-1_s">
-                                    <p><span data-i18n="general-trackingkey">Tracking Key</span>: <br>
-                                        33da5241b1031444f4dc32a8a7d14997b1c3aed8b7070ed01633e76b483b5b7382a612265904e6b52d889bc8323b5437ccfe8b594aada1675755893ab2abfe9c</p>
-                                </div>
-                                <div class="footer_wall-1 footer_wall-1_s">
-                                    <p>0000000000000000000000000000000000000000000000000000000000000000dfcb479b1c9d1d13e69c46b939b662444e2ca5828046f6ba2f98d5156beb7e0</p>
-                                </div>
-                            </div>
-                            <div class="footer__qr">
-                                <img src="./img/qr.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        <!---- Content ---->
-    </main>
-    <script src="./js/jquery.i18n.js"></script>
-    <script src="./js/jquery.i18n.messagestore.js"></script>
-    <script src="./js/jquery.i18n.parser.js"></script>
-    <script src="./js/global.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
-    <!-- <script src="./js/jquery.malihu.PageScroll2id.js"></script> -->
-    <script src="./js/scripte.js" defer></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168051001-1"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Qwertycoin - RandomX Privacy Cryptocurrency Mainnet with EPoSe</title>
+    <meta name="description" content="Qwertycoin is live on mainnet: a privacy-focused, RandomX-powered cryptocurrency with decentralized Proof of Service (EPoSe).">
+    <link rel="canonical" href="https://qwertycoin.org/">
+    <link rel="alternate" hreflang="en" href="https://qwertycoin.org/">
+    <link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/">
+    <link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Qwertycoin is back.">
+    <meta property="og:description" content="QWC is a live mainnet privacy cryptocurrency powered by RandomX and decentralized Proof of Service (EPoSe).">
+    <meta property="og:url" content="https://qwertycoin.org/">
+    <meta property="og:image" content="https://qwertycoin.org/assets/og-image.svg">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Qwertycoin is back.">
+    <meta name="twitter:description" content="QWC Mainnet: RandomX proof of work, EPoSe service rewards, public source, and a staged ecosystem rollout.">
+    <meta name="twitter:image" content="https://qwertycoin.org/assets/og-image.svg">
+    <link rel="icon" href="/assets/favicon-192x192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/assets/favicon-192x192.png">
+    <link rel="stylesheet" href="/css/site.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://qwertycoin.org/#organization","name":"Qwertycoin","url":"https://qwertycoin.org/","logo":"https://qwertycoin.org/assets/qwertycoin-mark.svg","sameAs":["https://github.com/qwertycoin-org","https://x.com/Qwertycoin_QWC"]},{"@type":"WebSite","@id":"https://qwertycoin.org/#website","name":"Qwertycoin","url":"https://qwertycoin.org/","publisher":{"@id":"https://qwertycoin.org/#organization"}},{"@type":"FAQPage","@id":"https://qwertycoin.org/#faq","mainEntity":[{"@type":"Question","name":"Does EPoSe replace mining?","acceptedAnswer":{"@type":"Answer","text":"No. RandomX miners still produce blocks and secure the chain. EPoSe adds a service-reward layer for registered infrastructure."}},{"@type":"Question","name":"What is an epoch?","acceptedAnswer":{"@type":"Answer","text":"An epoch is a fixed block period used by EPoSe to measure and finalize service activity. The current QWC parameter is 720 blocks, roughly 24 hours."}},{"@type":"Question","name":"What does qualified mean?","acceptedAnswer":{"@type":"Answer","text":"Qualified means a registered Service Node has enough valid attestations in the relevant epoch to become reward-eligible."}},{"@type":"Question","name":"Who decides whether a Service Node is qualified?","acceptedAnswer":{"@type":"Answer","text":"No central server. Qualification is derived deterministically from QWC chain state and valid EPoSe registration and attestation data."}},{"@type":"Question","name":"Do Service Nodes need to stake QWC?","acceptedAnswer":{"@type":"Answer","text":"No QWC staking role is defined in the current EPoSe core. Service Nodes register a service identity and admission proof; they are not proof-of-stake validators."}},{"@type":"Question","name":"Can one operator run multiple Service Nodes?","acceptedAnswer":{"@type":"Answer","text":"The protocol can represent multiple Service Node identities. Admission proof makes cheap identity creation harder, but it is not a promise that one human equals one node."}},{"@type":"Question","name":"Why is EPoSe not Proof of Stake?","acceptedAnswer":{"@type":"Answer","text":"Service Nodes do not lock stake, produce blocks, or vote on chain history. RandomX proof of work remains responsible for block production and ordering."}}]}]}</script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-168051001-1');
+      window.QWC_LOCALE = "en";
+      window.QWC_NETWORK_LABELS = {"height":{"label":"Height","help":"Current public observer height."},"registered":{"label":"Registered Service Nodes","shortLabel":"Registered","help":"Known nodes with valid EPoSe registration."},"qualified":{"label":"Qualified Service Nodes","shortLabel":"Qualified","help":"Registered nodes currently reward-eligible."},"epoch":{"label":"EPoSe Epoch","shortLabel":"Epoch","help":"Current {blocks}-block service period (~{hours}h)."},"topHash":"Top Hash","stateHash":"EPoSe State Hash","explorer":"Explorer","currentSource":"Current Source","sourceAvailable":"github.com/qwertycoin-org/qwertycoin","syncLoading":"sync loading","loading":"loading","unavailable":"temporarily unavailable","unknown":"unknown","synchronized":"synchronized","syncPending":"sync pending","ratio":"{qualified} / {registered} qualified"};
     </script>
-</body>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Menu">
+        <a class="brand" href="/#home">
+          <img src="/assets/classic/logo.png" alt="">
+          <span>Qwertycoin</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-controls="primary-menu" aria-expanded="false" data-nav-toggle>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-label">Menu</span>
+        </button>
+        <div class="nav-links" id="primary-menu" data-nav-menu>
+          <a href="#technology">About</a>
+          <a href="#epose">EPoSe</a>
+          <a href="#mining">Mining</a>
+          <a href="#releases">Releases</a>
+          <a href="#network">Network</a>
+          <a href="#history">History</a>
+          <a href="#developers">Development</a>
+          <div class="locale-switcher" role="group" aria-label="Language">
+    <button class="locale-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-locale-toggle>
+      <span>Lang</span>
+      <strong>EN</strong>
+    </button>
+    <div class="locale-menu" role="menu">
+<a href="/" hreflang="en" lang="en" role="menuitem" data-locale-option="en" aria-current="true"><strong>EN</strong><span>English</span></a>
+<a href="/de/" hreflang="de" lang="de" role="menuitem" data-locale-option="de"><strong>DE</strong><span>Deutsch</span></a>
+    </div>
+  </div>
+        </div>
+      </nav>
+    </header>
 
+    <main id="home">
+      <section class="hero classic-hero">
+        <div class="hero-inner hero-grid">
+          <div class="hero-copy">
+            <h1>Qwertycoin is back.</h1>
+            <p class="lead hero-lead">QWC Mainnet. Privacy-focused. RandomX-powered. Built around decentralized Proof of Service (EPoSe).</p>
+            <p class="hero-kicker">Mainnet, wallet beta, and public source are live. Additional ecosystem releases follow in controlled stages.</p>
+            <div class="actions hero-actions">
+              <a class="button primary" href="https://explorer.qwertycoin.org/">Open Mainnet explorer</a>
+              <a class="button secondary" href="https://github.com/qwertycoin-org">Contribute on GitHub</a>
+            </div>
+          </div>
+          <div class="hero-system" role="group" aria-label="Qwertycoin live network">
+            <div class="hero-network-field" aria-hidden="true">
+              <span class="field-line line-a"></span><span class="field-line line-b"></span><span class="field-line line-c"></span>
+              <span class="field-node node-core">QWC</span><span class="field-node node-rx">RX</span><span class="field-node node-a"></span><span class="field-node node-b"></span><span class="field-node node-c"></span><span class="field-node node-d"></span>
+            </div>
+            <aside class="network-pulse hero-pulse" aria-label="QWC MAINNET LIVE" data-network-status>
+              <div class="pulse-heading"><span class="live-dot" aria-hidden="true"></span><span>QWC MAINNET LIVE</span></div>
+              <p>Current chain pulse from the public mainnet explorer and restricted daemon RPC.</p>
+              <div class="pulse-grid">
+                <div class="pulse-stat metric-help">
+                  <span>Height</span>
+                  <button class="info-toggle" type="button" aria-label="Height info">i</button>
+                  <strong data-status="height">loading</strong>
+                  <small>Current public observer height.</small>
+                </div>
+                <div class="pulse-stat metric-help">
+                  <span>Registered</span>
+                  <button class="info-toggle" type="button" aria-label="Registered Service Nodes info">i</button>
+                  <strong data-status="service-nodes">loading</strong>
+                  <small>Known nodes with valid EPoSe registration.</small>
+                </div>
+                <div class="pulse-stat metric-help">
+                  <span>Qualified</span>
+                  <button class="info-toggle" type="button" aria-label="Qualified Service Nodes info">i</button>
+                  <strong data-status="qualified">loading</strong>
+                  <small>Registered nodes currently reward-eligible.</small>
+                </div>
+                <div class="pulse-stat metric-help">
+                  <span>Epoch</span>
+                  <button class="info-toggle" type="button" aria-label="EPoSe Epoch info">i</button>
+                  <strong data-status="epoch">loading</strong>
+                  <small>Current 720-block service period (~24h).</small>
+                </div>
+              </div>
+              <div class="pulse-foot"><span data-status="nettype">mainnet</span><span data-status="sync">sync loading</span></div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="system-strip" aria-label="Qwertycoin dual system">
+        <div class="section-inner"><div class="dual-system">
+          <article><span class="system-label">Security</span><h2>RandomX PoW</h2><p>Miners produce blocks, secure ordering, and keep QWC permissionless.</p></article>
+          <div class="system-plus" aria-hidden="true">+</div>
+          <article><span class="system-label">Infrastructure</span><h2>EPoSe v2</h2><p>Registered Service Nodes prove useful network service and enter consensus-enforced reward rotation.</p></article>
+        </div></div>
+      </section>
+
+      <section class="section" id="technology">
+        <div class="section-inner">
+          <div class="section-header">
+            <p class="eyebrow">About Qwertycoin</p>
+            <h2>QWC mainnet combines RandomX mining with EPoSe service rewards.</h2>
+            <p>Qwertycoin is a new mainnet chain derived from the Monero v0.18.5.1 codebase, with QWC parameters, HF17-era privacy technology, RandomX proof of work, and EPoSe from genesis.</p>
+          </div>
+          <div class="feature-mosaic">
+            <article class="feature-card">
+              <img class="card-icon" src="/assets/classic/about-il-01.svg" alt="">
+              <span class="badge mainnet">MAINNET LIVE</span>
+              <h3>QWC Core Network</h3><p>The current QWC chain is mainnet. Active operators, miners, and Service Nodes are hardening the live network.</p>
+            </article>
+<article class="feature-card">
+              <img class="card-icon" src="/assets/classic/about-il-03.svg" alt="">
+              <span class="badge mainnet">Monero 0.18.5.1</span>
+              <h3>Modern privacy base</h3><p>QWC starts from Monero v0.18.5.1 with HF17-era privacy technology and QWC-specific parameters from genesis.</p>
+            </article>
+<article class="feature-card">
+              <img class="card-icon" src="/assets/classic/about-il-04.svg" alt="">
+              <span class="badge mainnet">PoW</span>
+              <h3>RandomX proof of work</h3><p>RandomX miners produce blocks, secure ordering, and keep chain security separate from service-node reward eligibility.</p>
+            </article>
+<article class="feature-card">
+              <img class="card-icon" src="/assets/classic/about-il-06.svg" alt="">
+              <span class="badge mainnet">EPoSe v2</span>
+              <h3>Proof of Service rewards</h3><p>Registered Service Nodes prove useful network service through deterministic attestations before they can enter reward rotation.</p>
+            </article>
+<article class="feature-card">
+              <img class="card-icon" src="/assets/classic/about-il-02.svg" alt="">
+              <span class="badge mainnet">No PoS</span>
+              <h3>Service Nodes are not validators</h3><p>Service Nodes do not lock stake, produce blocks, or vote on chain history. RandomX proof of work remains responsible for consensus ordering.</p>
+            </article>
+<article class="feature-card">
+              <img class="card-icon" src="/assets/classic/about-il-05.svg" alt="">
+              <span class="badge mainnet">Rollout</span>
+              <h3>Wallet and source available</h3><p>The website, web wallet beta, and public QWC core source are available. Signed binaries and broader tooling follow in staged releases.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section specs-section" id="specs"><div class="section-inner">
+        <div class="spec-orbit" role="group" aria-label="QWC parameter orbit diagram">
+          <picture>
+            <source media="(max-width: 640px)" srcset="/assets/classic/about_bg_img-mobile.svg">
+            <img src="/assets/classic/about_bg-01_img.svg" alt="">
+          </picture>
+          <div class="spec-mobile-grid">
+            <div class="spec-mobile-card"><span>Name</span><strong>Qwertycoin</strong></div>
+<div class="spec-mobile-card"><span>Ticker</span><strong>QWC</strong></div>
+<div class="spec-mobile-card"><span>Network</span><strong>Mainnet</strong></div>
+<div class="spec-mobile-card"><span>Protocol</span><strong>QWC HF17</strong></div>
+<div class="spec-mobile-card"><span>Monero base</span><strong>v0.18.5.1</strong></div>
+<div class="spec-mobile-card"><span>Consensus</span><strong>RandomX PoW + EPoSe service rewards</strong></div>
+<div class="spec-mobile-card"><span>Block Target</span><strong>120 seconds</strong></div>
+<div class="spec-mobile-card"><span>EPoSe Epoch</span><strong>720 blocks (~24 hours)</strong></div>
+<div class="spec-mobile-card"><span>EPoSe Committee</span><strong>9 verifiers</strong></div>
+<div class="spec-mobile-card"><span>Required Quorum</span><strong>ceil(2/3) of the selected committee</strong></div>
+          </div>
+        </div>
+      </div></section>
+
+      <section class="section dark" id="epose">
+        <div class="section-inner">
+          <div class="section-header">
+            <p class="eyebrow">EPoSe v2</p>
+            <h2>RandomX PoW secures the blockchain. EPoSe rewards decentralized network service.</h2>
+            <p>No central Sentinel decides which Service Nodes receive rewards. Chain state and EPoSe rules determine qualification, payee selection, and reward validity.</p>
+          </div>
+          <div class="epose-compact" role="group" aria-label="EPoSe flow">
+            <article class="epose-summary-card"><span>01</span><h3>Service activity</h3><p>Registered Service Nodes provide useful QWC network service during each epoch.</p></article>
+<article class="epose-summary-card"><span>02</span><h3>Attestations</h3><p>Deterministically assigned verifier committees check service activity and create signed attestations.</p></article>
+<article class="epose-summary-card"><span>03</span><h3>Reward rotation</h3><p>Qualification is finalized before deterministic payee selection can affect service rewards.</p></article>
+          </div>
+          <div class="epose-note-row">
+            <div class="tribute"><p class="eyebrow">EPoSe origin</p><h3>Thank you, Xecute.</h3><p>The original EPoSe vision and Qwertycoin service-layer whitepaper work came from Xecute, a historical honorary member of the Qwertycoin project. QWC finally carries that plan forward as a decentralized chain-state implementation.</p></div>
+            <div class="sentinel-note"><strong>No central Sentinel decides rewards.</strong><span>Explorer and Sentinel-style tooling can observe and monitor, but consensus derives EPoSe state from the chain. Current mainnet reward split: 90% miner / 10% EPoSe service reward.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="service-nodes"><div class="section-inner">
+        <div class="section-header">
+            <p class="eyebrow">Service Nodes</p>
+            <h2>Run infrastructure. Prove service. Earn QWC.</h2>
+            <p>A normal node validates, syncs, and relays. A Service Node adds a registered identity, public service commitment, proof/attestation flow, qualification, and reward eligibility.</p>
+          </div>
+        <table class="comparison"><thead><tr><th>Normal node</th><th>Service Node</th></tr></thead><tbody><tr><td>Synchronizes the blockchain, validates blocks, relays transactions, and contributes peer capacity.</td><td>Does everything a normal node does, plus registers a service identity and participates in the EPoSe service-reward protocol.</td></tr><tr><td>No reward path beyond mining if the operator also mines blocks.</td><td>Can become qualified for deterministic service rewards after registration and attestations.</td></tr><tr><td>No stake or validator-council role.</td><td>Also not a proof-of-stake validator. RandomX miners still produce blocks.</td></tr></tbody></table>
+        <div class="comparison-stack" role="group" aria-label="Normal node and service node comparison"><article class="comparison-pair"><div><h3>Normal node</h3><p>Synchronizes the blockchain, validates blocks, relays transactions, and contributes peer capacity.</p></div><div><h3>Service Node</h3><p>Does everything a normal node does, plus registers a service identity and participates in the EPoSe service-reward protocol.</p></div></article><article class="comparison-pair"><div><h3>Normal node</h3><p>No reward path beyond mining if the operator also mines blocks.</p></div><div><h3>Service Node</h3><p>Can become qualified for deterministic service rewards after registration and attestations.</p></div></article><article class="comparison-pair"><div><h3>Normal node</h3><p>No stake or validator-council role.</p></div><div><h3>Service Node</h3><p>Also not a proof-of-stake validator. RandomX miners still produce blocks.</p></div></article></div>
+      </div></section>
+
+      <section class="section" id="mining"><div class="section-inner"><div class="section-header">
+            <p class="eyebrow">Mining</p>
+            <h2>RandomX, not CryptoNight.</h2>
+            <p>Old CryptoNight and old mining pool instructions are legacy material. QWC uses RandomX proof of work with a 120 second block target.</p>
+          </div><div class="grid two"><article class="card"><h3>Permissionless PoW</h3><p>Mining is open to anyone who can run compatible RandomX mining software against a QWC node or pool. Active pool documentation will be linked only after it is verified for v2.</p></article><article class="card"><h3>No validator council</h3><p>QWC is not proof of stake. Service Nodes receive service rewards only through the EPoSe layer; they do not replace proof-of-work block production.</p></article></div></div></section>
+
+      <section class="section alt releases-section" id="releases"><span class="anchor-alias" id="wallet"></span><div class="section-inner">
+        <div class="section-header">
+            <p class="eyebrow">Releases</p>
+            <h2>Qwertycoin Releases</h2>
+            <p>Mainnet release communication is staged: website first, web wallet beta next, public QWC source after that, then broader wallet and ecosystem tooling.</p>
+          </div>
+        <div class="release-grid">
+          <article class="release-card">
+                <div class="release-card-head">
+                  <div>
+                    <span class="badge mainnet">BETA</span>
+                    <h3>Web Wallet</h3>
+                  </div>
+                  <span class="release-glyph" aria-hidden="true">WEB</span>
+                </div>
+                <p>The browser wallet beta is the active wallet path for the current QWC mainnet. Early beta - use with care.</p>
+                <div class="release-links"><a class="release-link" href="https://wallet.qwertycoin.org/" target="_blank" rel="noopener" aria-label="Open Web Wallet Beta"><span aria-hidden="true">WEB</span>Open Web Wallet Beta</a><span class="release-link disabled"><span aria-hidden="true">PWA</span>PWA In Development</span><span class="release-link disabled"><span aria-hidden="true">APP</span>Mobile App Planned</span></div>
+              </article>
+<article class="release-card">
+                <div class="release-card-head">
+                  <div>
+                    <span class="badge next">PLANNED</span>
+                    <h3>Desktop GUI</h3>
+                  </div>
+                  <span class="release-glyph" aria-hidden="true">GUI</span>
+                </div>
+                <p>Desktop wallets remain planned and should ship only after the v2 transaction path is hardened.</p>
+                <div class="release-links"><span class="release-link disabled"><span aria-hidden="true">WIN</span>Windows Planned</span><span class="release-link disabled"><span aria-hidden="true">MAC</span>macOS Planned</span><span class="release-link disabled"><span aria-hidden="true">LNX</span>Linux Planned</span></div>
+              </article>
+<article class="release-card">
+                <div class="release-card-head">
+                  <div>
+                    <span class="badge mainnet">SOURCE</span>
+                    <h3>Public QWC Source</h3>
+                  </div>
+                  <span class="release-glyph" aria-hidden="true">SRC</span>
+                </div>
+                <p>The current QWC v2 core source is public. Signed release artifacts and operator documentation remain subject to the staged release process.</p>
+                <div class="release-links"><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin" target="_blank" rel="noopener" aria-label="Open Core Repository"><span aria-hidden="true">SRC</span>Open Core Repository</a><a class="release-link" href="https://github.com/qwertycoin-org" target="_blank" rel="noopener" aria-label="GitHub Organization"><span aria-hidden="true">GH</span>GitHub Organization</a></div>
+              </article>
+<article class="release-card">
+                <div class="release-card-head">
+                  <div>
+                    <span class="badge research">PLANNED</span>
+                    <h3>Additional Wallets &amp; Tools</h3>
+                  </div>
+                  <span class="release-glyph" aria-hidden="true">REL</span>
+                </div>
+                <p>Paper wallet generation, ARM builds, mobile apps, operator tools, and release indexes need v2-specific review before public release.</p>
+                <div class="release-links"><span class="release-link disabled"><span aria-hidden="true">KEY</span>Paper Wallet Planned</span><span class="release-link disabled"><span aria-hidden="true">DOC</span>Operator Guides Planned</span></div>
+              </article>
+        </div>
+        <div class="release-note"><strong>Release policy</strong><span>Old QWC downloads are not compatible with Qwertycoin. This page will expose signed binaries only after current mainnet builds, checksums, and release notes are ready.</span></div>
+      </div></section>
+
+      <section class="section dark" id="network"><div class="section-inner"><div class="section-header">
+            <p class="eyebrow">Mainnet</p>
+            <h2>QWC Mainnet explorer status.</h2>
+            <p>Live observer metrics for the current QWC mainnet.</p>
+          </div>
+        <div class="network-board"><div class="network-kpis"><div class="network-kpi metric-help">
+                <span>Height</span>
+                <button class="info-toggle" type="button" aria-label="Height info">i</button>
+                <strong data-status="height">loading</strong>
+                <small>Current public observer height.</small>
+              </div><div class="network-kpi metric-help">
+                <span>EPoSe Epoch</span>
+                <button class="info-toggle" type="button" aria-label="EPoSe Epoch info">i</button>
+                <strong data-status="epoch">loading</strong>
+                <small>Current 720-block service period (~24h).</small>
+              </div><div class="network-kpi metric-help">
+                <span>Registered Service Nodes</span>
+                <button class="info-toggle" type="button" aria-label="Registered Service Nodes info">i</button>
+                <strong data-status="service-nodes">loading</strong>
+                <small>Known nodes with valid EPoSe registration.</small>
+              </div><div class="network-kpi metric-help">
+                <span>Qualified Service Nodes</span>
+                <button class="info-toggle" type="button" aria-label="Qualified Service Nodes info">i</button>
+                <strong data-status="qualified">loading</strong>
+                <small>Registered nodes currently reward-eligible.</small>
+              </div></div>
+        <p class="qualification-ratio" data-status="qualification-ratio"></p>
+        <div class="network-details"><div><span>Top Hash</span><strong data-status="top-hash">loading</strong></div><div><span>EPoSe State Hash</span><strong data-status="epose-hash">loading</strong></div><div><span>Explorer</span><strong><a href="https://explorer.qwertycoin.org/">explorer.qwertycoin.org</a></strong></div><div><span>Current Source</span><strong><a href="https://github.com/qwertycoin-org/qwertycoin">github.com/qwertycoin-org/qwertycoin</a></strong></div></div></div>
+      </div></section>
+
+      <section class="section" id="faq"><div class="section-inner"><div class="section-header">
+            <p class="eyebrow">EPoSe FAQ</p>
+            <h2>Short answers for new operators.</h2>
+          </div><div class="faq-list"><details><summary>Does EPoSe replace mining?</summary><p>No. RandomX miners still produce blocks and secure the chain. EPoSe adds a service-reward layer for registered infrastructure.</p></details><details><summary>What is an epoch?</summary><p>An epoch is a fixed block period used by EPoSe to measure and finalize service activity. The current QWC parameter is 720 blocks, roughly 24 hours.</p></details><details><summary>What does qualified mean?</summary><p>Qualified means a registered Service Node has enough valid attestations in the relevant epoch to become reward-eligible.</p></details><details><summary>Who decides whether a Service Node is qualified?</summary><p>No central server. Qualification is derived deterministically from QWC chain state and valid EPoSe registration and attestation data.</p></details><details><summary>Do Service Nodes need to stake QWC?</summary><p>No QWC staking role is defined in the current EPoSe core. Service Nodes register a service identity and admission proof; they are not proof-of-stake validators.</p></details><details><summary>Can one operator run multiple Service Nodes?</summary><p>The protocol can represent multiple Service Node identities. Admission proof makes cheap identity creation harder, but it is not a promise that one human equals one node.</p></details><details><summary>Why is EPoSe not Proof of Stake?</summary><p>Service Nodes do not lock stake, produce blocks, or vote on chain history. RandomX proof of work remains responsible for block production and ordering.</p></details></div></div></section>
+      <section class="section alt" id="roadmap"><div class="section-inner"><div class="section-header">
+            <p class="eyebrow">Roadmap</p>
+            <h2>No date theatre. Just status.</h2>
+            <p>Current product and release milestones for the QWC mainnet, without artificial quarter dates.</p>
+          </div><div class="roadmap rail"><article class="roadmap-item"><div><span class="badge mainnet">DONE</span></div><div><h3>QWC Revival Foundation</h3><p>New QWC chain, modern Monero-derived base, RandomX, HF17 from genesis, QWC parameters and branding.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">DONE</span></div><div><h3>EPoSe v2 Core</h3><p>Service-node registration, RandomX-bound admission, attestations, qualification, deterministic reward rotation, and consensus-enforced service rewards.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">DONE</span></div><div><h3>Mainnet Hardening</h3><p>EPoSe qualification, service-node validation, explorer, CI/release hardening, long-running network observation, multi-node validation, and security review preparation.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">IN PREPARATION</span></div><div><h3>Wallet and Ecosystem</h3><p>Web/PWA wallet development, desktop GUI planning, developer APIs, service-node tooling, mining documentation, and operator guides.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">NEXT</span></div><div><h3>Public Developer Ecosystem</h3><p>Public QWC source release, reproducible builds, developer documentation, SDK/API access, and broader community tooling.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">RESEARCH</span></div><div><h3>Extended EPoSe Services</h3><p>Additional decentralized services, light-wallet infrastructure, archival services, and encrypted distributed object storage.</p></div></article></div></div></section>
+      <section class="section" id="history"><div class="section-inner"><div class="section-header">
+            <p class="eyebrow">History</p>
+            <h2>2018 roots. 2026 QWC Mainnet.</h2>
+            <p>The legacy Qwertycoin ecosystem matters, but it must not be confused with Qwertycoin.</p>
+          </div><div class="history-bridge"><div class="history-year"><strong>2018</strong><span>Original QWC community chain</span></div><div class="history-line" aria-hidden="true"><span></span></div><div class="history-year"><strong>2026</strong><span>QWC Mainnet with RandomX + EPoSe</span></div></div><div class="timeline"><article class="timeline-item"><div class="date">2018</div><div><h3>Qwertycoin launches</h3><p>QWC began as a CryptoNote-based community privacy coin with early wallet, explorer, community, and infrastructure efforts.</p></div></article><article class="timeline-item"><div class="date">2019-2020+</div><div><h3>EPoW and EPoSe experiments</h3><p>The project explored fair mining, service rewards, wallets, nodes, infrastructure, and voting concepts. Xecute's EPoSe work remains part of that origin story.</p></div></article><article class="timeline-item"><div class="date">Later</div><div><h3>Stagnation and token phase</h3><p>The legacy chain and ecosystem diverged from what QWC needs today. Exchange, price, wallet, and old source claims from that era are not reused as current facts.</p></div></article><article class="timeline-item"><div class="date">2026</div><div><h3>Qwertycoin Mainnet</h3><p>Qwertycoin returns as a new mainnet chain with RandomX, modern privacy technology, QWC HF17 rules, and EPoSe v2.</p></div></article></div><div class="alert">Qwertycoin is a new mainnet chain. Old chain data, wallet cache files, peer state, and old release binaries are not compatible with this network.</div></div></section>
+      <section class="section dark" id="developers"><div class="section-inner"><div class="section-header">
+            <p class="eyebrow">Developers</p>
+            <h2>Build and review the public QWC source.</h2>
+            <p>The current QWC v2 core source is public. Release binaries, checksums, and operator guidance continue through controlled release gates.</p>
+          </div><div class="grid three"><article class="card"><h3>QWC source code</h3><p>The current core source is available in qwertycoin-org/qwertycoin. Review the repository and its build notes before running mainnet software.</p></article><article class="card"><h3>Legacy Qwertycoin source</h3><p>Older public repositories may remain available for history, but they must not be treated as the current QWC core source.</p></article><article class="card"><h3>EPoSe operator tooling</h3><p>Service-node registration, attestation, qualification, and reward tooling is developed alongside the public QWC core source and remains subject to release review.</p></article></div></div></section>
+      <section class="section" id="community"><div class="section-inner"><div class="section-header">
+            <p class="eyebrow">Community</p>
+            <h2>Open source, careful by default.</h2>
+            <p>Only active and controlled resources are linked from this mainnet website. Legacy docs and old wallet/download/exchange links remain excluded until they are updated or clearly archived.</p>
+          </div><div class="grid three"><article class="card"><h3>GitHub</h3><p><a href="https://github.com/qwertycoin-org">Qwertycoin organization</a></p></article><article class="card"><h3>Explorer</h3><p><a href="https://explorer.qwertycoin.org/">QWC Mainnet Explorer</a></p></article><article class="card"><h3>X / Twitter</h3><p><a href="https://x.com/Qwertycoin_QWC">@Qwertycoin_QWC</a></p></article></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-inner"><div><a class="brand" href="/#home"><img src="/assets/classic/logo.png" alt=""><span>Qwertycoin</span></a></div><div class="footer-links"><a href="#technology">Technology</a><a href="#history">History</a><a href="#roadmap">Roadmap</a></div></div></footer>
+    <script src="/js/network-status.js" defer></script>
+    <script src="/js/nav-menu.js" defer></script>
+  </body>
 </html>

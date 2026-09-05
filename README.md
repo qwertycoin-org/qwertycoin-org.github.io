@@ -1,92 +1,96 @@
-![image](https://cdn.qwertycoin.org/images/press/other/qwc-github-3.png)
+# Qwertycoin Website
 
-# Official Qwertycoin Website
-This Repository is for our official website. Everyone can participate.
-We're looking for Translators. Please help and translate our website to your local language.
+Source for the official public Qwertycoin website at [qwertycoin.org](https://qwertycoin.org/).
+This repository contains the Qwertycoin v2 relaunch site and preserves the relevant contributor credits from the previous website.
 
-## 1. Install Lando
-Download and install Lando from the official site:  
-🔗 [https://docs.lando.dev/getting-started/installation.html](https://docs.lando.dev/getting-started/installation.html)  
+## Scope and stack
 
-Choose the correct package for your operating system (macOS, Windows, or Linux) and follow the installer instructions.
+- Static HTML, CSS, JavaScript, and SVG assets
+- English and German content generated from structured locale files
+- Cloudflare Pages deployment with no framework preset
+- No wallet key handling on the main domain
+- No third-party JavaScript, external stylesheets, or externally hosted fonts
 
-## 2. Clone the Repository
-If you haven’t already cloned the project:
+The non-custodial browser wallet is a separate application at [wallet.qwertycoin.org](https://wallet.qwertycoin.org/).
+
+## Requirements
+
+- Node.js 20 or newer
+- npm
+
+## Development
+
 ```bash
-git clone https://github.com/qwertycoin-org/qwertycoin-org.github.io
-cd qwertycoin-org
+npm ci
+npm test
+npm run build
 ```
 
-## 3. Start the Lando Environment
-From inside the project directory:
+The generated site is written to `dist/`. To preview it locally:
 
 ```bash
-lando start
+npm run serve
 ```
 
-Lando will:
-- Download and configure the required services.
-- Create a local development URL.
+Then open <http://localhost:4173/>.
 
-## 4. Access the Website
-After startup, Lando will display the local URLs.
-By default, you can open:
+## Available checks
 
-https://qwertycoin-org.lndo.site
+```bash
+npm run i18n:check
+npm test
+```
 
-# Contributors and thanks
+The checks verify translation structure, required and forbidden content, internal links, local-only scripts and styles, security headers, redirects, sitemap entries, and generated assets.
 
-#### Developers:
-- [Nnian - Qwertycoin](https://github.com/qwertycoin-org)
+## Cloudflare Pages
+
+- Framework preset: `None`
+- Build command: `npm ci && npm run build && npm test`
+- Build output directory: `dist`
+- Production branch: `master`
+- Preview branch: `feature/qwc-v2-website-relaunch`
+
+The root `CNAME` is retained for compatibility with the historical GitHub Pages configuration.
+
+## Project structure
+
+```text
+assets/              Local images and visual assets
+css/                 Site styles and design tokens
+docs/                Design, migration, and translation notes
+js/                  Small browser-side modules
+scripts/             Build and validation scripts
+src/config/          Public network and site configuration
+src/i18n/            Canonical English and translated content
+src/render-site.mjs  Static page and sitemap renderer
+```
+
+Generated files such as `dist/`, dependency directories, artifacts, and macOS metadata must not be committed.
+
+## Translations
+
+The relaunch currently publishes English and German. See [docs/TRANSLATIONS.md](docs/TRANSLATIONS.md) for the translation workflow and requirements.
+
+The previous website also received translation contributions for Arabic, Bengali, Bhojpuri, Chinese, Farsi, Finnish, French, Hebrew, Hindi, Italian, Japanese, Korean, Malay, Dutch, Punjabi, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Tamil, Turkish, Urdu, and Vietnamese. Those legacy files remain available through the repository history and are not presented as current v2 translations until reviewed against the new source schema.
+
+## Contributors and thanks
+
+### Development
+
+- [Alex / nnian](https://github.com/nnian)
 - Swordfish
 
-#### Translations:
+### Historical translation contributors
+
 - Arabic: [daoudhichem](https://github.com/daoudhichem)
 - Chinese: [mainframer](https://github.com/mainframer)
-- English: [Nnian, Qwertycoin](https://github.com/qwertycoin-org)
 - French: [christelleleroy92](https://github.com/christelleleroy92)
-- German: [Nnian, Qwertycoin](https://github.com/qwertycoin-org)
-- Italian: Wintox, Telegram User
-- Romania: [ghostx1x](https://github.com/ghostx1x)
-- Russian: [Aiwe](https://github.com/aivve), [Hamanosh](https://github.com/Hamanosh)
-- Spanish: [coinvigilante, Telegram](https://www.coinvigilante.com/)
+- Romanian: [ghostx1x](https://github.com/ghostx1x)
+- Russian: [Aiwe](https://github.com/aivve), Hamanosh
+- Spanish: coinvigilante
+- Additional community contributors credited in the previous website history
 
-#### Incomplete Translations:
-- [BH - Bhojpuri](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/bh.json)
-- [BN - Bengali](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/bn.json)
-- [FA - Farsi](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/fa.json)
-- [FI - Finnish](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/fi.json)
-- [HE - Hebrew (partially done)](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/he.json)
-- [JA - Japanese ](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/ja.json)
-- [KO - Korean ](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/ko.json)
-- [MS - Malaysia](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/ms.json)
-- [NL - Dutch ](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/nl.json)
-- [PA - Panjabi](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/pa.json)
-- [PL - Polish](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/pl.json)
-- [PT - Portuguese ](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/pt.json)
-- [SE - Swedish ](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/se.json)
-- [TA - Tamil ](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/ta.json)
-- [TR - Turkish](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/tr.json)
-- [UR - Urdu](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/ur.json)
-- [VI - Vietnamese](https://github.com/qwertycoin-org/qwertycoin-org.github.io/blob/master/i18n/vi.json)
+## Contributing
 
-### Donate
-
-```
-QWCT: 0x31eD4c875763A7134651BF1ABc1efD61236Fe80c
-```
-```
-BTC: 1DkocMNiqFkbjhCmG4sg9zYQbi4YuguFWw
-```
-```
-ETH: 0x31eD4c875763A7134651BF1ABc1efD61236Fe80c
-```
-```
-BCH: qz975ndvcechzywtz59xpkt2hhdzkzt3vvt8762yk9
-```
-```
-XMR: 47gmN4GMQ17Veur5YEpru7eCQc5A65DaWUThZa9z9bP6jNMYXPKAyjDcAW4RzNYbRChEwnKu1H3qt9FPW9CnpwZgNscKawX
-```
-```
-ETN: etnkJXJFqiH9FCt6Gq2HWHPeY92YFsmvKX7qaysvnV11M796Xmovo2nSu6EUCMnniqRqAhKX9AQp31GbG3M2DiVM3qRDSQ5Vwq
-```
+Keep changes focused and reviewable. Run `npm test` before opening a pull request, update both supported locales when changing user-facing content, and avoid introducing remote scripts, trackers, wallet logic, secrets, or private infrastructure values.

@@ -1,0 +1,15 @@
+{
+  "name": "qwertycoin-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "i18n:check": "node scripts/i18n-check.mjs",
+    "test": "npm run i18n:check && npm run build && node scripts/test-site.mjs",
+    "serve": "python3 -m http.server 4173 --directory dist"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

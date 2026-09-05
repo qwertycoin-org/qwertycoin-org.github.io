@@ -1,0 +1,18 @@
+{
+  "siteUrl": "https://qwertycoin.org",
+  "explorerUrl": "https://explorer.qwertycoin.org/",
+  "githubUrl": "https://github.com/qwertycoin-org",
+  "walletUrl": "https://wallet.qwertycoin.org/",
+  "epose": {
+    "epochLengthBlocks": 720,
+    "blockTargetSeconds": 120,
+    "finalityDepthBlocks": 60,
+    "registrationTtlEpochs": 30,
+    "verifierCommitteeSize": 9,
+    "quorumRule": "ceil(2/3)",
+    "serviceRewardBps": 1000,
+    "admissionLeadingZeroBits": 16,
+    "stateRetentionEpochs": 2,
+    "protocolVersion": 1
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "code": "en",
+    "label": "English",
+    "nativeName": "English",
+    "path": "/",
+    "ogLocale": "en_US"
+  },
+  {
+    "code": "de",
+    "label": "German",
+    "nativeName": "Deutsch",
+    "path": "/de/",
+    "ogLocale": "de_DE"
+  }
+]
