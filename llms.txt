@@ -1,20 +1,21 @@
 # Qwertycoin
 
-Qwertycoin is a live mainnet QWC blockchain revival. It centers on RandomX
-proof of work and EPoSe v2, a decentralized proof-of-service reward layer for
-registered Service Nodes.
+> Qwertycoin (QWC) is a privacy-focused cryptocurrency with RandomX mining
+> and EPoSe rewards for proven network services.
 
-Important distinctions:
-- Qwertycoin is a new chain with a new genesis block.
-- Legacy chain files and old wallet cache files are not compatible.
-- Qwertycoin currently runs as mainnet.
-- QWC is not proof of stake and service nodes are not validators.
-- No central Sentinel decides EPoSe rewards.
-- Wallet, public source, and ecosystem tooling are separate staged rollout items.
+- The QWC mainnet is live.
+- RandomX miners produce blocks and secure the blockchain.
+- EPoSe determines Service Node qualification and reward selection from
+  valid registrations and attestations recorded on the blockchain.
+- Service Nodes do not require QWC staking.
+- The Web Wallet and Qwertycoin core source code are available.
+- The current network is separate from the earlier QWC chain.
 
-Current public resources:
-- Website: https://qwertycoin.org/
-- Web Wallet Beta: https://wallet.qwertycoin.org/
-- Mainnet Explorer: https://explorer.qwertycoin.org/
-- Public GitHub organization: https://github.com/qwertycoin-org
-- Current QWC v2 core source: https://github.com/qwertycoin-org/qwertycoin
+## Official resources
+
+- [Website](https://qwertycoin.org/): Project overview in English.
+- [Deutsch](https://qwertycoin.org/de/): Projektübersicht auf Deutsch.
+- [Web Wallet](https://wallet.qwertycoin.org/): Browser wallet.
+- [Explorer](https://explorer.qwertycoin.org/): Blockchain explorer.
+- [Core source](https://github.com/qwertycoin-org/qwertycoin): Public core repository.
+- [GitHub organization](https://github.com/qwertycoin-org): Official project organization.

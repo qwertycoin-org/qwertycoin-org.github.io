@@ -7,12 +7,11 @@
     "epochLengthBlocks": 720,
     "blockTargetSeconds": 120,
     "finalityDepthBlocks": 60,
-    "registrationTtlEpochs": 30,
     "verifierCommitteeSize": 9,
-    "quorumRule": "ceil(2/3)",
+    "attestationQuorumNumerator": 2,
+    "attestationQuorumDenominator": 3,
     "serviceRewardBps": 1000,
-    "admissionLeadingZeroBits": 16,
-    "stateRetentionEpochs": 2,
-    "protocolVersion": 1
+    "admissionLeadingZeroBits": 18,
+    "protocolVersion": 2
   }
 }

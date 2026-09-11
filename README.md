@@ -49,7 +49,7 @@ The checks verify translation structure, required and forbidden content, interna
 - Build command: `npm ci && npm run build && npm test`
 - Build output directory: `dist`
 - Production branch: `master`
-- Preview branch: `feature/qwc-v2-website-relaunch`
+- Preview branch: `feature/website-redesign-2026-09-11`
 
 The root `CNAME` is retained for compatibility with the historical GitHub Pages configuration.
 
