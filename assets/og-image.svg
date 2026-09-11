@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#08111f"/>
+  <path d="M0 450c180-60 290 35 460-20s300-170 520-110 220-20 220-20v330H0z" fill="#10263d"/>
+  <circle cx="180" cy="170" r="70" fill="none" stroke="#5eead4" stroke-width="20"/>
+  <path d="M220 220l48 48" stroke="#f59e0b" stroke-width="20" stroke-linecap="round"/>
+  <text x="340" y="190" fill="#e5f1ff" font-family="Arial, sans-serif" font-size="76" font-weight="700">Qwertycoin is back.</text>
+  <text x="342" y="270" fill="#9db1c7" font-family="Arial, sans-serif" font-size="36">QWC • RandomX • EPoSe v2 • Mainnet Live</text>
+</svg>

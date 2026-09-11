@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Qwertycoin mark</title>
+  <desc id="desc">A modernized Qwertycoin Q mark.</desc>
+  <rect width="96" height="96" rx="20" fill="#08111f"/>
+  <circle cx="48" cy="46" r="26" fill="none" stroke="#5eead4" stroke-width="8"/>
+  <path d="M62 62l16 16" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M33 42h30M33 52h20" stroke="#e5f1ff" stroke-width="6" stroke-linecap="round"/>
+</svg>
