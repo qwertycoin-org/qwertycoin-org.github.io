@@ -6,3 +6,58 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), serial=(), bluetooth=()
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: same-origin
+  X-Robots-Tag: max-image-preview:large
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/404.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/sitemap.xml
+  Cache-Control: public, max-age=0, must-revalidate
+
+/robots.txt
+  Cache-Control: public, max-age=0, must-revalidate
+
+/llms.txt
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/fonts/archivo-latin-900.woff2
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/fonts/inter-latin-400.woff2
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/fonts/inter-latin-600.woff2
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/fonts/v/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/favicon-32x32.png
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/favicon-192x192.png
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/apple-touch-icon.png
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/og-image.png
+  Cache-Control: public, max-age=0, must-revalidate
+
+/css/site.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/css/v/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/network-status.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/js/nav-menu.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/js/v/*
+  Cache-Control: public, max-age=31536000, immutable

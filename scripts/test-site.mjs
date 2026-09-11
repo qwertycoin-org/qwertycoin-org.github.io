@@ -5,50 +5,79 @@ const root = new URL("..", import.meta.url).pathname;
 const dist = path.join(root, "dist");
 const index = await readFile(path.join(dist, "index.html"), "utf8");
 const germanIndex = await readFile(path.join(dist, "de", "index.html"), "utf8");
+const notFound = await readFile(path.join(dist, "404.html"), "utf8");
 const css = await readFile(path.join(root, "css", "site.css"), "utf8");
+const distCss = await readFile(path.join(dist, "css", "site.css"), "utf8");
+const tokens = await readFile(path.join(root, "css", "tokens.css"), "utf8");
 const headers = await readFile(path.join(root, "_headers"), "utf8");
 const redirects = await readFile(path.join(root, "_redirects"), "utf8");
+const middleware = await readFile(path.join(root, "functions", "_middleware.js"), "utf8");
 const sitemap = await readFile(path.join(dist, "sitemap.xml"), "utf8");
+const llms = await readFile(path.join(dist, "llms.txt"), "utf8");
 
-const required = [
-  "Qwertycoin is back.",
-  "Web Wallet",
-  "QWC MAINNET LIVE",
-  "Qwertycoin is a new mainnet chain",
-  "QWC Mainnet",
-  "RandomX",
-  "No central Sentinel decides rewards.",
-  "Current mainnet reward split",
-  "Thank you, Xecute.",
-  "hero-network-field",
-  "epose-compact",
-  "Prove service",
-  "QWC Core Network",
-  "Proof of Service rewards",
-  "Qwertycoin Releases",
-  "Release policy",
-  "about_bg-01_img.svg",
-  "about_bg_img-mobile.svg",
-  "Does EPoSe replace mining?",
-  "data-nav-toggle",
-  "Open Web Wallet Beta",
-  "PWA In Development",
-  "QWC source code",
-  "Open Core Repository",
-  "Public Developer Ecosystem",
-  "2018",
-  "2026",
-  "Registered Service Nodes",
-  "Qualified Service Nodes",
-  "Developers",
-  "application/ld+json"
-];
-
-for (const text of required) {
-  if (!index.includes(text)) throw new Error(`Missing required content: ${text}`);
+function assertIncludes(haystack, needle, label = needle) {
+  if (!haystack.includes(needle)) throw new Error(`Missing required content: ${label}`);
 }
 
-const forbidden = [
+function stripTestPatterns(html) {
+  return html
+    .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g, "")
+    .replace(/<script>[\s\S]*?<\/script>/g, "");
+}
+
+const requiredEnglish = [
+  "Private money. Open network.",
+  "Qwertycoin (QWC) is a privacy-focused cryptocurrency with open RandomX mining and EPoSe rewards for proven network services.",
+  "Open Web Wallet",
+  "QWC MAINNET LIVE",
+  "RandomX PoW",
+  "EPoSe",
+  "QWC Core Network",
+  "Rewards for proven service",
+  "Web Wallet and open source",
+  "qwc-hero-motif.svg",
+  "network-strip",
+  "epose-compact",
+  "Prove service. Earn QWC.",
+  "Rewards follow the protocol.",
+  "Wallets and source code",
+  "QWC source code",
+  "Network activity",
+  "Registered Service Nodes",
+  "Qualified Service Nodes",
+  "Does EPoSe replace mining?",
+  "2019–2023",
+  "Build with Qwertycoin.",
+  "Open Explorer",
+  "application/ld+json",
+  'type="application/json" id="qwc-network-data"',
+  "/assets/fonts/v/archivo-latin-900."
+];
+
+for (const text of requiredEnglish) assertIncludes(index, text);
+
+const requiredGerman = [
+  "Private Zahlungen. Offenes Netzwerk.",
+  "Qwertycoin (QWC) ist eine Kryptowährung für private Zahlungen mit offenem RandomX-Mining und EPoSe-Vergütungen für nachgewiesene Netzwerkdienste.",
+  "Web Wallet öffnen",
+  "QWC MAINNET LIVE",
+  "Privatsphäre. Mit QWC.",
+  "Vergütung für nachgewiesene Dienste",
+  "Web Wallet und offener Quellcode",
+  "Netzwerkdienste leisten. QWC verdienen.",
+  "Das Protokoll regelt die Vergütung.",
+  "Wallets und Quellcode",
+  "Netzwerkaktivität",
+  "Registrierte Service Nodes",
+  "Qualifizierte Service Nodes",
+  "Ersetzt EPoSe das Mining?",
+  "2019–2023",
+  "Entwickle mit Qwertycoin."
+];
+
+for (const text of requiredGerman) assertIncludes(germanIndex, text);
+
+const unsafeClaims = [
   "100% anonymous",
   "totally untraceable",
   "unhackable",
@@ -61,9 +90,42 @@ const forbidden = [
   "googletagmanager"
 ];
 
-for (const text of forbidden) {
+for (const text of unsafeClaims) {
   if (index.toLowerCase().includes(text.toLowerCase())) {
     throw new Error(`Forbidden legacy/unsafe claim found: ${text}`);
+  }
+}
+
+const publicPages = [stripTestPatterns(index), stripTestPatterns(germanIndex), llms];
+const forbiddenPublicPatterns = [
+  /EPoSe\s*(?:v|version)\s*[12]/i,
+  /EPoSe\s*[12]\.0/i,
+  /QWC[-\s]?v2/i,
+  /Sentinel/i,
+  /Web Wallet\s+Beta/i,
+  /Browser wallet beta/i,
+  /Early beta/i,
+  /Qwertycoin Releases/i,
+  /Release policy/i,
+  /2019-2020\+/i,
+  /No date theatre/i,
+  /Keine Datums-Show/i,
+  /release gates/i,
+  /intentionally staged/i,
+  /transaction path hardened/i,
+  /hardening the live network/i
+];
+
+for (const page of publicPages) {
+  for (const pattern of forbiddenPublicPatterns) {
+    if (pattern.test(page)) throw new Error(`Forbidden public wording found: ${pattern}`);
+  }
+}
+
+for (const page of [index, germanIndex]) {
+  const moneroMentions = page.match(/Monero v0\.18\.5\.1/g) || [];
+  if (moneroMentions.length > 1) {
+    throw new Error(`Expected at most one Monero origin note, found ${moneroMentions.length}`);
   }
 }
 
@@ -77,12 +139,77 @@ if (/\ssrc="https?:\/\//.test(index) || /\shref="https?:\/\/[^"]+\.(css|js)"/.te
   throw new Error("External scripts or stylesheets are not allowed");
 }
 
-if (!css.includes("--color-surface") || !css.includes("--radius-card")) {
+if (/<script>(?![\s\S]*application\/ld\+json)[\s\S]*?<\/script>/i.test(index) || /QWC_NETWORK_LABELS|QWC_NETWORK_CONFIG|QWC_LOCALE/.test(index)) {
+  throw new Error("Executable inline network configuration is not CSP compliant");
+}
+
+if (!`${tokens}\n${css}`.includes("--color-surface") || !`${tokens}\n${css}`.includes("--radius-card")) {
   throw new Error("Design tokens are not loaded into site CSS");
 }
 
-if (!/id="releases"[\s\S]*Web Wallet[\s\S]*Desktop GUI[\s\S]*Public QWC Source[\s\S]*Additional Wallets &amp; Tools/.test(index)) {
-  throw new Error("Release cards must be ordered Web Wallet, Desktop GUI, Public Source, Additional Tools");
+if (distCss.includes("@import")) {
+  throw new Error("Built CSS must not rely on render-blocking @import");
+}
+
+const cssMatch = index.match(/href="\/css\/v\/site\.([a-f0-9]{12})\.css"/);
+const networkJsMatch = index.match(/src="\/js\/v\/network-status\.([a-f0-9]{12})\.js"/);
+const navJsMatch = index.match(/src="\/js\/v\/nav-menu\.([a-f0-9]{12})\.js"/);
+const fontPreloadMatches = [...index.matchAll(/href="(\/assets\/fonts\/v\/[^"]+\.woff2)"/g)].map((match) => match[1]);
+
+if (!cssMatch || !networkJsMatch || !navJsMatch) {
+  throw new Error("Production HTML must reference content-hashed CSS and JS assets");
+}
+
+if (fontPreloadMatches.length < 2) {
+  throw new Error("Production HTML must preload content-hashed font assets");
+}
+
+for (const html of [index, germanIndex, notFound]) {
+  if (html.includes('href="/css/site.css"') || html.includes('src="/js/network-status.js"') || html.includes('src="/js/nav-menu.js"')) {
+    throw new Error("Generated HTML must not reference stable CSS/JS URLs");
+  }
+  assertIncludes(html, `/css/v/site.${cssMatch[1]}.css`, "shared hashed CSS reference");
+}
+
+if (!index.includes('media="(max-width: 720px)" srcset="/assets/classic/about_bg_img-mobile.svg"')) {
+  throw new Error("Network illustration source breakpoint must match the 720px CSS breakpoint");
+}
+
+if (!index.includes('data-status-message role="status" aria-live="polite"') || index.includes("data-message")) {
+  throw new Error("Network status summary must use a real status element instead of CSS-only data-message content");
+}
+
+const cssSources = `${tokens}\n${css}`.toLowerCase();
+for (const text of ["#f5f1e7", "#141414", "#ffaf00", "#ffe7a3", "@font-face"]) {
+  if (!cssSources.includes(text)) {
+    throw new Error(`Missing expected art direction token: ${text}`);
+  }
+}
+
+if (!/id="releases"[\s\S]*Web Wallet[\s\S]*Desktop wallets[\s\S]*QWC source code[\s\S]*Additional wallets and tools/.test(index)) {
+  throw new Error("Wallet/source cards must be ordered Web Wallet, desktop wallets, source code, additional tools");
+}
+
+for (const text of [
+  "5 verifiers",
+  "5 Verifier",
+  "Minimum Attestations",
+  "Minimum-Bestätigungen"
+]) {
+  if (index.includes(text) || germanIndex.includes(text)) {
+    throw new Error(`Stale EPoSe parameter wording found: ${text}`);
+  }
+}
+
+for (const text of [
+  "ceil(2/3 of actual committee)",
+  "ceil(2/3 des tatsächlichen Komitees)",
+  "6 of 9 when full",
+  "6 von 9 bei voller Größe"
+]) {
+  if (!index.includes(text) && !germanIndex.includes(text)) {
+    throw new Error(`Missing current EPoSe quorum wording: ${text}`);
+  }
 }
 
 if (index.includes("wallet-preview") || germanIndex.includes("wallet-preview")) {
@@ -96,7 +223,8 @@ for (const text of [
   "public test phase",
   "future mainnet",
   "mainnet coming soon",
-  "PWA Ready"
+  "PWA Ready",
+  "git clone --recursive https://github.com/qwertycoin-org/qwertycoin.git"
 ]) {
   if (index.toLowerCase().includes(text.toLowerCase()) || germanIndex.toLowerCase().includes(text.toLowerCase())) {
     throw new Error(`Forbidden mainnet/source wording found: ${text}`);
@@ -117,20 +245,6 @@ if (!specsSection || specsSection.includes("section-header") || !specsSection.in
 }
 
 for (const text of [
-  "Qwertycoin ist zurück.",
-  "Service beweisen",
-  "Qwertycoin Releases",
-  "Release Policy",
-  "QWC MAINNET LIVE",
-  "QWC-v2-Sourcecode",
-  "Registrierte Service Nodes",
-  "Qualified Service Nodes",
-  "Ersetzt EPoSe das Mining?"
-]) {
-  if (!germanIndex.includes(text)) throw new Error(`Missing German content: ${text}`);
-}
-
-for (const text of [
   'hreflang="de"',
   'hreflang="x-default"',
   'href="https://qwertycoin.org/de/"',
@@ -143,6 +257,12 @@ if (!sitemap.includes("https://qwertycoin.org/de/") || !sitemap.includes('hrefla
   throw new Error("Sitemap does not include locale alternates");
 }
 
+for (const text of ["integration.qwertycoin.org", "noindex"]) {
+  if (index.includes(text) || germanIndex.includes(text) || sitemap.includes(text)) {
+    throw new Error(`Production SEO output must not contain ${text}`);
+  }
+}
+
 if (index.includes("qwc-network-visual")) {
   throw new Error("Hero must not use the old diagram-card visual");
 }
@@ -151,8 +271,27 @@ if (!headers.includes("frame-ancestors 'none'") || !headers.includes("object-src
   throw new Error("Security headers are incomplete");
 }
 
-if (!index.includes('href="https://github.com/qwertycoin-org/qwertycoin"')) {
-  throw new Error("Current public QWC core repository link is missing");
+if (!middleware.includes('url.hostname.endsWith(".pages.dev")') || !middleware.includes("noindex, nofollow, max-image-preview:large")) {
+  throw new Error("Preview deployments must emit an X-Robots-Tag noindex header");
+}
+
+for (const forbiddenHeaderPattern of ["/assets/*", "/css/*", "/js/*"]) {
+  if (headers.includes(forbiddenHeaderPattern)) {
+    throw new Error(`Broad cache header pattern can overlap specific rules: ${forbiddenHeaderPattern}`);
+  }
+}
+
+for (const requiredHeader of [
+  "/assets/fonts/archivo-latin-900.woff2\n  Cache-Control: public, max-age=0, must-revalidate",
+  "/assets/fonts/inter-latin-400.woff2\n  Cache-Control: public, max-age=0, must-revalidate",
+  "/assets/fonts/inter-latin-600.woff2\n  Cache-Control: public, max-age=0, must-revalidate",
+  "/assets/fonts/v/*\n  Cache-Control: public, max-age=31536000, immutable",
+  "/css/site.css\n  Cache-Control: public, max-age=0, must-revalidate",
+  "/css/v/*\n  Cache-Control: public, max-age=31536000, immutable",
+  "/js/network-status.js\n  Cache-Control: public, max-age=0, must-revalidate",
+  "/js/v/*\n  Cache-Control: public, max-age=31536000, immutable"
+]) {
+  assertIncludes(headers, requiredHeader, `header ${requiredHeader}`);
 }
 
 for (const legacyPath of ["/wallet", "/webwallet", "/download", "/downloads", "/releases", "/nodes", "/explorer"]) {
@@ -161,10 +300,57 @@ for (const legacyPath of ["/wallet", "/webwallet", "/download", "/downloads", "/
   }
 }
 
+for (const text of [
+  "[Website](https://qwertycoin.org/)",
+  "[Deutsch](https://qwertycoin.org/de/)",
+  "The Web Wallet and Qwertycoin core source code are available.",
+  "[Core source](https://github.com/qwertycoin-org/qwertycoin)"
+]) {
+  assertIncludes(llms, text, `llms.txt ${text}`);
+}
+
 await stat(path.join(root, "assets", "qwertycoin-mark.svg"));
+await stat(path.join(root, "assets", "qwc-hero-motif.svg"));
+await stat(path.join(root, "assets", "apple-touch-icon.png"));
+await stat(path.join(root, "assets", "favicon-32x32.png"));
+await stat(path.join(root, "assets", "fonts", "LICENSES.md"));
 await stat(path.join(root, "js", "nav-menu.js"));
+await stat(path.join(root, "css", "v", `site.${cssMatch[1]}.css`));
+await stat(path.join(root, "js", "v", `network-status.${networkJsMatch[1]}.js`));
+await stat(path.join(root, "js", "v", `nav-menu.${navJsMatch[1]}.js`));
+await stat(path.join(dist, "css", "v", `site.${cssMatch[1]}.css`));
+await stat(path.join(dist, "js", "v", `network-status.${networkJsMatch[1]}.js`));
+await stat(path.join(dist, "js", "v", `nav-menu.${navJsMatch[1]}.js`));
+for (const fontPath of fontPreloadMatches) {
+  await stat(path.join(dist, fontPath));
+}
+
+async function checkCssUrls(cssRelativePath) {
+  const cssPath = path.join(dist, cssRelativePath);
+  const source = await readFile(cssPath, "utf8");
+  if (source.includes("/css/assets/fonts/") || source.includes("../assets/fonts/")) {
+    throw new Error(`${cssRelativePath} contains a font URL that resolves from the wrong CSS directory`);
+  }
+
+  for (const match of source.matchAll(/url\(([^)]+)\)/g)) {
+    const rawUrl = match[1].trim().replace(/^["']|["']$/g, "");
+    if (!rawUrl || rawUrl.startsWith("data:") || rawUrl.startsWith("http:") || rawUrl.startsWith("https:") || rawUrl.startsWith("#")) {
+      continue;
+    }
+
+    const resolvedPath = rawUrl.startsWith("/")
+      ? path.join(dist, rawUrl)
+      : path.join(path.dirname(cssPath), rawUrl);
+
+    await stat(resolvedPath);
+  }
+}
+
+await checkCssUrls("css/site.css");
+await checkCssUrls(`css/v/site.${cssMatch[1]}.css`);
 await stat(path.join(root, "robots.txt"));
 await stat(path.join(root, "de", "index.html"));
+await stat(path.join(root, "404.html"));
 await stat(path.join(dist, "sitemap.xml"));
 
 console.log("QWC website checks passed");

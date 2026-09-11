@@ -1,38 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Qwertycoin - RandomX Privacy Cryptocurrency Mainnet with EPoSe</title>
-    <meta name="description" content="Qwertycoin is live on mainnet: a privacy-focused, RandomX-powered cryptocurrency with decentralized Proof of Service (EPoSe).">
+    <title>Qwertycoin (QWC) | Private payments, RandomX &amp; EPoSe</title>
+    <meta name="description" content="Qwertycoin (QWC) is a privacy-focused cryptocurrency with RandomX proof-of-work mining and EPoSe rewards for proven network services.">
     <link rel="canonical" href="https://qwertycoin.org/">
     <link rel="alternate" hreflang="en" href="https://qwertycoin.org/">
     <link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/">
     <link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Qwertycoin is back.">
-    <meta property="og:description" content="QWC is a live mainnet privacy cryptocurrency powered by RandomX and decentralized Proof of Service (EPoSe).">
+    <meta property="og:title" content="Qwertycoin (QWC) | Private money. Open network.">
+    <meta property="og:description" content="Qwertycoin (QWC) is a privacy-focused cryptocurrency with RandomX proof-of-work mining and EPoSe rewards for proven network services.">
     <meta property="og:url" content="https://qwertycoin.org/">
-    <meta property="og:image" content="https://qwertycoin.org/assets/og-image.svg">
+    <meta property="og:site_name" content="Qwertycoin">
+    <meta property="og:image" content="https://qwertycoin.org/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Qwertycoin Q emblem with the Private money. Open network. claim">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Qwertycoin is back.">
-    <meta name="twitter:description" content="QWC Mainnet: RandomX proof of work, EPoSe service rewards, public source, and a staged ecosystem rollout.">
-    <meta name="twitter:image" content="https://qwertycoin.org/assets/og-image.svg">
+    <meta name="twitter:title" content="Qwertycoin (QWC) | Private money. Open network.">
+    <meta name="twitter:description" content="Qwertycoin (QWC) is a privacy-focused cryptocurrency with RandomX proof-of-work mining and EPoSe rewards for proven network services.">
+    <meta name="twitter:image" content="https://qwertycoin.org/assets/og-image.png">
+    <meta name="twitter:image:alt" content="Qwertycoin Q emblem with the Private money. Open network. claim">
     <link rel="icon" href="/assets/favicon-192x192.png" type="image/png" sizes="192x192">
-    <link rel="apple-touch-icon" href="/assets/favicon-192x192.png">
-    <link rel="stylesheet" href="/css/site.css">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://qwertycoin.org/#organization","name":"Qwertycoin","url":"https://qwertycoin.org/","logo":"https://qwertycoin.org/assets/qwertycoin-mark.svg","sameAs":["https://github.com/qwertycoin-org","https://x.com/Qwertycoin_QWC"]},{"@type":"WebSite","@id":"https://qwertycoin.org/#website","name":"Qwertycoin","url":"https://qwertycoin.org/","publisher":{"@id":"https://qwertycoin.org/#organization"}},{"@type":"FAQPage","@id":"https://qwertycoin.org/#faq","mainEntity":[{"@type":"Question","name":"Does EPoSe replace mining?","acceptedAnswer":{"@type":"Answer","text":"No. RandomX miners still produce blocks and secure the chain. EPoSe adds a service-reward layer for registered infrastructure."}},{"@type":"Question","name":"What is an epoch?","acceptedAnswer":{"@type":"Answer","text":"An epoch is a fixed block period used by EPoSe to measure and finalize service activity. The current QWC parameter is 720 blocks, roughly 24 hours."}},{"@type":"Question","name":"What does qualified mean?","acceptedAnswer":{"@type":"Answer","text":"Qualified means a registered Service Node has enough valid attestations in the relevant epoch to become reward-eligible."}},{"@type":"Question","name":"Who decides whether a Service Node is qualified?","acceptedAnswer":{"@type":"Answer","text":"No central server. Qualification is derived deterministically from QWC chain state and valid EPoSe registration and attestation data."}},{"@type":"Question","name":"Do Service Nodes need to stake QWC?","acceptedAnswer":{"@type":"Answer","text":"No QWC staking role is defined in the current EPoSe core. Service Nodes register a service identity and admission proof; they are not proof-of-stake validators."}},{"@type":"Question","name":"Can one operator run multiple Service Nodes?","acceptedAnswer":{"@type":"Answer","text":"The protocol can represent multiple Service Node identities. Admission proof makes cheap identity creation harder, but it is not a promise that one human equals one node."}},{"@type":"Question","name":"Why is EPoSe not Proof of Stake?","acceptedAnswer":{"@type":"Answer","text":"Service Nodes do not lock stake, produce blocks, or vote on chain history. RandomX proof of work remains responsible for block production and ordering."}}]}]}</script>
-    <script>
-      window.QWC_LOCALE = "en";
-      window.QWC_NETWORK_LABELS = {"height":{"label":"Height","help":"Current public observer height."},"registered":{"label":"Registered Service Nodes","shortLabel":"Registered","help":"Known nodes with valid EPoSe registration."},"qualified":{"label":"Qualified Service Nodes","shortLabel":"Qualified","help":"Registered nodes currently reward-eligible."},"epoch":{"label":"EPoSe Epoch","shortLabel":"Epoch","help":"Current {blocks}-block service period (~{hours}h)."},"topHash":"Top Hash","stateHash":"EPoSe State Hash","explorer":"Explorer","currentSource":"Current Source","sourceAvailable":"github.com/qwertycoin-org/qwertycoin","syncLoading":"sync loading","loading":"loading","unavailable":"temporarily unavailable","unknown":"unknown","synchronized":"synchronized","syncPending":"sync pending","ratio":"{qualified} / {registered} qualified"};
-    </script>
+    <link rel="icon" href="/assets/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="preload" href="/assets/fonts/v/archivo-latin-900.e915040a27c5.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/v/inter-latin-400.8909904ab6c8.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/v/site.ac1a01565a05.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://qwertycoin.org/#organization","name":"Qwertycoin","url":"https://qwertycoin.org/","logo":"https://qwertycoin.org/assets/favicon-192x192.png","sameAs":["https://github.com/qwertycoin-org","https://x.com/Qwertycoin_QWC"]},{"@type":"WebSite","@id":"https://qwertycoin.org/#website","name":"Qwertycoin","url":"https://qwertycoin.org/","publisher":{"@id":"https://qwertycoin.org/#organization"}},{"@type":"WebPage","@id":"https://qwertycoin.org/#webpage","url":"https://qwertycoin.org/","name":"Qwertycoin (QWC) | Private payments, RandomX & EPoSe","description":"Qwertycoin (QWC) is a privacy-focused cryptocurrency with RandomX proof-of-work mining and EPoSe rewards for proven network services.","inLanguage":"en","isPartOf":{"@id":"https://qwertycoin.org/#website"},"about":{"@id":"https://qwertycoin.org/#organization"}},{"@type":"FAQPage","@id":"https://qwertycoin.org/#faq","inLanguage":"en","isPartOf":{"@id":"https://qwertycoin.org/#webpage"},"mainEntity":[{"@type":"Question","name":"What is Qwertycoin?","acceptedAnswer":{"@type":"Answer","text":"Qwertycoin (QWC) is a privacy-focused cryptocurrency with RandomX proof-of-work mining and EPoSe rewards for proven network services."}},{"@type":"Question","name":"How do I use the Web Wallet?","acceptedAnswer":{"@type":"Answer","text":"Open the official Web Wallet, create or restore a wallet there and follow its safety instructions. The main website never processes wallet keys."}},{"@type":"Question","name":"Can I use an old QWC wallet?","acceptedAnswer":{"@type":"Answer","text":"No. The current QWC network is separate from the earlier chain. Legacy wallet software and blockchain data are not compatible with this network."}},{"@type":"Question","name":"Does EPoSe replace mining?","acceptedAnswer":{"@type":"Answer","text":"No. RandomX miners produce blocks and secure the blockchain. EPoSe adds rewards for proven network services."}},{"@type":"Question","name":"What is an epoch?","acceptedAnswer":{"@type":"Answer","text":"An epoch is the block period used to assess EPoSe service activity. It currently spans 720 blocks, approximately 24 hours at the target block interval."}},{"@type":"Question","name":"What does qualified mean?","acceptedAnswer":{"@type":"Answer","text":"A qualified Service Node has met the protocol's requirements for valid attestations in the relevant epoch and is eligible for service-reward selection. The technical quorum is at least ceil(2 x actual committee size / 3)."}},{"@type":"Question","name":"Who determines qualification and rewards?","acceptedAnswer":{"@type":"Answer","text":"The EPoSe protocol. Every full node applies the same rules to valid on-chain registrations and attestations to verify eligibility and reward selection."}},{"@type":"Question","name":"Do Service Nodes need to stake QWC?","acceptedAnswer":{"@type":"Answer","text":"No. Participation requires EPoSe registration and the required service proofs, not locked QWC as stake."}},{"@type":"Question","name":"Can one operator run multiple Service Nodes?","acceptedAnswer":{"@type":"Answer","text":"Yes. Each Service Node needs its own valid registration and must meet the protocol's service requirements. Admission proof makes cheap identity creation harder."}},{"@type":"Question","name":"Why is EPoSe not Proof of Stake?","acceptedAnswer":{"@type":"Answer","text":"EPoSe rewards proven service rather than locked stake. Service Nodes verify blockchain data like other full nodes, while RandomX miners perform proof-of-work block production."}}]}]}</script>
+    <script type="application/json" id="qwc-network-data">{"locale":"en","labels":{"height":{"label":"Block height","help":"Current public chain height."},"registered":{"label":"Registered Service Nodes","shortLabel":"Registered","help":"Service Nodes with valid registration."},"qualified":{"label":"Qualified Service Nodes","shortLabel":"Qualified","help":"Reward-eligible Service Nodes for the relevant period when statistics are available."},"epoch":{"label":"EPoSe epoch","shortLabel":"Epoch","help":"Current {blocks}-block service period (~{hours}h)."},"topHash":"Latest block hash","stateHash":"EPoSe state hash","explorer":"Explorer","currentSource":"Core source","sourcePending":"Available on GitHub","syncLoading":"Loading…","loading":"Loading…","updated":"Updated {time}","unavailable":"Currently unavailable","partial":"Some network data is currently unavailable.","eposeUnavailable":"EPoSe statistics are currently unavailable.","unknown":"unknown","synchronized":"synchronized","syncPending":"sync pending","ratio":"{qualified} / {registered} qualified","noScript":"Live status needs JavaScript. You can still open the explorer for current network data."},"config":{"epochLengthBlocks":720}}</script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <nav class="nav" aria-label="Menu">
-        <a class="brand" href="/#home">
-          <img src="/assets/classic/logo.png" alt="">
+        <a class="brand" href="/#home" aria-label="Qwertycoin home">
+          <img src="/assets/qwertycoin-mark.svg" alt="" width="42" height="42">
           <span>Qwertycoin</span>
         </a>
         <button class="nav-toggle" type="button" aria-controls="primary-menu" aria-expanded="false" data-nav-toggle>
@@ -45,81 +54,82 @@
           <a href="#technology">About</a>
           <a href="#epose">EPoSe</a>
           <a href="#mining">Mining</a>
-          <a href="#releases">Releases</a>
           <a href="#network">Network</a>
-          <a href="#history">History</a>
-          <a href="#developers">Development</a>
-          <div class="locale-switcher" role="group" aria-label="Language">
-    <button class="locale-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-locale-toggle>
+          <div class="locale-switcher" aria-label="Language">
+    <button class="locale-toggle" type="button" aria-expanded="false" aria-controls="locale-menu-en" data-locale-toggle>
       <span>Lang</span>
       <strong>EN</strong>
     </button>
-    <div class="locale-menu" role="menu">
-<a href="/" hreflang="en" lang="en" role="menuitem" data-locale-option="en" aria-current="true"><strong>EN</strong><span>English</span></a>
-<a href="/de/" hreflang="de" lang="de" role="menuitem" data-locale-option="de"><strong>DE</strong><span>Deutsch</span></a>
+    <div class="locale-menu" id="locale-menu-en">
+<a href="/" hreflang="en" lang="en" data-locale-option="en" aria-current="true"><strong>EN</strong><span>English</span></a>
+<a href="/de/" hreflang="de" lang="de" data-locale-option="de"><strong>DE</strong><span>Deutsch</span></a>
     </div>
   </div>
+          <a class="nav-wallet" href="https://wallet.qwertycoin.org/">Wallet</a>
         </div>
       </nav>
     </header>
 
-    <main id="home">
+    <main id="main-content">
+      <span class="anchor-alias" id="home"></span>
       <section class="hero classic-hero">
         <div class="hero-inner hero-grid">
           <div class="hero-copy">
-            <h1>Qwertycoin is back.</h1>
-            <p class="lead hero-lead">QWC Mainnet. Privacy-focused. RandomX-powered. Built around decentralized Proof of Service (EPoSe).</p>
-            <p class="hero-kicker">Mainnet, wallet beta, and public source are live. Additional ecosystem releases follow in controlled stages.</p>
+            <p class="hero-label"><span class="live-dot" aria-hidden="true"></span>QWC MAINNET LIVE</p>
+            <h1>Private money. Open network.</h1>
+            <p class="lead hero-lead">Qwertycoin (QWC) is a privacy-focused cryptocurrency with open RandomX mining and EPoSe rewards for proven network services.</p>
+            <p class="hero-kicker">Open the Web Wallet, explore the blockchain or contribute on GitHub.</p>
             <div class="actions hero-actions">
-              <a class="button primary" href="https://explorer.qwertycoin.org/">Open Mainnet explorer</a>
-              <a class="button secondary" href="https://github.com/qwertycoin-org">Contribute on GitHub</a>
+              <a class="button primary" href="https://wallet.qwertycoin.org/">Open Web Wallet</a>
+              <a class="button secondary" href="https://explorer.qwertycoin.org/">Open Explorer</a>
+              <a class="text-link" href="#technology">How QWC works</a>
             </div>
           </div>
-          <div class="hero-system" role="group" aria-label="Qwertycoin live network">
-            <div class="hero-network-field" aria-hidden="true">
-              <span class="field-line line-a"></span><span class="field-line line-b"></span><span class="field-line line-c"></span>
-              <span class="field-node node-core">QWC</span><span class="field-node node-rx">RX</span><span class="field-node node-a"></span><span class="field-node node-b"></span><span class="field-node node-c"></span><span class="field-node node-d"></span>
-            </div>
-            <aside class="network-pulse hero-pulse" aria-label="QWC MAINNET LIVE" data-network-status>
-              <div class="pulse-heading"><span class="live-dot" aria-hidden="true"></span><span>QWC MAINNET LIVE</span></div>
-              <p>Current chain pulse from the public mainnet explorer and restricted daemon RPC.</p>
-              <div class="pulse-grid">
-                <div class="pulse-stat metric-help">
-                  <span>Height</span>
-                  <button class="info-toggle" type="button" aria-label="Height info">i</button>
-                  <strong data-status="height">loading</strong>
-                  <small>Current public observer height.</small>
+          <div class="hero-system q-motif-stage">
+            <img class="q-motif" src="/assets/qwc-hero-motif.svg" alt="Large golden Qwertycoin Q emblem with abstract network layers" width="1254" height="1254" fetchpriority="high">
+          </div>
+        </div>
+      </section>
+
+      <section class="network-strip" aria-label="QWC MAINNET LIVE" data-network-status>
+        <div class="section-inner network-strip-inner">
+          <div>
+            <p class="eyebrow">QWC MAINNET LIVE</p>
+            <p>Current blockchain and EPoSe data. Available values stay visible when some statistics are unavailable.</p>
+          </div>
+          <div class="pulse-grid">
+            <div class="pulse-stat metric-help">
+                  <span>Block height</span>
+                  <strong data-status="height">Loading…</strong>
+                  <small>Current public chain height.</small>
                 </div>
-                <div class="pulse-stat metric-help">
+            <div class="pulse-stat metric-help">
                   <span>Registered</span>
-                  <button class="info-toggle" type="button" aria-label="Registered Service Nodes info">i</button>
-                  <strong data-status="service-nodes">loading</strong>
-                  <small>Known nodes with valid EPoSe registration.</small>
+                  <strong data-status="service-nodes">Loading…</strong>
+                  <small>Service Nodes with valid registration.</small>
                 </div>
-                <div class="pulse-stat metric-help">
+            <div class="pulse-stat metric-help">
                   <span>Qualified</span>
-                  <button class="info-toggle" type="button" aria-label="Qualified Service Nodes info">i</button>
-                  <strong data-status="qualified">loading</strong>
-                  <small>Registered nodes currently reward-eligible.</small>
+                  <strong data-status="qualified">Loading…</strong>
+                  <small>Reward-eligible Service Nodes for the relevant period when statistics are available.</small>
                 </div>
-                <div class="pulse-stat metric-help">
+            <div class="pulse-stat metric-help">
                   <span>Epoch</span>
-                  <button class="info-toggle" type="button" aria-label="EPoSe Epoch info">i</button>
-                  <strong data-status="epoch">loading</strong>
+                  <strong data-status="epoch">Loading…</strong>
                   <small>Current 720-block service period (~24h).</small>
                 </div>
-              </div>
-              <div class="pulse-foot"><span data-status="nettype">mainnet</span><span data-status="sync">sync loading</span></div>
-            </aside>
           </div>
+          <div class="pulse-foot"><span data-status="nettype">mainnet</span><span data-status="sync">Loading…</span><span data-status="updated-at">Loading…</span></div>
+          <p class="network-status-message" data-status-message role="status" aria-live="polite" hidden></p>
+          <noscript><p class="network-noscript">Live status needs JavaScript. You can still open the explorer for current network data.</p></noscript>
         </div>
       </section>
 
       <section class="system-strip" aria-label="Qwertycoin dual system">
         <div class="section-inner"><div class="dual-system">
-          <article><span class="system-label">Security</span><h2>RandomX PoW</h2><p>Miners produce blocks, secure ordering, and keep QWC permissionless.</p></article>
+          <article><span class="system-label">Mining</span><h2>RandomX PoW</h2><p>Miners produce new blocks and secure the blockchain through proof of work.</p></article>
           <div class="system-plus" aria-hidden="true">+</div>
-          <article><span class="system-label">Infrastructure</span><h2>EPoSe v2</h2><p>Registered Service Nodes prove useful network service and enter consensus-enforced reward rotation.</p></article>
+          <article><span class="system-label">Service rewards</span><h2>EPoSe</h2><p>Service Nodes earn eligibility for network-service rewards through valid attestations.</p></article>
         </div></div>
       </section>
 
@@ -127,80 +137,81 @@
         <div class="section-inner">
           <div class="section-header">
             <p class="eyebrow">About Qwertycoin</p>
-            <h2>QWC mainnet combines RandomX mining with EPoSe service rewards.</h2>
-            <p>Qwertycoin is a new mainnet chain derived from the Monero v0.18.5.1 codebase, with QWC parameters, HF17-era privacy technology, RandomX proof of work, and EPoSe from genesis.</p>
+            <h2>Privacy. Powered by QWC.</h2>
+            <p>Use QWC for private payments, contribute computing power through mining or support the network as a Service Node.</p>
           </div>
           <div class="feature-mosaic">
             <article class="feature-card">
-              <img class="card-icon" src="/assets/classic/about-il-01.svg" alt="">
-              <span class="badge mainnet">MAINNET LIVE</span>
-              <h3>QWC Core Network</h3><p>The current QWC chain is mainnet. Active operators, miners, and Service Nodes are hardening the live network.</p>
+              <img class="card-icon" src="/assets/classic/about-il-01.svg" alt="" width="86" height="86" loading="lazy" decoding="async">
+              <span class="badge mainnet">OPEN NETWORK</span>
+              <h3>QWC Core Network</h3><p>Send and receive QWC on an open network. Independent nodes verify transactions and maintain the blockchain.</p>
             </article>
 <article class="feature-card">
-              <img class="card-icon" src="/assets/classic/about-il-03.svg" alt="">
-              <span class="badge mainnet">Monero 0.18.5.1</span>
-              <h3>Modern privacy base</h3><p>QWC starts from Monero v0.18.5.1 with HF17-era privacy technology and QWC-specific parameters from genesis.</p>
+              <img class="card-icon" src="/assets/classic/about-il-03.svg" alt="" width="86" height="86" loading="lazy" decoding="async">
+              <span class="badge mainnet">PRIVACY</span>
+              <h3>Privacy built in</h3><p>QWC uses privacy technology to protect transaction details. Its open source code lets anyone examine how the network works.</p>
             </article>
 <article class="feature-card">
-              <img class="card-icon" src="/assets/classic/about-il-04.svg" alt="">
+              <img class="card-icon" src="/assets/classic/about-il-04.svg" alt="" width="86" height="86" loading="lazy" decoding="async">
               <span class="badge mainnet">PoW</span>
-              <h3>RandomX proof of work</h3><p>RandomX miners produce blocks, secure ordering, and keep chain security separate from service-node reward eligibility.</p>
+              <h3>RandomX proof of work</h3><p>RandomX miners produce new blocks and secure the blockchain. Anyone can participate with compatible mining software.</p>
             </article>
 <article class="feature-card">
-              <img class="card-icon" src="/assets/classic/about-il-06.svg" alt="">
-              <span class="badge mainnet">EPoSe v2</span>
-              <h3>Proof of Service rewards</h3><p>Registered Service Nodes prove useful network service through deterministic attestations before they can enter reward rotation.</p>
+              <img class="card-icon" src="/assets/classic/about-il-06.svg" alt="" width="86" height="86" loading="lazy" decoding="async">
+              <span class="badge mainnet">EPoSe</span>
+              <h3>Rewards for proven service</h3><p>Service Nodes provide network services. Valid attestations establish eligibility, and the EPoSe protocol determines the reward rotation.</p>
             </article>
 <article class="feature-card">
-              <img class="card-icon" src="/assets/classic/about-il-02.svg" alt="">
-              <span class="badge mainnet">No PoS</span>
-              <h3>Service Nodes are not validators</h3><p>Service Nodes do not lock stake, produce blocks, or vote on chain history. RandomX proof of work remains responsible for consensus ordering.</p>
+              <img class="card-icon" src="/assets/classic/about-il-02.svg" alt="" width="86" height="86" loading="lazy" decoding="async">
+              <span class="badge mainnet">NETWORK SERVICES</span>
+              <h3>Service Nodes</h3><p>Service Nodes support the network and take part in EPoSe. No QWC staking is required; block production remains the job of RandomX miners.</p>
             </article>
 <article class="feature-card">
-              <img class="card-icon" src="/assets/classic/about-il-05.svg" alt="">
-              <span class="badge mainnet">Rollout</span>
-              <h3>Wallet and source available</h3><p>The website, web wallet beta, and public QWC core source are available. Signed binaries and broader tooling follow in staged releases.</p>
+              <img class="card-icon" src="/assets/classic/about-il-05.svg" alt="" width="86" height="86" loading="lazy" decoding="async">
+              <span class="badge mainnet">AVAILABLE</span>
+              <h3>Web Wallet and open source</h3><p>Use QWC directly in your browser with the Web Wallet. Explore the core software and contribute to its development on GitHub.</p>
             </article>
           </div>
         </div>
       </section>
 
       <section class="section specs-section" id="specs"><div class="section-inner">
-        <div class="spec-orbit" role="group" aria-label="QWC parameter orbit diagram">
+        <div class="spec-orbit" aria-label="QWC parameter orbit diagram">
           <picture>
-            <source media="(max-width: 640px)" srcset="/assets/classic/about_bg_img-mobile.svg">
-            <img src="/assets/classic/about_bg-01_img.svg" alt="">
+            <source media="(max-width: 720px)" srcset="/assets/classic/about_bg_img-mobile.svg" width="600" height="1080">
+            <img src="/assets/classic/about_bg-01_img.svg" alt="" width="1000" height="720" loading="lazy" decoding="async">
           </picture>
           <div class="spec-mobile-grid">
             <div class="spec-mobile-card"><span>Name</span><strong>Qwertycoin</strong></div>
 <div class="spec-mobile-card"><span>Ticker</span><strong>QWC</strong></div>
 <div class="spec-mobile-card"><span>Network</span><strong>Mainnet</strong></div>
 <div class="spec-mobile-card"><span>Protocol</span><strong>QWC HF17</strong></div>
-<div class="spec-mobile-card"><span>Monero base</span><strong>v0.18.5.1</strong></div>
-<div class="spec-mobile-card"><span>Consensus</span><strong>RandomX PoW + EPoSe service rewards</strong></div>
-<div class="spec-mobile-card"><span>Block Target</span><strong>120 seconds</strong></div>
+<div class="spec-mobile-card"><span>Service rewards</span><strong>EPoSe</strong></div>
+<div class="spec-mobile-card"><span>Consensus</span><strong>RandomX proof of work</strong></div>
+<div class="spec-mobile-card"><span>Block target</span><strong>120 seconds</strong></div>
 <div class="spec-mobile-card"><span>EPoSe Epoch</span><strong>720 blocks (~24 hours)</strong></div>
-<div class="spec-mobile-card"><span>EPoSe Committee</span><strong>9 verifiers</strong></div>
-<div class="spec-mobile-card"><span>Required Quorum</span><strong>ceil(2/3) of the selected committee</strong></div>
+<div class="spec-mobile-card"><span>EPoSe committee</span><strong>9 verifier target</strong></div>
+<div class="spec-mobile-card"><span>Attestation quorum</span><strong>ceil(2/3 of actual committee), 6 of 9 when full</strong></div>
           </div>
+
         </div>
       </div></section>
 
       <section class="section dark" id="epose">
         <div class="section-inner">
           <div class="section-header">
-            <p class="eyebrow">EPoSe v2</p>
-            <h2>RandomX PoW secures the blockchain. EPoSe rewards decentralized network service.</h2>
-            <p>No central Sentinel decides which Service Nodes receive rewards. Chain state and EPoSe rules determine qualification, payee selection, and reward validity.</p>
+            <p class="eyebrow">EPoSe</p>
+            <h2>Prove service. Earn QWC.</h2>
+            <p>EPoSe rewards registered Service Nodes for proven network services. The protocol evaluates valid attestations recorded on the blockchain and determines which nodes qualify for reward rotation.</p>
           </div>
-          <div class="epose-compact" role="group" aria-label="EPoSe flow">
-            <article class="epose-summary-card"><span>01</span><h3>Service activity</h3><p>Registered Service Nodes provide useful QWC network service during each epoch.</p></article>
-<article class="epose-summary-card"><span>02</span><h3>Attestations</h3><p>Deterministically assigned verifier committees check service activity and create signed attestations.</p></article>
-<article class="epose-summary-card"><span>03</span><h3>Reward rotation</h3><p>Qualification is finalized before deterministic payee selection can affect service rewards.</p></article>
+          <div class="epose-compact" aria-label="EPoSe flow">
+            <article class="epose-summary-card"><span>01</span><h3>Provide service.</h3><p>Registered Service Nodes provide network services during each epoch.</p></article>
+<article class="epose-summary-card"><span>02</span><h3>Verify service.</h3><p>Protocol-selected verifiers check service responses and submit signed attestations.</p></article>
+<article class="epose-summary-card"><span>03</span><h3>Receive rewards.</h3><p>After qualification is finalized, eligible Service Nodes enter the protocol's deterministic reward rotation.</p></article>
           </div>
           <div class="epose-note-row">
-            <div class="tribute"><p class="eyebrow">EPoSe origin</p><h3>Thank you, Xecute.</h3><p>The original EPoSe vision and Qwertycoin service-layer whitepaper work came from Xecute, a historical honorary member of the Qwertycoin project. QWC finally carries that plan forward as a decentralized chain-state implementation.</p></div>
-            <div class="sentinel-note"><strong>No central Sentinel decides rewards.</strong><span>Explorer and Sentinel-style tooling can observe and monitor, but consensus derives EPoSe state from the chain. Current mainnet reward split: 90% miner / 10% EPoSe service reward.</span></div>
+            <div class="tribute"><p class="eyebrow">EPoSe origin</p><h3>Thank you, Xecute.</h3><p>Xecute developed the original EPoSe vision and contributed the Qwertycoin service-layer whitepaper. That work laid the foundation for rewarding useful network services.</p></div>
+            <div class="reward-rules-note"><strong>Rewards follow the protocol.</strong><span>Every full node can verify reward eligibility and recipient selection from the blockchain. Reward allocation: 90% mining / 10% EPoSe service rewards.</span></div>
           </div>
         </div>
       </section>
@@ -208,132 +219,131 @@
       <section class="section alt" id="service-nodes"><div class="section-inner">
         <div class="section-header">
             <p class="eyebrow">Service Nodes</p>
-            <h2>Run infrastructure. Prove service. Earn QWC.</h2>
-            <p>A normal node validates, syncs, and relays. A Service Node adds a registered identity, public service commitment, proof/attestation flow, qualification, and reward eligibility.</p>
+            <h2>Support the network. Earn through service.</h2>
+            <p>Every full node verifies and relays blockchain data. A registered Service Node also participates in EPoSe and can qualify for service rewards.</p>
           </div>
-        <table class="comparison"><thead><tr><th>Normal node</th><th>Service Node</th></tr></thead><tbody><tr><td>Synchronizes the blockchain, validates blocks, relays transactions, and contributes peer capacity.</td><td>Does everything a normal node does, plus registers a service identity and participates in the EPoSe service-reward protocol.</td></tr><tr><td>No reward path beyond mining if the operator also mines blocks.</td><td>Can become qualified for deterministic service rewards after registration and attestations.</td></tr><tr><td>No stake or validator-council role.</td><td>Also not a proof-of-stake validator. RandomX miners still produce blocks.</td></tr></tbody></table>
-        <div class="comparison-stack" role="group" aria-label="Normal node and service node comparison"><article class="comparison-pair"><div><h3>Normal node</h3><p>Synchronizes the blockchain, validates blocks, relays transactions, and contributes peer capacity.</p></div><div><h3>Service Node</h3><p>Does everything a normal node does, plus registers a service identity and participates in the EPoSe service-reward protocol.</p></div></article><article class="comparison-pair"><div><h3>Normal node</h3><p>No reward path beyond mining if the operator also mines blocks.</p></div><div><h3>Service Node</h3><p>Can become qualified for deterministic service rewards after registration and attestations.</p></div></article><article class="comparison-pair"><div><h3>Normal node</h3><p>No stake or validator-council role.</p></div><div><h3>Service Node</h3><p>Also not a proof-of-stake validator. RandomX miners still produce blocks.</p></div></article></div>
+        <table class="comparison"><thead><tr><th>Normal node</th><th>Service Node</th></tr></thead><tbody><tr><td>Verifies blocks and transactions, synchronizes the chain and relays data.</td><td>Performs the same node functions and provides registered EPoSe services.</td></tr><tr><td>Operating a regular node alone does not earn EPoSe rewards.</td><td>Can qualify for service rewards through valid service attestations.</td></tr><tr><td>Can be operated independently of mining.</td><td>Requires EPoSe registration and service proofs, without QWC staking.</td></tr></tbody></table>
+        <div class="comparison-stack" aria-label="Normal node and Service Node comparison"><article class="comparison-pair"><div><h3>Normal node</h3><p>Verifies blocks and transactions, synchronizes the chain and relays data.</p></div><div><h3>Service Node</h3><p>Performs the same node functions and provides registered EPoSe services.</p></div></article><article class="comparison-pair"><div><h3>Normal node</h3><p>Operating a regular node alone does not earn EPoSe rewards.</p></div><div><h3>Service Node</h3><p>Can qualify for service rewards through valid service attestations.</p></div></article><article class="comparison-pair"><div><h3>Normal node</h3><p>Can be operated independently of mining.</p></div><div><h3>Service Node</h3><p>Requires EPoSe registration and service proofs, without QWC staking.</p></div></article></div>
       </div></section>
 
       <section class="section" id="mining"><div class="section-inner"><div class="section-header">
             <p class="eyebrow">Mining</p>
-            <h2>RandomX, not CryptoNight.</h2>
-            <p>Old CryptoNight and old mining pool instructions are legacy material. QWC uses RandomX proof of work with a 120 second block target.</p>
-          </div><div class="grid two"><article class="card"><h3>Permissionless PoW</h3><p>Mining is open to anyone who can run compatible RandomX mining software against a QWC node or pool. Active pool documentation will be linked only after it is verified for v2.</p></article><article class="card"><h3>No validator council</h3><p>QWC is not proof of stake. Service Nodes receive service rewards only through the EPoSe layer; they do not replace proof-of-work block production.</p></article></div></div></section>
+            <h2>Mine with RandomX.</h2>
+            <p>Contribute computing power to Qwertycoin. RandomX miners produce blocks at a target interval of 120 seconds.</p>
+          </div><div class="grid two"><article class="card"><h3>Open participation</h3><p>Connect compatible RandomX mining software to a QWC node or a supported mining pool.</p></article><article class="card"><h3>Mining and network services</h3><p>Mining secures block production. EPoSe separately rewards registered nodes for proven network services.</p></article></div></div></section>
 
       <section class="section alt releases-section" id="releases"><span class="anchor-alias" id="wallet"></span><div class="section-inner">
         <div class="section-header">
-            <p class="eyebrow">Releases</p>
-            <h2>Qwertycoin Releases</h2>
-            <p>Mainnet release communication is staged: website first, web wallet beta next, public QWC source after that, then broader wallet and ecosystem tooling.</p>
+            <p class="eyebrow">Wallets</p>
+            <h2>Wallets and source code</h2>
+            <p>The Web Wallet and Qwertycoin source code are available now. Find the current status of additional wallets and tools below.</p>
           </div>
         <div class="release-grid">
           <article class="release-card">
                 <div class="release-card-head">
                   <div>
-                    <span class="badge mainnet">BETA</span>
+                    <span class="badge mainnet">AVAILABLE</span>
                     <h3>Web Wallet</h3>
                   </div>
                   <span class="release-glyph" aria-hidden="true">WEB</span>
                 </div>
-                <p>The browser wallet beta is the active wallet path for the current QWC mainnet. Early beta - use with care.</p>
-                <div class="release-links"><a class="release-link" href="https://wallet.qwertycoin.org/" target="_blank" rel="noopener" aria-label="Open Web Wallet Beta"><span aria-hidden="true">WEB</span>Open Web Wallet Beta</a><span class="release-link disabled"><span aria-hidden="true">PWA</span>PWA In Development</span><span class="release-link disabled"><span aria-hidden="true">APP</span>Mobile App Planned</span></div>
+                <p>Send, receive and manage QWC directly in your browser.</p>
+                <div class="release-links"><a class="release-link" href="https://wallet.qwertycoin.org/" target="_blank" rel="noopener"><span aria-hidden="true">WEB</span>Open Web Wallet</a></div>
               </article>
 <article class="release-card">
                 <div class="release-card-head">
                   <div>
                     <span class="badge next">PLANNED</span>
-                    <h3>Desktop GUI</h3>
+                    <h3>Desktop wallets</h3>
                   </div>
                   <span class="release-glyph" aria-hidden="true">GUI</span>
                 </div>
-                <p>Desktop wallets remain planned and should ship only after the v2 transaction path is hardened.</p>
-                <div class="release-links"><span class="release-link disabled"><span aria-hidden="true">WIN</span>Windows Planned</span><span class="release-link disabled"><span aria-hidden="true">MAC</span>macOS Planned</span><span class="release-link disabled"><span aria-hidden="true">LNX</span>Linux Planned</span></div>
+                <p>Desktop wallets for Windows, macOS and Linux are planned.</p>
+                <div class="release-links"><a class="release-link disabled"><span aria-hidden="true">WIN</span>Windows Planned</a><a class="release-link disabled"><span aria-hidden="true">MAC</span>macOS Planned</a><a class="release-link disabled"><span aria-hidden="true">LNX</span>Linux Planned</a></div>
               </article>
 <article class="release-card">
                 <div class="release-card-head">
                   <div>
-                    <span class="badge mainnet">SOURCE</span>
-                    <h3>Public QWC Source</h3>
+                    <span class="badge next">SOURCE AVAILABLE</span>
+                    <h3>QWC source code</h3>
                   </div>
                   <span class="release-glyph" aria-hidden="true">SRC</span>
                 </div>
-                <p>The current QWC v2 core source is public. Signed release artifacts and operator documentation remain subject to the staged release process.</p>
-                <div class="release-links"><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin" target="_blank" rel="noopener" aria-label="Open Core Repository"><span aria-hidden="true">SRC</span>Open Core Repository</a><a class="release-link" href="https://github.com/qwertycoin-org" target="_blank" rel="noopener" aria-label="GitHub Organization"><span aria-hidden="true">GH</span>GitHub Organization</a></div>
+                <p>Explore the core software, build it yourself and contribute on GitHub.</p>
+                <div class="release-links"><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin" target="_blank" rel="noopener"><span aria-hidden="true">SRC</span>Open Core Repository</a><a class="release-link" href="https://github.com/qwertycoin-org" target="_blank" rel="noopener"><span aria-hidden="true">GH</span>GitHub Organization</a></div>
               </article>
 <article class="release-card">
                 <div class="release-card-head">
                   <div>
                     <span class="badge research">PLANNED</span>
-                    <h3>Additional Wallets &amp; Tools</h3>
+                    <h3>Additional wallets and tools</h3>
                   </div>
                   <span class="release-glyph" aria-hidden="true">REL</span>
                 </div>
-                <p>Paper wallet generation, ARM builds, mobile apps, operator tools, and release indexes need v2-specific review before public release.</p>
-                <div class="release-links"><span class="release-link disabled"><span aria-hidden="true">KEY</span>Paper Wallet Planned</span><span class="release-link disabled"><span aria-hidden="true">DOC</span>Operator Guides Planned</span></div>
+                <p>Additional wallets and operator tools are planned. Each item shows its current availability.</p>
+                <div class="release-links"><a class="release-link disabled"><span aria-hidden="true">PWA</span>PWA In Development</a><a class="release-link disabled"><span aria-hidden="true">DOC</span>Operator Guides Planned</a></div>
               </article>
         </div>
-        <div class="release-note"><strong>Release policy</strong><span>Old QWC downloads are not compatible with Qwertycoin. This page will expose signed binaries only after current mainnet builds, checksums, and release notes are ready.</span></div>
+        <div class="release-note"><strong>Compatibility note</strong><span>The current QWC network is separate from the earlier chain. Legacy wallet software and blockchain data are not compatible with this network.</span></div>
       </div></section>
 
       <section class="section dark" id="network"><div class="section-inner"><div class="section-header">
-            <p class="eyebrow">Mainnet</p>
-            <h2>QWC Mainnet explorer status.</h2>
-            <p>Live observer metrics for the current QWC mainnet.</p>
+            <p class="eyebrow">Network</p>
+            <h2>Network activity</h2>
+            <p>Current blockchain and EPoSe data.</p>
           </div>
         <div class="network-board"><div class="network-kpis"><div class="network-kpi metric-help">
-                <span>Height</span>
-                <button class="info-toggle" type="button" aria-label="Height info">i</button>
-                <strong data-status="height">loading</strong>
-                <small>Current public observer height.</small>
+                <span>Block height</span>
+                <strong data-status="height">Loading…</strong>
+                <small>Current public chain height.</small>
               </div><div class="network-kpi metric-help">
-                <span>EPoSe Epoch</span>
-                <button class="info-toggle" type="button" aria-label="EPoSe Epoch info">i</button>
-                <strong data-status="epoch">loading</strong>
+                <span>EPoSe epoch</span>
+                <strong data-status="epoch">Loading…</strong>
                 <small>Current 720-block service period (~24h).</small>
               </div><div class="network-kpi metric-help">
                 <span>Registered Service Nodes</span>
-                <button class="info-toggle" type="button" aria-label="Registered Service Nodes info">i</button>
-                <strong data-status="service-nodes">loading</strong>
-                <small>Known nodes with valid EPoSe registration.</small>
+                <strong data-status="service-nodes">Loading…</strong>
+                <small>Service Nodes with valid registration.</small>
               </div><div class="network-kpi metric-help">
                 <span>Qualified Service Nodes</span>
-                <button class="info-toggle" type="button" aria-label="Qualified Service Nodes info">i</button>
-                <strong data-status="qualified">loading</strong>
-                <small>Registered nodes currently reward-eligible.</small>
+                <strong data-status="qualified">Loading…</strong>
+                <small>Reward-eligible Service Nodes for the relevant period when statistics are available.</small>
               </div></div>
         <p class="qualification-ratio" data-status="qualification-ratio"></p>
-        <div class="network-details"><div><span>Top Hash</span><strong data-status="top-hash">loading</strong></div><div><span>EPoSe State Hash</span><strong data-status="epose-hash">loading</strong></div><div><span>Explorer</span><strong><a href="https://explorer.qwertycoin.org/">explorer.qwertycoin.org</a></strong></div><div><span>Current Source</span><strong><a href="https://github.com/qwertycoin-org/qwertycoin">github.com/qwertycoin-org/qwertycoin</a></strong></div></div></div>
+        <div class="network-details"><div><span>Latest block hash</span><strong data-status="top-hash">Loading…</strong></div><div><span>EPoSe state hash</span><strong data-status="epose-hash">Loading…</strong></div><div><span>Explorer</span><strong><a href="https://explorer.qwertycoin.org/">explorer.qwertycoin.org</a></strong></div><div><span>Core source</span><strong>Available on GitHub</strong></div></div></div>
       </div></section>
 
       <section class="section" id="faq"><div class="section-inner"><div class="section-header">
             <p class="eyebrow">EPoSe FAQ</p>
             <h2>Short answers for new operators.</h2>
-          </div><div class="faq-list"><details><summary>Does EPoSe replace mining?</summary><p>No. RandomX miners still produce blocks and secure the chain. EPoSe adds a service-reward layer for registered infrastructure.</p></details><details><summary>What is an epoch?</summary><p>An epoch is a fixed block period used by EPoSe to measure and finalize service activity. The current QWC parameter is 720 blocks, roughly 24 hours.</p></details><details><summary>What does qualified mean?</summary><p>Qualified means a registered Service Node has enough valid attestations in the relevant epoch to become reward-eligible.</p></details><details><summary>Who decides whether a Service Node is qualified?</summary><p>No central server. Qualification is derived deterministically from QWC chain state and valid EPoSe registration and attestation data.</p></details><details><summary>Do Service Nodes need to stake QWC?</summary><p>No QWC staking role is defined in the current EPoSe core. Service Nodes register a service identity and admission proof; they are not proof-of-stake validators.</p></details><details><summary>Can one operator run multiple Service Nodes?</summary><p>The protocol can represent multiple Service Node identities. Admission proof makes cheap identity creation harder, but it is not a promise that one human equals one node.</p></details><details><summary>Why is EPoSe not Proof of Stake?</summary><p>Service Nodes do not lock stake, produce blocks, or vote on chain history. RandomX proof of work remains responsible for block production and ordering.</p></details></div></div></section>
+          </div><div class="faq-list"><details><summary>What is Qwertycoin?</summary><p>Qwertycoin (QWC) is a privacy-focused cryptocurrency with RandomX proof-of-work mining and EPoSe rewards for proven network services.</p></details><details><summary>How do I use the Web Wallet?</summary><p>Open the official Web Wallet, create or restore a wallet there and follow its safety instructions. The main website never processes wallet keys.</p></details><details><summary>Can I use an old QWC wallet?</summary><p>No. The current QWC network is separate from the earlier chain. Legacy wallet software and blockchain data are not compatible with this network.</p></details><details><summary>Does EPoSe replace mining?</summary><p>No. RandomX miners produce blocks and secure the blockchain. EPoSe adds rewards for proven network services.</p></details><details><summary>What is an epoch?</summary><p>An epoch is the block period used to assess EPoSe service activity. It currently spans 720 blocks, approximately 24 hours at the target block interval.</p></details><details><summary>What does qualified mean?</summary><p>A qualified Service Node has met the protocol's requirements for valid attestations in the relevant epoch and is eligible for service-reward selection. The technical quorum is at least ceil(2 x actual committee size / 3).</p></details><details><summary>Who determines qualification and rewards?</summary><p>The EPoSe protocol. Every full node applies the same rules to valid on-chain registrations and attestations to verify eligibility and reward selection.</p></details><details><summary>Do Service Nodes need to stake QWC?</summary><p>No. Participation requires EPoSe registration and the required service proofs, not locked QWC as stake.</p></details><details><summary>Can one operator run multiple Service Nodes?</summary><p>Yes. Each Service Node needs its own valid registration and must meet the protocol's service requirements. Admission proof makes cheap identity creation harder.</p></details><details><summary>Why is EPoSe not Proof of Stake?</summary><p>EPoSe rewards proven service rather than locked stake. Service Nodes verify blockchain data like other full nodes, while RandomX miners perform proof-of-work block production.</p></details></div></div></section>
       <section class="section alt" id="roadmap"><div class="section-inner"><div class="section-header">
             <p class="eyebrow">Roadmap</p>
-            <h2>No date theatre. Just status.</h2>
-            <p>Current product and release milestones for the QWC mainnet, without artificial quarter dates.</p>
-          </div><div class="roadmap rail"><article class="roadmap-item"><div><span class="badge mainnet">DONE</span></div><div><h3>QWC Revival Foundation</h3><p>New QWC chain, modern Monero-derived base, RandomX, HF17 from genesis, QWC parameters and branding.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">DONE</span></div><div><h3>EPoSe v2 Core</h3><p>Service-node registration, RandomX-bound admission, attestations, qualification, deterministic reward rotation, and consensus-enforced service rewards.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">DONE</span></div><div><h3>Mainnet Hardening</h3><p>EPoSe qualification, service-node validation, explorer, CI/release hardening, long-running network observation, multi-node validation, and security review preparation.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">IN PREPARATION</span></div><div><h3>Wallet and Ecosystem</h3><p>Web/PWA wallet development, desktop GUI planning, developer APIs, service-node tooling, mining documentation, and operator guides.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">NEXT</span></div><div><h3>Public Developer Ecosystem</h3><p>Public QWC source release, reproducible builds, developer documentation, SDK/API access, and broader community tooling.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">RESEARCH</span></div><div><h3>Extended EPoSe Services</h3><p>Additional decentralized services, light-wallet infrastructure, archival services, and encrypted distributed object storage.</p></div></article></div></div></section>
+            <h2>What is available. What comes next.</h2>
+            <p>Track the progress of Qwertycoin's network, wallets and developer tools.</p>
+          </div><div class="roadmap rail"><article class="roadmap-item"><div><span class="badge mainnet">LIVE</span></div><div><h3>QWC network</h3><p>RandomX network and core QWC functionality are live. Operators continue to maintain and improve the network.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">LIVE</span></div><div><h3>EPoSe</h3><p>Registration, service attestations, qualification and reward rotation are part of the current QWC network.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">ONGOING</span></div><div><h3>Network operation</h3><p>Monitoring, maintenance and operational improvements continue as regular network work.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">AVAILABLE</span></div><div><h3>Wallets and tools</h3><p>The Web Wallet is available. PWA behavior, desktop software and additional tools keep their own status.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">SOURCE AVAILABLE</span></div><div><h3>Developer resources</h3><p>Core source code is available. Additional documentation, APIs and operator resources are tracked separately.</p></div></article><article class="roadmap-item"><div><span class="badge mainnet">RESEARCH</span></div><div><h3>EPoSe research</h3><p>Extended services remain research topics and are not presented as current product functions.</p></div></article></div></div></section>
       <section class="section" id="history"><div class="section-inner"><div class="section-header">
             <p class="eyebrow">History</p>
-            <h2>2018 roots. 2026 QWC Mainnet.</h2>
-            <p>The legacy Qwertycoin ecosystem matters, but it must not be confused with Qwertycoin.</p>
-          </div><div class="history-bridge"><div class="history-year"><strong>2018</strong><span>Original QWC community chain</span></div><div class="history-line" aria-hidden="true"><span></span></div><div class="history-year"><strong>2026</strong><span>QWC Mainnet with RandomX + EPoSe</span></div></div><div class="timeline"><article class="timeline-item"><div class="date">2018</div><div><h3>Qwertycoin launches</h3><p>QWC began as a CryptoNote-based community privacy coin with early wallet, explorer, community, and infrastructure efforts.</p></div></article><article class="timeline-item"><div class="date">2019-2020+</div><div><h3>EPoW and EPoSe experiments</h3><p>The project explored fair mining, service rewards, wallets, nodes, infrastructure, and voting concepts. Xecute's EPoSe work remains part of that origin story.</p></div></article><article class="timeline-item"><div class="date">Later</div><div><h3>Stagnation and token phase</h3><p>The legacy chain and ecosystem diverged from what QWC needs today. Exchange, price, wallet, and old source claims from that era are not reused as current facts.</p></div></article><article class="timeline-item"><div class="date">2026</div><div><h3>Qwertycoin Mainnet</h3><p>Qwertycoin returns as a new mainnet chain with RandomX, modern privacy technology, QWC HF17 rules, and EPoSe v2.</p></div></article></div><div class="alert">Qwertycoin is a new mainnet chain. Old chain data, wallet cache files, peer state, and old release binaries are not compatible with this network.</div></div></section>
+            <h2>Since 2018. Building the next chapter.</h2>
+            <p>Qwertycoin began in 2018. Today's network builds on that history with RandomX and EPoSe.</p>
+          </div><div class="history-bridge"><div class="history-year"><strong>2018</strong><span>Original QWC community chain</span></div><div class="history-line" aria-hidden="true"><span></span></div><div class="history-year"><strong>2026</strong><span>QWC network with RandomX and EPoSe</span></div></div><div class="timeline"><article class="timeline-item"><div class="date">2018</div><div><h3>Qwertycoin launches</h3><p>QWC began as a CryptoNote-based community privacy coin with early wallet, explorer, community and infrastructure efforts.</p></div></article><article class="timeline-item"><div class="date">2019–2023</div><div><h3>EPoW and EPoSe research and development</h3><p>From 2019 to 2023, the project explored fair mining and network-service rewards alongside wallets, nodes and infrastructure. Xecute's EPoSe work shaped the vision of rewarding useful network services.</p></div></article><article class="timeline-item"><div class="date">Later</div><div><h3>Token phase</h3><p>The token phase is part of Qwertycoin's history and separate from today's QWC network.</p></div></article><article class="timeline-item"><div class="date">2026</div><div><h3>Qwertycoin network</h3><p>Qwertycoin starts a new network with private payments, RandomX mining and EPoSe service rewards.</p></div></article></div><div class="alert">The current QWC network is separate from the earlier chain. Legacy wallet software and blockchain data are not compatible with this network.</div></div></section>
       <section class="section dark" id="developers"><div class="section-inner"><div class="section-header">
             <p class="eyebrow">Developers</p>
-            <h2>Build and review the public QWC source.</h2>
-            <p>The current QWC v2 core source is public. Release binaries, checksums, and operator guidance continue through controlled release gates.</p>
-          </div><div class="grid three"><article class="card"><h3>QWC source code</h3><p>The current core source is available in qwertycoin-org/qwertycoin. Review the repository and its build notes before running mainnet software.</p></article><article class="card"><h3>Legacy Qwertycoin source</h3><p>Older public repositories may remain available for history, but they must not be treated as the current QWC core source.</p></article><article class="card"><h3>EPoSe operator tooling</h3><p>Service-node registration, attestation, qualification, and reward tooling is developed alongside the public QWC core source and remains subject to release review.</p></article></div></div></section>
+            <h2>Build with Qwertycoin.</h2>
+            <p>Explore the core code, build the software and contribute improvements on GitHub.</p>
+          </div><div class="grid three"><article class="card"><h3>Core source code</h3><p><a href="https://github.com/qwertycoin-org/qwertycoin">Explore the public Qwertycoin core repository on GitHub.</a></p></article><article class="card"><h3>Build instructions</h3><p>Build and release information is tracked with the core repository and published resources.</p></article><article class="card"><h3>Service-node tools</h3><p>Operator information for Service Nodes will be linked when the guides are ready.</p></article></div></div></section>
       <section class="section" id="community"><div class="section-inner"><div class="section-header">
             <p class="eyebrow">Community</p>
-            <h2>Open source, careful by default.</h2>
-            <p>Only active and controlled resources are linked from this mainnet website. Legacy docs and old wallet/download/exchange links remain excluded until they are updated or clearly archived.</p>
+            <h2>Join the Qwertycoin community.</h2>
+            <p>Follow development, explore the network and help shape Qwertycoin's next steps.</p>
           </div><div class="grid three"><article class="card"><h3>GitHub</h3><p><a href="https://github.com/qwertycoin-org">Qwertycoin organization</a></p></article><article class="card"><h3>Explorer</h3><p><a href="https://explorer.qwertycoin.org/">QWC Mainnet Explorer</a></p></article><article class="card"><h3>X / Twitter</h3><p><a href="https://x.com/Qwertycoin_QWC">@Qwertycoin_QWC</a></p></article></div></div></section>
     </main>
 
-    <footer class="site-footer"><div class="footer-inner"><div><a class="brand" href="/#home"><img src="/assets/classic/logo.png" alt=""><span>Qwertycoin</span></a></div><div class="footer-links"><a href="#technology">Technology</a><a href="#history">History</a><a href="#roadmap">Roadmap</a></div></div></footer>
-    <script src="/js/network-status.js" defer></script>
-    <script src="/js/nav-menu.js" defer></script>
+    <footer class="site-footer"><div class="footer-inner"><div><a class="brand" href="/#home" aria-label="Qwertycoin home">
+          <img src="/assets/qwertycoin-mark.svg" alt="" width="42" height="42">
+          <span>Qwertycoin</span>
+        </a></div><div class="footer-links"><a href="#technology">Technology</a><a href="#history">History</a><a href="#roadmap">Roadmap</a></div></div></footer>
+    <script src="/js/v/network-status.8837c54970d4.js" defer></script>
+    <script src="/js/v/nav-menu.9d9765077a8e.js" defer></script>
   </body>
 </html>
