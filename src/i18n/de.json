@@ -352,7 +352,7 @@
   "wallet": {
     "eyebrow": "Wallet",
     "title": "Dein nächster Schritt: eine Wallet.",
-    "body": "Die Web Wallet und der Qwertycoin-Quellcode sind verfügbar. Hier findest du außerdem den aktuellen Stand weiterer Wallets und Tools.",
+    "body": "Die Web Wallet, Qwertycoin GUI 2.0.0 und der Quellcode sind verfügbar.",
     "cards": [
       {
         "badge": "VERFÜGBAR",
@@ -368,9 +368,9 @@
         "icon": "about-il-05.svg"
       },
       {
-        "badge": "GEPLANT",
+        "badge": "VERFÜGBAR",
         "title": "Desktop-Wallets",
-        "body": "Desktop-Wallets für Windows, macOS und Linux sind geplant.",
+        "body": "Qwertycoin GUI 2.0.0 ist für Windows, macOS Apple Silicon und Linux x86_64 verfügbar.",
         "icon": "development.svg"
       }
     ]
@@ -378,8 +378,98 @@
   "releases": {
     "eyebrow": "Wallets",
     "title": "Wallets und Quellcode",
-    "body": "Die Web Wallet und der Qwertycoin-Quellcode sind verfügbar. Hier findest du außerdem den aktuellen Stand weiterer Wallets und Tools.",
+    "body": "Die Web Wallet, Qwertycoin GUI 2.0.0, Core-v2.0.0-rc1-Kommandozeilentools und der Quellcode sind verfügbar. Lade offizielle Builds direkt von GitHub herunter.",
     "cards": [
+      {
+        "badge": "VERFÜGBAR · v2.0.0",
+        "badgeClass": "mainnet",
+        "title": "Desktop-Wallets",
+        "body": "Lade Qwertycoin GUI 2.0.0 aus dem offiziellen GitHub-Release herunter und prüfe das Archiv vor der Verwendung.",
+        "glyph": "GUI",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "Windows-ZIP herunterladen",
+            "compatibility": "Portables Qt-5-Laufzeitpaket",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/qwertycoin-gui-v2.0.0-windows-x86_64.zip",
+            "sha256": "bae0394e905098fac6806463063b12efafba27ac70c5529da10305dcae745da4"
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "macOS-TAR.GZ herunterladen",
+            "compatibility": "macOS 15 oder neuer",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/qwertycoin-gui-v2.0.0-macos-arm64.tar.gz",
+            "sha256": "8864787c6a2d26e35338256c495092d88d3f4142e3bf1836ce1667ba4c339e5b"
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "Linux-TAR.GZ herunterladen",
+            "compatibility": "GLIBC-Kompatibilitätsgrenze 2.35",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/qwertycoin-gui-v2.0.0-linux-x86_64.tar.gz",
+            "sha256": "9f58ff5a3a149106820fd6ce78a23975ba9bc51d38323f460fca26c582d9e14f"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/SHA256SUMS"
+          },
+          {
+            "label": "Release-Hinweise",
+            "icon": "GH",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.0"
+          }
+        ]
+      },
+      {
+        "badge": "VERFÜGBAR · v2.0.0-rc1",
+        "badgeClass": "next",
+        "title": "Core-Kommandozeilentools",
+        "body": "Core-Pakete mit qwertycoind, qwertycoin-wallet-cli und qwertycoin-wallet-rpc.",
+        "glyph": "CLI",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "Windows-ZIP herunterladen",
+            "compatibility": "Auf dem Windows-Server-2025-Runner getestet; keine weitergehende Aussage zu älteren Windows-Versionen",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/qwertycoin-v2.0.0-rc1-windows-x86_64.zip",
+            "sha256": "048134ef337d828c0a53441e6851124a08adc06468a783bc4fdf5241d18c01fa"
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "macOS-TAR.GZ herunterladen",
+            "compatibility": "macOS 15 oder neuer",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/qwertycoin-v2.0.0-rc1-macos-arm64.tar.gz",
+            "sha256": "47464e50ac5f5c11994f27831d768ae434c15368b948c8624a2a67cd8d466377"
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "Linux-TAR.GZ herunterladen",
+            "compatibility": "GLIBC 2.35 / GLIBCXX 3.4.30 als Kompatibilitätsobergrenze",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/qwertycoin-v2.0.0-rc1-linux-x86_64.tar.gz",
+            "sha256": "5ba55f6da314aed1752d77f962919e075fdf9b6a38f0670ee1b78bed59336146"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/SHA256SUMS"
+          },
+          {
+            "label": "RC1-Release-Hinweise",
+            "icon": "GH",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0-rc1"
+          }
+        ]
+      },
       {
         "badge": "VERFÜGBAR",
         "badgeClass": "mainnet",
@@ -391,27 +481,6 @@
             "label": "Web Wallet öffnen",
             "icon": "WEB",
             "href": "https://wallet.qwertycoin.org/"
-          }
-        ]
-      },
-      {
-        "badge": "GEPLANT",
-        "badgeClass": "next",
-        "title": "Desktop-Wallets",
-        "body": "Desktop-Wallets für Windows, macOS und Linux sind geplant.",
-        "glyph": "GUI",
-        "links": [
-          {
-            "label": "Windows geplant",
-            "icon": "WIN"
-          },
-          {
-            "label": "macOS geplant",
-            "icon": "MAC"
-          },
-          {
-            "label": "Linux geplant",
-            "icon": "LNX"
           }
         ]
       },
@@ -431,23 +500,6 @@
             "label": "GitHub-Organisation",
             "icon": "GH",
             "href": "https://github.com/qwertycoin-org"
-          }
-        ]
-      },
-      {
-        "badge": "GEPLANT",
-        "badgeClass": "research",
-        "title": "Weitere Wallets und Tools",
-        "body": "Weitere Wallets und Betreiber-Tools sind geplant. Der jeweilige Eintrag zeigt den aktuellen Verfügbarkeitsstatus.",
-        "glyph": "REL",
-        "links": [
-          {
-            "label": "PWA in Entwicklung",
-            "icon": "PWA"
-          },
-          {
-            "label": "Betreiberanleitungen geplant",
-            "icon": "DOC"
           }
         ]
       }

@@ -96,13 +96,32 @@ function networkKpi(metric, valueKey, loadingLabel) {
 
 function releaseItemLink(item) {
   const className = item.href ? "release-link" : "release-link disabled";
-  const href = item.href ? ` href="${item.href}"` : "";
+  const href = item.href ? ` href="${text(item.href)}"` : "";
   const target = item.href && item.href.startsWith("http") ? ' target="_blank" rel="noopener"' : "";
   return `<a class="${className}"${href}${target}><span aria-hidden="true">${text(item.icon)}</span>${text(item.label)}</a>`;
 }
 
+function releaseDownload(item) {
+  return `<div class="release-download">
+                  <div class="release-download-head">
+                    <span class="release-download-icon" aria-hidden="true">${text(item.icon)}</span>
+                    <div><h4>${text(item.label)}</h4><p>${text(item.compatibility)}</p></div>
+                  </div>
+                  <a class="release-link" href="${text(item.href)}" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>${text(item.downloadLabel)}</a>
+                  <div class="release-sha"><span>SHA-256</span><code>${text(item.sha256)}</code></div>
+                </div>`;
+}
+
 function releaseCard(card) {
-  return `<article class="release-card">
+  const downloads = card.downloads || [];
+  const links = card.links || [];
+  const cardClass = downloads.length ? "release-card release-card-downloads" : "release-card";
+  const downloadsHtml = downloads.length ? `<div class="release-download-grid">${downloads.map(releaseDownload).join("")}</div>` : "";
+  const linksHtml = links.length ? `<div class="release-links">${links.map(releaseItemLink).join("")}</div>` : "";
+  const verificationHtml = card.verificationLinks?.length ? `<div class="release-verification-links">${card.verificationLinks.map(releaseItemLink).join("")}</div>` : "";
+  const noteHtml = card.note ? `<p class="release-signing-note">${text(card.note)}</p>` : "";
+
+  return `<article class="${cardClass}">
                 <div class="release-card-head">
                   <div>
                     <span class="badge ${text(card.badgeClass)}">${text(card.badge)}</span>
@@ -111,7 +130,7 @@ function releaseCard(card) {
                   <span class="release-glyph" aria-hidden="true">${text(card.glyph)}</span>
                 </div>
                 <p>${text(card.body)}</p>
-                <div class="release-links">${card.links.map(releaseItemLink).join("")}</div>
+                ${downloadsHtml}${linksHtml}${verificationHtml}${noteHtml}
               </article>`;
 }
 

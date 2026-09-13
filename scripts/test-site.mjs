@@ -186,8 +186,112 @@ for (const text of ["#f5f1e7", "#141414", "#ffaf00", "#ffe7a3", "@font-face"]) {
   }
 }
 
-if (!/id="releases"[\s\S]*Web Wallet[\s\S]*Desktop wallets[\s\S]*QWC source code[\s\S]*Additional wallets and tools/.test(index)) {
-  throw new Error("Wallet/source cards must be ordered Web Wallet, desktop wallets, source code, additional tools");
+if (!/id="releases"[\s\S]*Desktop wallets[\s\S]*Core command-line tools[\s\S]*Web Wallet[\s\S]*QWC source code/.test(index)) {
+  throw new Error("Release cards must be ordered desktop wallets, Core command-line tools, Web Wallet, source code");
+}
+
+const guiReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.0";
+const guiChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/SHA256SUMS";
+const guiArtifacts = [
+  {
+    name: "qwertycoin-gui-v2.0.0-windows-x86_64.zip",
+    sha256: "bae0394e905098fac6806463063b12efafba27ac70c5529da10305dcae745da4"
+  },
+  {
+    name: "qwertycoin-gui-v2.0.0-macos-arm64.tar.gz",
+    sha256: "8864787c6a2d26e35338256c495092d88d3f4142e3bf1836ce1667ba4c339e5b"
+  },
+  {
+    name: "qwertycoin-gui-v2.0.0-linux-x86_64.tar.gz",
+    sha256: "9f58ff5a3a149106820fd6ce78a23975ba9bc51d38323f460fca26c582d9e14f"
+  }
+];
+
+for (const html of [index, germanIndex]) {
+  assertIncludes(html, "release-card release-card-downloads", "desktop release download card");
+  assertIncludes(html, `href="${guiReleaseUrl}" target="_blank" rel="noopener"`, "GUI release notes link");
+  assertIncludes(html, `href="${guiChecksumsUrl}" target="_blank" rel="noopener"`, "GUI checksum link");
+  for (const artifact of guiArtifacts) {
+    const downloadUrl = `https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/${artifact.name}`;
+    assertIncludes(html, `href="${downloadUrl}" target="_blank" rel="noopener"`, `${artifact.name} download link`);
+    assertIncludes(html, `<code>${artifact.sha256}</code>`, `${artifact.name} SHA-256`);
+  }
+}
+
+const coreReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0-rc1";
+const coreChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/SHA256SUMS";
+const coreArtifacts = [
+  {
+    name: "qwertycoin-v2.0.0-rc1-windows-x86_64.zip",
+    sha256: "048134ef337d828c0a53441e6851124a08adc06468a783bc4fdf5241d18c01fa"
+  },
+  {
+    name: "qwertycoin-v2.0.0-rc1-macos-arm64.tar.gz",
+    sha256: "47464e50ac5f5c11994f27831d768ae434c15368b948c8624a2a67cd8d466377"
+  },
+  {
+    name: "qwertycoin-v2.0.0-rc1-linux-x86_64.tar.gz",
+    sha256: "5ba55f6da314aed1752d77f962919e075fdf9b6a38f0670ee1b78bed59336146"
+  }
+];
+
+for (const html of [index, germanIndex]) {
+  if ((html.match(/release-card release-card-downloads/g) || []).length !== 2) {
+    throw new Error("Expected exactly two platform download cards");
+  }
+  assertIncludes(html, `href="${coreReleaseUrl}" target="_blank" rel="noopener"`, "Core RC1 release notes link");
+  assertIncludes(html, `href="${coreChecksumsUrl}" target="_blank" rel="noopener"`, "Core RC1 checksum link");
+  for (const artifact of coreArtifacts) {
+    const downloadUrl = `https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/${artifact.name}`;
+    assertIncludes(html, `href="${downloadUrl}" target="_blank" rel="noopener"`, `${artifact.name} download link`);
+    assertIncludes(html, `<code>${artifact.sha256}</code>`, `${artifact.name} SHA-256`);
+  }
+}
+
+for (const removedReleaseText of [
+  "Testing only",
+  "Testing release",
+  "not a stable activation release",
+  "EPoSE activation gate",
+  "TESTVERSION",
+  "Nur zum Testen",
+  "Testversion",
+  "kein stabiler Aktivierungsrelease",
+  "EPoSE-Aktivierungsgate",
+  "Additional wallets and tools",
+  "Weitere Wallets und Tools"
+]) {
+  if (index.includes(removedReleaseText) || germanIndex.includes(removedReleaseText)) {
+    throw new Error(`Removed release wording must not be rendered: ${removedReleaseText}`);
+  }
+}
+
+for (const requiredCoreReleaseText of [
+  "qwertycoind",
+  "qwertycoin-wallet-cli",
+  "qwertycoin-wallet-rpc",
+  "GLIBC 2.35 / GLIBCXX 3.4.30",
+  "macOS 15",
+  "Windows Server 2025"
+]) {
+  if (!index.includes(requiredCoreReleaseText) && !germanIndex.includes(requiredCoreReleaseText)) {
+    throw new Error(`Missing Core RC1 release detail: ${requiredCoreReleaseText}`);
+  }
+}
+
+for (const staleText of [
+  "Desktop wallets for Windows, macOS and Linux are planned.",
+  "Desktop-Wallets für Windows, macOS und Linux sind geplant.",
+  "Windows Planned",
+  "Windows geplant",
+  "macOS Planned",
+  "macOS geplant",
+  "Linux Planned",
+  "Linux geplant"
+]) {
+  if (index.includes(staleText) || germanIndex.includes(staleText)) {
+    throw new Error(`Stale desktop-wallet availability wording found: ${staleText}`);
+  }
 }
 
 for (const text of [

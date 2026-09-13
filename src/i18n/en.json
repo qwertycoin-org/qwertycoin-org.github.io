@@ -352,7 +352,7 @@
   "wallet": {
     "eyebrow": "Wallet",
     "title": "Your next step: a wallet.",
-    "body": "The Web Wallet and Qwertycoin source code are available now. Find the current status of additional wallets and tools below.",
+    "body": "The Web Wallet, Qwertycoin GUI 2.0.0 and source code are available now.",
     "cards": [
       {
         "badge": "AVAILABLE",
@@ -368,9 +368,9 @@
         "icon": "about-il-05.svg"
       },
       {
-        "badge": "PLANNED",
+        "badge": "AVAILABLE",
         "title": "Desktop wallets",
-        "body": "Desktop wallets for Windows, macOS and Linux are planned.",
+        "body": "Qwertycoin GUI 2.0.0 is available for Windows, macOS Apple Silicon and Linux x86_64.",
         "icon": "development.svg"
       }
     ]
@@ -378,8 +378,98 @@
   "releases": {
     "eyebrow": "Wallets",
     "title": "Wallets and source code",
-    "body": "The Web Wallet and Qwertycoin source code are available now. Find the current status of additional wallets and tools below.",
+    "body": "The Web Wallet, Qwertycoin GUI 2.0.0, Core v2.0.0-rc1 command-line tools and source code are available now. Download official builds directly from GitHub.",
     "cards": [
+      {
+        "badge": "AVAILABLE · v2.0.0",
+        "badgeClass": "mainnet",
+        "title": "Desktop wallets",
+        "body": "Download Qwertycoin GUI 2.0.0 from the official GitHub release and verify the archive before use.",
+        "glyph": "GUI",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "Download Windows ZIP",
+            "compatibility": "Portable Qt 5 runtime",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/qwertycoin-gui-v2.0.0-windows-x86_64.zip",
+            "sha256": "bae0394e905098fac6806463063b12efafba27ac70c5529da10305dcae745da4"
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "Download macOS TAR.GZ",
+            "compatibility": "macOS 15 or newer",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/qwertycoin-gui-v2.0.0-macos-arm64.tar.gz",
+            "sha256": "8864787c6a2d26e35338256c495092d88d3f4142e3bf1836ce1667ba4c339e5b"
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "Download Linux TAR.GZ",
+            "compatibility": "GLIBC 2.35 compatibility ceiling",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/qwertycoin-gui-v2.0.0-linux-x86_64.tar.gz",
+            "sha256": "9f58ff5a3a149106820fd6ce78a23975ba9bc51d38323f460fca26c582d9e14f"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/SHA256SUMS"
+          },
+          {
+            "label": "Release notes",
+            "icon": "GH",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.0"
+          }
+        ]
+      },
+      {
+        "badge": "AVAILABLE · v2.0.0-rc1",
+        "badgeClass": "next",
+        "title": "Core command-line tools",
+        "body": "Core packages containing qwertycoind, qwertycoin-wallet-cli and qwertycoin-wallet-rpc.",
+        "glyph": "CLI",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "Download Windows ZIP",
+            "compatibility": "Tested on the Windows Server 2025 runner; no broader legacy-Windows claim",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/qwertycoin-v2.0.0-rc1-windows-x86_64.zip",
+            "sha256": "048134ef337d828c0a53441e6851124a08adc06468a783bc4fdf5241d18c01fa"
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "Download macOS TAR.GZ",
+            "compatibility": "macOS 15 or newer",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/qwertycoin-v2.0.0-rc1-macos-arm64.tar.gz",
+            "sha256": "47464e50ac5f5c11994f27831d768ae434c15368b948c8624a2a67cd8d466377"
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "Download Linux TAR.GZ",
+            "compatibility": "GLIBC 2.35 / GLIBCXX 3.4.30 compatibility ceiling",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/qwertycoin-v2.0.0-rc1-linux-x86_64.tar.gz",
+            "sha256": "5ba55f6da314aed1752d77f962919e075fdf9b6a38f0670ee1b78bed59336146"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/SHA256SUMS"
+          },
+          {
+            "label": "RC1 release notes",
+            "icon": "GH",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0-rc1"
+          }
+        ]
+      },
       {
         "badge": "AVAILABLE",
         "badgeClass": "mainnet",
@@ -391,27 +481,6 @@
             "label": "Open Web Wallet",
             "icon": "WEB",
             "href": "https://wallet.qwertycoin.org/"
-          }
-        ]
-      },
-      {
-        "badge": "PLANNED",
-        "badgeClass": "next",
-        "title": "Desktop wallets",
-        "body": "Desktop wallets for Windows, macOS and Linux are planned.",
-        "glyph": "GUI",
-        "links": [
-          {
-            "label": "Windows Planned",
-            "icon": "WIN"
-          },
-          {
-            "label": "macOS Planned",
-            "icon": "MAC"
-          },
-          {
-            "label": "Linux Planned",
-            "icon": "LNX"
           }
         ]
       },
@@ -431,23 +500,6 @@
             "label": "GitHub Organization",
             "icon": "GH",
             "href": "https://github.com/qwertycoin-org"
-          }
-        ]
-      },
-      {
-        "badge": "PLANNED",
-        "badgeClass": "research",
-        "title": "Additional wallets and tools",
-        "body": "Additional wallets and operator tools are planned. Each item shows its current availability.",
-        "glyph": "REL",
-        "links": [
-          {
-            "label": "PWA In Development",
-            "icon": "PWA"
-          },
-          {
-            "label": "Operator Guides Planned",
-            "icon": "DOC"
           }
         ]
       }
