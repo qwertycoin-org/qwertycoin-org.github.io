@@ -931,34 +931,11 @@ p { margin: var(--space-3) 0 0; }
   background: var(--color-ink);
 }
 
-.epose-formula-image-link {
-  display: block;
-}
-
 .epose-formula-art figcaption {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: var(--space-3);
   margin-top: var(--space-3);
   color: rgba(255, 255, 255, 0.72);
   font-size: 0.78rem;
   line-height: 1.45;
-}
-
-.epose-formula-art figcaption a {
-  flex: 0 0 auto;
-  color: var(--color-accent);
-  font-family: var(--font-display);
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-@media (max-width: 720px) {
-  .epose-formula-art figcaption {
-    align-items: flex-start;
-    flex-direction: column;
-  }
 }
 
 .reward-rules-note strong,

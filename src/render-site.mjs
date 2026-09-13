@@ -353,10 +353,8 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
             </div>
           </div>
           <figure class="epose-formula-art">
-            <a class="epose-formula-image-link" href="/assets/epose/epose-consensus-formula.svg" aria-label="${text(t.epose.rewardFormulaLink)}">
-              <img src="/assets/epose/epose-consensus-formula.svg" alt="${text(t.epose.rewardFormulaAlt)}" width="1680" height="1398" loading="lazy" decoding="async">
-            </a>
-            <figcaption><span>${text(t.epose.rewardFormulaCaption)}</span><a href="/assets/epose/epose-consensus-formula.svg">${text(t.epose.rewardFormulaLink)}</a></figcaption>
+            <img src="/assets/epose/epose-consensus-formula.svg" alt="${text(t.epose.rewardFormulaAlt)}" width="1680" height="1398" loading="lazy" decoding="async">
+            <figcaption>${text(t.epose.rewardFormulaCaption)}</figcaption>
           </figure>
         </div>
       </section>

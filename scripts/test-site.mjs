@@ -42,7 +42,6 @@ const requiredEnglish = [
   "Prove service. Earn QWC.",
   "Rewards follow the protocol.",
   "/assets/epose/epose-consensus-formula.svg",
-  "Open formula at full size",
   "Wallets and source code",
   "QWC source code",
   "Network activity",
@@ -70,7 +69,6 @@ const requiredGerman = [
   "Netzwerkdienste leisten. QWC verdienen.",
   "Das Protokoll regelt die Vergütung.",
   "Transaktionsgebühren verbleiben beim Miner.",
-  "Formel in voller Größe öffnen",
   "Wallets und Quellcode",
   "Netzwerkaktivität",
   "Registrierte Service Nodes",
@@ -196,9 +194,20 @@ if (!/\.epose-note-row\s*\{[^}]*margin-top:\s*var\(--space-5\)/.test(css)) {
 }
 
 if (!/\.epose-formula-art\s*\{[^}]*width:\s*min\(100%,\s*960px\)/.test(css)
-    || !/\.epose-formula-art img\s*\{[^}]*width:\s*100%[^}]*height:\s*auto/.test(css)
-    || !/class="epose-formula-image-link" href="\/assets\/epose\/epose-consensus-formula\.svg"/.test(index)) {
+    || !/\.epose-formula-art img\s*\{[^}]*width:\s*100%[^}]*height:\s*auto/.test(css)) {
   throw new Error("EPoSe consensus artwork must remain responsive");
+}
+
+for (const html of [index, germanIndex]) {
+  if (/<a\b[^>]*href="\/assets\/epose\/epose-consensus-formula\.svg"/.test(html)) {
+    throw new Error("EPoSe consensus artwork must not link to the source SVG");
+  }
+}
+
+for (const removedText of ["Open formula at full size", "Formel in voller Größe öffnen"]) {
+  if (index.includes(removedText) || germanIndex.includes(removedText)) {
+    throw new Error(`Removed formula link label still present: ${removedText}`);
+  }
 }
 
 if (!eposeFormula.includes('viewBox="0 0 1680 1398"')

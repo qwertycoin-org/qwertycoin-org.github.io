@@ -266,8 +266,7 @@
     "rewardRulesTitle": "Rewards follow the protocol.",
     "rewardRulesBody": "Every full node can verify reward eligibility and recipient selection from the blockchain. Subsidy allocation: 90% mining / {rewardPercent}% EPoSe service rewards; transaction fees remain with the miner.",
     "rewardFormulaAlt": "EPoSe consensus formula for verifier quorum, service-node qualification, recipient rotation and service reward allocation.",
-    "rewardFormulaCaption": "EPoSe quorum, qualification, recipient rotation and service reward — a compact representation of the active consensus rules.",
-    "rewardFormulaLink": "Open formula at full size"
+    "rewardFormulaCaption": "EPoSe quorum, qualification, recipient rotation and service reward — a compact representation of the active consensus rules."
   },
   "faq": {
     "eyebrow": "EPoSe FAQ",
