@@ -186,8 +186,8 @@ for (const text of ["#f5f1e7", "#141414", "#ffaf00", "#ffe7a3", "@font-face"]) {
   }
 }
 
-if (!/id="releases"[\s\S]*Desktop wallets[\s\S]*Core command-line tools[\s\S]*Web Wallet[\s\S]*QWC source code[\s\S]*Additional wallets and tools/.test(index)) {
-  throw new Error("Release cards must be ordered desktop wallets, Core command-line tools, Web Wallet, source code, additional tools");
+if (!/id="releases"[\s\S]*Desktop wallets[\s\S]*Core command-line tools[\s\S]*Web Wallet[\s\S]*QWC source code/.test(index)) {
+  throw new Error("Release cards must be ordered desktop wallets, Core command-line tools, Web Wallet, source code");
 }
 
 const guiReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.0";
@@ -246,8 +246,23 @@ for (const html of [index, germanIndex]) {
     assertIncludes(html, `href="${downloadUrl}" target="_blank" rel="noopener"`, `${artifact.name} download link`);
     assertIncludes(html, `<code>${artifact.sha256}</code>`, `${artifact.name} SHA-256`);
   }
-  if (!html.includes("not a stable activation release") && !html.includes("kein stabiler Aktivierungsrelease")) {
-    throw new Error("Core RC1 must be identified as a non-stable testing release");
+}
+
+for (const removedReleaseText of [
+  "Testing only",
+  "Testing release",
+  "not a stable activation release",
+  "EPoSE activation gate",
+  "TESTVERSION",
+  "Nur zum Testen",
+  "Testversion",
+  "kein stabiler Aktivierungsrelease",
+  "EPoSE-Aktivierungsgate",
+  "Additional wallets and tools",
+  "Weitere Wallets und Tools"
+]) {
+  if (index.includes(removedReleaseText) || germanIndex.includes(removedReleaseText)) {
+    throw new Error(`Removed release wording must not be rendered: ${removedReleaseText}`);
   }
 }
 

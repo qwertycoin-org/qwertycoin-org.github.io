@@ -352,7 +352,7 @@
   "wallet": {
     "eyebrow": "Wallet",
     "title": "Your next step: a wallet.",
-    "body": "The Web Wallet, Qwertycoin GUI 2.0.0 and source code are available now. Find the current status of additional wallets and tools below.",
+    "body": "The Web Wallet, Qwertycoin GUI 2.0.0 and source code are available now.",
     "cards": [
       {
         "badge": "AVAILABLE",
@@ -426,10 +426,10 @@
         ]
       },
       {
-        "badge": "v2.0.0-rc1",
+        "badge": "AVAILABLE · v2.0.0-rc1",
         "badgeClass": "next",
         "title": "Core command-line tools",
-        "body": "Testing release containing qwertycoind, qwertycoin-wallet-cli and qwertycoin-wallet-rpc. This is not a stable activation release.",
+        "body": "Core packages containing qwertycoind, qwertycoin-wallet-cli and qwertycoin-wallet-rpc.",
         "glyph": "CLI",
         "downloads": [
           {
@@ -500,23 +500,6 @@
             "label": "GitHub Organization",
             "icon": "GH",
             "href": "https://github.com/qwertycoin-org"
-          }
-        ]
-      },
-      {
-        "badge": "PLANNED",
-        "badgeClass": "research",
-        "title": "Additional wallets and tools",
-        "body": "Additional wallets and operator tools are planned. Each item shows its current availability.",
-        "glyph": "REL",
-        "links": [
-          {
-            "label": "PWA In Development",
-            "icon": "PWA"
-          },
-          {
-            "label": "Operator Guides Planned",
-            "icon": "DOC"
           }
         ]
       }
