@@ -380,13 +380,14 @@
   "releases": {
     "eyebrow": "Wallets",
     "title": "Wallets and source code",
-    "body": "The Web Wallet, Qwertycoin GUI 2.0.0, Core v2.0.0-rc1 command-line tools and source code are available now. Download official builds directly from GitHub.",
+    "body": "The first public QWC test phase is open. The Web Wallet, Qwertycoin GUI 2.0.0, Core v2.0.0-rc1 command-line tools and source code are available now. Download official builds directly from GitHub.",
     "cards": [
       {
         "badge": "AVAILABLE · v2.0.0",
         "badgeClass": "mainnet",
         "title": "Desktop wallets",
         "body": "Download Qwertycoin GUI 2.0.0 from the official GitHub release and verify the archive before use.",
+        "note": "Integrity note: SHA256SUMS verifies downloaded bytes, not publisher identity. Linux and Windows are unsigned; macOS is ad-hoc signed and not notarized.",
         "glyph": "GUI",
         "downloads": [
           {
@@ -424,6 +425,11 @@
             "label": "Release notes",
             "icon": "GH",
             "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.0"
+          },
+          {
+            "label": "Report an issue",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/issues"
           }
         ]
       },
@@ -431,7 +437,8 @@
         "badge": "AVAILABLE · v2.0.0-rc1",
         "badgeClass": "next",
         "title": "Core command-line tools",
-        "body": "Core packages containing qwertycoind, qwertycoin-wallet-cli and qwertycoin-wallet-rpc.",
+        "body": "Public test packages containing qwertycoind, qwertycoin-wallet-cli and qwertycoin-wallet-rpc. The prerelease label records open stable/audit evidence; it is not a runtime feature switch.",
+        "note": "Integrity note: SHA256SUMS verifies downloaded bytes, not publisher identity. Linux and Windows are unsigned; macOS is ad-hoc signed and not notarized.",
         "glyph": "CLI",
         "downloads": [
           {
@@ -469,6 +476,11 @@
             "label": "RC1 release notes",
             "icon": "GH",
             "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0-rc1"
+          },
+          {
+            "label": "Report an issue",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/issues"
           }
         ]
       },
@@ -677,7 +689,8 @@
     "sourceBody": "Explore the public Qwertycoin core repository on GitHub.",
     "legacyTitle": "Build instructions",
     "legacyBody": "Build and release information is tracked with the core repository and published resources.",
-    "registrationBody": "Operator information for Service Nodes will be linked when the guides are ready."
+    "registrationBody": "Run a public EPoSe Service Node with the current Core operator guide.",
+    "registrationLink": "Open the EPoSe operator guide"
   },
   "community": {
     "eyebrow": "Community",
