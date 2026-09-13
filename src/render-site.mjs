@@ -350,13 +350,14 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
             <div class="reward-rules-note">
               <strong>${text(t.epose.rewardRulesTitle)}</strong>
               <span>${text(t.epose.rewardRulesBody)}</span>
-              <div class="reward-formula" aria-label="${text(t.epose.rewardRulesFormulaLabel)}">
-                <span class="reward-formula-label">${text(t.epose.rewardRulesFormulaLabel)}</span>
-                ${t.epose.rewardRulesFormula.map((line) => `<code>${text(line)}</code>`).join("\n")}
-                <small>${text(t.epose.rewardRulesFormulaLegend)}</small>
-              </div>
             </div>
           </div>
+          <figure class="epose-formula-art">
+            <a class="epose-formula-image-link" href="/assets/epose/epose-consensus-formula.svg" aria-label="${text(t.epose.rewardFormulaLink)}">
+              <img src="/assets/epose/epose-consensus-formula.svg" alt="${text(t.epose.rewardFormulaAlt)}" width="1680" height="1398" loading="lazy" decoding="async">
+            </a>
+            <figcaption><span>${text(t.epose.rewardFormulaCaption)}</span><a href="/assets/epose/epose-consensus-formula.svg">${text(t.epose.rewardFormulaLink)}</a></figcaption>
+          </figure>
         </div>
       </section>
 

@@ -14,6 +14,7 @@ const redirects = await readFile(path.join(root, "_redirects"), "utf8");
 const middleware = await readFile(path.join(root, "functions", "_middleware.js"), "utf8");
 const sitemap = await readFile(path.join(dist, "sitemap.xml"), "utf8");
 const llms = await readFile(path.join(dist, "llms.txt"), "utf8");
+const eposeFormula = await readFile(path.join(root, "assets", "epose", "epose-consensus-formula.svg"), "utf8");
 
 function assertIncludes(haystack, needle, label = needle) {
   if (!haystack.includes(needle)) throw new Error(`Missing required content: ${label}`);
@@ -40,10 +41,8 @@ const requiredEnglish = [
   "epose-compact",
   "Prove service. Earn QWC.",
   "Rewards follow the protocol.",
-  "Consensus formula",
-  "q_E = ⌈2·min(9, N_E−1)/3⌉",
-  "π_E+1(h) = rank_H(Q_E)",
-  "R_EPoSe(h) = ⌊subsidy(h)·1000/10000⌋",
+  "/assets/epose/epose-consensus-formula.svg",
+  "Open formula at full size",
   "Wallets and source code",
   "QWC source code",
   "Network activity",
@@ -70,8 +69,8 @@ const requiredGerman = [
   "Web Wallet und offener Quellcode",
   "Netzwerkdienste leisten. QWC verdienen.",
   "Das Protokoll regelt die Vergütung.",
-  "Consensus-Formel",
   "Transaktionsgebühren verbleiben beim Miner.",
+  "Formel in voller Größe öffnen",
   "Wallets und Quellcode",
   "Netzwerkaktivität",
   "Registrierte Service Nodes",
@@ -196,9 +195,15 @@ if (!/\.epose-note-row\s*\{[^}]*margin-top:\s*var\(--space-5\)/.test(css)) {
   throw new Error("EPoSe summary and note rows must retain their vertical spacing");
 }
 
-if (!/\.reward-formula\s*\{[^}]*display:\s*grid/.test(css)
-    || !/\.reward-formula code\s*\{[^}]*overflow-wrap:\s*anywhere/.test(css)) {
-  throw new Error("EPoSe consensus formula must remain compact and wrap safely");
+if (!/\.epose-formula-art\s*\{[^}]*width:\s*min\(100%,\s*960px\)/.test(css)
+    || !/\.epose-formula-art img\s*\{[^}]*width:\s*100%[^}]*height:\s*auto/.test(css)
+    || !/class="epose-formula-image-link" href="\/assets\/epose\/epose-consensus-formula\.svg"/.test(index)) {
+  throw new Error("EPoSe consensus artwork must remain responsive");
+}
+
+if (!eposeFormula.includes('viewBox="0 0 1680 1398"')
+    || /<script\b|<foreignObject\b|\son[a-z]+\s*=|xlink:href="(?!#)/i.test(eposeFormula)) {
+  throw new Error("EPoSe consensus artwork is malformed or contains active/external content");
 }
 
 if (!/id="releases"[\s\S]*Desktop wallets[\s\S]*Core command-line tools[\s\S]*Web Wallet[\s\S]*QWC source code/.test(index)) {
@@ -429,6 +434,8 @@ for (const text of [
 }
 
 await stat(path.join(root, "assets", "qwertycoin-mark.svg"));
+await stat(path.join(root, "assets", "epose", "epose-consensus-formula.svg"));
+await stat(path.join(dist, "assets", "epose", "epose-consensus-formula.svg"));
 await stat(path.join(root, "assets", "qwc-hero-motif.svg"));
 await stat(path.join(root, "assets", "apple-touch-icon.png"));
 await stat(path.join(root, "assets", "favicon-32x32.png"));
