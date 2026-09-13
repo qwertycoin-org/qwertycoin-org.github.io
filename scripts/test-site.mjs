@@ -186,8 +186,51 @@ for (const text of ["#f5f1e7", "#141414", "#ffaf00", "#ffe7a3", "@font-face"]) {
   }
 }
 
-if (!/id="releases"[\s\S]*Web Wallet[\s\S]*Desktop wallets[\s\S]*QWC source code[\s\S]*Additional wallets and tools/.test(index)) {
-  throw new Error("Wallet/source cards must be ordered Web Wallet, desktop wallets, source code, additional tools");
+if (!/id="releases"[\s\S]*Desktop wallets[\s\S]*Web Wallet[\s\S]*QWC source code[\s\S]*Additional wallets and tools/.test(index)) {
+  throw new Error("Wallet/source cards must be ordered desktop wallets, Web Wallet, source code, additional tools");
+}
+
+const guiReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.0";
+const guiChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/SHA256SUMS";
+const guiArtifacts = [
+  {
+    name: "qwertycoin-gui-v2.0.0-windows-x86_64.zip",
+    sha256: "bae0394e905098fac6806463063b12efafba27ac70c5529da10305dcae745da4"
+  },
+  {
+    name: "qwertycoin-gui-v2.0.0-macos-arm64.tar.gz",
+    sha256: "8864787c6a2d26e35338256c495092d88d3f4142e3bf1836ce1667ba4c339e5b"
+  },
+  {
+    name: "qwertycoin-gui-v2.0.0-linux-x86_64.tar.gz",
+    sha256: "9f58ff5a3a149106820fd6ce78a23975ba9bc51d38323f460fca26c582d9e14f"
+  }
+];
+
+for (const html of [index, germanIndex]) {
+  assertIncludes(html, "release-card release-card-downloads", "desktop release download card");
+  assertIncludes(html, `href="${guiReleaseUrl}" target="_blank" rel="noopener"`, "GUI release notes link");
+  assertIncludes(html, `href="${guiChecksumsUrl}" target="_blank" rel="noopener"`, "GUI checksum link");
+  for (const artifact of guiArtifacts) {
+    const downloadUrl = `https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/${artifact.name}`;
+    assertIncludes(html, `href="${downloadUrl}" target="_blank" rel="noopener"`, `${artifact.name} download link`);
+    assertIncludes(html, `<code>${artifact.sha256}</code>`, `${artifact.name} SHA-256`);
+  }
+}
+
+for (const staleText of [
+  "Desktop wallets for Windows, macOS and Linux are planned.",
+  "Desktop-Wallets für Windows, macOS und Linux sind geplant.",
+  "Windows Planned",
+  "Windows geplant",
+  "macOS Planned",
+  "macOS geplant",
+  "Linux Planned",
+  "Linux geplant"
+]) {
+  if (index.includes(staleText) || germanIndex.includes(staleText)) {
+    throw new Error(`Stale desktop-wallet availability wording found: ${staleText}`);
+  }
 }
 
 for (const text of [
