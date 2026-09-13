@@ -264,7 +264,9 @@
       "Block 1004 -> Node A"
     ],
     "rewardRulesTitle": "Das Protokoll regelt die Vergütung.",
-    "rewardRulesBody": "Jeder vollständige Node kann die Vergütungsberechtigung und Empfängerauswahl anhand der Blockchain prüfen. Aufteilung der Blockbelohnung: 90 % Mining / {rewardPercent} % EPoSe-Servicevergütung."
+    "rewardRulesBody": "Jeder vollständige Node kann die Vergütungsberechtigung und Empfängerauswahl anhand der Blockchain prüfen. Subsidy-Aufteilung: 90 % Mining / {rewardPercent} % EPoSe-Servicevergütung; Transaktionsgebühren verbleiben beim Miner.",
+    "rewardFormulaAlt": "EPoSe-Consensus-Formel für Prüferquorum, Service-Node-Qualifikation, Empfängerrotation und Servicevergütung.",
+    "rewardFormulaCaption": "EPoSe-Quorum, Qualifikation, Empfängerrotation und Servicevergütung — eine kompakte Darstellung der aktiven Consensus-Regeln."
   },
   "faq": {
     "eyebrow": "EPoSe FAQ",

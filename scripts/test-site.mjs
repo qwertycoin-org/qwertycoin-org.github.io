@@ -14,6 +14,7 @@ const redirects = await readFile(path.join(root, "_redirects"), "utf8");
 const middleware = await readFile(path.join(root, "functions", "_middleware.js"), "utf8");
 const sitemap = await readFile(path.join(dist, "sitemap.xml"), "utf8");
 const llms = await readFile(path.join(dist, "llms.txt"), "utf8");
+const eposeFormula = await readFile(path.join(root, "assets", "epose", "epose-consensus-formula.svg"), "utf8");
 
 function assertIncludes(haystack, needle, label = needle) {
   if (!haystack.includes(needle)) throw new Error(`Missing required content: ${label}`);
@@ -40,6 +41,7 @@ const requiredEnglish = [
   "epose-compact",
   "Prove service. Earn QWC.",
   "Rewards follow the protocol.",
+  "/assets/epose/epose-consensus-formula.svg",
   "Wallets and source code",
   "QWC source code",
   "Network activity",
@@ -66,6 +68,7 @@ const requiredGerman = [
   "Web Wallet und offener Quellcode",
   "Netzwerkdienste leisten. QWC verdienen.",
   "Das Protokoll regelt die Vergütung.",
+  "Transaktionsgebühren verbleiben beim Miner.",
   "Wallets und Quellcode",
   "Netzwerkaktivität",
   "Registrierte Service Nodes",
@@ -184,6 +187,32 @@ for (const text of ["#f5f1e7", "#141414", "#ffaf00", "#ffe7a3", "@font-face"]) {
   if (!cssSources.includes(text)) {
     throw new Error(`Missing expected art direction token: ${text}`);
   }
+}
+
+if (!/\.epose-note-row\s*\{[^}]*margin-top:\s*var\(--space-5\)/.test(css)) {
+  throw new Error("EPoSe summary and note rows must retain their vertical spacing");
+}
+
+if (!/\.epose-formula-art\s*\{[^}]*width:\s*min\(100%,\s*960px\)/.test(css)
+    || !/\.epose-formula-art img\s*\{[^}]*width:\s*100%[^}]*height:\s*auto/.test(css)) {
+  throw new Error("EPoSe consensus artwork must remain responsive");
+}
+
+for (const html of [index, germanIndex]) {
+  if (/<a\b[^>]*href="\/assets\/epose\/epose-consensus-formula\.svg"/.test(html)) {
+    throw new Error("EPoSe consensus artwork must not link to the source SVG");
+  }
+}
+
+for (const removedText of ["Open formula at full size", "Formel in voller Größe öffnen"]) {
+  if (index.includes(removedText) || germanIndex.includes(removedText)) {
+    throw new Error(`Removed formula link label still present: ${removedText}`);
+  }
+}
+
+if (!eposeFormula.includes('viewBox="0 0 1680 1398"')
+    || /<script\b|<foreignObject\b|\son[a-z]+\s*=|xlink:href="(?!#)/i.test(eposeFormula)) {
+  throw new Error("EPoSe consensus artwork is malformed or contains active/external content");
 }
 
 if (!/id="releases"[\s\S]*Desktop wallets[\s\S]*Core command-line tools[\s\S]*Web Wallet[\s\S]*QWC source code/.test(index)) {
@@ -414,6 +443,8 @@ for (const text of [
 }
 
 await stat(path.join(root, "assets", "qwertycoin-mark.svg"));
+await stat(path.join(root, "assets", "epose", "epose-consensus-formula.svg"));
+await stat(path.join(dist, "assets", "epose", "epose-consensus-formula.svg"));
 await stat(path.join(root, "assets", "qwc-hero-motif.svg"));
 await stat(path.join(root, "assets", "apple-touch-icon.png"));
 await stat(path.join(root, "assets", "favicon-32x32.png"));

@@ -347,8 +347,15 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
           </div>
           <div class="epose-note-row">
             <div class="tribute"><p class="eyebrow">${text(t.epose.originEyebrow)}</p><h3>${text(t.epose.originTitle)}</h3><p>${text(t.epose.originBody)}</p></div>
-            <div class="reward-rules-note"><strong>${text(t.epose.rewardRulesTitle)}</strong><span>${text(t.epose.rewardRulesBody)}</span></div>
+            <div class="reward-rules-note">
+              <strong>${text(t.epose.rewardRulesTitle)}</strong>
+              <span>${text(t.epose.rewardRulesBody)}</span>
+            </div>
           </div>
+          <figure class="epose-formula-art">
+            <img src="/assets/epose/epose-consensus-formula.svg" alt="${text(t.epose.rewardFormulaAlt)}" width="1680" height="1398" loading="lazy" decoding="async">
+            <figcaption>${text(t.epose.rewardFormulaCaption)}</figcaption>
+          </figure>
         </div>
       </section>
 

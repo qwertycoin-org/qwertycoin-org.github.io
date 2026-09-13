@@ -878,6 +878,10 @@ p { margin: var(--space-3) 0 0; }
   gap: var(--space-4);
 }
 
+.epose-note-row {
+  margin-top: var(--space-5);
+}
+
 .epose-summary-card,
 .tribute,
 .reward-rules-note,
@@ -912,6 +916,26 @@ p { margin: var(--space-3) 0 0; }
 
 .reward-rules-note {
   border-color: rgba(255, 175, 0, 0.52);
+}
+
+.epose-formula-art {
+  width: min(100%, 960px);
+  margin: var(--space-5) auto 0;
+}
+
+.epose-formula-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(255, 175, 0, 0.52);
+  background: var(--color-ink);
+}
+
+.epose-formula-art figcaption {
+  margin-top: var(--space-3);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.78rem;
+  line-height: 1.45;
 }
 
 .reward-rules-note strong,
