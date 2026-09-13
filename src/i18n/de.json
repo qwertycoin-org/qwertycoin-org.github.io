@@ -380,13 +380,14 @@
   "releases": {
     "eyebrow": "Wallets",
     "title": "Wallets und Quellcode",
-    "body": "Die Web Wallet, Qwertycoin GUI 2.0.0, Core-v2.0.0-rc1-Kommandozeilentools und der Quellcode sind verfügbar. Lade offizielle Builds direkt von GitHub herunter.",
+    "body": "Die erste öffentliche QWC-Testphase läuft. Die Web Wallet, Qwertycoin GUI 2.0.0, Core-v2.0.0-rc1-Kommandozeilentools und der Quellcode sind verfügbar. Lade offizielle Builds direkt von GitHub herunter.",
     "cards": [
       {
         "badge": "VERFÜGBAR · v2.0.0",
         "badgeClass": "mainnet",
         "title": "Desktop-Wallets",
         "body": "Lade Qwertycoin GUI 2.0.0 aus dem offiziellen GitHub-Release herunter und prüfe das Archiv vor der Verwendung.",
+        "note": "Integritätshinweis: SHA256SUMS prüft die heruntergeladenen Bytes, nicht die Identität des Herausgebers. Linux und Windows sind unsigniert; macOS ist ad-hoc signiert und nicht notarisiert.",
         "glyph": "GUI",
         "downloads": [
           {
@@ -424,6 +425,11 @@
             "label": "Release-Hinweise",
             "icon": "GH",
             "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.0"
+          },
+          {
+            "label": "Fehler melden",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/issues"
           }
         ]
       },
@@ -431,7 +437,8 @@
         "badge": "VERFÜGBAR · v2.0.0-rc1",
         "badgeClass": "next",
         "title": "Core-Kommandozeilentools",
-        "body": "Core-Pakete mit qwertycoind, qwertycoin-wallet-cli und qwertycoin-wallet-rpc.",
+        "body": "Öffentliche Testpakete mit qwertycoind, qwertycoin-wallet-cli und qwertycoin-wallet-rpc. Die Prerelease-Kennzeichnung dokumentiert offene Stable-/Auditnachweise; sie ist kein Laufzeit-Feature-Schalter.",
+        "note": "Integritätshinweis: SHA256SUMS prüft die heruntergeladenen Bytes, nicht die Identität des Herausgebers. Linux und Windows sind unsigniert; macOS ist ad-hoc signiert und nicht notarisiert.",
         "glyph": "CLI",
         "downloads": [
           {
@@ -469,6 +476,11 @@
             "label": "RC1-Release-Hinweise",
             "icon": "GH",
             "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0-rc1"
+          },
+          {
+            "label": "Fehler melden",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/issues"
           }
         ]
       },
@@ -677,7 +689,8 @@
     "sourceBody": "Erkunde das öffentliche Qwertycoin-Core-Repository auf GitHub.",
     "legacyTitle": "Build-Anleitungen",
     "legacyBody": "Build- und Release-Informationen werden im Core-Repository und in veröffentlichten Ressourcen gepflegt.",
-    "registrationBody": "Betreiberinformationen für Service Nodes werden verlinkt, sobald die Anleitungen bereit sind."
+    "registrationBody": "Betreibe einen öffentlichen EPoSe-Service-Node mit der aktuellen Core-Anleitung.",
+    "registrationLink": "EPoSe-Betreiberanleitung öffnen"
   },
   "community": {
     "eyebrow": "Community",
