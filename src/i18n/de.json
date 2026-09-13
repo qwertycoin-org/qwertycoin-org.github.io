@@ -423,8 +423,7 @@
             "icon": "GH",
             "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.0"
           }
-        ],
-        "note": "Die Linux- und Windows-Builds sind nicht signiert. Der macOS-Build ist ad-hoc signiert, aber weder mit Developer ID signiert noch notarisiert. Prüfe jedes Archiv anhand von SHA256SUMS."
+        ]
       },
       {
         "badge": "TESTVERSION · v2.0.0-rc1",
@@ -469,8 +468,7 @@
             "icon": "GH",
             "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0-rc1"
           }
-        ],
-        "note": "Nur zum Testen; das EPoSE-Aktivierungsgate bleibt auf No-Go. Die Linux- und Windows-Builds sind nicht signiert. Die macOS-Binärdateien sind ad-hoc signiert, aber weder mit Developer ID signiert noch notarisiert. SHA256SUMS prüft die Integrität, nicht die Herausgeberidentität."
+        ]
       },
       {
         "badge": "VERFÜGBAR",

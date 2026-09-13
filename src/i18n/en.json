@@ -423,11 +423,10 @@
             "icon": "GH",
             "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.0"
           }
-        ],
-        "note": "Linux and Windows builds are unsigned. The macOS build is ad-hoc signed, not Developer ID signed or notarized. Verify every archive against SHA256SUMS."
+        ]
       },
       {
-        "badge": "TESTING RELEASE · v2.0.0-rc1",
+        "badge": "v2.0.0-rc1",
         "badgeClass": "next",
         "title": "Core command-line tools",
         "body": "Testing release containing qwertycoind, qwertycoin-wallet-cli and qwertycoin-wallet-rpc. This is not a stable activation release.",
@@ -469,8 +468,7 @@
             "icon": "GH",
             "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0-rc1"
           }
-        ],
-        "note": "Testing only; the EPoSE activation gate remains no-go. Linux and Windows builds are unsigned. macOS binaries are ad-hoc signed, not Developer ID signed or notarized. SHA256SUMS verifies integrity, not publisher identity."
+        ]
       },
       {
         "badge": "AVAILABLE",
