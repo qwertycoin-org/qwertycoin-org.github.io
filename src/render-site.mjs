@@ -347,7 +347,15 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
           </div>
           <div class="epose-note-row">
             <div class="tribute"><p class="eyebrow">${text(t.epose.originEyebrow)}</p><h3>${text(t.epose.originTitle)}</h3><p>${text(t.epose.originBody)}</p></div>
-            <div class="reward-rules-note"><strong>${text(t.epose.rewardRulesTitle)}</strong><span>${text(t.epose.rewardRulesBody)}</span></div>
+            <div class="reward-rules-note">
+              <strong>${text(t.epose.rewardRulesTitle)}</strong>
+              <span>${text(t.epose.rewardRulesBody)}</span>
+              <div class="reward-formula" aria-label="${text(t.epose.rewardRulesFormulaLabel)}">
+                <span class="reward-formula-label">${text(t.epose.rewardRulesFormulaLabel)}</span>
+                ${t.epose.rewardRulesFormula.map((line) => `<code>${text(line)}</code>`).join("\n")}
+                <small>${text(t.epose.rewardRulesFormulaLegend)}</small>
+              </div>
+            </div>
           </div>
         </div>
       </section>

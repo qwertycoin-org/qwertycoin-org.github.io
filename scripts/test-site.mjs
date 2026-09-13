@@ -40,6 +40,10 @@ const requiredEnglish = [
   "epose-compact",
   "Prove service. Earn QWC.",
   "Rewards follow the protocol.",
+  "Consensus formula",
+  "q_E = ⌈2·min(9, N_E−1)/3⌉",
+  "π_E+1(h) = rank_H(Q_E)",
+  "R_EPoSe(h) = ⌊subsidy(h)·1000/10000⌋",
   "Wallets and source code",
   "QWC source code",
   "Network activity",
@@ -66,6 +70,8 @@ const requiredGerman = [
   "Web Wallet und offener Quellcode",
   "Netzwerkdienste leisten. QWC verdienen.",
   "Das Protokoll regelt die Vergütung.",
+  "Consensus-Formel",
+  "Transaktionsgebühren verbleiben beim Miner.",
   "Wallets und Quellcode",
   "Netzwerkaktivität",
   "Registrierte Service Nodes",
@@ -188,6 +194,11 @@ for (const text of ["#f5f1e7", "#141414", "#ffaf00", "#ffe7a3", "@font-face"]) {
 
 if (!/\.epose-note-row\s*\{[^}]*margin-top:\s*var\(--space-5\)/.test(css)) {
   throw new Error("EPoSe summary and note rows must retain their vertical spacing");
+}
+
+if (!/\.reward-formula\s*\{[^}]*display:\s*grid/.test(css)
+    || !/\.reward-formula code\s*\{[^}]*overflow-wrap:\s*anywhere/.test(css)) {
+  throw new Error("EPoSe consensus formula must remain compact and wrap safely");
 }
 
 if (!/id="releases"[\s\S]*Desktop wallets[\s\S]*Core command-line tools[\s\S]*Web Wallet[\s\S]*QWC source code/.test(index)) {
