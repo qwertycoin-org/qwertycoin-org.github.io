@@ -186,8 +186,8 @@ for (const text of ["#f5f1e7", "#141414", "#ffaf00", "#ffe7a3", "@font-face"]) {
   }
 }
 
-if (!/id="releases"[\s\S]*Desktop wallets[\s\S]*Web Wallet[\s\S]*QWC source code[\s\S]*Additional wallets and tools/.test(index)) {
-  throw new Error("Wallet/source cards must be ordered desktop wallets, Web Wallet, source code, additional tools");
+if (!/id="releases"[\s\S]*Desktop wallets[\s\S]*Core command-line tools[\s\S]*Web Wallet[\s\S]*QWC source code[\s\S]*Additional wallets and tools/.test(index)) {
+  throw new Error("Release cards must be ordered desktop wallets, Core command-line tools, Web Wallet, source code, additional tools");
 }
 
 const guiReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.0";
@@ -215,6 +215,52 @@ for (const html of [index, germanIndex]) {
     const downloadUrl = `https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/${artifact.name}`;
     assertIncludes(html, `href="${downloadUrl}" target="_blank" rel="noopener"`, `${artifact.name} download link`);
     assertIncludes(html, `<code>${artifact.sha256}</code>`, `${artifact.name} SHA-256`);
+  }
+}
+
+const coreReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0-rc1";
+const coreChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/SHA256SUMS";
+const coreArtifacts = [
+  {
+    name: "qwertycoin-v2.0.0-rc1-windows-x86_64.zip",
+    sha256: "048134ef337d828c0a53441e6851124a08adc06468a783bc4fdf5241d18c01fa"
+  },
+  {
+    name: "qwertycoin-v2.0.0-rc1-macos-arm64.tar.gz",
+    sha256: "47464e50ac5f5c11994f27831d768ae434c15368b948c8624a2a67cd8d466377"
+  },
+  {
+    name: "qwertycoin-v2.0.0-rc1-linux-x86_64.tar.gz",
+    sha256: "5ba55f6da314aed1752d77f962919e075fdf9b6a38f0670ee1b78bed59336146"
+  }
+];
+
+for (const html of [index, germanIndex]) {
+  if ((html.match(/release-card release-card-downloads/g) || []).length !== 2) {
+    throw new Error("Expected exactly two platform download cards");
+  }
+  assertIncludes(html, `href="${coreReleaseUrl}" target="_blank" rel="noopener"`, "Core RC1 release notes link");
+  assertIncludes(html, `href="${coreChecksumsUrl}" target="_blank" rel="noopener"`, "Core RC1 checksum link");
+  for (const artifact of coreArtifacts) {
+    const downloadUrl = `https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/${artifact.name}`;
+    assertIncludes(html, `href="${downloadUrl}" target="_blank" rel="noopener"`, `${artifact.name} download link`);
+    assertIncludes(html, `<code>${artifact.sha256}</code>`, `${artifact.name} SHA-256`);
+  }
+  if (!html.includes("not a stable activation release") && !html.includes("kein stabiler Aktivierungsrelease")) {
+    throw new Error("Core RC1 must be identified as a non-stable testing release");
+  }
+}
+
+for (const requiredCoreReleaseText of [
+  "qwertycoind",
+  "qwertycoin-wallet-cli",
+  "qwertycoin-wallet-rpc",
+  "GLIBC 2.35 / GLIBCXX 3.4.30",
+  "macOS 15",
+  "Windows Server 2025"
+]) {
+  if (!index.includes(requiredCoreReleaseText) && !germanIndex.includes(requiredCoreReleaseText)) {
+    throw new Error(`Missing Core RC1 release detail: ${requiredCoreReleaseText}`);
   }
 }
 

@@ -378,7 +378,7 @@
   "releases": {
     "eyebrow": "Wallets",
     "title": "Wallets und Quellcode",
-    "body": "Die Web Wallet, Qwertycoin GUI 2.0.0 und der Quellcode sind verfügbar. Lade offizielle Desktop-Builds direkt von GitHub herunter.",
+    "body": "Die Web Wallet, Qwertycoin GUI 2.0.0, Core-v2.0.0-rc1-Kommandozeilentools und der Quellcode sind verfügbar. Lade offizielle Builds direkt von GitHub herunter.",
     "cards": [
       {
         "badge": "VERFÜGBAR · v2.0.0",
@@ -425,6 +425,52 @@
           }
         ],
         "note": "Die Linux- und Windows-Builds sind nicht signiert. Der macOS-Build ist ad-hoc signiert, aber weder mit Developer ID signiert noch notarisiert. Prüfe jedes Archiv anhand von SHA256SUMS."
+      },
+      {
+        "badge": "TESTVERSION · v2.0.0-rc1",
+        "badgeClass": "next",
+        "title": "Core-Kommandozeilentools",
+        "body": "Testversion mit qwertycoind, qwertycoin-wallet-cli und qwertycoin-wallet-rpc. Dies ist kein stabiler Aktivierungsrelease.",
+        "glyph": "CLI",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "Windows-ZIP herunterladen",
+            "compatibility": "Auf dem Windows-Server-2025-Runner getestet; keine weitergehende Aussage zu älteren Windows-Versionen",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/qwertycoin-v2.0.0-rc1-windows-x86_64.zip",
+            "sha256": "048134ef337d828c0a53441e6851124a08adc06468a783bc4fdf5241d18c01fa"
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "macOS-TAR.GZ herunterladen",
+            "compatibility": "macOS 15 oder neuer",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/qwertycoin-v2.0.0-rc1-macos-arm64.tar.gz",
+            "sha256": "47464e50ac5f5c11994f27831d768ae434c15368b948c8624a2a67cd8d466377"
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "Linux-TAR.GZ herunterladen",
+            "compatibility": "GLIBC 2.35 / GLIBCXX 3.4.30 als Kompatibilitätsobergrenze",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/qwertycoin-v2.0.0-rc1-linux-x86_64.tar.gz",
+            "sha256": "5ba55f6da314aed1752d77f962919e075fdf9b6a38f0670ee1b78bed59336146"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/SHA256SUMS"
+          },
+          {
+            "label": "RC1-Release-Hinweise",
+            "icon": "GH",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0-rc1"
+          }
+        ],
+        "note": "Nur zum Testen; das EPoSE-Aktivierungsgate bleibt auf No-Go. Die Linux- und Windows-Builds sind nicht signiert. Die macOS-Binärdateien sind ad-hoc signiert, aber weder mit Developer ID signiert noch notarisiert. SHA256SUMS prüft die Integrität, nicht die Herausgeberidentität."
       },
       {
         "badge": "VERFÜGBAR",
