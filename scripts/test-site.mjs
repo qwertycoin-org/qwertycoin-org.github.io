@@ -186,6 +186,10 @@ for (const text of ["#f5f1e7", "#141414", "#ffaf00", "#ffe7a3", "@font-face"]) {
   }
 }
 
+if (!/\.epose-note-row\s*\{[^}]*margin-top:\s*var\(--space-5\)/.test(css)) {
+  throw new Error("EPoSe summary and note rows must retain their vertical spacing");
+}
+
 if (!/id="releases"[\s\S]*Desktop wallets[\s\S]*Core command-line tools[\s\S]*Web Wallet[\s\S]*QWC source code/.test(index)) {
   throw new Error("Release cards must be ordered desktop wallets, Core command-line tools, Web Wallet, source code");
 }

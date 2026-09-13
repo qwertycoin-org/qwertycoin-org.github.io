@@ -878,6 +878,10 @@ p { margin: var(--space-3) 0 0; }
   gap: var(--space-4);
 }
 
+.epose-note-row {
+  margin-top: var(--space-5);
+}
+
 .epose-summary-card,
 .tribute,
 .reward-rules-note,
