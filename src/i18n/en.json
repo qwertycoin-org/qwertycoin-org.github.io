@@ -380,7 +380,7 @@
   "releases": {
     "eyebrow": "Wallets",
     "title": "Wallets and source code",
-    "body": "The first public QWC test phase is open. The Web Wallet, Qwertycoin GUI 2.0.0, Core v2.0.0-rc1 command-line tools and source code are available now. Download official builds directly from GitHub.",
+    "body": "The first public QWC test phase is open. The Web Wallet, Qwertycoin GUI 2.0.0, Core v2.0.0 command-line tools and source code are available now. Download official builds directly from GitHub.",
     "cards": [
       {
         "badge": "AVAILABLE · v2.0.0",
@@ -434,10 +434,10 @@
         ]
       },
       {
-        "badge": "AVAILABLE · v2.0.0-rc1",
-        "badgeClass": "next",
+        "badge": "AVAILABLE · v2.0.0",
+        "badgeClass": "mainnet",
         "title": "Core command-line tools",
-        "body": "Public test packages containing qwertycoind, qwertycoin-wallet-cli and qwertycoin-wallet-rpc. The prerelease label records open stable/audit evidence; it is not a runtime feature switch.",
+        "body": "Official packages containing qwertycoind, qwertycoin-wallet-cli and qwertycoin-wallet-rpc.",
         "note": "Integrity note: SHA256SUMS verifies downloaded bytes, not publisher identity. Linux and Windows are unsigned; macOS is ad-hoc signed and not notarized.",
         "glyph": "CLI",
         "downloads": [
@@ -446,36 +446,36 @@
             "icon": "WIN",
             "downloadLabel": "Download Windows ZIP",
             "compatibility": "Tested on the Windows Server 2025 runner; no broader legacy-Windows claim",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/qwertycoin-v2.0.0-rc1-windows-x86_64.zip",
-            "sha256": "048134ef337d828c0a53441e6851124a08adc06468a783bc4fdf5241d18c01fa"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/qwertycoin-v2.0.0-windows-x86_64.zip",
+            "sha256": "b9db7bda4a976e5e4754c01179b8178eba7d8a23d8ab919a34711228f9cbdb3e"
           },
           {
             "label": "macOS Apple Silicon",
             "icon": "MAC",
             "downloadLabel": "Download macOS TAR.GZ",
             "compatibility": "macOS 15 or newer",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/qwertycoin-v2.0.0-rc1-macos-arm64.tar.gz",
-            "sha256": "47464e50ac5f5c11994f27831d768ae434c15368b948c8624a2a67cd8d466377"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/qwertycoin-v2.0.0-macos-arm64.tar.gz",
+            "sha256": "31a20a1a69ea3929454c74df53d56cbce29318e31cc8cb052a624aee237f40e6"
           },
           {
             "label": "Linux x86_64",
             "icon": "LNX",
             "downloadLabel": "Download Linux TAR.GZ",
             "compatibility": "GLIBC 2.35 / GLIBCXX 3.4.30 compatibility ceiling",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/qwertycoin-v2.0.0-rc1-linux-x86_64.tar.gz",
-            "sha256": "5ba55f6da314aed1752d77f962919e075fdf9b6a38f0670ee1b78bed59336146"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/qwertycoin-v2.0.0-linux-x86_64.tar.gz",
+            "sha256": "a365ace83846e4973b88f00a34f02fb72958fb890a0ed4b51b8140aa51394632"
           }
         ],
         "verificationLinks": [
           {
             "label": "SHA256SUMS",
             "icon": "SHA",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/SHA256SUMS"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/SHA256SUMS"
           },
           {
-            "label": "RC1 release notes",
+            "label": "Release notes",
             "icon": "GH",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0-rc1"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0"
           },
           {
             "label": "Report an issue",

@@ -247,20 +247,20 @@ for (const html of [index, germanIndex]) {
   }
 }
 
-const coreReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0-rc1";
-const coreChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/SHA256SUMS";
+const coreReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0";
+const coreChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/SHA256SUMS";
 const coreArtifacts = [
   {
-    name: "qwertycoin-v2.0.0-rc1-windows-x86_64.zip",
-    sha256: "048134ef337d828c0a53441e6851124a08adc06468a783bc4fdf5241d18c01fa"
+    name: "qwertycoin-v2.0.0-windows-x86_64.zip",
+    sha256: "b9db7bda4a976e5e4754c01179b8178eba7d8a23d8ab919a34711228f9cbdb3e"
   },
   {
-    name: "qwertycoin-v2.0.0-rc1-macos-arm64.tar.gz",
-    sha256: "47464e50ac5f5c11994f27831d768ae434c15368b948c8624a2a67cd8d466377"
+    name: "qwertycoin-v2.0.0-macos-arm64.tar.gz",
+    sha256: "31a20a1a69ea3929454c74df53d56cbce29318e31cc8cb052a624aee237f40e6"
   },
   {
-    name: "qwertycoin-v2.0.0-rc1-linux-x86_64.tar.gz",
-    sha256: "5ba55f6da314aed1752d77f962919e075fdf9b6a38f0670ee1b78bed59336146"
+    name: "qwertycoin-v2.0.0-linux-x86_64.tar.gz",
+    sha256: "a365ace83846e4973b88f00a34f02fb72958fb890a0ed4b51b8140aa51394632"
   }
 ];
 
@@ -268,16 +268,19 @@ for (const html of [index, germanIndex]) {
   if ((html.match(/release-card release-card-downloads/g) || []).length !== 2) {
     throw new Error("Expected exactly two platform download cards");
   }
-  assertIncludes(html, `href="${coreReleaseUrl}" target="_blank" rel="noopener"`, "Core RC1 release notes link");
-  assertIncludes(html, `href="${coreChecksumsUrl}" target="_blank" rel="noopener"`, "Core RC1 checksum link");
+  assertIncludes(html, `href="${coreReleaseUrl}" target="_blank" rel="noopener"`, "Core release notes link");
+  assertIncludes(html, `href="${coreChecksumsUrl}" target="_blank" rel="noopener"`, "Core checksum link");
   for (const artifact of coreArtifacts) {
-    const downloadUrl = `https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0-rc1/${artifact.name}`;
+    const downloadUrl = `https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/${artifact.name}`;
     assertIncludes(html, `href="${downloadUrl}" target="_blank" rel="noopener"`, `${artifact.name} download link`);
     assertIncludes(html, `<code>${artifact.sha256}</code>`, `${artifact.name} SHA-256`);
   }
 }
 
 for (const removedReleaseText of [
+  "v2.0.0-rc1",
+  "prerelease label",
+  "Prerelease-Kennzeichnung",
   "Testing only",
   "Testing release",
   "not a stable activation release",
