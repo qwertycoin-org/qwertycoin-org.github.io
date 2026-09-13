@@ -224,15 +224,15 @@ const guiChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releas
 const guiArtifacts = [
   {
     name: "qwertycoin-gui-v2.0.0-windows-x86_64.zip",
-    sha256: "bae0394e905098fac6806463063b12efafba27ac70c5529da10305dcae745da4"
+    sha256: "5eda8fa0a61bd5ae31fd752644232b135e47ded6fcd914a0ef88a8e0e5e48524"
   },
   {
     name: "qwertycoin-gui-v2.0.0-macos-arm64.tar.gz",
-    sha256: "8864787c6a2d26e35338256c495092d88d3f4142e3bf1836ce1667ba4c339e5b"
+    sha256: "02808d852cdf6aef07125f0e29623b985f2004fa96a3a87edd30375380be9129"
   },
   {
     name: "qwertycoin-gui-v2.0.0-linux-x86_64.tar.gz",
-    sha256: "9f58ff5a3a149106820fd6ce78a23975ba9bc51d38323f460fca26c582d9e14f"
+    sha256: "3951431b54c01b1f3bc83ef9de3b95efd04f64d0a89277b4d0773a260171e125"
   }
 ];
 
@@ -244,6 +244,16 @@ for (const html of [index, germanIndex]) {
     const downloadUrl = `https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/${artifact.name}`;
     assertIncludes(html, `href="${downloadUrl}" target="_blank" rel="noopener"`, `${artifact.name} download link`);
     assertIncludes(html, `<code>${artifact.sha256}</code>`, `${artifact.name} SHA-256`);
+  }
+}
+
+for (const obsoleteGuiHash of [
+  "bae0394e905098fac6806463063b12efafba27ac70c5529da10305dcae745da4",
+  "8864787c6a2d26e35338256c495092d88d3f4142e3bf1836ce1667ba4c339e5b",
+  "9f58ff5a3a149106820fd6ce78a23975ba9bc51d38323f460fca26c582d9e14f"
+]) {
+  if (index.includes(obsoleteGuiHash) || germanIndex.includes(obsoleteGuiHash)) {
+    throw new Error(`Obsolete GUI v2.0.0 SHA-256 still present: ${obsoleteGuiHash}`);
   }
 }
 
