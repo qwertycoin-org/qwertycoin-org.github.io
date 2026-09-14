@@ -252,15 +252,15 @@ const coreChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/
 const coreArtifacts = [
   {
     name: "qwertycoin-v2.0.0-windows-x86_64.zip",
-    sha256: "b9db7bda4a976e5e4754c01179b8178eba7d8a23d8ab919a34711228f9cbdb3e"
+    sha256: "2d1b587902aadf68ce13c8063396e7cbe1f4e0b6b70365449ad1d3daa9b56014"
   },
   {
     name: "qwertycoin-v2.0.0-macos-arm64.tar.gz",
-    sha256: "31a20a1a69ea3929454c74df53d56cbce29318e31cc8cb052a624aee237f40e6"
+    sha256: "760b9275180d2fdb9789f7830363bd882aabce6ce50faea97647a205f5a734ee"
   },
   {
     name: "qwertycoin-v2.0.0-linux-x86_64.tar.gz",
-    sha256: "a365ace83846e4973b88f00a34f02fb72958fb890a0ed4b51b8140aa51394632"
+    sha256: "696ef3d085c22aa2929c59da01968f02a93cfe49a074e40df18f467781eb628c"
   }
 ];
 
