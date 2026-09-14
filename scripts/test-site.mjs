@@ -150,6 +150,20 @@ if (!`${tokens}\n${css}`.includes("--color-surface") || !`${tokens}\n${css}`.inc
   throw new Error("Design tokens are not loaded into site CSS");
 }
 
+for (const contract of [
+  ".nav {",
+  "min-height: 82px",
+  "width: 44px",
+  "height: 44px",
+  "padding: 10px",
+  "border-radius: 0",
+  "box-shadow: 4px 4px 0 var(--color-ink)",
+  "margin: 4px 0",
+  "@media (max-width: 1200px)"
+]) {
+  assertIncludes(css, contract, `shared navigation contract: ${contract}`);
+}
+
 if (distCss.includes("@import")) {
   throw new Error("Built CSS must not rely on render-blocking @import");
 }

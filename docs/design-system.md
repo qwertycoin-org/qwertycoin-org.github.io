@@ -43,6 +43,23 @@ patterns. Wallet-specific views may add secure form controls and modal dialogs,
 but should keep the same typography, status badges, spacing, and restrained
 technical style.
 
+## Product Header
+
+The website, explorer, and web wallet use one product-header contract:
+
+- 82px minimum height on desktop and 72px at the 1200px navigation breakpoint
+- 42px Qwertycoin mark with an Archivo 900 uppercase wordmark
+- optional product label beside the wordmark on desktop; hide it at 720px
+- Inter/Archivo navigation treatment with the product-specific links only
+- 2px ink divider on the full-width header
+- 44px square mobile menu control with a 2px ink border, amber fill, 4px ink
+  offset shadow, and three 2px bars
+- expanded mobile menu as an ink-bordered surface; `Escape` closes it and
+  returns focus to the control
+
+Keep the dimensions and breakpoints byte-for-byte aligned across the three
+products. Product names and destination links may differ.
+
 The wallet preview on the website is static by design. It establishes the visual
 language for `wallet.qwertycoin.org` without accepting seeds or signing
 transactions on the main website.
