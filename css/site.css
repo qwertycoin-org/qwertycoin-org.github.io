@@ -1321,6 +1321,7 @@ p { margin: var(--space-3) 0 0; }
 
   .nav-links.is-open {
     display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .nav-links > a,
@@ -1540,5 +1541,11 @@ p { margin: var(--space-3) 0 0; }
     min-height: 48px;
     width: 4px;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .nav-links.is-open {
+    grid-template-columns: 1fr;
   }
 }
