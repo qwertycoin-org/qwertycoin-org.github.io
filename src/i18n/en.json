@@ -386,7 +386,7 @@
         "badge": "AVAILABLE · v2.0.0",
         "badgeClass": "mainnet",
         "title": "Desktop wallets",
-        "body": "Download the Reset-1-compatible Qwertycoin GUI 2.0.0 from the official GitHub release. It embeds the current Core network identity; verify the archive before use.",
+        "body": "Download the current Qwertycoin GUI from the official GitHub release. It includes the matching Core components; verify the archive and checksum before use.",
         "note": "Integrity note: SHA256SUMS verifies downloaded bytes, not publisher identity. Linux and Windows are unsigned; macOS is ad-hoc signed and not notarized.",
         "glyph": "GUI",
         "downloads": [
@@ -437,7 +437,7 @@
         "badge": "AVAILABLE · v2.0.0",
         "badgeClass": "mainnet",
         "title": "Core command-line tools",
-        "body": "Reset-1 public test packages containing qwertycoind, qwertycoin-wallet-cli and qwertycoin-wallet-rpc. Open EPoSE audit evidence remains documented in the release metadata; it is not a runtime feature switch.",
+        "body": "Official Qwertycoin packages containing qwertycoind, qwertycoin-wallet-cli and qwertycoin-wallet-rpc. Verify the archive and checksum before use; release notes and audit status are documented with each GitHub release.",
         "note": "Integrity note: SHA256SUMS verifies downloaded bytes, not publisher identity. Linux and Windows are unsigned; macOS is ad-hoc signed and not notarized.",
         "glyph": "CLI",
         "downloads": [
