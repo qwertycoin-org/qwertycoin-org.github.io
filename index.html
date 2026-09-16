@@ -32,7 +32,7 @@
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <link rel="preload" href="/assets/fonts/v/archivo-latin-900.e915040a27c5.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/v/inter-latin-400.8909904ab6c8.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/css/v/site.1049d031ccd9.css">
+    <link rel="stylesheet" href="/css/v/site.478c019423bd.css">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://qwertycoin.org/#organization","name":"Qwertycoin","url":"https://qwertycoin.org/","logo":"https://qwertycoin.org/assets/favicon-192x192.png","sameAs":["https://github.com/qwertycoin-org","https://x.com/Qwertycoin_QWC"]},{"@type":"WebSite","@id":"https://qwertycoin.org/#website","name":"Qwertycoin","url":"https://qwertycoin.org/","publisher":{"@id":"https://qwertycoin.org/#organization"}},{"@type":"WebPage","@id":"https://qwertycoin.org/#webpage","url":"https://qwertycoin.org/","name":"Qwertycoin (QWC) | Private payments, RandomX & EPoSe","description":"Qwertycoin (QWC) is a privacy-focused cryptocurrency with RandomX proof-of-work mining and EPoSe rewards for proven network services.","inLanguage":"en","isPartOf":{"@id":"https://qwertycoin.org/#website"},"about":{"@id":"https://qwertycoin.org/#organization"}},{"@type":"FAQPage","@id":"https://qwertycoin.org/#faq","inLanguage":"en","isPartOf":{"@id":"https://qwertycoin.org/#webpage"},"mainEntity":[{"@type":"Question","name":"What is Qwertycoin?","acceptedAnswer":{"@type":"Answer","text":"Qwertycoin (QWC) is a privacy-focused cryptocurrency with RandomX proof-of-work mining and EPoSe rewards for proven network services."}},{"@type":"Question","name":"How do I use the Web Wallet?","acceptedAnswer":{"@type":"Answer","text":"Open the official Web Wallet, create or restore a wallet there and follow its safety instructions. The main website never processes wallet keys."}},{"@type":"Question","name":"Can I use an old QWC wallet?","acceptedAnswer":{"@type":"Answer","text":"No. The current QWC network is separate from the earlier chain. Legacy wallet software and blockchain data are not compatible with this network."}},{"@type":"Question","name":"Does EPoSe replace mining?","acceptedAnswer":{"@type":"Answer","text":"No. RandomX miners produce blocks and secure the blockchain. EPoSe adds rewards for proven network services."}},{"@type":"Question","name":"What is an epoch?","acceptedAnswer":{"@type":"Answer","text":"An epoch is the block period used to assess EPoSe service activity. It currently spans 720 blocks, approximately 24 hours at the target block interval."}},{"@type":"Question","name":"What does qualified mean?","acceptedAnswer":{"@type":"Answer","text":"A qualified Service Node has met the protocol's requirements for valid attestations in the relevant epoch and is eligible for service-reward selection. The technical quorum is at least ceil(2 x actual committee size / 3)."}},{"@type":"Question","name":"Who determines qualification and rewards?","acceptedAnswer":{"@type":"Answer","text":"The EPoSe protocol. Every full node applies the same rules to valid on-chain registrations and attestations to verify eligibility and reward selection."}},{"@type":"Question","name":"Do Service Nodes need to stake QWC?","acceptedAnswer":{"@type":"Answer","text":"No. Participation requires EPoSe registration and the required service proofs, not locked QWC as stake."}},{"@type":"Question","name":"Can one operator run multiple Service Nodes?","acceptedAnswer":{"@type":"Answer","text":"Yes. Each Service Node needs its own valid registration and must meet the protocol's service requirements. Admission proof makes cheap identity creation harder."}},{"@type":"Question","name":"Why is EPoSe not Proof of Stake?","acceptedAnswer":{"@type":"Answer","text":"EPoSe rewards proven service rather than locked stake. Service Nodes verify blockchain data like other full nodes, while RandomX miners perform proof-of-work block production."}}]}]}</script>
     <script type="application/json" id="qwc-network-data">{"locale":"en","labels":{"height":{"label":"Block height","help":"Current public chain height."},"registered":{"label":"Registered Service Nodes","shortLabel":"Registered","help":"Service Nodes with valid registration."},"qualified":{"label":"Qualified Service Nodes","shortLabel":"Qualified","help":"Reward-eligible Service Nodes for the relevant period when statistics are available."},"epoch":{"label":"EPoSe epoch","shortLabel":"Epoch","help":"Current {blocks}-block service period (~{hours}h)."},"topHash":"Latest block hash","stateHash":"EPoSe state hash","explorer":"Explorer","currentSource":"Core source","sourcePending":"Available on GitHub","syncLoading":"Loading…","loading":"Loading…","updated":"Updated {time}","unavailable":"Currently unavailable","partial":"Some network data is currently unavailable.","eposeUnavailable":"EPoSe statistics are currently unavailable.","unknown":"unknown","synchronized":"synchronized","syncPending":"sync pending","ratio":"{qualified} / {registered} qualified","noScript":"Live status needs JavaScript. You can still open the explorer for current network data."},"config":{"epochLengthBlocks":720}}</script>
   </head>
@@ -243,13 +243,13 @@
         <div class="section-header">
             <p class="eyebrow">Wallets</p>
             <h2>Wallets and source code</h2>
-            <p>The first public QWC test phase is open. The Web Wallet, Qwertycoin GUI 2.0.0, Core v2.0.0 command-line tools and source code are available now. Download official builds directly from GitHub.</p>
+            <p>The first public QWC test phase is open. The Web Wallet, Qwertycoin GUI 2.0.1, Core v2.0.1 command-line tools, the official Docker image and source code are available now.</p>
           </div>
         <div class="release-grid">
           <article class="release-card release-card-downloads">
                 <div class="release-card-head">
                   <div>
-                    <span class="badge mainnet">AVAILABLE · v2.0.0</span>
+                    <span class="badge mainnet">AVAILABLE · v2.0.1</span>
                     <h3>Desktop wallets</h3>
                   </div>
                   <span class="release-glyph" aria-hidden="true">GUI</span>
@@ -260,28 +260,28 @@
                     <span class="release-download-icon" aria-hidden="true">WIN</span>
                     <div><h4>Windows x86_64</h4><p>Portable Qt 5 runtime</p></div>
                   </div>
-                  <a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/qwertycoin-gui-v2.0.0-windows-x86_64.zip" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>Download Windows ZIP</a>
-                  <div class="release-sha"><span>SHA-256</span><code>5eda8fa0a61bd5ae31fd752644232b135e47ded6fcd914a0ef88a8e0e5e48524</code></div>
+                  <a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-windows-x86_64.zip" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>Download Windows ZIP</a>
+                  <div class="release-sha"><span>SHA-256</span><code>2e1972a503b74192014370c2b8bb1cd98cb88ef8e6ccc157cf43abc3bec1caf2</code></div>
                 </div><div class="release-download">
                   <div class="release-download-head">
                     <span class="release-download-icon" aria-hidden="true">MAC</span>
                     <div><h4>macOS Apple Silicon</h4><p>macOS 15 or newer</p></div>
                   </div>
-                  <a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/qwertycoin-gui-v2.0.0-macos-arm64.tar.gz" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>Download macOS TAR.GZ</a>
-                  <div class="release-sha"><span>SHA-256</span><code>02808d852cdf6aef07125f0e29623b985f2004fa96a3a87edd30375380be9129</code></div>
+                  <a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-macos-arm64.tar.gz" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>Download macOS TAR.GZ</a>
+                  <div class="release-sha"><span>SHA-256</span><code>1be02a059aedf394ab17ef05567dbbb71e3c529590eb65f83a692d4705acc425</code></div>
                 </div><div class="release-download">
                   <div class="release-download-head">
                     <span class="release-download-icon" aria-hidden="true">LNX</span>
                     <div><h4>Linux x86_64</h4><p>GLIBC 2.35 compatibility ceiling</p></div>
                   </div>
-                  <a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/qwertycoin-gui-v2.0.0-linux-x86_64.tar.gz" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>Download Linux TAR.GZ</a>
-                  <div class="release-sha"><span>SHA-256</span><code>3951431b54c01b1f3bc83ef9de3b95efd04f64d0a89277b4d0773a260171e125</code></div>
-                </div></div><div class="release-verification-links"><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/SHA256SUMS" target="_blank" rel="noopener"><span aria-hidden="true">SHA</span>SHA256SUMS</a><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.0" target="_blank" rel="noopener"><span aria-hidden="true">GH</span>Release notes</a><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin-gui/issues" target="_blank" rel="noopener"><span aria-hidden="true">BUG</span>Report an issue</a></div><p class="release-signing-note">Integrity note: SHA256SUMS verifies downloaded bytes, not publisher identity. Linux and Windows are unsigned; macOS is ad-hoc signed and not notarized.</p>
+                  <a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-linux-x86_64.tar.gz" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>Download Linux TAR.GZ</a>
+                  <div class="release-sha"><span>SHA-256</span><code>7902eacbd09b06c8d202167e206db185e306ad832a857239b77670a082c6ee4f</code></div>
+                </div></div><div class="release-verification-links"><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/SHA256SUMS" target="_blank" rel="noopener"><span aria-hidden="true">SHA</span>SHA256SUMS</a><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.1" target="_blank" rel="noopener"><span aria-hidden="true">GH</span>Release notes</a><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin-gui/issues" target="_blank" rel="noopener"><span aria-hidden="true">BUG</span>Report an issue</a></div><p class="release-signing-note">Integrity note: SHA256SUMS verifies downloaded bytes, not publisher identity. Linux and Windows are unsigned; macOS is ad-hoc signed and not notarized.</p>
               </article>
 <article class="release-card release-card-downloads">
                 <div class="release-card-head">
                   <div>
-                    <span class="badge mainnet">AVAILABLE · v2.0.0</span>
+                    <span class="badge mainnet">AVAILABLE · v2.0.1</span>
                     <h3>Core command-line tools</h3>
                   </div>
                   <span class="release-glyph" aria-hidden="true">CLI</span>
@@ -292,23 +292,42 @@
                     <span class="release-download-icon" aria-hidden="true">WIN</span>
                     <div><h4>Windows x86_64</h4><p>Tested on the Windows Server 2025 runner; no broader legacy-Windows claim</p></div>
                   </div>
-                  <a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/qwertycoin-v2.0.0-windows-x86_64.zip" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>Download Windows ZIP</a>
-                  <div class="release-sha"><span>SHA-256</span><code>2d1b587902aadf68ce13c8063396e7cbe1f4e0b6b70365449ad1d3daa9b56014</code></div>
+                  <a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.1/qwertycoin-v2.0.1-windows-x86_64.zip" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>Download Windows ZIP</a>
+                  <div class="release-sha"><span>SHA-256</span><code>7a4d8ff13c38d61884dadc8d06255948a64500cb0dad18c75416eb5448d48ac4</code></div>
                 </div><div class="release-download">
                   <div class="release-download-head">
                     <span class="release-download-icon" aria-hidden="true">MAC</span>
                     <div><h4>macOS Apple Silicon</h4><p>macOS 15 or newer</p></div>
                   </div>
-                  <a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/qwertycoin-v2.0.0-macos-arm64.tar.gz" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>Download macOS TAR.GZ</a>
-                  <div class="release-sha"><span>SHA-256</span><code>760b9275180d2fdb9789f7830363bd882aabce6ce50faea97647a205f5a734ee</code></div>
+                  <a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.1/qwertycoin-v2.0.1-macos-arm64.tar.gz" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>Download macOS TAR.GZ</a>
+                  <div class="release-sha"><span>SHA-256</span><code>9c2c7c07a145daec0ae7da089a162f36ac2a429fc3ee019bd1e5c8fee5a6c1ad</code></div>
                 </div><div class="release-download">
                   <div class="release-download-head">
                     <span class="release-download-icon" aria-hidden="true">LNX</span>
                     <div><h4>Linux x86_64</h4><p>GLIBC 2.35 / GLIBCXX 3.4.30 compatibility ceiling</p></div>
                   </div>
-                  <a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/qwertycoin-v2.0.0-linux-x86_64.tar.gz" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>Download Linux TAR.GZ</a>
-                  <div class="release-sha"><span>SHA-256</span><code>696ef3d085c22aa2929c59da01968f02a93cfe49a074e40df18f467781eb628c</code></div>
-                </div></div><div class="release-verification-links"><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/SHA256SUMS" target="_blank" rel="noopener"><span aria-hidden="true">SHA</span>SHA256SUMS</a><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0" target="_blank" rel="noopener"><span aria-hidden="true">GH</span>Release notes</a><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/issues" target="_blank" rel="noopener"><span aria-hidden="true">BUG</span>Report an issue</a></div><p class="release-signing-note">Integrity note: SHA256SUMS verifies downloaded bytes, not publisher identity. Linux and Windows are unsigned; macOS is ad-hoc signed and not notarized.</p>
+                  <a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.1/qwertycoin-v2.0.1-linux-x86_64.tar.gz" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>Download Linux TAR.GZ</a>
+                  <div class="release-sha"><span>SHA-256</span><code>ac74f0f7d8439e74cf1c27ede3ac28951450665e6dc0c3b7866eb439c9011bc3</code></div>
+                </div></div><div class="release-verification-links"><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.1/SHA256SUMS" target="_blank" rel="noopener"><span aria-hidden="true">SHA</span>SHA256SUMS</a><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1" target="_blank" rel="noopener"><span aria-hidden="true">GH</span>Release notes</a><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/issues" target="_blank" rel="noopener"><span aria-hidden="true">BUG</span>Report an issue</a></div><p class="release-signing-note">Integrity note: SHA256SUMS verifies downloaded bytes, not publisher identity. Linux and Windows are unsigned; macOS is ad-hoc signed and not notarized.</p>
+              </article>
+<article class="release-card release-card-runtime">
+                <div class="release-card-head">
+                  <div>
+                    <span class="badge mainnet">AVAILABLE · 2.0.1</span>
+                    <h3>Docker image</h3>
+                  </div>
+                  <span class="release-glyph" aria-hidden="true">OCI</span>
+                </div>
+                <p>Run the verified Core release as a non-root Linux/amd64 container. Mainnet and the daemon are the defaults; the persistent named volume keeps chain data across container updates.</p>
+                <div class="release-command-grid"><div class="release-command">
+                  <span>Pull the stable image</span>
+                  <pre><code>docker pull docker.io/qwertycoin/qwertycoin:2.0.1</code></pre>
+                </div><div class="release-command">
+                  <span>Start a persistent mainnet node</span>
+                  <pre><code>docker run -d --name qwertycoind --restart unless-stopped \
+  -v qwertycoin-chain:/data -p 8196:8196 \
+  docker.io/qwertycoin/qwertycoin:2.0.1</code></pre>
+                </div></div><div class="release-links"><a class="release-link" href="https://hub.docker.com/r/qwertycoin/qwertycoin/tags" target="_blank" rel="noopener"><span aria-hidden="true">OCI</span>Open Docker Hub</a><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/blob/v2.0.1/docker/README.md" target="_blank" rel="noopener"><span aria-hidden="true">DOC</span>Docker quickstart</a><a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1" target="_blank" rel="noopener"><span aria-hidden="true">GH</span>Core release notes</a></div><p class="release-signing-note">Production: pin a reviewed version tag or image digest instead of latest. Only P2P port 8196 is published below; administrative RPC is not exposed. Wallet and EPoSe identity data need separate protected volumes and the full quickstart.</p>
               </article>
 <article class="release-card">
                 <div class="release-card-head">

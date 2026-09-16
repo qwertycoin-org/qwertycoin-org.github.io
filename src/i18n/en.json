@@ -372,7 +372,7 @@
       {
         "badge": "AVAILABLE",
         "title": "Desktop wallets",
-        "body": "Qwertycoin GUI 2.0.0 is available for Windows, macOS Apple Silicon and Linux x86_64.",
+        "body": "Qwertycoin GUI 2.0.1 is available for Windows, macOS Apple Silicon and Linux x86_64.",
         "icon": "development.svg"
       }
     ]
@@ -380,10 +380,10 @@
   "releases": {
     "eyebrow": "Wallets",
     "title": "Wallets and source code",
-    "body": "The first public QWC test phase is open. The Web Wallet, Qwertycoin GUI 2.0.0, Core v2.0.0 command-line tools and source code are available now. Download official builds directly from GitHub.",
+    "body": "The first public QWC test phase is open. The Web Wallet, Qwertycoin GUI 2.0.1, Core v2.0.1 command-line tools, the official Docker image and source code are available now.",
     "cards": [
       {
-        "badge": "AVAILABLE · v2.0.0",
+        "badge": "AVAILABLE · v2.0.1",
         "badgeClass": "mainnet",
         "title": "Desktop wallets",
         "body": "Download the current Qwertycoin GUI from the official GitHub release. It includes the matching Core components; verify the archive and checksum before use.",
@@ -395,36 +395,36 @@
             "icon": "WIN",
             "downloadLabel": "Download Windows ZIP",
             "compatibility": "Portable Qt 5 runtime",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/qwertycoin-gui-v2.0.0-windows-x86_64.zip",
-            "sha256": "5eda8fa0a61bd5ae31fd752644232b135e47ded6fcd914a0ef88a8e0e5e48524"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-windows-x86_64.zip",
+            "sha256": "2e1972a503b74192014370c2b8bb1cd98cb88ef8e6ccc157cf43abc3bec1caf2"
           },
           {
             "label": "macOS Apple Silicon",
             "icon": "MAC",
             "downloadLabel": "Download macOS TAR.GZ",
             "compatibility": "macOS 15 or newer",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/qwertycoin-gui-v2.0.0-macos-arm64.tar.gz",
-            "sha256": "02808d852cdf6aef07125f0e29623b985f2004fa96a3a87edd30375380be9129"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-macos-arm64.tar.gz",
+            "sha256": "1be02a059aedf394ab17ef05567dbbb71e3c529590eb65f83a692d4705acc425"
           },
           {
             "label": "Linux x86_64",
             "icon": "LNX",
             "downloadLabel": "Download Linux TAR.GZ",
             "compatibility": "GLIBC 2.35 compatibility ceiling",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/qwertycoin-gui-v2.0.0-linux-x86_64.tar.gz",
-            "sha256": "3951431b54c01b1f3bc83ef9de3b95efd04f64d0a89277b4d0773a260171e125"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-linux-x86_64.tar.gz",
+            "sha256": "7902eacbd09b06c8d202167e206db185e306ad832a857239b77670a082c6ee4f"
           }
         ],
         "verificationLinks": [
           {
             "label": "SHA256SUMS",
             "icon": "SHA",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.0/SHA256SUMS"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/SHA256SUMS"
           },
           {
             "label": "Release notes",
             "icon": "GH",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.0"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.1"
           },
           {
             "label": "Report an issue",
@@ -434,7 +434,7 @@
         ]
       },
       {
-        "badge": "AVAILABLE · v2.0.0",
+        "badge": "AVAILABLE · v2.0.1",
         "badgeClass": "mainnet",
         "title": "Core command-line tools",
         "body": "Official Qwertycoin packages containing qwertycoind, qwertycoin-wallet-cli and qwertycoin-wallet-rpc. Verify the archive and checksum before use; release notes and audit status are documented with each GitHub release.",
@@ -446,41 +446,76 @@
             "icon": "WIN",
             "downloadLabel": "Download Windows ZIP",
             "compatibility": "Tested on the Windows Server 2025 runner; no broader legacy-Windows claim",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/qwertycoin-v2.0.0-windows-x86_64.zip",
-            "sha256": "2d1b587902aadf68ce13c8063396e7cbe1f4e0b6b70365449ad1d3daa9b56014"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.1/qwertycoin-v2.0.1-windows-x86_64.zip",
+            "sha256": "7a4d8ff13c38d61884dadc8d06255948a64500cb0dad18c75416eb5448d48ac4"
           },
           {
             "label": "macOS Apple Silicon",
             "icon": "MAC",
             "downloadLabel": "Download macOS TAR.GZ",
             "compatibility": "macOS 15 or newer",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/qwertycoin-v2.0.0-macos-arm64.tar.gz",
-            "sha256": "760b9275180d2fdb9789f7830363bd882aabce6ce50faea97647a205f5a734ee"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.1/qwertycoin-v2.0.1-macos-arm64.tar.gz",
+            "sha256": "9c2c7c07a145daec0ae7da089a162f36ac2a429fc3ee019bd1e5c8fee5a6c1ad"
           },
           {
             "label": "Linux x86_64",
             "icon": "LNX",
             "downloadLabel": "Download Linux TAR.GZ",
             "compatibility": "GLIBC 2.35 / GLIBCXX 3.4.30 compatibility ceiling",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/qwertycoin-v2.0.0-linux-x86_64.tar.gz",
-            "sha256": "696ef3d085c22aa2929c59da01968f02a93cfe49a074e40df18f467781eb628c"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.1/qwertycoin-v2.0.1-linux-x86_64.tar.gz",
+            "sha256": "ac74f0f7d8439e74cf1c27ede3ac28951450665e6dc0c3b7866eb439c9011bc3"
           }
         ],
         "verificationLinks": [
           {
             "label": "SHA256SUMS",
             "icon": "SHA",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.0/SHA256SUMS"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.1/SHA256SUMS"
           },
           {
             "label": "Release notes",
             "icon": "GH",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.0"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1"
           },
           {
             "label": "Report an issue",
             "icon": "BUG",
             "href": "https://github.com/qwertycoin-org/qwertycoin/issues"
+          }
+        ]
+      },
+      {
+        "badge": "AVAILABLE · 2.0.1",
+        "badgeClass": "mainnet",
+        "title": "Docker image",
+        "body": "Run the verified Core release as a non-root Linux/amd64 container. Mainnet and the daemon are the defaults; the persistent named volume keeps chain data across container updates.",
+        "note": "Production: pin a reviewed version tag or image digest instead of latest. Only P2P port 8196 is published below; administrative RPC is not exposed. Wallet and EPoSe identity data need separate protected volumes and the full quickstart.",
+        "glyph": "OCI",
+        "commands": [
+          {
+            "label": "Pull the stable image",
+            "code": "docker pull docker.io/qwertycoin/qwertycoin:2.0.1"
+          },
+          {
+            "label": "Start a persistent mainnet node",
+            "code": "docker run -d --name qwertycoind --restart unless-stopped \\\n  -v qwertycoin-chain:/data -p 8196:8196 \\\n  docker.io/qwertycoin/qwertycoin:2.0.1"
+          }
+        ],
+        "links": [
+          {
+            "label": "Open Docker Hub",
+            "icon": "OCI",
+            "href": "https://hub.docker.com/r/qwertycoin/qwertycoin/tags"
+          },
+          {
+            "label": "Docker quickstart",
+            "icon": "DOC",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/blob/v2.0.1/docker/README.md"
+          },
+          {
+            "label": "Core release notes",
+            "icon": "GH",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1"
           }
         ]
       },
