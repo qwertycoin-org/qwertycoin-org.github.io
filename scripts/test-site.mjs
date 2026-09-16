@@ -292,18 +292,18 @@ for (const html of [index, germanIndex]) {
 }
 
 const dockerHubUrl = "https://hub.docker.com/r/qwertycoin/qwertycoin/tags";
-const dockerQuickstartUrl = "https://github.com/qwertycoin-org/qwertycoin/blob/v2.0.1/docker/README.md";
-const dockerImage = "docker.io/qwertycoin/qwertycoin:2.0.1";
+const dockerQuickstartUrl = "https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md";
+const dockerImage = "docker.io/qwertycoin/qwertycoin:latest";
 
 for (const html of [index, germanIndex]) {
   assertIncludes(html, "release-card release-card-runtime", "Docker runtime card");
   assertIncludes(html, `href="${dockerHubUrl}" target="_blank" rel="noopener"`, "Docker Hub link");
   assertIncludes(html, `href="${dockerQuickstartUrl}" target="_blank" rel="noopener"`, "Docker quickstart link");
-  assertIncludes(html, `<code>docker pull ${dockerImage}</code>`, "version-pinned Docker pull");
+  assertIncludes(html, `<code>docker pull ${dockerImage}</code>`, "latest Docker pull");
   assertIncludes(html, "-v qwertycoin-chain:/data -p 8196:8196", "persistent chain and P2P-only Docker run");
-  assertIncludes(html, dockerImage, "version-pinned Docker run image");
-  if (html.includes("docker.io/qwertycoin/qwertycoin:latest")) {
-    throw new Error("Website commands must not recommend the moving latest tag");
+  assertIncludes(html, dockerImage, "latest Docker run image");
+  if (html.includes("docker.io/qwertycoin/qwertycoin:2.0.1")) {
+    throw new Error("Website Docker commands must follow the latest stable tag");
   }
 }
 
