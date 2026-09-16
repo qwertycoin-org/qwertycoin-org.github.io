@@ -489,16 +489,16 @@
         "badgeClass": "mainnet",
         "title": "Docker image",
         "body": "Run the verified Core release as a non-root Linux/amd64 container. Mainnet and the daemon are the defaults; the persistent named volume keeps chain data across container updates.",
-        "note": "Production: pin a reviewed version tag or image digest instead of latest. Only P2P port 8196 is published below; administrative RPC is not exposed. Wallet and EPoSe identity data need separate protected volumes and the full quickstart.",
+        "note": "The latest tag tracks the newest stable image. Audited production deployments may pin its image digest. Only P2P port 8196 is published below; administrative RPC is not exposed. Wallet and EPoSe identity data need separate protected volumes and the full quickstart.",
         "glyph": "OCI",
         "commands": [
           {
             "label": "Pull the stable image",
-            "code": "docker pull docker.io/qwertycoin/qwertycoin:2.0.1"
+            "code": "docker pull docker.io/qwertycoin/qwertycoin:latest"
           },
           {
             "label": "Start a persistent mainnet node",
-            "code": "docker run -d --name qwertycoind --restart unless-stopped \\\n  -v qwertycoin-chain:/data -p 8196:8196 \\\n  docker.io/qwertycoin/qwertycoin:2.0.1"
+            "code": "docker run -d --name qwertycoind --restart unless-stopped \\\n  -v qwertycoin-chain:/data -p 8196:8196 \\\n  docker.io/qwertycoin/qwertycoin:latest"
           }
         ],
         "links": [
@@ -510,7 +510,7 @@
           {
             "label": "Docker quickstart",
             "icon": "DOC",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/blob/v2.0.1/docker/README.md"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md"
           },
           {
             "label": "Core release notes",
