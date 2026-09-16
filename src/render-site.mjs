@@ -112,11 +112,24 @@ function releaseDownload(item) {
                 </div>`;
 }
 
+function releaseCommand(item) {
+  return `<div class="release-command">
+                  <span>${text(item.label)}</span>
+                  <pre><code>${text(item.code)}</code></pre>
+                </div>`;
+}
+
 function releaseCard(card) {
   const downloads = card.downloads || [];
   const links = card.links || [];
-  const cardClass = downloads.length ? "release-card release-card-downloads" : "release-card";
+  const commands = card.commands || [];
+  const cardClass = [
+    "release-card",
+    downloads.length ? "release-card-downloads" : "",
+    commands.length ? "release-card-runtime" : ""
+  ].filter(Boolean).join(" ");
   const downloadsHtml = downloads.length ? `<div class="release-download-grid">${downloads.map(releaseDownload).join("")}</div>` : "";
+  const commandsHtml = commands.length ? `<div class="release-command-grid">${commands.map(releaseCommand).join("")}</div>` : "";
   const linksHtml = links.length ? `<div class="release-links">${links.map(releaseItemLink).join("")}</div>` : "";
   const verificationHtml = card.verificationLinks?.length ? `<div class="release-verification-links">${card.verificationLinks.map(releaseItemLink).join("")}</div>` : "";
   const noteHtml = card.note ? `<p class="release-signing-note">${text(card.note)}</p>` : "";
@@ -130,7 +143,7 @@ function releaseCard(card) {
                   <span class="release-glyph" aria-hidden="true">${text(card.glyph)}</span>
                 </div>
                 <p>${text(card.body)}</p>
-                ${downloadsHtml}${linksHtml}${verificationHtml}${noteHtml}
+                ${downloadsHtml}${commandsHtml}${linksHtml}${verificationHtml}${noteHtml}
               </article>`;
 }
 
