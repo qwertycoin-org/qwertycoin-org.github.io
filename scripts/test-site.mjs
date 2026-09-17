@@ -241,6 +241,10 @@ const guiArtifacts = [
     sha256: "2e1972a503b74192014370c2b8bb1cd98cb88ef8e6ccc157cf43abc3bec1caf2"
   },
   {
+    name: "qwertycoin-gui-v2.0.1-macos-arm64.dmg",
+    sha256: "30a66788e940369bb6eb1d5bd1e33fc7292ac1fac42afc1ea3f404063a48cc85"
+  },
+  {
     name: "qwertycoin-gui-v2.0.1-macos-arm64.tar.gz",
     sha256: "1be02a059aedf394ab17ef05567dbbb71e3c529590eb65f83a692d4705acc425"
   },
@@ -259,6 +263,26 @@ for (const html of [index, germanIndex]) {
     assertIncludes(html, `href="${downloadUrl}" target="_blank" rel="noopener"`, `${artifact.name} download link`);
     assertIncludes(html, `<code>${artifact.sha256}</code>`, `${artifact.name} SHA-256`);
   }
+
+  const dmgPosition = html.indexOf("qwertycoin-gui-v2.0.1-macos-arm64.dmg");
+  const tarPosition = html.indexOf("qwertycoin-gui-v2.0.1-macos-arm64.tar.gz");
+  if (dmgPosition < 0 || tarPosition < 0 || dmgPosition > tarPosition) {
+    throw new Error("The preferred macOS DMG must be rendered before the TAR.GZ alternative");
+  }
+  if ((html.match(/class="release-download"/g) || []).length !== 6) {
+    throw new Error("GUI and Core downloads must retain exactly three platform columns each");
+  }
+}
+
+assertIncludes(index, "Preferred download", "English preferred DMG label");
+assertIncludes(germanIndex, "Bevorzugter Download", "German preferred DMG label");
+
+if (!/\.release-download-grid\s*\{[^}]*grid-template-columns:\s*repeat\(3,\s*minmax\(0,\s*1fr\)\)/.test(css)) {
+  throw new Error("Desktop release downloads must retain the three-column layout");
+}
+
+if (!/\.release-download-option-preferred \.release-link\s*\{[^}]*background:\s*var\(--color-accent\)/.test(css)) {
+  throw new Error("The preferred DMG download must have a visible primary treatment");
 }
 
 const coreReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1";

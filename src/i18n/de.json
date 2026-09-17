@@ -386,7 +386,7 @@
         "badge": "VERFÜGBAR · v2.0.1",
         "badgeClass": "mainnet",
         "title": "Desktop-Wallets",
-        "body": "Lade die aktuelle Qwertycoin GUI aus dem offiziellen GitHub-Release herunter. Sie enthält die passenden Core-Komponenten; prüfe Archiv und Prüfsumme vor der Verwendung.",
+        "body": "Lade die aktuelle Qwertycoin GUI aus dem offiziellen GitHub-Release herunter. Unter macOS ist das DMG die bevorzugte Drag-and-drop-Installation; TAR.GZ bleibt als Alternative verfügbar. Prüfe Download und Prüfsumme vor der Verwendung.",
         "note": "Integritätshinweis: SHA256SUMS prüft die heruntergeladenen Bytes, nicht die Identität des Herausgebers. Linux und Windows sind unsigniert; macOS ist ad-hoc signiert und nicht notarisiert.",
         "glyph": "GUI",
         "downloads": [
@@ -401,10 +401,20 @@
           {
             "label": "macOS Apple Silicon",
             "icon": "MAC",
-            "downloadLabel": "macOS-TAR.GZ herunterladen",
+            "downloadLabel": "macOS-DMG herunterladen",
             "compatibility": "macOS 15 oder neuer",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-macos-arm64.tar.gz",
-            "sha256": "1be02a059aedf394ab17ef05567dbbb71e3c529590eb65f83a692d4705acc425"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-macos-arm64.dmg",
+            "sha256": "30a66788e940369bb6eb1d5bd1e33fc7292ac1fac42afc1ea3f404063a48cc85",
+            "shaLabel": "DMG SHA-256",
+            "preferredLabel": "Bevorzugter Download",
+            "alternatives": [
+              {
+                "downloadLabel": "macOS-TAR.GZ herunterladen",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-macos-arm64.tar.gz",
+                "sha256": "1be02a059aedf394ab17ef05567dbbb71e3c529590eb65f83a692d4705acc425",
+                "shaLabel": "TAR.GZ SHA-256"
+              }
+            ]
           },
           {
             "label": "Linux x86_64",

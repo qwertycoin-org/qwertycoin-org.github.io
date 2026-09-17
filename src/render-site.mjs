@@ -101,14 +101,28 @@ function releaseItemLink(item) {
   return `<a class="${className}"${href}${target}><span aria-hidden="true">${text(item.icon)}</span>${text(item.label)}</a>`;
 }
 
+function releaseDownloadOption(item, icon = "DL") {
+  const preferredClass = item.preferredLabel ? " release-download-option-preferred" : "";
+  const preferredHtml = item.preferredLabel
+    ? `<span class="release-download-preferred">${text(item.preferredLabel)}</span>`
+    : "";
+
+  return `<div class="release-download-option${preferredClass}">
+                    ${preferredHtml}<a class="release-link" href="${text(item.href)}" target="_blank" rel="noopener"><span aria-hidden="true">${text(icon)}</span>${text(item.downloadLabel)}</a>
+                    <div class="release-sha"><span>${text(item.shaLabel || "SHA-256")}</span><code>${text(item.sha256)}</code></div>
+                  </div>`;
+}
+
 function releaseDownload(item) {
+  const alternatives = item.alternatives || [];
+  const options = [item, ...alternatives];
+
   return `<div class="release-download">
                   <div class="release-download-head">
                     <span class="release-download-icon" aria-hidden="true">${text(item.icon)}</span>
                     <div><h4>${text(item.label)}</h4><p>${text(item.compatibility)}</p></div>
                   </div>
-                  <a class="release-link" href="${text(item.href)}" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>${text(item.downloadLabel)}</a>
-                  <div class="release-sha"><span>SHA-256</span><code>${text(item.sha256)}</code></div>
+                  <div class="release-download-options">${options.map((option, index) => releaseDownloadOption(option, index === 0 ? "DL" : "ALT")).join("")}</div>
                 </div>`;
 }
 
