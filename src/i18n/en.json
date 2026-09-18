@@ -389,6 +389,7 @@
         "body": "Download the current Qwertycoin GUI from the official GitHub release. The Windows Setup and macOS DMG are the preferred installers; portable ZIP and TAR.GZ packages remain available as alternatives. Verify the download and checksum before use.",
         "note": "Integrity note: SHA256SUMS verifies downloaded bytes, not publisher identity. Linux and Windows are unsigned; macOS is ad-hoc signed and not notarized.",
         "glyph": "GUI",
+        "downloadsLayout": "rows",
         "downloads": [
           {
             "label": "Windows x86_64",

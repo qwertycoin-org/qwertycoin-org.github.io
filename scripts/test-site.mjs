@@ -279,7 +279,10 @@ for (const html of [index, germanIndex]) {
     throw new Error("The preferred Windows Setup must be rendered before the portable ZIP alternative");
   }
   if ((html.match(/class="release-download"/g) || []).length !== 6) {
-    throw new Error("GUI and Core downloads must retain exactly three platform columns each");
+    throw new Error("GUI and Core downloads must retain exactly three platform entries each");
+  }
+  if ((html.match(/class="release-download-grid release-download-grid-rows"/g) || []).length !== 1) {
+    throw new Error("Only the GUI download card must use the horizontal platform-row layout");
   }
 }
 
@@ -289,7 +292,13 @@ assertIncludes(index, "Preferred installer", "English preferred Windows installe
 assertIncludes(germanIndex, "Bevorzugter Installer", "German preferred Windows installer label");
 
 if (!/\.release-download-grid\s*\{[^}]*grid-template-columns:\s*repeat\(3,\s*minmax\(0,\s*1fr\)\)/.test(css)) {
-  throw new Error("Desktop release downloads must retain the three-column layout");
+  throw new Error("Default desktop release downloads must retain the three-column layout");
+}
+
+if (!/\.release-download-grid\.release-download-grid-rows\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)/.test(css)
+    || !/\.release-download-grid-rows \.release-download\s*\{[^}]*grid-template-columns:\s*minmax\(210px,\s*0\.3fr\)\s+minmax\(0,\s*1fr\)/.test(css)
+    || !/\.release-download-grid-rows \.release-download-options\s*\{[^}]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/.test(css)) {
+  throw new Error("GUI desktop downloads must render as platform rows with two artifact slots");
 }
 
 if (!/\.release-download-option-preferred \.release-link\s*\{[^}]*background:\s*var\(--color-accent\)/.test(css)) {

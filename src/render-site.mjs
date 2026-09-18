@@ -142,7 +142,10 @@ function releaseCard(card) {
     downloads.length ? "release-card-downloads" : "",
     commands.length ? "release-card-runtime" : ""
   ].filter(Boolean).join(" ");
-  const downloadsHtml = downloads.length ? `<div class="release-download-grid">${downloads.map(releaseDownload).join("")}</div>` : "";
+  const downloadGridClass = card.downloadsLayout === "rows"
+    ? "release-download-grid release-download-grid-rows"
+    : "release-download-grid";
+  const downloadsHtml = downloads.length ? `<div class="${downloadGridClass}">${downloads.map(releaseDownload).join("")}</div>` : "";
   const commandsHtml = commands.length ? `<div class="release-command-grid">${commands.map(releaseCommand).join("")}</div>` : "";
   const linksHtml = links.length ? `<div class="release-links">${links.map(releaseItemLink).join("")}</div>` : "";
   const verificationHtml = card.verificationLinks?.length ? `<div class="release-verification-links">${card.verificationLinks.map(releaseItemLink).join("")}</div>` : "";
