@@ -237,7 +237,10 @@ export function renderPage(localeCode, assets = defaultAssets) {
   const networkData = {
     locale: locale.code,
     labels: t.metrics,
-    config: { epochLengthBlocks: network.epose.epochLengthBlocks }
+    config: {
+      epochLengthBlocks: network.epose.epochLengthBlocks,
+      protocolVersion: network.epose.protocolVersion
+    }
   };
 
   return `<!doctype html>
