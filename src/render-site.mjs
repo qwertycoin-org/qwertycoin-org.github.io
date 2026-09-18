@@ -98,10 +98,11 @@ function releaseItemLink(item) {
   const className = item.href ? "release-link" : "release-link disabled";
   const href = item.href ? ` href="${text(item.href)}"` : "";
   const target = item.href && item.href.startsWith("http") ? ' target="_blank" rel="noopener"' : "";
-  return `<a class="${className}"${href}${target}><span aria-hidden="true">${text(item.icon)}</span>${text(item.label)}</a>`;
+  const icon = item.icon ? `<span aria-hidden="true">${text(item.icon)}</span>` : "";
+  return `<a class="${className}"${href}${target}>${icon}${text(item.label)}</a>`;
 }
 
-function releaseDownloadOption(item, icon = "DL", reservePreferredSpace = false) {
+function releaseDownloadOption(item, reservePreferredSpace = false) {
   const preferredClass = item.preferredLabel ? " release-download-option-preferred" : "";
   const preferredHtml = item.preferredLabel
     ? `<span class="release-download-preferred">${text(item.preferredLabel)}</span>`
@@ -110,7 +111,7 @@ function releaseDownloadOption(item, icon = "DL", reservePreferredSpace = false)
       : "";
 
   return `<div class="release-download-option${preferredClass}">
-                    ${preferredHtml}<a class="release-link" href="${text(item.href)}" target="_blank" rel="noopener"><span aria-hidden="true">${text(icon)}</span>${text(item.downloadLabel)}</a>
+                    ${preferredHtml}<a class="release-link" href="${text(item.href)}" target="_blank" rel="noopener">${text(item.downloadLabel)}</a>
                     <div class="release-sha"><span>${text(item.shaLabel || "SHA-256")}</span><code>${text(item.sha256)}</code></div>
                   </div>`;
 }
@@ -124,7 +125,7 @@ function releaseDownload(item) {
                     <span class="release-download-icon" aria-hidden="true">${text(item.icon)}</span>
                     <div><h4>${text(item.label)}</h4><p>${text(item.compatibility)}</p></div>
                   </div>
-                  <div class="release-download-options">${options.map((option, index) => releaseDownloadOption(option, index === 0 ? "DL" : "ALT", options.length > 1)).join("")}</div>
+                  <div class="release-download-options">${options.map((option) => releaseDownloadOption(option, options.length > 1)).join("")}</div>
                 </div>`;
 }
 

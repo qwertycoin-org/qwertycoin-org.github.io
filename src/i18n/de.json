@@ -549,7 +549,6 @@
         "links": [
           {
             "label": "Web Wallet öffnen",
-            "icon": "WEB",
             "href": "https://wallet.qwertycoin.org/"
           }
         ]
@@ -563,12 +562,10 @@
         "links": [
           {
             "label": "Core-Repository öffnen",
-            "icon": "SRC",
             "href": "https://github.com/qwertycoin-org/qwertycoin"
           },
           {
             "label": "GitHub-Organisation",
-            "icon": "GH",
             "href": "https://github.com/qwertycoin-org"
           }
         ]

@@ -288,7 +288,17 @@ for (const html of [index, germanIndex]) {
       || (html.match(/release-download-preferred-placeholder" aria-hidden="true"/g) || []).length !== 2) {
     throw new Error("Windows and macOS alternatives must reserve one inaccessible preferred-label row each");
   }
+  if (/<a class="release-link"[^>]*><span aria-hidden="true">(?:DL|ALT)<\/span>/.test(html)) {
+    throw new Error("Download buttons must not include DL or ALT prefixes");
+  }
 }
+
+assertIncludes(index, '<a class="release-link" href="https://wallet.qwertycoin.org/" target="_blank" rel="noopener">Open Web Wallet</a>', "English Web Wallet button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://wallet.qwertycoin.org/" target="_blank" rel="noopener">Web Wallet öffnen</a>', "German Web Wallet button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin" target="_blank" rel="noopener">Open Core Repository</a>', "English Core repository button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin" target="_blank" rel="noopener">Core-Repository öffnen</a>', "German Core repository button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org" target="_blank" rel="noopener">GitHub Organization</a>', "English GitHub organization button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org" target="_blank" rel="noopener">GitHub-Organisation</a>', "German GitHub organization button without prefix");
 
 assertIncludes(index, "Preferred download", "English preferred DMG label");
 assertIncludes(germanIndex, "Bevorzugter Download", "German preferred DMG label");
