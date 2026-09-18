@@ -319,6 +319,32 @@ if (identityRaceFallback.value("height") !== "1505"
   throw new Error("A verified overview must preserve network height during a transient identity race");
 }
 
+const transientRpcRaceFallback = await runScenario(
+  response({
+    ...validIdentity,
+    data: {
+      ...validIdentity.data,
+      compatible: false,
+      rpc_db_anchor_matches: false
+    }
+  }),
+  response(withOverviewNetwork({
+    height: 1506,
+    top_block_hash: "e".repeat(64),
+    rpc_db_anchor_matches: false
+  })),
+  response(validEpose)
+);
+if (transientRpcRaceFallback.value("height") !== "1505"
+    || transientRpcRaceFallback.value("top-hash") !== "d".repeat(64)
+    || transientRpcRaceFallback.value("sync") !== labels.syncPending
+    || transientRpcRaceFallback.value("service-nodes") !== "10"
+    || transientRpcRaceFallback.value("qualified") !== "6"
+    || transientRpcRaceFallback.statusRoot.dataset.state !== "partial"
+    || transientRpcRaceFallback.statusMessage.textContent !== labels.partial) {
+  throw new Error("A canonical DB snapshot must preserve height while its RPC anchor catches up");
+}
+
 for (const [name, identityResponse] of [
   ["identity-http-error", response({}, false)],
   ["identity-error-status", response({ status: "error", data: validIdentity.data })],
@@ -364,11 +390,12 @@ for (const [name, overviewResponse] of [
   ["overview-testnet", response(withOverviewNetwork({ testnet: true }))],
   ["overview-stagenet", response(withOverviewNetwork({ stagenet: true }))],
   ["overview-hardfork-mismatch", response(withOverviewNetwork({ current_hf_version: 18 }))],
-  ["overview-network-height-mismatch", response(withOverviewNetwork({ height: 1504 }))],
+  ["overview-network-height-invalid", response(withOverviewNetwork({ height: "1505" }))],
+  ["overview-network-height-too-far", response(withOverviewNetwork({ height: 1507 }))],
   ["overview-observer-count-mismatch", response(withOverviewNetwork({ observer_block_count: 1504 }))],
   ["overview-observer-tip-mismatch", response(withOverviewNetwork({ observer_tip_height: 1503 }))],
-  ["overview-network-hash-mismatch", response(withOverviewNetwork({ top_block_hash: "e".repeat(64) }))],
-  ["overview-rpc-anchor-mismatch", response(withOverviewNetwork({ rpc_db_anchor_matches: false }))],
+  ["overview-network-hash-invalid", response(withOverviewNetwork({ top_block_hash: "abc" }))],
+  ["overview-rpc-anchor-invalid", response(withOverviewNetwork({ rpc_db_anchor_matches: "false" }))],
   ["overview-supply-stale", response(withOverviewSupply({ availability: "stale" }))],
   ["overview-supply-incomplete", response(withOverviewSupply({ complete: false }))],
   ["overview-genesis-mismatch", response(withOverviewSupply({ genesis_hash: "e".repeat(64) }))],
