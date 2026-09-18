@@ -3,6 +3,8 @@
   "explorerUrl": "https://explorer.qwertycoin.org/",
   "githubUrl": "https://github.com/qwertycoin-org",
   "walletUrl": "https://wallet.qwertycoin.org/",
+  "genesisHash": "4f95857586e2c66063c277370eda99cd75897d773af09f0c3cd1e22f7e87db39",
+  "hardforkVersion": 17,
   "epose": {
     "epochLengthBlocks": 720,
     "blockTargetSeconds": 120,
