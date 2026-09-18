@@ -386,17 +386,27 @@
         "badge": "VERFÜGBAR · v2.0.1",
         "badgeClass": "mainnet",
         "title": "Desktop-Wallets",
-        "body": "Lade die aktuelle Qwertycoin GUI aus dem offiziellen GitHub-Release herunter. Unter macOS ist das DMG die bevorzugte Drag-and-drop-Installation; TAR.GZ bleibt als Alternative verfügbar. Prüfe Download und Prüfsumme vor der Verwendung.",
+        "body": "Lade die aktuelle Qwertycoin GUI aus dem offiziellen GitHub-Release herunter. Das Windows-Setup und das macOS-DMG sind die bevorzugten Installer; portable ZIP- und TAR.GZ-Pakete bleiben als Alternativen verfügbar. Prüfe Download und Prüfsumme vor der Verwendung.",
         "note": "Integritätshinweis: SHA256SUMS prüft die heruntergeladenen Bytes, nicht die Identität des Herausgebers. Linux und Windows sind unsigniert; macOS ist ad-hoc signiert und nicht notarisiert.",
         "glyph": "GUI",
         "downloads": [
           {
             "label": "Windows x86_64",
             "icon": "WIN",
-            "downloadLabel": "Windows-ZIP herunterladen",
-            "compatibility": "Portables Qt-5-Laufzeitpaket",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-windows-x86_64.zip",
-            "sha256": "2e1972a503b74192014370c2b8bb1cd98cb88ef8e6ccc157cf43abc3bec1caf2"
+            "downloadLabel": "Windows-Setup herunterladen",
+            "compatibility": "Windows 10 oder neuer · unsigniert",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-windows-x86_64-setup.exe",
+            "sha256": "82eedf879dc856405bbcb96a839b280355c53259a9445feb35ad24818003f15e",
+            "shaLabel": "Setup-SHA-256",
+            "preferredLabel": "Bevorzugter Installer",
+            "alternatives": [
+              {
+                "downloadLabel": "Portables Windows-ZIP herunterladen",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-windows-x86_64.zip",
+                "sha256": "44743418763f2394075469a9f44e17a9c835803b2a7a76f6cf43af9da7b6a24e",
+                "shaLabel": "ZIP-SHA-256"
+              }
+            ]
           },
           {
             "label": "macOS Apple Silicon",

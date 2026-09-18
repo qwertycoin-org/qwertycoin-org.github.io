@@ -386,17 +386,27 @@
         "badge": "AVAILABLE · v2.0.1",
         "badgeClass": "mainnet",
         "title": "Desktop wallets",
-        "body": "Download the current Qwertycoin GUI from the official GitHub release. On macOS, the DMG is the preferred drag-and-drop installer; TAR.GZ remains available as an alternative. Verify the download and checksum before use.",
+        "body": "Download the current Qwertycoin GUI from the official GitHub release. The Windows Setup and macOS DMG are the preferred installers; portable ZIP and TAR.GZ packages remain available as alternatives. Verify the download and checksum before use.",
         "note": "Integrity note: SHA256SUMS verifies downloaded bytes, not publisher identity. Linux and Windows are unsigned; macOS is ad-hoc signed and not notarized.",
         "glyph": "GUI",
         "downloads": [
           {
             "label": "Windows x86_64",
             "icon": "WIN",
-            "downloadLabel": "Download Windows ZIP",
-            "compatibility": "Portable Qt 5 runtime",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-windows-x86_64.zip",
-            "sha256": "2e1972a503b74192014370c2b8bb1cd98cb88ef8e6ccc157cf43abc3bec1caf2"
+            "downloadLabel": "Download Windows Setup",
+            "compatibility": "Windows 10 or newer · unsigned",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-windows-x86_64-setup.exe",
+            "sha256": "82eedf879dc856405bbcb96a839b280355c53259a9445feb35ad24818003f15e",
+            "shaLabel": "Setup SHA-256",
+            "preferredLabel": "Preferred installer",
+            "alternatives": [
+              {
+                "downloadLabel": "Download portable Windows ZIP",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/qwertycoin-gui-v2.0.1-windows-x86_64.zip",
+                "sha256": "44743418763f2394075469a9f44e17a9c835803b2a7a76f6cf43af9da7b6a24e",
+                "shaLabel": "ZIP SHA-256"
+              }
+            ]
           },
           {
             "label": "macOS Apple Silicon",

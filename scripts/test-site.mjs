@@ -237,8 +237,12 @@ const guiReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases
 const guiChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/SHA256SUMS";
 const guiArtifacts = [
   {
+    name: "qwertycoin-gui-v2.0.1-windows-x86_64-setup.exe",
+    sha256: "82eedf879dc856405bbcb96a839b280355c53259a9445feb35ad24818003f15e"
+  },
+  {
     name: "qwertycoin-gui-v2.0.1-windows-x86_64.zip",
-    sha256: "2e1972a503b74192014370c2b8bb1cd98cb88ef8e6ccc157cf43abc3bec1caf2"
+    sha256: "44743418763f2394075469a9f44e17a9c835803b2a7a76f6cf43af9da7b6a24e"
   },
   {
     name: "qwertycoin-gui-v2.0.1-macos-arm64.dmg",
@@ -269,6 +273,11 @@ for (const html of [index, germanIndex]) {
   if (dmgPosition < 0 || tarPosition < 0 || dmgPosition > tarPosition) {
     throw new Error("The preferred macOS DMG must be rendered before the TAR.GZ alternative");
   }
+  const setupPosition = html.indexOf("qwertycoin-gui-v2.0.1-windows-x86_64-setup.exe");
+  const zipPosition = html.indexOf("qwertycoin-gui-v2.0.1-windows-x86_64.zip");
+  if (setupPosition < 0 || zipPosition < 0 || setupPosition > zipPosition) {
+    throw new Error("The preferred Windows Setup must be rendered before the portable ZIP alternative");
+  }
   if ((html.match(/class="release-download"/g) || []).length !== 6) {
     throw new Error("GUI and Core downloads must retain exactly three platform columns each");
   }
@@ -276,13 +285,15 @@ for (const html of [index, germanIndex]) {
 
 assertIncludes(index, "Preferred download", "English preferred DMG label");
 assertIncludes(germanIndex, "Bevorzugter Download", "German preferred DMG label");
+assertIncludes(index, "Preferred installer", "English preferred Windows installer label");
+assertIncludes(germanIndex, "Bevorzugter Installer", "German preferred Windows installer label");
 
 if (!/\.release-download-grid\s*\{[^}]*grid-template-columns:\s*repeat\(3,\s*minmax\(0,\s*1fr\)\)/.test(css)) {
   throw new Error("Desktop release downloads must retain the three-column layout");
 }
 
 if (!/\.release-download-option-preferred \.release-link\s*\{[^}]*background:\s*var\(--color-accent\)/.test(css)) {
-  throw new Error("The preferred DMG download must have a visible primary treatment");
+  throw new Error("Preferred installer downloads must have a visible primary treatment");
 }
 
 const coreReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1";
