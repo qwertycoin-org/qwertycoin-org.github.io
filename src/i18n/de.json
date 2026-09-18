@@ -444,7 +444,6 @@
           },
           {
             "label": "Release-Hinweise",
-            "icon": "GH",
             "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.1"
           },
           {
@@ -495,7 +494,6 @@
           },
           {
             "label": "Release-Hinweise",
-            "icon": "GH",
             "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1"
           },
           {
@@ -525,17 +523,14 @@
         "links": [
           {
             "label": "Docker Hub öffnen",
-            "icon": "OCI",
             "href": "https://hub.docker.com/r/qwertycoin/qwertycoin/tags"
           },
           {
             "label": "Docker-Schnellstart",
-            "icon": "DOC",
             "href": "https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md"
           },
           {
             "label": "Core-Release-Hinweise",
-            "icon": "GH",
             "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1"
           }
         ]

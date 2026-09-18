@@ -299,6 +299,16 @@ assertIncludes(index, '<a class="release-link" href="https://github.com/qwertyco
 assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin" target="_blank" rel="noopener">Core-Repository öffnen</a>', "German Core repository button without prefix");
 assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org" target="_blank" rel="noopener">GitHub Organization</a>', "English GitHub organization button without prefix");
 assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org" target="_blank" rel="noopener">GitHub-Organisation</a>', "German GitHub organization button without prefix");
+assertIncludes(index, `<a class="release-link" href="${guiReleaseUrl}" target="_blank" rel="noopener">Release notes</a>`, "English GUI release notes button without prefix");
+assertIncludes(germanIndex, `<a class="release-link" href="${guiReleaseUrl}" target="_blank" rel="noopener">Release-Hinweise</a>`, "German GUI release notes button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://hub.docker.com/r/qwertycoin/qwertycoin/tags" target="_blank" rel="noopener">Open Docker Hub</a>', "English Docker Hub button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://hub.docker.com/r/qwertycoin/qwertycoin/tags" target="_blank" rel="noopener">Docker Hub öffnen</a>', "German Docker Hub button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md" target="_blank" rel="noopener">Docker quickstart</a>', "English Docker quickstart button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md" target="_blank" rel="noopener">Docker-Schnellstart</a>', "German Docker quickstart button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1" target="_blank" rel="noopener">Release notes</a>', "English Core release notes button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1" target="_blank" rel="noopener">Release-Hinweise</a>', "German Core release notes button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1" target="_blank" rel="noopener">Core release notes</a>', "English Docker Core release notes button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1" target="_blank" rel="noopener">Core-Release-Hinweise</a>', "German Docker Core release notes button without prefix");
 
 assertIncludes(index, "Preferred download", "English preferred DMG label");
 assertIncludes(germanIndex, "Bevorzugter Download", "German preferred DMG label");
