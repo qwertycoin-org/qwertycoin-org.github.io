@@ -98,17 +98,34 @@ function releaseItemLink(item) {
   const className = item.href ? "release-link" : "release-link disabled";
   const href = item.href ? ` href="${text(item.href)}"` : "";
   const target = item.href && item.href.startsWith("http") ? ' target="_blank" rel="noopener"' : "";
-  return `<a class="${className}"${href}${target}><span aria-hidden="true">${text(item.icon)}</span>${text(item.label)}</a>`;
+  const icon = item.icon ? `<span aria-hidden="true">${text(item.icon)}</span>` : "";
+  return `<a class="${className}"${href}${target}>${icon}${text(item.label)}</a>`;
+}
+
+function releaseDownloadOption(item, reservePreferredSpace = false) {
+  const preferredClass = item.preferredLabel ? " release-download-option-preferred" : "";
+  const preferredHtml = item.preferredLabel
+    ? `<span class="release-download-preferred">${text(item.preferredLabel)}</span>`
+    : reservePreferredSpace
+      ? '<span class="release-download-preferred release-download-preferred-placeholder" aria-hidden="true">&nbsp;</span>'
+      : "";
+
+  return `<div class="release-download-option${preferredClass}">
+                    ${preferredHtml}<a class="release-link" href="${text(item.href)}" target="_blank" rel="noopener">${text(item.downloadLabel)}</a>
+                    <div class="release-sha"><span>${text(item.shaLabel || "SHA-256")}</span><code>${text(item.sha256)}</code></div>
+                  </div>`;
 }
 
 function releaseDownload(item) {
+  const alternatives = item.alternatives || [];
+  const options = [item, ...alternatives];
+
   return `<div class="release-download">
                   <div class="release-download-head">
                     <span class="release-download-icon" aria-hidden="true">${text(item.icon)}</span>
                     <div><h4>${text(item.label)}</h4><p>${text(item.compatibility)}</p></div>
                   </div>
-                  <a class="release-link" href="${text(item.href)}" target="_blank" rel="noopener"><span aria-hidden="true">DL</span>${text(item.downloadLabel)}</a>
-                  <div class="release-sha"><span>SHA-256</span><code>${text(item.sha256)}</code></div>
+                  <div class="release-download-options">${options.map((option) => releaseDownloadOption(option, options.length > 1)).join("")}</div>
                 </div>`;
 }
 
@@ -128,7 +145,10 @@ function releaseCard(card) {
     downloads.length ? "release-card-downloads" : "",
     commands.length ? "release-card-runtime" : ""
   ].filter(Boolean).join(" ");
-  const downloadsHtml = downloads.length ? `<div class="release-download-grid">${downloads.map(releaseDownload).join("")}</div>` : "";
+  const downloadGridClass = card.downloadsLayout === "rows"
+    ? "release-download-grid release-download-grid-rows"
+    : "release-download-grid";
+  const downloadsHtml = downloads.length ? `<div class="${downloadGridClass}">${downloads.map(releaseDownload).join("")}</div>` : "";
   const commandsHtml = commands.length ? `<div class="release-command-grid">${commands.map(releaseCommand).join("")}</div>` : "";
   const linksHtml = links.length ? `<div class="release-links">${links.map(releaseItemLink).join("")}</div>` : "";
   const verificationHtml = card.verificationLinks?.length ? `<div class="release-verification-links">${card.verificationLinks.map(releaseItemLink).join("")}</div>` : "";

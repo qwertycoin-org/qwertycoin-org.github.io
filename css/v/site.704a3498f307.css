@@ -1080,33 +1080,6 @@ p { margin: var(--space-3) 0 0; }
   margin-top: var(--space-5);
 }
 
-.release-download-grid.release-download-grid-rows {
-  grid-template-columns: minmax(0, 1fr);
-}
-
-.release-download-grid-rows .release-download {
-  grid-template-columns: minmax(210px, 0.3fr) minmax(0, 1fr);
-  gap: var(--space-5);
-}
-
-.release-download-grid-rows .release-download-options {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-4);
-  margin-top: 0;
-}
-
-.release-download-grid-rows .release-download-option + .release-download-option {
-  padding-top: 0;
-  padding-left: var(--space-4);
-  border-top: 0;
-  border-left: 1px solid var(--color-line);
-}
-
-.release-download-grid-rows .release-download-preferred-placeholder {
-  display: block;
-  visibility: hidden;
-}
-
 .release-download {
   display: grid;
   min-width: 0;
@@ -1186,10 +1159,6 @@ p { margin: var(--space-3) 0 0; }
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.release-download-preferred-placeholder {
-  display: none;
 }
 
 .release-sha {
@@ -1568,26 +1537,6 @@ p { margin: var(--space-3) 0 0; }
   .release-download-grid,
   .release-command-grid {
     grid-template-columns: 1fr;
-  }
-
-  .release-download-grid-rows .release-download,
-  .release-download-grid-rows .release-download-options {
-    grid-template-columns: 1fr;
-  }
-
-  .release-download-grid-rows .release-download-options {
-    margin-top: var(--space-4);
-  }
-
-  .release-download-grid-rows .release-download-option + .release-download-option {
-    padding-top: var(--space-4);
-    padding-left: 0;
-    border-top: 1px solid var(--color-line);
-    border-left: 0;
-  }
-
-  .release-download-grid-rows .release-download-preferred-placeholder {
-    display: none;
   }
 
   .release-verification-links {

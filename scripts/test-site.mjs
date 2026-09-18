@@ -237,8 +237,16 @@ const guiReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases
 const guiChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.1/SHA256SUMS";
 const guiArtifacts = [
   {
+    name: "qwertycoin-gui-v2.0.1-windows-x86_64-setup.exe",
+    sha256: "82eedf879dc856405bbcb96a839b280355c53259a9445feb35ad24818003f15e"
+  },
+  {
     name: "qwertycoin-gui-v2.0.1-windows-x86_64.zip",
-    sha256: "2e1972a503b74192014370c2b8bb1cd98cb88ef8e6ccc157cf43abc3bec1caf2"
+    sha256: "44743418763f2394075469a9f44e17a9c835803b2a7a76f6cf43af9da7b6a24e"
+  },
+  {
+    name: "qwertycoin-gui-v2.0.1-macos-arm64.dmg",
+    sha256: "30a66788e940369bb6eb1d5bd1e33fc7292ac1fac42afc1ea3f404063a48cc85"
   },
   {
     name: "qwertycoin-gui-v2.0.1-macos-arm64.tar.gz",
@@ -259,6 +267,71 @@ for (const html of [index, germanIndex]) {
     assertIncludes(html, `href="${downloadUrl}" target="_blank" rel="noopener"`, `${artifact.name} download link`);
     assertIncludes(html, `<code>${artifact.sha256}</code>`, `${artifact.name} SHA-256`);
   }
+
+  const dmgPosition = html.indexOf("qwertycoin-gui-v2.0.1-macos-arm64.dmg");
+  const tarPosition = html.indexOf("qwertycoin-gui-v2.0.1-macos-arm64.tar.gz");
+  if (dmgPosition < 0 || tarPosition < 0 || dmgPosition > tarPosition) {
+    throw new Error("The preferred macOS DMG must be rendered before the TAR.GZ alternative");
+  }
+  const setupPosition = html.indexOf("qwertycoin-gui-v2.0.1-windows-x86_64-setup.exe");
+  const zipPosition = html.indexOf("qwertycoin-gui-v2.0.1-windows-x86_64.zip");
+  if (setupPosition < 0 || zipPosition < 0 || setupPosition > zipPosition) {
+    throw new Error("The preferred Windows Setup must be rendered before the portable ZIP alternative");
+  }
+  if ((html.match(/class="release-download"/g) || []).length !== 6) {
+    throw new Error("GUI and Core downloads must retain exactly three platform entries each");
+  }
+  if ((html.match(/class="release-download-grid release-download-grid-rows"/g) || []).length !== 1) {
+    throw new Error("Only the GUI download card must use the horizontal platform-row layout");
+  }
+  if ((html.match(/release-download-preferred-placeholder/g) || []).length !== 2
+      || (html.match(/release-download-preferred-placeholder" aria-hidden="true"/g) || []).length !== 2) {
+    throw new Error("Windows and macOS alternatives must reserve one inaccessible preferred-label row each");
+  }
+  if (/<a class="release-link"[^>]*><span aria-hidden="true">(?:DL|ALT)<\/span>/.test(html)) {
+    throw new Error("Download buttons must not include DL or ALT prefixes");
+  }
+}
+
+assertIncludes(index, '<a class="release-link" href="https://wallet.qwertycoin.org/" target="_blank" rel="noopener">Open Web Wallet</a>', "English Web Wallet button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://wallet.qwertycoin.org/" target="_blank" rel="noopener">Web Wallet öffnen</a>', "German Web Wallet button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin" target="_blank" rel="noopener">Open Core Repository</a>', "English Core repository button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin" target="_blank" rel="noopener">Core-Repository öffnen</a>', "German Core repository button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org" target="_blank" rel="noopener">GitHub Organization</a>', "English GitHub organization button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org" target="_blank" rel="noopener">GitHub-Organisation</a>', "German GitHub organization button without prefix");
+assertIncludes(index, `<a class="release-link" href="${guiReleaseUrl}" target="_blank" rel="noopener">Release notes</a>`, "English GUI release notes button without prefix");
+assertIncludes(germanIndex, `<a class="release-link" href="${guiReleaseUrl}" target="_blank" rel="noopener">Release-Hinweise</a>`, "German GUI release notes button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://hub.docker.com/r/qwertycoin/qwertycoin/tags" target="_blank" rel="noopener">Open Docker Hub</a>', "English Docker Hub button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://hub.docker.com/r/qwertycoin/qwertycoin/tags" target="_blank" rel="noopener">Docker Hub öffnen</a>', "German Docker Hub button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md" target="_blank" rel="noopener">Docker quickstart</a>', "English Docker quickstart button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md" target="_blank" rel="noopener">Docker-Schnellstart</a>', "German Docker quickstart button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1" target="_blank" rel="noopener">Release notes</a>', "English Core release notes button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1" target="_blank" rel="noopener">Release-Hinweise</a>', "German Core release notes button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1" target="_blank" rel="noopener">Core release notes</a>', "English Docker Core release notes button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1" target="_blank" rel="noopener">Core-Release-Hinweise</a>', "German Docker Core release notes button without prefix");
+
+assertIncludes(index, "Preferred download", "English preferred DMG label");
+assertIncludes(germanIndex, "Bevorzugter Download", "German preferred DMG label");
+assertIncludes(index, "Preferred installer", "English preferred Windows installer label");
+assertIncludes(germanIndex, "Bevorzugter Installer", "German preferred Windows installer label");
+
+if (!/\.release-download-grid\s*\{[^}]*grid-template-columns:\s*repeat\(3,\s*minmax\(0,\s*1fr\)\)/.test(css)) {
+  throw new Error("Default desktop release downloads must retain the three-column layout");
+}
+
+if (!/\.release-download-grid\.release-download-grid-rows\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)/.test(css)
+    || !/\.release-download-grid-rows \.release-download\s*\{[^}]*grid-template-columns:\s*minmax\(210px,\s*0\.3fr\)\s+minmax\(0,\s*1fr\)/.test(css)
+    || !/\.release-download-grid-rows \.release-download-options\s*\{[^}]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/.test(css)) {
+  throw new Error("GUI desktop downloads must render as platform rows with two artifact slots");
+}
+
+if (!/\.release-download-grid-rows \.release-download-preferred-placeholder\s*\{[^}]*display:\s*block;[^}]*visibility:\s*hidden/.test(css)
+    || !/@media \(max-width:\s*720px\)[\s\S]*\.release-download-grid-rows \.release-download-preferred-placeholder\s*\{[^}]*display:\s*none/.test(css)) {
+  throw new Error("Desktop alternatives must align with preferred buttons without adding mobile whitespace");
+}
+
+if (!/\.release-download-option-preferred \.release-link\s*\{[^}]*background:\s*var\(--color-accent\)/.test(css)) {
+  throw new Error("Preferred installer downloads must have a visible primary treatment");
 }
 
 const coreReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.1";
