@@ -284,6 +284,10 @@ for (const html of [index, germanIndex]) {
   if ((html.match(/class="release-download-grid release-download-grid-rows"/g) || []).length !== 1) {
     throw new Error("Only the GUI download card must use the horizontal platform-row layout");
   }
+  if ((html.match(/release-download-preferred-placeholder/g) || []).length !== 2
+      || (html.match(/release-download-preferred-placeholder" aria-hidden="true"/g) || []).length !== 2) {
+    throw new Error("Windows and macOS alternatives must reserve one inaccessible preferred-label row each");
+  }
 }
 
 assertIncludes(index, "Preferred download", "English preferred DMG label");
@@ -299,6 +303,11 @@ if (!/\.release-download-grid\.release-download-grid-rows\s*\{[^}]*grid-template
     || !/\.release-download-grid-rows \.release-download\s*\{[^}]*grid-template-columns:\s*minmax\(210px,\s*0\.3fr\)\s+minmax\(0,\s*1fr\)/.test(css)
     || !/\.release-download-grid-rows \.release-download-options\s*\{[^}]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/.test(css)) {
   throw new Error("GUI desktop downloads must render as platform rows with two artifact slots");
+}
+
+if (!/\.release-download-grid-rows \.release-download-preferred-placeholder\s*\{[^}]*display:\s*block;[^}]*visibility:\s*hidden/.test(css)
+    || !/@media \(max-width:\s*720px\)[\s\S]*\.release-download-grid-rows \.release-download-preferred-placeholder\s*\{[^}]*display:\s*none/.test(css)) {
+  throw new Error("Desktop alternatives must align with preferred buttons without adding mobile whitespace");
 }
 
 if (!/\.release-download-option-preferred \.release-link\s*\{[^}]*background:\s*var\(--color-accent\)/.test(css)) {

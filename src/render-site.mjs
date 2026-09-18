@@ -101,11 +101,13 @@ function releaseItemLink(item) {
   return `<a class="${className}"${href}${target}><span aria-hidden="true">${text(item.icon)}</span>${text(item.label)}</a>`;
 }
 
-function releaseDownloadOption(item, icon = "DL") {
+function releaseDownloadOption(item, icon = "DL", reservePreferredSpace = false) {
   const preferredClass = item.preferredLabel ? " release-download-option-preferred" : "";
   const preferredHtml = item.preferredLabel
     ? `<span class="release-download-preferred">${text(item.preferredLabel)}</span>`
-    : "";
+    : reservePreferredSpace
+      ? '<span class="release-download-preferred release-download-preferred-placeholder" aria-hidden="true">&nbsp;</span>'
+      : "";
 
   return `<div class="release-download-option${preferredClass}">
                     ${preferredHtml}<a class="release-link" href="${text(item.href)}" target="_blank" rel="noopener"><span aria-hidden="true">${text(icon)}</span>${text(item.downloadLabel)}</a>
@@ -122,7 +124,7 @@ function releaseDownload(item) {
                     <span class="release-download-icon" aria-hidden="true">${text(item.icon)}</span>
                     <div><h4>${text(item.label)}</h4><p>${text(item.compatibility)}</p></div>
                   </div>
-                  <div class="release-download-options">${options.map((option, index) => releaseDownloadOption(option, index === 0 ? "DL" : "ALT")).join("")}</div>
+                  <div class="release-download-options">${options.map((option, index) => releaseDownloadOption(option, index === 0 ? "DL" : "ALT", options.length > 1)).join("")}</div>
                 </div>`;
 }
 
