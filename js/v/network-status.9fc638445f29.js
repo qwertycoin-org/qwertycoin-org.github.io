@@ -87,12 +87,11 @@ function getOverviewData(payload) {
       || network.testnet !== false
       || network.stagenet !== false
       || network.current_hf_version !== hardforkVersion
-      || !Number.isSafeInteger(network.height) || network.height <= 0
-      || Math.abs(network.height - overview.block_count) > 1
+      || network.height !== overview.block_count
       || network.observer_block_count !== overview.block_count
       || network.observer_tip_height !== overview.tip_height
-      || !isValidHash(network.top_block_hash)
-      || typeof network.rpc_db_anchor_matches !== "boolean"
+      || network.top_block_hash !== overview.tip_hash
+      || network.rpc_db_anchor_matches !== true
       || supply.availability !== "current"
       || supply.complete !== true
       || supply.genesis_hash !== genesisHash
@@ -168,14 +167,12 @@ async function loadNetworkStatus() {
     ]);
 
     let hasNetwork = false;
-    let networkSynchronized = false;
     let hasEpose = false;
 
     if (identityResult.status === "fulfilled" && identityResult.value.ok) {
       try {
         const identity = getIdentityData(await identityResult.value.json());
         hasNetwork = true;
-        networkSynchronized = true;
 
         setValue("height", String(identity.block_count));
         setValue("sync", label("synchronized", "synchronized"));
@@ -197,14 +194,9 @@ async function loadNetworkStatus() {
       try {
         const overview = getOverviewData(await overviewResult.value.json());
         hasNetwork = true;
-        networkSynchronized = overview.network.rpc_db_anchor_matches === true
-          && overview.network.height === overview.block_count
-          && overview.network.top_block_hash === overview.tip_hash;
 
         setValue("height", String(overview.block_count));
-        setValue("sync", networkSynchronized
-          ? label("synchronized", "synchronized")
-          : label("syncPending", "sync pending"));
+        setValue("sync", label("synchronized", "synchronized"));
         setValue("nettype", "mainnet");
         setValue("top-hash", overview.tip_hash);
 
@@ -216,7 +208,6 @@ async function loadNetworkStatus() {
         }
       } catch {
         hasNetwork = false;
-        networkSynchronized = false;
       }
     }
 
@@ -259,9 +250,8 @@ async function loadNetworkStatus() {
     setValue("updated-at", interpolate(label("updated", "updated {time}"), {
       time: new Date().toLocaleTimeString(locale, { hour: "2-digit", minute: "2-digit" })
     }));
-    const complete = hasNetwork && networkSynchronized && hasEpose;
-    statusRoot.dataset.state = complete ? "ready" : "partial";
-    setStatusMessage(complete ? "" : label("partial", "partial data"));
+    statusRoot.dataset.state = hasNetwork && hasEpose ? "ready" : "partial";
+    setStatusMessage(hasNetwork && hasEpose ? "" : label("partial", "partial data"));
   } catch (error) {
     setValue("height", emptyValue);
     setValue("epoch", emptyValue);

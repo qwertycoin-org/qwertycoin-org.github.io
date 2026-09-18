@@ -239,7 +239,9 @@ export function renderPage(localeCode, assets = defaultAssets) {
     labels: t.metrics,
     config: {
       epochLengthBlocks: network.epose.epochLengthBlocks,
-      protocolVersion: network.epose.protocolVersion
+      protocolVersion: network.epose.protocolVersion,
+      genesisHash: network.genesisHash,
+      hardforkVersion: network.hardforkVersion
     }
   };
 
