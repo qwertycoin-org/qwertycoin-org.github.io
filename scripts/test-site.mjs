@@ -30,6 +30,10 @@ const requiredEnglish = [
   "Private money. Open network.",
   "Qwertycoin (QWC) is a privacy-focused cryptocurrency with open RandomX mining and EPoSe rewards for proven network services.",
   "Open Web Wallet",
+  "Get QWC",
+  "Find an exchange that lists Qwertycoin.",
+  "QWC / USDT",
+  "TRADE QWC",
   "QWC MAINNET LIVE",
   "RandomX PoW",
   "EPoSe",
@@ -50,7 +54,6 @@ const requiredEnglish = [
   "Does EPoSe replace mining?",
   "2019–2023",
   "Build with Qwertycoin.",
-  "Open Explorer",
   "application/ld+json",
   'type="application/json" id="qwc-network-data"',
   "/assets/fonts/v/archivo-latin-900."
@@ -62,6 +65,9 @@ const requiredGerman = [
   "Private Zahlungen. Offenes Netzwerk.",
   "Qwertycoin (QWC) ist eine Kryptowährung für private Zahlungen mit offenem RandomX-Mining und EPoSe-Vergütungen für nachgewiesene Netzwerkdienste.",
   "Web Wallet öffnen",
+  "QWC kaufen",
+  "Finde eine Börse, auf der Qwertycoin gelistet ist.",
+  "QWC HANDELN",
   "QWC MAINNET LIVE",
   "Privatsphäre. Mit QWC.",
   "Vergütung für nachgewiesene Dienste",
@@ -79,6 +85,48 @@ const requiredGerman = [
 ];
 
 for (const text of requiredGerman) assertIncludes(germanIndex, text);
+
+const exchangeUrl = "https://neoxa.exchange/trade/QWC_USDT";
+const exchangeContract = [
+  ['<a href="#exchanges">Get QWC</a>', index, "English navigation exchange link"],
+  ['<a href="#exchanges">QWC kaufen</a>', germanIndex, "German navigation exchange link"],
+  ['<a class="button secondary" href="#exchanges">Get QWC</a>', index, "English hero exchange link"],
+  ['<a class="button secondary" href="#exchanges">QWC kaufen</a>', germanIndex, "German hero exchange link"],
+  ['<section class="section exchange-section" id="exchanges">', index, "exchange section anchor"],
+  ['<h2>GET QWC.</h2>', index, "English exchange heading"],
+  ['<h2>QWC KAUFEN.</h2>', germanIndex, "German exchange heading"],
+  ['<h3>Neoxa Exchange</h3>', index, "semantic exchange card heading"],
+  [`href="${exchangeUrl}" target="_blank" rel="noopener noreferrer"`, index, "safe direct exchange link"],
+  ['aria-label="Trade QWC on Neoxa Exchange, opens a new tab"', index, "English accessible exchange link name"],
+  ['aria-label="QWC auf Neoxa Exchange handeln, öffnet einen neuen Tab"', germanIndex, "German accessible exchange link name"]
+];
+
+for (const [needle, html, label] of exchangeContract) assertIncludes(html, needle, label);
+
+for (const html of [index, germanIndex]) {
+  const miningPosition = html.indexOf('id="mining"');
+  const exchangePosition = html.indexOf('id="exchanges"');
+  const releasesPosition = html.indexOf('id="releases"');
+  if (miningPosition < 0 || exchangePosition <= miningPosition || releasesPosition <= exchangePosition) {
+    throw new Error("Exchange section must render between Mining and Wallets/source code");
+  }
+  if ((html.match(/class="exchange-card"/g) || []).length !== 1) {
+    throw new Error("Exactly one exchange card must be rendered");
+  }
+  if (/<iframe\b/i.test(html)) throw new Error("Exchange integration must not embed an iframe");
+
+  const heroSection = html.match(/<section class="hero classic-hero">[\s\S]*?<\/section>/)?.[0] ?? "";
+  if (!heroSection || heroSection.includes("https://explorer.qwertycoin.org/")) {
+    throw new Error("Hero must link to Get QWC instead of the external explorer");
+  }
+  if ((html.match(/href="https:\/\/explorer\.qwertycoin\.org\/"/g) || []).length < 2) {
+    throw new Error("Network and Community explorer links must remain available");
+  }
+}
+
+if (!/#exchanges\s*\{[^}]*scroll-margin-top:\s*96px/.test(css)) {
+  throw new Error("Exchange anchor must remain visible below the sticky header");
+}
 
 const unsafeClaims = [
   "100% anonymous",

@@ -14,6 +14,7 @@
     "about": "About",
     "epose": "EPoSe",
     "mining": "Mining",
+    "getQwc": "Get QWC",
     "releases": "Releases",
     "wallet": "Wallet",
     "network": "Network",
@@ -26,7 +27,7 @@
     "title": "Private money. Open network.",
     "lead": "Qwertycoin (QWC) is a privacy-focused cryptocurrency with open RandomX mining and EPoSe rewards for proven network services.",
     "kicker": "Open the Web Wallet, explore the blockchain or contribute on GitHub.",
-    "explore": "Open Explorer",
+    "getQwc": "Get QWC",
     "github": "Contribute on GitHub",
     "wallet": "Open Web Wallet",
     "mining": "How QWC works",
@@ -350,6 +351,16 @@
         "body": "Mining secures block production. EPoSe separately rewards registered nodes for proven network services."
       }
     ]
+  },
+  "exchanges": {
+    "eyebrow": "EXCHANGES",
+    "title": "GET QWC.",
+    "body": "Find an exchange that lists Qwertycoin.",
+    "listed": "LISTED",
+    "pairLabel": "TRADING PAIR",
+    "trade": "TRADE QWC",
+    "external": "External exchange",
+    "linkLabel": "Trade QWC on Neoxa Exchange, opens a new tab"
   },
   "wallet": {
     "eyebrow": "Wallet",
