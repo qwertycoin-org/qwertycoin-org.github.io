@@ -2,6 +2,7 @@ import en from "./i18n/en.json" with { type: "json" };
 import de from "./i18n/de.json" with { type: "json" };
 import locales from "./i18n/locales.json" with { type: "json" };
 import network from "./config/network.json" with { type: "json" };
+import exchanges from "./config/exchanges.json" with { type: "json" };
 
 const dictionaries = { en, de };
 
@@ -171,6 +172,21 @@ function specCard(item) {
   return `<div class="spec-mobile-card"><span>${text(item[0])}</span><strong>${text(item[1])}</strong></div>`;
 }
 
+function exchangeCard(exchange, labels) {
+  return `<article class="exchange-card">
+              <div class="exchange-card-head">
+                <h3>${text(exchange.name)}</h3>
+                <span class="badge exchange-badge">${text(labels.listed)}</span>
+              </div>
+              <p class="exchange-field-label">${text(labels.pairLabel)}</p>
+              <p class="exchange-pair">${text(exchange.pair)}</p>
+              <a class="button primary exchange-trade-link" href="${text(exchange.url)}" target="_blank" rel="noopener noreferrer" aria-label="${text(labels.linkLabel)}">
+                <span>${text(labels.trade)}</span><span aria-hidden="true">↗</span>
+              </a>
+              <p class="exchange-note">${text(labels.external)} · ${text(exchange.domain)}</p>
+            </article>`;
+}
+
 function faqSchema(t, locale) {
   return {
     "@context": "https://schema.org",
@@ -297,6 +313,7 @@ export function renderPage(localeCode, assets = defaultAssets) {
           <a href="#technology">${text(t.nav.about)}</a>
           <a href="#epose">${text(t.nav.epose)}</a>
           <a href="#mining">${text(t.nav.mining)}</a>
+          <a href="#exchanges">${text(t.nav.getQwc)}</a>
           <a href="#network">${text(t.nav.network)}</a>
           ${languageSwitcher(locale)}
           <a class="nav-wallet" href="${network.walletUrl}">${text(t.nav.wallet)}</a>
@@ -315,7 +332,7 @@ export function renderPage(localeCode, assets = defaultAssets) {
             <p class="hero-kicker">${text(t.hero.kicker)}</p>
             <div class="actions hero-actions">
               <a class="button primary" href="${network.walletUrl}">${text(t.hero.wallet)}</a>
-              <a class="button secondary" href="${network.explorerUrl}">${text(t.hero.explore)}</a>
+              <a class="button secondary" href="#exchanges">${text(t.hero.getQwc)}</a>
               <a class="text-link" href="#technology">${text(t.hero.mining)}</a>
             </div>
           </div>
@@ -404,6 +421,17 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
       </div></section>
 
       <section class="section" id="mining"><div class="section-inner">${sectionHeader(t.mining.eyebrow, t.mining.title, t.mining.body)}<div class="grid two">${t.mining.cards.map((card) => `<article class="card"><h3>${text(card.title)}</h3><p>${text(card.body)}</p></article>`).join("")}</div></div></section>
+
+      <section class="section exchange-section" id="exchanges"><div class="section-inner exchange-layout">
+        <div class="section-header exchange-intro">
+          <p class="eyebrow">${text(t.exchanges.eyebrow)}</p>
+          <h2>${text(t.exchanges.title)}</h2>
+          <p>${text(t.exchanges.body)}</p>
+        </div>
+        <div class="exchange-grid">
+          ${exchanges.map((exchange) => exchangeCard(exchange, t.exchanges)).join("\n")}
+        </div>
+      </div></section>
 
       <section class="section alt releases-section" id="releases"><span class="anchor-alias" id="wallet"></span><div class="section-inner">
         ${sectionHeader(t.releases.eyebrow, t.releases.title, t.releases.body)}
