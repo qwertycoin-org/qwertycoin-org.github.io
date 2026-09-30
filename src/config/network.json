@@ -1,8 +1,20 @@
 {
   "siteUrl": "https://qwertycoin.org",
   "explorerUrl": "https://explorer.qwertycoin.org/",
+  "serviceNodesUrl": "https://explorer.qwertycoin.org/service-nodes",
   "githubUrl": "https://github.com/qwertycoin-org",
   "walletUrl": "https://wallet.qwertycoin.org/",
+  "docsUrl": "https://docs.qwertycoin.org/",
+  "eposeOverviewUrl": "https://docs.qwertycoin.org/epose/overview",
+  "serviceNodeGuideUrl": "https://docs.qwertycoin.org/epose/service-node-quickstart",
+  "poolMiningGuideUrl": "https://docs.qwertycoin.org/mining-and-ecosystem/pool-mining",
+  "pool": {
+    "url": "https://pool.qwertycoin.org/",
+    "startUrl": "https://pool.qwertycoin.org/#start",
+    "algorithm": "RandomX (rx/0)",
+    "accounting": "PPLNS",
+    "feeBps": 500
+  },
   "genesisHash": "4f95857586e2c66063c277370eda99cd75897d773af09f0c3cd1e22f7e87db39",
   "hardforkVersion": 17,
   "epose": {

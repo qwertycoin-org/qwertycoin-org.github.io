@@ -5,9 +5,14 @@
 
 - The QWC mainnet is live.
 - RandomX miners produce blocks and secure the blockchain.
+- The QWC block subsidy is split 90% to mining and 10% to EPoSe service
+  rewards; transaction fees remain with the miner.
 - EPoSe determines Service Node qualification and reward selection from
   valid registrations and attestations recorded on the blockchain.
 - Service Nodes do not require QWC staking.
+- The official RandomX pool uses transparent PPLNS accounting. It allocates
+  95% of its distributable mining rewards to participating miners and retains
+  a 5% fee for Qwertycoin development and pool operations.
 - The Web Wallet and Qwertycoin core source code are available.
 - The current network is separate from the earlier QWC chain.
 
@@ -17,5 +22,9 @@
 - [Deutsch](https://qwertycoin.org/de/): Projektübersicht auf Deutsch.
 - [Web Wallet](https://wallet.qwertycoin.org/): Browser wallet.
 - [Explorer](https://explorer.qwertycoin.org/): Blockchain explorer.
+- [Official mining pool](https://pool.qwertycoin.org/): RandomX PPLNS pool,
+  live statistics and guided XMRig setup.
+- [Documentation](https://docs.qwertycoin.org/): Current wallet, mining,
+  node, EPoSe and integration documentation.
 - [Core source](https://github.com/qwertycoin-org/qwertycoin): Public core repository.
 - [GitHub organization](https://github.com/qwertycoin-org): Official project organization.

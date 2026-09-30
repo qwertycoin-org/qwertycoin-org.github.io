@@ -1,44 +1,44 @@
 {
   "meta": {
-    "title": "Qwertycoin (QWC) | Private Zahlungen, RandomX & EPoSe",
-    "description": "Qwertycoin (QWC) ist eine Kryptowährung für private Zahlungen mit RandomX-Mining und EPoSe-Vergütungen für nachgewiesene Netzwerkdienste.",
-    "ogTitle": "Qwertycoin (QWC) | Private Zahlungen. Offenes Netzwerk.",
-    "ogDescription": "Qwertycoin (QWC) ist eine Kryptowährung für private Zahlungen mit RandomX-Mining und EPoSe-Vergütungen für nachgewiesene Netzwerkdienste.",
-    "twitterDescription": "Qwertycoin (QWC) ist eine Kryptowährung für private Zahlungen mit RandomX-Mining und EPoSe-Vergütungen für nachgewiesene Netzwerkdienste.",
-    "imageAlt": "Qwertycoin-Q-Emblem mit dem Claim Private Zahlungen. Offenes Netzwerk."
+    "title": "Qwertycoin (QWC) | Privat bezahlen, offen mitmachen",
+    "description": "Qwertycoin (QWC) ermöglicht vertrauliche digitale Zahlungen. RandomX-Mining sichert die Blockchain, EPoSE belohnt nachgewiesene Netzwerkdienste.",
+    "ogTitle": "Qwertycoin (QWC) | Privat bezahlen. Offen vernetzt.",
+    "ogDescription": "Mit Qwertycoin privat bezahlen, per RandomX minen oder als EPoSE-Service-Node verlässliche Netzwerkdienste bereitstellen.",
+    "twitterDescription": "Mit Qwertycoin privat bezahlen, per RandomX minen oder als EPoSE-Service-Node verlässliche Netzwerkdienste bereitstellen.",
+    "imageAlt": "Goldenes Qwertycoin-Q mit dem Leitsatz Privat bezahlen. Offen vernetzt."
   },
   "nav": {
     "skip": "Zum Inhalt",
     "homeLabel": "Qwertycoin-Startseite",
     "menu": "Menü",
     "about": "Überblick",
-    "epose": "EPoSe",
+    "epose": "EPoSE",
     "mining": "Mining",
     "getQwc": "QWC kaufen",
     "releases": "Releases",
     "wallet": "Wallet",
     "network": "Netzwerk",
-    "history": "Historie",
+    "history": "Geschichte",
     "developers": "Entwicklung",
     "language": "Sprache",
-    "languageShort": "Lang"
+    "languageShort": "Sprache"
   },
   "hero": {
-    "title": "Private Zahlungen. Offenes Netzwerk.",
-    "lead": "Qwertycoin (QWC) ist eine Kryptowährung für private Zahlungen mit offenem RandomX-Mining und EPoSe-Vergütungen für nachgewiesene Netzwerkdienste.",
-    "kicker": "Öffne die Web Wallet, erkunde die Blockchain oder arbeite auf GitHub mit.",
+    "title": "Privat bezahlen. Offen vernetzt.",
+    "lead": "Qwertycoin (QWC) verbindet vertrauliche digitale Zahlungen mit offenem RandomX-Mining und Belohnungen für nachgewiesene Netzwerkdienste.",
+    "kicker": "Nutze die Web Wallet, sieh dir die Blockchain an oder entwickle Qwertycoin auf GitHub mit.",
     "getQwc": "QWC kaufen",
     "github": "Auf GitHub mitarbeiten",
     "wallet": "Web Wallet öffnen",
-    "mining": "So funktioniert QWC",
-    "visualAlt": "Großes goldenes Qwertycoin-Q-Emblem mit abstrakten Netzwerkebenen",
-    "pulseLabel": "QWC MAINNET LIVE",
-    "pulseBody": "Aktuelle Daten zu Blockchain und EPoSe. Verfügbare Werte bleiben sichtbar, wenn einzelne Statistiken fehlen."
+    "mining": "Einstieg wählen",
+    "visualAlt": "Großes goldenes Qwertycoin-Q vor abstrakten Netzwerkebenen",
+    "pulseLabel": "QWC-MAINNET AKTIV",
+    "pulseBody": "Live-Daten aus der Blockchain und zu EPoSE. Vorhandene Werte bleiben sichtbar, auch wenn einzelne Statistiken vorübergehend fehlen."
   },
   "metrics": {
     "height": {
       "label": "Blockhöhe",
-      "help": "Aktuelle öffentliche Chain-Höhe."
+      "help": "Aktuelle Höhe der öffentlichen Blockchain."
     },
     "registered": {
       "label": "Registrierte Service Nodes",
@@ -48,15 +48,15 @@
     "qualified": {
       "label": "Qualifizierte Service Nodes",
       "shortLabel": "Qualifiziert",
-      "help": "Vergütungsberechtigte Service Nodes für den betreffenden Zeitraum, sobald Statistiken verfügbar sind."
+      "help": "Service Nodes, die im maßgeblichen Zeitraum für Belohnungen zugelassen sind."
     },
     "epoch": {
-      "label": "EPoSe-Epoche",
+      "label": "EPoSE-Epoche",
       "shortLabel": "Epoche",
-      "help": "Aktuelle {blocks}-Block-Servicephase (~{hours}h)."
+      "help": "Aktuelle Dienstperiode mit {blocks} Blöcken (rund {hours} Stunden)."
     },
     "topHash": "Hash des letzten Blocks",
-    "stateHash": "EPoSe-Zustandshash",
+    "stateHash": "EPoSE-Zustandshash",
     "explorer": "Explorer",
     "currentSource": "Core-Quellcode",
     "sourcePending": "Auf GitHub verfügbar",
@@ -64,87 +64,121 @@
     "loading": "Wird geladen …",
     "updated": "Aktualisiert: {time}",
     "unavailable": "Derzeit nicht verfügbar",
-    "partial": "Ein Teil der Netzwerkdaten ist derzeit nicht verfügbar.",
-    "eposeUnavailable": "EPoSe-Statistiken sind derzeit nicht verfügbar.",
+    "partial": "Einige Netzwerkdaten sind derzeit nicht verfügbar.",
+    "eposeUnavailable": "EPoSE-Statistiken sind derzeit nicht verfügbar.",
     "unknown": "Unbekannt",
     "synchronized": "synchronisiert",
-    "syncPending": "Sync ausstehend",
+    "syncPending": "Synchronisierung läuft",
     "ratio": "{qualified} / {registered} qualifiziert",
-    "noScript": "Der Live-Status benötigt JavaScript. Aktuelle Netzwerkdaten findest du weiterhin im Explorer."
+    "noScript": "Für den Live-Status ist JavaScript erforderlich. Aktuelle Netzwerkdaten findest du auch im Explorer."
   },
   "system": {
     "securityLabel": "Mining",
     "securityTitle": "RandomX PoW",
     "securityBody": "Miner erzeugen neue Blöcke und sichern die Blockchain durch Proof of Work.",
-    "infrastructureLabel": "Service-Vergütung",
-    "infrastructureTitle": "EPoSe",
-    "infrastructureBody": "Service Nodes qualifizieren sich durch gültige Bestätigungen ihrer Netzwerkdienste für Vergütungen."
+    "infrastructureLabel": "Netzwerkdienste",
+    "infrastructureTitle": "EPoSE",
+    "infrastructureBody": "Service Nodes weisen ihre Leistung mit gültigen Bestätigungen nach und können dafür belohnt werden."
+  },
+  "participate": {
+    "eyebrow": "Hier starten",
+    "title": "So kannst du mitmachen.",
+    "body": "Bezahle mit QWC, unterstütze das Mining oder betreibe einen Service Node. Hier findest du für jeden Weg den passenden offiziellen Einstieg.",
+    "paths": [
+      {
+        "kind": "wallet",
+        "badge": "QWC NUTZEN",
+        "title": "Wallet öffnen",
+        "body": "Erstelle oder importiere deine QWC-Wallet direkt im Browser und bezahle vertraulich mit QWC.",
+        "cta": "Web Wallet öffnen"
+      },
+      {
+        "kind": "pool",
+        "badge": "QWC MINEN",
+        "title": "Im offiziellen Pool minen",
+        "body": "Verbinde deinen RandomX-Miner mit dem offiziellen PPLNS-Pool. Als Poolkonto genügt deine QWC-Auszahlungsadresse.",
+        "cta": "Mining starten"
+      },
+      {
+        "kind": "serviceNode",
+        "badge": "NODE BETREIBEN",
+        "title": "Service Node betreiben",
+        "body": "Betreibe einen öffentlich erreichbaren QWC-Node, registriere seine Service-Identität und weise seine Leistung per EPoSE nach – ganz ohne QWC zu staken.",
+        "cta": "Betreiberanleitung öffnen"
+      }
+    ]
   },
   "technology": {
     "eyebrow": "Über Qwertycoin",
-    "title": "Privatsphäre. Mit QWC.",
-    "body": "Nutze QWC für private Zahlungen, beteilige dich mit Rechenleistung am Mining oder unterstütze das Netzwerk als Service Node.",
+    "title": "Privat bezahlen mit QWC.",
+    "body": "Bezahle vertraulich mit QWC, beteilige dich am RandomX-Mining oder unterstütze das Netzwerk als Service Node.",
     "features": [
       {
         "badge": "OFFENES NETZWERK",
         "title": "Das QWC-Netzwerk",
-        "body": "Sende und empfange QWC in einem offenen Netzwerk. Unabhängige Nodes prüfen Transaktionen und halten die Blockchain verfügbar.",
+        "body": "Sende und empfange QWC über ein offenes Netzwerk. Unabhängige Nodes prüfen Transaktionen und halten die Blockchain verfügbar.",
         "icon": "about-il-01.svg"
       },
       {
         "badge": "PRIVATSPHÄRE",
         "title": "Privatsphäre als Grundlage",
-        "body": "QWC nutzt Privacy-Technologie zum Schutz von Transaktionsdaten. Der offene Quellcode macht die Funktionsweise des Netzwerks nachvollziehbar.",
+        "body": "QWC schützt Transaktionsdaten mit integrierten Datenschutztechniken. Da der Quellcode offenliegt, kann jeder die Funktionsweise des Netzwerks nachvollziehen.",
         "icon": "about-il-03.svg"
       },
       {
         "badge": "PoW",
         "title": "RandomX Proof of Work",
-        "body": "RandomX-Miner erzeugen neue Blöcke und sichern die Blockchain. Mit kompatibler Mining-Software steht die Teilnahme allen offen.",
+        "body": "RandomX-Miner erzeugen neue Blöcke und sichern die Blockchain. Mit kompatibler Mining-Software kann jeder teilnehmen.",
         "icon": "about-il-04.svg"
       },
       {
-        "badge": "EPoSe",
-        "title": "Vergütung für nachgewiesene Dienste",
-        "body": "Service Nodes stellen Netzwerkdienste bereit. Gültige Bestätigungen begründen ihre Vergütungsberechtigung; das EPoSe-Protokoll bestimmt die Vergütungsrotation.",
+        "badge": "EPoSE",
+        "title": "Belohnungen für nachgewiesene Dienste",
+        "body": "Service Nodes stellen Netzwerkdienste bereit. Gültige Bestätigungen weisen ihre Leistung nach; EPoSE bestimmt daraus die berechtigten Empfänger.",
         "icon": "about-il-06.svg"
       },
       {
         "badge": "NETZWERKDIENSTE",
         "title": "Service Nodes",
-        "body": "Service Nodes unterstützen das Netzwerk und nehmen an EPoSe teil. Dafür ist kein QWC-Staking erforderlich. Neue Blöcke erzeugen weiterhin RandomX-Miner.",
+        "body": "Service Nodes unterstützen das Netzwerk und nehmen an EPoSE teil. Dafür müssen keine QWC hinterlegt werden; neue Blöcke erzeugen weiterhin RandomX-Miner.",
         "icon": "about-il-02.svg"
       },
       {
         "badge": "VERFÜGBAR",
         "title": "Web Wallet und offener Quellcode",
-        "body": "Nutze QWC direkt im Browser mit der Web Wallet. Auf GitHub kannst du den Core-Quellcode einsehen und an der Entwicklung mitarbeiten.",
+        "body": "Mit der Web Wallet kannst du QWC direkt im Browser nutzen. Den Core-Quellcode findest du auf GitHub – Beiträge sind willkommen.",
         "icon": "about-il-05.svg"
       }
     ]
   },
   "epose": {
-    "eyebrow": "EPoSe",
-    "title": "Netzwerkdienste leisten. QWC verdienen.",
-    "body": "EPoSe vergütet registrierte Service Nodes für nachgewiesene Netzwerkdienste. Das Protokoll wertet gültige, in der Blockchain erfasste Bestätigungen aus und bestimmt, welche Nodes an der Vergütungsrotation teilnehmen.",
-    "intro": "QWC teilt Service-Zeit in EPoSe-Epochen ein. Service-Aktivität erzeugt Bestätigungen, die Qualifizierung wird finalisiert, und erst danach nutzt die rotierende Vergütung die qualifizierte Gruppe.",
+    "eyebrow": "EPoSE",
+    "flowLabel": "Ablauf von EPoSE",
+    "title": "Dienste bereitstellen. QWC verdienen.",
+    "body": "EPoSE belohnt registrierte Service Nodes, deren Netzwerkdienste nachweislich funktionieren. Gültige Bestätigungen werden in der Blockchain festgehalten und entscheiden darüber, welche Nodes für Belohnungen infrage kommen.",
+    "intro": "EPoSE bewertet die erbrachte Leistung in festen Epochen. Nach deren Abschluss steht fest, welche Service Nodes qualifiziert sind. Erst danach beginnt die deterministische Auswahl der Empfänger.",
     "compactCards": [
       {
-        "title": "Netzwerkdienste bereitstellen.",
-        "body": "Registrierte Service Nodes stellen während jeder Epoche Netzwerkdienste bereit."
+        "title": "Dienste bereitstellen.",
+        "body": "Registrierte Service Nodes halten ihre Netzwerkdienste während der gesamten Epoche erreichbar."
       },
       {
-        "title": "Leistung bestätigen.",
-        "body": "Vom Protokoll ausgewählte Prüfknoten prüfen Service-Antworten und übermitteln signierte Bestätigungen."
+        "title": "Leistung überprüfen.",
+        "body": "Vom Protokoll ausgewählte Prüfknoten testen die Antworten und übermitteln signierte Bestätigungen."
       },
       {
-        "title": "Vergütung erhalten.",
-        "body": "Nach Abschluss der Qualifikation nehmen berechtigte Service Nodes an der vom Protokoll festgelegten Vergütungsrotation teil."
+        "title": "Belohnung erhalten.",
+        "body": "Nach Abschluss der Qualifikation kommen berechtigte Service Nodes in die deterministische Auszahlungsreihenfolge."
       }
     ],
-    "originEyebrow": "EPoSe-Ursprung",
+    "actions": {
+      "live": "Service Nodes live ansehen",
+      "guide": "Service Node betreiben",
+      "docs": "EPoSE-Dokumentation lesen"
+    },
+    "originEyebrow": "Die Idee hinter EPoSE",
     "originTitle": "Danke, Xecute.",
-    "originBody": "Xecute entwickelte die ursprüngliche EPoSe-Vision und wirkte am Whitepaper zur Qwertycoin-Service-Schicht mit. Diese Arbeit legte den Grundstein für die Vergütung nützlicher Netzwerkdienste.",
+    "originBody": "Xecute entwickelte die ursprüngliche EPoSE-Vision und wirkte am Whitepaper zur Dienstebene von Qwertycoin mit. Damit legte er den Grundstein für die Idee, nützliche Netzwerkdienste messbar zu belohnen.",
     "schematic": [
       {
         "label": "Service Node",
@@ -156,216 +190,235 @@
       },
       {
         "label": "Blockchain-Daten",
-        "value": "deterministische Vergütung"
+        "value": "eindeutige Empfängerauswahl"
       }
     ],
     "links": [
       "Registrierung",
-      "Attestation"
+      "Bestätigung"
     ],
     "steps": [
       {
-        "title": "Register",
-        "body": "Ein Service Node veröffentlicht eine signierte Registrierung mit Service-Identität, Vergütungsziel, Endpoint Commitment und Admission Proof."
+        "title": "Registrieren",
+        "body": "Ein Service Node veröffentlicht eine signierte Registrierung mit Service-Identität, Auszahlungsadresse, zugesagtem Endpunkt und Zulassungsnachweis."
       },
       {
-        "title": "Serve",
-        "body": "Der Node stellt QWC-Netzwerkleistung bereit, während normales RandomX-Mining weiter für Blockproduktion verantwortlich bleibt."
+        "title": "Dienste bereitstellen",
+        "body": "Der Node stellt seine QWC-Netzwerkdienste bereit. Für die Erzeugung neuer Blöcke bleibt weiterhin das RandomX-Mining zuständig."
       },
       {
-        "title": "Attest",
-        "body": "Zugewiesene Prüfknoten fordern den Service Node heraus und signieren Bestätigungen nur, wenn die erwartete Service-Antwort gültig ist."
+        "title": "Leistung bestätigen",
+        "body": "Zugewiesene Prüfknoten testen den Service Node und signieren nur dann eine Bestätigung, wenn er korrekt antwortet."
       },
       {
-        "title": "Qualify",
-        "body": "Der Chain State prüft, ob ein registrierter Node genug gültige Bestätigungen für die relevante Epoche gesammelt hat."
+        "title": "Qualifizieren",
+        "body": "Der Zustand der Blockchain zeigt, ob ein registrierter Node in der maßgeblichen Epoche genügend gültige Bestätigungen gesammelt hat."
       },
       {
-        "title": "Reward",
-        "body": "Qualifizierte Nodes kommen in die rotierende Vergütung. Ein ausgewählter Empfänger kann den EPoSe-Anteil eines Block-Rewards erhalten."
+        "title": "Belohnen",
+        "body": "Qualifizierte Nodes werden in einer festen Reihenfolge berücksichtigt. Pro Block kann ein ausgewählter Service Node den EPoSE-Anteil erhalten."
       }
     ],
-    "glossaryTitle": "EPoSe-Glossar",
+    "glossaryTitle": "EPoSE-Glossar",
     "glossary": [
       {
         "term": "Service Node",
-        "definition": "Ein normaler QWC-Node plus registrierte Service-Identität, Endpoint Commitment, Vergütungsadresse und EPoSe-Teilnahmedaten."
+        "definition": "Ein vollständiger QWC-Node mit registrierter Service-Identität, festgelegtem Endpunkt, Auszahlungsadresse und EPoSE-Teilnahmedaten."
       },
       {
         "term": "Epoche",
-        "definition": "Ein fester Block-Zeitraum, in dem Service-Leistung gemessen wird. Aktueller Parameter: {blocks} Blöcke, ungefähr {hours} Stunden bei {seconds} Sekunden Ziel-Blockzeit."
+        "definition": "Ein fester Abschnitt der Blockchain, in dem die Leistung der Service Nodes bewertet wird: derzeit {blocks} Blöcke beziehungsweise rund {hours} Stunden bei einer Ziel-Blockzeit von {seconds} Sekunden."
       },
       {
-        "term": "Registered",
-        "definition": "Der Service Node ist EPoSe durch eine gültige On-Chain-Registrierung beigetreten. Registered bedeutet noch nicht reward-berechtigt."
+        "term": "Registriert",
+        "definition": "Für den Service Node liegt eine gültige EPoSE-Registrierung in der Blockchain vor. Die Registrierung allein berechtigt noch nicht zu einer Belohnung."
       },
       {
         "term": "Bestätigung",
-        "definition": "Eine signierte Bestätigung eines zugewiesenen Prüfknotens, dass der Service Node seine Service-Challenge mit der erwarteten Antwort beantwortet hat."
+        "definition": "Ein signierter Nachweis eines zugewiesenen Prüfknotens, dass der Service Node die gestellte Prüfung korrekt beantwortet hat."
       },
       {
         "term": "Prüfkomitee",
-        "definition": "Eine deterministische Gruppe von Prüfknoten aus dem Chain State für eine Service-Challenge. Der aktuelle öffentliche Core zielt auf {committee} Prüfknoten, wenn genug Kandidaten vorhanden sind."
+        "definition": "Eine eindeutig aus dem Zustand der Blockchain bestimmte Gruppe von Prüfknoten. Wenn genügend Kandidaten vorhanden sind, umfasst sie im aktuellen Core bis zu {committee} Prüfknoten."
       },
       {
-        "term": "Admission Proof",
-        "definition": "Ein kleiner Proof an der Registrierung, der Identitäten Arbeit kosten lässt und billige Sybil-Registrierungen erschwert."
+        "term": "Zulassungsnachweis",
+        "definition": "Ein kleiner Arbeitsnachweis in der Registrierung. Er macht das massenhafte Anlegen billiger Identitäten aufwendiger."
       },
       {
         "term": "Qualifiziert",
-        "definition": "Ein registrierter Service Node, der in der relevanten Epoche genug gültige, nicht doppelte Bestätigungen gesammelt hat. Das Quorum beträgt zwei Drittel des tatsächlich ausgewählten Prüfkomitees."
+        "definition": "Ein registrierter Service Node, der in der maßgeblichen Epoche genügend gültige und eindeutige Bestätigungen gesammelt hat. Erforderlich sind zwei Drittel des tatsächlich ausgewählten Prüfkomitees."
       },
       {
-        "term": "Vergütungsquellepoche",
-        "definition": "Die finalisierte Epoche, deren qualifizierte Gruppe für den aktuellen Vergütungszeitraum verwendet wird. Im aktuellen Core nutzen Blöcke in Epoche N qualifizierte Nodes aus Epoche N-1."
+        "term": "Maßgebliche Epoche",
+        "definition": "Die abgeschlossene Epoche, deren qualifizierte Nodes für den aktuellen Auszahlungszeitraum herangezogen werden. Im aktuellen Core verwendet Epoche N die qualifizierten Nodes aus Epoche N−1."
       },
       {
-        "term": "Rotierende Vergütung",
-        "definition": "Qualifizierte Nodes werden deterministisch als mögliche Empfänger des EPoSe-Anteils von Block-Rewards rotiert. Die Coinbase wächst nicht mit der Gesamtzahl der Nodes."
+        "term": "Auszahlungsreihenfolge",
+        "definition": "Das Protokoll berücksichtigt qualifizierte Nodes in einer eindeutigen Reihenfolge als mögliche Empfänger des EPoSE-Anteils. Die Coinbase wird dadurch nicht größer, wenn weitere Nodes hinzukommen."
       }
     ],
-    "epochTitle": "Epochen sind Blockbereiche, keine Uhrzeit-Termine.",
-    "epochBody": "Eine EPoSe-Epoche ist eine {blocks}-Block-Servicephase, ungefähr {hours} Stunden beim aktuellen {seconds}-Sekunden-Blockziel.",
+    "epochTitle": "Epochen richten sich nach Blöcken, nicht nach der Uhr.",
+    "epochBody": "Eine EPoSE-Epoche umfasst {blocks} Blöcke. Bei der Ziel-Blockzeit von {seconds} Sekunden entspricht das ungefähr {hours} Stunden.",
     "registeredVsQualified": [
       {
-        "label": "Registered",
-        "body": "Der Node ist EPoSe beigetreten."
+        "label": "Registriert",
+        "body": "Der Node hat eine gültige EPoSE-Registrierung veröffentlicht."
       },
       {
         "label": "Qualifiziert",
-        "body": "Der Node hat genug Service-Leistung bewiesen, um für Service-Vergütung berechtigt zu sein."
+        "body": "Der Node hat genügend Leistung nachgewiesen und kann für eine Belohnung ausgewählt werden."
       }
     ],
-    "committeeTitle": "Prüfkomitees sind keine Validator Sets.",
-    "committeeBody": "Prüfkomitees produzieren keine Blöcke und ersetzen keine RandomX-Miner. Ihre Rolle ist auf die Prüfung von Service-Node-Aktivität für die EPoSe-Qualifizierung begrenzt. Der aktuelle öffentliche Core zielt auf {committee} Prüfknoten, wenn genug Kandidaten vorhanden sind, und verlangt ein Zwei-Drittel-Quorum des tatsächlichen Komitees. Bei voller Größe sind das {fullCommitteeAttestations} Bestätigungen.",
-    "rewardTimelineTitle": "Service wird zuerst gemessen. Rewards folgen danach.",
+    "committeeTitle": "Prüfkomitees sind keine Validatoren.",
+    "committeeBody": "Prüfkomitees erzeugen keine Blöcke und ersetzen keine RandomX-Miner. Sie überprüfen ausschließlich die Leistung der Service Nodes für die EPoSE-Qualifikation. Wenn genügend Kandidaten vorhanden sind, wählt der aktuelle Core {committee} Prüfknoten aus. Erforderlich sind zwei Drittel des tatsächlich besetzten Komitees; bei voller Größe also {fullCommitteeAttestations} Bestätigungen.",
+    "rewardTimelineTitle": "Erst wird die Leistung gemessen, danach wird belohnt.",
     "timeline": [
       {
         "label": "Epoche N",
-        "title": "Register / Serve / Attest",
-        "body": "Service Nodes registrieren sich, stellen Service bereit und sammeln gültige Prüfknoten-Bestätigungen."
+        "title": "Registrieren / bereitstellen / bestätigen",
+        "body": "Service Nodes registrieren sich, stellen ihre Dienste bereit und sammeln gültige Bestätigungen der Prüfknoten."
       },
       {
-        "label": "Finality",
-        "title": "Qualification finalisiert",
-        "body": "Der Consensus State leitet die qualifizierte Gruppe aus gültigen EPoSe-Daten ab, nachdem die Epoche final ist."
+        "label": "Finalisierung",
+        "title": "Qualifikation steht fest",
+        "body": "Nach Abschluss der Epoche ermittelt der Konsenszustand aus den gültigen EPoSE-Daten die qualifizierten Nodes."
       },
       {
         "label": "Epoche N+1",
-        "title": "Rotierende Vergütung",
-        "body": "Der aktuelle Core nutzt die vorherige Epoche als Vergütungsquelle für die deterministische Empfängerauswahl."
+        "title": "Feste Auszahlungsreihenfolge",
+        "body": "Der aktuelle Core verwendet die vorherige Epoche als Grundlage für die eindeutige Auswahl des Empfängers."
       }
     ],
-    "rotationTitle": "Rotierende Vergütung hält Block-Rewards kompakt.",
-    "rotationBody": "Aktueller Mainnet-Reward-Split: 90% Miner / {rewardPercent}% EPoSe-Service-Reward. EPoSe-Service-Payouts sind consensus-sichtbar, damit jeder Node den ausgewählten Service Node und den Reward-Betrag prüfen kann. Normale QWC-Wallet-Transaktionen nutzen weiterhin die Privacy-Mechanismen des zugrunde liegenden QWC-Transaktionsmodells.",
+    "rotationTitle": "Eine feste Reihenfolge hält die Blöcke kompakt.",
+    "rotationBody": "Im Mainnet gehen 90 % der Blocksubvention an das Mining und {rewardPercent} % an EPoSE. Die Auszahlungen an Service Nodes sind im Konsens sichtbar, sodass jeder vollständige Node Empfänger und Betrag prüfen kann. Für gewöhnliche QWC-Transaktionen gelten weiterhin die Datenschutzmechanismen des QWC-Transaktionsmodells.",
     "rotationExamples": [
       "Block 1001 -> Node A",
       "Block 1002 -> Node C",
       "Block 1003 -> Node B",
       "Block 1004 -> Node A"
     ],
-    "rewardRulesTitle": "Das Protokoll regelt die Vergütung.",
-    "rewardRulesBody": "Jeder vollständige Node kann die Vergütungsberechtigung und Empfängerauswahl anhand der Blockchain prüfen. Subsidy-Aufteilung: 90 % Mining / {rewardPercent} % EPoSe-Servicevergütung; Transaktionsgebühren verbleiben beim Miner.",
-    "rewardFormulaAlt": "EPoSe-Consensus-Formel für Prüferquorum, Service-Node-Qualifikation, Empfängerrotation und Servicevergütung.",
-    "rewardFormulaCaption": "EPoSe-Quorum, Qualifikation, Empfängerrotation und Servicevergütung — eine kompakte Darstellung der aktiven Consensus-Regeln."
+    "rewardRulesTitle": "Belohnungen folgen festen Regeln.",
+    "rewardRulesBody": "Jeder vollständige Node kann anhand der Blockchain prüfen, welche Service Nodes berechtigt sind und wer ausgewählt wurde. Von der Blocksubvention entfallen 90 % auf das Mining und {rewardPercent} % auf EPoSE; die Transaktionsgebühren erhält der Miner.",
+    "rewardFormulaAlt": "Übersicht der EPoSE-Regeln für Quorum, Qualifikation, Empfängerauswahl und Service-Node-Belohnung.",
+    "rewardFormulaCaption": "Quorum, Qualifikation, Empfängerauswahl und Belohnung – die aktiven EPoSE-Regeln auf einen Blick."
   },
   "faq": {
-    "eyebrow": "EPoSe FAQ",
-    "title": "Kurze Antworten für neue Betreiber.",
+    "eyebrow": "Häufige Fragen zu EPoSE",
+    "title": "Das Wichtigste für den Einstieg.",
     "items": [
       {
         "question": "Was ist Qwertycoin?",
-        "answer": "Qwertycoin (QWC) ist eine Kryptowährung für private Zahlungen mit RandomX-Mining und EPoSe-Vergütungen für nachgewiesene Netzwerkdienste."
+        "answer": "Qwertycoin (QWC) ermöglicht vertrauliche digitale Zahlungen. RandomX-Mining sichert die Blockchain; EPoSE belohnt nachgewiesene Netzwerkdienste."
       },
       {
         "question": "Wie nutze ich die Web Wallet?",
-        "answer": "Öffne die offizielle Web Wallet, erstelle oder stelle dort eine Wallet wieder her und beachte die Sicherheitshinweise der Wallet. Die Hauptwebsite verarbeitet keine Wallet-Schlüssel."
+        "answer": "Öffne die offizielle Web Wallet und erstelle eine neue Wallet oder importiere eine vorhandene. Beachte dabei die Sicherheitshinweise. Die Qwertycoin-Website selbst verarbeitet keine privaten Wallet-Schlüssel."
       },
       {
         "question": "Kann ich eine alte QWC-Wallet verwenden?",
         "answer": "Nein. Das heutige QWC-Netzwerk ist von der früheren Chain getrennt. Alte Wallet-Software und Blockchain-Daten sind mit diesem Netzwerk nicht kompatibel."
       },
       {
-        "question": "Ersetzt EPoSe das Mining?",
-        "answer": "Nein. RandomX-Miner erzeugen Blöcke und sichern die Blockchain. EPoSe ergänzt Vergütungen für nachgewiesene Netzwerkdienste."
+        "question": "Ersetzt EPoSE das Mining?",
+        "answer": "Nein. RandomX-Miner erzeugen die Blöcke und sichern die Blockchain. EPoSE ergänzt diesen Prozess um Belohnungen für nachgewiesene Netzwerkdienste."
       },
       {
         "question": "Was ist eine Epoche?",
-        "answer": "Eine Epoche ist der Blockzeitraum, in dem EPoSe die Service-Leistung bewertet. Sie umfasst derzeit {blocks} Blöcke, bei der Ziel-Blockzeit ungefähr {hours} Stunden."
+        "answer": "Eine Epoche ist der Abschnitt der Blockchain, in dem EPoSE die Leistung der Service Nodes bewertet. Sie umfasst derzeit {blocks} Blöcke und dauert bei der Ziel-Blockzeit ungefähr {hours} Stunden."
       },
       {
         "question": "Was bedeutet qualifiziert?",
-        "answer": "Ein qualifizierter Service Node erfüllt die Protokollanforderungen an gültige Bestätigungen für die betreffende Epoche und kann für eine Servicevergütung ausgewählt werden. Das technische Quorum beträgt mindestens ceil(2 x tatsächliche Komiteegröße / 3)."
+        "answer": "Ein qualifizierter Service Node hat in der betreffenden Epoche genügend gültige Bestätigungen erhalten und kann für eine Belohnung ausgewählt werden. Dafür werden aufgerundet zwei Drittel des tatsächlich besetzten Prüfkomitees benötigt."
       },
       {
         "question": "Wer bestimmt Qualifikation und Vergütung?",
-        "answer": "Das EPoSe-Protokoll. Jeder vollständige Node wendet dieselben Regeln auf gültige Registrierungen und Bestätigungen in der Blockchain an und kann so Berechtigung und Vergütungsauswahl prüfen."
+        "answer": "Das EPoSE-Protokoll. Jeder vollständige Node wertet die Registrierungen und Bestätigungen in der Blockchain nach denselben Regeln aus und kann die Berechtigung sowie die Empfängerauswahl selbst prüfen."
       },
       {
         "question": "Müssen Service Nodes QWC staken?",
-        "answer": "Nein. Für die Teilnahme sind die EPoSe-Registrierung und die erforderlichen Service-Nachweise nötig. QWC müssen dafür nicht als Stake gesperrt werden."
+        "answer": "Nein. Für die Teilnahme sind eine EPoSE-Registrierung und die erforderlichen Service-Nachweise nötig. QWC müssen dafür weder hinterlegt noch gesperrt werden."
       },
       {
         "question": "Kann ein Betreiber mehrere Service Nodes betreiben?",
-        "answer": "Ja. Jeder Service Node benötigt eine eigene gültige Registrierung und muss die Service-Anforderungen des Protokolls erfüllen. Admission Proof erschwert billige Identitätserstellung."
+        "answer": "Ja. Jeder Service Node benötigt eine eigene gültige Registrierung und muss die Anforderungen des Protokolls erfüllen. Der Zulassungsnachweis macht das massenhafte Anlegen billiger Identitäten aufwendiger."
       },
       {
-        "question": "Warum ist EPoSe kein Proof of Stake?",
-        "answer": "EPoSe vergütet nachgewiesene Dienste statt gesperrten Stakes. Service Nodes prüfen Blockchain-Daten wie andere vollständige Nodes; die Proof-of-Work-Blockproduktion übernehmen RandomX-Miner."
+        "question": "Warum ist EPoSE kein Proof of Stake?",
+        "answer": "EPoSE belohnt nachgewiesene Dienste und nicht den Besitz gesperrter Coins. Service Nodes prüfen die Blockchain wie andere vollständige Nodes; neue Blöcke werden weiterhin von RandomX-Minern erzeugt."
       }
     ]
   },
   "serviceNodes": {
     "eyebrow": "Service Nodes",
-    "title": "Das Netzwerk stärken. Dienste vergüten lassen.",
-    "body": "Jeder vollständige Node prüft Blockchain-Daten und leitet sie weiter. Ein registrierter Service Node nimmt zusätzlich an EPoSe teil und kann sich für Servicevergütungen qualifizieren.",
+    "title": "Das Netzwerk stärken. Für verlässliche Dienste belohnt werden.",
+    "body": "Jeder vollständige Node prüft und verteilt Blockchain-Daten. Ein registrierter Service Node nimmt zusätzlich an EPoSE teil und kann für nachgewiesene Dienste belohnt werden.",
     "normal": "Normaler Node",
     "service": "Service Node",
     "comparisonLabel": "Vergleich normaler Node und Service Node",
     "rows": [
       [
-        "Prüft Blöcke und Transaktionen, synchronisiert die Blockchain und leitet Daten weiter.",
-        "Übernimmt dieselben Node-Aufgaben und stellt registrierte EPoSe-Dienste bereit."
+        "Prüft Blöcke und Transaktionen, synchronisiert die Blockchain und gibt Daten an andere Nodes weiter.",
+        "Erfüllt dieselben Aufgaben und stellt zusätzlich registrierte EPoSE-Dienste bereit."
       ],
       [
-        "Der Betrieb eines normalen Nodes allein führt zu keiner EPoSe-Vergütung.",
-        "Kann sich durch gültige Service-Bestätigungen für Vergütungen qualifizieren."
+        "Der Betrieb eines normalen Nodes allein wird nicht über EPoSE belohnt.",
+        "Kann sich mit gültigen Service-Bestätigungen für Belohnungen qualifizieren."
       ],
       [
         "Kann unabhängig vom Mining betrieben werden.",
-        "Erfordert EPoSe-Registrierung und Service-Nachweise, ohne QWC-Staking."
+        "Benötigt eine EPoSE-Registrierung und Service-Nachweise, aber kein QWC-Staking."
       ]
     ]
   },
   "mining": {
     "eyebrow": "Mining",
-    "title": "Mine mit RandomX.",
-    "body": "Unterstütze Qwertycoin mit Rechenleistung. RandomX-Miner erzeugen Blöcke mit einer Ziel-Blockzeit von 120 Sekunden.",
+    "title": "QWC mit RandomX minen.",
+    "body": "Stelle dem Netzwerk Rechenleistung zur Verfügung. RandomX-Miner erzeugen im Durchschnitt alle 120 Sekunden einen neuen Block.",
     "cards": [
       {
-        "title": "Offene Teilnahme",
-        "body": "Verbinde kompatible RandomX-Mining-Software mit einem QWC-Node oder einem unterstützten Mining-Pool."
+        "title": "Jeder kann mitmachen",
+        "body": "Verbinde kompatible RandomX-Mining-Software mit deinem QWC-Node oder einem Mining-Pool."
       },
       {
         "title": "Mining und Netzwerkdienste",
-        "body": "Mining sichert die Blockproduktion. EPoSe vergütet zusätzlich registrierte Nodes für nachgewiesene Netzwerkdienste."
+        "body": "Das Mining erzeugt und sichert neue Blöcke. Unabhängig davon belohnt EPoSE registrierte Nodes für nachgewiesene Netzwerkdienste."
       }
-    ]
+    ],
+    "poolEyebrow": "Offizieller Qwertycoin-Pool",
+    "poolTitle": "In wenigen Minuten loslegen.",
+    "poolBody": "Der offizielle Pool rechnet transparent nach {poolAccounting} ab, zeigt Live-Statistiken und zahlt automatisch aus. Deine QWC-Auszahlungsadresse dient zugleich als Poolkonto. Private Schlüssel werden niemals benötigt.",
+    "poolFacts": [
+      "Algorithmus: {poolAlgorithm}",
+      "Keine Registrierung – deine QWC-Auszahlungsadresse genügt",
+      "Live-Daten zu Hashrate, Workern, Blöcken und Auszahlungen",
+      "Die tatsächliche Netzwerkgebühr wird dem jeweiligen Auszahlungskonto belastet"
+    ],
+    "poolCta": "Offiziellen Pool öffnen",
+    "setupCta": "XMRig einrichten",
+    "docsCta": "Anleitung zum Pool-Mining",
+    "allocationTitle": "Zwei unterschiedliche Aufteilungen",
+    "protocolLabel": "QWC-Protokoll",
+    "protocolSplit": "90 % Mining / 10 % EPoSE",
+    "protocolBody": "Von der Blocksubvention gehen {miningRewardPercent} % an das Mining und {rewardPercent} % an EPoSE. Die Transaktionsgebühren erhält der Miner.",
+    "poolLabel": "Offizieller Pool",
+    "poolSplit": "95 % Miner / 5 % Pool",
+    "poolAllocationBody": "Von den Mining-Erträgen des offiziellen Pools gehen exakt {poolMinerPercent} % an die teilnehmenden Miner. {poolFeePercent} % finanzieren die Entwicklung von Qwertycoin und den Betrieb des Pools. Die Netzwerkgebühr der späteren Auszahlung trägt jedes Konto selbst."
   },
   "exchanges": {
     "eyebrow": "BÖRSEN",
-    "title": "QWC KAUFEN.",
-    "body": "Finde eine Börse, auf der Qwertycoin gelistet ist.",
+    "title": "QWC kaufen.",
+    "body": "Hier kannst du Qwertycoin über eine gelistete Börse beziehen.",
     "listed": "GELISTET",
     "pairLabel": "HANDELSPAAR",
-    "trade": "QWC HANDELN",
+    "trade": "QWC handeln",
     "external": "Externe Börse",
     "linkLabel": "QWC auf Neoxa Exchange handeln, öffnet einen neuen Tab"
   },
   "wallet": {
     "eyebrow": "Wallet",
-    "title": "Dein nächster Schritt: eine Wallet.",
-    "body": "Die Web Wallet, Qwertycoin GUI 2.0.0 und der Quellcode sind verfügbar.",
+    "title": "Als Nächstes brauchst du eine Wallet.",
+    "body": "Die Web Wallet, Qwertycoin GUI 2.0.2 und der Quellcode stehen bereit.",
     "cards": [
       {
         "badge": "VERFÜGBAR",
@@ -377,7 +430,7 @@
       {
         "badge": "IN ENTWICKLUNG",
         "title": "PWA",
-        "body": "Installierbares PWA-Verhalten ist in Entwicklung und wird aufgeführt, sobald es bereit ist.",
+        "body": "Eine installierbare PWA-Version ist in Arbeit und wird angeboten, sobald sie einsatzbereit ist.",
         "icon": "about-il-05.svg"
       },
       {
@@ -391,14 +444,14 @@
   "releases": {
     "eyebrow": "Wallets",
     "title": "Wallets und Quellcode",
-    "body": "Die erste öffentliche QWC-Testphase läuft. Die Web Wallet, Qwertycoin GUI 2.0.2, Core-v2.0.2-Kommandozeilentools, das offizielle Docker-Image und der Quellcode sind verfügbar.",
+    "body": "Für das aktuelle QWC-Netzwerk stehen die Web Wallet, Qwertycoin GUI 2.0.2, die Core-Kommandozeilentools, das offizielle Docker-Image und der Quellcode bereit.",
     "cards": [
       {
         "badge": "VERFÜGBAR · v2.0.2",
         "badgeClass": "mainnet",
         "title": "Desktop-Wallets",
-        "body": "Lade die aktuelle Qwertycoin GUI aus dem offiziellen GitHub-Release herunter. Das Windows-Setup und das macOS-DMG sind die bevorzugten Installer; portable ZIP- und TAR.GZ-Pakete bleiben als Alternativen verfügbar. Prüfe Download und Prüfsumme vor der Verwendung.",
-        "note": "Integritätshinweis: SHA256SUMS prüft die heruntergeladenen Bytes, nicht die Identität des Herausgebers. Linux und Windows sind unsigniert; macOS ist ad-hoc signiert und nicht notarisiert.",
+        "body": "Lade die aktuelle Qwertycoin GUI aus dem offiziellen GitHub-Release herunter. Für Windows empfehlen wir das Setup, für macOS das DMG. Portable ZIP- und TAR.GZ-Pakete stehen zusätzlich bereit. Vergleiche vor der Installation die Prüfsumme.",
+        "note": "Hinweis zur Integrität: Mit SHA256SUMS lässt sich prüfen, ob die Datei unverändert heruntergeladen wurde. Die Prüfsumme bestätigt jedoch nicht die Identität des Herausgebers. Die Pakete für Linux und Windows sind nicht signiert; die macOS-App ist ad hoc signiert und nicht notarisiert.",
         "glyph": "GUI",
         "downloadsLayout": "rows",
         "downloads": [
@@ -406,14 +459,14 @@
             "label": "Windows x86_64",
             "icon": "WIN",
             "downloadLabel": "Windows-Setup herunterladen",
-            "compatibility": "Windows 10 oder neuer · unsigniert",
+            "compatibility": "Windows 10 oder neuer · nicht signiert",
             "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.2/qwertycoin-gui-v2.0.2-windows-x86_64-setup.exe",
             "sha256": "cc45ebb1766a1dc895a1447c7b20b8da39d1ead826b6b576de36cd03ecc5ccfd",
             "shaLabel": "Setup-SHA-256",
-            "preferredLabel": "Bevorzugter Installer",
+            "preferredLabel": "Empfohlene Installation",
             "alternatives": [
               {
-                "downloadLabel": "Portables Windows-ZIP herunterladen",
+                "downloadLabel": "Portable Windows-ZIP herunterladen",
                 "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.2/qwertycoin-gui-v2.0.2-windows-x86_64.zip",
                 "sha256": "8364b8b145f65a2b6c5dcbc3c55d1ebf990901fc6c5f3a22e1587db77455df90",
                 "shaLabel": "ZIP-SHA-256"
@@ -428,7 +481,7 @@
             "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.2/qwertycoin-gui-v2.0.2-macos-arm64.dmg",
             "sha256": "3c4ee1cd5eee782eccef6b8559b9f288d7b628c4f8dcd35ee1e0eeeee23a6330",
             "shaLabel": "DMG SHA-256",
-            "preferredLabel": "Bevorzugter Download",
+            "preferredLabel": "Empfohlener Download",
             "alternatives": [
               {
                 "downloadLabel": "macOS-TAR.GZ herunterladen",
@@ -468,15 +521,15 @@
         "badge": "VERFÜGBAR · v2.0.2",
         "badgeClass": "mainnet",
         "title": "Core-Kommandozeilentools",
-        "body": "Offizielle Qwertycoin-Pakete mit qwertycoind, qwertycoin-wallet-cli und qwertycoin-wallet-rpc. Prüfe Archiv und Prüfsumme vor der Verwendung; Versionshinweise und Auditstatus sind bei jedem GitHub-Release dokumentiert.",
-        "note": "Integritätshinweis: SHA256SUMS prüft die heruntergeladenen Bytes, nicht die Identität des Herausgebers. Linux und Windows sind unsigniert; macOS ist ad-hoc signiert und nicht notarisiert.",
+        "body": "Diese offiziellen Pakete enthalten qwertycoind, qwertycoin-wallet-cli und qwertycoin-wallet-rpc. Vergleiche vor der Verwendung die Prüfsumme; Versionshinweise und Prüfstatus findest du beim jeweiligen GitHub-Release.",
+        "note": "Hinweis zur Integrität: Mit SHA256SUMS lässt sich prüfen, ob die Datei unverändert heruntergeladen wurde. Die Prüfsumme bestätigt jedoch nicht die Identität des Herausgebers. Die Pakete für Linux und Windows sind nicht signiert; die macOS-Datei ist ad hoc signiert und nicht notarisiert.",
         "glyph": "CLI",
         "downloads": [
           {
             "label": "Windows x86_64",
             "icon": "WIN",
             "downloadLabel": "Windows-ZIP herunterladen",
-            "compatibility": "Auf dem Windows-Server-2025-Runner getestet; keine weitergehende Aussage zu älteren Windows-Versionen",
+            "compatibility": "Unter Windows Server 2025 getestet; ältere Windows-Versionen wurden nicht geprüft",
             "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.2/qwertycoin-v2.0.2-windows-x86_64.zip",
             "sha256": "3d963ba0131cd82d1843369942ead595f63c7c14cba0242f2727961755bab7b6"
           },
@@ -492,7 +545,7 @@
             "label": "Linux x86_64",
             "icon": "LNX",
             "downloadLabel": "Linux-TAR.GZ herunterladen",
-            "compatibility": "GLIBC 2.35 / GLIBCXX 3.4.30 als Kompatibilitätsobergrenze",
+            "compatibility": "Erfordert höchstens GLIBC 2.35 und GLIBCXX 3.4.30",
             "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.2/qwertycoin-v2.0.2-linux-x86_64.tar.gz",
             "sha256": "f98914c2dbf906129af497e4776d5a654654a35be4db8d318937a6d9d61c748b"
           }
@@ -518,12 +571,12 @@
         "badge": "VERFÜGBAR · 2.0.2",
         "badgeClass": "mainnet",
         "title": "Docker-Image",
-        "body": "Starte den verifizierten Core-Release als nicht privilegierten Linux/amd64-Container. Mainnet und Daemon sind Standard; das persistente benannte Volume erhält die Chain-Daten bei Container-Updates.",
-        "note": "Der Tag latest folgt stets dem neuesten stabilen Image. Auditierte Produktionsumgebungen können dessen Image-Digest pinnen. Unten wird nur P2P-Port 8196 veröffentlicht; administratives RPC bleibt geschlossen. Wallet- und EPoSe-Identitätsdaten benötigen eigene geschützte Volumes und die vollständige Schnellstartanleitung.",
+        "body": "Starte den geprüften Core-Release als unprivilegierten Linux/amd64-Container. Standardmäßig läuft der Daemon im Mainnet; ein benanntes Volume bewahrt die Blockchain-Daten bei Updates auf.",
+        "note": "Der Tag latest verweist immer auf das neueste stabile Image. Für kontrollierte Produktionsumgebungen empfiehlt sich stattdessen ein fester Image-Digest. Das Beispiel gibt nur den P2P-Port 8196 frei; die administrative RPC-Schnittstelle bleibt geschlossen. Wallet- und EPoSE-Identitäten gehören in eigene geschützte Volumes. Beachte dazu die vollständige Schnellstartanleitung.",
         "glyph": "OCI",
         "commands": [
           {
-            "label": "Stable-Image laden",
+            "label": "Stabiles Image laden",
             "code": "docker pull docker.io/qwertycoin/qwertycoin:latest"
           },
           {
@@ -563,7 +616,7 @@
         "badge": "QUELLCODE VERFÜGBAR",
         "badgeClass": "next",
         "title": "QWC-Quellcode",
-        "body": "Sieh dir den Core-Quellcode an, baue die Software selbst und arbeite auf GitHub mit.",
+        "body": "Sieh dir den Core-Quellcode an, kompiliere die Software selbst oder beteilige dich an der Entwicklung auf GitHub.",
         "glyph": "SRC",
         "links": [
           {
@@ -582,14 +635,14 @@
   },
   "network": {
     "eyebrow": "Netzwerk",
-    "title": "Netzwerkaktivität",
-    "body": "Aktuelle Daten zu Blockchain und EPoSe."
+    "title": "Das Netzwerk im Blick",
+    "body": "Aktuelle Daten aus der Blockchain und zu EPoSE."
   },
   "specs": {
-    "eyebrow": "Coin Specs",
-    "title": "Bestätigte Mainnet-Parameter.",
-    "body": "Diese Werte beschreiben die aktuellen QWC-Mainnet-Parameter.",
-    "visualAlt": "QWC-Parameter-Orbitdiagramm",
+    "eyebrow": "Netzwerkdaten",
+    "title": "QWC auf einen Blick.",
+    "body": "Diese Werte gelten im aktuellen QWC-Mainnet.",
+    "visualAlt": "Grafische Übersicht der QWC-Netzwerkparameter",
     "items": [
       [
         "Name",
@@ -608,47 +661,47 @@
         "QWC HF17"
       ],
       [
-        "Service-Vergütung",
-        "EPoSe"
+        "Belohnung für Netzwerkdienste",
+        "EPoSE"
       ],
       [
         "Konsens",
         "RandomX Proof of Work"
       ],
       [
-        "Ziel-Blockzeit",
+        "Angestrebte Blockzeit",
         "120 Sekunden"
       ],
       [
-        "EPoSe-Epoche",
+        "EPoSE-Epoche",
         "{blocks} Blöcke (~{hours} Stunden)"
       ],
       [
-        "EPoSe-Prüfkomitee",
-        "{committee} Prüfknoten Zielgröße"
+        "EPoSE-Prüfkomitee",
+        "Zielgröße: {committee} Prüfknoten"
       ],
       [
         "Bestätigungsquorum",
-        "ceil(2/3 des tatsächlichen Komitees), {fullCommitteeAttestations} von {committee} bei voller Größe"
+        "Aufgerundet 2/3 der tatsächlichen Komiteegröße, bei voller Größe {fullCommitteeAttestations} von {committee}"
       ],
       [
-        "Vergütungsaufteilung",
-        "90 % Mining / {rewardPercent} % EPoSe"
+        "Aufteilung der Blocksubvention",
+        "90 % Mining / {rewardPercent} % EPoSE"
       ],
       [
-        "Decimals",
+        "Nachkommastellen",
         "8"
       ],
       [
-        "Supply Constant",
+        "Geldmengenkonstante",
         "184,467,440.73709551 QWC"
       ],
       [
-        "Tail Emission",
-        "0.3 QWC/Minute, 0.6 QWC/Block-Target"
+        "Daueremission",
+        "0,3 QWC pro Minute, 0,6 QWC je Ziel-Blockintervall"
       ],
       [
-        "Address Prefix",
+        "Adresspräfix",
         "0x14820c, Standard-Adressen beginnen mit QWC"
       ],
       [
@@ -657,7 +710,7 @@
       ],
       [
         "Daemon RPC",
-        "8197, nur eingeschränkter öffentlicher Proxy"
+        "8197, öffentlich nur als eingeschränkter Proxy"
       ],
       [
         "Wallet RPC",
@@ -671,97 +724,99 @@
   },
   "roadmap": {
     "eyebrow": "Roadmap",
-    "title": "Was verfügbar ist. Was als Nächstes kommt.",
-    "body": "Verfolge die Entwicklung des Qwertycoin-Netzwerks, der Wallets und der Entwickler-Tools.",
+    "title": "Was schon da ist – und woran wir arbeiten.",
+    "body": "Hier siehst du den Stand des Netzwerks, der Wallets und der Werkzeuge für Entwickler und Betreiber.",
     "items": [
       {
         "badge": "LIVE",
         "title": "QWC-Netzwerk",
-        "body": "RandomX-Netzwerk und QWC-Grundfunktionen sind live. Betreiber warten und verbessern das Netzwerk laufend."
+        "body": "Das RandomX-Netzwerk und die grundlegenden QWC-Funktionen sind live. Die Infrastruktur wird laufend überwacht, gewartet und verbessert."
       },
       {
         "badge": "LIVE",
-        "title": "EPoSe",
-        "body": "Registrierung, Service-Bestätigungen, Qualifikation und Vergütungsrotation gehören zum aktuellen QWC-Netzwerk."
+        "title": "EPoSE",
+        "body": "Registrierung, Service-Bestätigungen, Qualifikation und Empfängerauswahl sind Bestandteil des aktuellen QWC-Netzwerks."
       },
       {
         "badge": "LAUFEND",
         "title": "Netzwerkbetrieb",
-        "body": "Überwachung, Wartung und betriebliche Verbesserungen laufen als reguläre Netzwerkarbeit weiter."
+        "body": "Überwachung, Wartung und technische Verbesserungen gehören zum laufenden Betrieb."
       },
       {
         "badge": "VERFÜGBAR",
-        "title": "Wallets und Tools",
-        "body": "Die Web Wallet ist verfügbar. PWA-Verhalten, Desktop-Software und zusätzliche Tools behalten ihren eigenen Status."
+        "title": "Wallets und Werkzeuge",
+        "body": "Die Web Wallet ist verfügbar. Die installierbare PWA, Desktop-Software und weitere Werkzeuge werden jeweils separat weiterentwickelt."
       },
       {
         "badge": "QUELLCODE VERFÜGBAR",
         "title": "Entwicklerressourcen",
-        "body": "Der Core-Quellcode ist verfügbar. Zusätzliche Dokumentation, APIs und Betreiberinformationen werden getrennt gepflegt."
+        "body": "Der Core-Quellcode ist öffentlich. Dokumentation, API-Referenzen und Anleitungen für Betreiber werden fortlaufend gepflegt."
       },
       {
         "badge": "FORSCHUNG",
-        "title": "EPoSe-Forschung",
-        "body": "Erweiterte Dienste bleiben Forschungsthemen und werden nicht als aktuelle Produktfunktionen dargestellt."
+        "title": "EPoSE-Forschung",
+        "body": "Weiterführende Dienste bleiben Forschungsthemen und werden erst dann als Funktionen beschrieben, wenn sie tatsächlich verfügbar sind."
       }
     ]
   },
   "history": {
-    "eyebrow": "Historie",
-    "title": "Seit 2018. Das nächste Kapitel.",
-    "body": "Qwertycoin begann 2018. Das heutige Netzwerk knüpft mit RandomX und EPoSe an diese Geschichte an.",
+    "eyebrow": "Geschichte",
+    "title": "Seit 2018 – und längst nicht am Ende.",
+    "body": "Qwertycoin begann 2018. Das heutige Netzwerk führt diese Geschichte mit RandomX und EPoSE weiter.",
     "bridge": [
-      "Ursprüngliche QWC-Community-Chain",
-      "QWC-Netzwerk mit RandomX und EPoSe"
+      "Die ursprüngliche QWC-Community-Blockchain",
+      "QWC-Netzwerk mit RandomX und EPoSE"
     ],
     "items": [
       {
         "date": "2018",
         "title": "Qwertycoin startet",
-        "body": "QWC begann als CryptoNote-basierter Community Privacy Coin mit frühen Arbeiten an Wallet, Explorer, Community und Infrastruktur."
+        "body": "QWC begann als gemeinschaftlich entwickelte, auf Datenschutz ausgerichtete Kryptowährung auf Basis von CryptoNote. Schon früh entstanden Wallets, Explorer und eigene Infrastruktur."
       },
       {
         "date": "2019–2023",
-        "title": "Forschung und Entwicklung an EPoW und EPoSe",
-        "body": "Von 2019 bis 2023 arbeitete das Projekt an fairem Mining und der Vergütung von Netzwerkdiensten sowie an Wallets, Nodes und Infrastruktur. Xecutes EPoSe-Arbeit prägte die Idee, nützliche Netzwerkdienste zu vergüten."
+        "title": "Forschung und Entwicklung rund um EPoW und EPoSE",
+        "body": "Zwischen 2019 und 2023 forschte das Projekt an fairem Mining und an Belohnungen für Netzwerkdienste. Parallel wurden Wallets, Nodes und Infrastruktur weiterentwickelt. Xecutes Arbeit an EPoSE prägte die Idee, nützliche Dienste messbar zu belohnen."
       },
       {
         "date": "Später",
-        "title": "Token-Phase",
-        "body": "Die Token-Phase gehört zur Geschichte von Qwertycoin und ist vom heutigen QWC-Netzwerk getrennt."
+        "title": "Die Token-Phase",
+        "body": "Diese Phase gehört zur Geschichte von Qwertycoin, ist technisch jedoch vom heutigen QWC-Netzwerk getrennt."
       },
       {
         "date": "2026",
         "title": "Qwertycoin-Netzwerk",
-        "body": "Qwertycoin startet ein neues Netzwerk mit privaten Zahlungen, RandomX-Mining und EPoSe-Servicevergütungen."
+        "body": "Qwertycoin startet mit einer neuen Blockchain für vertrauliche Zahlungen, offenem RandomX-Mining und EPoSE-Belohnungen für Netzwerkdienste."
       }
     ],
     "alert": "Das heutige QWC-Netzwerk ist von der früheren Chain getrennt. Alte Wallet-Software und Blockchain-Daten sind mit diesem Netzwerk nicht kompatibel."
   },
   "developers": {
     "eyebrow": "Entwickler",
-    "title": "Entwickle mit Qwertycoin.",
-    "body": "Erkunde den Core-Quellcode, baue die Software und steuere Verbesserungen auf GitHub bei.",
+    "title": "Entwickle Qwertycoin mit uns weiter.",
+    "body": "Sieh dir den Core-Quellcode an, kompiliere die Software selbst und bringe deine Verbesserungen auf GitHub ein.",
     "buildTitle": "Aus Quellcode bauen",
     "registrationTitle": "Betreiberinformationen",
     "sourceTitle": "Core-Quellcode",
-    "sourceBody": "Erkunde das öffentliche Qwertycoin-Core-Repository auf GitHub.",
-    "legacyTitle": "Build-Anleitungen",
-    "legacyBody": "Build- und Release-Informationen werden im Core-Repository und in veröffentlichten Ressourcen gepflegt.",
-    "registrationBody": "Betreibe einen öffentlichen EPoSe-Service-Node mit der aktuellen Core-Anleitung.",
-    "registrationLink": "EPoSe-Betreiberanleitung öffnen"
+    "sourceBody": "Öffne das öffentliche Qwertycoin-Core-Repository auf GitHub.",
+    "legacyTitle": "Kompilieranleitungen",
+    "legacyBody": "Anleitungen zum Kompilieren und Informationen zu Releases findest du im Core-Repository und in der Dokumentation.",
+    "registrationBody": "Mit der aktuellen Anleitung richtest du einen öffentlich erreichbaren EPoSE-Service-Node ein.",
+    "registrationLink": "Anleitung für Service Nodes öffnen"
   },
   "community": {
     "eyebrow": "Community",
-    "title": "Werde Teil der Qwertycoin-Community.",
-    "body": "Verfolge die Entwicklung, erkunde das Netzwerk und gestalte die nächsten Schritte mit.",
-    "github": "Qwertycoin Organisation",
+    "title": "Mach bei Qwertycoin mit.",
+    "body": "Verfolge die Entwicklung, erkunde das Netzwerk und gestalte die nächsten Schritte gemeinsam mit uns.",
+    "github": "Qwertycoin-Organisation",
     "explorer": "QWC Mainnet Explorer"
   },
   "footer": {
-    "body": "Qwertycoin verbindet private Zahlungen, RandomX-Mining, EPoSe-Servicevergütungen, die Web Wallet und öffentlichen Quellcode.",
+    "body": "Qwertycoin verbindet vertrauliche digitale Zahlungen, offenes RandomX-Mining, EPoSE-Belohnungen für Netzwerkdienste und frei zugänglichen Quellcode.",
     "technology": "Technologie",
-    "history": "Historie",
+    "pool": "Offizieller Pool",
+    "documentation": "Dokumentation",
+    "history": "Geschichte",
     "roadmap": "Roadmap"
   },
   "notFound": {

@@ -32,7 +32,7 @@
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <link rel="preload" href="/assets/fonts/v/archivo-latin-900.e915040a27c5.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/v/inter-latin-400.8909904ab6c8.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/css/v/site.758da2db6bb5.css">
+    <link rel="stylesheet" href="/css/v/site.ed6ba566954e.css">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://qwertycoin.org/#organization","name":"Qwertycoin","url":"https://qwertycoin.org/","logo":"https://qwertycoin.org/assets/favicon-192x192.png","sameAs":["https://github.com/qwertycoin-org","https://x.com/Qwertycoin_QWC"]},{"@type":"WebSite","@id":"https://qwertycoin.org/#website","name":"Qwertycoin","url":"https://qwertycoin.org/","publisher":{"@id":"https://qwertycoin.org/#organization"}},{"@type":"WebPage","@id":"https://qwertycoin.org/#webpage","url":"https://qwertycoin.org/","name":"Qwertycoin (QWC) | Private payments, RandomX & EPoSe","description":"Qwertycoin (QWC) is a privacy-focused cryptocurrency with RandomX proof-of-work mining and EPoSe rewards for proven network services.","inLanguage":"en","isPartOf":{"@id":"https://qwertycoin.org/#website"},"about":{"@id":"https://qwertycoin.org/#organization"}},{"@type":"FAQPage","@id":"https://qwertycoin.org/#faq","inLanguage":"en","isPartOf":{"@id":"https://qwertycoin.org/#webpage"},"mainEntity":[{"@type":"Question","name":"What is Qwertycoin?","acceptedAnswer":{"@type":"Answer","text":"Qwertycoin (QWC) is a privacy-focused cryptocurrency with RandomX proof-of-work mining and EPoSe rewards for proven network services."}},{"@type":"Question","name":"How do I use the Web Wallet?","acceptedAnswer":{"@type":"Answer","text":"Open the official Web Wallet, create or restore a wallet there and follow its safety instructions. The main website never processes wallet keys."}},{"@type":"Question","name":"Can I use an old QWC wallet?","acceptedAnswer":{"@type":"Answer","text":"No. The current QWC network is separate from the earlier chain. Legacy wallet software and blockchain data are not compatible with this network."}},{"@type":"Question","name":"Does EPoSe replace mining?","acceptedAnswer":{"@type":"Answer","text":"No. RandomX miners produce blocks and secure the blockchain. EPoSe adds rewards for proven network services."}},{"@type":"Question","name":"What is an epoch?","acceptedAnswer":{"@type":"Answer","text":"An epoch is the block period used to assess EPoSe service activity. It currently spans 720 blocks, approximately 24 hours at the target block interval."}},{"@type":"Question","name":"What does qualified mean?","acceptedAnswer":{"@type":"Answer","text":"A qualified Service Node has met the protocol's requirements for valid attestations in the relevant epoch and is eligible for service-reward selection. The technical quorum is at least ceil(2 x actual committee size / 3)."}},{"@type":"Question","name":"Who determines qualification and rewards?","acceptedAnswer":{"@type":"Answer","text":"The EPoSe protocol. Every full node applies the same rules to valid on-chain registrations and attestations to verify eligibility and reward selection."}},{"@type":"Question","name":"Do Service Nodes need to stake QWC?","acceptedAnswer":{"@type":"Answer","text":"No. Participation requires EPoSe registration and the required service proofs, not locked QWC as stake."}},{"@type":"Question","name":"Can one operator run multiple Service Nodes?","acceptedAnswer":{"@type":"Answer","text":"Yes. Each Service Node needs its own valid registration and must meet the protocol's service requirements. Admission proof makes cheap identity creation harder."}},{"@type":"Question","name":"Why is EPoSe not Proof of Stake?","acceptedAnswer":{"@type":"Answer","text":"EPoSe rewards proven service rather than locked stake. Service Nodes verify blockchain data like other full nodes, while RandomX miners perform proof-of-work block production."}}]}]}</script>
     <script type="application/json" id="qwc-network-data">{"locale":"en","labels":{"height":{"label":"Block height","help":"Current public chain height."},"registered":{"label":"Registered Service Nodes","shortLabel":"Registered","help":"Service Nodes with valid registration."},"qualified":{"label":"Qualified Service Nodes","shortLabel":"Qualified","help":"Reward-eligible Service Nodes for the relevant period when statistics are available."},"epoch":{"label":"EPoSe epoch","shortLabel":"Epoch","help":"Current {blocks}-block service period (~{hours}h)."},"topHash":"Latest block hash","stateHash":"EPoSe state hash","explorer":"Explorer","currentSource":"Core source","sourcePending":"Available on GitHub","syncLoading":"Loading…","loading":"Loading…","updated":"Updated {time}","unavailable":"Currently unavailable","partial":"Some network data is currently unavailable.","eposeUnavailable":"EPoSe statistics are currently unavailable.","unknown":"unknown","synchronized":"synchronized","syncPending":"sync pending","ratio":"{qualified} / {registered} qualified","noScript":"Live status needs JavaScript. You can still open the explorer for current network data."},"config":{"epochLengthBlocks":720,"protocolVersion":2,"genesisHash":"4f95857586e2c66063c277370eda99cd75897d773af09f0c3cd1e22f7e87db39","hardforkVersion":17}}</script>
   </head>
@@ -83,7 +83,7 @@
             <div class="actions hero-actions">
               <a class="button primary" href="https://wallet.qwertycoin.org/">Open Web Wallet</a>
               <a class="button secondary" href="#exchanges">Get QWC</a>
-              <a class="text-link" href="#technology">How QWC works</a>
+              <a class="text-link" href="#participate">Choose your path</a>
             </div>
           </div>
           <div class="hero-system q-motif-stage">
@@ -132,6 +132,39 @@
           <div class="system-plus" aria-hidden="true">+</div>
           <article><span class="system-label">Service rewards</span><h2>EPoSe</h2><p>Service Nodes earn eligibility for network-service rewards through valid attestations.</p></article>
         </div></div>
+      </section>
+
+      <section class="section alt participation-section" id="participate">
+        <div class="section-inner">
+          <div class="section-header">
+            <p class="eyebrow">Start here</p>
+            <h2>Choose how you want to participate.</h2>
+            <p>Use QWC, contribute computing power or operate public network infrastructure. Each path has a current, official starting point.</p>
+          </div>
+          <div class="path-grid">
+            <article class="path-card">
+              <span class="path-index" aria-hidden="true">01</span>
+              <span class="badge">USE QWC</span>
+              <h3>Open a wallet</h3>
+              <p>Create or restore a QWC wallet in your browser, then send and receive private payments.</p>
+              <a class="button secondary" href="https://wallet.qwertycoin.org/" target="_blank" rel="noopener noreferrer">Open Web Wallet</a>
+            </article>
+<article class="path-card">
+              <span class="path-index" aria-hidden="true">02</span>
+              <span class="badge">MINE QWC</span>
+              <h3>Mine on the official pool</h3>
+              <p>Join the official RandomX PPLNS pool with your QWC payout address. No pool account registration is required.</p>
+              <a class="button secondary" href="https://pool.qwertycoin.org/#start" target="_blank" rel="noopener noreferrer">Start mining</a>
+            </article>
+<article class="path-card">
+              <span class="path-index" aria-hidden="true">03</span>
+              <span class="badge">RUN A NODE</span>
+              <h3>Operate a Service Node</h3>
+              <p>Run a public QWC node, register its service identity and qualify through verifiable EPoSe service proofs—without staking QWC.</p>
+              <a class="button secondary" href="https://docs.qwertycoin.org/epose/service-node-quickstart" target="_blank" rel="noopener noreferrer">Open operator guide</a>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section class="section" id="technology">
@@ -210,6 +243,11 @@
 <article class="epose-summary-card"><span>02</span><h3>Verify service.</h3><p>Protocol-selected verifiers check service responses and submit signed attestations.</p></article>
 <article class="epose-summary-card"><span>03</span><h3>Receive rewards.</h3><p>After qualification is finalized, eligible Service Nodes enter the protocol's deterministic reward rotation.</p></article>
           </div>
+          <div class="actions epose-actions">
+            <a class="button primary" href="https://explorer.qwertycoin.org/service-nodes" target="_blank" rel="noopener noreferrer">View live Service Nodes</a>
+            <a class="button secondary" href="https://docs.qwertycoin.org/epose/service-node-quickstart" target="_blank" rel="noopener noreferrer">Run a Service Node</a>
+            <a class="button secondary" href="https://docs.qwertycoin.org/epose/overview" target="_blank" rel="noopener noreferrer">Read the EPoSe documentation</a>
+          </div>
           <div class="epose-note-row">
             <div class="tribute"><p class="eyebrow">EPoSe origin</p><h3>Thank you, Xecute.</h3><p>Xecute developed the original EPoSe vision and contributed the Qwertycoin service-layer whitepaper. That work laid the foundation for rewarding useful network services.</p></div>
             <div class="reward-rules-note">
@@ -234,11 +272,40 @@
         <div class="comparison-stack" aria-label="Normal node and Service Node comparison"><article class="comparison-pair"><div><h3>Normal node</h3><p>Verifies blocks and transactions, synchronizes the chain and relays data.</p></div><div><h3>Service Node</h3><p>Performs the same node functions and provides registered EPoSe services.</p></div></article><article class="comparison-pair"><div><h3>Normal node</h3><p>Operating a regular node alone does not earn EPoSe rewards.</p></div><div><h3>Service Node</h3><p>Can qualify for service rewards through valid service attestations.</p></div></article><article class="comparison-pair"><div><h3>Normal node</h3><p>Can be operated independently of mining.</p></div><div><h3>Service Node</h3><p>Requires EPoSe registration and service proofs, without QWC staking.</p></div></article></div>
       </div></section>
 
-      <section class="section" id="mining"><div class="section-inner"><div class="section-header">
+      <section class="section mining-section" id="mining"><div class="section-inner">
+        <div class="section-header">
             <p class="eyebrow">Mining</p>
             <h2>Mine with RandomX.</h2>
             <p>Contribute computing power to Qwertycoin. RandomX miners produce blocks at a target interval of 120 seconds.</p>
-          </div><div class="grid two"><article class="card"><h3>Open participation</h3><p>Connect compatible RandomX mining software to a QWC node or a supported mining pool.</p></article><article class="card"><h3>Mining and network services</h3><p>Mining secures block production. EPoSe separately rewards registered nodes for proven network services.</p></article></div></div></section>
+          </div>
+        <div class="grid two mining-principles"><article class="card"><h3>Open participation</h3><p>Connect compatible RandomX mining software to a QWC node or a supported mining pool.</p></article><article class="card"><h3>Mining and network services</h3><p>Mining secures block production. EPoSe separately rewards registered nodes for proven network services.</p></article></div>
+        <div class="pool-panel">
+          <div class="pool-panel-copy">
+            <p class="eyebrow">Official Qwertycoin pool</p>
+            <h3>Start mining in minutes.</h3>
+            <p>The official pool provides transparent PPLNS accounting, live statistics and automatic payouts. Your QWC payout address is your pool account; the pool never asks for wallet keys.</p>
+            <ul class="pool-facts"><li>Algorithm: RandomX (rx/0)</li><li>No registration: use your QWC payout address</li><li>Live hashrate, worker, block and payment statistics</li><li>Each payout account pays the actual network fee for its own payout</li></ul>
+            <div class="actions pool-actions">
+              <a class="button primary" href="https://pool.qwertycoin.org/" target="_blank" rel="noopener noreferrer">Open official pool</a>
+              <a class="button secondary" href="https://pool.qwertycoin.org/#start" target="_blank" rel="noopener noreferrer">Create XMRig command</a>
+              <a class="button secondary" href="https://docs.qwertycoin.org/mining-and-ecosystem/pool-mining" target="_blank" rel="noopener noreferrer">Read the pool-mining guide</a>
+            </div>
+          </div>
+          <div class="allocation-panel">
+            <h3>Two separate reward layers</h3>
+            <article class="allocation-card">
+              <span>QWC protocol</span>
+              <strong>90% mining / 10% EPoSe</strong>
+              <p>The block subsidy is split 90% to mining and 10% to EPoSe service rewards. Transaction fees remain with the miner.</p>
+            </article>
+            <article class="allocation-card">
+              <span>Official pool</span>
+              <strong>95% miners / 5% pool</strong>
+              <p>From the mining rewards distributed through the official pool, 5% funds Qwertycoin development and pool operations; exactly 95% is allocated to participating miners before each account's payout transaction fee.</p>
+            </article>
+          </div>
+        </div>
+      </div></section>
 
       <section class="section exchange-section" id="exchanges"><div class="section-inner exchange-layout">
         <div class="section-header exchange-intro">
@@ -451,7 +518,7 @@
     <footer class="site-footer"><div class="footer-inner"><div><a class="brand" href="/#home" aria-label="Qwertycoin home">
           <img src="/assets/qwertycoin-mark.svg" alt="" width="42" height="42">
           <span>Qwertycoin</span>
-        </a></div><div class="footer-links"><a href="#technology">Technology</a><a href="#history">History</a><a href="#roadmap">Roadmap</a></div></div></footer>
+        </a></div><div class="footer-links"><a href="#technology">Technology</a><a href="https://pool.qwertycoin.org/" target="_blank" rel="noopener noreferrer">Official pool</a><a href="https://docs.qwertycoin.org/" target="_blank" rel="noopener noreferrer">Documentation</a><a href="#history">History</a><a href="#roadmap">Roadmap</a></div></div></footer>
     <script src="/js/v/network-status.a2693a05a044.js" defer></script>
     <script src="/js/v/nav-menu.e6ace69aacd4.js" defer></script>
   </body>
