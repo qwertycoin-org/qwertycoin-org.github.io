@@ -15,6 +15,9 @@ const middleware = await readFile(path.join(root, "functions", "_middleware.js")
 const sitemap = await readFile(path.join(dist, "sitemap.xml"), "utf8");
 const llms = await readFile(path.join(dist, "llms.txt"), "utf8");
 const eposeFormula = await readFile(path.join(root, "assets", "epose", "epose-consensus-formula.svg"), "utf8");
+const networkConfig = JSON.parse(await readFile(path.join(root, "src", "config", "network.json"), "utf8"));
+const englishSource = await readFile(path.join(root, "src", "i18n", "en.json"), "utf8");
+const germanSource = await readFile(path.join(root, "src", "i18n", "de.json"), "utf8");
 
 function assertIncludes(haystack, needle, label = needle) {
   if (!haystack.includes(needle)) throw new Error(`Missing required content: ${label}`);
@@ -102,6 +105,75 @@ const exchangeContract = [
 ];
 
 for (const [needle, html, label] of exchangeContract) assertIncludes(html, needle, label);
+
+const participationContract = [
+  ['<a class="text-link" href="#participate">Choose your path</a>', index, "English hero participation link"],
+  ['<a class="text-link" href="#participate">Einstieg wählen</a>', germanIndex, "German hero participation link"],
+  ['<section class="section alt participation-section" id="participate">', index, "participation section anchor"],
+  ['Choose how you want to participate.', index, "English participation heading"],
+  ['Wähle deinen Weg ins Netzwerk.', germanIndex, "German participation heading"],
+  ['href="https://wallet.qwertycoin.org/" target="_blank" rel="noopener noreferrer">Open Web Wallet', index, "safe wallet path"],
+  ['href="https://pool.qwertycoin.org/#start" target="_blank" rel="noopener noreferrer">Start mining', index, "safe official pool path"],
+  ['href="https://docs.qwertycoin.org/epose/service-node-quickstart" target="_blank" rel="noopener noreferrer">Open operator guide', index, "safe service-node path"],
+  ['href="https://explorer.qwertycoin.org/service-nodes" target="_blank" rel="noopener noreferrer">View live Service Nodes', index, "live Service Node CTA"],
+  ['href="https://docs.qwertycoin.org/epose/overview" target="_blank" rel="noopener noreferrer">Read the EPoSe documentation', index, "EPoSe documentation CTA"],
+  ['href="https://docs.qwertycoin.org/" target="_blank" rel="noopener noreferrer">Documentation', index, "documentation footer link"],
+  ['href="https://pool.qwertycoin.org/" target="_blank" rel="noopener noreferrer">Official pool', index, "official pool footer link"]
+];
+
+for (const [needle, html, label] of participationContract) assertIncludes(html, needle, label);
+
+const miningContract = [
+  ["Official Qwertycoin pool", index, "official pool heading"],
+  ["Offizieller Qwertycoin-Pool", germanIndex, "German official pool heading"],
+  ["Algorithm: RandomX (rx/0)", index, "official mining algorithm"],
+  ["transparent PPLNS accounting", index, "official pool accounting"],
+  ["Your QWC payout address is your pool account", index, "address-based pool account"],
+  ["Each payout account pays the actual network fee for its own payout", index, "miner-funded payout network fee"],
+  ['href="https://pool.qwertycoin.org/" target="_blank" rel="noopener noreferrer">Open official pool', index, "official pool CTA"],
+  ['href="https://pool.qwertycoin.org/#start" target="_blank" rel="noopener noreferrer">Create XMRig command', index, "XMRig setup CTA"],
+  ['href="https://docs.qwertycoin.org/mining-and-ecosystem/pool-mining" target="_blank" rel="noopener noreferrer">Read the pool-mining guide', index, "pool mining docs CTA"],
+  ["90% mining / 10% EPoSe", index, "English protocol split"],
+  ["95% miners / 5% pool", index, "English pool split"],
+  ["90 % Mining / 10 % EPoSe", germanIndex, "German protocol split"],
+  ["95 % Miner / 5 % Pool", germanIndex, "German pool split"],
+  ["Transaction fees remain with the miner.", index, "protocol transaction-fee rule"],
+  ["exakt 95 %", germanIndex, "exact German pool allocation"]
+];
+
+for (const [needle, html, label] of miningContract) assertIncludes(html, needle, label);
+
+for (const html of [index, germanIndex]) {
+  if ((html.match(/class="path-card"/g) || []).length !== 3) {
+    throw new Error("Exactly three newcomer participation paths must be rendered");
+  }
+  if ((html.match(/class="allocation-card"/g) || []).length !== 2) {
+    throw new Error("Protocol and official-pool reward allocations must remain separate");
+  }
+
+  const systemPosition = html.indexOf('class="system-strip"');
+  const participatePosition = html.indexOf('id="participate"');
+  const technologyPosition = html.indexOf('id="technology"');
+  if (systemPosition < 0 || participatePosition <= systemPosition || technologyPosition <= participatePosition) {
+    throw new Error("Newcomer participation paths must render directly after the mining/EPoSe system summary");
+  }
+}
+
+if (networkConfig.pool.url !== "https://pool.qwertycoin.org/"
+    || networkConfig.pool.startUrl !== "https://pool.qwertycoin.org/#start"
+    || networkConfig.pool.algorithm !== "RandomX (rx/0)"
+    || networkConfig.pool.accounting !== "PPLNS"
+    || networkConfig.pool.feeBps !== 500) {
+  throw new Error("Official pool metadata must remain centralized and exact");
+}
+
+for (const source of [englishSource, germanSource]) {
+  if (source.includes("https://pool.qwertycoin.org")
+      || source.includes("https://docs.qwertycoin.org")
+      || source.includes("https://explorer.qwertycoin.org")) {
+    throw new Error("Service URLs must stay in network.json instead of translation copy");
+  }
+}
 
 for (const html of [index, germanIndex]) {
   const miningPosition = html.indexOf('id="mining"');

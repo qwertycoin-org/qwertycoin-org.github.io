@@ -30,7 +30,7 @@
     "getQwc": "QWC kaufen",
     "github": "Auf GitHub mitarbeiten",
     "wallet": "Web Wallet öffnen",
-    "mining": "So funktioniert QWC",
+    "mining": "Einstieg wählen",
     "visualAlt": "Großes goldenes Qwertycoin-Q-Emblem mit abstrakten Netzwerkebenen",
     "pulseLabel": "QWC MAINNET LIVE",
     "pulseBody": "Aktuelle Daten zu Blockchain und EPoSe. Verfügbare Werte bleiben sichtbar, wenn einzelne Statistiken fehlen."
@@ -79,6 +79,34 @@
     "infrastructureLabel": "Service-Vergütung",
     "infrastructureTitle": "EPoSe",
     "infrastructureBody": "Service Nodes qualifizieren sich durch gültige Bestätigungen ihrer Netzwerkdienste für Vergütungen."
+  },
+  "participate": {
+    "eyebrow": "Hier starten",
+    "title": "Wähle deinen Weg ins Netzwerk.",
+    "body": "Nutze QWC, stelle Rechenleistung bereit oder betreibe öffentliche Netzwerkinfrastruktur. Für jeden Weg gibt es einen aktuellen offiziellen Einstieg.",
+    "paths": [
+      {
+        "kind": "wallet",
+        "badge": "QWC NUTZEN",
+        "title": "Wallet öffnen",
+        "body": "Erstelle oder importiere eine QWC-Wallet im Browser und sende oder empfange private Zahlungen.",
+        "cta": "Web Wallet öffnen"
+      },
+      {
+        "kind": "pool",
+        "badge": "QWC MINEN",
+        "title": "Im offiziellen Pool minen",
+        "body": "Mine im offiziellen RandomX-PPLNS-Pool mit deiner QWC-Auszahlungsadresse. Eine Pool-Registrierung ist nicht erforderlich.",
+        "cta": "Mining starten"
+      },
+      {
+        "kind": "serviceNode",
+        "badge": "NODE BETREIBEN",
+        "title": "Service Node betreiben",
+        "body": "Betreibe einen öffentlichen QWC-Node, registriere seine Service-Identität und qualifiziere ihn durch prüfbare EPoSe-Service-Nachweise – ohne QWC-Staking.",
+        "cta": "Betreiberanleitung öffnen"
+      }
+    ]
   },
   "technology": {
     "eyebrow": "Über Qwertycoin",
@@ -142,6 +170,11 @@
         "body": "Nach Abschluss der Qualifikation nehmen berechtigte Service Nodes an der vom Protokoll festgelegten Vergütungsrotation teil."
       }
     ],
+    "actions": {
+      "live": "Service Nodes live ansehen",
+      "guide": "Service Node betreiben",
+      "docs": "EPoSe-Dokumentation lesen"
+    },
     "originEyebrow": "EPoSe-Ursprung",
     "originTitle": "Danke, Xecute.",
     "originBody": "Xecute entwickelte die ursprüngliche EPoSe-Vision und wirkte am Whitepaper zur Qwertycoin-Service-Schicht mit. Diese Arbeit legte den Grundstein für die Vergütung nützlicher Netzwerkdienste.",
@@ -350,7 +383,26 @@
         "title": "Mining und Netzwerkdienste",
         "body": "Mining sichert die Blockproduktion. EPoSe vergütet zusätzlich registrierte Nodes für nachgewiesene Netzwerkdienste."
       }
-    ]
+    ],
+    "poolEyebrow": "Offizieller Qwertycoin-Pool",
+    "poolTitle": "In wenigen Minuten mit dem Mining beginnen.",
+    "poolBody": "Der offizielle Pool bietet transparente {poolAccounting}-Abrechnung, Live-Statistiken und automatische Auszahlungen. Deine QWC-Auszahlungsadresse ist dein Poolkonto; der Pool fragt niemals nach Wallet-Schlüsseln.",
+    "poolFacts": [
+      "Algorithmus: {poolAlgorithm}",
+      "Keine Registrierung: Nutze deine QWC-Auszahlungsadresse",
+      "Live-Statistiken für Hashrate, Worker, Blöcke und Zahlungen",
+      "Jedes Auszahlungskonto trägt die tatsächliche Netzwerkgebühr seiner eigenen Auszahlung"
+    ],
+    "poolCta": "Offiziellen Pool öffnen",
+    "setupCta": "XMRig-Befehl erstellen",
+    "docsCta": "Pool-Mining-Anleitung lesen",
+    "allocationTitle": "Zwei getrennte Vergütungsebenen",
+    "protocolLabel": "QWC-Protokoll",
+    "protocolSplit": "90 % Mining / 10 % EPoSe",
+    "protocolBody": "Die Blocksubvention wird zu {miningRewardPercent} % auf Mining und zu {rewardPercent} % auf EPoSe-Servicevergütungen aufgeteilt. Transaktionsgebühren verbleiben beim Miner.",
+    "poolLabel": "Offizieller Pool",
+    "poolSplit": "95 % Miner / 5 % Pool",
+    "poolAllocationBody": "Von den über den offiziellen Pool verteilten Mining-Erträgen finanzieren {poolFeePercent} % die Qwertycoin-Entwicklung und den Poolbetrieb; exakt {poolMinerPercent} % werden vor der Auszahlungs-Transaktionsgebühr des jeweiligen Kontos den teilnehmenden Minern zugeordnet."
   },
   "exchanges": {
     "eyebrow": "BÖRSEN",
@@ -761,6 +813,8 @@
   "footer": {
     "body": "Qwertycoin verbindet private Zahlungen, RandomX-Mining, EPoSe-Servicevergütungen, die Web Wallet und öffentlichen Quellcode.",
     "technology": "Technologie",
+    "pool": "Offizieller Pool",
+    "documentation": "Dokumentation",
     "history": "Historie",
     "roadmap": "Roadmap"
   },

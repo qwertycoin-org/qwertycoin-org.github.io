@@ -30,7 +30,7 @@
     "getQwc": "Get QWC",
     "github": "Contribute on GitHub",
     "wallet": "Open Web Wallet",
-    "mining": "How QWC works",
+    "mining": "Choose your path",
     "visualAlt": "Large golden Qwertycoin Q emblem with abstract network layers",
     "pulseLabel": "QWC MAINNET LIVE",
     "pulseBody": "Current blockchain and EPoSe data. Available values stay visible when some statistics are unavailable."
@@ -79,6 +79,34 @@
     "infrastructureLabel": "Service rewards",
     "infrastructureTitle": "EPoSe",
     "infrastructureBody": "Service Nodes earn eligibility for network-service rewards through valid attestations."
+  },
+  "participate": {
+    "eyebrow": "Start here",
+    "title": "Choose how you want to participate.",
+    "body": "Use QWC, contribute computing power or operate public network infrastructure. Each path has a current, official starting point.",
+    "paths": [
+      {
+        "kind": "wallet",
+        "badge": "USE QWC",
+        "title": "Open a wallet",
+        "body": "Create or restore a QWC wallet in your browser, then send and receive private payments.",
+        "cta": "Open Web Wallet"
+      },
+      {
+        "kind": "pool",
+        "badge": "MINE QWC",
+        "title": "Mine on the official pool",
+        "body": "Join the official RandomX PPLNS pool with your QWC payout address. No pool account registration is required.",
+        "cta": "Start mining"
+      },
+      {
+        "kind": "serviceNode",
+        "badge": "RUN A NODE",
+        "title": "Operate a Service Node",
+        "body": "Run a public QWC node, register its service identity and qualify through verifiable EPoSe service proofs—without staking QWC.",
+        "cta": "Open operator guide"
+      }
+    ]
   },
   "technology": {
     "eyebrow": "About Qwertycoin",
@@ -142,6 +170,11 @@
         "body": "After qualification is finalized, eligible Service Nodes enter the protocol's deterministic reward rotation."
       }
     ],
+    "actions": {
+      "live": "View live Service Nodes",
+      "guide": "Run a Service Node",
+      "docs": "Read the EPoSe documentation"
+    },
     "originEyebrow": "EPoSe origin",
     "originTitle": "Thank you, Xecute.",
     "originBody": "Xecute developed the original EPoSe vision and contributed the Qwertycoin service-layer whitepaper. That work laid the foundation for rewarding useful network services.",
@@ -350,7 +383,26 @@
         "title": "Mining and network services",
         "body": "Mining secures block production. EPoSe separately rewards registered nodes for proven network services."
       }
-    ]
+    ],
+    "poolEyebrow": "Official Qwertycoin pool",
+    "poolTitle": "Start mining in minutes.",
+    "poolBody": "The official pool provides transparent {poolAccounting} accounting, live statistics and automatic payouts. Your QWC payout address is your pool account; the pool never asks for wallet keys.",
+    "poolFacts": [
+      "Algorithm: {poolAlgorithm}",
+      "No registration: use your QWC payout address",
+      "Live hashrate, worker, block and payment statistics",
+      "Each payout account pays the actual network fee for its own payout"
+    ],
+    "poolCta": "Open official pool",
+    "setupCta": "Create XMRig command",
+    "docsCta": "Read the pool-mining guide",
+    "allocationTitle": "Two separate reward layers",
+    "protocolLabel": "QWC protocol",
+    "protocolSplit": "90% mining / 10% EPoSe",
+    "protocolBody": "The block subsidy is split {miningRewardPercent}% to mining and {rewardPercent}% to EPoSe service rewards. Transaction fees remain with the miner.",
+    "poolLabel": "Official pool",
+    "poolSplit": "95% miners / 5% pool",
+    "poolAllocationBody": "From the mining rewards distributed through the official pool, {poolFeePercent}% funds Qwertycoin development and pool operations; exactly {poolMinerPercent}% is allocated to participating miners before each account's payout transaction fee."
   },
   "exchanges": {
     "eyebrow": "EXCHANGES",
@@ -761,6 +813,8 @@
   "footer": {
     "body": "Qwertycoin combines private payments, RandomX mining, EPoSe service rewards, the Web Wallet and public source code.",
     "technology": "Technology",
+    "pool": "Official pool",
+    "documentation": "Documentation",
     "history": "History",
     "roadmap": "Roadmap"
   },

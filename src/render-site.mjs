@@ -6,13 +6,18 @@ import exchanges from "./config/exchanges.json" with { type: "json" };
 
 const dictionaries = { en, de };
 
-const eposeParams = {
+const siteParams = {
   blocks: network.epose.epochLengthBlocks,
   seconds: network.epose.blockTargetSeconds,
   hours: Math.round(network.epose.epochLengthBlocks * network.epose.blockTargetSeconds / 3600),
   committee: network.epose.verifierCommitteeSize,
   fullCommitteeAttestations: Math.ceil(network.epose.verifierCommitteeSize * network.epose.attestationQuorumNumerator / network.epose.attestationQuorumDenominator),
-  rewardPercent: network.epose.serviceRewardBps / 100
+  rewardPercent: network.epose.serviceRewardBps / 100,
+  miningRewardPercent: 100 - (network.epose.serviceRewardBps / 100),
+  poolFeePercent: network.pool.feeBps / 100,
+  poolMinerPercent: 100 - (network.pool.feeBps / 100),
+  poolAlgorithm: network.pool.algorithm,
+  poolAccounting: network.pool.accounting
 };
 
 function escapeHtml(value) {
@@ -23,7 +28,7 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;");
 }
 
-function interpolate(value, params = eposeParams) {
+function interpolate(value, params = siteParams) {
   return String(value).replace(/\{([a-zA-Z0-9_]+)\}/g, (_, key) => params[key] ?? `{${key}}`);
 }
 
@@ -187,6 +192,29 @@ function exchangeCard(exchange, labels) {
             </article>`;
 }
 
+const participationTargets = {
+  wallet: network.walletUrl,
+  pool: network.pool.startUrl,
+  serviceNode: network.serviceNodeGuideUrl
+};
+
+function participationCard(card, index) {
+  const href = participationTargets[card.kind];
+  if (!href) throw new Error(`Unknown participation path: ${card.kind}`);
+
+  return `<article class="path-card">
+              <span class="path-index" aria-hidden="true">${String(index + 1).padStart(2, "0")}</span>
+              <span class="badge">${text(card.badge)}</span>
+              <h3>${text(card.title)}</h3>
+              <p>${text(card.body)}</p>
+              <a class="button secondary" href="${text(href)}" target="_blank" rel="noopener noreferrer">${text(card.cta)}</a>
+            </article>`;
+}
+
+function resourceButton(label, href, variant = "secondary") {
+  return `<a class="button ${variant}" href="${text(href)}" target="_blank" rel="noopener noreferrer">${text(label)}</a>`;
+}
+
 function faqSchema(t, locale) {
   return {
     "@context": "https://schema.org",
@@ -333,7 +361,7 @@ export function renderPage(localeCode, assets = defaultAssets) {
             <div class="actions hero-actions">
               <a class="button primary" href="${network.walletUrl}">${text(t.hero.wallet)}</a>
               <a class="button secondary" href="#exchanges">${text(t.hero.getQwc)}</a>
-              <a class="text-link" href="#technology">${text(t.hero.mining)}</a>
+              <a class="text-link" href="#participate">${text(t.hero.mining)}</a>
             </div>
           </div>
           <div class="hero-system q-motif-stage">
@@ -368,6 +396,15 @@ export function renderPage(localeCode, assets = defaultAssets) {
         </div></div>
       </section>
 
+      <section class="section alt participation-section" id="participate">
+        <div class="section-inner">
+          ${sectionHeader(t.participate.eyebrow, t.participate.title, t.participate.body)}
+          <div class="path-grid">
+            ${t.participate.paths.map(participationCard).join("\n")}
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="technology">
         <div class="section-inner">
           ${sectionHeader(t.technology.eyebrow, t.technology.title, t.technology.body)}
@@ -400,6 +437,11 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
           <div class="epose-compact" aria-label="EPoSe flow">
             ${t.epose.compactCards.map((card, index) => `<article class="epose-summary-card"><span>${String(index + 1).padStart(2, "0")}</span><h3>${text(card.title)}</h3><p>${text(card.body)}</p></article>`).join("\n")}
           </div>
+          <div class="actions epose-actions">
+            ${resourceButton(t.epose.actions.live, network.serviceNodesUrl, "primary")}
+            ${resourceButton(t.epose.actions.guide, network.serviceNodeGuideUrl)}
+            ${resourceButton(t.epose.actions.docs, network.eposeOverviewUrl)}
+          </div>
           <div class="epose-note-row">
             <div class="tribute"><p class="eyebrow">${text(t.epose.originEyebrow)}</p><h3>${text(t.epose.originTitle)}</h3><p>${text(t.epose.originBody)}</p></div>
             <div class="reward-rules-note">
@@ -420,7 +462,36 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
         <div class="comparison-stack" aria-label="${text(t.serviceNodes.comparisonLabel)}">${t.serviceNodes.rows.map((row) => `<article class="comparison-pair"><div><h3>${text(t.serviceNodes.normal)}</h3><p>${text(row[0])}</p></div><div><h3>${text(t.serviceNodes.service)}</h3><p>${text(row[1])}</p></div></article>`).join("")}</div>
       </div></section>
 
-      <section class="section" id="mining"><div class="section-inner">${sectionHeader(t.mining.eyebrow, t.mining.title, t.mining.body)}<div class="grid two">${t.mining.cards.map((card) => `<article class="card"><h3>${text(card.title)}</h3><p>${text(card.body)}</p></article>`).join("")}</div></div></section>
+      <section class="section mining-section" id="mining"><div class="section-inner">
+        ${sectionHeader(t.mining.eyebrow, t.mining.title, t.mining.body)}
+        <div class="grid two mining-principles">${t.mining.cards.map((card) => `<article class="card"><h3>${text(card.title)}</h3><p>${text(card.body)}</p></article>`).join("")}</div>
+        <div class="pool-panel">
+          <div class="pool-panel-copy">
+            <p class="eyebrow">${text(t.mining.poolEyebrow)}</p>
+            <h3>${text(t.mining.poolTitle)}</h3>
+            <p>${text(t.mining.poolBody)}</p>
+            <ul class="pool-facts">${t.mining.poolFacts.map((fact) => `<li>${text(fact)}</li>`).join("")}</ul>
+            <div class="actions pool-actions">
+              ${resourceButton(t.mining.poolCta, network.pool.url, "primary")}
+              ${resourceButton(t.mining.setupCta, network.pool.startUrl)}
+              ${resourceButton(t.mining.docsCta, network.poolMiningGuideUrl)}
+            </div>
+          </div>
+          <div class="allocation-panel">
+            <h3>${text(t.mining.allocationTitle)}</h3>
+            <article class="allocation-card">
+              <span>${text(t.mining.protocolLabel)}</span>
+              <strong>${text(t.mining.protocolSplit)}</strong>
+              <p>${text(t.mining.protocolBody)}</p>
+            </article>
+            <article class="allocation-card">
+              <span>${text(t.mining.poolLabel)}</span>
+              <strong>${text(t.mining.poolSplit)}</strong>
+              <p>${text(t.mining.poolAllocationBody)}</p>
+            </article>
+          </div>
+        </div>
+      </div></section>
 
       <section class="section exchange-section" id="exchanges"><div class="section-inner exchange-layout">
         <div class="section-header exchange-intro">
@@ -454,7 +525,7 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
       <section class="section" id="community"><div class="section-inner">${sectionHeader(t.community.eyebrow, t.community.title, t.community.body)}<div class="grid three"><article class="card"><h3>GitHub</h3><p><a href="${network.githubUrl}">${text(t.community.github)}</a></p></article><article class="card"><h3>Explorer</h3><p><a href="${network.explorerUrl}">${text(t.community.explorer)}</a></p></article><article class="card"><h3>X / Twitter</h3><p><a href="https://x.com/Qwertycoin_QWC">@Qwertycoin_QWC</a></p></article></div></div></section>
     </main>
 
-    <footer class="site-footer"><div class="footer-inner"><div>${brand(locale)}</div><div class="footer-links"><a href="#technology">${text(t.footer.technology)}</a><a href="#history">${text(t.footer.history)}</a><a href="#roadmap">${text(t.footer.roadmap)}</a></div></div></footer>
+    <footer class="site-footer"><div class="footer-inner"><div>${brand(locale)}</div><div class="footer-links"><a href="#technology">${text(t.footer.technology)}</a><a href="${network.pool.url}" target="_blank" rel="noopener noreferrer">${text(t.footer.pool)}</a><a href="${network.docsUrl}" target="_blank" rel="noopener noreferrer">${text(t.footer.documentation)}</a><a href="#history">${text(t.footer.history)}</a><a href="#roadmap">${text(t.footer.roadmap)}</a></div></div></footer>
     <script src="${assets.networkStatusJs}" defer></script>
     <script src="${assets.navMenuJs}" defer></script>
   </body>
