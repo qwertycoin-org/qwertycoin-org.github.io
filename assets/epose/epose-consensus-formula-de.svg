@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1398" viewBox="0 0 1680 1398" role="img" aria-labelledby="title description">
+  <title id="title">EPoSE: Quorum, Qualifikation, Empfängerauswahl und Belohnung</title>
+  <desc id="description">Vier Formeln erklären das Prüfquorum, die Qualifikation von Service Nodes, die feste Empfängerauswahl und den EPoSE-Anteil an der Blocksubvention. Darunter werden die verwendeten Symbole erläutert.</desc>
+  <style>
+    .heading { font: 900 54px/1.1 Arial, Helvetica, sans-serif; letter-spacing: .5px; fill: #fffaf0; }
+    .brand { font: 700 22px/1 Arial, Helvetica, sans-serif; letter-spacing: 1.4px; fill: #ffb000; }
+    .subtitle { font: 400 25px/1.3 Arial, Helvetica, sans-serif; fill: #c9c5bc; }
+    .step { font: 900 24px/1 Arial, Helvetica, sans-serif; fill: #141414; }
+    .label { font: 800 25px/1 Arial, Helvetica, sans-serif; letter-spacing: .6px; fill: #ffb000; }
+    .formula { font: 400 41px/1.2 Georgia, "Times New Roman", serif; fill: #fffaf0; }
+    .explain { font: 400 21px/1.3 Arial, Helvetica, sans-serif; fill: #c9c5bc; }
+    .notation-title { font: 800 23px/1 Arial, Helvetica, sans-serif; letter-spacing: .8px; fill: #ffb000; }
+    .notation-symbol { font: italic 400 24px/1 Georgia, "Times New Roman", serif; fill: #fffaf0; }
+    .notation-text { font: 400 20px/1.3 Arial, Helvetica, sans-serif; fill: #c9c5bc; }
+    .footer-label { font: 700 17px/1 Arial, Helvetica, sans-serif; letter-spacing: .5px; fill: #ffb000; }
+    .footer-value { font: 400 17px/1 Arial, Helvetica, sans-serif; fill: #c9c5bc; }
+  </style>
+  <rect width="1680" height="1398" fill="#141414"/>
+  <rect x="24" y="24" width="1632" height="1350" fill="none" stroke="#584520" stroke-width="2"/>
+
+  <rect x="64" y="58" width="7" height="27" fill="#ffb000"/>
+  <text x="88" y="80" class="brand">QWERTYCOIN / EPoSE</text>
+  <text x="64" y="151" class="heading">BELOHNUNGEN FOLGEN FESTEN REGELN.</text>
+  <text x="64" y="193" class="subtitle">Quorum · Qualifikation · Empfängerauswahl · Belohnung</text>
+  <line x1="64" y1="216" x2="1616" y2="216" stroke="#ffb000" stroke-width="2"/>
+
+  <g aria-label="Prüfquorum">
+    <rect x="70" y="244" width="1552" height="182" fill="#080808"/>
+    <rect x="64" y="238" width="1552" height="182" fill="#212121" stroke="#37332a" stroke-width="2"/>
+    <rect x="84" y="258" width="44" height="42" fill="#ffb000"/>
+    <text x="94" y="288" class="step">01</text>
+    <text x="152" y="287" class="label">PRÜFQUORUM</text>
+    <text x="152" y="354" class="formula">q<tspan baseline-shift="sub" font-size="25">E</tspan> = ⌈2 · min(9, N<tspan baseline-shift="sub" font-size="25">E</tspan> − 1) / 3⌉</text>
+    <text x="930" y="354" class="formula">a<tspan baseline-shift="sub" font-size="25">s,r</tspan> = |A<tspan baseline-shift="sub" font-size="25">s,r</tspan> ∩ C<tspan baseline-shift="sub" font-size="25">s,r</tspan>|</text>
+    <text x="152" y="397" class="explain">Zwei-Drittel-Quorum, aufgerundet. Es zählen nur Bestätigungen des ausgewählten Prüfkomitees.</text>
+  </g>
+
+  <g aria-label="Qualifikation von Service Nodes">
+    <rect x="70" y="444" width="1552" height="210" fill="#080808"/>
+    <rect x="64" y="438" width="1552" height="210" fill="#212121" stroke="#37332a" stroke-width="2"/>
+    <rect x="84" y="458" width="44" height="42" fill="#ffb000"/>
+    <text x="94" y="488" class="step">02</text>
+    <text x="152" y="487" class="label">QUALIFIKATION DES SERVICE NODES</text>
+    <text x="152" y="560" class="formula">s ∈ Q<tspan baseline-shift="sub" font-size="25">E</tspan> ⇔ ∑<tspan baseline-shift="sub" font-size="23">r=0</tspan><tspan baseline-shift="super" font-size="23">2</tspan> 1[a<tspan baseline-shift="sub" font-size="25">s,r</tspan> ≥ q<tspan baseline-shift="sub" font-size="25">E</tspan>] ≥ 2</text>
+    <text x="152" y="617" class="explain">Ein Service Node ist qualifiziert, wenn in mindestens zwei der drei Runden das Quorum erreicht wird.</text>
+  </g>
+
+  <g aria-label="Empfängerauswahl">
+    <rect x="70" y="672" width="1552" height="182" fill="#080808"/>
+    <rect x="64" y="666" width="1552" height="182" fill="#212121" stroke="#37332a" stroke-width="2"/>
+    <rect x="84" y="686" width="44" height="42" fill="#ffb000"/>
+    <text x="94" y="716" class="step">03</text>
+    <text x="152" y="715" class="label">EMPFÄNGERAUSWAHL</text>
+    <text x="152" y="781" class="formula">π<tspan baseline-shift="sub" font-size="25">E+1</tspan>(h) = Rang<tspan baseline-shift="sub" font-size="25">H</tspan>(Q<tspan baseline-shift="sub" font-size="25">E</tspan>)[(h − Start(E+1)) mod |Q<tspan baseline-shift="sub" font-size="25">E</tspan>|]</text>
+    <text x="152" y="824" class="explain">Die nach Hash sortierte Liste bestimmt den Empfänger jedes Blocks der folgenden Epoche.</text>
+  </g>
+
+  <g aria-label="Belohnung für Netzwerkdienste">
+    <rect x="70" y="872" width="1552" height="182" fill="#080808"/>
+    <rect x="64" y="866" width="1552" height="182" fill="#212121" stroke="#37332a" stroke-width="2"/>
+    <rect x="84" y="886" width="44" height="42" fill="#ffb000"/>
+    <text x="94" y="916" class="step">04</text>
+    <text x="152" y="915" class="label">BELOHNUNG FÜR NETZWERKDIENSTE</text>
+    <text x="152" y="982" class="formula">R<tspan baseline-shift="sub" font-size="25">EPoSE</tspan>(h) = ⌊Blocksubvention(h) · 1000 / 10000⌋</text>
+    <text x="1450" y="982" text-anchor="end" class="heading" fill="#ffb000">10 %</text>
+    <text x="1450" y="1014" text-anchor="end" class="footer-label">DER BLOCKSUBVENTION</text>
+    <text x="152" y="1025" class="explain">Der EPoSE-Anteil wird abgerundet. Die Transaktionsgebühren erhält der Miner.</text>
+  </g>
+
+  <line x1="64" y1="1084" x2="1616" y2="1084" stroke="#584520"/>
+  <text x="64" y="1125" class="notation-title">ZEICHENERKLÄRUNG</text>
+  <text x="64" y="1173" class="notation-symbol">N<tspan baseline-shift="sub" font-size="16">E</tspan></text>
+  <text x="145" y="1173" class="notation-text">Festgeschriebene Zahl der Mitglieder in Epoche E</text>
+  <text x="850" y="1173" class="notation-symbol">C<tspan baseline-shift="sub" font-size="16">s,r</tspan></text>
+  <text x="950" y="1173" class="notation-text">Prüfkomitee ohne den geprüften Node s</text>
+  <text x="64" y="1221" class="notation-symbol">A<tspan baseline-shift="sub" font-size="16">s,r</tspan></text>
+  <text x="145" y="1221" class="notation-text">Eindeutige, gültige und signierte Bestätigungen</text>
+  <text x="850" y="1221" class="notation-symbol">Q<tspan baseline-shift="sub" font-size="16">E</tspan></text>
+  <text x="950" y="1221" class="notation-text">Qualifizierte Service Nodes in Epoche E</text>
+  <text x="64" y="1269" class="notation-symbol">H</text>
+  <text x="145" y="1269" class="notation-text">Domänengetrennter Konsens-Hash</text>
+  <text x="850" y="1269" class="notation-symbol">1[·]</text>
+  <text x="950" y="1269" class="notation-text">1 bei erfüllter Bedingung, sonst 0</text>
+
+  <line x1="64" y1="1303" x2="1616" y2="1303" stroke="#584520"/>
+  <text x="64" y="1341" class="footer-label">GÜLTIGKEIT</text>
+  <text x="184" y="1341" class="footer-value">N<tspan baseline-shift="sub" font-size="12">E</tspan> ≥ 1</text>
+  <text x="405" y="1341" class="footer-label">AUSWAHL</text>
+  <text x="518" y="1341" class="footer-value">|Q<tspan baseline-shift="sub" font-size="12">E</tspan>| &gt; 0</text>
+  <text x="760" y="1341" class="footer-label">LISTENINDEX</text>
+  <text x="900" y="1341" class="footer-value">Beginnt bei 0</text>
+  <text x="1570" y="1341" text-anchor="end" class="footer-label">EPoSE</text>
+</svg>

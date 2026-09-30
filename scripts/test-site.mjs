@@ -15,6 +15,8 @@ const middleware = await readFile(path.join(root, "functions", "_middleware.js")
 const sitemap = await readFile(path.join(dist, "sitemap.xml"), "utf8");
 const llms = await readFile(path.join(dist, "llms.txt"), "utf8");
 const eposeFormula = await readFile(path.join(root, "assets", "epose", "epose-consensus-formula.svg"), "utf8");
+const germanEposeFormula = await readFile(path.join(root, "assets", "epose", "epose-consensus-formula-de.svg"), "utf8");
+const germanHeroMotif = await readFile(path.join(root, "assets", "qwc-hero-motif-de.svg"), "utf8");
 const networkConfig = JSON.parse(await readFile(path.join(root, "src", "config", "network.json"), "utf8"));
 const englishSource = await readFile(path.join(root, "src", "i18n", "en.json"), "utf8");
 const germanSource = await readFile(path.join(root, "src", "i18n", "de.json"), "utf8");
@@ -65,29 +67,31 @@ const requiredEnglish = [
 for (const text of requiredEnglish) assertIncludes(index, text);
 
 const requiredGerman = [
-  "Private Zahlungen. Offenes Netzwerk.",
-  "Qwertycoin (QWC) ist eine Kryptowährung für private Zahlungen mit offenem RandomX-Mining und EPoSe-Vergütungen für nachgewiesene Netzwerkdienste.",
+  "Privat bezahlen. Offen vernetzt.",
+  "Qwertycoin (QWC) verbindet vertrauliche digitale Zahlungen mit offenem RandomX-Mining und Belohnungen für nachgewiesene Netzwerkdienste.",
   "Web Wallet öffnen",
   "QWC kaufen",
-  "Finde eine Börse, auf der Qwertycoin gelistet ist.",
-  "QWC HANDELN",
-  "QWC MAINNET LIVE",
-  "Privatsphäre. Mit QWC.",
-  "Vergütung für nachgewiesene Dienste",
+  "Hier kannst du Qwertycoin über eine gelistete Börse beziehen.",
+  "QWC handeln",
+  "QWC-MAINNET AKTIV",
+  "Privat bezahlen mit QWC.",
+  "Belohnungen für nachgewiesene Dienste",
   "Web Wallet und offener Quellcode",
-  "Netzwerkdienste leisten. QWC verdienen.",
-  "Das Protokoll regelt die Vergütung.",
-  "Transaktionsgebühren verbleiben beim Miner.",
+  "Dienste bereitstellen. QWC verdienen.",
+  "Belohnungen folgen festen Regeln.",
+  "Die Transaktionsgebühren erhält der Miner.",
   "Wallets und Quellcode",
-  "Netzwerkaktivität",
+  "Das Netzwerk im Blick",
   "Registrierte Service Nodes",
   "Qualifizierte Service Nodes",
-  "Ersetzt EPoSe das Mining?",
+  "Ersetzt EPoSE das Mining?",
   "2019–2023",
-  "Entwickle mit Qwertycoin."
+  "Entwickle Qwertycoin mit uns weiter."
 ];
 
 for (const text of requiredGerman) assertIncludes(germanIndex, text);
+assertIncludes(germanIndex, "/assets/epose/epose-consensus-formula-de.svg", "German EPoSE diagram");
+assertIncludes(germanIndex, "/assets/qwc-hero-motif-de.svg", "German hero motif");
 
 const exchangeUrl = "https://neoxa.exchange/trade/QWC_USDT";
 const exchangeContract = [
@@ -97,7 +101,7 @@ const exchangeContract = [
   ['<a class="button secondary" href="#exchanges">QWC kaufen</a>', germanIndex, "German hero exchange link"],
   ['<section class="section exchange-section" id="exchanges">', index, "exchange section anchor"],
   ['<h2>GET QWC.</h2>', index, "English exchange heading"],
-  ['<h2>QWC KAUFEN.</h2>', germanIndex, "German exchange heading"],
+  ['<h2>QWC kaufen.</h2>', germanIndex, "German exchange heading"],
   ['<h3>Neoxa Exchange</h3>', index, "semantic exchange card heading"],
   [`href="${exchangeUrl}" target="_blank" rel="noopener noreferrer"`, index, "safe direct exchange link"],
   ['aria-label="Trade QWC on Neoxa Exchange, opens a new tab"', index, "English accessible exchange link name"],
@@ -111,7 +115,7 @@ const participationContract = [
   ['<a class="text-link" href="#participate">Einstieg wählen</a>', germanIndex, "German hero participation link"],
   ['<section class="section alt participation-section" id="participate">', index, "participation section anchor"],
   ['Choose how you want to participate.', index, "English participation heading"],
-  ['Wähle deinen Weg ins Netzwerk.', germanIndex, "German participation heading"],
+  ['So kannst du mitmachen.', germanIndex, "German participation heading"],
   ['href="https://wallet.qwertycoin.org/" target="_blank" rel="noopener noreferrer">Open Web Wallet', index, "safe wallet path"],
   ['href="https://pool.qwertycoin.org/#start" target="_blank" rel="noopener noreferrer">Start mining', index, "safe official pool path"],
   ['href="https://docs.qwertycoin.org/epose/service-node-quickstart" target="_blank" rel="noopener noreferrer">Open operator guide', index, "safe service-node path"],
@@ -135,7 +139,7 @@ const miningContract = [
   ['href="https://docs.qwertycoin.org/mining-and-ecosystem/pool-mining" target="_blank" rel="noopener noreferrer">Read the pool-mining guide', index, "pool mining docs CTA"],
   ["90% mining / 10% EPoSe", index, "English protocol split"],
   ["95% miners / 5% pool", index, "English pool split"],
-  ["90 % Mining / 10 % EPoSe", germanIndex, "German protocol split"],
+  ["90 % Mining / 10 % EPoSE", germanIndex, "German protocol split"],
   ["95 % Miner / 5 % Pool", germanIndex, "German pool split"],
   ["Transaction fees remain with the miner.", index, "protocol transaction-fee rule"],
   ["exakt 95 %", germanIndex, "exact German pool allocation"]
@@ -216,6 +220,24 @@ const unsafeClaims = [
 for (const text of unsafeClaims) {
   if (index.toLowerCase().includes(text.toLowerCase())) {
     throw new Error(`Forbidden legacy/unsafe claim found: ${text}`);
+  }
+}
+
+const forbiddenLiteralGerman = [
+  "Private Zahlungen. Offenes Netzwerk.",
+  "Privatsphäre. Mit QWC.",
+  "Wähle deinen Weg ins Netzwerk.",
+  "Netzwerkdienste leisten. QWC verdienen.",
+  "Das Protokoll regelt die Vergütung.",
+  "Vergütungsquellepoche",
+  "Epochen sind Blockbereiche, keine Uhrzeit-Termine.",
+  "Service wird zuerst gemessen. Rewards folgen danach.",
+  "Entwickle mit Qwertycoin."
+];
+
+for (const text of forbiddenLiteralGerman) {
+  if (germanIndex.includes(text) || germanSource.includes(text)) {
+    throw new Error(`Literal German translation returned: ${text}`);
   }
 }
 
@@ -333,7 +355,7 @@ if (!/\.epose-formula-art\s*\{[^}]*width:\s*min\(100%,\s*960px\)/.test(css)
 }
 
 for (const html of [index, germanIndex]) {
-  if (/<a\b[^>]*href="\/assets\/epose\/epose-consensus-formula\.svg"/.test(html)) {
+  if (/<a\b[^>]*href="\/assets\/epose\/epose-consensus-formula(?:-de)?\.svg"/.test(html)) {
     throw new Error("EPoSe consensus artwork must not link to the source SVG");
   }
 }
@@ -347,6 +369,20 @@ for (const removedText of ["Open formula at full size", "Formel in voller Größ
 if (!eposeFormula.includes('viewBox="0 0 1680 1398"')
     || /<script\b|<foreignObject\b|\son[a-z]+\s*=|xlink:href="(?!#)/i.test(eposeFormula)) {
   throw new Error("EPoSe consensus artwork is malformed or contains active/external content");
+}
+
+if (!germanEposeFormula.includes('viewBox="0 0 1680 1398"')
+    || !germanEposeFormula.includes("BELOHNUNGEN FOLGEN FESTEN REGELN.")
+    || !germanEposeFormula.includes("EMPFÄNGERAUSWAHL")
+    || /<script\b|<foreignObject\b|\son[a-z]+\s*=|xlink:href="(?!#)/i.test(germanEposeFormula)) {
+  throw new Error("German EPoSE consensus artwork is malformed, untranslated or contains active/external content");
+}
+
+if (!germanHeroMotif.includes('viewBox="0 0 1254 1254"')
+    || !germanHeroMotif.includes("PRÜFKNOTEN")
+    || !germanHeroMotif.includes("KNOTEN")
+    || /<script\b|<foreignObject\b|\son[a-z]+\s*=|xlink:href="(?!#)/i.test(germanHeroMotif)) {
+  throw new Error("German hero motif is malformed, untranslated or contains active/external content");
 }
 
 if (!/id="releases"[\s\S]*Desktop wallets[\s\S]*Core command-line tools[\s\S]*Docker image[\s\S]*Web Wallet[\s\S]*QWC source code/.test(index)) {
@@ -431,9 +467,9 @@ assertIncludes(index, '<a class="release-link" href="https://github.com/qwertyco
 assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.2" target="_blank" rel="noopener">Core-Release-Hinweise</a>', "German Docker Core release notes button without prefix");
 
 assertIncludes(index, "Preferred download", "English preferred DMG label");
-assertIncludes(germanIndex, "Bevorzugter Download", "German preferred DMG label");
+assertIncludes(germanIndex, "Empfohlener Download", "German preferred DMG label");
 assertIncludes(index, "Preferred installer", "English preferred Windows installer label");
-assertIncludes(germanIndex, "Bevorzugter Installer", "German preferred Windows installer label");
+assertIncludes(germanIndex, "Empfohlene Installation", "German preferred Windows installer label");
 
 if (!/\.release-download-grid\s*\{[^}]*grid-template-columns:\s*repeat\(3,\s*minmax\(0,\s*1fr\)\)/.test(css)) {
   throw new Error("Default desktop release downloads must retain the three-column layout");
@@ -563,9 +599,9 @@ for (const text of [
 
 for (const text of [
   "ceil(2/3 of actual committee)",
-  "ceil(2/3 des tatsächlichen Komitees)",
+  "Aufgerundet 2/3 der tatsächlichen Komiteegröße",
   "6 of 9 when full",
-  "6 von 9 bei voller Größe"
+  "bei voller Größe 6 von 9"
 ]) {
   if (!index.includes(text) && !germanIndex.includes(text)) {
     throw new Error(`Missing current EPoSe quorum wording: ${text}`);
@@ -671,8 +707,12 @@ for (const text of [
 
 await stat(path.join(root, "assets", "qwertycoin-mark.svg"));
 await stat(path.join(root, "assets", "epose", "epose-consensus-formula.svg"));
+await stat(path.join(root, "assets", "epose", "epose-consensus-formula-de.svg"));
 await stat(path.join(dist, "assets", "epose", "epose-consensus-formula.svg"));
+await stat(path.join(dist, "assets", "epose", "epose-consensus-formula-de.svg"));
 await stat(path.join(root, "assets", "qwc-hero-motif.svg"));
+await stat(path.join(root, "assets", "qwc-hero-motif-de.svg"));
+await stat(path.join(dist, "assets", "qwc-hero-motif-de.svg"));
 await stat(path.join(root, "assets", "apple-touch-icon.png"));
 await stat(path.join(root, "assets", "favicon-32x32.png"));
 await stat(path.join(root, "assets", "fonts", "LICENSES.md"));

@@ -272,6 +272,12 @@ const defaultAssets = {
 export function renderPage(localeCode, assets = defaultAssets) {
   const locale = locales.find((item) => item.code === localeCode);
   const t = dictionaries[localeCode] || dictionaries.en;
+  const eposeFormulaAsset = localeCode === "de"
+    ? "/assets/epose/epose-consensus-formula-de.svg"
+    : "/assets/epose/epose-consensus-formula.svg";
+  const heroMotifAsset = localeCode === "de"
+    ? "/assets/qwc-hero-motif-de.svg"
+    : "/assets/qwc-hero-motif.svg";
   const canonical = absoluteUrl(locale);
   const alternates = locales.map((item) => `<link rel="alternate" hreflang="${item.code}" href="${absoluteUrl(item)}">`).join("\n    ");
   const alternateOgLocales = locales
@@ -365,7 +371,7 @@ export function renderPage(localeCode, assets = defaultAssets) {
             </div>
           </div>
           <div class="hero-system q-motif-stage">
-            <img class="q-motif" src="/assets/qwc-hero-motif.svg" alt="${text(t.hero.visualAlt)}" width="1254" height="1254" fetchpriority="high">
+            <img class="q-motif" src="${heroMotifAsset}" alt="${text(t.hero.visualAlt)}" width="1254" height="1254" fetchpriority="high">
           </div>
         </div>
       </section>
@@ -434,7 +440,7 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
       <section class="section dark" id="epose">
         <div class="section-inner">
           ${sectionHeader(t.epose.eyebrow, t.epose.title, t.epose.body)}
-          <div class="epose-compact" aria-label="EPoSe flow">
+          <div class="epose-compact" aria-label="${text(t.epose.flowLabel)}">
             ${t.epose.compactCards.map((card, index) => `<article class="epose-summary-card"><span>${String(index + 1).padStart(2, "0")}</span><h3>${text(card.title)}</h3><p>${text(card.body)}</p></article>`).join("\n")}
           </div>
           <div class="actions epose-actions">
@@ -450,7 +456,7 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
             </div>
           </div>
           <figure class="epose-formula-art">
-            <img src="/assets/epose/epose-consensus-formula.svg" alt="${text(t.epose.rewardFormulaAlt)}" width="1680" height="1398" loading="lazy" decoding="async">
+            <img src="${eposeFormulaAsset}" alt="${text(t.epose.rewardFormulaAlt)}" width="1680" height="1398" loading="lazy" decoding="async">
             <figcaption>${text(t.epose.rewardFormulaCaption)}</figcaption>
           </figure>
         </div>

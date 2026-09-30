@@ -23,6 +23,40 @@ for (const entry of entries) {
   await cp(path.join(root, entry), path.join(dist, entry), { recursive: true });
 }
 
+const heroMotifSource = await readFile(path.join(root, "assets", "qwc-hero-motif.svg"), "utf8");
+const germanHeroMotif = heroMotifSource
+  .replace(
+    "<title id=\"qwc-hero-title\">Qwertycoin — Miners, Verifiers, Nodes</title>",
+    "<title id=\"qwc-hero-title\">Qwertycoin — Miner, Prüfknoten und Knoten</title>"
+  )
+  .replace(
+    /<desc id="qwc-hero-desc">[\s\S]*?<\/desc>/,
+    "<desc id=\"qwc-hero-desc\">Dreidimensionale goldene Qwertycoin-Medaille mit dem ursprünglichen Q-Symbol, Netzwerkbahnen und den Beschriftungen Miner, Prüfknoten und Knoten.</desc>"
+  )
+  .replace('aria-label="MINERS"', 'aria-label="MINER"')
+  .replace('aria-label="VERIFIERS"', 'aria-label="PRÜFKNOTEN"')
+  .replace('aria-label="NODES"', 'aria-label="KNOTEN"')
+  .replace(
+    "</defs>",
+    `<style>
+      #qwc-label-miners > path[fill="#0d0e0d"],
+      #qwc-label-verifiers > path[fill="#0d0e0d"],
+      #qwc-label-nodes > path[fill="#0d0e0d"] { display: none; }
+    </style>
+</defs>`
+  )
+  .replace(
+    "</svg>",
+    `<g id="qwc-labels-de" fill="#0d0e0d" font-family="Arial, Helvetica, sans-serif" font-weight="800" text-anchor="middle">
+  <text x="180" y="357" font-size="40">MINER</text>
+  <text x="1004" y="134" font-size="32">PRÜFKNOTEN</text>
+  <text x="1061" y="1086" font-size="40">KNOTEN</text>
+</g>
+</svg>`
+  );
+await writeFile(path.join(root, "assets", "qwc-hero-motif-de.svg"), germanHeroMotif);
+await writeFile(path.join(dist, "assets", "qwc-hero-motif-de.svg"), germanHeroMotif);
+
 const cssDir = path.join(dist, "css");
 const jsDir = path.join(dist, "js");
 const fontFiles = [

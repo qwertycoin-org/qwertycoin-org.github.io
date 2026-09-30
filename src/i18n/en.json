@@ -153,6 +153,7 @@
   },
   "epose": {
     "eyebrow": "EPoSe",
+    "flowLabel": "EPoSe flow",
     "title": "Prove service. Earn QWC.",
     "body": "EPoSe rewards registered Service Nodes for proven network services. The protocol evaluates valid attestations recorded on the blockchain and determines which nodes qualify for reward rotation.",
     "intro": "QWC divides service time into EPoSe epochs. Service activity produces attestations, qualification is finalized, and only then can deterministic reward rotation use the qualified set.",
