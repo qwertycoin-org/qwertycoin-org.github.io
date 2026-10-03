@@ -418,7 +418,7 @@
   "wallet": {
     "eyebrow": "Wallet",
     "title": "Als Nächstes brauchst du eine Wallet.",
-    "body": "Die Web Wallet, Qwertycoin GUI 2.0.2 und der Quellcode stehen bereit.",
+    "body": "Die Web Wallet, Qwertycoin GUI 2.0.3 und der Quellcode stehen bereit.",
     "cards": [
       {
         "badge": "VERFÜGBAR",
@@ -436,7 +436,7 @@
       {
         "badge": "VERFÜGBAR",
         "title": "Desktop-Wallets",
-        "body": "Qwertycoin GUI 2.0.2 ist für Windows, macOS Apple Silicon und Linux x86_64 verfügbar.",
+        "body": "Qwertycoin GUI 2.0.3 ist für Windows, macOS Apple Silicon und Linux x86_64 verfügbar.",
         "icon": "development.svg"
       }
     ]
@@ -444,10 +444,10 @@
   "releases": {
     "eyebrow": "Wallets",
     "title": "Wallets und Quellcode",
-    "body": "Für das aktuelle QWC-Netzwerk stehen die Web Wallet, Qwertycoin GUI 2.0.2, die Core-Kommandozeilentools, das offizielle Docker-Image und der Quellcode bereit.",
+    "body": "Für das aktuelle QWC-Netzwerk stehen die Web Wallet, Qwertycoin GUI 2.0.3, die Core-Kommandozeilentools, das offizielle Docker-Image und der Quellcode bereit.",
     "cards": [
       {
-        "badge": "VERFÜGBAR · v2.0.2",
+        "badge": "VERFÜGBAR · v2.0.3",
         "badgeClass": "mainnet",
         "title": "Desktop-Wallets",
         "body": "Lade die aktuelle Qwertycoin GUI aus dem offiziellen GitHub-Release herunter. Für Windows empfehlen wir das Setup, für macOS das DMG. Portable ZIP- und TAR.GZ-Pakete stehen zusätzlich bereit. Vergleiche vor der Installation die Prüfsumme.",
@@ -459,16 +459,16 @@
             "label": "Windows x86_64",
             "icon": "WIN",
             "downloadLabel": "Windows-Setup herunterladen",
-            "compatibility": "Windows 10 oder neuer · nicht signiert",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.2/qwertycoin-gui-v2.0.2-windows-x86_64-setup.exe",
-            "sha256": "cc45ebb1766a1dc895a1447c7b20b8da39d1ead826b6b576de36cd03ecc5ccfd",
+            "compatibility": "Auf dem Windows-Server-2025-Runner getestet · nicht signiert; ältere Windows-Versionen wurden nicht geprüft",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64-setup.exe",
+            "sha256": "0477abef98972ef399d70d8b8c23a5a37bae32cf8799b2fef4c60388a19a4193",
             "shaLabel": "Setup-SHA-256",
             "preferredLabel": "Empfohlene Installation",
             "alternatives": [
               {
                 "downloadLabel": "Portable Windows-ZIP herunterladen",
-                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.2/qwertycoin-gui-v2.0.2-windows-x86_64.zip",
-                "sha256": "8364b8b145f65a2b6c5dcbc3c55d1ebf990901fc6c5f3a22e1587db77455df90",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64.zip",
+                "sha256": "56424187c3a665e0ce61102b49e4da236befcc4a29819ee6bf442f9415016b68",
                 "shaLabel": "ZIP-SHA-256"
               }
             ]
@@ -478,15 +478,15 @@
             "icon": "MAC",
             "downloadLabel": "macOS-DMG herunterladen",
             "compatibility": "macOS 15 oder neuer",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.2/qwertycoin-gui-v2.0.2-macos-arm64.dmg",
-            "sha256": "3c4ee1cd5eee782eccef6b8559b9f288d7b628c4f8dcd35ee1e0eeeee23a6330",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.dmg",
+            "sha256": "fe43fde255e9e3896d0132a6c035685098ce45e2d34f08f2d7b646a2a04fc666",
             "shaLabel": "DMG SHA-256",
             "preferredLabel": "Empfohlener Download",
             "alternatives": [
               {
                 "downloadLabel": "macOS-TAR.GZ herunterladen",
-                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.2/qwertycoin-gui-v2.0.2-macos-arm64.tar.gz",
-                "sha256": "c06a74ae3824f19aa470d7cea6b40f64a2e55757b26908be289068b132db2fa4",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.tar.gz",
+                "sha256": "69a52f4e2cc06bbf76aedc2e4eb7db0002a574d33abc22c344058107d448ea9f",
                 "shaLabel": "TAR.GZ SHA-256"
               }
             ]
@@ -496,19 +496,19 @@
             "icon": "LNX",
             "downloadLabel": "Linux-TAR.GZ herunterladen",
             "compatibility": "GLIBC-Kompatibilitätsgrenze 2.35",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.2/qwertycoin-gui-v2.0.2-linux-x86_64.tar.gz",
-            "sha256": "a7db326e7c8d6ff73fa69b1e7cb7150b5e7d60a9f2f772b187fb64543ef4908a"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "155d51555909fecbd04acc3409809ea056903a0cb6e0d20597180b3a4535ff03"
           }
         ],
         "verificationLinks": [
           {
             "label": "SHA256SUMS",
             "icon": "SHA",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.2/SHA256SUMS"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/SHA256SUMS"
           },
           {
             "label": "Release-Hinweise",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.2"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.3"
           },
           {
             "label": "Fehler melden",
@@ -518,7 +518,7 @@
         ]
       },
       {
-        "badge": "VERFÜGBAR · v2.0.2",
+        "badge": "VERFÜGBAR · v2.0.3",
         "badgeClass": "mainnet",
         "title": "Core-Kommandozeilentools",
         "body": "Diese offiziellen Pakete enthalten qwertycoind, qwertycoin-wallet-cli und qwertycoin-wallet-rpc. Vergleiche vor der Verwendung die Prüfsumme; Versionshinweise und Prüfstatus findest du beim jeweiligen GitHub-Release.",
@@ -530,35 +530,35 @@
             "icon": "WIN",
             "downloadLabel": "Windows-ZIP herunterladen",
             "compatibility": "Unter Windows Server 2025 getestet; ältere Windows-Versionen wurden nicht geprüft",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.2/qwertycoin-v2.0.2-windows-x86_64.zip",
-            "sha256": "3d963ba0131cd82d1843369942ead595f63c7c14cba0242f2727961755bab7b6"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-windows-x86_64.zip",
+            "sha256": "b0bab23137d5a4308b3d1cd582c17fd0069f392c265a74a1e0fd0f15b4becaaf"
           },
           {
             "label": "macOS Apple Silicon",
             "icon": "MAC",
             "downloadLabel": "macOS-TAR.GZ herunterladen",
             "compatibility": "macOS 15 oder neuer",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.2/qwertycoin-v2.0.2-macos-arm64.tar.gz",
-            "sha256": "7b8c30910965f53d60f6c8d534d70120130d48119da43d04ebf4574d5398fccb"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-macos-arm64.tar.gz",
+            "sha256": "c23194aff092d0cc8ef6eed9ce4a6d45ccb06c7b760b05e7fce0cd9992962fdf"
           },
           {
             "label": "Linux x86_64",
             "icon": "LNX",
             "downloadLabel": "Linux-TAR.GZ herunterladen",
             "compatibility": "Erfordert höchstens GLIBC 2.35 und GLIBCXX 3.4.30",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.2/qwertycoin-v2.0.2-linux-x86_64.tar.gz",
-            "sha256": "f98914c2dbf906129af497e4776d5a654654a35be4db8d318937a6d9d61c748b"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "8df9d4bd22610228f3330aaac348776fd86bcd853751cf9472e0fc4db271b675"
           }
         ],
         "verificationLinks": [
           {
             "label": "SHA256SUMS",
             "icon": "SHA",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.2/SHA256SUMS"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/SHA256SUMS"
           },
           {
             "label": "Release-Hinweise",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.2"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
           },
           {
             "label": "Fehler melden",
@@ -568,7 +568,7 @@
         ]
       },
       {
-        "badge": "VERFÜGBAR · 2.0.2",
+        "badge": "VERFÜGBAR · 2.0.3",
         "badgeClass": "mainnet",
         "title": "Docker-Image",
         "body": "Starte den geprüften Core-Release als unprivilegierten Linux/amd64-Container. Standardmäßig läuft der Daemon im Mainnet; ein benanntes Volume bewahrt die Blockchain-Daten bei Updates auf.",
@@ -595,7 +595,7 @@
           },
           {
             "label": "Core-Release-Hinweise",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.2"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
           }
         ]
       },
