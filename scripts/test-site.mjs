@@ -394,23 +394,23 @@ const guiChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releas
 const guiArtifacts = [
   {
     name: "qwertycoin-gui-v2.0.3-windows-x86_64-setup.exe",
-    sha256: "0477abef98972ef399d70d8b8c23a5a37bae32cf8799b2fef4c60388a19a4193"
+    sha256: "7f8c159fa956db2b6a9b55fd47600a1fe68f32dd26d1e665877a9cc37758eadd"
   },
   {
     name: "qwertycoin-gui-v2.0.3-windows-x86_64.zip",
-    sha256: "56424187c3a665e0ce61102b49e4da236befcc4a29819ee6bf442f9415016b68"
+    sha256: "b4b2c28a5cee6ca7bd3f423de5b340706ee216a31bfa23d620b7a67150a197de"
   },
   {
     name: "qwertycoin-gui-v2.0.3-macos-arm64.dmg",
-    sha256: "fe43fde255e9e3896d0132a6c035685098ce45e2d34f08f2d7b646a2a04fc666"
+    sha256: "a4736597387770250b795fd1a4397693990522cf673cfb29d6cf9bb855071200"
   },
   {
     name: "qwertycoin-gui-v2.0.3-macos-arm64.tar.gz",
-    sha256: "69a52f4e2cc06bbf76aedc2e4eb7db0002a574d33abc22c344058107d448ea9f"
+    sha256: "ce239650afcc8eacee7b13d35f076a3ea617a81d4728b22d53d1ecc28a97fe26"
   },
   {
     name: "qwertycoin-gui-v2.0.3-linux-x86_64.tar.gz",
-    sha256: "155d51555909fecbd04acc3409809ea056903a0cb6e0d20597180b3a4535ff03"
+    sha256: "55cc8754df00c36017b7a0ffa35b90d3878c95477202059b6c596b5163c47680"
   }
 ];
 
