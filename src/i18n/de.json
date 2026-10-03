@@ -450,7 +450,7 @@
         "badge": "VERFÜGBAR · v2.0.3",
         "badgeClass": "mainnet",
         "title": "Desktop-Wallets",
-        "body": "Lade die aktuelle Qwertycoin GUI aus dem offiziellen GitHub-Release herunter. Für Windows empfehlen wir das Setup, für macOS das DMG. Portable ZIP- und TAR.GZ-Pakete stehen zusätzlich bereit. Vergleiche vor der Installation die Prüfsumme.",
+        "body": "Lade die aktuelle Qwertycoin GUI aus dem offiziellen GitHub-Release herunter. Nutzer der GUI v2.0.2 müssen v2.0.3 einmalig über den direkten Download installieren, weil der Updater von v2.0.2 der GitHub-Weiterleitung nicht folgen kann. Für Windows empfehlen wir das Setup, für macOS das DMG. Portable ZIP- und TAR.GZ-Pakete stehen zusätzlich bereit. Vergleiche vor der Installation die Prüfsumme.",
         "note": "Hinweis zur Integrität: Mit SHA256SUMS lässt sich prüfen, ob die Datei unverändert heruntergeladen wurde. Die Prüfsumme bestätigt jedoch nicht die Identität des Herausgebers. Die Pakete für Linux und Windows sind nicht signiert; die macOS-App ist ad hoc signiert und nicht notarisiert.",
         "glyph": "GUI",
         "downloadsLayout": "rows",
