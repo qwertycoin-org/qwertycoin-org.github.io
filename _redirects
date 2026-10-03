@@ -8,3 +8,4 @@
 /nodes /#network 301
 /explorer https://explorer.qwertycoin.org/ 301
 /* /404.html 404
+/whitepaper https://wp.qwertycoin.org/ 301
