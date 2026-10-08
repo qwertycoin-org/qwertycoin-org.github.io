@@ -1,0 +1,829 @@
+{
+  "meta": {
+    "title": "Qwertycoin (QWC) | プライベート支払い、RandomX & EPoSe",
+    "description": "Qwertycoin (QWC) は、RandomX プルーフ・オブ・ワーク・マイニングと実績のあるネットワーク・サービスに対する EPoSe 報酬を備えたプライバシー重視の暗号通貨です。",
+    "ogTitle": "Qwertycoin (QWC) |私的なお金。オープンネットワーク。",
+    "ogDescription": "Qwertycoin (QWC) は、RandomX プルーフ・オブ・ワーク・マイニングと実績のあるネットワーク・サービスに対する EPoSe 報酬を備えたプライバシー重視の暗号通貨です。",
+    "twitterDescription": "Qwertycoin (QWC) は、RandomX プルーフ・オブ・ワーク・マイニングと実績のあるネットワーク・サービスに対する EPoSe 報酬を備えたプライバシー重視の暗号通貨です。",
+    "imageAlt": "Qwertycoin プライベートマネー入りQエンブレム。オープンネットワーク。主張する"
+  },
+  "nav": {
+    "skip": "コンテンツにスキップ",
+    "homeLabel": "Qwertycoin ホーム",
+    "menu": "メニュー",
+    "about": "について",
+    "epose": "EPoSe",
+    "mining": "マイニング",
+    "getQwc": "QWCを入手",
+    "releases": "リリース",
+    "wallet": "ウォレット",
+    "network": "ネットワーク",
+    "history": "歴史",
+    "developers": "開発",
+    "language": "言語",
+    "languageShort": "ラング"
+  },
+  "hero": {
+    "title": "私的なお金。オープンネットワーク。",
+    "lead": "Qwertycoin (QWC) は、オープンな RandomX マイニングと実証済みのネットワーク サービスに対する EPoSe 報酬を備えたプライバシー重視の暗号通貨です。",
+    "kicker": "Web Wallet を開いてブロックチェーンを探索するか、GitHub に貢献してください。",
+    "getQwc": "QWCを入手",
+    "github": "GitHubに貢献する",
+    "wallet": "Web Walletを開く",
+    "mining": "自分の道を選択してください",
+    "visualAlt": "抽象的なネットワーク層を備えた大きな金色の Qwertycoin Q エンブレム",
+    "pulseLabel": "QWC メインネットライブ",
+    "pulseBody": "現在のブロックチェーンとEPoSeデータ。一部の統計が利用できない場合でも、利用可能な値は表示されたままになります。"
+  },
+  "metrics": {
+    "height": {
+      "label": "ブロックの高さ",
+      "help": "現在のパブリック チェーンの高さ。"
+    },
+    "registered": {
+      "label": "登録されたサービスノード",
+      "shortLabel": "登録済み",
+      "help": "有効な登録のあるサービスノード。"
+    },
+    "qualified": {
+      "label": "認定サービスノード",
+      "shortLabel": "資格のある",
+      "help": "統計が利用可能な関連期間の特典対象サービスノード。"
+    },
+    "epoch": {
+      "label": "EPoSeエポック",
+      "shortLabel": "エポック",
+      "help": "現在の {blocks} ブロックのサービス期間 (~{hours}h)。"
+    },
+    "topHash": "最新のブロックハッシュ",
+    "stateHash": "EPoSe 状態ハッシュ",
+    "explorer": "Explorer",
+    "currentSource": "コアソース",
+    "sourcePending": "GitHubで利用可能",
+    "syncLoading": "読み込み中…",
+    "loading": "読み込み中…",
+    "updated": "{time}を更新しました",
+    "unavailable": "現在利用不可",
+    "partial": "一部のネットワーク データは現在利用できません。",
+    "eposeUnavailable": "EPoSe 統計は現在利用できません。",
+    "unknown": "不明",
+    "synchronized": "同期した",
+    "syncPending": "同期保留中",
+    "ratio": "{qualified} / {registered} 認定",
+    "noScript": "ライブステータスにはJavaScriptが必要です。エクスプローラーを開いて現在のネットワーク データを確認することもできます。"
+  },
+  "system": {
+    "securityLabel": "マイニング",
+    "securityTitle": "RandomX PoW",
+    "securityBody": "マイナーは新しいブロックを生成し、プルーフ・オブ・ワークを通じてブロックチェーンを保護します。",
+    "infrastructureLabel": "サービス特典",
+    "infrastructureTitle": "EPoSe",
+    "infrastructureBody": "サービスノードは、有効なアテステーションを通じてネットワーク サービス報酬の資格を獲得します。"
+  },
+  "participate": {
+    "eyebrow": "ここから始めましょう",
+    "title": "参加方法を選択してください。",
+    "body": "QWC を使用して、コンピューティング能力に貢献したり、パブリック ネットワーク インフラストラクチャを運用したりできます。各パスには、現在の公式の開始点があります。",
+    "paths": [
+      {
+        "kind": "wallet",
+        "badge": "QWCを使用",
+        "title": "財布を開く",
+        "body": "ブラウザで QWC ウォレットを作成または復元し、プライベート支払いを送受信します。",
+        "cta": "Web Walletを開く"
+      },
+      {
+        "kind": "pool",
+        "badge": "私のQWC",
+        "title": "公式プールの鉱山",
+        "body": "QWC 支払いアドレスを使用して、公式 RandomX PPLNS プールに参加してください。プールアカウントの登録は必要ありません。",
+        "cta": "マイニングを開始する"
+      },
+      {
+        "kind": "serviceNode",
+        "badge": "ノードを実行する",
+        "title": "サービスノードを操作する",
+        "body": "QWC をステーキングせずに、パブリック QWC ノードを実行し、そのサービス ID を登録し、検証可能な EPoSe サービス証明を通じて資格を取得します。",
+        "cta": "オペレーターガイドを開く"
+      }
+    ]
+  },
+  "technology": {
+    "eyebrow": "Qwertycoinについて",
+    "title": "プライバシー。 QWCを搭載。",
+    "body": "QWC をプライベートな支払いに使用したり、マイニングを通じてコンピューティング能力を提供したり、サービスノードとしてネットワークをサポートしたりできます。",
+    "features": [
+      {
+        "badge": "オープンネットワーク",
+        "title": "QWC Coreネットワーク",
+        "body": "オープンネットワーク上でQWCを送受信します。独立したノードがトランザクションを検証し、ブロックチェーンを維持します。",
+        "icon": "about-il-01.svg"
+      },
+      {
+        "badge": "プライバシー",
+        "title": "組み込まれたプライバシー",
+        "body": "QWC はプライバシー技術を使用して取引の詳細を保護します。そのオープン ソース コードにより、誰でもネットワークがどのように機能するかを調べることができます。",
+        "icon": "about-il-03.svg"
+      },
+      {
+        "badge": "PoW",
+        "title": "RandomX Proof of Work（プルーフ・オブ・ワーク）",
+        "body": "RandomX マイナーは新しいブロックを生成し、ブロックチェーンを保護します。互換性のあるマイニング ソフトウェアを使用すれば誰でも参加できます。",
+        "icon": "about-il-04.svg"
+      },
+      {
+        "badge": "EPoSe",
+        "title": "実績のあるサービスに対する報酬",
+        "body": "サービスノードはネットワーク サービスを提供します。有効なアテステーションによって資格が確立され、EPoSe プロトコルによって報酬のローテーションが決定されます。",
+        "icon": "about-il-06.svg"
+      },
+      {
+        "badge": "ネットワークサービス",
+        "title": "サービスノード",
+        "body": "サービスノードはネットワークをサポートし、EPoSe に参加します。 QWC ステーキングは必要ありません。ブロックの生産は依然として RandomX マイナーの仕事です。",
+        "icon": "about-il-02.svg"
+      },
+      {
+        "badge": "利用可能",
+        "title": "Web Wallet とオープンソース",
+        "body": "QWC を Web Wallet と一緒にブラウザで直接使用します。コア ソフトウェアを探索し、GitHub の開発に貢献してください。",
+        "icon": "about-il-05.svg"
+      }
+    ]
+  },
+  "epose": {
+    "eyebrow": "EPoSe",
+    "flowLabel": "EPoSeの流れ",
+    "title": "サービスを証明します。 QWCを獲得します。",
+    "body": "EPoSe は、実績のあるネットワーク サービスに対して登録されたサービスノードに報酬を与えます。このプロトコルは、ブロックチェーンに記録された有効なアテステーションを評価し、どのノードが報酬ローテーションの対象となるかを決定します。",
+    "intro": "QWC は、サービス時間を EPoSe エポックに分割します。サービス活動によってアテステーションが生成され、資格が確定され、その後でのみ、資格のあるセットを使用する決定的な報酬ローテーションが可能になります。",
+    "compactCards": [
+      {
+        "title": "サービスを提供します。",
+        "body": "登録されたサービスノードは、各エポック中にネットワーク サービスを提供します。"
+      },
+      {
+        "title": "サービスを確認します。",
+        "body": "プロトコルで選択された検証者はサービスの応答をチェックし、署名されたアテステーションを送信します。"
+      },
+      {
+        "title": "報酬を受け取ります。",
+        "body": "資格が確定すると、資格のあるサービスノードがプロトコルの確定的な報酬ローテーションに参加します。"
+      }
+    ],
+    "actions": {
+      "live": "ライブサービスノードの表示",
+      "guide": "サービスノードを実行する",
+      "docs": "EPoSe のドキュメントを読む"
+    },
+    "originEyebrow": "EPoSeの原点",
+    "originTitle": "ありがとう、ゼキュート。",
+    "originBody": "Xecute は、オリジナルの EPoSe ビジョンを開発し、Qwertycoin サービス層のホワイトペーパーに貢献しました。この取り組みは、有用なネットワーク サービスに報酬を与えるための基礎を築きました。",
+    "schematic": [
+      {
+        "label": "サービスノード",
+        "value": "登録された身分証明書"
+      },
+      {
+        "label": "検証委員会",
+        "value": "サービスをチェックします"
+      },
+      {
+        "label": "チェーン状態",
+        "value": "決定的な報酬"
+      }
+    ],
+    "links": [
+      "登録",
+      "アテステーション"
+    ],
+    "steps": [
+      {
+        "title": "登録する",
+        "body": "サービスノードは、サービス ID、報酬ターゲット、エンドポイント コミットメント、および参加証明を含む署名付き登録を公開します。"
+      },
+      {
+        "title": "サーブ",
+        "body": "ノードは QWC ネットワーク サービスを提供しますが、通常の RandomX マイニングは引き続きブロックの生成を担当します。"
+      },
+      {
+        "title": "アテステーション",
+        "body": "割り当てられた検証者はサービスノードに異議を唱え、予想されるサービス応答が有効な場合にのみアテステーションに署名します。"
+      },
+      {
+        "title": "資格を得る",
+        "body": "チェーン状態は、登録されたノードが関連するエポックに対して十分な有効なアテステーションを収集したかどうかをチェックします。"
+      },
+      {
+        "title": "報酬",
+        "body": "適格なノードは、決定的な報酬ローテーションに入ります。選択された 1 人の受取人がブロック報酬の EPoSe 部分を受け取ることができます。"
+      }
+    ],
+    "glossaryTitle": "EPoSe用語集",
+    "glossary": [
+      {
+        "term": "サービスノード",
+        "definition": "通常の QWC ノードに加えて、登録されたサービス ID、エンドポイント コミットメント、報酬アドレス、および EPoSe 参加データ。"
+      },
+      {
+        "term": "エポック",
+        "definition": "サービスアクティビティが測定される固定ブロック期間。現在のパラメータ: {blocks} ブロック、{seconds} 2 番目のブロック ターゲットでおよそ {hours} 時間。"
+      },
+      {
+        "term": "登録済み",
+        "definition": "サービスノードは、有効なオンチェーン登録を公開することで EPoSe に参加しました。登録したからといって特典の対象となるわけではありません。"
+      },
+      {
+        "term": "アテステーション",
+        "definition": "サービスノードがサービス チャレンジに予想される応答で応答したことを示す、割り当てられた検証者からの署名付き確認。"
+      },
+      {
+        "term": "検証委員会",
+        "definition": "サービス チャレンジのチェーン状態から選択された検証者ノードの決定論的なセット。現在のパブリック コアは、十分な候補が存在する場合、{committee} 検証者をターゲットとします。"
+      },
+      {
+        "term": "参加証明",
+        "definition": "登録に添付される小さな証明により、ID の作成に手間がかかり、安価な Sybil 登録の削減に役立ちます。"
+      },
+      {
+        "term": "資格のある",
+        "definition": "関連するエポックで十分な有効な重複のないアテステーションを収集した、登録済みのサービスノード。定足数は実際に選ばれた検証委員会の３分の２です。"
+      },
+      {
+        "term": "報酬ソースエポック",
+        "definition": "現在の報酬期間に修飾されたセットが使用される最終的なエポック。現在のコアでは、エポック N のブロックはエポック N-1 の認定されたノードを使用します。"
+      },
+      {
+        "term": "報酬ローテーション",
+        "definition": "適格なノードは、ブロック報酬の EPoSe 部分の受信者候補として決定的にローテーションされます。コインベースは総ノード数とともに増加しません。"
+      }
+    ],
+    "epochTitle": "エポックはブロック範囲であり、時計の予定ではありません。",
+    "epochBody": "EPoSe エポックは {blocks} ブロックのサービス期間であり、現在の {seconds} 秒ブロック ターゲットではおよそ {hours} 時間です。",
+    "registeredVsQualified": [
+      {
+        "label": "登録済み",
+        "body": "ノードはEPoSeに参加しました。"
+      },
+      {
+        "label": "資格のある",
+        "body": "このノードは、サービス報酬の対象となるのに十分なサービス活動を証明しました。"
+      }
+    ],
+    "committeeTitle": "検証者委員会は検証者セットではありません。",
+    "committeeBody": "検証委員会はブロックを生成せず、RandomX マイナーを置き換えません。彼らの役割は、EPoSe 資格に関するサービスノードのアクティビティをチェックすることに限定されています。現在の公開コアは、十分な候補者が存在する場合に {committee} 検証者を対象とし、実際の委員会の 3 分の 2 の定足数を必要とします。完全な委員会があれば、それは {fullCommitteeAttestations} 認証を意味します。",
+    "rewardTimelineTitle": "サービスは最初に評価されます。報酬は後から続きます。",
+    "timeline": [
+      {
+        "label": "エポックN",
+        "title": "登録/提供/証明",
+        "body": "サービスノードは、サービスを登録し、提供し、有効な検証者のアテステーションを収集します。"
+      },
+      {
+        "label": "ファイナリティ",
+        "title": "資格が確定しました",
+        "body": "コンセンサス状態は、エポックが最終になった後、有効な EPoSe データから修飾されたセットを導出します。"
+      },
+      {
+        "label": "エポック N+1",
+        "title": "報酬ローテーション",
+        "body": "現在のコアは、確定的な受取人選択のための報酬ソース エポックとして前のエポックを使用します。"
+      }
+    ],
+    "rotationTitle": "報酬ローテーションにより、ブロック報酬がコンパクトに保たれます。",
+    "rotationBody": "現在のメインネット報酬の分割: 90% マイナー / {rewardPercent}% EPoSe サービス報酬。 EPoSe サービスの支払いはコンセンサスに基づいて表示されるため、すべてのノードが選択されたサービスノードと報酬額を確認できます。通常の QWC ウォレット トランザクションは、基礎となる QWC トランザクション モデルのプライバシー メカニズムを引き続き使用します。",
+    "rotationExamples": [
+      "ブロック 1001 -> ノード A",
+      "ブロック 1002 -> ノード C",
+      "ブロック 1003 -> ノード B",
+      "ブロック 1004 -> ノード A"
+    ],
+    "rewardRulesTitle": "報酬はプロトコルに従います。",
+    "rewardRulesBody": "すべての完全なノードは、報酬の資格とブロックチェーンからの受信者の選択を検証できます。補助金の割り当て: 90% マイニング / {rewardPercent}% EPoSe サービス報酬。取引手数料はマイナーに残ります。",
+    "rewardFormulaAlt": "検証者のクォーラム、サービスノードの資格、受信者のローテーション、およびサービス報酬の割り当てのための EPoSe コンセンサス式。",
+    "rewardFormulaCaption": "EPoSe クォーラム、資格、受信者のローテーション、サービス報酬 — アクティブなコンセンサス ルールをコンパクトに表現したもの。"
+  },
+  "faq": {
+    "eyebrow": "EPoSe よくある質問",
+    "title": "新しいオペレーター向けの短い回答。",
+    "items": [
+      {
+        "question": "Qwertycoinとは何ですか？",
+        "answer": "Qwertycoin (QWC) は、RandomX プルーフ・オブ・ワーク・マイニングと実績のあるネットワーク・サービスに対する EPoSe 報酬を備えたプライバシー重視の暗号通貨です。"
+      },
+      {
+        "question": "Web Walletの使い方は？",
+        "answer": "公式 Web Wallet を開き、そこでウォレットを作成または復元し、その安全手順に従ってください。メイン Web サイトはウォレット キーを処理しません。"
+      },
+      {
+        "question": "古いQWCウォレットは使用できますか?",
+        "answer": "いいえ、現在の QWC ネットワークは以前のチェーンとは別のものです。従来のウォレット ソフトウェアとブロックチェーン データは、このネットワークと互換性がありません。"
+      },
+      {
+        "question": "EPoSe はマイニングを置き換えますか?",
+        "answer": "いいえ、RandomX マイナーはブロックを生成し、ブロックチェーンを保護します。 EPoSe は、実績のあるネットワーク サービスに対する特典を追加します。"
+      },
+      {
+        "question": "エポックとは何ですか?",
+        "answer": "エポックは、EPoSe サービス アクティビティを評価するために使用されるブロック期間です。現在、これは {blocks} ブロックに及び、ターゲット ブロック間隔で約 {hours} 時間になります。"
+      },
+      {
+        "question": "資格があるとはどういう意味ですか？",
+        "answer": "適格なサービスノードは、関連するエポックにおける有効な認証に関するプロトコルの要件を満たしており、サービス報酬の選択の対象となります。技術的な定足数は少なくとも ceil (2 x 実際の委員会のサイズ / 3) です。"
+      },
+      {
+        "question": "資格や報酬は誰が決めるのですか？",
+        "answer": "EPoSe プロトコル。すべての完全なノードは、資格と報酬の選択を検証するために、有効なオンチェーン登録と証明書に同じルールを適用します。"
+      },
+      {
+        "question": "サービスノードはQWCをステーキングする必要がありますか?",
+        "answer": "いいえ。参加するには、QWC をステークとしてロックするのではなく、EPoSe の登録と必要なサービス証明が必要です。"
+      },
+      {
+        "question": "1 人のオペレーターが複数のサービスノードを実行できますか?",
+        "answer": "はい。各サービスノードには独自の有効な登録が必要であり、プロトコルのサービス要件を満たしている必要があります。参加証明により、安価な ID 作成が困難になります。"
+      },
+      {
+        "question": "EPoSe がプルーフ オブ ステークではないのはなぜですか?",
+        "answer": "EPoSe は、ロックされた賭け金ではなく、実績のあるサービスに報酬を与えます。サービスノードは他のフル ノードと同様にブロックチェーン データを検証し、一方、RandomX マイナーはプルーフ オブ ワーク ブロックの生成を実行します。"
+      }
+    ]
+  },
+  "serviceNodes": {
+    "eyebrow": "サービスノード",
+    "title": "ネットワークをサポートします。サービスを通じて収益を得る。",
+    "body": "すべてのフルノードがブロックチェーンデータを検証して中継します。登録されたサービスノードも EPoSe に参加し、サービス報酬の資格を得ることができます。",
+    "normal": "通常ノード",
+    "service": "サービスノード",
+    "comparisonLabel": "通常ノードとサービスノードの比較",
+    "rows": [
+      [
+        "ブロックとトランザクションを検証し、チェーンを同期し、データを中継します。",
+        "同じノード機能を実行し、登録された EPoSe サービスを提供します。"
+      ],
+      [
+        "通常のノードを単独で操作しても、EPoSe 報酬は獲得できません。",
+        "有効なサービス証明書を通じてサービス特典の資格を得ることができます。"
+      ],
+      [
+        "マイニングとは独立して運用可能。",
+        "QWC ステーキングなしで、EPoSe 登録とサービス証明が必要です。"
+      ]
+    ]
+  },
+  "mining": {
+    "eyebrow": "マイニング",
+    "title": "私の場合はRandomXです。",
+    "body": "Qwertycoinの演算能力に貢献します。 RandomX マイナーは、120 秒の目標間隔でブロックを生成します。",
+    "cards": [
+      {
+        "title": "自由参加",
+        "body": "互換性のある RandomX マイニング ソフトウェアを QWC ノードまたはサポートされているマイニング プールに接続します。"
+      },
+      {
+        "title": "マイニングおよびネットワーク サービス",
+        "body": "マイニングはブロックの生産を確保します。 EPoSe は、実績のあるネットワーク サービスに対して登録されたノードに個別に報酬を与えます。"
+      }
+    ],
+    "poolEyebrow": "公式Qwertycoinプール",
+    "poolTitle": "数分でマイニングを開始できます。",
+    "poolBody": "公式プールは、透明な {poolAccounting} 会計、ライブ統計、自動支払いを提供します。 QWC の支払いアドレスはプール口座です。プールがウォレット キーを要求することはありません。",
+    "poolFacts": [
+      "アルゴリズム: {poolAlgorithm}",
+      "登録なし: QWC 支払いアドレスを使用してください",
+      "ライブハッシュレート、ワーカー、ブロック、支払い統計",
+      "各支払いアカウントは、独自の支払いに対して実際のネットワーク料金を支払います。"
+    ],
+    "poolCta": "公式プールをオープン",
+    "setupCta": "XMRigコマンドの作成",
+    "docsCta": "プールマイニングガイドを読む",
+    "allocationTitle": "2 つの別々の報酬レイヤー",
+    "protocolLabel": "QWCプロトコル",
+    "protocolSplit": "90% マイニング / 10% EPoSe",
+    "protocolBody": "ブロック補助金は {miningRewardPercent}% がマイニングに、{rewardPercent}% が EPoSe サービス報酬に分割されます。取引手数料はマイナーに残ります。",
+    "poolLabel": "公式プール",
+    "poolSplit": "95% マイナー / 5% プール",
+    "poolAllocationBody": "公式プールを通じて分配されるマイニング報酬から、{poolFeePercent}% が Qwertycoin の開発とプール運営に資金を提供します。各アカウントの支払い取引手数料の前に、正確に {poolMinerPercent}% が参加マイナーに割り当てられます。"
+  },
+  "exchanges": {
+    "eyebrow": "交換",
+    "title": "QWCを入手。",
+    "body": "Qwertycoin をリストしている取引所を見つけます。",
+    "listed": "上場済み",
+    "pairLabel": "取引ペア",
+    "trade": "トレード QWC",
+    "external": "外部交換",
+    "linkLabel": "QWC を Neoxa Exchange で取引すると、新しいタブが開きます"
+  },
+  "wallet": {
+    "eyebrow": "ウォレット",
+    "title": "次のステップはウォレットです。",
+    "body": "Web Wallet、Qwertycoin GUI 2.0.0 およびソース コードは現在入手可能です。",
+    "cards": [
+      {
+        "badge": "利用可能",
+        "title": "Web Wallet",
+        "body": "QWC をブラウザで直接送信、受信、管理します。",
+        "button": "Web Walletを開く",
+        "icon": "wallet.svg"
+      },
+      {
+        "badge": "開発中",
+        "title": "PWA",
+        "body": "インストール可能な PWA の動作は開発中であり、準備ができ次第リストに掲載されます。",
+        "icon": "about-il-05.svg"
+      },
+      {
+        "badge": "利用可能",
+        "title": "デスクトップウォレット",
+        "body": "Qwertycoin GUI 2.0.3 は、Windows、macOS、Apple Silicon、Linux x86_64 で利用可能です。",
+        "icon": "development.svg"
+      }
+    ]
+  },
+  "releases": {
+    "eyebrow": "ウォレット",
+    "title": "ウォレットとソースコード",
+    "body": "最初の公開 QWC テストフェーズが開始されます。 Web Wallet、Qwertycoin GUI 2.0.3、Core v2.0.3 コマンドライン ツール、公式 Docker イメージおよびソース コードは現在入手可能です。",
+    "cards": [
+      {
+        "badge": "利用可能 · v2.0.3",
+        "badgeClass": "mainnet",
+        "title": "デスクトップウォレット",
+        "body": "公式 GitHub リリースから現在の Qwertycoin GUI をダウンロードします。 GUI v2.0.2 ユーザーは、v2.0.2 アップデーターが GitHub のリリース アセット リダイレクトに従うことができないため、直接ダウンロードで v2.0.3 を一度インストールする必要があります。 Windows Setup および macOS DMG が推奨されるインストーラーです。ポータブル ZIP および TAR.GZ パッケージは、代替手段として引き続き利用可能です。使用前にダウンロードとチェックサムを確認してください。",
+        "note": "整合性に関する注意: SHA256SUMS は、発行者の ID ではなく、ダウンロードされたバイトを検証します。 Linux と Windows は署名されていません。 macOS はアドホック署名されており、公証されていません。",
+        "glyph": "GUI",
+        "downloadsLayout": "rows",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "Windowsセットアップをダウンロード",
+            "compatibility": "Windows Server 2025 ランナーでテスト済み、署名なし。古い Windows バージョンは検証されていません",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64-setup.exe",
+            "sha256": "7f8c159fa956db2b6a9b55fd47600a1fe68f32dd26d1e665877a9cc37758eadd",
+            "shaLabel": "セットアップ SHA-256",
+            "preferredLabel": "優先インストーラー",
+            "alternatives": [
+              {
+                "downloadLabel": "ポータブル Windows ZIP をダウンロード",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64.zip",
+                "sha256": "b4b2c28a5cee6ca7bd3f423de5b340706ee216a31bfa23d620b7a67150a197de",
+                "shaLabel": "ジップSHA-256"
+              }
+            ]
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "macOS DMGをダウンロード",
+            "compatibility": "macOS 15以降",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.dmg",
+            "sha256": "a4736597387770250b795fd1a4397693990522cf673cfb29d6cf9bb855071200",
+            "shaLabel": "DMG SHA-256",
+            "preferredLabel": "優先ダウンロード",
+            "alternatives": [
+              {
+                "downloadLabel": "macOS TAR.GZをダウンロード",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.tar.gz",
+                "sha256": "ce239650afcc8eacee7b13d35f076a3ea617a81d4728b22d53d1ecc28a97fe26",
+                "shaLabel": "TAR.GZ SHA-256"
+              }
+            ]
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "Linux TAR.GZをダウンロード",
+            "compatibility": "GLIBC 2.35対応天井",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "55cc8754df00c36017b7a0ffa35b90d3878c95477202059b6c596b5163c47680"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/SHA256SUMS"
+          },
+          {
+            "label": "リリースノート",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.3"
+          },
+          {
+            "label": "問題を報告する",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/issues"
+          }
+        ]
+      },
+      {
+        "badge": "利用可能 · v2.0.3",
+        "badgeClass": "mainnet",
+        "title": "コアコマンドラインツール",
+        "body": "qwertycoind、qwertycoin-wallet-cli、qwertycoin-wallet-rpc を含む公式 Qwertycoin パッケージ。使用前にアーカイブとチェックサムを確認してください。リリース ノートと監査ステータスは、GitHub リリースごとに文書化されています。",
+        "note": "整合性に関する注意: SHA256SUMS は、発行者の ID ではなく、ダウンロードされたバイトを検証します。 Linux と Windows は署名されていません。 macOS はアドホック署名されており、公証されていません。",
+        "glyph": "CLI",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "Windows ZIPをダウンロード",
+            "compatibility": "Windows Server 2025 ランナーでテスト済み。広範な従来の Windows 主張はありません",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-windows-x86_64.zip",
+            "sha256": "b0bab23137d5a4308b3d1cd582c17fd0069f392c265a74a1e0fd0f15b4becaaf"
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "macOS TAR.GZをダウンロード",
+            "compatibility": "macOS 15以降",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-macos-arm64.tar.gz",
+            "sha256": "c23194aff092d0cc8ef6eed9ce4a6d45ccb06c7b760b05e7fce0cd9992962fdf"
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "Linux TAR.GZをダウンロード",
+            "compatibility": "GLIBC 2.35 / GLIBCXX 3.4.30 互換天井",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "8df9d4bd22610228f3330aaac348776fd86bcd853751cf9472e0fc4db271b675"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/SHA256SUMS"
+          },
+          {
+            "label": "リリースノート",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+          },
+          {
+            "label": "問題を報告する",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/issues"
+          }
+        ]
+      },
+      {
+        "badge": "利用可能 · 2.0.3",
+        "badgeClass": "mainnet",
+        "title": "Dockerのイメージ",
+        "body": "検証済みのコア リリースを非ルート Linux/amd64 コンテナーとして実行します。 Mainnet とデーモンがデフォルトです。永続的な名前付きボリュームは、コンテナーの更新全体にわたってチェーン データを保持します。",
+        "note": "最新のタグは、最新の安定したイメージを追跡します。監査された運用環境では、イメージ ダイジェストが固定される場合があります。以下では、P2P ポート 8196 のみが公開されています。管理用 RPC は公開されません。ウォレットと EPoSe の ID データには、個別の保護されたボリュームと完全なクイックスタートが必要です。",
+        "glyph": "OCI",
+        "commands": [
+          {
+            "label": "安定したイメージをプルします",
+            "code": "docker pull docker.io/qwertycoin/qwertycoin:latest"
+          },
+          {
+            "label": "永続的なメインネット ノードを開始する",
+            "code": "docker run -d --name qwertycoind --restart unless-stopped \\\n  -v qwertycoin-chain:/data -p 8196:8196 \\\n  docker.io/qwertycoin/qwertycoin:latest"
+          }
+        ],
+        "links": [
+          {
+            "label": "Docker Hubを開く",
+            "href": "https://hub.docker.com/r/qwertycoin/qwertycoin/tags"
+          },
+          {
+            "label": "Docker クイックスタート",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md"
+          },
+          {
+            "label": "コアリリースノート",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+          }
+        ]
+      },
+      {
+        "badge": "利用可能",
+        "badgeClass": "mainnet",
+        "title": "Web Wallet",
+        "body": "QWC をブラウザで直接送信、受信、管理します。",
+        "glyph": "WEB",
+        "links": [
+          {
+            "label": "Web Walletを開く",
+            "href": "https://wallet.qwertycoin.org/"
+          }
+        ]
+      },
+      {
+        "badge": "利用可能なソース",
+        "badgeClass": "next",
+        "title": "QWCのソースコード",
+        "body": "コア ソフトウェアを探索し、自分で構築して、GitHub に貢献してください。",
+        "glyph": "SRC",
+        "links": [
+          {
+            "label": "オープンコアリポジトリ",
+            "href": "https://github.com/qwertycoin-org/qwertycoin"
+          },
+          {
+            "label": "GitHub編成",
+            "href": "https://github.com/qwertycoin-org"
+          }
+        ]
+      }
+    ],
+    "noteTitle": "互換性に関するメモ",
+    "noteBody": "現在の QWC ネットワークは、以前のチェーンとは別のものです。従来のウォレット ソフトウェアとブロックチェーン データは、このネットワークと互換性がありません。"
+  },
+  "network": {
+    "eyebrow": "ネットワーク",
+    "title": "ネットワーク活動",
+    "body": "現在のブロックチェーンとEPoSeデータ。"
+  },
+  "specs": {
+    "eyebrow": "コインの仕様",
+    "title": "メインネットパラメータを確認しました。",
+    "body": "これらの値は、現在の QWC メインネット実装を説明します。",
+    "visualAlt": "QWCパラメータ軌道図",
+    "items": [
+      [
+        "名称",
+        "Qwertycoin"
+      ],
+      [
+        "ティッカー",
+        "QWC"
+      ],
+      [
+        "ネットワーク",
+        "Mainnet"
+      ],
+      [
+        "プロトコル",
+        "QWC HF17"
+      ],
+      [
+        "サービス特典",
+        "EPoSe"
+      ],
+      [
+        "コンセンサス",
+        "RandomX Proof of Work（プルーフ・オブ・ワーク）"
+      ],
+      [
+        "ブロック対象",
+        "120秒"
+      ],
+      [
+        "EPoSe エポック",
+        "{blocks} ブロック (~{hours} 時間)"
+      ],
+      [
+        "EPoSe委員会",
+        "{committee} ベリファイアターゲット"
+      ],
+      [
+        "アテステーションのクォーラム",
+        "ceil(実際の委員会の2/3)、満席時は{fullCommitteeAttestations}または{committee}"
+      ],
+      [
+        "報酬の分割",
+        "90% マイニング / {rewardPercent}% EPoSe"
+      ],
+      [
+        "小数",
+        "8"
+      ],
+      [
+        "供給定数",
+        "184,467,440.73709551 QWC"
+      ],
+      [
+        "テールエミッション",
+        "0.3 QWC/分、0.6 QWC/ブロックターゲット"
+      ],
+      [
+        "アドレスプレフィックス",
+        "0x14820c、標準アドレスは QWC で始まります"
+      ],
+      [
+        "P2P",
+        "8196"
+      ],
+      [
+        "Daemon RPC",
+        "8197、制限付きパブリック プロキシのみ"
+      ],
+      [
+        "Wallet RPC",
+        "8198"
+      ],
+      [
+        "ZMQ",
+        "8199"
+      ]
+    ]
+  },
+  "roadmap": {
+    "eyebrow": "ロードマップ",
+    "title": "利用できるもの。次に何が起こるか。",
+    "body": "Qwertycoin のネットワーク、ウォレット、開発者ツールの進捗状況を追跡します。",
+    "items": [
+      {
+        "badge": "LIVE",
+        "title": "QWCネットワーク",
+        "body": "RandomX ネットワークとコア QWC 機能は稼働中です。オペレーターはネットワークの維持と改善を続けています。"
+      },
+      {
+        "badge": "LIVE",
+        "title": "EPoSe",
+        "body": "登録、サービス証明書、資格および報酬のローテーションは、現在の QWC ネットワークの一部です。"
+      },
+      {
+        "badge": "継続中",
+        "title": "ネットワーク運用",
+        "body": "監視、メンテナンス、および運用の改善は、通常のネットワーク作業として継続されます。"
+      },
+      {
+        "badge": "利用可能",
+        "title": "財布と道具",
+        "body": "Web Walletが入荷しました。 PWA の動作、デスクトップ ソフトウェア、および追加ツールは独自のステータスを維持します。"
+      },
+      {
+        "badge": "利用可能なソース",
+        "title": "開発者リソース",
+        "body": "コアソースコードが利用可能です。追加のドキュメント、API、オペレーターのリソースは個別に追跡されます。"
+      },
+      {
+        "badge": "研究",
+        "title": "EPoSe研究",
+        "body": "拡張サービスは依然として研究テーマであり、現在の製品機能としては提示されていません。"
+      }
+    ]
+  },
+  "history": {
+    "eyebrow": "歴史",
+    "title": "2018 年以来。次の章を構築中。",
+    "body": "Qwertycoin は 2018 年に始まりました。今日のネットワークは、RandomX と EPoSe の歴史に基づいて構築されています。",
+    "bridge": [
+      "オリジナルのQWCコミュニティチェーン",
+      "QWC と RandomX および EPoSe ネットワーク"
+    ],
+    "items": [
+      {
+        "date": "2018",
+        "title": "Qwertycoin発売",
+        "body": "QWC は、初期のウォレット、エクスプローラー、コミュニティ、インフラストラクチャの取り組みにより、CryptoNote ベースのコミュニティ プライバシー コインとして始まりました。"
+      },
+      {
+        "date": "2019–2023",
+        "title": "EPoW および EPoSe の研究開発",
+        "body": "2019 年から 2023 年にかけて、このプロジェクトでは、ウォレット、ノード、インフラストラクチャと並行して、公正なマイニングとネットワーク サービスの報酬を検討しました。 Xecute の EPoSe の取り組みは、有用なネットワーク サービスに報酬を与えるというビジョンを形作りました。"
+      },
+      {
+        "date": "後で",
+        "title": "トークンフェーズ",
+        "body": "トークンフェーズは Qwertycoin の歴史の一部であり、今日の QWC ネットワークとは別のものです。"
+      },
+      {
+        "date": "2026",
+        "title": "Qwertycoinネットワーク",
+        "body": "Qwertycoin は、プライベート支払い、RandomX マイニング、EPoSe サービス報酬を備えた新しいネットワークを開始します。"
+      }
+    ],
+    "alert": "現在の QWC ネットワークは、以前のチェーンとは別のものです。従来のウォレット ソフトウェアとブロックチェーン データは、このネットワークと互換性がありません。"
+  },
+  "developers": {
+    "eyebrow": "開発者",
+    "title": "Qwertycoinでビルドします。",
+    "body": "コア コードを調べ、ソフトウェアを構築し、GitHub の改善に貢献します。",
+    "buildTitle": "ソースからビルドする",
+    "registrationTitle": "サービスノードツール",
+    "sourceTitle": "コアソースコード",
+    "sourceBody": "GitHub 上のパブリック Qwertycoin コア リポジトリを探索します。",
+    "legacyTitle": "組み立て説明書",
+    "legacyBody": "ビルドとリリースの情報は、コア リポジトリと公開されたリソースで追跡されます。",
+    "registrationBody": "現在のコア オペレーター ガイドを使用してパブリック EPoSe サービスノードを実行します。",
+    "registrationLink": "EPoSe オペレーターガイドを開く"
+  },
+  "community": {
+    "eyebrow": "コミュニティ",
+    "title": "Qwertycoin コミュニティに参加してください。",
+    "body": "開発を追跡し、ネットワークを探索し、Qwertycoin の次のステップの形成を支援します。",
+    "github": "Qwertycoin編成",
+    "explorer": "QWC Mainnet Explorer"
+  },
+  "footer": {
+    "body": "Qwertycoin は、プライベート支払い、RandomX マイニング、EPoSe サービス報酬、Web Wallet、および公開ソース コードを組み合わせています。",
+    "technology": "テクノロジー",
+    "pool": "公式プール",
+    "documentation": "ドキュメント",
+    "history": "歴史",
+    "roadmap": "ロードマップ"
+  },
+  "notFound": {
+    "title": "ページが見つかりません | Qwertycoin",
+    "eyebrow": "404",
+    "heading": "ページが見つかりません。",
+    "body": "このQwertycoinのページは存在しません。現在の概要を開くか、言語を切り替えます。",
+    "home": "オープンホーム"
+  }
+}

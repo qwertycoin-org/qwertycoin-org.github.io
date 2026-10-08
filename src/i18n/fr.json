@@ -1,0 +1,829 @@
+{
+  "meta": {
+    "title": "Qwertycoin (QWC) | Paiements privés, RandomX & EPoSe",
+    "description": "Qwertycoin (QWC) est une crypto-monnaie axée sur la confidentialité avec une extraction de preuve de travail RandomX et des récompenses EPoSe pour des services réseau éprouvés.",
+    "ogTitle": "Qwertycoin (QWC) | L'argent privé. Réseau ouvert.",
+    "ogDescription": "Qwertycoin (QWC) est une crypto-monnaie axée sur la confidentialité avec une extraction de preuve de travail RandomX et des récompenses EPoSe pour des services réseau éprouvés.",
+    "twitterDescription": "Qwertycoin (QWC) est une crypto-monnaie axée sur la confidentialité avec une extraction de preuve de travail RandomX et des récompenses EPoSe pour des services réseau éprouvés.",
+    "imageAlt": "Emblème Qwertycoin Q avec l'argent privé. Réseau ouvert. réclamation"
+  },
+  "nav": {
+    "skip": "Passer au contenu",
+    "homeLabel": "Qwertycoin maison",
+    "menu": "Menus",
+    "about": "À propos",
+    "epose": "EPoSe",
+    "mining": "Minage",
+    "getQwc": "Obtenez le QWC",
+    "releases": "Versions",
+    "wallet": "Portefeuille",
+    "network": "Réseau",
+    "history": "Histoire",
+    "developers": "Développement",
+    "language": "Langue",
+    "languageShort": "Langue"
+  },
+  "hero": {
+    "title": "L'argent privé. Réseau ouvert.",
+    "lead": "Qwertycoin (QWC) est une crypto-monnaie axée sur la confidentialité avec un minage ouvert RandomX et des récompenses EPoSe pour des services réseau éprouvés.",
+    "kicker": "Ouvrez le Web Wallet, explorez la blockchain ou contribuez sur GitHub.",
+    "getQwc": "Obtenez le QWC",
+    "github": "Contribuer sur GitHub",
+    "wallet": "Ouvrir Web Wallet",
+    "mining": "Choisissez votre chemin",
+    "visualAlt": "Grand emblème Qwertycoin Q doré avec couches de réseau abstraites",
+    "pulseLabel": "RÉSEAU PRINCIPAL QWC EN DIRECT",
+    "pulseBody": "Données actuelles de la blockchain et du EPoSe. Les valeurs disponibles restent visibles lorsque certaines statistiques ne sont pas disponibles."
+  },
+  "metrics": {
+    "height": {
+      "label": "Hauteur du bloc",
+      "help": "Hauteur actuelle de la chaîne publique."
+    },
+    "registered": {
+      "label": "Nœuds de service enregistrés",
+      "shortLabel": "Inscrit",
+      "help": "Nœuds de service avec enregistrement valide."
+    },
+    "qualified": {
+      "label": "Nœuds de service qualifiés",
+      "shortLabel": "Qualifié",
+      "help": "Nœuds de service éligibles aux récompenses pour la période concernée pendant laquelle les statistiques sont disponibles."
+    },
+    "epoch": {
+      "label": "Époque EPoSe",
+      "shortLabel": "Époque",
+      "help": "Période de service actuelle du bloc {blocks} (~{hours}h)."
+    },
+    "topHash": "Dernier hachage de bloc",
+    "stateHash": "Hachage d'état EPoSe",
+    "explorer": "Explorer",
+    "currentSource": "Source principale",
+    "sourcePending": "Disponible sur GitHub",
+    "syncLoading": "Chargement…",
+    "loading": "Chargement…",
+    "updated": "{time} mis à jour",
+    "unavailable": "Actuellement indisponible",
+    "partial": "Certaines données réseau sont actuellement indisponibles.",
+    "eposeUnavailable": "Les statistiques du EPoSe ne sont actuellement pas disponibles.",
+    "unknown": "inconnu",
+    "synchronized": "synchronisé",
+    "syncPending": "synchronisation en attente",
+    "ratio": "Qualification {qualified} / {registered}",
+    "noScript": "Le statut en direct nécessite JavaScript. Vous pouvez toujours ouvrir l'explorateur pour les données réseau actuelles."
+  },
+  "system": {
+    "securityLabel": "Minage",
+    "securityTitle": "RandomX PoW",
+    "securityBody": "Les mineurs produisent de nouveaux blocs et sécurisent la blockchain grâce à une preuve de travail.",
+    "infrastructureLabel": "Récompenses de service",
+    "infrastructureTitle": "EPoSe",
+    "infrastructureBody": "Les nœuds de service sont éligibles aux récompenses de service réseau grâce à des attestations valides."
+  },
+  "participate": {
+    "eyebrow": "Commencez ici",
+    "title": "Choisissez comment vous souhaitez participer.",
+    "body": "Utilisez le QWC, apportez de la puissance de calcul ou exploitez une infrastructure de réseau public. Chaque chemin a un point de départ actuel et officiel.",
+    "paths": [
+      {
+        "kind": "wallet",
+        "badge": "UTILISER QWC",
+        "title": "Ouvrir un portefeuille",
+        "body": "Créez ou restaurez un portefeuille QWC dans votre navigateur, puis envoyez et recevez des paiements privés.",
+        "cta": "Ouvrir Web Wallet"
+      },
+      {
+        "kind": "pool",
+        "badge": "MINER DU QWC",
+        "title": "Le mien sur le pool officiel",
+        "body": "Rejoignez le pool officiel RandomX PPLNS avec votre adresse de paiement QWC. Aucune inscription de compte de pool n’est requise.",
+        "cta": "Commencer l'exploitation minière"
+      },
+      {
+        "kind": "serviceNode",
+        "badge": "EXÉCUTER UN NŒUD",
+        "title": "Utiliser un nœud de service",
+        "body": "Exécutez un nœud QWC public, enregistrez son identité de service et qualifiez-vous grâce à des preuves de service EPoSe vérifiables, sans jalonner QWC.",
+        "cta": "Ouvrir le guide de l'opérateur"
+      }
+    ]
+  },
+  "technology": {
+    "eyebrow": "À propos du Qwertycoin",
+    "title": "Confidentialité. Alimenté par QWC.",
+    "body": "Utilisez QWC pour les paiements privés, contribuez à la puissance de calcul via l'exploitation minière ou prenez en charge le réseau en tant que nœud de service.",
+    "features": [
+      {
+        "badge": "RÉSEAU OUVERT",
+        "title": "Réseau QWC Core",
+        "body": "Envoyez et recevez du QWC sur un réseau ouvert. Des nœuds indépendants vérifient les transactions et maintiennent la blockchain.",
+        "icon": "about-il-01.svg"
+      },
+      {
+        "badge": "CONFIDENTIALITÉ",
+        "title": "Confidentialité intégrée",
+        "body": "QWC utilise une technologie de confidentialité pour protéger les détails des transactions. Son code open source permet à quiconque d'examiner le fonctionnement du réseau.",
+        "icon": "about-il-03.svg"
+      },
+      {
+        "badge": "PoW",
+        "title": "Preuve de travail RandomX",
+        "body": "Les mineurs RandomX produisent de nouveaux blocs et sécurisent la blockchain. Tout le monde peut participer avec un logiciel minier compatible.",
+        "icon": "about-il-04.svg"
+      },
+      {
+        "badge": "EPoSe",
+        "title": "Récompenses pour un service éprouvé",
+        "body": "Les nœuds de service fournissent des services réseau. Des attestations valides établissent l'éligibilité et le protocole EPoSe détermine la rotation des récompenses.",
+        "icon": "about-il-06.svg"
+      },
+      {
+        "badge": "SERVICES RÉSEAU",
+        "title": "Nœuds de service",
+        "body": "Les nœuds de service prennent en charge le réseau et participent au EPoSe. Aucun jalonnement QWC n’est requis ; la production de blocs reste la tâche des mineurs de RandomX.",
+        "icon": "about-il-02.svg"
+      },
+      {
+        "badge": "DISPONIBLE",
+        "title": "Web Wallet et open source",
+        "body": "Utilisez le QWC directement dans votre navigateur avec le Web Wallet. Explorez le logiciel de base et contribuez à son développement sur GitHub.",
+        "icon": "about-il-05.svg"
+      }
+    ]
+  },
+  "epose": {
+    "eyebrow": "EPoSe",
+    "flowLabel": "Flux EPoSe",
+    "title": "Prouvez votre service. Gagnez du QWC.",
+    "body": "EPoSe récompense les nœuds de service enregistrés pour des services réseau prouvés. Le protocole évalue les attestations valides inscrites dans la blockchain et détermine les nœuds qualifiés pour la rotation des récompenses.",
+    "intro": "QWC divise le temps de service en époques EPoSe. L'activité de service produit des attestations, la qualification est finalisée et ce n'est qu'alors que la rotation déterministe des récompenses peut utiliser l'ensemble qualifié.",
+    "compactCards": [
+      {
+        "title": "Fournir des services.",
+        "body": "Les nœuds de service enregistrés fournissent des services réseau à chaque époque."
+      },
+      {
+        "title": "Vérifiez le service.",
+        "body": "Les vérificateurs sélectionnés par protocole vérifient les réponses du service et soumettent des attestations signées."
+      },
+      {
+        "title": "Recevez des récompenses.",
+        "body": "Une fois la qualification finalisée, les nœuds de service éligibles entrent dans la rotation de récompense déterministe du protocole."
+      }
+    ],
+    "actions": {
+      "live": "Afficher les nœuds de service en direct",
+      "guide": "Exécuter un nœud de service",
+      "docs": "Lire la documentation du EPoSe"
+    },
+    "originEyebrow": "Origine EPoSe",
+    "originTitle": "Merci, Xecute.",
+    "originBody": "Xecute a développé la vision originale du EPoSe et a contribué au livre blanc sur la couche de service Qwertycoin. Ce travail a jeté les bases de la récompense des services réseau utiles.",
+    "schematic": [
+      {
+        "label": "Nœud de service",
+        "value": "identité enregistrée"
+      },
+      {
+        "label": "Comité de vérification",
+        "value": "service de chèques"
+      },
+      {
+        "label": "État de la chaîne",
+        "value": "récompense déterministe"
+      }
+    ],
+    "links": [
+      "inscription",
+      "attestation"
+    ],
+    "steps": [
+      {
+        "title": "S'inscrire",
+        "body": "Un nœud de service publie une inscription signée avec l'identité du service, l'objectif de récompense, l'engagement du point de terminaison et une preuve d'admission."
+      },
+      {
+        "title": "Servir",
+        "body": "Le nœud fournit un service réseau QWC tandis que l'exploitation minière normale RandomX reste responsable de la production de blocs."
+      },
+      {
+        "title": "Attester",
+        "body": "Les vérificateurs désignés contestent le nœud de service et signent les attestations uniquement lorsque la réponse de service attendue est valide."
+      },
+      {
+        "title": "Qualifier",
+        "body": "L'état de la chaîne vérifie si un nœud enregistré a collecté suffisamment d'attestations valides pour l'époque concernée."
+      },
+      {
+        "title": "Récompense",
+        "body": "Les nœuds qualifiés entrent dans une rotation de récompense déterministe. Un bénéficiaire sélectionné peut recevoir la partie EPoSe d'une récompense globale."
+      }
+    ],
+    "glossaryTitle": "Glossaire EPoSe",
+    "glossary": [
+      {
+        "term": "Nœud de service",
+        "definition": "Un nœud QWC normal plus une identité de service enregistrée, un engagement de point final, une adresse de récompense et des données de participation EPoSe."
+      },
+      {
+        "term": "Époque",
+        "definition": "Une période de bloc fixe au cours de laquelle l’activité du service est mesurée. Paramètre actuel : blocs {blocks}, environ des heures {hours} à un deuxième objectif de bloc {seconds}."
+      },
+      {
+        "term": "Inscrit",
+        "definition": "Le nœud de service a rejoint EPoSe en publiant un enregistrement en chaîne valide. Inscrit ne signifie pas éligible à une récompense."
+      },
+      {
+        "term": "Attestation",
+        "definition": "Une confirmation signée d'un vérificateur désigné indiquant que le nœud de service a répondu à son défi de service avec la réponse attendue."
+      },
+      {
+        "term": "Comité de vérification",
+        "definition": "Un ensemble déterministe de nœuds de vérification sélectionnés dans l'état de la chaîne pour un défi de service. Le noyau public actuel cible les vérificateurs {committee} lorsqu'il existe suffisamment de candidats."
+      },
+      {
+        "term": "Preuve d'admission",
+        "definition": "Une petite preuve jointe à l'enregistrement qui rend la création des identités coûteuse et contribue à réduire les enregistrements Sybil bon marché."
+      },
+      {
+        "term": "Qualifié",
+        "definition": "Un nœud de service enregistré qui a collecté suffisamment d'attestations valides et non en double à l'époque concernée. Le quorum est des deux tiers du comité de vérification effectivement sélectionné."
+      },
+      {
+        "term": "Époque source de récompense",
+        "definition": "L'époque finalisée dont l'ensemble qualifié est utilisé pour la période de récompense en cours. Dans le noyau actuel, les blocs de l'époque N utilisent des nœuds qualifiés de l'époque N-1."
+      },
+      {
+        "term": "Rotation des récompenses",
+        "definition": "Les nœuds qualifiés font l'objet d'une rotation déterministe en tant que destinataires possibles de la partie EPoSe des récompenses de bloc. La coinbase ne grandit pas avec le nombre total de nœuds."
+      }
+    ],
+    "epochTitle": "Les époques sont des plages de blocs, pas des rendez-vous d'horloge.",
+    "epochBody": "Une époque EPoSe est une période de service de bloc {blocks}, soit environ des heures {hours} à l'objectif actuel du bloc {seconds} en secondes.",
+    "registeredVsQualified": [
+      {
+        "label": "Inscrit",
+        "body": "Le nœud a rejoint EPoSe."
+      },
+      {
+        "label": "Qualifié",
+        "body": "Le nœud a démontré suffisamment d'activité de service pour devenir éligible aux récompenses de service."
+      }
+    ],
+    "committeeTitle": "Les comités de vérification ne sont pas des ensembles de validateurs.",
+    "committeeBody": "Les comités de vérificateurs ne produisent pas de blocs et ne remplacent pas les mineurs RandomX. Leur rôle se limite à vérifier l’activité des nœuds de service pour la qualification EPoSe. Le Core public actuel vise {committee} vérificateurs lorsqu’il existe suffisamment de candidats et exige un quorum des deux tiers du comité effectivement sélectionné. Avec un comité complet, cela représente {fullCommitteeAttestations} attestations.",
+    "rewardTimelineTitle": "Le service est mesuré en premier. Les récompenses suivent plus tard.",
+    "timeline": [
+      {
+        "label": "Époque N",
+        "title": "S'inscrire / Servir / Attester",
+        "body": "Les nœuds de service s'enregistrent, fournissent des services et collectent des attestations de vérificateurs valides."
+      },
+      {
+        "label": "Finalité",
+        "title": "Qualification finalisée",
+        "body": "L'état de consensus dérive l'ensemble qualifié à partir de données EPoSe valides une fois l'époque terminée."
+      },
+      {
+        "label": "Époque N+1",
+        "title": "Rotation des récompenses",
+        "body": "Le noyau actuel utilise l’époque précédente comme époque source de récompense pour la sélection déterministe du bénéficiaire."
+      }
+    ],
+    "rotationTitle": "La rotation des récompenses maintient les récompenses en bloc compactes.",
+    "rotationBody": "Répartition actuelle des récompenses du Mainnet : 90 % pour le mineur et {rewardPercent} % pour la récompense de service EPoSe. Les paiements de service EPoSe sont visibles par le consensus afin que chaque nœud puisse vérifier le nœud de service sélectionné et le montant de la récompense. Les transactions normales des portefeuilles QWC continuent d’utiliser les mécanismes de confidentialité du modèle de transaction QWC sous-jacent.",
+    "rotationExamples": [
+      "Bloc 1001 -> nœud A",
+      "Bloc 1002 -> nœud C",
+      "Bloc 1003 -> nœud B",
+      "Bloc 1004 -> nœud A"
+    ],
+    "rewardRulesTitle": "Les récompenses suivent le protocole.",
+    "rewardRulesBody": "Chaque nœud complet peut vérifier, à partir de la blockchain, l’éligibilité aux récompenses et la sélection du bénéficiaire. Répartition de la subvention de bloc : 90 % pour le minage et {rewardPercent} % pour les récompenses de service EPoSe ; les frais de transaction restent acquis au mineur.",
+    "rewardFormulaAlt": "Formule consensuelle EPoSe pour le quorum des vérificateurs, la qualification des nœuds de service, la rotation des destinataires et l'attribution des récompenses de service.",
+    "rewardFormulaCaption": "Quorum EPoSe, qualification, rotation des destinataires et récompense de service — une représentation compacte des règles de consensus actif."
+  },
+  "faq": {
+    "eyebrow": "FAQ EPoSe",
+    "title": "Réponses courtes pour les nouveaux opérateurs.",
+    "items": [
+      {
+        "question": "Qu'est-ce que le Qwertycoin ?",
+        "answer": "Qwertycoin (QWC) est une crypto-monnaie axée sur la confidentialité avec une extraction de preuve de travail RandomX et des récompenses EPoSe pour des services réseau éprouvés."
+      },
+      {
+        "question": "Comment utiliser le Web Wallet ?",
+        "answer": "Ouvrez le Web Wallet officiel, créez ou restaurez un portefeuille et suivez ses instructions de sécurité. Le site Web principal ne traite jamais les clés du portefeuille."
+      },
+      {
+        "question": "Puis-je utiliser un ancien portefeuille QWC ?",
+        "answer": "Non. Le réseau QWC actuel est distinct de la chaîne précédente. Les anciens logiciels de portefeuille et les données blockchain ne sont pas compatibles avec ce réseau."
+      },
+      {
+        "question": "Le EPoSe remplace-t-il le minage ?",
+        "answer": "Les mineurs RandomX produisent des blocs et sécurisent la blockchain. Le EPoSe ajoute des récompenses pour les services réseau éprouvés."
+      },
+      {
+        "question": "Qu'est-ce qu'une époque ?",
+        "answer": "Une époque est la période de blocage utilisée pour évaluer l’activité du service EPoSe. Il s'étend actuellement sur les blocs {blocks}, soit environ des heures {hours} à l'intervalle de bloc cible."
+      },
+      {
+        "question": "Que signifie qualifié ?",
+        "answer": "Un nœud de service qualifié a satisfait aux exigences du protocole pour les attestations valides à l'époque concernée et est éligible à la sélection de récompense de service. Le quorum technique est au minimum plafond (2 x taille réelle du comité / 3)."
+      },
+      {
+        "question": "Qui détermine les qualifications et les récompenses ?",
+        "answer": "Le protocole EPoSe. Chaque nœud complet applique les mêmes règles aux inscriptions et attestations valides en chaîne pour vérifier l'éligibilité et la sélection des récompenses."
+      },
+      {
+        "question": "Les nœuds de service doivent-ils implanter QWC ?",
+        "answer": "Non. La participation nécessite l'enregistrement du EPoSe et les preuves de service requises, le QWC non verrouillé comme mise."
+      },
+      {
+        "question": "Un opérateur peut-il exécuter plusieurs nœuds de service ?",
+        "answer": "Oui. Chaque nœud de service nécessite son propre enregistrement valide et doit répondre aux exigences de service du protocole. La preuve d’admission rend plus difficile la création d’identité à bas prix."
+      },
+      {
+        "question": "Pourquoi le EPoSe n’est-il pas une preuve de participation ?",
+        "answer": "Le EPoSe récompense le service éprouvé plutôt que la mise verrouillée. Les nœuds de service vérifient les données de la blockchain comme les autres nœuds complets, tandis que les mineurs RandomX effectuent une production de blocs de preuve de travail."
+      }
+    ]
+  },
+  "serviceNodes": {
+    "eyebrow": "Nœuds de service",
+    "title": "Soutenez le réseau. Gagnez grâce au service.",
+    "body": "Chaque nœud complet vérifie et relaie les données de la blockchain. Un nœud de service enregistré participe également au EPoSe et peut se qualifier pour des récompenses de service.",
+    "normal": "Nœud normal",
+    "service": "Nœud de service",
+    "comparisonLabel": "Comparaison du nœud normal et du nœud de service",
+    "rows": [
+      [
+        "Vérifie les blocs et les transactions, synchronise la chaîne et relaie les données.",
+        "Exécute les mêmes fonctions de nœud et fournit des services EPoSe enregistrés."
+      ],
+      [
+        "L’exploitation d’un nœud standard à elle seule ne permet pas d’obtenir des récompenses EPoSe.",
+        "Peut être admissible à des récompenses de service grâce à des attestations de service valides."
+      ],
+      [
+        "Peut être exploité indépendamment de l’exploitation minière.",
+        "Nécessite un enregistrement EPoSe et des preuves de service, sans jalonnement QWC."
+      ]
+    ]
+  },
+  "mining": {
+    "eyebrow": "Minage",
+    "title": "Le mien avec RandomX.",
+    "body": "Contribuez à la puissance de calcul du Qwertycoin. Les mineurs RandomX produisent des blocs à un intervalle cible de 120 secondes.",
+    "cards": [
+      {
+        "title": "Participation ouverte",
+        "body": "Connectez le logiciel de minage RandomX compatible à un nœud QWC ou à un pool de minage pris en charge."
+      },
+      {
+        "title": "Services miniers et de réseau",
+        "body": "L’exploitation minière sécurise la production de blocs. EPoSe récompense séparément les nœuds enregistrés pour les services réseau éprouvés."
+      }
+    ],
+    "poolEyebrow": "Piscine officielle Qwertycoin",
+    "poolTitle": "Commencez à exploiter en quelques minutes.",
+    "poolBody": "Le pool officiel fournit une comptabilité transparente {poolAccounting}, des statistiques en direct et des paiements automatiques. Votre adresse de paiement QWC est votre compte pool ; la piscine ne demande jamais les clés du portefeuille.",
+    "poolFacts": [
+      "Algorithme : {poolAlgorithm}",
+      "Pas d'inscription : utilisez votre adresse de paiement QWC",
+      "Statistiques de hashrate, de travailleur, de blocage et de paiement en direct",
+      "Chaque compte de paiement paie les frais de réseau réels pour son propre paiement"
+    ],
+    "poolCta": "Piscine officielle ouverte",
+    "setupCta": "Créer une commande XMRig",
+    "docsCta": "Lire le guide du pool-mining",
+    "allocationTitle": "Deux niveaux de récompense distincts",
+    "protocolLabel": "Protocole QWC",
+    "protocolSplit": "90% minier / 10% EPoSe",
+    "protocolBody": "La subvention de bloc est répartie à hauteur de {miningRewardPercent} % pour le minage et de {rewardPercent} % pour les récompenses de service EPoSe. Les frais de transaction restent acquis au mineur.",
+    "poolLabel": "Piscine officielle",
+    "poolSplit": "95% mineurs / 5% pool",
+    "poolAllocationBody": "À partir des récompenses minières distribuées via le pool officiel, {poolFeePercent}% finance le développement et les opérations du pool Qwertycoin ; exactement {poolMinerPercent}% est alloué aux mineurs participants avant les frais de transaction de paiement de chaque compte."
+  },
+  "exchanges": {
+    "eyebrow": "ÉCHANGES",
+    "title": "OBTENEZ LE QWC.",
+    "body": "Trouvez un échange qui répertorie Qwertycoin.",
+    "listed": "LISTE",
+    "pairLabel": "PAIRE DE NÉGOCIATION",
+    "trade": "COMMERCE QWC",
+    "external": "Échange externe",
+    "linkLabel": "Échangez du QWC contre du Neoxa Exchange et ouvrez un nouvel onglet"
+  },
+  "wallet": {
+    "eyebrow": "Portefeuille",
+    "title": "Votre prochaine étape : un portefeuille.",
+    "body": "Les Web Wallet, Qwertycoin GUI 2.0.0 et le code source sont disponibles dès maintenant.",
+    "cards": [
+      {
+        "badge": "DISPONIBLE",
+        "title": "Web Wallet",
+        "body": "Envoyez, recevez et gérez le QWC directement dans votre navigateur.",
+        "button": "Ouvrir Web Wallet",
+        "icon": "wallet.svg"
+      },
+      {
+        "badge": "EN DÉVELOPPEMENT",
+        "title": "PWA",
+        "body": "Le comportement installable du PWA est en cours de développement et sera répertorié lorsqu'il sera prêt.",
+        "icon": "about-il-05.svg"
+      },
+      {
+        "badge": "DISPONIBLE",
+        "title": "Portefeuilles de bureau",
+        "body": "Qwertycoin GUI 2.0.3 est disponible pour Windows, macOS Apple Silicon et Linux x86_64.",
+        "icon": "development.svg"
+      }
+    ]
+  },
+  "releases": {
+    "eyebrow": "Portefeuilles",
+    "title": "Portefeuilles et code source",
+    "body": "La première phase de test publique du QWC est ouverte. Les outils de ligne de commande Web Wallet, Qwertycoin GUI 2.0.3, Core v2.0.3, l'image officielle Docker et le code source sont désormais disponibles.",
+    "cards": [
+      {
+        "badge": "DISPONIBLE · v2.0.3",
+        "badgeClass": "mainnet",
+        "title": "Portefeuilles de bureau",
+        "body": "Téléchargez le Qwertycoin GUI actuel à partir de la version officielle du GitHub. Les utilisateurs de GUI v2.0.2 doivent installer la v2.0.3 une fois avec le téléchargement direct, car le programme de mise à jour v2.0.2 ne peut pas suivre la redirection des ressources de version de GitHub. Les programmes d'installation Windows et macOS DMG sont les installateurs préférés ; Les packages portables ZIP et TAR.GZ restent disponibles comme alternatives. Vérifiez le téléchargement et la somme de contrôle avant utilisation.",
+        "note": "Note d'intégrité : SHA256SUMS vérifie les octets téléchargés, et non l'identité de l'éditeur. Linux et Windows ne sont pas signés ; macOS est signé ad hoc et non notarié.",
+        "glyph": "GUI",
+        "downloadsLayout": "rows",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "Télécharger la configuration du Windows",
+            "compatibility": "Testé sur le coureur Windows Server 2025 · non signé ; les anciennes versions de Windows n'ont pas été vérifiées",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64-setup.exe",
+            "sha256": "7f8c159fa956db2b6a9b55fd47600a1fe68f32dd26d1e665877a9cc37758eadd",
+            "shaLabel": "Configuration SHA-256",
+            "preferredLabel": "Installateur préféré",
+            "alternatives": [
+              {
+                "downloadLabel": "Télécharger le ZIP portable du Windows",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64.zip",
+                "sha256": "b4b2c28a5cee6ca7bd3f423de5b340706ee216a31bfa23d620b7a67150a197de",
+                "shaLabel": "ZIP SHA-256"
+              }
+            ]
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "Télécharger macOS DMG",
+            "compatibility": "macOS 15 ou plus récent",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.dmg",
+            "sha256": "a4736597387770250b795fd1a4397693990522cf673cfb29d6cf9bb855071200",
+            "shaLabel": "DMG SHA-256",
+            "preferredLabel": "Téléchargement préféré",
+            "alternatives": [
+              {
+                "downloadLabel": "Télécharger macOS TAR.GZ",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.tar.gz",
+                "sha256": "ce239650afcc8eacee7b13d35f076a3ea617a81d4728b22d53d1ecc28a97fe26",
+                "shaLabel": "TAR.GZ SHA-256"
+              }
+            ]
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "Télécharger Linux TAR.GZ",
+            "compatibility": "Plafond de compatibilité GLIBC 2.35",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "55cc8754df00c36017b7a0ffa35b90d3878c95477202059b6c596b5163c47680"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/SHA256SUMS"
+          },
+          {
+            "label": "Notes de version",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.3"
+          },
+          {
+            "label": "Signaler un problème",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/issues"
+          }
+        ]
+      },
+      {
+        "badge": "DISPONIBLE · v2.0.3",
+        "badgeClass": "mainnet",
+        "title": "Outils de ligne de commande de base",
+        "body": "Packages officiels Qwertycoin contenant qwertycoind, qwertycoin-wallet-cli et qwertycoin-wallet-rpc. Vérifiez l'archive et la somme de contrôle avant utilisation ; les notes de version et l'état de l'audit sont documentés avec chaque version du GitHub.",
+        "note": "Note d'intégrité : SHA256SUMS vérifie les octets téléchargés, et non l'identité de l'éditeur. Linux et Windows ne sont pas signés ; macOS est signé ad hoc et non notarié.",
+        "glyph": "CLI",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "Télécharger le ZIP du Windows",
+            "compatibility": "Testé sur le coureur Windows Server 2025 ; aucune revendication plus large sur l'héritage Windows",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-windows-x86_64.zip",
+            "sha256": "b0bab23137d5a4308b3d1cd582c17fd0069f392c265a74a1e0fd0f15b4becaaf"
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "Télécharger macOS TAR.GZ",
+            "compatibility": "macOS 15 ou plus récent",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-macos-arm64.tar.gz",
+            "sha256": "c23194aff092d0cc8ef6eed9ce4a6d45ccb06c7b760b05e7fce0cd9992962fdf"
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "Télécharger Linux TAR.GZ",
+            "compatibility": "Plafond de compatibilité GLIBC 2.35 / GLIBCXX 3.4.30",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "8df9d4bd22610228f3330aaac348776fd86bcd853751cf9472e0fc4db271b675"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/SHA256SUMS"
+          },
+          {
+            "label": "Notes de version",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+          },
+          {
+            "label": "Signaler un problème",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/issues"
+          }
+        ]
+      },
+      {
+        "badge": "DISPONIBLE · 2.0.3",
+        "badgeClass": "mainnet",
+        "title": "image Docker",
+        "body": "Exécutez la version Core vérifiée en tant que conteneur Linux/amd64 non root. Mainnet et le démon sont les valeurs par défaut ; le volume nommé persistant conserve les données de la chaîne lors des mises à jour du conteneur.",
+        "note": "La dernière balise suit l’image stable la plus récente. Les déploiements de production audités peuvent épingler son résumé d'image. Seul le port 8196 du P2P est publié ci-dessous ; Le RPC administratif n’est pas exposé. Les données d'identité du portefeuille et du EPoSe nécessitent des volumes protégés distincts et un démarrage rapide complet.",
+        "glyph": "OCI",
+        "commands": [
+          {
+            "label": "Tirez l'image stable",
+            "code": "docker pull docker.io/qwertycoin/qwertycoin:latest"
+          },
+          {
+            "label": "Démarrer un nœud de réseau principal persistant",
+            "code": "docker run -d --name qwertycoind --restart unless-stopped \\\n  -v qwertycoin-chain:/data -p 8196:8196 \\\n  docker.io/qwertycoin/qwertycoin:latest"
+          }
+        ],
+        "links": [
+          {
+            "label": "Ouvrir Docker Hub",
+            "href": "https://hub.docker.com/r/qwertycoin/qwertycoin/tags"
+          },
+          {
+            "label": "Démarrage rapide du Docker",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md"
+          },
+          {
+            "label": "Notes de version principales",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+          }
+        ]
+      },
+      {
+        "badge": "DISPONIBLE",
+        "badgeClass": "mainnet",
+        "title": "Web Wallet",
+        "body": "Envoyez, recevez et gérez le QWC directement dans votre navigateur.",
+        "glyph": "WEB",
+        "links": [
+          {
+            "label": "Ouvrir Web Wallet",
+            "href": "https://wallet.qwertycoin.org/"
+          }
+        ]
+      },
+      {
+        "badge": "SOURCE DISPONIBLE",
+        "badgeClass": "next",
+        "title": "Code source du QWC",
+        "body": "Explorez le logiciel de base, créez-le vous-même et contribuez au GitHub.",
+        "glyph": "SRC",
+        "links": [
+          {
+            "label": "Dépôt de base ouvert",
+            "href": "https://github.com/qwertycoin-org/qwertycoin"
+          },
+          {
+            "label": "Organisation GitHub",
+            "href": "https://github.com/qwertycoin-org"
+          }
+        ]
+      }
+    ],
+    "noteTitle": "Remarque sur la compatibilité",
+    "noteBody": "Le réseau QWC actuel est distinct de la chaîne précédente. Les anciens logiciels de portefeuille et les données blockchain ne sont pas compatibles avec ce réseau."
+  },
+  "network": {
+    "eyebrow": "Réseau",
+    "title": "Activité réseau",
+    "body": "Données actuelles de la blockchain et du EPoSe."
+  },
+  "specs": {
+    "eyebrow": "Spécifications des pièces",
+    "title": "Paramètres du réseau principal confirmés.",
+    "body": "Ces valeurs décrivent l'implémentation actuelle du réseau principal QWC.",
+    "visualAlt": "Diagramme d'orbite des paramètres QWC",
+    "items": [
+      [
+        "Nom",
+        "Qwertycoin"
+      ],
+      [
+        "Symbole",
+        "QWC"
+      ],
+      [
+        "Réseau",
+        "Mainnet"
+      ],
+      [
+        "Protocole",
+        "QWC HF17"
+      ],
+      [
+        "Récompenses de service",
+        "EPoSe"
+      ],
+      [
+        "Consensus",
+        "Preuve de travail RandomX"
+      ],
+      [
+        "Bloquer la cible",
+        "120 secondes"
+      ],
+      [
+        "Époque EPoSe",
+        "Blocs {blocks} (~ heures {hours})"
+      ],
+      [
+        "Comité EPoSe",
+        "Cible du vérificateur {committee}"
+      ],
+      [
+        "Quorum d'attestation",
+        "plafond (2/3 du comité actuel), {fullCommitteeAttestations} ou {committee} une fois plein"
+      ],
+      [
+        "Répartition des récompenses",
+        "90 % d'exploitation minière / {rewardPercent}% EPoSe"
+      ],
+      [
+        "Décimales",
+        "8"
+      ],
+      [
+        "Constante d'approvisionnement",
+        "184,467,440.73709551 QWC"
+      ],
+      [
+        "Émission de queue",
+        "0,3 QWC/minute, 0,6 QWC/bloc cible"
+      ],
+      [
+        "Préfixe d'adresse",
+        "0x14820c, les adresses standard commencent par QWC"
+      ],
+      [
+        "P2P",
+        "8196"
+      ],
+      [
+        "Daemon RPC",
+        "8197, proxy public restreint uniquement"
+      ],
+      [
+        "Wallet RPC",
+        "8198"
+      ],
+      [
+        "ZMQ",
+        "8199"
+      ]
+    ]
+  },
+  "roadmap": {
+    "eyebrow": "Feuille de route",
+    "title": "Ce qui est disponible. Ce qui vient ensuite.",
+    "body": "Suivez la progression du réseau, des portefeuilles et des outils de développement de Qwertycoin.",
+    "items": [
+      {
+        "badge": "LIVE",
+        "title": "Réseau QWC",
+        "body": "Le réseau RandomX et les fonctionnalités principales du QWC sont en ligne. Les opérateurs continuent d'entretenir et d'améliorer le réseau."
+      },
+      {
+        "badge": "LIVE",
+        "title": "EPoSe",
+        "body": "L'inscription, les attestations de service, la qualification et la rotation des récompenses font partie du réseau QWC actuel."
+      },
+      {
+        "badge": "EN COURS",
+        "title": "Exploitation du réseau",
+        "body": "La surveillance, la maintenance et les améliorations opérationnelles se poursuivent dans le cadre du travail régulier du réseau."
+      },
+      {
+        "badge": "DISPONIBLE",
+        "title": "Portefeuilles et outils",
+        "body": "Le Web Wallet est disponible. Le comportement du PWA, le logiciel de bureau et les outils supplémentaires conservent leur propre statut."
+      },
+      {
+        "badge": "SOURCE DISPONIBLE",
+        "title": "Ressources pour les développeurs",
+        "body": "Le code source principal est disponible. La documentation supplémentaire, les API et les ressources des opérateurs sont suivies séparément."
+      },
+      {
+        "badge": "RECHERCHE",
+        "title": "Recherche EPoSe",
+        "body": "Les services étendus restent des sujets de recherche et ne sont pas présentés comme des fonctions actuelles du produit."
+      }
+    ]
+  },
+  "history": {
+    "eyebrow": "Histoire",
+    "title": "Depuis 2018. Construire le prochain chapitre.",
+    "body": "Qwertycoin a débuté en 2018. Le réseau actuel s'appuie sur cette histoire avec RandomX et EPoSe.",
+    "bridge": [
+      "Chaîne communautaire originale QWC",
+      "Réseau QWC avec RandomX et EPoSe"
+    ],
+    "items": [
+      {
+        "date": "2018",
+        "title": "Lancement du Qwertycoin",
+        "body": "QWC a commencé comme une pièce de confidentialité communautaire basée sur CryptoNote avec les premiers efforts en matière de portefeuille, d'explorateur, de communauté et d'infrastructure."
+      },
+      {
+        "date": "2019–2023",
+        "title": "Recherche et développement EPoW et EPoSe",
+        "body": "De 2019 à 2023, le projet a exploré des récompenses équitables en matière d’exploitation minière et de services de réseau, ainsi que de portefeuilles, de nœuds et d’infrastructures. Le travail EPoSe de Xecute a façonné la vision de récompenser les services réseau utiles."
+      },
+      {
+        "date": "Plus tard",
+        "title": "Phase de jeton",
+        "body": "La phase symbolique fait partie de l'histoire du Qwertycoin et est distincte du réseau QWC actuel."
+      },
+      {
+        "date": "2026",
+        "title": "Réseau Qwertycoin",
+        "body": "Qwertycoin lance un nouveau réseau avec des paiements privés, l'exploitation minière RandomX et des récompenses de service EPoSe."
+      }
+    ],
+    "alert": "Le réseau QWC actuel est distinct de la chaîne précédente. Les anciens logiciels de portefeuille et les données blockchain ne sont pas compatibles avec ce réseau."
+  },
+  "developers": {
+    "eyebrow": "Développeurs",
+    "title": "Construisez avec Qwertycoin.",
+    "body": "Explorez le code principal, créez le logiciel et contribuez aux améliorations du GitHub.",
+    "buildTitle": "Construire à partir des sources",
+    "registrationTitle": "Outils de nœud de service",
+    "sourceTitle": "Code source de base",
+    "sourceBody": "Explorez le référentiel principal public Qwertycoin sur GitHub.",
+    "legacyTitle": "Instructions de construction",
+    "legacyBody": "Les informations de construction et de publication sont suivies avec le référentiel principal et les ressources publiées.",
+    "registrationBody": "Exécutez un nœud de service EPoSe public avec le guide de l'opérateur Core actuel.",
+    "registrationLink": "Ouvrez le guide de l'opérateur du EPoSe"
+  },
+  "community": {
+    "eyebrow": "Communauté",
+    "title": "Rejoignez la communauté Qwertycoin.",
+    "body": "Suivez le développement, explorez le réseau et contribuez à façonner les prochaines étapes du Qwertycoin.",
+    "github": "Organisation Qwertycoin",
+    "explorer": "QWC Mainnet Explorer"
+  },
+  "footer": {
+    "body": "Qwertycoin combine les paiements privés, le minage RandomX, les récompenses de service EPoSe, le Web Wallet et le code source public.",
+    "technology": "Technologie",
+    "pool": "Piscine officielle",
+    "documentation": "Documentation",
+    "history": "Histoire",
+    "roadmap": "Feuille de route"
+  },
+  "notFound": {
+    "title": "Page introuvable | Qwertycoin",
+    "eyebrow": "404",
+    "heading": "Page introuvable.",
+    "body": "Cette page Qwertycoin n'existe pas. Ouvrez l'aperçu actuel ou changez de langue.",
+    "home": "Maison ouverte"
+  }
+}

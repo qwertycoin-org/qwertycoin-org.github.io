@@ -20,6 +20,16 @@
 
 - [Website](https://qwertycoin.org/): Project overview in English.
 - [Deutsch](https://qwertycoin.org/de/): Projektübersicht auf Deutsch.
+- [简体中文](https://qwertycoin.org/zh-hans/): 简体中文项目概览。
+- [Nederlands](https://qwertycoin.org/nl/): Projectoverzicht in het Nederlands.
+- [Esperanto](https://qwertycoin.org/eo/): Projekta superrigardo en Esperanto.
+- [Français](https://qwertycoin.org/fr/): Présentation du projet en français.
+- [Italiano](https://qwertycoin.org/it/): Panoramica del progetto in italiano.
+- [日本語](https://qwertycoin.org/ja/): 日本語のプロジェクト概要。
+- [lojban](https://qwertycoin.org/jbo/): le se tcidu be fi la .lojban. be'o pe la'o gy. Qwertycoin .gy.
+- [Português](https://qwertycoin.org/pt/): Visão geral do projeto em português.
+- [Русский](https://qwertycoin.org/ru/): Обзор проекта на русском языке.
+- [Español](https://qwertycoin.org/es/): Descripción general del proyecto en español.
 - [Web Wallet](https://wallet.qwertycoin.org/): Browser wallet.
 - [Explorer](https://explorer.qwertycoin.org/): Blockchain explorer.
 - [Official mining pool](https://pool.qwertycoin.org/): RandomX PPLNS pool,

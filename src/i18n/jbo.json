@@ -1,0 +1,829 @@
+{
+  "meta": {
+    "title": "la'o gy. Qwertycoin (QWC) .gy. | lo sivni jdini .e la'o gy. RandomX .gy. .e la'o gy. EPoSe .gy.",
+    "description": "la'o gy. Qwertycoin (QWC) .gy. cu sivni skami jdini gi'e se jicmu lo kalri la'o gy. RandomX proof of work .gy. bloku cupra .e lo la'o gy. EPoSe .gy. jerna be lo ba'e birti samci'e selfu.",
+    "ogTitle": "la'o gy. Qwertycoin (QWC) .gy. | lo sivni jdini .i lo kalri samci'e",
+    "ogDescription": "la'o gy. Qwertycoin (QWC) .gy. cu sivni skami jdini gi'e se jicmu lo kalri la'o gy. RandomX proof of work .gy. bloku cupra .e lo la'o gy. EPoSe .gy. jerna be lo ba'e birti samci'e selfu.",
+    "twitterDescription": "la'o gy. Qwertycoin (QWC) .gy. cu sivni skami jdini gi'e se jicmu lo kalri la'o gy. RandomX proof of work .gy. bloku cupra .e lo la'o gy. EPoSe .gy. jerna be lo ba'e birti samci'e selfu.",
+    "imageAlt": "lo Q tarmi be la'o gy. Qwertycoin .gy. noi se kansa lu lo sivni jdini .i lo kalri samci'e li'u"
+  },
+  "nav": {
+    "skip": "ko klama lo se tcidu",
+    "homeLabel": "lo ralju papri be la'o gy. Qwertycoin .gy.",
+    "menu": "lo cuxna liste",
+    "about": "lo skicu",
+    "epose": "EPoSe",
+    "mining": "lo bloku cupra",
+    "getQwc": "ko cpacu lo QWC",
+    "releases": "lo se fukpi",
+    "wallet": "lo jdini vasru",
+    "network": "lo samci'e",
+    "history": "lo purci",
+    "developers": "lo favgau",
+    "language": "lo bangu",
+    "languageShort": "bangu"
+  },
+  "hero": {
+    "title": "lo sivni jdini .i lo kalri samci'e",
+    "lead": "la'o gy. Qwertycoin (QWC) .gy. cu sivni skami jdini poi se jicmu lo kalri la'o gy. RandomX .gy. bloku cupra .e lo la'o gy. EPoSe .gy. jerna be lo ba'e birti samci'e selfu.",
+    "kicker": "ko pilno la'o gy. Web Wallet .gy. gi'a ko catlu lo bloku porsi gi'a ko sidju la'o gy. GitHub .gy.",
+    "getQwc": "ko cpacu lo QWC",
+    "github": "ko sidju la'o gy. GitHub .gy.",
+    "wallet": "ko pilno la'o gy. Web Wallet .gy.",
+    "mining": "ko cuxna lo do tadji",
+    "visualAlt": "lo barda solri Q tarmi be la'o gy. Qwertycoin .gy. noi se sruri lo samci'e tarmi",
+    "pulseLabel": "lo QWC Mainnet cu ca'o zukte",
+    "pulseBody": "lo cabna datni be lo bloku porsi .e la'o gy. EPoSe .gy. .i lo se djuno cu za'o viska va'o lo nu su'o namcu na kakne lo nu se cpacu"
+  },
+  "metrics": {
+    "height": {
+      "label": "lo bloku nilrai",
+      "help": "lo cabna nilrai be lo gubni bloku porsi"
+    },
+    "registered": {
+      "label": "lo se vreji selfu samci'e pagbu",
+      "shortLabel": "se vreji",
+      "help": "lo selfu samci'e pagbu poi se vreji fo lo drani"
+    },
+    "qualified": {
+      "label": "lo mapti selfu samci'e pagbu",
+      "shortLabel": "mapti",
+      "help": "lo selfu samci'e pagbu poi mapti lo nu cumki cpacu lo jerna ca lo srana temci va'o lo nu lo datni cu se cpacu"
+    },
+    "epoch": {
+      "label": "lo la'o gy. EPoSe .gy. temci girzu",
+      "shortLabel": "lo temci girzu",
+      "help": "lo cabna selfu temci be {blocks} bloku noi ze'a li ji'i {hours} cacra"
+    },
+    "topHash": "lo lerfu namcu be lo ro moi bloku",
+    "stateHash": "lo lerfu namcu be lo la'o gy. EPoSe .gy. tcini",
+    "explorer": "lo bloku porsi catlu",
+    "currentSource": "lo samselpla be lo Core",
+    "sourcePending": "se cpacu fi la'o gy. GitHub .gy.",
+    "syncLoading": "ca'o cpacu...",
+    "loading": "ca'o cpacu...",
+    "updated": "se ningau de'i {time}",
+    "unavailable": "na se cpacu ca lo cabna",
+    "partial": "su'o samci'e datni na se cpacu ca lo cabna",
+    "eposeUnavailable": "lo la'o gy. EPoSe .gy. namcu na se cpacu ca lo cabna",
+    "unknown": "na se djuno",
+    "synchronized": "snada lo nu mapti",
+    "syncPending": "pu'o mapti",
+    "ratio": "{qualified} lo mapti fi'o se cmima {registered}",
+    "noScript": "lo jmive tcini cu nitcu la'o gy. JavaScript .gy. .i ku'i do ka'e pilno lo bloku porsi catlu te zu'e lo nu viska lo cabna samci'e datni"
+  },
+  "system": {
+    "securityLabel": "lo bloku cupra",
+    "securityTitle": "RandomX PoW",
+    "securityBody": "lo bloku cupra cu zbasu lo cnino bloku gi'e jai gau snura lo bloku porsi ta'i lo nu jarco lo se gunka",
+    "infrastructureLabel": "lo selfu jerna",
+    "infrastructureTitle": "EPoSe",
+    "infrastructureBody": "lo selfu samci'e pagbu cu mapti lo nu cumki cpacu lo samci'e selfu jerna ta'i lo drani jetnu xusra"
+  },
+  "participate": {
+    "eyebrow": "ko co'a ti",
+    "title": "ko cuxna lo tadji be lo nu do kansa",
+    "body": "ko pilno lo QWC gi'a ko dunda lo skami nusna gi'a ko jitro lo gubni samci'e pagbu .i ro tadji cu se krasi lo cabna je javni sarcu tutci",
+    "paths": [
+      {
+        "kind": "wallet",
+        "badge": "ko pilno lo QWC",
+        "title": "ko pilno lo jdini vasru",
+        "body": "ko zbasu gi'a xruti lo QWC jdini vasru ne lo do kibro catlu .i ba bo ko benji je cpacu lo sivni jdini",
+        "cta": "ko pilno la'o gy. Web Wallet .gy."
+      },
+      {
+        "kind": "pool",
+        "badge": "ko cupra lo QWC",
+        "title": "ko cupra lo bloku ne lo javni pool",
+        "body": "ko kansa lo javni la'o gy. RandomX PPLNS .gy. pool se pi'o lo do QWC jerna judri .i na sarcu fa lo nu se vreji lo pool jaspu",
+        "cta": "ko co'a cupra lo bloku"
+      },
+      {
+        "kind": "serviceNode",
+        "badge": "ko jitro lo samci'e pagbu",
+        "title": "ko jitro lo selfu samci'e pagbu",
+        "body": "ko jitro lo gubni QWC samci'e pagbu gi'e vreji lo selfu du'i gi'e mapti ta'i lo se cipra la'o gy. EPoSe .gy. selfu .i na sarcu lo nu do punji lo QWC",
+        "cta": "ko tcidu lo jitro gidva"
+      }
+    ]
+  },
+  "technology": {
+    "eyebrow": "lo skicu be la'o gy. Qwertycoin .gy.",
+    "title": "lo sivni .i se dicra lo QWC",
+    "body": "ko pilno lo QWC lo sivni jdini benji .i ko dunda lo skami nusna ta'i lo bloku cupra gi'a ko sidju lo samci'e se pi'o lo selfu samci'e pagbu",
+    "features": [
+      {
+        "badge": "lo kalri samci'e",
+        "title": "lo QWC Core samci'e",
+        "body": "ko benji je cpacu lo QWC ne lo kalri samci'e .i lo rangalti samci'e pagbu cu cipra lo jdini benji gi'e kurji lo bloku porsi",
+        "icon": "about-il-01.svg"
+      },
+      {
+        "badge": "lo sivni",
+        "title": "lo sivni cu se jicmu",
+        "body": "lo QWC cu pilno lo sivni tadji te zu'e lo nu mipri lo jdini benji datni .i lo gubni samselpla cu curmi lo nu ro prenu ka'e cipra lo samci'e tadji",
+        "icon": "about-il-03.svg"
+      },
+      {
+        "badge": "PoW",
+        "title": "lo la'o gy. RandomX proof of work .gy.",
+        "body": "lo la'o gy. RandomX .gy. bloku cupra cu zbasu lo cnino bloku gi'e jai gau snura lo bloku porsi .i ro prenu cu ka'e kansa va'o lo nu pilno lo mapti cupra sampla",
+        "icon": "about-il-04.svg"
+      },
+      {
+        "badge": "EPoSe",
+        "title": "lo jerna be lo ba'e birti selfu",
+        "body": "lo selfu samci'e pagbu cu dunda lo samci'e selfu .i lo drani jetnu xusra cu gasnu lo nu mapti gi'e lo la'o gy. EPoSe .gy. javni cu cuxna lo jerna se porsi",
+        "icon": "about-il-06.svg"
+      },
+      {
+        "badge": "lo samci'e selfu",
+        "title": "lo selfu samci'e pagbu",
+        "body": "lo selfu samci'e pagbu cu sidju lo samci'e gi'e kansa la'o gy. EPoSe .gy. .i na sarcu lo nu punji lo QWC .i lo bloku cupra cu za'o se zukte lo la'o gy. RandomX .gy. bloku cupra",
+        "icon": "about-il-02.svg"
+      },
+      {
+        "badge": "se cpacu",
+        "title": "lo la'o gy. Web Wallet .gy. .e lo gubni samselpla",
+        "body": "ko pilno lo QWC pe'a ne lo do kibro catlu se pi'o la'o gy. Web Wallet .gy. .i ko catlu lo Core sampla gi'e sidju lo nu favgau ne la'o gy. GitHub .gy.",
+        "icon": "about-il-05.svg"
+      }
+    ]
+  },
+  "epose": {
+    "eyebrow": "EPoSe",
+    "flowLabel": "lo la'o gy. EPoSe .gy. flecu",
+    "title": "ko jarco lo selfu .i ko jerna lo QWC",
+    "body": "la'o gy. EPoSe .gy. cu cnemu lo se vreji selfu samci'e pagbu lo ba'e birti samci'e selfu .i lo javni cu cipra lo drani jetnu xusra poi se vreji ne lo bloku porsi gi'e cuxna lo samci'e pagbu poi mapti lo jerna se porsi",
+    "intro": "lo QWC cu fendi lo selfu temci lo la'o gy. EPoSe .gy. temci girzu .i lo selfu zukte cu cupra lo jetnu xusra .i ba bo lo ka mapti cu mulno se jdice .i po'o ba ti lo javni jerna se porsi cu pilno lo mapti girzu",
+    "compactCards": [
+      {
+        "title": "ko dunda lo selfu",
+        "body": "lo se vreji selfu samci'e pagbu cu dunda lo samci'e selfu ca ro temci girzu"
+      },
+      {
+        "title": "ko cipra lo selfu",
+        "body": "lo javni cuxna cipra pagbu cu cipra lo selfu spuda gi'e benji lo se tcita jetnu xusra"
+      },
+      {
+        "title": "ko cpacu lo jerna",
+        "body": "ba lo nu lo ka mapti cu mulno se jdice kei lo mapti selfu samci'e pagbu cu cmima lo javni je na stodi jerna se porsi"
+      }
+    ],
+    "actions": {
+      "live": "ko catlu lo jmive selfu samci'e pagbu",
+      "guide": "ko jitro lo selfu samci'e pagbu",
+      "docs": "ko tcidu lo la'o gy. EPoSe .gy. vreji"
+    },
+    "originEyebrow": "lo krasi be la'o gy. EPoSe .gy.",
+    "originTitle": "ki'e la .xekcut.",
+    "originBody": "la .xekcut. pu favgau lo pamoi sidbo be la'o gy. EPoSe .gy. gi'e sidju lo nu ciska la'o gy. Qwertycoin service-layer whitepaper .gy. .i le gunka cu jicmu lo sidbo be lo nu cnemu lo plixau samci'e selfu",
+    "schematic": [
+      {
+        "label": "lo selfu samci'e pagbu",
+        "value": "lo se vreji du'i"
+      },
+      {
+        "label": "lo cipra pagbu girzu",
+        "value": "cu cipra lo selfu"
+      },
+      {
+        "label": "lo bloku porsi tcini",
+        "value": "lo na stodi jerna"
+      }
+    ],
+    "links": [
+      "lo nu vreji",
+      "lo jetnu xusra"
+    ],
+    "steps": [
+      {
+        "title": "ko vreji",
+        "body": "lo selfu samci'e pagbu cu gubni benji lo se tcita vreji poi vasru lo selfu du'i .e lo jerna te benji .e lo judri se cipra .e lo nerkla se cipra"
+      },
+      {
+        "title": "ko selfu",
+        "body": "lo samci'e pagbu cu dunda lo QWC samci'e selfu ca lo nu lo cumki la'o gy. RandomX .gy. bloku cupra cu za'o fuzme lo bloku cupra"
+      },
+      {
+        "title": "ko jetnu xusra",
+        "body": "lo se cuxna cipra pagbu cu minde lo selfu samci'e pagbu lo nu spuda gi'e tcita lo jetnu xusra po'o va'o lo nu lo se spuda cu drani"
+      },
+      {
+        "title": "ko mapti",
+        "body": "lo bloku porsi tcini cu cipra lo du'u lo se vreji samci'e pagbu pu cpacu xu lo banzu drani jetnu xusra ca lo srana temci girzu"
+      },
+      {
+        "title": "ko cnemu",
+        "body": "lo mapti samci'e pagbu cu cmima lo na stodi jerna se porsi .i pa se cuxna te benji cu ka'e cpacu lo la'o gy. EPoSe .gy. pagbu be lo bloku jerna"
+      }
+    ],
+    "glossaryTitle": "lo la'o gy. EPoSe .gy. valsi liste",
+    "glossary": [
+      {
+        "term": "lo selfu samci'e pagbu",
+        "definition": "lo fadni QWC samci'e pagbu poi se jmina lo se vreji selfu du'i .e lo judri se cipra .e lo jerna judri .e lo la'o gy. EPoSe .gy. kansa datni"
+      },
+      {
+        "term": "lo temci girzu",
+        "definition": "lo stodi bloku temci poi se merli lo selfu zukte .i lo cabna namcu cu {blocks} bloku noi ze'a li ji'i {hours} cacra va'o lo bloku temci te cuxna be li {seconds} snidu"
+      },
+      {
+        "term": "se vreji",
+        "definition": "lo selfu samci'e pagbu cu kansa la'o gy. EPoSe .gy. ta'i lo nu gubni benji lo drani bloku porsi vreji .i lo ka se vreji cu na du lo ka mapti lo jerna"
+      },
+      {
+        "term": "lo jetnu xusra",
+        "definition": "lo se tcita xusra be lo se cuxna cipra pagbu be lo du'u lo selfu samci'e pagbu pu spuda lo selfu cipra lo se panra drani spuda"
+      },
+      {
+        "term": "lo cipra pagbu girzu",
+        "definition": "lo na stodi girzu be lo cipra samci'e pagbu poi se cuxna lo bloku porsi tcini te zu'e pa selfu cipra .i lo cabna gubni Core cu cuxna {committee} cipra pagbu va'o lo nu banzu lo cuxna se cumki"
+      },
+      {
+        "term": "lo nerkla se cipra",
+        "definition": "lo cmalu se cipra poi se jmina lo vreji gi'e gasnu lo nu lo du'i zbasu cu se jdima lo gunka gi'e sidju lo nu jdika lo frili la'o gy. Sybil .gy. vreji"
+      },
+      {
+        "term": "mapti",
+        "definition": "lo se vreji selfu samci'e pagbu poi pu cpacu lo banzu drani je na rapli jetnu xusra ca lo srana temci girzu .i lo sarcu girzu cu re fi'u ci lo se cuxna cipra pagbu girzu"
+      },
+      {
+        "term": "lo jerna krasi temci girzu",
+        "definition": "lo mulno temci girzu poi lo mapti girzu be ri cu se pilno lo cabna jerna temci .i ne lo cabna Core lo bloku ne lo temci girzu N cu pilno lo mapti samci'e pagbu pe lo temci girzu N-1"
+      },
+      {
+        "term": "lo jerna se porsi",
+        "definition": "lo mapti samci'e pagbu cu na stodi se porsi fi lo cumki te cpacu be lo la'o gy. EPoSe .gy. pagbu be lo bloku jerna .i lo coinbase na zenba fi lo ro samci'e pagbu namcu"
+      }
+    ],
+    "epochTitle": "lo temci girzu cu bloku jimte gi'e na cacra se jdice",
+    "epochBody": "pa la'o gy. EPoSe .gy. temci girzu cu selfu temci be {blocks} bloku noi ze'a li ji'i {hours} cacra va'o lo cabna bloku temci te cuxna be li {seconds} snidu",
+    "registeredVsQualified": [
+      {
+        "label": "se vreji",
+        "body": "lo samci'e pagbu cu kansa la'o gy. EPoSe .gy."
+      },
+      {
+        "label": "mapti",
+        "body": "lo samci'e pagbu cu jarco lo banzu selfu zukte te zu'e lo nu mapti lo selfu jerna"
+      }
+    ],
+    "committeeTitle": "lo cipra pagbu girzu cu na bloku cupra girzu",
+    "committeeBody": "lo cipra pagbu girzu cu na zbasu lo bloku gi'e na basti lo la'o gy. RandomX .gy. bloku cupra .i ry. cu po'o cipra lo selfu samci'e pagbu zukte te zu'e lo la'o gy. EPoSe .gy. mapti jdice .i lo cabna gubni Core cu cuxna {committee} cipra pagbu va'o lo nu banzu lo cuxna se cumki gi'e nitcu re fi'u ci be lo ba'e se cuxna girzu .i va'o lo mulno girzu cu nitcu {fullCommitteeAttestations} jetnu xusra",
+    "rewardTimelineTitle": "lo selfu cu se merli ca lo pamoi .i lo jerna cu ba se porsi",
+    "timeline": [
+      {
+        "label": "lo temci girzu N",
+        "title": "vreji / selfu / jetnu xusra",
+        "body": "lo selfu samci'e pagbu cu vreji gi'e dunda lo selfu gi'e cpacu lo drani cipra pagbu jetnu xusra"
+      },
+      {
+        "label": "lo mulno tcini",
+        "title": "lo ka mapti cu mulno se jdice",
+        "body": "lo simxu tugni tcini cu cupra lo mapti girzu lo drani la'o gy. EPoSe .gy. datni ba lo nu lo temci girzu cu mulno"
+      },
+      {
+        "label": "lo temci girzu N+1",
+        "title": "lo jerna se porsi",
+        "body": "lo cabna Core cu pilno lo purci temci girzu lo jerna krasi temci girzu te zu'e lo na stodi te benji cuxna"
+      }
+    ],
+    "rotationTitle": "lo jerna se porsi cu gasnu lo nu lo bloku jerna cu jdika",
+    "rotationBody": "lo cabna Mainnet jerna fendi cu du lo du'u 90% cu se dunda lo bloku cupra gi'e {rewardPercent}% cu la'o gy. EPoSe .gy. selfu jerna .i lo la'o gy. EPoSe .gy. selfu te pleji cu viska lo simxu tugni te zu'e lo nu ro samci'e pagbu ka'e cipra lo se cuxna selfu samci'e pagbu .e lo jerna namcu .i lo fadni QWC jdini vasru benji cu za'o pilno lo sivni tadji be lo jicmu QWC jdini benji tarmi",
+    "rotationExamples": [
+      "lo bloku 1001 -> lo samci'e pagbu A",
+      "lo bloku 1002 -> lo samci'e pagbu C",
+      "lo bloku 1003 -> lo samci'e pagbu B",
+      "lo bloku 1004 -> lo samci'e pagbu A"
+    ],
+    "rewardRulesTitle": "lo jerna cu se jicmu lo javni",
+    "rewardRulesBody": "ro mulno samci'e pagbu cu ka'e cipra lo jerna mapti .e lo te benji cuxna lo bloku porsi .i lo bloku jerna cu fendi 90% lo bloku cupra gi'e {rewardPercent}% lo la'o gy. EPoSe .gy. selfu jerna .i lo jdini benji jdima cu se dunda lo bloku cupra",
+    "rewardFormulaAlt": "lo la'o gy. EPoSe .gy. simxu tugni formula poi skicu lo cipra girzu sarcu namcu .e lo selfu samci'e pagbu mapti .e lo te benji se porsi .e lo selfu jerna fendi",
+    "rewardFormulaCaption": "lo la'o gy. EPoSe .gy. girzu sarcu namcu .e lo mapti .e lo te benji se porsi .e lo selfu jerna cu cmalu tarmi be lo cabna simxu tugni javni"
+  },
+  "faq": {
+    "eyebrow": "lo la'o gy. EPoSe .gy. preti",
+    "title": "lo tordu danfu be lo cnino jitro",
+    "items": [
+      {
+        "question": "ma kau la'o gy. Qwertycoin .gy.",
+        "answer": "la'o gy. Qwertycoin (QWC) .gy. cu sivni skami jdini poi se jicmu lo la'o gy. RandomX proof of work .gy. bloku cupra .e lo la'o gy. EPoSe .gy. jerna be lo ba'e birti samci'e selfu"
+      },
+      {
+        "question": "mi pilno la'o gy. Web Wallet .gy. ta'i ma",
+        "answer": "ko pilno lo javni la'o gy. Web Wallet .gy. gi'e zbasu gi'a xruti lo jdini vasru gi'e tezu'e lo snura gidva .i lo ralju kibro papri cu na roi pilno lo jdini vasru ckiku"
+      },
+      {
+        "question": "xu mi ka'e pilno lo purci QWC jdini vasru",
+        "answer": "na go'i .i lo cabna QWC samci'e cu drata lo purci bloku porsi .i lo purci jdini vasru sampla .e lo bloku porsi datni cu na mapti ti"
+      },
+      {
+        "question": "xu la'o gy. EPoSe .gy. basti lo bloku cupra",
+        "answer": "na go'i .i lo la'o gy. RandomX .gy. bloku cupra cu zbasu lo bloku gi'e jai gau snura lo bloku porsi .i la'o gy. EPoSe .gy. cu jmina lo jerna be lo ba'e birti samci'e selfu"
+      },
+      {
+        "question": "ma kau lo temci girzu",
+        "answer": "lo temci girzu cu bloku temci poi se pilno lo nu cipra lo la'o gy. EPoSe .gy. selfu zukte .i ca ti cu vasru {blocks} bloku noi ze'a li ji'i {hours} cacra va'o lo se te cuxna bloku temci"
+      },
+      {
+        "question": "ma se smuni lo ka mapti",
+        "answer": "lo mapti selfu samci'e pagbu cu snada lo javni sarcu be lo drani jetnu xusra ca lo srana temci girzu gi'e mapti lo selfu jerna cuxna .i lo saske sarcu girzu cu su'o ceil(2 x actual committee size / 3)"
+      },
+      {
+        "question": "ma jdice lo ka mapti .e lo jerna",
+        "answer": "la'o gy. EPoSe .gy. javni .i ro mulno samci'e pagbu cu pilno lo mintu javni lo drani bloku porsi vreji .e lo jetnu xusra te zu'e lo nu cipra lo ka mapti .e lo jerna cuxna"
+      },
+      {
+        "question": "xu lo selfu samci'e pagbu cu nitcu lo nu punji lo QWC",
+        "answer": "na go'i .i lo nu kansa cu nitcu lo la'o gy. EPoSe .gy. vreji .e lo sarcu selfu se cipra gi'e na nitcu lo se mipri QWC punji"
+      },
+      {
+        "question": "xu pa jitro ka'e jitro so'i selfu samci'e pagbu",
+        "answer": "go'i .i ro selfu samci'e pagbu cu nitcu lo du'u ri se vreji lo drani gi'e snada lo javni selfu sarcu .i lo nerkla se cipra cu gasnu lo nu lo frili du'i zbasu cu nandu"
+      },
+      {
+        "question": "ki'u ma la'o gy. EPoSe .gy. na la'o gy. Proof of Stake .gy.",
+        "answer": "la'o gy. EPoSe .gy. cu cnemu lo ba'e birti selfu gi'e na cnemu lo se mipri punji .i lo selfu samci'e pagbu cu cipra lo bloku porsi datni tai lo drata mulno samci'e pagbu ca lo nu lo la'o gy. RandomX .gy. bloku cupra cu jarco lo se gunka gi'e cupra lo bloku"
+      }
+    ]
+  },
+  "serviceNodes": {
+    "eyebrow": "lo selfu samci'e pagbu",
+    "title": "ko sidju lo samci'e .i ko jerna lo selfu",
+    "body": "ro mulno samci'e pagbu cu cipra je benji lo bloku porsi datni .i lo se vreji selfu samci'e pagbu cu ji'a kansa la'o gy. EPoSe .gy. gi'e ka'e mapti lo selfu jerna",
+    "normal": "lo fadni samci'e pagbu",
+    "service": "lo selfu samci'e pagbu",
+    "comparisonLabel": "lo te panra be lo fadni samci'e pagbu .e lo selfu samci'e pagbu",
+    "rows": [
+      [
+        "cu cipra lo bloku .e lo jdini benji gi'e mapti lo bloku porsi gi'e benji lo datni",
+        "cu zukte lo mintu samci'e pagbu gunka gi'e dunda lo se vreji la'o gy. EPoSe .gy. selfu"
+      ],
+      [
+        "lo nu jitro po'o lo fadni samci'e pagbu cu na jerna lo la'o gy. EPoSe .gy. cnemu",
+        "cu ka'e mapti lo selfu jerna ta'i lo drani selfu jetnu xusra"
+      ],
+      [
+        "cu ka'e se jitro na fau lo nu cupra lo bloku",
+        "cu nitcu lo la'o gy. EPoSe .gy. vreji .e lo selfu se cipra gi'e na nitcu lo QWC punji"
+      ]
+    ]
+  },
+  "mining": {
+    "eyebrow": "lo bloku cupra",
+    "title": "ko cupra lo bloku se pi'o la'o gy. RandomX .gy.",
+    "body": "ko dunda lo skami nusna la'o gy. Qwertycoin .gy. .i lo la'o gy. RandomX .gy. bloku cupra cu cupra lo bloku ca ro ji'i 120 snidu",
+    "cards": [
+      {
+        "title": "lo kalri kansa",
+        "body": "ko jongau lo mapti la'o gy. RandomX .gy. cupra sampla lo QWC samci'e pagbu gi'a lo se sarcu cupra pool"
+      },
+      {
+        "title": "lo bloku cupra .e lo samci'e selfu",
+        "body": "lo bloku cupra cu jai gau snura lo bloku cupra .i la'o gy. EPoSe .gy. cu sepli cnemu lo se vreji samci'e pagbu lo ba'e birti samci'e selfu"
+      }
+    ],
+    "poolEyebrow": "lo javni la'o gy. Qwertycoin .gy. pool",
+    "poolTitle": "ko co'a cupra lo bloku ba lo mentu be li so'o",
+    "poolBody": "lo javni pool cu dunda lo gubni {poolAccounting} se jibri .e lo jmive namcu .e lo zmiku te pleji .i lo do QWC jerna judri cu du lo do pool jaspu .i lo pool cu na roi cpedu lo jdini vasru ckiku",
+    "poolFacts": [
+      "lo tadji: {poolAlgorithm}",
+      "na sarcu lo nu vreji .i ko pilno lo do QWC jerna judri",
+      "lo jmive namcu be lo cupra nusna .e lo gunka tutci .e lo bloku .e lo te pleji",
+      "ro te pleji jaspu cu pleji lo ba'e ca samci'e jdima be lo ri te pleji"
+    ],
+    "poolCta": "ko pilno lo javni pool",
+    "setupCta": "ko zbasu lo la'o gy. XMRig .gy. minde",
+    "docsCta": "ko tcidu lo pool cupra gidva",
+    "allocationTitle": "lo jerna layku poi se fendi fi re",
+    "protocolLabel": "lo QWC javni",
+    "protocolSplit": "90% lo bloku cupra / 10% la'o gy. EPoSe .gy.",
+    "protocolBody": "lo bloku jerna cu fendi {miningRewardPercent}% lo bloku cupra gi'e {rewardPercent}% lo la'o gy. EPoSe .gy. selfu jerna .i lo jdini benji jdima cu se dunda lo bloku cupra",
+    "poolLabel": "lo javni pool",
+    "poolSplit": "95% lo bloku cupra / 5% lo pool",
+    "poolAllocationBody": "fi lo bloku cupra jerna poi se dunda se pi'o lo javni cupra girzu kei {poolFeePercent}% cu te dunda lo la'o gy. Qwertycoin .gy. favgau .e lo cupra girzu gunka .i ba lo te pleji jdima be ro jaspu ku ba'e {poolMinerPercent}% cu se dunda lo kansa bloku cupra"
+  },
+  "exchanges": {
+    "eyebrow": "lo canja dinju",
+    "title": "ko cpacu lo QWC",
+    "body": "ko sisku lo canja dinju poi jmina la'o gy. Qwertycoin .gy. lo vreji",
+    "listed": "se vreji",
+    "pairLabel": "lo canja remei",
+    "trade": "ko canja lo QWC",
+    "external": "lo drata canja dinju",
+    "linkLabel": "ko canja lo QWC ne la'o gy. Neoxa Exchange .gy. .i lo cnino kibro papri cu se catlu"
+  },
+  "wallet": {
+    "eyebrow": "lo jdini vasru",
+    "title": "lo ba'e bavlamdei: lo jdini vasru",
+    "body": "la'o gy. Web Wallet .gy. .e la'o gy. Qwertycoin GUI 2.0.0 .gy. .e lo samselpla cu se cpacu ca lo cabna",
+    "cards": [
+      {
+        "badge": "se cpacu",
+        "title": "Web Wallet",
+        "body": "ko benji je cpacu je jitro lo QWC ne lo do kibro catlu",
+        "button": "ko pilno la'o gy. Web Wallet .gy.",
+        "icon": "wallet.svg"
+      },
+      {
+        "badge": "ca'o favgau",
+        "title": "PWA",
+        "body": "lo ka se punji je sampla tai lo PWA cu ca'o favgau gi'e ba se vreji va'o lo nu mulno",
+        "icon": "about-il-05.svg"
+      },
+      {
+        "badge": "se cpacu",
+        "title": "lo skami jubme jdini vasru",
+        "body": "la'o gy. Qwertycoin GUI 2.0.3 .gy. cu se cpacu lo la'o gy. Windows .gy. .e lo la'o gy. macOS Apple Silicon .gy. .e lo la'o gy. Linux x86_64 .gy.",
+        "icon": "development.svg"
+      }
+    ]
+  },
+  "releases": {
+    "eyebrow": "lo jdini vasru",
+    "title": "lo jdini vasru .e lo samselpla",
+    "body": "lo pamoi gubni QWC cipra temci cu kalri .i la'o gy. Web Wallet .gy. .e la'o gy. Qwertycoin GUI 2.0.3 .gy. .e lo la'o gy. Core v2.0.3 .gy. minde tutci .e lo javni la'o gy. Docker .gy. tarmi .e lo samselpla cu ca se cpacu",
+    "cards": [
+      {
+        "badge": "se cpacu · v2.0.3",
+        "badgeClass": "mainnet",
+        "title": "lo skami jubme jdini vasru",
+        "body": "ko cpacu lo cabna la'o gy. Qwertycoin GUI .gy. lo javni la'o gy. GitHub .gy. se fukpi .i lo la'o gy. GUI v2.0.2 .gy. pilno cu sarcu lo nu pa roi punji la'o gy. v2.0.3 .gy. se pi'o lo to'e ve'u te benji kei ki'u lo nu lo la'o gy. v2.0.2 .gy. ningau tutci cu na kakne lo nu tezu'e lo la'o gy. GitHub .gy. se fukpi redir .i lo la'o gy. Windows Setup .gy. .e lo la'o gy. macOS DMG .gy. cu se zmadu lo nu se punji .i lo la'o gy. portable ZIP .gy. .e lo la'o gy. TAR.GZ .gy. cu za'o se cpacu .i ko cipra lo te cpacu .e lo lerfu namcu pu lo nu pilno",
+        "note": "lo se morji be lo drani: la'o gy. SHA256SUMS .gy. cu cipra lo te cpacu bitmu gi'e na cipra lo gubni benji du'i .i la'o gy. Linux .gy. .e la'o gy. Windows .gy. cu na se tcita .i la'o gy. macOS .gy. cu se tcita fi lo la'o gy. ad hoc .gy. gi'e na se tcita se pi'o la'o gy. macOS notarization .gy.",
+        "glyph": "GUI",
+        "downloadsLayout": "rows",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "ko cpacu lo la'o gy. Windows Setup .gy.",
+            "compatibility": "se cipra ne lo la'o gy. Windows Server 2025 runner .gy. · na se tcita .i lo purci la'o gy. Windows .gy. na se cipra",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64-setup.exe",
+            "sha256": "7f8c159fa956db2b6a9b55fd47600a1fe68f32dd26d1e665877a9cc37758eadd",
+            "shaLabel": "lo la'o gy. Setup SHA-256 .gy.",
+            "preferredLabel": "lo se zmadu se punji",
+            "alternatives": [
+              {
+                "downloadLabel": "ko cpacu lo la'o gy. portable Windows ZIP .gy.",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64.zip",
+                "sha256": "b4b2c28a5cee6ca7bd3f423de5b340706ee216a31bfa23d620b7a67150a197de",
+                "shaLabel": "lo la'o gy. ZIP SHA-256 .gy."
+              }
+            ]
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "ko cpacu lo la'o gy. macOS DMG .gy.",
+            "compatibility": "la'o gy. macOS 15 .gy. ja lo balvi",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.dmg",
+            "sha256": "a4736597387770250b795fd1a4397693990522cf673cfb29d6cf9bb855071200",
+            "shaLabel": "DMG SHA-256",
+            "preferredLabel": "lo se zmadu te cpacu",
+            "alternatives": [
+              {
+                "downloadLabel": "ko cpacu lo la'o gy. macOS TAR.GZ .gy.",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.tar.gz",
+                "sha256": "ce239650afcc8eacee7b13d35f076a3ea617a81d4728b22d53d1ecc28a97fe26",
+                "shaLabel": "TAR.GZ SHA-256"
+              }
+            ]
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "ko cpacu lo la'o gy. Linux TAR.GZ .gy.",
+            "compatibility": "lo la'o gy. GLIBC 2.35 .gy. mapti jimte",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "55cc8754df00c36017b7a0ffa35b90d3878c95477202059b6c596b5163c47680"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/SHA256SUMS"
+          },
+          {
+            "label": "lo se fukpi notci",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.3"
+          },
+          {
+            "label": "ko jungau fi lo nabmi",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/issues"
+          }
+        ]
+      },
+      {
+        "badge": "se cpacu · v2.0.3",
+        "badgeClass": "mainnet",
+        "title": "lo Core minde tutci",
+        "body": "lo javni la'o gy. Qwertycoin .gy. bakfu cu vasru la'o gy. qwertycoind .gy. .e la'o gy. qwertycoin-wallet-cli .gy. .e la'o gy. qwertycoin-wallet-rpc .gy. .i ko cipra lo bakfu .e lo lerfu namcu pu lo nu pilno .i lo se fukpi notci .e lo cipra tcini cu se vreji ne ro la'o gy. GitHub .gy. se fukpi",
+        "note": "lo se morji be lo drani: la'o gy. SHA256SUMS .gy. cu cipra lo te cpacu bitmu gi'e na cipra lo gubni benji du'i .i la'o gy. Linux .gy. .e la'o gy. Windows .gy. cu na se tcita .i la'o gy. macOS .gy. cu se tcita fi lo la'o gy. ad hoc .gy. gi'e na se tcita se pi'o la'o gy. macOS notarization .gy.",
+        "glyph": "CLI",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "ko cpacu lo la'o gy. Windows ZIP .gy.",
+            "compatibility": "se cipra ne lo la'o gy. Windows Server 2025 runner .gy. .i no drata purci la'o gy. Windows .gy. se xusra",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-windows-x86_64.zip",
+            "sha256": "b0bab23137d5a4308b3d1cd582c17fd0069f392c265a74a1e0fd0f15b4becaaf"
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "ko cpacu lo la'o gy. macOS TAR.GZ .gy.",
+            "compatibility": "la'o gy. macOS 15 .gy. ja lo balvi",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-macos-arm64.tar.gz",
+            "sha256": "c23194aff092d0cc8ef6eed9ce4a6d45ccb06c7b760b05e7fce0cd9992962fdf"
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "ko cpacu lo la'o gy. Linux TAR.GZ .gy.",
+            "compatibility": "lo la'o gy. GLIBC 2.35 / GLIBCXX 3.4.30 .gy. mapti jimte",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "8df9d4bd22610228f3330aaac348776fd86bcd853751cf9472e0fc4db271b675"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/SHA256SUMS"
+          },
+          {
+            "label": "lo se fukpi notci",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+          },
+          {
+            "label": "ko jungau fi lo nabmi",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/issues"
+          }
+        ]
+      },
+      {
+        "badge": "se cpacu · 2.0.3",
+        "badgeClass": "mainnet",
+        "title": "lo la'o gy. Docker .gy. tarmi",
+        "body": "ko pilno lo se cipra Core se fukpi tai lo na ralju pilno la'o gy. Linux/amd64 .gy. vasru .i lo la'o gy. Mainnet .gy. .e lo daemon cu se cuxna ca lo pamoi .i lo za'o cmene vasru cu kurji lo bloku porsi datni ca lo vasru ningau",
+        "note": "lo la'o gy. latest .gy. tcita cu se panra lo ro moi stodi tarmi .i lo se cipra cupra samci'e ka'e pinji lo tarmi digest .i po'o lo la'o gy. P2P .gy. vorme be li 8196 cu se gubni .i lo jitro la'o gy. RPC .gy. cu na se gubni .i lo jdini vasru .e lo la'o gy. EPoSe .gy. du'i datni cu nitcu lo sepli je bandu vasru .e lo mulno co'a gidva",
+        "glyph": "OCI",
+        "commands": [
+          {
+            "label": "ko cpacu lo stodi tarmi",
+            "code": "docker pull docker.io/qwertycoin/qwertycoin:latest"
+          },
+          {
+            "label": "ko co'a lo za'o Mainnet samci'e pagbu",
+            "code": "docker run -d --name qwertycoind --restart unless-stopped \\\n  -v qwertycoin-chain:/data -p 8196:8196 \\\n  docker.io/qwertycoin/qwertycoin:latest"
+          }
+        ],
+        "links": [
+          {
+            "label": "ko pilno la'o gy. Docker Hub .gy.",
+            "href": "https://hub.docker.com/r/qwertycoin/qwertycoin/tags"
+          },
+          {
+            "label": "lo la'o gy. Docker .gy. co'a gidva",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md"
+          },
+          {
+            "label": "lo Core se fukpi notci",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+          }
+        ]
+      },
+      {
+        "badge": "se cpacu",
+        "badgeClass": "mainnet",
+        "title": "Web Wallet",
+        "body": "ko benji je cpacu je jitro lo QWC ne lo do kibro catlu",
+        "glyph": "WEB",
+        "links": [
+          {
+            "label": "ko pilno la'o gy. Web Wallet .gy.",
+            "href": "https://wallet.qwertycoin.org/"
+          }
+        ]
+      },
+      {
+        "badge": "lo samselpla cu se cpacu",
+        "badgeClass": "next",
+        "title": "lo QWC samselpla",
+        "body": "ko catlu lo Core sampla gi'e zbasu ri gi'e sidju ne la'o gy. GitHub .gy.",
+        "glyph": "SRC",
+        "links": [
+          {
+            "label": "ko pilno lo Core samselpla vreji",
+            "href": "https://github.com/qwertycoin-org/qwertycoin"
+          },
+          {
+            "label": "lo la'o gy. GitHub .gy. kagni girzu",
+            "href": "https://github.com/qwertycoin-org"
+          }
+        ]
+      }
+    ],
+    "noteTitle": "lo mapti se morji",
+    "noteBody": "lo cabna QWC samci'e cu drata lo purci bloku porsi .i lo purci jdini vasru sampla .e lo bloku porsi datni cu na mapti ti"
+  },
+  "network": {
+    "eyebrow": "lo samci'e",
+    "title": "lo samci'e zukte",
+    "body": "lo cabna bloku porsi .e la'o gy. EPoSe .gy. datni"
+  },
+  "specs": {
+    "eyebrow": "lo jdini javni namcu",
+    "title": "lo se birti Mainnet javni namcu",
+    "body": "ti skicu lo cabna QWC Mainnet sampla",
+    "visualAlt": "lo QWC javni namcu tarmi",
+    "items": [
+      [
+        "lo cmene",
+        "Qwertycoin"
+      ],
+      [
+        "lo jdini lerfu",
+        "QWC"
+      ],
+      [
+        "lo samci'e",
+        "Mainnet"
+      ],
+      [
+        "lo javni",
+        "QWC HF17"
+      ],
+      [
+        "lo selfu jerna",
+        "EPoSe"
+      ],
+      [
+        "lo simxu tugni",
+        "lo la'o gy. RandomX proof of work .gy."
+      ],
+      [
+        "lo bloku temci te cuxna",
+        "120 snidu"
+      ],
+      [
+        "lo la'o gy. EPoSe .gy. temci girzu",
+        "{blocks} bloku (ji'i {hours} cacra)"
+      ],
+      [
+        "lo la'o gy. EPoSe .gy. cipra girzu",
+        "lo te cuxna be {committee} cipra pagbu"
+      ],
+      [
+        "lo jetnu xusra sarcu namcu",
+        "ceil(2/3 be lo ba'e se cuxna girzu), {fullCommitteeAttestations} fi'o cmima {committee} va'o lo mulno girzu"
+      ],
+      [
+        "lo jerna fendi",
+        "90% lo bloku cupra / {rewardPercent}% la'o gy. EPoSe .gy."
+      ],
+      [
+        "lo jdini saclu",
+        "8"
+      ],
+      [
+        "lo stodi jdini romoi namcu",
+        "184,467,440.73709551 QWC"
+      ],
+      [
+        "lo ze'e jdini cupra",
+        "0.3 QWC/mentu, lo bloku te cuxna cu 0.6 QWC"
+      ],
+      [
+        "lo judri krasi lerfu",
+        "0x14820c .i lo fadni judri cu co'a la'o gy. QWC .gy."
+      ],
+      [
+        "P2P",
+        "8196"
+      ],
+      [
+        "Daemon RPC",
+        "8197 .i po'o lo se jimte gubni proxy"
+      ],
+      [
+        "Wallet RPC",
+        "8198"
+      ],
+      [
+        "ZMQ",
+        "8199"
+      ]
+    ]
+  },
+  "roadmap": {
+    "eyebrow": "lo farna platu",
+    "title": "ma ca se cpacu .i ma ba se zbasu",
+    "body": "ko catlu lo la'o gy. Qwertycoin .gy. samci'e .e lo jdini vasru .e lo favgau tutci farvi",
+    "items": [
+      {
+        "badge": "ca'o zukte",
+        "title": "lo QWC samci'e",
+        "body": "lo la'o gy. RandomX .gy. samci'e .e lo Core QWC gunka cu jmive .i lo jitro cu za'o kurji gi'e zenba lo samci'e"
+      },
+      {
+        "badge": "ca'o zukte",
+        "title": "EPoSe",
+        "body": "lo vreji .e lo selfu jetnu xusra .e lo mapti jdice .e lo jerna se porsi cu pagbu lo cabna QWC samci'e"
+      },
+      {
+        "badge": "za'o zukte",
+        "title": "lo samci'e jitro",
+        "body": "lo catlu .e lo kurji .e lo jitro zenba cu za'o fadni samci'e gunka"
+      },
+      {
+        "badge": "se cpacu",
+        "title": "lo jdini vasru .e lo tutci",
+        "body": "la'o gy. Web Wallet .gy. cu se cpacu .i lo la'o gy. PWA .gy. zukte .e lo skami jubme sampla .e lo drata tutci cu sepi'o lo ra tcini"
+      },
+      {
+        "badge": "lo samselpla cu se cpacu",
+        "title": "lo favgau se pilno",
+        "body": "lo Core samselpla cu se cpacu .i lo drata vreji .e lo API .e lo jitro tutci cu se jibri lo sepli"
+      },
+      {
+        "badge": "lo se cipra",
+        "title": "lo la'o gy. EPoSe .gy. se cipra",
+        "body": "lo zenba selfu cu za'o se cipra gi'e na se xusra lo cabna pilno se zukte"
+      }
+    ]
+  },
+  "history": {
+    "eyebrow": "lo purci",
+    "title": "co'a lo nanca be li 2018 .i ca'o zbasu lo cnino pagbu",
+    "body": "la'o gy. Qwertycoin .gy. cu co'a ne lo nanca be li 2018 .i lo cabna samci'e cu se jicmu le purci gi'e pilno la'o gy. RandomX .gy. .e la'o gy. EPoSe .gy.",
+    "bridge": [
+      "lo pamoi QWC cecmu bloku porsi",
+      "lo QWC samci'e poi pilno la'o gy. RandomX .gy. .e la'o gy. EPoSe .gy."
+    ],
+    "items": [
+      {
+        "date": "2018",
+        "title": "la'o gy. Qwertycoin .gy. co'a",
+        "body": "lo QWC cu co'a lo la'o gy. CryptoNote .gy. se jicmu cecmu sivni jdini .i ca le temci lo jdini vasru .e lo bloku catlu .e lo cecmu .e lo samci'e cu se favgau"
+      },
+      {
+        "date": "2019–2023",
+        "title": "lo la'o gy. EPoW .gy. .e la'o gy. EPoSe .gy. se cipra .e favgau",
+        "body": "co'a lo nanca be li 2019 ku fe'e lo nanca be li 2023 lo kamni cu cipra lo drani bloku cupra .e lo samci'e selfu jerna kansa lo jdini vasru .e lo samci'e pagbu .e lo samci'e .i lo la .xekcut. la'o gy. EPoSe .gy. gunka cu tarmi lo sidbo be lo nu cnemu lo plixau samci'e selfu"
+      },
+      {
+        "date": "lo balvi",
+        "title": "lo token temci",
+        "body": "lo token temci cu pagbu lo la'o gy. Qwertycoin .gy. purci gi'e drata lo cabna QWC samci'e"
+      },
+      {
+        "date": "2026",
+        "title": "lo la'o gy. Qwertycoin .gy. samci'e",
+        "body": "la'o gy. Qwertycoin .gy. cu co'a lo cnino samci'e poi pilno lo sivni jdini benji .e la'o gy. RandomX .gy. bloku cupra .e la'o gy. EPoSe .gy. selfu jerna"
+      }
+    ],
+    "alert": "lo cabna QWC samci'e cu drata lo purci bloku porsi .i lo purci jdini vasru sampla .e lo bloku porsi datni cu na mapti ti"
+  },
+  "developers": {
+    "eyebrow": "lo favgau",
+    "title": "ko zbasu kansa la'o gy. Qwertycoin .gy.",
+    "body": "ko catlu lo Core samselpla gi'e zbasu lo sampla gi'e sidju lo nu zenba ne la'o gy. GitHub .gy.",
+    "buildTitle": "ko zbasu lo samselpla",
+    "registrationTitle": "lo selfu samci'e pagbu tutci",
+    "sourceTitle": "lo Core samselpla",
+    "sourceBody": "ko catlu lo gubni la'o gy. Qwertycoin .gy. Core vreji ne la'o gy. GitHub .gy.",
+    "legacyTitle": "lo zbasu gidva",
+    "legacyBody": "lo zbasu .e lo se fukpi datni cu se jibri lo Core vreji .e lo gubni se pilno",
+    "registrationBody": "ko jitro lo gubni la'o gy. EPoSe Service Node .gy. se pi'o lo cabna Core jitro gidva",
+    "registrationLink": "ko pilno lo la'o gy. EPoSe .gy. jitro gidva"
+  },
+  "community": {
+    "eyebrow": "lo cecmu",
+    "title": "ko kansa lo la'o gy. Qwertycoin .gy. cecmu",
+    "body": "ko catlu lo favgau .e lo samci'e gi'e sidju lo nu tarmi lo la'o gy. Qwertycoin .gy. bavlamdei",
+    "github": "lo la'o gy. Qwertycoin .gy. kagni girzu",
+    "explorer": "QWC Mainnet Explorer"
+  },
+  "footer": {
+    "body": "la'o gy. Qwertycoin .gy. cu jorne lo sivni jdini benji .e lo la'o gy. RandomX .gy. bloku cupra .e lo la'o gy. EPoSe .gy. selfu jerna .e la'o gy. Web Wallet .gy. .e lo gubni samselpla",
+    "technology": "lo samtcise",
+    "pool": "lo javni pool",
+    "documentation": "lo vreji",
+    "history": "lo purci",
+    "roadmap": "lo farna platu"
+  },
+  "notFound": {
+    "title": "lo papri na se facki | la'o gy. Qwertycoin .gy.",
+    "eyebrow": "404",
+    "heading": "lo papri na se facki",
+    "body": "ti na la'o gy. Qwertycoin .gy. papri .i ko pilno lo cabna ralju papri gi'a ko cuxna lo drata bangu",
+    "home": "ko pilno lo ralju papri"
+  }
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="920" viewBox="0 0 1680 920" role="img" aria-labelledby="title description">
+  <title id="title">EPoSe consensus formulas</title>
+  <desc id="description">Four formulas for verifier quorum, Service Node qualification, recipient rotation, and the EPoSe share of the block subsidy.</desc>
+  <style>
+    .card { fill: #212121; stroke: #37332a; stroke-width: 1.1; }
+    .step-box { fill: #ffb000; }
+    .step { fill: #141414; font: 800 24px Arial, sans-serif; }
+    .formula { fill: #fffaf0; font: 500 40px "Times New Roman", serif; }
+  </style>
+  <rect width="1680" height="920" fill="#141414"/>
+  <rect x="24" y="24" width="1632" height="872" fill="none" stroke="#584520" stroke-width="1.5"/>
+
+  <g aria-label="01">
+    <rect class="card" x="64" y="64" width="1552" height="176"/>
+    <rect class="step-box" x="84" y="84" width="44" height="42"/>
+    <text class="step" x="94" y="114">01</text>
+    <text class="formula" x="152" y="178">q<tspan baseline-shift="sub" font-size="25">E</tspan> = ⌈2 · min(9, N<tspan baseline-shift="sub" font-size="25">E</tspan> − 1) / 3⌉</text>
+    <text class="formula" x="930" y="178">a<tspan baseline-shift="sub" font-size="25">s,r</tspan> = |A<tspan baseline-shift="sub" font-size="25">s,r</tspan> ∩ C<tspan baseline-shift="sub" font-size="25">s,r</tspan>|</text>
+  </g>
+
+  <g aria-label="02">
+    <rect class="card" x="64" y="264" width="1552" height="176"/>
+    <rect class="step-box" x="84" y="284" width="44" height="42"/>
+    <text class="step" x="94" y="314">02</text>
+    <text class="formula" x="152" y="378">s ∈ Q<tspan baseline-shift="sub" font-size="25">E</tspan> ⇔ ∑<tspan baseline-shift="sub" font-size="23">r=0</tspan><tspan baseline-shift="super" font-size="23">2</tspan> 1[a<tspan baseline-shift="sub" font-size="25">s,r</tspan> ≥ q<tspan baseline-shift="sub" font-size="25">E</tspan>] ≥ 2</text>
+  </g>
+
+  <g aria-label="03">
+    <rect class="card" x="64" y="464" width="1552" height="176"/>
+    <rect class="step-box" x="84" y="484" width="44" height="42"/>
+    <text class="step" x="94" y="514">03</text>
+    <text class="formula" x="152" y="578">π<tspan baseline-shift="sub" font-size="25">E+1</tspan>(h) = rank<tspan baseline-shift="sub" font-size="25">H</tspan>(Q<tspan baseline-shift="sub" font-size="25">E</tspan>)[(h − start(E+1)) mod |Q<tspan baseline-shift="sub" font-size="25">E</tspan>|]</text>
+  </g>
+
+  <g aria-label="04">
+    <rect class="card" x="64" y="664" width="1552" height="176"/>
+    <rect class="step-box" x="84" y="684" width="44" height="42"/>
+    <text class="step" x="94" y="714">04</text>
+    <text class="formula" x="152" y="778">R<tspan baseline-shift="sub" font-size="25">EPoSE</tspan>(h) = ⌊subsidy(h) · 1000 / 10000⌋</text>
+    <text x="1450" y="778" text-anchor="end" fill="#ffb000" font-family="Arial, sans-serif" font-size="48" font-weight="900">10 %</text>
+  </g>
+</svg>

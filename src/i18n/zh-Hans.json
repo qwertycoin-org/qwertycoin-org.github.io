@@ -1,0 +1,829 @@
+{
+  "meta": {
+    "title": "Qwertycoin (QWC) | 私人支付，RandomX 和 EPoSe",
+    "description": "Qwertycoin (QWC) 是一种注重隐私的加密货币，具有 RandomX 工作证明挖矿和 EPoSe 对经过验证的网络服务的奖励。",
+    "ogTitle": "Qwertycoin (QWC) |私人资金。开放网络。",
+    "ogDescription": "Qwertycoin (QWC) 是一种注重隐私的加密货币，具有 RandomX 工作证明挖矿和 EPoSe 对经过验证的网络服务的奖励。",
+    "twitterDescription": "Qwertycoin (QWC) 是一种注重隐私的加密货币，具有 RandomX 工作证明挖矿和 EPoSe 对经过验证的网络服务的奖励。",
+    "imageAlt": "Qwertycoin Q徽章带有私款。开放网络。索赔"
+  },
+  "nav": {
+    "skip": "跳至内容",
+    "homeLabel": "Qwertycoin首页",
+    "menu": "菜单",
+    "about": "关于",
+    "epose": "EPoSe",
+    "mining": "挖矿",
+    "getQwc": "获取QWC",
+    "releases": "版本",
+    "wallet": "钱包",
+    "network": "网络",
+    "history": "历史",
+    "developers": "发展",
+    "language": "语言",
+    "languageShort": "郎"
+  },
+  "hero": {
+    "title": "私人资金。开放网络。",
+    "lead": "Qwertycoin（QWC）是一种注重隐私的加密货币，具有开放的 RandomX 挖矿和 EPoSe 对经过验证的网络服务的奖励。",
+    "kicker": "打开 Web Wallet，探索区块链或在 GitHub 上做出贡献。",
+    "getQwc": "获取QWC",
+    "github": "为 GitHub 做出贡献",
+    "wallet": "打开Web Wallet",
+    "mining": "选择你的道路",
+    "visualAlt": "带有抽象网络层的大型金色 Qwertycoin Q 徽章",
+    "pulseLabel": "QWC主网上线",
+    "pulseBody": "当前区块链和 EPoSe 数据。当某些统计数据不可用时，可用值保持可见。"
+  },
+  "metrics": {
+    "height": {
+      "label": "块高度",
+      "help": "当前公链高度。"
+    },
+    "registered": {
+      "label": "注册服务节点",
+      "shortLabel": "已注册",
+      "help": "具有有效注册的服务节点。"
+    },
+    "qualified": {
+      "label": "合格服务节点",
+      "shortLabel": "合格",
+      "help": "在有统计数据的相关时期内，符合奖励资格的服务节点。"
+    },
+    "epoch": {
+      "label": "EPoSe纪元",
+      "shortLabel": "纪元",
+      "help": "当前 {blocks} 块服务周期（~{hours}h）。"
+    },
+    "topHash": "最新区块哈希值",
+    "stateHash": "EPoSe状态哈希",
+    "explorer": "Explorer",
+    "currentSource": "核心源码",
+    "sourcePending": "适用于 GitHub",
+    "syncLoading": "加载中...",
+    "loading": "加载中...",
+    "updated": "更新{time}",
+    "unavailable": "目前不可用",
+    "partial": "部分网络数据目前不可用。",
+    "eposeUnavailable": "目前无法获得 EPoSe 统计数据。",
+    "unknown": "未知",
+    "synchronized": "同步的",
+    "syncPending": "同步待处理",
+    "ratio": "{qualified} / {registered} 合格",
+    "noScript": "实时状态需要 JavaScript。您仍然可以打开资源管理器以获取当前网络数据。"
+  },
+  "system": {
+    "securityLabel": "挖矿",
+    "securityTitle": "RandomX PoW",
+    "securityBody": "矿工生产新的区块并通过工作量证明来保护区块链。",
+    "infrastructureLabel": "服务奖励",
+    "infrastructureTitle": "EPoSe",
+    "infrastructureBody": "服务节点通过有效证明获得网络服务奖励的资格。"
+  },
+  "participate": {
+    "eyebrow": "从这里开始",
+    "title": "选择您想要的参与方式。",
+    "body": "使用QWC，贡献算力或运营公共网络基础设施。每条路径都有一个当前的官方起点。",
+    "paths": [
+      {
+        "kind": "wallet",
+        "badge": "使用QWC",
+        "title": "打开钱包",
+        "body": "在浏览器中创建或恢复 QWC 钱包，然后发送和接收私人付款。",
+        "cta": "打开Web Wallet"
+      },
+      {
+        "kind": "pool",
+        "badge": "我的QWC",
+        "title": "我的在官方矿池",
+        "body": "使用您的 QWC 支付地址加入官方 RandomX PPLNS 池。无需注册矿池账户。",
+        "cta": "开始挖矿"
+      },
+      {
+        "kind": "serviceNode",
+        "badge": "运行节点",
+        "title": "运营服务节点",
+        "body": "运行公共 QWC 节点，注册其服务身份并通过可验证的 EPoSe 服务证明获得资格 - 无需抵押 QWC。",
+        "cta": "打开操作指南"
+      }
+    ]
+  },
+  "technology": {
+    "eyebrow": "关于Qwertycoin",
+    "title": "隐私。由 QWC 提供动力。",
+    "body": "使用QWC进行私人支付，通过挖矿贡献算力或作为服务节点支持网络。",
+    "features": [
+      {
+        "badge": "开放网络",
+        "title": "QWC Core网络",
+        "body": "在开放网络上发送和接收 QWC。独立节点验证交易并维护区块链。",
+        "icon": "about-il-01.svg"
+      },
+      {
+        "badge": "隐私",
+        "title": "内置隐私",
+        "body": "QWC使用隐私技术来保护交易细节。它的开源代码可以让任何人检查网络是如何工作的。",
+        "icon": "about-il-03.svg"
+      },
+      {
+        "badge": "PoW",
+        "title": "RandomX工作量证明",
+        "body": "RandomX 矿工生产新区块并保护区块链。任何人都可以使用兼容的挖矿软件参与。",
+        "icon": "about-il-04.svg"
+      },
+      {
+        "badge": "EPoSe",
+        "title": "对经过验证的服务的奖励",
+        "body": "服务节点提供网络服务。有效证明确定资格，EPoSe 协议确定奖励轮换。",
+        "icon": "about-il-06.svg"
+      },
+      {
+        "badge": "网络服务",
+        "title": "服务节点",
+        "body": "服务节点支持网络并参与EPoSe。无需QWC质押；区块生产仍然是 RandomX 矿工的工作。",
+        "icon": "about-il-02.svg"
+      },
+      {
+        "badge": "可用",
+        "title": "Web Wallet和开源",
+        "body": "直接在浏览器中将 QWC 与 Web Wallet 一起使用。探索核心软件并为其在 GitHub 上的开发做出贡献。",
+        "icon": "about-il-05.svg"
+      }
+    ]
+  },
+  "epose": {
+    "eyebrow": "EPoSe",
+    "flowLabel": "EPoSe流量",
+    "title": "证明服务。赚取 QWC。",
+    "body": "EPoSe 奖励注册服务节点提供经过验证的网络服务。该协议评估区块链上记录的有效证明，并确定哪些节点有资格获得奖励轮换。",
+    "intro": "QWC 将服务时间划分为 EPoSe 纪元。服务活动产生证明，资格最终确定，只有这样确定性奖励轮换才能使用合格的集合。",
+    "compactCards": [
+      {
+        "title": "提供服务。",
+        "body": "注册的服务节点在每个时期提供网络服务。"
+      },
+      {
+        "title": "验证服务。",
+        "body": "协议选择的验证者检查服务响应并提交签名的证明。"
+      },
+      {
+        "title": "获得奖励。",
+        "body": "资格最终确定后，符合条件的服务节点进入协议的确定性奖励轮换。"
+      }
+    ],
+    "actions": {
+      "live": "查看实时服务节点",
+      "guide": "运行服务节点",
+      "docs": "阅读 EPoSe 文档"
+    },
+    "originEyebrow": "EPoSe原点",
+    "originTitle": "谢谢你，Xecute。",
+    "originBody": "Xecute 开发了最初的 EPoSe 愿景，并贡献了 Qwertycoin 服务层白皮书。这项工作为奖励有用的网络服务奠定了基础。",
+    "schematic": [
+      {
+        "label": "服务节点",
+        "value": "注册身份"
+      },
+      {
+        "label": "验证者委员会",
+        "value": "检查服务"
+      },
+      {
+        "label": "连锁状态",
+        "value": "确定性奖励"
+      }
+    ],
+    "links": [
+      "登记",
+      "证明"
+    ],
+    "steps": [
+      {
+        "title": "注册",
+        "body": "服务节点发布带有服务身份、奖励目标、端点承诺和准入证明的签名注册。"
+      },
+      {
+        "title": "发球",
+        "body": "该节点提供QWC网络服务，而正常的RandomX挖矿仍然负责区块生产。"
+      },
+      {
+        "title": "证明",
+        "body": "仅当预期的服务响应有效时，指定的验证者才会质询服务节点并签署证明。"
+      },
+      {
+        "title": "取得资格",
+        "body": "链状态检查注册节点是否为相关时期收集了足够的有效证明。"
+      },
+      {
+        "title": "奖励",
+        "body": "合格的节点进入确定性奖励轮换。选定的一名收款人可以获得区块奖励的 EPoSe 部分。"
+      }
+    ],
+    "glossaryTitle": "EPoSe术语表",
+    "glossary": [
+      {
+        "term": "服务节点",
+        "definition": "一个普通的 QWC 节点加上注册的服务身份、端点承诺、奖励地址和 EPoSe 参与数据。"
+      },
+      {
+        "term": "纪元",
+        "definition": "测量服务活动的固定区块周期。当前参数：{blocks} 区块，大约为 {seconds} 第二个区块目标的 {hours} 小时。"
+      },
+      {
+        "term": "已注册",
+        "definition": "服务节点通过发布有效的链上注册加入EPoSe。注册并不意味着有资格获得奖励。"
+      },
+      {
+        "term": "鉴证",
+        "definition": "来自指定验证者的签名确认，表明服务节点以预期响应回答了其服务质询。"
+      },
+      {
+        "term": "验证者委员会",
+        "definition": "从链状态中选择的一组确定性验证者节点用于服务挑战。当存在足够的候选者时，当前的公共核心以 {committee} 验证者为目标。"
+      },
+      {
+        "term": "入学证明",
+        "definition": "注册时附带的一个小证明可以减少创建身份的成本，并有助于减少廉价的 Sybil 注册。"
+      },
+      {
+        "term": "合格",
+        "definition": "一个已注册的服务节点，在相关时期收集了足够的有效、非重复的证明。法定人数为实际选出的验证者委员会的三分之二。"
+      },
+      {
+        "term": "奖励来源纪元",
+        "definition": "最终确定的纪元，其合格集合用于当前奖励期。在当前核心中，纪元 N 中的区块使用纪元 N-1 中的合格节点。"
+      },
+      {
+        "term": "奖励轮换",
+        "definition": "合格的节点将确定性地轮换为区块奖励 EPoSe 部分的可能接收者。 coinbase 不会随着节点总数的增加而增长。"
+      }
+    ],
+    "epochTitle": "纪元是块范围，而不是时钟约会。",
+    "epochBody": "EPoSe 纪元是 {blocks} 块服务周期，在当前 {seconds} 秒块目标下大约为 {hours} 小时。",
+    "registeredVsQualified": [
+      {
+        "label": "已注册",
+        "body": "该节点加入EPoSe。"
+      },
+      {
+        "label": "合格",
+        "body": "该节点证明有足够的服务活动，有资格获得服务奖励。"
+      }
+    ],
+    "committeeTitle": "验证者委员会不是验证者集合。",
+    "committeeBody": "验证者委员会不生产区块，也不替换 RandomX 矿工。他们的作用仅限于检查 EPoSe 资格的服务节点活动。当存在足够的候选者并且需要实际委员会的三分之二法定人数时，当前的公共核心以 {committee} 验证者为目标。有了完整的委员会，这意味着 {fullCommitteeAttestations} 证明。",
+    "rewardTimelineTitle": "首先衡量的是服务。奖励随后而来。",
+    "timeline": [
+      {
+        "label": "N纪元",
+        "title": "注册/服务/证明",
+        "body": "服务节点注册、提供服务并收集有效的验证者证明。"
+      },
+      {
+        "label": "最终性",
+        "title": "资格最终确定",
+        "body": "共识状态在 epoch 最终确定后从有效的 EPoSe 数据中得出合格的集合。"
+      },
+      {
+        "label": "N+1纪元",
+        "title": "奖励轮换",
+        "body": "当前核心使用前一个纪元作为确定性收款人选择的奖励源纪元。"
+      }
+    ],
+    "rotationTitle": "奖励轮换使区块奖励保持紧凑。",
+    "rotationBody": "目前主网奖励分成：90%矿工/{rewardPercent}%EPoSe服务奖励。 EPoSe服务支付是共识可见的，因此每个节点都可以验证所选的服务节点和奖励金额。正常的QWC钱包交易继续使用底层QWC交易模型的隐私机制。",
+    "rotationExamples": [
+      "区块 1001 -> 节点 A",
+      "区块 1002 -> 节点 C",
+      "区块 1003 -> 节点 B",
+      "区块 1004 -> 节点 A"
+    ],
+    "rewardRulesTitle": "奖励遵循协议。",
+    "rewardRulesBody": "每个全节点都可以从区块链中验证奖励资格和接收者选择。补贴分配：90%挖矿/{rewardPercent}%EPoSe服务奖励；交易费用仍由矿工承担。",
+    "rewardFormulaAlt": "EPoSe验证者法定人数、服务节点资格、接收者轮换和服务奖励分配的共识公式。",
+    "rewardFormulaCaption": "EPoSe 法定人数、资格、接收者轮换和服务奖励——积极共识规则的紧凑表示。"
+  },
+  "faq": {
+    "eyebrow": "EPoSe常见问题解答",
+    "title": "新操作员的简短回答。",
+    "items": [
+      {
+        "question": "Qwertycoin是什么？",
+        "answer": "Qwertycoin (QWC) 是一种注重隐私的加密货币，具有 RandomX 工作证明挖矿和 EPoSe 对经过验证的网络服务的奖励。"
+      },
+      {
+        "question": "如何使用Web Wallet？",
+        "answer": "打开官方Web Wallet，在那里创建或恢复钱包并遵循其安全说明。主网站从不处理钱包密钥。"
+      },
+      {
+        "question": "我可以使用旧的 QWC 钱包吗？",
+        "answer": "不会。当前的 QWC 网络与早期的链是分开的。旧版钱包软件和区块链数据与该网络不兼容。"
+      },
+      {
+        "question": "EPoSe会取代挖矿吗？",
+        "answer": "不会。RandomX 矿工生产区块并保护区块链。 EPoSe 为经过验证的网络服务增加了奖励。"
+      },
+      {
+        "question": "什么是纪元？",
+        "answer": "纪元是用于评估 EPoSe 服务活动的区块周期。目前它跨越 {blocks} 块，按目标块间隔大约为 {hours} 小时。"
+      },
+      {
+        "question": "合格是什么意思？",
+        "answer": "合格的服务节点在相关时期满足协议对有效证明的要求，并且有资格获得服务奖励选择。技术法定人数至少为 ceil(2 x 实际委员会规模 / 3)。"
+      },
+      {
+        "question": "谁决定资格和奖励？",
+        "answer": "EPoSe 协议。每个全节点都对有效的链上注册和证明应用相同的规则，以验证资格和奖励选择。"
+      },
+      {
+        "question": "服务节点需要质押QWC吗？",
+        "answer": "不需要。参与需要EPoSe注册并提供所需的服务证明，而不是锁定QWC作为质押。"
+      },
+      {
+        "question": "一个运营商可以运行多个服务节点吗？",
+        "answer": "是的。每个服务节点都需要自己的有效注册，并且必须满足协议的服务要求。入学证明使得廉价的身份创建变得更加困难。"
+      },
+      {
+        "question": "为什么 EPoSe 不是权益证明？",
+        "answer": "EPoSe 奖励经过验证的服务而不是锁定的股份。服务节点像其他全节点一样验证区块链数据，而 RandomX 矿工则执行工作量证明区块生产。"
+      }
+    ]
+  },
+  "serviceNodes": {
+    "eyebrow": "服务节点",
+    "title": "支持网络。通过服务赚钱。",
+    "body": "每个全节点都会验证并中继区块链数据。注册的服务节点也参与EPoSe并有资格获得服务奖励。",
+    "normal": "普通节点",
+    "service": "服务节点",
+    "comparisonLabel": "普通节点与服务节点对比",
+    "rows": [
+      [
+        "验证区块和交易、同步链并中继数据。",
+        "执行相同的节点功能并提供注册的EPoSe服务。"
+      ],
+      [
+        "单独运营常规节点并不能获得 EPoSe 奖励。",
+        "可以通过有效的服务证明获得服务奖励。"
+      ],
+      [
+        "可以独立于采矿进行操作。",
+        "需要EPoSe注册和服务证明，无需QWC质押。"
+      ]
+    ]
+  },
+  "mining": {
+    "eyebrow": "挖矿",
+    "title": "我的是RandomX。",
+    "body": "为Qwertycoin贡献算力。 RandomX矿工以120秒的目标间隔生产区块。",
+    "cards": [
+      {
+        "title": "开放参与",
+        "body": "将兼容的RandomX挖矿软件连接到QWC节点或支持的矿池。"
+      },
+      {
+        "title": "挖矿和网络服务",
+        "body": "挖矿保护区块生成过程。EPoSe 单独奖励为网络提供已证明服务的注册节点。"
+      }
+    ],
+    "poolEyebrow": "官方 Qwertycoin 矿池",
+    "poolTitle": "几分钟内即可开始挖矿。",
+    "poolBody": "官方矿池提供透明的{poolAccounting}记账、实时统计和自动赔付。您的QWC收款地址就是您的矿池账户；矿池从不要求提供钱包钥匙。",
+    "poolFacts": [
+      "算法：{poolAlgorithm}",
+      "无需注册：使用您的 QWC 付款地址",
+      "实时算力、矿工、区块和支付统计数据",
+      "每个支付账户为其自己的支付支付实际的网络费用"
+    ],
+    "poolCta": "开放官方池",
+    "setupCta": "创建XMRig命令",
+    "docsCta": "阅读矿池挖矿指南",
+    "allocationTitle": "两个独立的奖励层",
+    "protocolLabel": "QWC协议",
+    "protocolSplit": "90% 挖矿 / 10% EPoSe",
+    "protocolBody": "区块补贴分为{miningRewardPercent}%用于挖矿，{rewardPercent}%用于EPoSe服务奖励。交易费用仍由矿工承担。",
+    "poolLabel": "官方池",
+    "poolSplit": "95% 矿工 / 5% 矿池",
+    "poolAllocationBody": "从官方矿池分配的挖矿奖励中，{poolFeePercent}%用于资助Qwertycoin的开发和矿池运营；在每个账户支付交易费用之前，{poolMinerPercent}% 被分配给参与矿工。"
+  },
+  "exchanges": {
+    "eyebrow": "交流",
+    "title": "获取 QWC。",
+    "body": "查找列出 Qwertycoin 的交易所。",
+    "listed": "上市",
+    "pairLabel": "交易对",
+    "trade": "贸易QWC",
+    "external": "对外交流",
+    "linkLabel": "在 Neoxa Exchange 上交易 QWC，打开一个新选项卡"
+  },
+  "wallet": {
+    "eyebrow": "钱包",
+    "title": "你的下一步：钱包。",
+    "body": "Web Wallet、Qwertycoin GUI 2.0.0 和源代码现已提供。",
+    "cards": [
+      {
+        "badge": "可用",
+        "title": "Web Wallet",
+        "body": "直接在浏览器中发送、接收和管理 QWC。",
+        "button": "打开Web Wallet",
+        "icon": "wallet.svg"
+      },
+      {
+        "badge": "开发中",
+        "title": "PWA",
+        "body": "可安装的 PWA 行为正在开发中，准备就绪后将列出。",
+        "icon": "about-il-05.svg"
+      },
+      {
+        "badge": "可用",
+        "title": "桌面钱包",
+        "body": "Qwertycoin GUI 2.0.3 适用于 Windows、macOS、Apple Silicon 和 Linux x86_64。",
+        "icon": "development.svg"
+      }
+    ]
+  },
+  "releases": {
+    "eyebrow": "钱包",
+    "title": "钱包和源代码",
+    "body": "第一个公开的 QWC 测试阶段已经开放。 Web Wallet、Qwertycoin GUI 2.0.3、Core v2.0.3命令行工具、官方Docker镜像和源代码现已提供。",
+    "cards": [
+      {
+        "badge": "可用 · v2.0.3",
+        "badgeClass": "mainnet",
+        "title": "桌面钱包",
+        "body": "从官方 GitHub 版本下载当前的 Qwertycoin GUI。 GUI v2.0.2 用户必须通过直接下载安装 v2.0.3 一次，因为 v2.0.2 更新程序无法遵循 GitHub 的发布资产重定向。 Windows Setup 和 macOS DMG 是首选安装程序；便携式 ZIP 和 TAR.GZ 包仍然可以作为替代方案。使用前验证下载和校验和。",
+        "note": "完整性说明：SHA256SUMS 验证下载的字节，而不是发布者身份。 Linux和Windows无符号； macOS 是临时签名且未经公证的。",
+        "glyph": "GUI",
+        "downloadsLayout": "rows",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "下载 Windows 安装程序",
+            "compatibility": "在 Windows Server 2025 运行程序上进行测试 · 未签名；较旧的 Windows 版本未经验证",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64-setup.exe",
+            "sha256": "7f8c159fa956db2b6a9b55fd47600a1fe68f32dd26d1e665877a9cc37758eadd",
+            "shaLabel": "设置SHA-256",
+            "preferredLabel": "首选安装人员",
+            "alternatives": [
+              {
+                "downloadLabel": "下载便携式 Windows ZIP",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64.zip",
+                "sha256": "b4b2c28a5cee6ca7bd3f423de5b340706ee216a31bfa23d620b7a67150a197de",
+                "shaLabel": "邮编 SHA-256"
+              }
+            ]
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "下载 macOS DMG",
+            "compatibility": "macOS 15 或更新版本",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.dmg",
+            "sha256": "a4736597387770250b795fd1a4397693990522cf673cfb29d6cf9bb855071200",
+            "shaLabel": "DMG SHA-256",
+            "preferredLabel": "首选下载",
+            "alternatives": [
+              {
+                "downloadLabel": "下载 macOS TAR.GZ",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.tar.gz",
+                "sha256": "ce239650afcc8eacee7b13d35f076a3ea617a81d4728b22d53d1ecc28a97fe26",
+                "shaLabel": "TAR.GZ SHA-256"
+              }
+            ]
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "下载 Linux TAR.GZ",
+            "compatibility": "GLIBC 2.35兼容上限",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "55cc8754df00c36017b7a0ffa35b90d3878c95477202059b6c596b5163c47680"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/SHA256SUMS"
+          },
+          {
+            "label": "发行说明",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.3"
+          },
+          {
+            "label": "报告问题",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/issues"
+          }
+        ]
+      },
+      {
+        "badge": "可用 · v2.0.3",
+        "badgeClass": "mainnet",
+        "title": "核心命令行工具",
+        "body": "官方 Qwertycoin 套件包含 qwertycoind、qwertycoin-wallet-cli 和 qwertycoin-wallet-rpc。使用前验证存档和校验和；每个 GitHub 版本都记录了版本说明和审核状态。",
+        "note": "完整性说明：SHA256SUMS 验证下载的字节，而不是发布者身份。 Linux和Windows无符号； macOS 是临时签名且未经公证的。",
+        "glyph": "CLI",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "下载 Windows ZIP",
+            "compatibility": "在 Windows Server 2025 跑步机上测试；没有更广泛的遗产-Windows 声明",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-windows-x86_64.zip",
+            "sha256": "b0bab23137d5a4308b3d1cd582c17fd0069f392c265a74a1e0fd0f15b4becaaf"
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "下载 macOS TAR.GZ",
+            "compatibility": "macOS 15 或更新版本",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-macos-arm64.tar.gz",
+            "sha256": "c23194aff092d0cc8ef6eed9ce4a6d45ccb06c7b760b05e7fce0cd9992962fdf"
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "下载 Linux TAR.GZ",
+            "compatibility": "GLIBC 2.35 / GLIBCXX 3.4.30 兼容性上限",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "8df9d4bd22610228f3330aaac348776fd86bcd853751cf9472e0fc4db271b675"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/SHA256SUMS"
+          },
+          {
+            "label": "发行说明",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+          },
+          {
+            "label": "报告问题",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/issues"
+          }
+        ]
+      },
+      {
+        "badge": "可用·2.0.3",
+        "badgeClass": "mainnet",
+        "title": "Docker图片",
+        "body": "作为非根 Linux/amd64 容器运行经过验证的 Core 版本。 Mainnet和守护进程为默认值；持久命名卷在容器更新期间保存链数据。",
+        "note": "最新标签跟踪最新的稳定图像。经过审核的生产部署可能会固定其映像摘要。下面仅发布P2P端口8196；行政RPC未暴露。钱包和 EPoSe 身份数据需要单独的受保护卷和完整的快速入门。",
+        "glyph": "OCI",
+        "commands": [
+          {
+            "label": "拉取稳定镜像",
+            "code": "docker pull docker.io/qwertycoin/qwertycoin:latest"
+          },
+          {
+            "label": "启动持久主网节点",
+            "code": "docker run -d --name qwertycoind --restart unless-stopped \\\n  -v qwertycoin-chain:/data -p 8196:8196 \\\n  docker.io/qwertycoin/qwertycoin:latest"
+          }
+        ],
+        "links": [
+          {
+            "label": "打开Docker Hub",
+            "href": "https://hub.docker.com/r/qwertycoin/qwertycoin/tags"
+          },
+          {
+            "label": "Docker快速入门",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md"
+          },
+          {
+            "label": "核心发行说明",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+          }
+        ]
+      },
+      {
+        "badge": "可用",
+        "badgeClass": "mainnet",
+        "title": "Web Wallet",
+        "body": "直接在浏览器中发送、接收和管理 QWC。",
+        "glyph": "WEB",
+        "links": [
+          {
+            "label": "打开Web Wallet",
+            "href": "https://wallet.qwertycoin.org/"
+          }
+        ]
+      },
+      {
+        "badge": "可用来源",
+        "badgeClass": "next",
+        "title": "QWC源代码",
+        "body": "探索核心软件，自行构建并为 GitHub 做出贡献。",
+        "glyph": "SRC",
+        "links": [
+          {
+            "label": "开放核心存储库",
+            "href": "https://github.com/qwertycoin-org/qwertycoin"
+          },
+          {
+            "label": "GitHub组织",
+            "href": "https://github.com/qwertycoin-org"
+          }
+        ]
+      }
+    ],
+    "noteTitle": "兼容性说明",
+    "noteBody": "当前的 QWC 网络与早期的链是分开的。旧版钱包软件和区块链数据与该网络不兼容。"
+  },
+  "network": {
+    "eyebrow": "网络",
+    "title": "网络活动",
+    "body": "当前区块链和 EPoSe 数据。"
+  },
+  "specs": {
+    "eyebrow": "硬币规格",
+    "title": "确认主网参数。",
+    "body": "这些值描述了当前 QWC 主网的实现。",
+    "visualAlt": "QWC参数轨道图",
+    "items": [
+      [
+        "名称",
+        "Qwertycoin"
+      ],
+      [
+        "代号",
+        "QWC"
+      ],
+      [
+        "网络",
+        "Mainnet"
+      ],
+      [
+        "协议",
+        "QWC HF17"
+      ],
+      [
+        "服务奖励",
+        "EPoSe"
+      ],
+      [
+        "共识",
+        "RandomX工作量证明"
+      ],
+      [
+        "阻止目标",
+        "120秒"
+      ],
+      [
+        "EPoSe纪元",
+        "{blocks} 块（~{hours} 小时）"
+      ],
+      [
+        "EPoSe委员会",
+        "{committee}验证器目标"
+      ],
+      [
+        "证明法定人数",
+        "ceil（实际委员会的2/3），满时{committee}的{fullCommitteeAttestations}"
+      ],
+      [
+        "奖励分割",
+        "90% 挖矿 / {rewardPercent}% EPoSe"
+      ],
+      [
+        "小数",
+        "8"
+      ],
+      [
+        "供给常数",
+        "184,467,440.73709551 QWC"
+      ],
+      [
+        "尾部排放",
+        "0.3 QWC/分钟，0.6 QWC/块目标"
+      ],
+      [
+        "地址前缀",
+        "0x14820c，标准地址以QWC开头"
+      ],
+      [
+        "P2P",
+        "8196"
+      ],
+      [
+        "Daemon RPC",
+        "8197，仅限受限公共代理"
+      ],
+      [
+        "Wallet RPC",
+        "8198"
+      ],
+      [
+        "ZMQ",
+        "8199"
+      ]
+    ]
+  },
+  "roadmap": {
+    "eyebrow": "路线图",
+    "title": "有什么可用的。接下来会发生什么。",
+    "body": "跟踪Qwertycoin的网络、钱包和开发者工具的进展。",
+    "items": [
+      {
+        "badge": "LIVE",
+        "title": "QWC网络",
+        "body": "RandomX 网络和核心 QWC 功能已上线。运营商不断维护和改进网络。"
+      },
+      {
+        "badge": "LIVE",
+        "title": "EPoSe",
+        "body": "注册、服务认证、资格和奖励轮换是当前 QWC 网络的一部分。"
+      },
+      {
+        "badge": "进行中",
+        "title": "网络运营",
+        "body": "监控、维护和运营改进将作为常规网络工作继续进行。"
+      },
+      {
+        "badge": "可用",
+        "title": "钱包和工具",
+        "body": "Web Wallet 现已上市。 PWA 行为、桌面软件和附加工具保持各自的状态。"
+      },
+      {
+        "badge": "可用来源",
+        "title": "开发者资源",
+        "body": "核心源代码可用。其他文档、API 和操作员资源均单独跟踪。"
+      },
+      {
+        "badge": "研究",
+        "title": "EPoSe研究",
+        "body": "扩展服务仍然是研究主题，不会作为当前的产品功能呈现。"
+      }
+    ]
+  },
+  "history": {
+    "eyebrow": "历史",
+    "title": "自 2018 年起。构建下一个篇章。",
+    "body": "Qwertycoin 始于 2018 年。今天的网络建立在 RandomX 和 EPoSe 的历史基础上。",
+    "bridge": [
+      "原创QWC社区链",
+      "QWC 与 RandomX 和 EPoSe 的网络"
+    ],
+    "items": [
+      {
+        "date": "2018",
+        "title": "Qwertycoin推出",
+        "body": "QWC 最初是一种基于 CryptoNote 的社区隐私币，具有早期的钱包、浏览器、社区和基础设施工作。"
+      },
+      {
+        "date": "2019–2023",
+        "title": "EPoW和EPoSe研发",
+        "body": "从 2019 年到 2023 年，该项目探索了公平挖矿和网络服务奖励以及钱包、节点和基础设施。 Xecute 的 EPoSe 工作塑造了奖励有用网络服务的愿景。"
+      },
+      {
+        "date": "后来",
+        "title": "代币阶段",
+        "body": "代币阶段是 Qwertycoin 历史的一部分，与今天的 QWC 网络分开。"
+      },
+      {
+        "date": "2026",
+        "title": "Qwertycoin网络",
+        "body": "Qwertycoin启动了一个包含私人支付、RandomX挖矿和EPoSe服务奖励的新网络。"
+      }
+    ],
+    "alert": "当前的 QWC 网络与早期的链是分开的。旧版钱包软件和区块链数据与该网络不兼容。"
+  },
+  "developers": {
+    "eyebrow": "开发商",
+    "title": "使用 Qwertycoin 构建。",
+    "body": "探索核心代码、构建软件并为 GitHub 做出贡献。",
+    "buildTitle": "从源代码构建",
+    "registrationTitle": "服务节点工具",
+    "sourceTitle": "核心源码",
+    "sourceBody": "探索 GitHub 上的公共 Qwertycoin 核心存储库。",
+    "legacyTitle": "构建说明",
+    "legacyBody": "构建和发布信息通过核心存储库和已发布的资源进行跟踪。",
+    "registrationBody": "使用当前的核心操作员指南运行公共 EPoSe 服务节点。",
+    "registrationLink": "打开 EPoSe 操作指南"
+  },
+  "community": {
+    "eyebrow": "社区",
+    "title": "加入 Qwertycoin 社区。",
+    "body": "跟踪开发、探索网络并帮助制定 Qwertycoin 的后续步骤。",
+    "github": "Qwertycoin组织",
+    "explorer": "QWC Mainnet Explorer"
+  },
+  "footer": {
+    "body": "Qwertycoin结合了私人支付、RandomX挖矿、EPoSe服务奖励、Web Wallet和公共源代码。",
+    "technology": "技术",
+    "pool": "官方池",
+    "documentation": "文档",
+    "history": "历史",
+    "roadmap": "路线图"
+  },
+  "notFound": {
+    "title": "找不到页面 | Qwertycoin",
+    "eyebrow": "404",
+    "heading": "找不到页面。",
+    "body": "该Qwertycoin页面不存在。打开当前概述或切换语言。",
+    "home": "打开首页"
+  }
+}

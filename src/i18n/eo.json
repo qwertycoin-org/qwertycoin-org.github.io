@@ -1,0 +1,829 @@
+{
+  "meta": {
+    "title": "Qwertycoin (QWC) | Privataj pagoj, RandomX & EPoSe",
+    "description": "Qwertycoin (QWC) estas privatec-fokusita kripta monero kun RandomX pruvo-de-labora minado kaj EPoSe rekompencoj por provitaj retaj servoj.",
+    "ogTitle": "Qwertycoin (QWC) | Privata mono. Malferma reto.",
+    "ogDescription": "Qwertycoin (QWC) estas privatec-fokusita kripta monero kun RandomX pruvo-de-labora minado kaj EPoSe rekompencoj por provitaj retaj servoj.",
+    "twitterDescription": "Qwertycoin (QWC) estas privatec-fokusita kripta monero kun RandomX pruvo-de-labora minado kaj EPoSe rekompencoj por provitaj retaj servoj.",
+    "imageAlt": "Qwertycoin Q-emblemo kun la Privata mono. Malferma reto. pretendi"
+  },
+  "nav": {
+    "skip": "Saltu al enhavo",
+    "homeLabel": "Qwertycoin hejme",
+    "menu": "Menuo",
+    "about": "Pri",
+    "epose": "EPoSe",
+    "mining": "Minado",
+    "getQwc": "Akiru QWC",
+    "releases": "Eldonoj",
+    "wallet": "Monujo",
+    "network": "Reto",
+    "history": "Historio",
+    "developers": "Evoluo",
+    "language": "Lingvo",
+    "languageShort": "Ling."
+  },
+  "hero": {
+    "title": "Privata mono. Malferma reto.",
+    "lead": "Qwertycoin (QWC) estas privatec-fokusita kripta monero kun malferma RandomX-minado kaj EPoSe-rekompencoj por provitaj retaj servoj.",
+    "kicker": "Malfermu la Web Wallet, esploru la blokĉenon aŭ kontribuu sur GitHub.",
+    "getQwc": "Akiru QWC",
+    "github": "Kontribuu sur GitHub",
+    "wallet": "Malfermu Web Wallet",
+    "mining": "Elektu vian vojon",
+    "visualAlt": "Granda ora Qwertycoin Q-emblemo kun abstraktaj retaj tavoloj",
+    "pulseLabel": "QWC-ĈEFRETO AKTIVA",
+    "pulseBody": "Nuna blokĉeno kaj EPoSe-datumoj. Disponeblaj valoroj restas videblaj kiam iuj statistikoj ne estas disponeblaj."
+  },
+  "metrics": {
+    "height": {
+      "label": "Bloko alteco",
+      "help": "Nuna publika ĉeno alteco."
+    },
+    "registered": {
+      "label": "Registritaj Servaj Nodoj",
+      "shortLabel": "Registrita",
+      "help": "Servaj Nodoj kun valida registriĝo."
+    },
+    "qualified": {
+      "label": "Kvalifikitaj Servaj Nodoj",
+      "shortLabel": "Kvalifikita",
+      "help": "Rekompenc-elekteblaj Servaj Nodoj por la koncerna periodo kiam statistikoj disponeblas."
+    },
+    "epoch": {
+      "label": "EPoSe epoko",
+      "shortLabel": "Epoko",
+      "help": "Nuna {blocks}-bloka servoperiodo (~{hours}h)."
+    },
+    "topHash": "Plej lasta bloko hash",
+    "stateHash": "EPoSe-ŝtata haŝiŝo",
+    "explorer": "Explorer",
+    "currentSource": "Kerna fonto",
+    "sourcePending": "Havebla sur GitHub",
+    "syncLoading": "Ŝargante…",
+    "loading": "Ŝargante…",
+    "updated": "Ĝisdatigita {time}",
+    "unavailable": "Nuntempe nedisponebla",
+    "partial": "Iuj retaj datumoj nuntempe ne disponeblas.",
+    "eposeUnavailable": "EPoSe-statistikoj nuntempe ne haveblas.",
+    "unknown": "nekonata",
+    "synchronized": "sinkronigita",
+    "syncPending": "sinkronigo pritraktata",
+    "ratio": "{qualified} / {registered} kvalifikiĝis",
+    "noScript": "Viva stato bezonas JavaScript. Vi ankoraŭ povas malfermi la esplorilon por aktualaj retaj datumoj."
+  },
+  "system": {
+    "securityLabel": "Minado",
+    "securityTitle": "RandomX PoW",
+    "securityBody": "Ministoj produktas novajn blokojn kaj sekurigas la blokĉenon per pruvo de laboro.",
+    "infrastructureLabel": "Servaj rekompencoj",
+    "infrastructureTitle": "EPoSe",
+    "infrastructureBody": "Servaj Nodoj gajnas kvalifikon por ret-servaj rekompencoj per validaj atestoj."
+  },
+  "participate": {
+    "eyebrow": "Komencu ĉi tie",
+    "title": "Elektu kiel vi volas partopreni.",
+    "body": "Uzu QWC, kontribuu komputikan potencon aŭ funkciigu publikan retan infrastrukturon. Ĉiu vojo havas aktualan, oficialan deirpunkton.",
+    "paths": [
+      {
+        "kind": "wallet",
+        "badge": "UZU QWC",
+        "title": "Malfermu monujon",
+        "body": "Kreu aŭ restarigu QWC-monujon en via retumilo, tiam sendu kaj ricevu privatajn pagojn.",
+        "cta": "Malfermu Web Wallet"
+      },
+      {
+        "kind": "pool",
+        "badge": "MINO QWC",
+        "title": "Mia sur la oficiala naĝejo",
+        "body": "Aliĝu al la oficiala RandomX PPLNS-naĝejo kun via QWC-elpaga adreso. Ne necesas registriĝo de konto de naĝejo.",
+        "cta": "Komencu minadon"
+      },
+      {
+        "kind": "serviceNode",
+        "badge": "RUN NODO",
+        "title": "Funkcii Servan Nodon",
+        "body": "Rulu publikan QWC-nodon, registri ĝian servan identecon kaj kvalifikiĝu per kontroleblaj EPoSe-servaj pruvoj—sen palizi QWC.",
+        "cta": "Malferma gvidilo por operaciisto"
+      }
+    ]
+  },
+  "technology": {
+    "eyebrow": "Pri Qwertycoin",
+    "title": "Privateco. Funkciigita de QWC.",
+    "body": "Uzu QWC por privataj pagoj, kontribuu komputikan potencon per minado aŭ subtenu la reton kiel Serva Nodo.",
+    "features": [
+      {
+        "badge": "MALFERMA RETO",
+        "title": "QWC Core Reto",
+        "body": "Sendu kaj ricevu QWC sur malferma reto. Sendependaj nodoj kontrolas transakciojn kaj konservas la blokĉenon.",
+        "icon": "about-il-01.svg"
+      },
+      {
+        "badge": "PRIVATECO",
+        "title": "Privateco enkonstruita",
+        "body": "QWC uzas privatecan teknologion por protekti transakciajn detalojn. Ĝia malfermfonta kodo ebligas al iu ajn ekzameni kiel funkcias la reto.",
+        "icon": "about-il-03.svg"
+      },
+      {
+        "badge": "PoW",
+        "title": "RandomX pruvo de laboro",
+        "body": "RandomX-ministoj produktas novajn blokojn kaj sekurigas la blokĉenon. Ĉiu povas partopreni kun kongrua minindustria programaro.",
+        "icon": "about-il-04.svg"
+      },
+      {
+        "badge": "EPoSe",
+        "title": "Rekompencoj por pruvita servo",
+        "body": "Servaj Nodoj disponigas retajn servojn. Validaj atestoj establas kvalifikon, kaj la protokolo EPoSe determinas la rekompencan rotacion.",
+        "icon": "about-il-06.svg"
+      },
+      {
+        "badge": "RETO-SERVOJ",
+        "title": "Servaj nodoj",
+        "body": "Servaj Nodoj subtenas la reton kaj partoprenas en EPoSe. Neniu QWC staking estas bezonata; blokproduktado restas la laboro de RandomX-ministoj.",
+        "icon": "about-il-02.svg"
+      },
+      {
+        "badge": "DISPONIBLES",
+        "title": "Web Wallet kaj malferma fonto",
+        "body": "Uzu QWC rekte en via retumilo kun la Web Wallet. Esploru la kernan programaron kaj kontribuu al ĝia evoluo sur GitHub.",
+        "icon": "about-il-05.svg"
+      }
+    ]
+  },
+  "epose": {
+    "eyebrow": "EPoSe",
+    "flowLabel": "EPoSe fluo",
+    "title": "Pruvu servon. Gajnu QWC.",
+    "body": "EPoSe rekompencas registritajn Servonodojn por provitaj retaj servoj. La protokolo taksas validajn atestojn registritajn sur la blokĉeno kaj determinas kiuj nodoj kvalifikas por rekompenca rotacio.",
+    "intro": "QWC dividas servotempon en EPoSe-epokojn. Servagado produktas atestojn, kvalifiko estas finpretigita, kaj nur tiam determinisma rekompenca rotacio povas uzi la kvalifikitan aron.",
+    "compactCards": [
+      {
+        "title": "Provizi servon.",
+        "body": "Registritaj Servaj Nodoj disponigas retajn servojn dum ĉiu epoko."
+      },
+      {
+        "title": "Kontrolu servon.",
+        "body": "Protokolo-elektitaj kontroliloj kontrolas servorespondojn kaj sendas subskribitajn atestojn."
+      },
+      {
+        "title": "Ricevu rekompencojn.",
+        "body": "Post kiam taŭgeco estas finpretigita, elekteblaj Servonodoj eniras la determinisman kompensrotacion de la protokolo."
+      }
+    ],
+    "actions": {
+      "live": "Rigardu vivajn Servo-Nodojn",
+      "guide": "Rulu Servan Nodon",
+      "docs": "Legu la EPoSe-dokumentadon"
+    },
+    "originEyebrow": "EPoSe origino",
+    "originTitle": "Dankon, Xecute.",
+    "originBody": "Xecute evoluigis la originan EPoSe-vizion kaj kontribuis la Qwertycoin-servtavolan blankpaperon. Tiu laboro metis la fundamenton por rekompenci utilajn retajn servojn.",
+    "schematic": [
+      {
+        "label": "Serva nodo",
+        "value": "registrita identeco"
+      },
+      {
+        "label": "Kontrola Komitato",
+        "value": "kontrolo de servo"
+      },
+      {
+        "label": "Ĉeno Ŝtato",
+        "value": "determinisma rekompenco"
+      }
+    ],
+    "links": [
+      "registriĝo",
+      "atesto"
+    ],
+    "steps": [
+      {
+        "title": "Registru",
+        "body": "Servonodo publikigas subskribitan registradon kun servoidenteco, rekompenca celo, finpunktodevontigo kaj agnoskopruvo."
+      },
+      {
+        "title": "Servu",
+        "body": "La nodo provizas QWC-retan servon dum normala RandomX-minado restas respondeca pri blokproduktado."
+      },
+      {
+        "title": "Atesti",
+        "body": "Asignitaj kontrolintoj defias la Servan Nodon kaj subskribas atestojn nur kiam la atendata servorespondo validas."
+      },
+      {
+        "title": "Kvalifiki",
+        "body": "Ĉenŝtato kontrolas ĉu registrita nodo kolektis sufiĉe da validaj atestoj por la koncerna epoko."
+      },
+      {
+        "title": "Rekompenco",
+        "body": "Kvalifikitaj nodoj eniras determinisman rekompencan rotacion. Unu elektita pagato povas ricevi la parton EPoSe de bloka rekompenco."
+      }
+    ],
+    "glossaryTitle": "EPoSe glosaro",
+    "glossary": [
+      {
+        "term": "Serva nodo",
+        "definition": "Normala QWC-nodo plus registrita servoidenteco, finpunktodevontigo, rekompenca adreso kaj EPoSe-partoprendatenoj."
+      },
+      {
+        "term": "Epoko",
+        "definition": "Fiksa blokperiodo en kiu servagado estas mezurita. Nuna parametro: {blocks}-blokoj, proksimume {hours} horoj ĉe {seconds}-a dua bloka celo."
+      },
+      {
+        "term": "Registrita",
+        "definition": "La Servo-Nodo aliĝis al EPoSe publikigante validan sur-ĉenan registradon. Registrita ne signifas rekompenc-elektebla."
+      },
+      {
+        "term": "Atesto",
+        "definition": "Subskribita konfirmo de asignita kontrolisto, ke la Servonodo respondis sian servodefion per la atendata respondo."
+      },
+      {
+        "term": "Kontrola Komitato",
+        "definition": "Determinisma aro de kontrolilnodoj elektitaj de ĉenŝtato por servodefio. La nuna publika kerno celas {committee} kontrolilojn kiam sufiĉaj kandidatoj ekzistas."
+      },
+      {
+        "term": "Akcepto Pruvo",
+        "definition": "Malgranda pruvo alkroĉita al registrado, kiu faras identecojn kosti krei kaj helpas redukti malmultekostajn registriĝojn de Sybil."
+      },
+      {
+        "term": "Kvalifikita",
+        "definition": "Registrita Servonodo, kiu kolektis sufiĉe da validaj, ne-duoblaj atestoj en la koncerna epoko. La kvorumo estas du trionoj de la efektive elektita kontrolanta komitato."
+      },
+      {
+        "term": "Rekompenco Fonta Epoko",
+        "definition": "La finpretigita epoko, kies kvalifikita aro estas uzata por la nuna rekompenca periodo. En la nuna kerno, blokoj en epoko N uzas kvalifikitajn nodojn de epoko N-1."
+      },
+      {
+        "term": "Rekompenco Rotacio",
+        "definition": "Kvalifikitaj nodoj estas determinisme turnitaj kiel eblaj ricevantoj de la parto EPoSe de blokaj rekompencoj. La monbazo ne kreskas kun la totala nodo-kalkulo."
+      }
+    ],
+    "epochTitle": "Epokoj estas blokintervaloj, ne horloĝaj rendevuoj.",
+    "epochBody": "EPoSe-epoko estas {blocks}-bloka servoperiodo, proksimume {hours} horoj ĉe la nuna {seconds}-dua blokcelo.",
+    "registeredVsQualified": [
+      {
+        "label": "Registrita",
+        "body": "La nodo aliĝis al EPoSe."
+      },
+      {
+        "label": "Kvalifikita",
+        "body": "La nodo pruvis sufiĉe da servo-agado por iĝi elektebla por servaj rekompencoj."
+      }
+    ],
+    "committeeTitle": "Kontroligaj komitatoj ne estas validigiloj.",
+    "committeeBody": "Kontroligaj komitatoj ne produktas blokojn kaj ne anstataŭigas RandomX-ministojn. Ilia rolo estas limigita al kontrolado de agado de Service Node por EPoSe-kvalifiko. La nuna publika kerno celas {committee}-kontrolistojn kiam sufiĉe da kandidatoj ekzistas kaj postulas dutrionan kvorumon de la fakta komitato. Kun plena komitato, tio signifas {fullCommitteeAttestations}-atestojn.",
+    "rewardTimelineTitle": "Servo estas mezurita unue. Rekompencoj sekvas poste.",
+    "timeline": [
+      {
+        "label": "Epoko N",
+        "title": "Registru / Servu / Atesti",
+        "body": "Servaj Nodoj registras, provizas servon kaj kolektas validajn atestojn pri kontroliloj."
+      },
+      {
+        "label": "Fineco",
+        "title": "Kvalifiko finiĝis",
+        "body": "Interkonsentstato derivas la kvalifikitan aron de validaj EPoSe-datenoj post kiam la epoko estas fina."
+      },
+      {
+        "label": "Epoko N+1",
+        "title": "Rekompenca rotacio",
+        "body": "La nuna kerno uzas la antaŭan epokon kiel la rekompencfontan epokon por determinisma elektado de paganto."
+      }
+    ],
+    "rotationTitle": "Rekompenca rotacio tenas blokajn rekompencojn kompaktajn.",
+    "rotationBody": "Aktuala rekompenco-dividado: 90% ministo / {rewardPercent}% EPoSe-serva rekompenco. EPoSe-servopagoj estas konsente videblaj, do ĉiu nodo povas kontroli la elektitan Servan Nodon kaj rekompencan kvanton. Normalaj QWC-monujo-transakcioj daŭre uzas la privatecajn mekanismojn de la subesta QWC-transakcia modelo.",
+    "rotationExamples": [
+      "Bloko 1001 -> nodo A",
+      "Bloko 1002 -> nodo C",
+      "Bloko 1003 -> nodo B",
+      "Bloko 1004 -> nodo A"
+    ],
+    "rewardRulesTitle": "Rekompencoj sekvas la protokolon.",
+    "rewardRulesBody": "Ĉiu plena nodo povas kontroli rekompencon kaj elekton de ricevanto de la blokĉeno. Subvencio: 90% minado / {rewardPercent}% EPoSe servo-rekompencoj; transakciaj kotizoj restas ĉe la ministo.",
+    "rewardFormulaAlt": "EPoSe konsenta formulo por kontrolilo-kvorumo, servo-noda kvalifiko, ricevantorotacio kaj servo-rekompenco asigno.",
+    "rewardFormulaCaption": "EPoSe-kvorumo, kvalifiko, ricevanto-rotacio kaj serva rekompenco - kompakta reprezentado de la aktivaj konsentreguloj."
+  },
+  "faq": {
+    "eyebrow": "Oftaj Demandoj pri EPoSe",
+    "title": "Mallongaj respondoj por novaj funkciigistoj.",
+    "items": [
+      {
+        "question": "Kio estas Qwertycoin?",
+        "answer": "Qwertycoin (QWC) estas privatec-fokusita kripta monero kun RandomX pruvo-de-labora minado kaj EPoSe rekompencoj por provitaj retaj servoj."
+      },
+      {
+        "question": "Kiel mi uzas Web Wallet?",
+        "answer": "Malfermu la oficialan Web Wallet, kreu aŭ restarigu monujon tie kaj sekvu ĝiajn sekurecajn instrukciojn. La ĉefa retejo neniam prilaboras monujojn."
+      },
+      {
+        "question": "Ĉu mi povas uzi malnovan monujon QWC?",
+        "answer": "Ne. La nuna reto QWC estas aparta de la pli frua ĉeno. Heredaĵa monujo-programaro kaj blokĉeno-datumoj ne kongruas kun ĉi tiu reto."
+      },
+      {
+        "question": "Ĉu EPoSe anstataŭigas minadon?",
+        "answer": "Ne RandomX-ministoj produktas blokojn kaj sekurigas la blokĉenon. EPoSe aldonas rekompencojn por provitaj retaj servoj."
+      },
+      {
+        "question": "Kio estas epoko?",
+        "answer": "Epoko estas la blokperiodo uzata por taksi EPoSe servan agadon. Ĝi nuntempe ampleksas {blocks}-blokojn, proksimume {hours} horojn ĉe la celblokintervalo."
+      },
+      {
+        "question": "Kion signifas kvalifikita?",
+        "answer": "Kvalifikita Servonodo plenumis la postulojn de la protokolo por validaj atestoj en la koncerna epoko kaj estas elektebla por servo-rekompenca elekto. La teknika kvorumo estas almenaŭ ceil (2 x reala komitata grandeco / 3)."
+      },
+      {
+        "question": "Kiu determinas kvalifikon kaj rekompencojn?",
+        "answer": "La protokolo EPoSe. Ĉiu plena nodo aplikas la samajn regulojn al validaj surĉenaj registradoj kaj atestoj por kontroli kvalifikon kaj rekompencan elekton."
+      },
+      {
+        "question": "Ĉu Servaj Nodoj bezonas palizi QWC?",
+        "answer": "Ne. Partopreno postulas EPoSe-registradon kaj la postulatajn servajn pruvojn, ne ŝlositajn QWC kiel intereson."
+      },
+      {
+        "question": "Ĉu unu funkciigisto povas funkcii plurajn Servo-Nodojn?",
+        "answer": "Jes. Ĉiu Servonodo bezonas sian propran validan registradon kaj devas plenumi la servopostulojn de la protokolo. Akceptopruvo malfaciligas malmultekostan kreadon de identeco."
+      },
+      {
+        "question": "Kial EPoSe ne estas Pruvo de Intereso?",
+        "answer": "EPoSe rekompencas provitan servon prefere ol ŝlosita intereso. Servaj Nodoj kontrolas blokĉenajn datumojn kiel aliaj plenaj nodoj, dum RandomX-ministoj faras pruvo-de-laboran blokproduktadon."
+      }
+    ]
+  },
+  "serviceNodes": {
+    "eyebrow": "Servaj nodoj",
+    "title": "Subtenu la reton. Gajnu per servo.",
+    "body": "Ĉiu plena nodo kontrolas kaj transdonas blokĉenajn datumojn. Registrita Servonodo ankaŭ partoprenas en EPoSe kaj povas kvalifiki por servokompensoj.",
+    "normal": "Normala nodo",
+    "service": "Serva nodo",
+    "comparisonLabel": "Normala nodo kaj Servonodo komparo",
+    "rows": [
+      [
+        "Kontrolas blokojn kaj transakciojn, sinkronigas la ĉenon kaj transdonas datumojn.",
+        "Elfaras la samajn nodfunkciojn kaj disponigas registritajn EPoSe-servojn."
+      ],
+      [
+        "Funkcii regulan nodon sole ne gajnas EPoSe-rekompencojn.",
+        "Povas kvalifiki por servokompensoj per validaj servatestoj."
+      ],
+      [
+        "Povas esti funkciigita sendepende de minado.",
+        "Postulas EPoSe-registradon kaj servajn pruvojn, sen QWC-palimado."
+      ]
+    ]
+  },
+  "mining": {
+    "eyebrow": "Minado",
+    "title": "Mia kun RandomX.",
+    "body": "Kontribuu komputikan potencon al Qwertycoin. RandomX-ministoj produktas blokojn je celintervalo de 120 sekundoj.",
+    "cards": [
+      {
+        "title": "Malferma partopreno",
+        "body": "Konektu kongruan minindustrian programaron RandomX al nodo QWC aŭ subtenata minindustria naĝejo."
+      },
+      {
+        "title": "Minado kaj retaj servoj",
+        "body": "Minado sekurigas blokproduktadon. EPoSe aparte rekompencas registritajn nodojn por provitaj retaj servoj."
+      }
+    ],
+    "poolEyebrow": "Oficiala Qwertycoin-naĝejo",
+    "poolTitle": "Komencu minadon en minutoj.",
+    "poolBody": "La oficiala naĝejo disponigas travideblan {poolAccounting}-kontadon, vivajn statistikojn kaj aŭtomatajn elpagojn. Via QWC-elpaga adreso estas via naĝejo; la naĝejo neniam petas monujoŝlosilojn.",
+    "poolFacts": [
+      "Algoritmo: {poolAlgorithm}",
+      "Neniu registriĝo: uzu vian QWC-pagadreson",
+      "Viva hashrato, laboristo, blokado kaj pago-statistikoj",
+      "Ĉiu elpagkonto pagas la realan retkotizon por sia propra elpago"
+    ],
+    "poolCta": "Malfermu oficiala naĝejo",
+    "setupCta": "Kreu komandon XMRig",
+    "docsCta": "Legu la gvidilon pri naĝejo-minado",
+    "allocationTitle": "Du apartaj rekompencaj tavoloj",
+    "protocolLabel": "QWC-protokolo",
+    "protocolSplit": "90% minado / 10% EPoSe",
+    "protocolBody": "La bloka subvencio estas dividita {miningRewardPercent}% al minado kaj {rewardPercent}% al EPoSe servaj rekompencoj. Transakciaj kotizoj restas ĉe la ministo.",
+    "poolLabel": "Oficiala naĝejo",
+    "poolSplit": "95% ministoj / 5% naĝejo",
+    "poolAllocationBody": "El la minindustriaj rekompencoj distribuitaj tra la oficiala naĝejo, {poolFeePercent}% financas Qwertycoin-disvolvadon kaj operaciojn de naĝejo; ĝuste {poolMinerPercent}% estas asignita al partoprenantaj ministoj antaŭ la pago de transakcia kotizo de ĉiu konto."
+  },
+  "exchanges": {
+    "eyebrow": "Interŝanĝoj",
+    "title": "AKIU QWC.",
+    "body": "Trovu interŝanĝon, kiu listigas Qwertycoin.",
+    "listed": "LISTIGITA",
+    "pairLabel": "KOMERCA PARO",
+    "trade": "KOMERCO QWC",
+    "external": "Ekstera interŝanĝo",
+    "linkLabel": "Komercu QWC sur Neoxa Exchange, malfermas novan langeton"
+  },
+  "wallet": {
+    "eyebrow": "Monujo",
+    "title": "Via sekva paŝo: monujo.",
+    "body": "La Web Wallet, Qwertycoin GUI 2.0.0 kaj fontkodo disponeblas nun.",
+    "cards": [
+      {
+        "badge": "DISPONIBLES",
+        "title": "Web Wallet",
+        "body": "Sendu, ricevu kaj administru QWC rekte en via retumilo.",
+        "button": "Malfermu Web Wallet",
+        "icon": "wallet.svg"
+      },
+      {
+        "badge": "EN EVOLUĜO",
+        "title": "PWA",
+        "body": "Instalebla PWA-konduto estas en evoluo kaj estos listigita kiam ĝi estos preta.",
+        "icon": "about-il-05.svg"
+      },
+      {
+        "badge": "DISPONIBLES",
+        "title": "Labortablaj monujoj",
+        "body": "Qwertycoin GUI 2.0.3 disponeblas por Windows, macOS Apple Silicon kaj Linux x86_64.",
+        "icon": "development.svg"
+      }
+    ]
+  },
+  "releases": {
+    "eyebrow": "Monujoj",
+    "title": "Monujoj kaj fontkodo",
+    "body": "La unua publika testfazo de QWC estas malfermita. La Web Wallet, Qwertycoin GUI 2.0.3, Core v2.0.3 komandliniaj iloj, la oficiala Docker bildo kaj fontkodo estas disponeblaj nun.",
+    "cards": [
+      {
+        "badge": "DISPONIBLES · v2.0.3",
+        "badgeClass": "mainnet",
+        "title": "Labortablaj monujoj",
+        "body": "Elŝutu la nunan Qwertycoin GUI de la oficiala GitHub-eldono. GUI v2.0.2-uzantoj devas instali v2.0.3 unufoje kun la rekta elŝuto ĉar la v2.0.2-ĝisdatilo ne povas sekvi la eldon-valoran alidirektilon de GitHub. La Windows-Agordo kaj macOS DMG estas la preferataj instaliloj; porteblaj ZIP kaj TAR.GZ-pakaĵoj restas disponeblaj kiel alternativoj. Kontrolu la elŝuton kaj kontrolsumon antaŭ uzo.",
+        "note": "Noto pri integreco: SHA256SUMS kontrolas elŝutitajn bajtojn, ne identecon de eldonejo. Linux kaj Windows estas nesubskribitaj; macOS estas ad-hoc subskribita kaj ne notariita.",
+        "glyph": "GUI",
+        "downloadsLayout": "rows",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "Elŝutu Windows-Agordon",
+            "compatibility": "Provita sur la Windows Server 2025-kuristo · nesubskribita; pli malnovaj Windows-versioj ne estis kontrolitaj",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64-setup.exe",
+            "sha256": "7f8c159fa956db2b6a9b55fd47600a1fe68f32dd26d1e665877a9cc37758eadd",
+            "shaLabel": "Agordu SHA-256",
+            "preferredLabel": "Preferata instalilo",
+            "alternatives": [
+              {
+                "downloadLabel": "Elŝutu porteblan Windows ZIP",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64.zip",
+                "sha256": "b4b2c28a5cee6ca7bd3f423de5b340706ee216a31bfa23d620b7a67150a197de",
+                "shaLabel": "ZIP SHA-256"
+              }
+            ]
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "Elŝutu macOS DMG",
+            "compatibility": "macOS 15 aŭ pli nova",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.dmg",
+            "sha256": "a4736597387770250b795fd1a4397693990522cf673cfb29d6cf9bb855071200",
+            "shaLabel": "DMG SHA-256",
+            "preferredLabel": "Preferata elŝuto",
+            "alternatives": [
+              {
+                "downloadLabel": "Elŝutu macOS TAR.GZ",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.tar.gz",
+                "sha256": "ce239650afcc8eacee7b13d35f076a3ea617a81d4728b22d53d1ecc28a97fe26",
+                "shaLabel": "TAR.GZ SHA-256"
+              }
+            ]
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "Elŝutu Linux TAR.GZ",
+            "compatibility": "GLIBC 2.35-kongrua plafono",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "55cc8754df00c36017b7a0ffa35b90d3878c95477202059b6c596b5163c47680"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/SHA256SUMS"
+          },
+          {
+            "label": "Eldonaj notoj",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.3"
+          },
+          {
+            "label": "Raportu problemon",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/issues"
+          }
+        ]
+      },
+      {
+        "badge": "DISPONIBLES · v2.0.3",
+        "badgeClass": "mainnet",
+        "title": "Kernaj komandliniaj iloj",
+        "body": "Oficialaj Qwertycoin-pakaĵoj enhavantaj qwertycoind, qwertycoin-wallet-cli kaj qwertycoin-wallet-rpc. Kontrolu la arkivon kaj kontrolsumon antaŭ uzo; eldonnotoj kaj reviziostatuso estas dokumentitaj kun ĉiu GitHub-eldono.",
+        "note": "Noto pri integreco: SHA256SUMS kontrolas elŝutitajn bajtojn, ne identecon de eldonejo. Linux kaj Windows estas nesubskribitaj; macOS estas ad-hoc subskribita kaj ne notariita.",
+        "glyph": "CLI",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "Elŝutu Windows ZIP",
+            "compatibility": "Provita sur la Windows Server 2025-kuristo; neniu pli larĝa heredaĵo-Windows aserto",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-windows-x86_64.zip",
+            "sha256": "b0bab23137d5a4308b3d1cd582c17fd0069f392c265a74a1e0fd0f15b4becaaf"
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "Elŝutu macOS TAR.GZ",
+            "compatibility": "macOS 15 aŭ pli nova",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-macos-arm64.tar.gz",
+            "sha256": "c23194aff092d0cc8ef6eed9ce4a6d45ccb06c7b760b05e7fce0cd9992962fdf"
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "Elŝutu Linux TAR.GZ",
+            "compatibility": "GLIBC 2.35 / GLIBCXX 3.4.30 kongrua plafono",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "8df9d4bd22610228f3330aaac348776fd86bcd853751cf9472e0fc4db271b675"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/SHA256SUMS"
+          },
+          {
+            "label": "Eldonaj notoj",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+          },
+          {
+            "label": "Raportu problemon",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/issues"
+          }
+        ]
+      },
+      {
+        "badge": "DISPONIBLES · 2.0.3",
+        "badgeClass": "mainnet",
+        "title": "Docker bildo",
+        "body": "Rulu la kontrolitan Kernan eldonon kiel ne-radika Linux/amd64-ujo. Mainnet kaj la demono estas la defaŭltaj; la konstanta nomita volumo konservas ĉenajn datumojn tra uj-ĝisdatigoj.",
+        "note": "La plej nova etikedo spuras la plej novan stabilan bildon. Kontrolitaj produktaddeplojoj povas alpingli ĝian bilddigeston. Nur P2P-haveno 8196 estas publikigita malsupre; administra RPC ne estas elmontrita. Monujo kaj identecdatenoj de EPoSe bezonas apartajn protektitajn volumojn kaj la plenan rapidan komencon.",
+        "glyph": "OCI",
+        "commands": [
+          {
+            "label": "Tiru la stabilan bildon",
+            "code": "docker pull docker.io/qwertycoin/qwertycoin:latest"
+          },
+          {
+            "label": "Komencu konstantan ĉefretan nodon",
+            "code": "docker run -d --name qwertycoind --restart unless-stopped \\\n  -v qwertycoin-chain:/data -p 8196:8196 \\\n  docker.io/qwertycoin/qwertycoin:latest"
+          }
+        ],
+        "links": [
+          {
+            "label": "Malfermu Docker Hub",
+            "href": "https://hub.docker.com/r/qwertycoin/qwertycoin/tags"
+          },
+          {
+            "label": "Docker rapida starto",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md"
+          },
+          {
+            "label": "Kernaj eldonnotoj",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+          }
+        ]
+      },
+      {
+        "badge": "DISPONIBLES",
+        "badgeClass": "mainnet",
+        "title": "Web Wallet",
+        "body": "Sendu, ricevu kaj administru QWC rekte en via retumilo.",
+        "glyph": "WEB",
+        "links": [
+          {
+            "label": "Malfermu Web Wallet",
+            "href": "https://wallet.qwertycoin.org/"
+          }
+        ]
+      },
+      {
+        "badge": "FONTO DISPONIBLES",
+        "badgeClass": "next",
+        "title": "QWC fontkodo",
+        "body": "Esploru la kernan programaron, konstruu ĝin mem kaj kontribuu sur GitHub.",
+        "glyph": "SRC",
+        "links": [
+          {
+            "label": "Malfermu Kernan Deponejon",
+            "href": "https://github.com/qwertycoin-org/qwertycoin"
+          },
+          {
+            "label": "GitHub Organizo",
+            "href": "https://github.com/qwertycoin-org"
+          }
+        ]
+      }
+    ],
+    "noteTitle": "Kongrua noto",
+    "noteBody": "La nuna reto QWC estas aparta de la pli frua ĉeno. Heredaĵa monujo-programaro kaj blokĉeno-datumoj ne kongruas kun ĉi tiu reto."
+  },
+  "network": {
+    "eyebrow": "Reto",
+    "title": "Reta agado",
+    "body": "Nuna blokĉeno kaj EPoSe-datumoj."
+  },
+  "specs": {
+    "eyebrow": "Specifoj de Moneroj",
+    "title": "Konfirmitaj ĉefretaj parametroj.",
+    "body": "Ĉi tiuj valoroj priskribas la nunan QWC-ĉefretan efektivigon.",
+    "visualAlt": "QWC parametro-orbita diagramo",
+    "items": [
+      [
+        "Nomo",
+        "Qwertycoin"
+      ],
+      [
+        "Simbolo",
+        "QWC"
+      ],
+      [
+        "Reto",
+        "Mainnet"
+      ],
+      [
+        "Protokolo",
+        "QWC HF17"
+      ],
+      [
+        "Servaj rekompencoj",
+        "EPoSe"
+      ],
+      [
+        "Interkonsento",
+        "RandomX pruvo de laboro"
+      ],
+      [
+        "Bloko celo",
+        "120 sekundoj"
+      ],
+      [
+        "EPoSe Epoko",
+        "{blocks}-blokoj (~{hours} horoj)"
+      ],
+      [
+        "EPoSe-komitato",
+        "{committee} kontrolilo celo"
+      ],
+      [
+        "Atesta kvorumo",
+        "plafono (2/3 de fakta komisiono), {fullCommitteeAttestations} de {committee} kiam plene"
+      ],
+      [
+        "Rekompenco dividita",
+        "90% minado / {rewardPercent}% EPoSe"
+      ],
+      [
+        "Decimaloj",
+        "8"
+      ],
+      [
+        "Konstanto de Provizo",
+        "184,467,440.73709551 QWC"
+      ],
+      [
+        "Vosto-Emisio",
+        "0.3 QWC/minuto, 0.6 QWC/bloka celo"
+      ],
+      [
+        "Adreso Prefikso",
+        "0x14820c, normaj adresoj komenciĝas per QWC"
+      ],
+      [
+        "P2P",
+        "8196"
+      ],
+      [
+        "Daemon RPC",
+        "8197, limigita publika prokurilo nur"
+      ],
+      [
+        "Wallet RPC",
+        "8198"
+      ],
+      [
+        "ZMQ",
+        "8199"
+      ]
+    ]
+  },
+  "roadmap": {
+    "eyebrow": "Vojplano",
+    "title": "Kio estas disponebla. Kio sekvas.",
+    "body": "Spuri la progreson de la reto, monujoj kaj programiloj de Qwertycoin.",
+    "items": [
+      {
+        "badge": "LIVE",
+        "title": "QWC reto",
+        "body": "RandomX-reto kaj kerna QWC-funkcio estas vivaj. Operaciistoj daŭre konservas kaj plibonigas la reton."
+      },
+      {
+        "badge": "LIVE",
+        "title": "EPoSe",
+        "body": "Registrado, servatestoj, kvalifiko kaj rekompenca rotacio estas parto de la nuna reto QWC."
+      },
+      {
+        "badge": "DURANTE",
+        "title": "Reta operacio",
+        "body": "Monitorado, prizorgado kaj funkciaj plibonigoj daŭras kiel regula retlaboro."
+      },
+      {
+        "badge": "DISPONIBLES",
+        "title": "Monujoj kaj iloj",
+        "body": "La Web Wallet disponeblas. PWA-konduto, labortabla programaro kaj pliaj iloj konservas sian propran statuson."
+      },
+      {
+        "badge": "FONTO DISPONIBLES",
+        "title": "Rimedoj por programistoj",
+        "body": "Kerna fontkodo disponeblas. Kroma dokumentaro, API-oj kaj operaciistresursoj estas spuritaj aparte."
+      },
+      {
+        "badge": "RESERCADO",
+        "title": "EPoSe esploro",
+        "body": "Plilongigitaj servoj restas esplortemoj kaj ne estas prezentitaj kiel aktualaj produktaj funkcioj."
+      }
+    ]
+  },
+  "history": {
+    "eyebrow": "Historio",
+    "title": "Ekde 2018. Konstruante la sekvan ĉapitron.",
+    "body": "Qwertycoin komenciĝis en 2018. La hodiaŭa reto baziĝas sur tiu historio kun RandomX kaj EPoSe.",
+    "bridge": [
+      "Originala komunuma ĉeno QWC",
+      "QWC reto kun RandomX kaj EPoSe"
+    ],
+    "items": [
+      {
+        "date": "2018",
+        "title": "Qwertycoin lanĉas",
+        "body": "QWC komenciĝis kiel CryptoNote-bazita komunuma privateca monero kun fruaj monujoj, esploristoj, komunumaj kaj infrastrukturaj klopodoj."
+      },
+      {
+        "date": "2019–2023",
+        "title": "EPoW kaj EPoSe esplorado kaj evoluo",
+        "body": "De 2019 ĝis 2023, la projekto esploris justajn minindustriajn kaj retservajn rekompencojn kune kun monujoj, nodoj kaj infrastrukturo. La laboro de Xecute EPoSe formis la vizion rekompenci utilajn retajn servojn."
+      },
+      {
+        "date": "Poste",
+        "title": "Token-fazo",
+        "body": "La ĵetona fazo estas parto de la historio de Qwertycoin kaj aparta de la hodiaŭa reto QWC."
+      },
+      {
+        "date": "2026",
+        "title": "Qwertycoin reto",
+        "body": "Qwertycoin komencas novan reton kun privataj pagoj, RandomX-minado kaj EPoSe-servaj rekompencoj."
+      }
+    ],
+    "alert": "La nuna reto QWC estas aparta de la pli frua ĉeno. Heredaĵa monujo-programaro kaj blokĉeno-datumoj ne kongruas kun ĉi tiu reto."
+  },
+  "developers": {
+    "eyebrow": "Programistoj",
+    "title": "Konstruu kun Qwertycoin.",
+    "body": "Esploru la kernkodon, konstruu la programaron kaj kontribuu plibonigojn sur GitHub.",
+    "buildTitle": "Konstruu el fonto",
+    "registrationTitle": "Servo-nodaj iloj",
+    "sourceTitle": "Kerna fontkodo",
+    "sourceBody": "Esploru la publikan kernan deponejon de Qwertycoin sur GitHub.",
+    "legacyTitle": "Konstruu instrukciojn",
+    "legacyBody": "Konstruaj kaj eldonaj informoj estas spuritaj per la kerna deponejo kaj publikigitaj rimedoj.",
+    "registrationBody": "Rulu publikan Servan Nodon EPoSe kun la nuna Kerna funkciigisto-gvidilo.",
+    "registrationLink": "Malfermu la gvidilon de operaciisto EPoSe"
+  },
+  "community": {
+    "eyebrow": "Komunumo",
+    "title": "Aliĝu al la komunumo Qwertycoin.",
+    "body": "Sekvu evoluon, esploru la reton kaj helpu formi la sekvajn paŝojn de Qwertycoin.",
+    "github": "Qwertycoin organizo",
+    "explorer": "QWC Mainnet Explorer"
+  },
+  "footer": {
+    "body": "Qwertycoin kombinas privatajn pagojn, RandomX-minadon, EPoSe-servajn rekompencojn, la Web Wallet kaj publikan fontkodon.",
+    "technology": "Teknologio",
+    "pool": "Oficiala naĝejo",
+    "documentation": "Dokumentado",
+    "history": "Historio",
+    "roadmap": "Vojplano"
+  },
+  "notFound": {
+    "title": "Paĝo ne trovita | Qwertycoin",
+    "eyebrow": "404",
+    "heading": "Paĝo ne trovita.",
+    "body": "Ĉi tiu paĝo de Qwertycoin ne ekzistas. Malfermu la nunan superrigardon aŭ ŝanĝu lingvon.",
+    "home": "Malfermu hejmen"
+  }
+}

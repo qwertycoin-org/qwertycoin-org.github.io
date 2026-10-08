@@ -1,10 +1,21 @@
 import en from "./i18n/en.json" with { type: "json" };
 import de from "./i18n/de.json" with { type: "json" };
+import zhHans from "./i18n/zh-Hans.json" with { type: "json" };
+import nl from "./i18n/nl.json" with { type: "json" };
+import eo from "./i18n/eo.json" with { type: "json" };
+import fr from "./i18n/fr.json" with { type: "json" };
+import it from "./i18n/it.json" with { type: "json" };
+import ja from "./i18n/ja.json" with { type: "json" };
+import jbo from "./i18n/jbo.json" with { type: "json" };
+import pt from "./i18n/pt.json" with { type: "json" };
+import ru from "./i18n/ru.json" with { type: "json" };
+import es from "./i18n/es.json" with { type: "json" };
 import locales from "./i18n/locales.json" with { type: "json" };
 import network from "./config/network.json" with { type: "json" };
 import exchanges from "./config/exchanges.json" with { type: "json" };
 
-const dictionaries = { en, de };
+const dictionaries = { en, de, "zh-Hans": zhHans, nl, eo, fr, it, ja, jbo, pt, ru, es };
+const searchLocales = locales.filter((locale) => locale.searchHreflang !== false);
 
 const siteParams = {
   blocks: network.epose.epochLengthBlocks,
@@ -59,10 +70,10 @@ function languageSwitcher(currentLocale) {
   return `<div class="locale-switcher" aria-label="${languageLabel}">
     <button class="locale-toggle" type="button" aria-expanded="false" aria-controls="${menuId}" data-locale-toggle>
       <span>${languageShortLabel}</span>
-      <strong>${text(currentLocale.code.toUpperCase())}</strong>
+      <strong>${text(currentLocale.menuCode || currentLocale.code.toUpperCase())}</strong>
     </button>
     <div class="locale-menu" id="${menuId}">
-${locales.map((locale) => `<a href="${pathFor(locale)}" hreflang="${locale.code}" lang="${locale.code}" data-locale-option="${locale.code}"${locale.code === currentLocale.code ? ' aria-current="true"' : ""}><strong>${text(locale.code.toUpperCase())}</strong><span>${text(locale.nativeName)}</span></a>`).join("\n")}
+${locales.map((locale) => `<a href="${pathFor(locale)}"${locale.searchHreflang === false ? "" : ` hreflang="${locale.code}"`} lang="${locale.code}" data-locale-option="${locale.code}" data-locale-path="${pathFor(locale)}"${locale.code === currentLocale.code ? ' aria-current="true"' : ""}><strong>${text(locale.menuCode || locale.code.toUpperCase())}</strong><span>${text(locale.nativeName)}</span></a>`).join("\n")}
     </div>
   </div>`;
 }
@@ -271,15 +282,20 @@ const defaultAssets = {
 
 export function renderPage(localeCode, assets = defaultAssets) {
   const locale = locales.find((item) => item.code === localeCode);
-  const t = dictionaries[localeCode] || dictionaries.en;
-  const eposeFormulaAsset = localeCode === "de"
-    ? "/assets/epose/epose-consensus-formula-de.svg"
-    : "/assets/epose/epose-consensus-formula.svg";
-  const heroMotifAsset = localeCode === "de"
-    ? "/assets/qwc-hero-motif-de.svg"
-    : "/assets/qwc-hero-motif.svg";
+  if (!locale || !dictionaries[localeCode]) throw new Error(`Unknown locale: ${localeCode}`);
+  const t = dictionaries[localeCode];
+  const eposeFormulaAsset = localeCode === "en"
+    ? "/assets/epose/epose-consensus-formula.svg"
+    : localeCode === "de"
+      ? "/assets/epose/epose-consensus-formula-de.svg"
+      : "/assets/epose/epose-consensus-formula-neutral.svg";
+  const heroMotifAsset = localeCode === "en"
+    ? "/assets/qwc-hero-motif.svg"
+    : localeCode === "de"
+      ? "/assets/qwc-hero-motif-de.svg"
+      : "/assets/qwc-hero-motif-neutral.svg";
   const canonical = absoluteUrl(locale);
-  const alternates = locales.map((item) => `<link rel="alternate" hreflang="${item.code}" href="${absoluteUrl(item)}">`).join("\n    ");
+  const alternates = searchLocales.map((item) => `<link rel="alternate" hreflang="${item.code}" href="${absoluteUrl(item)}">`).join("\n    ");
   const alternateOgLocales = locales
     .filter((item) => item.code !== locale.code)
     .map((item) => `<meta property="og:locale:alternate" content="${item.ogLocale}">`)
@@ -544,7 +560,7 @@ export function renderSitemap() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${locales.map((locale) => `  <url>
     <loc>${absoluteUrl(locale)}</loc>
-${locales.map((alternate) => `    <xhtml:link rel="alternate" hreflang="${alternate.code}" href="${absoluteUrl(alternate)}" />`).join("\n")}
+${searchLocales.map((alternate) => `    <xhtml:link rel="alternate" hreflang="${alternate.code}" href="${absoluteUrl(alternate)}" />`).join("\n")}
     <xhtml:link rel="alternate" hreflang="x-default" href="${network.siteUrl}/" />
     <changefreq>weekly</changefreq>
     <priority>${locale.code === "en" ? "1.0" : "0.9"}</priority>
@@ -574,8 +590,10 @@ export function renderNotFoundPage(localeCode = "en", assets = defaultAssets) {
         <p>${text(t.notFound.body)}</p>
         <div class="actions">
           <a class="button primary" href="${pathFor(locale)}">${text(t.notFound.home)}</a>
-          <a class="button secondary" href="${locale.code === "de" ? "/" : "/de/"}">${text(t.notFound.language)}</a>
         </div>
+        <nav class="not-found-languages" aria-label="${text(t.nav.language)}">
+          ${locales.map((item) => `<a href="${pathFor(item)}" lang="${item.code}"${item.code === locale.code ? ' aria-current="page"' : ""}><strong>${text(item.menuCode || item.code.toUpperCase())}</strong><span>${text(item.nativeName)}</span></a>`).join("\n          ")}
+        </nav>
       </div>
     </main>
   </body>
