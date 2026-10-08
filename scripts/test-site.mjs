@@ -17,6 +17,7 @@ const notFound = await readFile(path.join(dist, "404.html"), "utf8");
 const css = await readFile(path.join(root, "css", "site.css"), "utf8");
 const distCss = await readFile(path.join(dist, "css", "site.css"), "utf8");
 const tokens = await readFile(path.join(root, "css", "tokens.css"), "utf8");
+const navMenuSource = await readFile(path.join(root, "js", "nav-menu.js"), "utf8");
 const headers = await readFile(path.join(root, "_headers"), "utf8");
 const redirects = await readFile(path.join(root, "_redirects"), "utf8");
 const middleware = await readFile(path.join(root, "functions", "_middleware.js"), "utf8");
@@ -353,6 +354,31 @@ for (const contract of [
 ]) {
   assertIncludes(css, contract, `shared navigation contract: ${contract}`);
 }
+
+const responsiveNavigation = css.slice(
+  css.indexOf("@media (max-width: 1200px)"),
+  css.indexOf("@media (max-width: 1100px)")
+);
+for (const contract of [
+  "max-height: calc(100dvh - 90px)",
+  "overscroll-behavior: contain",
+  "grid-column: 1 / -1",
+  ".locale-switcher.is-open .locale-toggle::after",
+  "grid-template-columns: repeat(2, minmax(0, 1fr))",
+  "max-height: none",
+  "overflow: visible",
+  "box-shadow: none"
+]) {
+  assertIncludes(responsiveNavigation, contract, `responsive language navigation contract: ${contract}`);
+}
+if (!/@media \(max-width: 360px\)\s*\{[\s\S]*?\.locale-menu\s*\{[\s\S]*?grid-template-columns:\s*1fr/.test(css)) {
+  throw new Error("Very narrow screens must collapse the language menu to one column");
+}
+assertIncludes(
+  navMenuSource,
+  'if (document.querySelector(".locale-switcher.is-open")) return;',
+  "Escape must close the nested language menu before the mobile navigation"
+);
 
 if (distCss.includes("@import")) {
   throw new Error("Built CSS must not rely on render-blocking @import");
