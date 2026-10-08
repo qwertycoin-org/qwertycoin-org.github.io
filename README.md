@@ -6,7 +6,7 @@ This repository contains the Qwertycoin v2 relaunch site and preserves the relev
 ## Scope and stack
 
 - Static HTML, CSS, JavaScript, and SVG assets
-- English and German content generated from structured locale files
+- Twelve complete language editions generated from structured locale files
 - Cloudflare Pages deployment with no framework preset
 - No wallet key handling on the main domain
 - No third-party JavaScript, external stylesheets, or externally hosted fonts
@@ -70,7 +70,10 @@ Generated files such as `dist/`, dependency directories, artifacts, and macOS me
 
 ## Translations
 
-The relaunch currently publishes English and German. See [docs/TRANSLATIONS.md](docs/TRANSLATIONS.md) for the translation workflow and requirements.
+The relaunch publishes English, German, simplified Chinese, Dutch, Esperanto,
+French, Italian, Japanese, Lojban, Portuguese, Russian, and Spanish. See
+[docs/TRANSLATIONS.md](docs/TRANSLATIONS.md) for URL conventions, language
+quality notes, validation, and the translation workflow.
 
 The previous website also received translation contributions for Arabic, Bengali, Bhojpuri, Chinese, Farsi, Finnish, French, Hebrew, Hindi, Italian, Japanese, Korean, Malay, Dutch, Punjabi, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Tamil, Turkish, Urdu, and Vietnamese. Those legacy files remain available through the repository history and are not presented as current v2 translations until reviewed against the new source schema.
 
@@ -93,4 +96,7 @@ The previous website also received translation contributions for Arabic, Bengali
 
 ## Contributing
 
-Keep changes focused and reviewable. Run `npm test` before opening a pull request, update both supported locales when changing user-facing content, and avoid introducing remote scripts, trackers, wallet logic, secrets, or private infrastructure values.
+Keep changes focused and reviewable. Run `npm test` before opening a pull request,
+update every registered locale when changing user-facing content, and avoid
+introducing remote scripts, trackers, wallet logic, secrets, or private
+infrastructure values.

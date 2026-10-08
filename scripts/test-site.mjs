@@ -3,12 +3,21 @@ import path from "node:path";
 
 const root = new URL("..", import.meta.url).pathname;
 const dist = path.join(root, "dist");
+const localeConfig = JSON.parse(await readFile(path.join(root, "src", "i18n", "locales.json"), "utf8"));
+const localePages = new Map(await Promise.all(localeConfig.map(async (locale) => [
+  locale.code,
+  await readFile(locale.code === "en"
+    ? path.join(dist, "index.html")
+    : path.join(dist, locale.path.slice(1), "index.html"), "utf8")
+])));
+const allLocalePages = [...localePages.values()];
 const index = await readFile(path.join(dist, "index.html"), "utf8");
 const germanIndex = await readFile(path.join(dist, "de", "index.html"), "utf8");
 const notFound = await readFile(path.join(dist, "404.html"), "utf8");
 const css = await readFile(path.join(root, "css", "site.css"), "utf8");
 const distCss = await readFile(path.join(dist, "css", "site.css"), "utf8");
 const tokens = await readFile(path.join(root, "css", "tokens.css"), "utf8");
+const navMenuSource = await readFile(path.join(root, "js", "nav-menu.js"), "utf8");
 const headers = await readFile(path.join(root, "_headers"), "utf8");
 const redirects = await readFile(path.join(root, "_redirects"), "utf8");
 const middleware = await readFile(path.join(root, "functions", "_middleware.js"), "utf8");
@@ -16,10 +25,12 @@ const sitemap = await readFile(path.join(dist, "sitemap.xml"), "utf8");
 const llms = await readFile(path.join(dist, "llms.txt"), "utf8");
 const eposeFormula = await readFile(path.join(root, "assets", "epose", "epose-consensus-formula.svg"), "utf8");
 const germanEposeFormula = await readFile(path.join(root, "assets", "epose", "epose-consensus-formula-de.svg"), "utf8");
+const neutralEposeFormula = await readFile(path.join(root, "assets", "epose", "epose-consensus-formula-neutral.svg"), "utf8");
 const germanHeroMotif = await readFile(path.join(root, "assets", "qwc-hero-motif-de.svg"), "utf8");
 const networkConfig = JSON.parse(await readFile(path.join(root, "src", "config", "network.json"), "utf8"));
 const englishSource = await readFile(path.join(root, "src", "i18n", "en.json"), "utf8");
 const germanSource = await readFile(path.join(root, "src", "i18n", "de.json"), "utf8");
+const allLocaleSources = await Promise.all(localeConfig.map((locale) => readFile(path.join(root, "src", "i18n", `${locale.code}.json`), "utf8")));
 
 function assertIncludes(haystack, needle, label = needle) {
   if (!haystack.includes(needle)) throw new Error(`Missing required content: ${label}`);
@@ -92,6 +103,40 @@ const requiredGerman = [
 for (const text of requiredGerman) assertIncludes(germanIndex, text);
 assertIncludes(germanIndex, "/assets/epose/epose-consensus-formula-de.svg", "German EPoSE diagram");
 assertIncludes(germanIndex, "/assets/qwc-hero-motif-de.svg", "German hero motif");
+
+for (const locale of localeConfig) {
+  const html = localePages.get(locale.code);
+  const canonical = `https://qwertycoin.org${locale.path}`;
+  assertIncludes(html, `<html lang="${locale.code}">`, `${locale.code} HTML language`);
+  assertIncludes(html, `<link rel="canonical" href="${canonical}">`, `${locale.code} canonical URL`);
+  assertIncludes(html, 'hreflang="x-default" href="https://qwertycoin.org/"', `${locale.code} x-default`);
+  assertIncludes(html, `property="og:url" content="${canonical}"`, `${locale.code} Open Graph URL`);
+  assertIncludes(html, `property="og:locale" content="${locale.ogLocale}"`, `${locale.code} Open Graph locale`);
+  assertIncludes(html, `"inLanguage":"${locale.code}"`, `${locale.code} structured-data language`);
+
+  if (locale.searchHreflang === false) {
+    if (html.includes(`hreflang="${locale.code}"`)) throw new Error(`${locale.code} must not be emitted as an unsupported search hreflang`);
+  } else {
+    assertIncludes(html, `hreflang="${locale.code}" href="${canonical}"`, `${locale.code} self hreflang`);
+  }
+
+  for (const option of localeConfig) {
+    assertIncludes(html, `lang="${option.code}" data-locale-option="${option.code}"`, `${locale.code} language menu option ${option.code}`);
+    assertIncludes(html, `<span>${option.nativeName}</span>`, `${locale.code} native language name ${option.nativeName}`);
+  }
+
+  if (locale.code !== "en" && locale.code !== "de") {
+    assertIncludes(html, "/assets/qwc-hero-motif-neutral.svg", `${locale.code} language-neutral hero artwork`);
+    assertIncludes(html, "/assets/epose/epose-consensus-formula-neutral.svg", `${locale.code} language-neutral formula artwork`);
+  }
+
+  if (/flag-icon|emoji-flag/i.test(html)) throw new Error(`${locale.code} language menu must not use flags`);
+}
+
+for (const locale of localeConfig) {
+  assertIncludes(notFound, `href="${locale.path}" lang="${locale.code}"`, `404 language option ${locale.code}`);
+  assertIncludes(notFound, `<span>${locale.nativeName}</span>`, `404 native language name ${locale.nativeName}`);
+}
 
 const exchangeUrl = "https://neoxa.exchange/trade/QWC_USDT";
 const exchangeContract = [
@@ -171,7 +216,7 @@ if (networkConfig.pool.url !== "https://pool.qwertycoin.org/"
   throw new Error("Official pool metadata must remain centralized and exact");
 }
 
-for (const source of [englishSource, germanSource]) {
+for (const source of allLocaleSources) {
   if (source.includes("https://pool.qwertycoin.org")
       || source.includes("https://docs.qwertycoin.org")
       || source.includes("https://explorer.qwertycoin.org")) {
@@ -241,7 +286,7 @@ for (const text of forbiddenLiteralGerman) {
   }
 }
 
-const publicPages = [stripTestPatterns(index), stripTestPatterns(germanIndex), llms];
+const publicPages = [...allLocalePages.map(stripTestPatterns), llms];
 const forbiddenPublicPatterns = [
   /EPoSe\s*(?:v|version)\s*[12]/i,
   /EPoSe\s*[12]\.0/i,
@@ -274,14 +319,18 @@ for (const page of [index, germanIndex]) {
   }
 }
 
-for (const href of [...index.matchAll(/\shref="([^"]+)"/g)].map((match) => match[1])) {
-  if (href.startsWith("#") && !index.includes(`id="${href.slice(1)}"`)) {
-    throw new Error(`Broken internal anchor: ${href}`);
+for (const [localeCode, html] of localePages) {
+  for (const href of [...html.matchAll(/\shref="([^"]+)"/g)].map((match) => match[1])) {
+    if (href.startsWith("#") && !html.includes(`id="${href.slice(1)}"`)) {
+      throw new Error(`Broken internal anchor in ${localeCode}: ${href}`);
+    }
   }
 }
 
-if (/\ssrc="https?:\/\//.test(index) || /\shref="https?:\/\/[^"]+\.(css|js)"/.test(index)) {
-  throw new Error("External scripts or stylesheets are not allowed");
+for (const [localeCode, html] of localePages) {
+  if (/\ssrc="https?:\/\//.test(html) || /\shref="https?:\/\/[^"]+\.(css|js)"/.test(html)) {
+    throw new Error(`External scripts or stylesheets are not allowed in ${localeCode}`);
+  }
 }
 
 if (/<script>(?![\s\S]*application\/ld\+json)[\s\S]*?<\/script>/i.test(index) || /QWC_NETWORK_LABELS|QWC_NETWORK_CONFIG|QWC_LOCALE/.test(index)) {
@@ -306,6 +355,39 @@ for (const contract of [
   assertIncludes(css, contract, `shared navigation contract: ${contract}`);
 }
 
+const responsiveNavigation = css.slice(
+  css.indexOf("@media (max-width: 1200px)"),
+  css.indexOf("@media (max-width: 1100px)")
+);
+for (const contract of [
+  "max-height: calc(100dvh - 90px)",
+  "overscroll-behavior: contain",
+  "grid-column: 1 / -1",
+  ".locale-switcher.is-open .locale-toggle::after",
+  "grid-template-columns: repeat(2, minmax(0, 1fr))",
+  "max-height: none",
+  "overflow: visible",
+  "box-shadow: none"
+]) {
+  assertIncludes(responsiveNavigation, contract, `responsive language navigation contract: ${contract}`);
+}
+if (!/@media \(max-width: 360px\)\s*\{[\s\S]*?\.locale-menu\s*\{[\s\S]*?grid-template-columns:\s*1fr/.test(css)) {
+  throw new Error("Very narrow screens must collapse the language menu to one column");
+}
+assertIncludes(
+  navMenuSource,
+  'if (document.querySelector(".locale-switcher.is-open")) return;',
+  "Escape must close the nested language menu before the mobile navigation"
+);
+
+const brandRule = css.slice(css.indexOf(".brand {"), css.indexOf(".brand img {"));
+assertIncludes(css, '--font-brand: "Archivo"', "brand typeface must remain locale-independent");
+assertIncludes(
+  brandRule,
+  "font-family: var(--font-brand)",
+  "Qwertycoin wordmark must not inherit locale-specific display fonts"
+);
+
 if (distCss.includes("@import")) {
   throw new Error("Built CSS must not rely on render-blocking @import");
 }
@@ -323,7 +405,7 @@ if (fontPreloadMatches.length < 2) {
   throw new Error("Production HTML must preload content-hashed font assets");
 }
 
-for (const html of [index, germanIndex, notFound]) {
+for (const html of [...allLocalePages, notFound]) {
   if (html.includes('href="/css/site.css"') || html.includes('src="/js/network-status.js"') || html.includes('src="/js/nav-menu.js"')) {
     throw new Error("Generated HTML must not reference stable CSS/JS URLs");
   }
@@ -376,6 +458,13 @@ if (!germanEposeFormula.includes('viewBox="0 0 1680 1398"')
     || !germanEposeFormula.includes("EMPFÄNGERAUSWAHL")
     || /<script\b|<foreignObject\b|\son[a-z]+\s*=|xlink:href="(?!#)/i.test(germanEposeFormula)) {
   throw new Error("German EPoSE consensus artwork is malformed, untranslated or contains active/external content");
+}
+
+if (!neutralEposeFormula.includes('viewBox="0 0 1680 920"')
+    || !neutralEposeFormula.includes("q<tspan")
+    || !neutralEposeFormula.includes("R<tspan")
+    || /<script\b|<foreignObject\b|\son[a-z]+\s*=|xlink:href=/i.test(neutralEposeFormula)) {
+  throw new Error("Language-neutral EPoSE consensus artwork is malformed or contains active/external content");
 }
 
 if (!germanHeroMotif.includes('viewBox="0 0 1254 1254"')
@@ -653,6 +742,15 @@ if (!sitemap.includes("https://qwertycoin.org/de/") || !sitemap.includes('hrefla
   throw new Error("Sitemap does not include locale alternates");
 }
 
+for (const locale of localeConfig) {
+  assertIncludes(sitemap, `<loc>https://qwertycoin.org${locale.path}</loc>`, `${locale.code} sitemap URL`);
+  if (locale.searchHreflang === false) {
+    if (sitemap.includes(`hreflang="${locale.code}"`)) throw new Error(`${locale.code} must not be emitted as an unsupported sitemap hreflang`);
+  } else {
+    assertIncludes(sitemap, `hreflang="${locale.code}" href="https://qwertycoin.org${locale.path}"`, `${locale.code} sitemap alternate`);
+  }
+}
+
 for (const text of ["integration.qwertycoin.org", "noindex"]) {
   if (index.includes(text) || germanIndex.includes(text) || sitemap.includes(text)) {
     throw new Error(`Production SEO output must not contain ${text}`);
@@ -708,11 +806,15 @@ for (const text of [
 await stat(path.join(root, "assets", "qwertycoin-mark.svg"));
 await stat(path.join(root, "assets", "epose", "epose-consensus-formula.svg"));
 await stat(path.join(root, "assets", "epose", "epose-consensus-formula-de.svg"));
+await stat(path.join(root, "assets", "epose", "epose-consensus-formula-neutral.svg"));
 await stat(path.join(dist, "assets", "epose", "epose-consensus-formula.svg"));
 await stat(path.join(dist, "assets", "epose", "epose-consensus-formula-de.svg"));
+await stat(path.join(dist, "assets", "epose", "epose-consensus-formula-neutral.svg"));
 await stat(path.join(root, "assets", "qwc-hero-motif.svg"));
 await stat(path.join(root, "assets", "qwc-hero-motif-de.svg"));
+await stat(path.join(root, "assets", "qwc-hero-motif-neutral.svg"));
 await stat(path.join(dist, "assets", "qwc-hero-motif-de.svg"));
+await stat(path.join(dist, "assets", "qwc-hero-motif-neutral.svg"));
 await stat(path.join(root, "assets", "apple-touch-icon.png"));
 await stat(path.join(root, "assets", "favicon-32x32.png"));
 await stat(path.join(root, "assets", "fonts", "LICENSES.md"));
@@ -752,6 +854,10 @@ await checkCssUrls("css/site.css");
 await checkCssUrls(`css/v/site.${cssMatch[1]}.css`);
 await stat(path.join(root, "robots.txt"));
 await stat(path.join(root, "de", "index.html"));
+for (const locale of localeConfig.filter((item) => item.code !== "en")) {
+  await stat(path.join(root, locale.path.slice(1), "index.html"));
+  await stat(path.join(dist, locale.path.slice(1), "index.html"));
+}
 await stat(path.join(root, "404.html"));
 await stat(path.join(dist, "sitemap.xml"));
 

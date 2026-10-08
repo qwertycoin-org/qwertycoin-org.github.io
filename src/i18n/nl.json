@@ -1,0 +1,829 @@
+{
+  "meta": {
+    "title": "Qwertycoin (QWC) | Privébetalingen, RandomX en EPoSe",
+    "description": "Qwertycoin (QWC) is een op privacy gerichte cryptocurrency met RandomX proof-of-work mining en EPoSe-beloningen voor bewezen netwerkdiensten.",
+    "ogTitle": "Qwertycoin (QWC) | Privé geld. Open netwerk.",
+    "ogDescription": "Qwertycoin (QWC) is een op privacy gerichte cryptocurrency met RandomX proof-of-work mining en EPoSe-beloningen voor bewezen netwerkdiensten.",
+    "twitterDescription": "Qwertycoin (QWC) is een op privacy gerichte cryptocurrency met RandomX proof-of-work mining en EPoSe-beloningen voor bewezen netwerkdiensten.",
+    "imageAlt": "Qwertycoin Q-embleem met het privégeld. Open netwerk. beweren"
+  },
+  "nav": {
+    "skip": "Ga naar de inhoud",
+    "homeLabel": "Qwertycoin thuis",
+    "menu": "Menukaart",
+    "about": "Over",
+    "epose": "EPoSe",
+    "mining": "Mining",
+    "getQwc": "Koop QWC",
+    "releases": "Releases",
+    "wallet": "Wallet",
+    "network": "Netwerk",
+    "history": "Geschiedenis",
+    "developers": "Ontwikkeling",
+    "language": "Taal",
+    "languageShort": "Taal"
+  },
+  "hero": {
+    "title": "Privé geld. Open netwerk.",
+    "lead": "Qwertycoin (QWC) is een op privacy gerichte cryptocurrency met open RandomX-mining en EPoSe-beloningen voor bewezen netwerkdiensten.",
+    "kicker": "Open de Web Wallet, verken de blockchain of draag bij op GitHub.",
+    "getQwc": "Koop QWC",
+    "github": "Draag bij aan GitHub",
+    "wallet": "Web Wallet openen",
+    "mining": "Kies jouw pad",
+    "visualAlt": "Groot gouden Qwertycoin Q-embleem met abstracte netwerklagen",
+    "pulseLabel": "QWC-MAINNET ACTIEF",
+    "pulseBody": "Huidige blockchain- en EPoSe-gegevens. Beschikbare waarden blijven zichtbaar wanneer bepaalde statistieken niet beschikbaar zijn."
+  },
+  "metrics": {
+    "height": {
+      "label": "Blok hoogte",
+      "help": "Huidige openbare kettinghoogte."
+    },
+    "registered": {
+      "label": "Geregistreerde servicenodes",
+      "shortLabel": "Geregistreerd",
+      "help": "Serviceknooppunten met geldige registratie."
+    },
+    "qualified": {
+      "label": "Gekwalificeerde servicenodes",
+      "shortLabel": "Gekwalificeerd",
+      "help": "Voor beloningen in aanmerking komende servicenodes voor de relevante periode waarin statistieken beschikbaar zijn."
+    },
+    "epoch": {
+      "label": "EPoSe-tijdperk",
+      "shortLabel": "Tijdperk",
+      "help": "Huidige serviceperiode van het {blocks}-blok (~{hours}h)."
+    },
+    "topHash": "Laatste blok-hash",
+    "stateHash": "EPoSe-statushash",
+    "explorer": "Explorer",
+    "currentSource": "Kern bron",
+    "sourcePending": "Beschikbaar op GitHub",
+    "syncLoading": "Laden...",
+    "loading": "Laden...",
+    "updated": "{time} bijgewerkt",
+    "unavailable": "Momenteel niet beschikbaar",
+    "partial": "Sommige netwerkgegevens zijn momenteel niet beschikbaar.",
+    "eposeUnavailable": "EPoSe-statistieken zijn momenteel niet beschikbaar.",
+    "unknown": "onbekend",
+    "synchronized": "gesynchroniseerd",
+    "syncPending": "synchronisatie in behandeling",
+    "ratio": "{qualified} / {registered} gekwalificeerd",
+    "noScript": "Livestatus heeft JavaScript nodig. U kunt nog steeds de verkenner openen voor actuele netwerkgegevens."
+  },
+  "system": {
+    "securityLabel": "Mining",
+    "securityTitle": "RandomX PoW",
+    "securityBody": "Mijnwerkers produceren nieuwe blokken en beveiligen de blockchain door middel van proof of work.",
+    "infrastructureLabel": "Dienstbeloningen",
+    "infrastructureTitle": "EPoSe",
+    "infrastructureBody": "Serviceknooppunten komen in aanmerking voor beloningen voor netwerkdiensten via geldige attestaties."
+  },
+  "participate": {
+    "eyebrow": "Begin hier",
+    "title": "Kies hoe je wilt deelnemen.",
+    "body": "Gebruik de QWC, draag rekenkracht bij of beheer de openbare netwerkinfrastructuur. Elk pad heeft een actueel, officieel startpunt.",
+    "paths": [
+      {
+        "kind": "wallet",
+        "badge": "GEBRUIK QWC",
+        "title": "Open een portemonnee",
+        "body": "Maak of herstel een QWC-portemonnee in uw browser en verzend en ontvang vervolgens privébetalingen.",
+        "cta": "Web Wallet openen"
+      },
+      {
+        "kind": "pool",
+        "badge": "DE MIJN QWC",
+        "title": "De mijne op het officiële zwembad",
+        "body": "Sluit u aan bij de officiële RandomX PPLNS-pool met uw QWC-uitbetalingsadres. Registratie van een zwembadaccount is niet vereist.",
+        "cta": "Begin met mijnbouw"
+      },
+      {
+        "kind": "serviceNode",
+        "badge": "VOER EEN NODE UIT",
+        "title": "Beheer een servicenode",
+        "body": "Voer een openbaar QWC-knooppunt uit, registreer de service-identiteit en kwalificeer u via verifieerbare EPoSe-servicebewijzen, zonder QWC uit te zetten.",
+        "cta": "Open de bedieningshandleiding"
+      }
+    ]
+  },
+  "technology": {
+    "eyebrow": "Over Qwertycoin",
+    "title": "Privacy. Aangedreven door QWC.",
+    "body": "Gebruik de QWC voor privébetalingen, draag rekenkracht bij via mining of ondersteun het netwerk als een Servicenode.",
+    "features": [
+      {
+        "badge": "OPEN NETWERK",
+        "title": "QWC Core-netwerk",
+        "body": "Verzend en ontvang de QWC op een open netwerk. Onafhankelijke knooppunten verifiëren transacties en onderhouden de blockchain.",
+        "icon": "about-il-01.svg"
+      },
+      {
+        "badge": "PRIVACY",
+        "title": "Ingebouwde privacy",
+        "body": "QWC maakt gebruik van privacytechnologie om transactiegegevens te beschermen. Dankzij de open source-code kan iedereen onderzoeken hoe het netwerk werkt.",
+        "icon": "about-il-03.svg"
+      },
+      {
+        "badge": "PoW",
+        "title": "RandomX bewijs van werk",
+        "body": "RandomX-mijnwerkers produceren nieuwe blokken en beveiligen de blockchain. Iedereen kan deelnemen met compatibele mining-software.",
+        "icon": "about-il-04.svg"
+      },
+      {
+        "badge": "EPoSe",
+        "title": "Beloningen voor bewezen service",
+        "body": "Serviceknooppunten bieden netwerkdiensten. Geldige attestaties bepalen of u in aanmerking komt, en het EPoSe-protocol bepaalt de beloningsrotatie.",
+        "icon": "about-il-06.svg"
+      },
+      {
+        "badge": "NETWERKDIENSTEN",
+        "title": "Servicenodes",
+        "body": "Servicenodes ondersteunen het netwerk en nemen deel aan EPoSe. Er is geen QWC-uitzet vereist; blokproductie blijft de taak van RandomX-mijnwerkers.",
+        "icon": "about-il-02.svg"
+      },
+      {
+        "badge": "BESCHIKBAAR",
+        "title": "Web Wallet en open source",
+        "body": "Gebruik de QWC rechtstreeks in uw browser met de Web Wallet. Ontdek de kernsoftware en draag bij aan de ontwikkeling ervan op de GitHub.",
+        "icon": "about-il-05.svg"
+      }
+    ]
+  },
+  "epose": {
+    "eyebrow": "EPoSe",
+    "flowLabel": "EPoSe-stroom",
+    "title": "Bewijs service. Verdien QWC.",
+    "body": "EPoSe beloont geregistreerde servicenodes voor bewezen netwerkdiensten. Het protocol evalueert geldige attestaties die op de blockchain zijn vastgelegd en bepaalt welke knooppunten in aanmerking komen voor beloningsrotatie.",
+    "intro": "QWC verdeelt de servicetijd in EPoSe-tijdvakken. Serviceactiviteit levert attestaties op, de kwalificatie wordt afgerond en alleen dan kan de deterministische beloningsrotatie de gekwalificeerde set gebruiken.",
+    "compactCards": [
+      {
+        "title": "Bied service.",
+        "body": "Geregistreerde servicenodes bieden netwerkdiensten gedurende elk tijdperk."
+      },
+      {
+        "title": "Controleer de dienst.",
+        "body": "Protocolgeselecteerde verificateurs controleren de servicereacties en dienen ondertekende attestaties in."
+      },
+      {
+        "title": "Ontvang beloningen.",
+        "body": "Nadat de kwalificatie is afgerond, gaan in aanmerking komende servicenodes de deterministische beloningsrotatie van het protocol in."
+      }
+    ],
+    "actions": {
+      "live": "Bekijk live servicenodes",
+      "guide": "Voer een servicenode uit",
+      "docs": "Lees de EPoSe-documentatie"
+    },
+    "originEyebrow": "EPoSe-oorsprong",
+    "originTitle": "Bedankt, Xecute.",
+    "originBody": "Xecute ontwikkelde de originele EPoSe-visie en droeg het Qwertycoin service-layer whitepaper bij. Dat werk legde de basis voor het belonen van nuttige netwerkdiensten.",
+    "schematic": [
+      {
+        "label": "Servicenode",
+        "value": "geregistreerde identiteit"
+      },
+      {
+        "label": "Verificatiecommissie",
+        "value": "cheques dienst"
+      },
+      {
+        "label": "Keten staat",
+        "value": "deterministische beloning"
+      }
+    ],
+    "links": [
+      "registratie",
+      "attest"
+    ],
+    "steps": [
+      {
+        "title": "Registreren",
+        "body": "Een Servicenode publiceert een ondertekende registratie met service-identiteit, beloningsdoel, eindpuntverplichting en toegangsbewijs."
+      },
+      {
+        "title": "Serveer",
+        "body": "Het knooppunt biedt de QWC-netwerkservice, terwijl normale RandomX-mining verantwoordelijk blijft voor de blokproductie."
+      },
+      {
+        "title": "Getuige",
+        "body": "Toegewezen verificateurs dagen het servicenode uit en ondertekenen alleen attestaties als het verwachte serviceantwoord geldig is."
+      },
+      {
+        "title": "Kwalificeer",
+        "body": "De ketenstatus controleert of een geregistreerd knooppunt voldoende geldige attestaties heeft verzameld voor het relevante tijdperk."
+      },
+      {
+        "title": "Beloning",
+        "body": "Gekwalificeerde knooppunten gaan deterministische beloningsrotatie in. Eén geselecteerde begunstigde kan het EPoSe-deel van een blokbeloning ontvangen."
+      }
+    ],
+    "glossaryTitle": "EPoSe-woordenlijst",
+    "glossary": [
+      {
+        "term": "Servicenode",
+        "definition": "Een normaal QWC-knooppunt plus een geregistreerde service-identiteit, eindpuntverplichting, beloningsadres en EPoSe-deelnamegegevens."
+      },
+      {
+        "term": "Tijdperk",
+        "definition": "Een vaste blokperiode waarin de serviceactiviteit wordt gemeten. Huidige parameter: {blocks}-blokken, ongeveer {hours}-uren op een {seconds}-tweede blokdoel."
+      },
+      {
+        "term": "Geregistreerd",
+        "definition": "Het Servicenode sloot zich aan bij EPoSe door een geldige on-chain registratie te publiceren. Geregistreerd betekent niet dat u in aanmerking komt voor een beloning."
+      },
+      {
+        "term": "Attest",
+        "definition": "Een ondertekende bevestiging van een toegewezen verificateur dat het servicenode zijn service-uitdaging heeft beantwoord met het verwachte antwoord."
+      },
+      {
+        "term": "Verificatiecommissie",
+        "definition": "Een deterministische set verificatieknooppunten geselecteerd op basis van de ketenstatus voor een service-uitdaging. De huidige publieke kern richt zich op {committee}-verificateurs als er voldoende kandidaten zijn."
+      },
+      {
+        "term": "Toelatingsbewijs",
+        "definition": "Een klein bewijs dat aan de registratie is gekoppeld, maakt het maken van identiteiten veel werk en helpt goedkope Sybil-registraties te verminderen."
+      },
+      {
+        "term": "Gekwalificeerd",
+        "definition": "Een geregistreerd servicenode dat voldoende geldige, niet-dubbele attestaties heeft verzameld in het relevante tijdperk. Het quorum bedraagt ​​tweederde van het feitelijk geselecteerde verificateurscomité."
+      },
+      {
+        "term": "Beloningsbron Epoch",
+        "definition": "Het voltooide tijdperk waarvan de gekwalificeerde set wordt gebruikt voor de huidige beloningsperiode. In de huidige kern gebruiken blokken in tijdperk N gekwalificeerde knooppunten uit tijdperk N-1."
+      },
+      {
+        "term": "Beloning Rotatie",
+        "definition": "Gekwalificeerde knooppunten worden deterministisch geroteerd als mogelijke ontvangers van het EPoSe-deel van blokbeloningen. De muntbasis groeit niet met het totale aantal knooppunten."
+      }
+    ],
+    "epochTitle": "Tijdvakken zijn blokbereiken, geen klokafspraken.",
+    "epochBody": "Een EPoSe-tijdperk is een serviceperiode van een {blocks}-blok, ongeveer {hours} uur bij het huidige {seconds}-secondenblokdoel.",
+    "registeredVsQualified": [
+      {
+        "label": "Geregistreerd",
+        "body": "Het knooppunt sloot zich aan bij EPoSe."
+      },
+      {
+        "label": "Gekwalificeerd",
+        "body": "Het knooppunt bleek voldoende serviceactiviteit te hebben om in aanmerking te komen voor servicebeloningen."
+      }
+    ],
+    "committeeTitle": "Verificatiecommissies zijn geen validatorsets.",
+    "committeeBody": "Verificatiecommissies produceren geen blokken en vervangen de RandomX-mijnwerkers niet. Hun rol is beperkt tot het controleren van Servicenode-activiteit voor EPoSe-kwalificatie. De huidige publieke kern richt zich op {committee}-verificateurs wanneer er voldoende kandidaten zijn en vereist een tweederde quorum van de feitelijke commissie. Bij een volledige commissie betekent dat {fullCommitteeAttestations}-attestaties.",
+    "rewardTimelineTitle": "Service wordt eerst gemeten. Beloningen volgen later.",
+    "timeline": [
+      {
+        "label": "Tijdperk N",
+        "title": "Registreren / Serveer / Attest",
+        "body": "Serviceknooppunten registreren, verlenen service en verzamelen geldige verificatieattestaties."
+      },
+      {
+        "label": "Finaliteit",
+        "title": "Kwalificatie afgerond",
+        "body": "De consensusstatus leidt de gekwalificeerde set af van geldige EPoSe-gegevens nadat het tijdperk definitief is."
+      },
+      {
+        "label": "Tijdperk N+1",
+        "title": "Beloning rotatie",
+        "body": "De huidige kern gebruikt het vorige tijdperk als het tijdperk van de beloningsbron voor deterministische selectie van de begunstigde."
+      }
+    ],
+    "rotationTitle": "Beloningsrotatie houdt blokbeloningen compact.",
+    "rotationBody": "Huidige hoofdnetbeloningsverdeling: 90% mijnwerker / {rewardPercent}% EPoSe servicebeloning. EPoSe-serviceuitbetalingen zijn bij consensus zichtbaar, zodat elk knooppunt het geselecteerde servicenode en beloningsbedrag kan verifiëren. Normale QWC-portemonneetransacties blijven de privacymechanismen van het onderliggende QWC-transactiemodel gebruiken.",
+    "rotationExamples": [
+      "Blok 1001 -> node A",
+      "Blok 1002 -> node C",
+      "Blok 1003 -> node B",
+      "Blok 1004 -> node A"
+    ],
+    "rewardRulesTitle": "Beloningen volgen het protocol.",
+    "rewardRulesBody": "Elk volledig knooppunt kan de geschiktheid voor beloningen en de selectie van ontvangers uit de blockchain verifiëren. Subsidietoewijzing: 90% mijnbouw / {rewardPercent}% EPoSe servicebeloningen; transactiekosten blijven bij de mijnwerker.",
+    "rewardFormulaAlt": "EPoSe-consensusformule voor verificateursquorum, kwalificatie van servicenodes, rotatie van ontvangers en toewijzing van servicebeloningen.",
+    "rewardFormulaCaption": "EPoSe-quorum, kwalificatie, rotatie van ontvangers en servicebeloning - een compacte weergave van de actieve consensusregels."
+  },
+  "faq": {
+    "eyebrow": "Veelgestelde vragen over de EPoSe",
+    "title": "Korte antwoorden voor nieuwe operators.",
+    "items": [
+      {
+        "question": "Wat is Qwertycoin?",
+        "answer": "Qwertycoin (QWC) is een op privacy gerichte cryptocurrency met RandomX proof-of-work mining en EPoSe-beloningen voor bewezen netwerkdiensten."
+      },
+      {
+        "question": "Hoe gebruik ik de Web Wallet?",
+        "answer": "Open de officiële Web Wallet, maak of herstel daar een portemonnee en volg de veiligheidsinstructies. De hoofdwebsite verwerkt nooit portemonneesleutels."
+      },
+      {
+        "question": "Kan ik een oude QWC-portemonnee gebruiken?",
+        "answer": "Nee. Het huidige QWC-netwerk staat los van de eerdere keten. Oudere portemonneesoftware en blockchain-gegevens zijn niet compatibel met dit netwerk."
+      },
+      {
+        "question": "Vervangt EPoSe mijnbouw?",
+        "answer": "Nee. RandomX-mijnwerkers produceren blokken en beveiligen de blockchain. EPoSe voegt beloningen toe voor bewezen netwerkdiensten."
+      },
+      {
+        "question": "Wat is een tijdperk?",
+        "answer": "Een tijdperk is de blokkeringsperiode die wordt gebruikt om de EPoSe-serviceactiviteit te beoordelen. Momenteel omvat het {blocks}-blokken, ongeveer {hours}-uren bij het doelblokinterval."
+      },
+      {
+        "question": "Wat betekent gekwalificeerd?",
+        "answer": "Een gekwalificeerd Servicenode voldoet aan de vereisten van het protocol voor geldige attestaties in het relevante tijdperk en komt in aanmerking voor selectie van servicebeloningen. Het technische quorum bedraagt ​​minimaal het plafond (2 x werkelijke commissiegrootte / 3)."
+      },
+      {
+        "question": "Wie bepaalt de kwalificatie en beloningen?",
+        "answer": "Het EPoSe-protocol. Elk volledig knooppunt past dezelfde regels toe op geldige registraties en attestaties in de keten om de geschiktheid en beloningsselectie te verifiëren."
+      },
+      {
+        "question": "Moeten servicenodes QWC inzetten?",
+        "answer": "Nee. Voor deelname is EPoSe-registratie en de vereiste servicebewijzen vereist, de QWC niet als inzet."
+      },
+      {
+        "question": "Kan één operator meerdere Servicenodes uitvoeren?",
+        "answer": "Ja. Elke Servicenode heeft een eigen geldige registratie nodig en moet voldoen aan de servicevereisten van het protocol. Toelatingsbewijs maakt goedkope identiteitscreatie moeilijker."
+      },
+      {
+        "question": "Waarom is de EPoSe geen bewijs van inzet?",
+        "answer": "EPoSe beloont bewezen service in plaats van een vaste inzet. Servicenodes verifiëren blockchain-gegevens zoals andere volledige knooppunten, terwijl RandomX-mijnwerkers proof-of-work-blokproductie uitvoeren."
+      }
+    ]
+  },
+  "serviceNodes": {
+    "eyebrow": "Servicenodes",
+    "title": "Steun het netwerk. Verdien door service.",
+    "body": "Elk volledig knooppunt verifieert en verzendt blockchain-gegevens. Een geregistreerd Servicenode neemt ook deel aan EPoSe en kan in aanmerking komen voor servicebeloningen.",
+    "normal": "Normaal knooppunt",
+    "service": "Servicenode",
+    "comparisonLabel": "Vergelijking van normale knooppunten en servicenodes",
+    "rows": [
+      [
+        "Verifieert blokken en transacties, synchroniseert de keten en geeft gegevens door.",
+        "Voert dezelfde knooppuntfuncties uit en biedt geregistreerde EPoSe-services."
+      ],
+      [
+        "Het exploiteren van een regulier knooppunt alleen levert geen EPoSe-beloningen op.",
+        "Kan in aanmerking komen voor servicebeloningen via geldige serviceattestaties."
+      ],
+      [
+        "Kan onafhankelijk van de mijnbouw worden gebruikt.",
+        "Vereist EPoSe-registratie en servicebewijzen, zonder QWC-uitzetten."
+      ]
+    ]
+  },
+  "mining": {
+    "eyebrow": "Mining",
+    "title": "De mijne met RandomX.",
+    "body": "Draag rekenkracht bij aan de Qwertycoin. RandomX-mijnwerkers produceren blokken met een doelinterval van 120 seconden.",
+    "cards": [
+      {
+        "title": "Open deelname",
+        "body": "Sluit compatibele RandomX mining-software aan op een QWC-knooppunt of een ondersteunde mining-pool."
+      },
+      {
+        "title": "Mijnbouw en netwerkdiensten",
+        "body": "Mijnbouw stelt de productie van blokken veilig. EPoSe beloont geregistreerde knooppunten afzonderlijk voor bewezen netwerkdiensten."
+      }
+    ],
+    "poolEyebrow": "Officieel Qwertycoin-zwembad",
+    "poolTitle": "Begin binnen enkele minuten met mijnen.",
+    "poolBody": "De officiële pool biedt transparante {poolAccounting}-boekhouding, live statistieken en automatische uitbetalingen. Uw QWC-uitbetalingsadres is uw poolaccount; het zwembad vraagt ​​nooit om portemonneesleutels.",
+    "poolFacts": [
+      "Algoritme: {poolAlgorithm}",
+      "Geen registratie: gebruik uw QWC-uitbetalingsadres",
+      "Live hashrate-, werknemers-, blok- en betalingsstatistieken",
+      "Elke uitbetalingsaccount betaalt de daadwerkelijke netwerkkosten voor zijn eigen uitbetaling"
+    ],
+    "poolCta": "Officieel zwembad openen",
+    "setupCta": "Maak een XMRig-opdracht",
+    "docsCta": "Lees de gids over zwembadmijnbouw",
+    "allocationTitle": "Twee afzonderlijke beloningslagen",
+    "protocolLabel": "QWC-protocol",
+    "protocolSplit": "90% mijnbouw / 10% EPoSe",
+    "protocolBody": "De bloksubsidie wordt {miningRewardPercent}% gesplitst in mijnbouw en {rewardPercent}% in EPoSe servicebeloningen. Transactiekosten blijven bij de miner.",
+    "poolLabel": "Officieel zwembad",
+    "poolSplit": "95% mijnwerkers / 5% pool",
+    "poolAllocationBody": "Van de mijnbeloningen die via de officiële pool worden verdeeld, financiert {poolFeePercent}% de ontwikkeling en poolactiviteiten van Qwertycoin; exact {poolMinerPercent}% wordt toegewezen aan deelnemende mijnwerkers vóór de uitbetalingstransactiekosten van elk account."
+  },
+  "exchanges": {
+    "eyebrow": "UITWISSELINGEN",
+    "title": "KRIJG QWC.",
+    "body": "Zoek een beurs die Qwertycoin vermeldt.",
+    "listed": "VERMELD",
+    "pairLabel": "HANDELS PAAR",
+    "trade": "HANDEL QWC",
+    "external": "Externe uitwisseling",
+    "linkLabel": "Handel in QWC op Neoxa Exchange, er wordt een nieuw tabblad geopend"
+  },
+  "wallet": {
+    "eyebrow": "Wallet",
+    "title": "Je volgende stap: een portemonnee.",
+    "body": "De Web Wallet, Qwertycoin GUI 2.0.0 en broncode zijn nu beschikbaar.",
+    "cards": [
+      {
+        "badge": "BESCHIKBAAR",
+        "title": "Web Wallet",
+        "body": "Verzend, ontvang en beheer de QWC rechtstreeks in uw browser.",
+        "button": "Web Wallet openen",
+        "icon": "wallet.svg"
+      },
+      {
+        "badge": "IN ONTWIKKELING",
+        "title": "PWA",
+        "body": "Installeerbaar PWA-gedrag is in ontwikkeling en zal worden vermeld wanneer het gereed is.",
+        "icon": "about-il-05.svg"
+      },
+      {
+        "badge": "BESCHIKBAAR",
+        "title": "Desktop-portefeuilles",
+        "body": "Qwertycoin GUI 2.0.3 is beschikbaar voor Windows, macOS Apple Silicon en Linux x86_64.",
+        "icon": "development.svg"
+      }
+    ]
+  },
+  "releases": {
+    "eyebrow": "Wallets",
+    "title": "Portefeuilles en broncode",
+    "body": "De eerste openbare QWC-testfase is geopend. De Web Wallet, Qwertycoin GUI 2.0.3, Core v2.0.3 opdrachtregelprogramma's, de officiële Docker-image en broncode zijn nu beschikbaar.",
+    "cards": [
+      {
+        "badge": "BESCHIKBAAR · v2.0.3",
+        "badgeClass": "mainnet",
+        "title": "Desktop-portefeuilles",
+        "body": "Download de huidige Qwertycoin GUI van de officiële GitHub-release. GUI v2.0.2-gebruikers moeten v2.0.3 één keer installeren met de directe download, omdat de v2.0.2-updater de release-asset-omleiding van GitHub niet kan volgen. De Windows Setup en macOS DMG zijn de voorkeursinstallatieprogramma's; draagbare ZIP- en TAR.GZ-pakketten blijven beschikbaar als alternatief. Controleer de download en de controlesom vóór gebruik.",
+        "note": "Integriteitsopmerking: SHA256SUMS verifieert gedownloade bytes, niet de identiteit van de uitgever. Linux en Windows zijn niet ondertekend; macOS is ad-hoc ondertekend en niet notarieel bekrachtigd.",
+        "glyph": "GUI",
+        "downloadsLayout": "rows",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "Windows-installatie downloaden",
+            "compatibility": "Getest op de Windows Server 2025 runner · niet ondertekend; oudere Windows-versies zijn niet geverifieerd",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64-setup.exe",
+            "sha256": "7f8c159fa956db2b6a9b55fd47600a1fe68f32dd26d1e665877a9cc37758eadd",
+            "shaLabel": "SHA-256 instellen",
+            "preferredLabel": "Voorkeur installateur",
+            "alternatives": [
+              {
+                "downloadLabel": "Draagbare Windows ZIP downloaden",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64.zip",
+                "sha256": "b4b2c28a5cee6ca7bd3f423de5b340706ee216a31bfa23d620b7a67150a197de",
+                "shaLabel": "ZIP-SHA-256"
+              }
+            ]
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "macOSDMG downloaden",
+            "compatibility": "macOS 15 of nieuwer",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.dmg",
+            "sha256": "a4736597387770250b795fd1a4397693990522cf673cfb29d6cf9bb855071200",
+            "shaLabel": "DMG SHA-256",
+            "preferredLabel": "Voorkeur downloaden",
+            "alternatives": [
+              {
+                "downloadLabel": "macOS TAR.GZ downloaden",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.tar.gz",
+                "sha256": "ce239650afcc8eacee7b13d35f076a3ea617a81d4728b22d53d1ecc28a97fe26",
+                "shaLabel": "TAR.GZ SHA-256"
+              }
+            ]
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "Linux TAR.GZ downloaden",
+            "compatibility": "GLIBC 2.35 compatibiliteitsplafond",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "55cc8754df00c36017b7a0ffa35b90d3878c95477202059b6c596b5163c47680"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/SHA256SUMS"
+          },
+          {
+            "label": "Release-opmerkingen",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.3"
+          },
+          {
+            "label": "Rapporteer een probleem",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/issues"
+          }
+        ]
+      },
+      {
+        "badge": "BESCHIKBAAR · v2.0.3",
+        "badgeClass": "mainnet",
+        "title": "Belangrijkste opdrachtregelhulpmiddelen",
+        "body": "Officiële Qwertycoin-pakketten met qwertycoind, qwertycoin-wallet-cli en qwertycoin-wallet-rpc. Controleer het archief en de controlesom vóór gebruik; release-opmerkingen en auditstatus worden bij elke GitHub-release gedocumenteerd.",
+        "note": "Integriteitsopmerking: SHA256SUMS verifieert gedownloade bytes, niet de identiteit van de uitgever. Linux en Windows zijn niet ondertekend; macOS is ad-hoc ondertekend en niet notarieel bekrachtigd.",
+        "glyph": "CLI",
+        "downloads": [
+          {
+            "label": "Windows x86_64",
+            "icon": "WIN",
+            "downloadLabel": "Windows-ZIP downloaden",
+            "compatibility": "Getest op de Windows Server 2025 hardloper; geen bredere claim op de legacy-Windows",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-windows-x86_64.zip",
+            "sha256": "b0bab23137d5a4308b3d1cd582c17fd0069f392c265a74a1e0fd0f15b4becaaf"
+          },
+          {
+            "label": "macOS Apple Silicon",
+            "icon": "MAC",
+            "downloadLabel": "macOS TAR.GZ downloaden",
+            "compatibility": "macOS 15 of nieuwer",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-macos-arm64.tar.gz",
+            "sha256": "c23194aff092d0cc8ef6eed9ce4a6d45ccb06c7b760b05e7fce0cd9992962fdf"
+          },
+          {
+            "label": "Linux x86_64",
+            "icon": "LNX",
+            "downloadLabel": "Linux TAR.GZ downloaden",
+            "compatibility": "GLIBC 2.35 / GLIBCXX 3.4.30 compatibiliteitsplafond",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-linux-x86_64.tar.gz",
+            "sha256": "8df9d4bd22610228f3330aaac348776fd86bcd853751cf9472e0fc4db271b675"
+          }
+        ],
+        "verificationLinks": [
+          {
+            "label": "SHA256SUMS",
+            "icon": "SHA",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/SHA256SUMS"
+          },
+          {
+            "label": "Release-opmerkingen",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+          },
+          {
+            "label": "Rapporteer een probleem",
+            "icon": "BUG",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/issues"
+          }
+        ]
+      },
+      {
+        "badge": "BESCHIKBAAR · 2.0.3",
+        "badgeClass": "mainnet",
+        "title": "Docker-afbeelding",
+        "body": "Voer de geverifieerde Core-release uit als een niet-root Linux/amd64-container. Mainnet en de daemon zijn de standaardinstellingen; het persistent benoemde volume bewaart ketengegevens over containerupdates.",
+        "note": "De nieuwste tag houdt de nieuwste stabiele afbeelding bij. Gecontroleerde productie-implementaties kunnen de beeldverwerking ervan vastzetten. Alleen P2P-poort 8196 wordt hieronder gepubliceerd; administratieve RPC is niet zichtbaar. Wallet- en EPoSe-identiteitsgegevens hebben afzonderlijke beschermde volumes en de volledige quickstart nodig.",
+        "glyph": "OCI",
+        "commands": [
+          {
+            "label": "Trek aan het stabiele beeld",
+            "code": "docker pull docker.io/qwertycoin/qwertycoin:latest"
+          },
+          {
+            "label": "Start een persistent hoofdnetknooppunt",
+            "code": "docker run -d --name qwertycoind --restart unless-stopped \\\n  -v qwertycoin-chain:/data -p 8196:8196 \\\n  docker.io/qwertycoin/qwertycoin:latest"
+          }
+        ],
+        "links": [
+          {
+            "label": "Docker Hub openen",
+            "href": "https://hub.docker.com/r/qwertycoin/qwertycoin/tags"
+          },
+          {
+            "label": "Docker snelstartgids",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md"
+          },
+          {
+            "label": "Belangrijkste release-opmerkingen",
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+          }
+        ]
+      },
+      {
+        "badge": "BESCHIKBAAR",
+        "badgeClass": "mainnet",
+        "title": "Web Wallet",
+        "body": "Verzend, ontvang en beheer de QWC rechtstreeks in uw browser.",
+        "glyph": "WEB",
+        "links": [
+          {
+            "label": "Web Wallet openen",
+            "href": "https://wallet.qwertycoin.org/"
+          }
+        ]
+      },
+      {
+        "badge": "BRON BESCHIKBAAR",
+        "badgeClass": "next",
+        "title": "QWC-broncode",
+        "body": "Ontdek de kernsoftware, bouw deze zelf en draag bij aan de GitHub.",
+        "glyph": "SRC",
+        "links": [
+          {
+            "label": "Open de kernrepository",
+            "href": "https://github.com/qwertycoin-org/qwertycoin"
+          },
+          {
+            "label": "GitHub Organisatie",
+            "href": "https://github.com/qwertycoin-org"
+          }
+        ]
+      }
+    ],
+    "noteTitle": "Compatibiliteitsopmerking",
+    "noteBody": "Het huidige QWC-netwerk staat los van de eerdere keten. Oudere portemonneesoftware en blockchain-gegevens zijn niet compatibel met dit netwerk."
+  },
+  "network": {
+    "eyebrow": "Netwerk",
+    "title": "Netwerkactiviteit",
+    "body": "Huidige blockchain- en EPoSe-gegevens."
+  },
+  "specs": {
+    "eyebrow": "Muntspecificaties",
+    "title": "Bevestigde mainnet-parameters.",
+    "body": "Deze waarden beschrijven de huidige QWC-mainnet-implementatie.",
+    "visualAlt": "QWC parameterbaandiagram",
+    "items": [
+      [
+        "Naam",
+        "Qwertycoin"
+      ],
+      [
+        "Ticker",
+        "QWC"
+      ],
+      [
+        "Netwerk",
+        "Mainnet"
+      ],
+      [
+        "Protocol",
+        "QWC HF17"
+      ],
+      [
+        "Dienstbeloningen",
+        "EPoSe"
+      ],
+      [
+        "Consensus",
+        "RandomX bewijs van werk"
+      ],
+      [
+        "Blokkeer doel",
+        "120 seconden"
+      ],
+      [
+        "EPoSe tijdperk",
+        "{blocks}-blokken (~{hours} uur)"
+      ],
+      [
+        "EPoSe-commissie",
+        "{committee}-verificatiedoel"
+      ],
+      [
+        "Attestquorum",
+        "plafond (2/3 van de werkelijke commissie), {fullCommitteeAttestations} of {committee} wanneer vol"
+      ],
+      [
+        "Beloning verdeeld",
+        "90% mijnbouw / {rewardPercent}% EPoSe"
+      ],
+      [
+        "Decimalen",
+        "8"
+      ],
+      [
+        "Aanvoerconstante",
+        "184,467,440.73709551 QWC"
+      ],
+      [
+        "Staart-emissie",
+        "0,3 QWC/minuut, 0,6 QWC/blokdoel"
+      ],
+      [
+        "Adresvoorvoegsel",
+        "0x14820c, standaardadressen beginnen met QWC"
+      ],
+      [
+        "P2P",
+        "8196"
+      ],
+      [
+        "Daemon RPC",
+        "8197, alleen beperkte openbare proxy"
+      ],
+      [
+        "Wallet RPC",
+        "8198"
+      ],
+      [
+        "ZMQ",
+        "8199"
+      ]
+    ]
+  },
+  "roadmap": {
+    "eyebrow": "Roadmap",
+    "title": "Wat is beschikbaar. Wat komt er daarna.",
+    "body": "Volg de voortgang van het netwerk, de portemonnees en de ontwikkelaarstools van de Qwertycoin.",
+    "items": [
+      {
+        "badge": "LIVE",
+        "title": "QWC-netwerk",
+        "body": "RandomX-netwerk en kernfunctionaliteit van de QWC zijn live. Operators blijven het netwerk onderhouden en verbeteren."
+      },
+      {
+        "badge": "LIVE",
+        "title": "EPoSe",
+        "body": "Registratie, serviceattestaties, kwalificatie en beloningsrotatie maken deel uit van het huidige QWC-netwerk."
+      },
+      {
+        "badge": "LOPEND",
+        "title": "Netwerk bediening",
+        "body": "Monitoring, onderhoud en operationele verbeteringen gaan door als regulier netwerkwerk."
+      },
+      {
+        "badge": "BESCHIKBAAR",
+        "title": "Portefeuilles en gereedschap",
+        "body": "De Web Wallet is beschikbaar. PWA-gedrag, desktopsoftware en extra tools behouden hun eigen status."
+      },
+      {
+        "badge": "BRON BESCHIKBAAR",
+        "title": "Bronnen voor ontwikkelaars",
+        "body": "De kernbroncode is beschikbaar. Aanvullende documentatie, API's en operatorbronnen worden afzonderlijk bijgehouden."
+      },
+      {
+        "badge": "ONDERZOEK",
+        "title": "EPoSe-onderzoek",
+        "body": "Uitgebreide diensten blijven onderzoeksonderwerpen en worden niet gepresenteerd als huidige productfuncties."
+      }
+    ]
+  },
+  "history": {
+    "eyebrow": "Geschiedenis",
+    "title": "Sinds 2018. Bouwen aan het volgende hoofdstuk.",
+    "body": "Qwertycoin begon in 2018. Het huidige netwerk bouwt voort op die geschiedenis met de RandomX en EPoSe.",
+    "bridge": [
+      "Originele QWC-gemeenschapsketen",
+      "QWC-netwerk met RandomX en EPoSe"
+    ],
+    "items": [
+      {
+        "date": "2018",
+        "title": "Qwertycoin wordt gelanceerd",
+        "body": "QWC begon als een op CryptoNote gebaseerde community-privacymunt met vroege inspanningen op het gebied van portemonnee, ontdekkingsreiziger, community en infrastructuur."
+      },
+      {
+        "date": "2019–2023",
+        "title": "Onderzoek en ontwikkeling van EPoW en EPoSe",
+        "body": "Van 2019 tot 2023 onderzocht het project eerlijke mijnbouw- en netwerkdienstbeloningen naast portemonnees, knooppunten en infrastructuur. Xecute's EPoSe-werk vormde de visie van het belonen van nuttige netwerkdiensten."
+      },
+      {
+        "date": "Later",
+        "title": "Token-fase",
+        "body": "De tokenfase maakt deel uit van de geschiedenis van de Qwertycoin en staat los van het huidige QWC-netwerk."
+      },
+      {
+        "date": "2026",
+        "title": "Qwertycoin-netwerk",
+        "body": "Qwertycoin start een nieuw netwerk met privébetalingen, RandomX-mining en EPoSe-servicebeloningen."
+      }
+    ],
+    "alert": "Het huidige QWC-netwerk staat los van de eerdere keten. Oudere portemonneesoftware en blockchain-gegevens zijn niet compatibel met dit netwerk."
+  },
+  "developers": {
+    "eyebrow": "Ontwikkelaars",
+    "title": "Bouw met Qwertycoin.",
+    "body": "Ontdek de kerncode, bouw de software en draag verbeteringen bij aan de GitHub.",
+    "buildTitle": "Bouw vanuit de bron",
+    "registrationTitle": "Hulpmiddelen voor servicenodes",
+    "sourceTitle": "Kernbroncode",
+    "sourceBody": "Verken de openbare kernrepository van de Qwertycoin op de GitHub.",
+    "legacyTitle": "Bouw instructies",
+    "legacyBody": "Bouw- en release-informatie wordt bijgehouden met de kernrepository en gepubliceerde bronnen.",
+    "registrationBody": "Voer een openbaar EPoSe-servicenode uit met de huidige Core-operatorhandleiding.",
+    "registrationLink": "Open de EPoSe-operatorhandleiding"
+  },
+  "community": {
+    "eyebrow": "Community",
+    "title": "Sluit u aan bij de Qwertycoin-community.",
+    "body": "Volg de ontwikkeling, verken het netwerk en help de volgende stappen van de Qwertycoin vorm te geven.",
+    "github": "Qwertycoin-organisatie",
+    "explorer": "QWC Mainnet Explorer"
+  },
+  "footer": {
+    "body": "Qwertycoin combineert privébetalingen, RandomX-mining, EPoSe-servicebeloningen, de Web Wallet en openbare broncode.",
+    "technology": "Technologie",
+    "pool": "Officieel zwembad",
+    "documentation": "Documentatie",
+    "history": "Geschiedenis",
+    "roadmap": "Roadmap"
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden | Qwertycoin",
+    "eyebrow": "404",
+    "heading": "Pagina niet gevonden.",
+    "body": "Deze Qwertycoin-pagina bestaat niet. Open het huidige overzicht of verander van taal.",
+    "home": "Open huis"
+  }
+}

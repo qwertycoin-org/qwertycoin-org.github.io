@@ -24,6 +24,27 @@ for (const entry of entries) {
 }
 
 const heroMotifSource = await readFile(path.join(root, "assets", "qwc-hero-motif.svg"), "utf8");
+const neutralHeroMotif = heroMotifSource
+  .replace(
+    "<title id=\"qwc-hero-title\">Qwertycoin — Miners, Verifiers, Nodes</title>",
+    "<title id=\"qwc-hero-title\">Qwertycoin network</title>"
+  )
+  .replace(
+    /<desc id="qwc-hero-desc">[\s\S]*?<\/desc>/,
+    "<desc id=\"qwc-hero-desc\">Qwertycoin emblem with abstract network layers.</desc>"
+  )
+  .replace(
+    "</defs>",
+    `<style>
+      #qwc-label-miners,
+      #qwc-label-verifiers,
+      #qwc-label-nodes { display: none; }
+    </style>
+</defs>`
+  );
+await writeFile(path.join(root, "assets", "qwc-hero-motif-neutral.svg"), neutralHeroMotif);
+await writeFile(path.join(dist, "assets", "qwc-hero-motif-neutral.svg"), neutralHeroMotif);
+
 const germanHeroMotif = heroMotifSource
   .replace(
     "<title id=\"qwc-hero-title\">Qwertycoin — Miners, Verifiers, Nodes</title>",

@@ -50,7 +50,6 @@ if (toggle && menu) {
 
   document.addEventListener("keydown", (event) => {
     if (event.key !== "Escape" || !menu.classList.contains("is-open")) return;
-    if (document.querySelector(".locale-switcher.is-open")) return;
     closeMenu();
     toggle.focus();
   });
