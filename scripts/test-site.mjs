@@ -380,6 +380,14 @@ assertIncludes(
   "Escape must close the nested language menu before the mobile navigation"
 );
 
+const brandRule = css.slice(css.indexOf(".brand {"), css.indexOf(".brand img {"));
+assertIncludes(css, '--font-brand: "Archivo"', "brand typeface must remain locale-independent");
+assertIncludes(
+  brandRule,
+  "font-family: var(--font-brand)",
+  "Qwertycoin wordmark must not inherit locale-specific display fonts"
+);
+
 if (distCss.includes("@import")) {
   throw new Error("Built CSS must not rely on render-blocking @import");
 }
