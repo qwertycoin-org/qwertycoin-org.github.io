@@ -140,8 +140,8 @@ for (const locale of localeConfig) {
   if (/flag-icon|emoji-flag/i.test(html)) throw new Error(`${locale.code} language menu must not use flags`);
 }
 
-if (networkConfig.marketsDemoUrl !== "http://markets.qwertycoin.local:8080/") {
-  throw new Error("Markets demo origin must remain explicit, local and outside the website origin");
+if (networkConfig.marketsDemoUrl !== "https://markets.qwertycoin.org/") {
+  throw new Error("Markets demo origin must remain explicit, HTTPS-only and outside the website origin");
 }
 
 for (const locale of localeConfig) {
