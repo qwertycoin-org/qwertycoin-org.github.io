@@ -63,7 +63,15 @@ function absoluteUrl(locale) {
   return `${network.siteUrl}${pathFor(locale)}`;
 }
 
-function languageSwitcher(currentLocale) {
+function marketsPathFor(locale) {
+  return locale.path === "/" ? "/markets/" : `${locale.path}markets/`;
+}
+
+function absoluteMarketsUrl(locale) {
+  return `${network.siteUrl}${marketsPathFor(locale)}`;
+}
+
+function languageSwitcher(currentLocale, targetPath = pathFor) {
   const languageLabel = text(dictionaries[currentLocale.code].nav.language);
   const languageShortLabel = text(dictionaries[currentLocale.code].nav.languageShort);
   const menuId = `locale-menu-${currentLocale.code}`;
@@ -73,7 +81,7 @@ function languageSwitcher(currentLocale) {
       <strong>${text(currentLocale.menuCode || currentLocale.code.toUpperCase())}</strong>
     </button>
     <div class="locale-menu" id="${menuId}">
-${locales.map((locale) => `<a href="${pathFor(locale)}"${locale.searchHreflang === false ? "" : ` hreflang="${locale.code}"`} lang="${locale.code}" data-locale-option="${locale.code}" data-locale-path="${pathFor(locale)}"${locale.code === currentLocale.code ? ' aria-current="true"' : ""}><strong>${text(locale.menuCode || locale.code.toUpperCase())}</strong><span>${text(locale.nativeName)}</span></a>`).join("\n")}
+${locales.map((locale) => `<a href="${targetPath(locale)}"${locale.searchHreflang === false ? "" : ` hreflang="${locale.code}"`} lang="${locale.code}" data-locale-option="${locale.code}" data-locale-path="${targetPath(locale)}"${locale.code === currentLocale.code ? ' aria-current="true"' : ""}><strong>${text(locale.menuCode || locale.code.toUpperCase())}</strong><span>${text(locale.nativeName)}</span></a>`).join("\n")}
     </div>
   </div>`;
 }
@@ -365,6 +373,7 @@ export function renderPage(localeCode, assets = defaultAssets) {
           <a href="#mining">${text(t.nav.mining)}</a>
           <a href="#exchanges">${text(t.nav.getQwc)}</a>
           <a href="#network">${text(t.nav.network)}</a>
+          <a href="${marketsPathFor(locale)}">${text(t.markets.navLabel)}</a>
           ${languageSwitcher(locale)}
           <a class="nav-wallet" href="${network.walletUrl}">${text(t.nav.wallet)}</a>
         </div>
@@ -547,12 +556,61 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
       <section class="section" id="community"><div class="section-inner">${sectionHeader(t.community.eyebrow, t.community.title, t.community.body)}<div class="grid three"><article class="card"><h3>GitHub</h3><p><a href="${network.githubUrl}">${text(t.community.github)}</a></p></article><article class="card"><h3>Explorer</h3><p><a href="${network.explorerUrl}">${text(t.community.explorer)}</a></p></article><article class="card"><h3>X / Twitter</h3><p><a href="https://x.com/Qwertycoin_QWC">@Qwertycoin_QWC</a></p></article></div></div></section>
     </main>
 
-    <footer class="site-footer"><div class="footer-inner"><div>${brand(locale)}</div><div class="footer-links"><a href="#technology">${text(t.footer.technology)}</a><a href="${network.pool.url}" target="_blank" rel="noopener noreferrer">${text(t.footer.pool)}</a><a href="${network.docsUrl}" target="_blank" rel="noopener noreferrer">${text(t.footer.documentation)}</a><a href="#history">${text(t.footer.history)}</a><a href="#roadmap">${text(t.footer.roadmap)}</a></div></div></footer>
+    <footer class="site-footer"><div class="footer-inner"><div>${brand(locale)}</div><div class="footer-links"><a href="#technology">${text(t.footer.technology)}</a><a href="${marketsPathFor(locale)}">${text(t.markets.navLabel)}</a><a href="${network.pool.url}" target="_blank" rel="noopener noreferrer">${text(t.footer.pool)}</a><a href="${network.docsUrl}" target="_blank" rel="noopener noreferrer">${text(t.footer.documentation)}</a><a href="#history">${text(t.footer.history)}</a><a href="#roadmap">${text(t.footer.roadmap)}</a></div></div></footer>
     <script src="${assets.networkStatusJs}" defer></script>
     <script src="${assets.navMenuJs}" defer></script>
   </body>
 </html>
 `;
+}
+
+export function renderMarketsPage(localeCode, assets = defaultAssets) {
+  const locale = locales.find((item) => item.code === localeCode);
+  if (!locale || !dictionaries[localeCode]) throw new Error(`Unknown locale: ${localeCode}`);
+  const t = dictionaries[localeCode];
+  const canonical = absoluteMarketsUrl(locale);
+  const alternates = searchLocales.map((item) => `<link rel="alternate" hreflang="${item.code}" href="${absoluteMarketsUrl(item)}">`).join("\n    ");
+
+  return `<!doctype html>
+<html lang="${locale.code}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${text(t.markets.metaTitle)}</title>
+    <meta name="description" content="${text(t.markets.metaDescription)}">
+    <link rel="canonical" href="${canonical}">
+    ${alternates}
+    <link rel="alternate" hreflang="x-default" href="${network.siteUrl}/markets/">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="${assets.fonts.archivo900}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="${assets.fonts.inter400}" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="${assets.css}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">${text(t.nav.skip)}</a>
+    <header class="site-header"><nav class="nav" aria-label="${text(t.nav.menu)}">
+      ${brand(locale)}
+      <div class="nav-links markets-page-nav">
+        <a href="${pathFor(locale)}">${text(t.markets.homeLabel)}</a>
+        ${languageSwitcher(locale, marketsPathFor)}
+      </div>
+    </nav></header>
+    <main id="main-content" class="markets-entry-main">
+      <section class="section dark markets-entry-hero"><div class="section-inner markets-entry-grid">
+        <div>
+          <p class="eyebrow">${text(t.markets.eyebrow)}</p>
+          <h1>${text(t.markets.title)}</h1>
+          <p class="lead">${text(t.markets.body)}</p>
+          <div class="alert markets-demo-alert"><strong>${text(t.markets.warningTitle)}</strong> ${text(t.markets.warningBody)}</div>
+          <div class="actions"><a class="button primary" href="${text(network.marketsDemoUrl)}" target="_blank" rel="noopener noreferrer">${text(t.markets.cta)}</a><a class="button secondary" href="${pathFor(locale)}">${text(t.markets.homeLabel)}</a></div>
+        </div>
+        <aside class="card markets-boundary-card"><span class="badge">${text(t.markets.statusBadge)}</span><h2>${text(t.markets.statusTitle)}</h2><p>${text(t.markets.statusBody)}</p><ul>${t.markets.boundaries.map((item) => `<li>${text(item)}</li>`).join("")}</ul></aside>
+      </div></section>
+    </main>
+    <footer class="site-footer"><div class="footer-inner"><div>${brand(locale)}</div><div class="footer-links"><a href="${pathFor(locale)}">${text(t.markets.homeLabel)}</a><a href="${network.docsUrl}" target="_blank" rel="noopener noreferrer">${text(t.footer.documentation)}</a></div></div></footer>
+    <script src="${assets.navMenuJs}" defer></script>
+  </body>
+</html>`;
 }
 
 export function renderSitemap() {
@@ -564,6 +622,13 @@ ${searchLocales.map((alternate) => `    <xhtml:link rel="alternate" hreflang="${
     <xhtml:link rel="alternate" hreflang="x-default" href="${network.siteUrl}/" />
     <changefreq>weekly</changefreq>
     <priority>${locale.code === "en" ? "1.0" : "0.9"}</priority>
+  </url>
+  <url>
+    <loc>${absoluteMarketsUrl(locale)}</loc>
+${searchLocales.map((alternate) => `    <xhtml:link rel="alternate" hreflang="${alternate.code}" href="${absoluteMarketsUrl(alternate)}" />`).join("\n")}
+    <xhtml:link rel="alternate" hreflang="x-default" href="${network.siteUrl}/markets/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>`).join("\n")}
 </urlset>
 `;

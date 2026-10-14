@@ -811,6 +811,27 @@
     "github": "lo la'o gy. Qwertycoin .gy. kagni girzu",
     "explorer": "QWC Mainnet Explorer"
   },
+  "markets": {
+    "metaTitle": "le QWC Markets cipra nu jarco | la'o gy. Qwertycoin .gy.",
+    "metaDescription": "ti cu nu jarco po'o lo nu zarci lo se smadi kei gi'e pilno lo cipra jdini poi na se jdini gi'e na jorne la'o gy. Mainnet .gy. ja lo lanka.",
+    "navLabel": "lo Markets cipra",
+    "homeLabel": "lo Qwertycoin se viska",
+    "eyebrow": "lo diklo cipra",
+    "title": "ko snura troci lo QWC Markets",
+    "body": "ko troci lo cmalu ke se smadi zarci poi se jicmu lo na ckape preti ku jo'u lo satci namcu nu jmina jdima ku jo'u lo jimte cipra jdini",
+    "warningTitle": "lo cipra jdini na QWC",
+    "warningBody": "lo cipra na kakne lo nu muvdu lo ca'a jdini kei ja lo nu kurji ja lo nu te pilno lo lanka ja lo Mainnet tadji gi'e na xusra lo nu mipri lo pilno",
+    "cta": "ko katna lo diklo cipra",
+    "statusBadge": "CIPRA PO'O",
+    "statusTitle": "lo jicmu be lo nu cipra kei na jdini se vecnu",
+    "statusBody": "ti se zbasu lo diklo saske nu cipra e lo balvi nu zenba po'o",
+    "boundaries": [
+      "no ca'a QWC cu muvdu ne'i lo sampla",
+      "no lanka mipri girzu ja lo lanka datni cu se tcidu",
+      "no nu catlu lo pilno ja lo bartu lerfu tadji ja lo drata samrerkru cu se samca",
+      "la'o gy. Mainnet .gy. nitcu lo drata flalu je snura je kurji je gunka nu curmi"
+    ]
+  },
   "footer": {
     "body": "la'o gy. Qwertycoin .gy. cu jorne lo sivni jdini benji .e lo la'o gy. RandomX .gy. bloku cupra .e lo la'o gy. EPoSe .gy. selfu jerna .e la'o gy. Web Wallet .gy. .e lo gubni samselpla",
     "technology": "lo samtcise",

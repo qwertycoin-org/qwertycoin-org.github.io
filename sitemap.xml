@@ -18,6 +18,23 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://qwertycoin.org/markets/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/markets/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/markets/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://qwertycoin.org/zh-hans/markets/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://qwertycoin.org/nl/markets/" />
+    <xhtml:link rel="alternate" hreflang="eo" href="https://qwertycoin.org/eo/markets/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qwertycoin.org/fr/markets/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qwertycoin.org/it/markets/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qwertycoin.org/ja/markets/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qwertycoin.org/pt/markets/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qwertycoin.org/ru/markets/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qwertycoin.org/es/markets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/markets/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://qwertycoin.org/de/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/" />
@@ -33,6 +50,23 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://qwertycoin.org/de/markets/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/markets/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/markets/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://qwertycoin.org/zh-hans/markets/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://qwertycoin.org/nl/markets/" />
+    <xhtml:link rel="alternate" hreflang="eo" href="https://qwertycoin.org/eo/markets/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qwertycoin.org/fr/markets/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qwertycoin.org/it/markets/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qwertycoin.org/ja/markets/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qwertycoin.org/pt/markets/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qwertycoin.org/ru/markets/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qwertycoin.org/es/markets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/markets/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://qwertycoin.org/zh-hans/</loc>
@@ -52,6 +86,23 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://qwertycoin.org/zh-hans/markets/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/markets/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/markets/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://qwertycoin.org/zh-hans/markets/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://qwertycoin.org/nl/markets/" />
+    <xhtml:link rel="alternate" hreflang="eo" href="https://qwertycoin.org/eo/markets/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qwertycoin.org/fr/markets/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qwertycoin.org/it/markets/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qwertycoin.org/ja/markets/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qwertycoin.org/pt/markets/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qwertycoin.org/ru/markets/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qwertycoin.org/es/markets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/markets/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://qwertycoin.org/nl/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/" />
@@ -67,6 +118,23 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://qwertycoin.org/nl/markets/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/markets/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/markets/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://qwertycoin.org/zh-hans/markets/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://qwertycoin.org/nl/markets/" />
+    <xhtml:link rel="alternate" hreflang="eo" href="https://qwertycoin.org/eo/markets/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qwertycoin.org/fr/markets/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qwertycoin.org/it/markets/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qwertycoin.org/ja/markets/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qwertycoin.org/pt/markets/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qwertycoin.org/ru/markets/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qwertycoin.org/es/markets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/markets/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://qwertycoin.org/eo/</loc>
@@ -86,6 +154,23 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://qwertycoin.org/eo/markets/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/markets/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/markets/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://qwertycoin.org/zh-hans/markets/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://qwertycoin.org/nl/markets/" />
+    <xhtml:link rel="alternate" hreflang="eo" href="https://qwertycoin.org/eo/markets/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qwertycoin.org/fr/markets/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qwertycoin.org/it/markets/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qwertycoin.org/ja/markets/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qwertycoin.org/pt/markets/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qwertycoin.org/ru/markets/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qwertycoin.org/es/markets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/markets/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://qwertycoin.org/fr/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/" />
@@ -101,6 +186,23 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://qwertycoin.org/fr/markets/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/markets/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/markets/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://qwertycoin.org/zh-hans/markets/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://qwertycoin.org/nl/markets/" />
+    <xhtml:link rel="alternate" hreflang="eo" href="https://qwertycoin.org/eo/markets/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qwertycoin.org/fr/markets/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qwertycoin.org/it/markets/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qwertycoin.org/ja/markets/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qwertycoin.org/pt/markets/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qwertycoin.org/ru/markets/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qwertycoin.org/es/markets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/markets/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://qwertycoin.org/it/</loc>
@@ -120,6 +222,23 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://qwertycoin.org/it/markets/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/markets/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/markets/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://qwertycoin.org/zh-hans/markets/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://qwertycoin.org/nl/markets/" />
+    <xhtml:link rel="alternate" hreflang="eo" href="https://qwertycoin.org/eo/markets/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qwertycoin.org/fr/markets/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qwertycoin.org/it/markets/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qwertycoin.org/ja/markets/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qwertycoin.org/pt/markets/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qwertycoin.org/ru/markets/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qwertycoin.org/es/markets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/markets/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://qwertycoin.org/ja/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/" />
@@ -135,6 +254,23 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://qwertycoin.org/ja/markets/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/markets/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/markets/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://qwertycoin.org/zh-hans/markets/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://qwertycoin.org/nl/markets/" />
+    <xhtml:link rel="alternate" hreflang="eo" href="https://qwertycoin.org/eo/markets/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qwertycoin.org/fr/markets/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qwertycoin.org/it/markets/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qwertycoin.org/ja/markets/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qwertycoin.org/pt/markets/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qwertycoin.org/ru/markets/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qwertycoin.org/es/markets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/markets/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://qwertycoin.org/jbo/</loc>
@@ -154,6 +290,23 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://qwertycoin.org/jbo/markets/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/markets/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/markets/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://qwertycoin.org/zh-hans/markets/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://qwertycoin.org/nl/markets/" />
+    <xhtml:link rel="alternate" hreflang="eo" href="https://qwertycoin.org/eo/markets/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qwertycoin.org/fr/markets/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qwertycoin.org/it/markets/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qwertycoin.org/ja/markets/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qwertycoin.org/pt/markets/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qwertycoin.org/ru/markets/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qwertycoin.org/es/markets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/markets/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://qwertycoin.org/pt/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/" />
@@ -169,6 +322,23 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://qwertycoin.org/pt/markets/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/markets/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/markets/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://qwertycoin.org/zh-hans/markets/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://qwertycoin.org/nl/markets/" />
+    <xhtml:link rel="alternate" hreflang="eo" href="https://qwertycoin.org/eo/markets/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qwertycoin.org/fr/markets/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qwertycoin.org/it/markets/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qwertycoin.org/ja/markets/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qwertycoin.org/pt/markets/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qwertycoin.org/ru/markets/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qwertycoin.org/es/markets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/markets/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://qwertycoin.org/ru/</loc>
@@ -188,6 +358,23 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://qwertycoin.org/ru/markets/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/markets/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/markets/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://qwertycoin.org/zh-hans/markets/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://qwertycoin.org/nl/markets/" />
+    <xhtml:link rel="alternate" hreflang="eo" href="https://qwertycoin.org/eo/markets/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qwertycoin.org/fr/markets/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qwertycoin.org/it/markets/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qwertycoin.org/ja/markets/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qwertycoin.org/pt/markets/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qwertycoin.org/ru/markets/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qwertycoin.org/es/markets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/markets/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://qwertycoin.org/es/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/" />
@@ -203,5 +390,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://qwertycoin.org/es/markets/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qwertycoin.org/markets/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qwertycoin.org/de/markets/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://qwertycoin.org/zh-hans/markets/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://qwertycoin.org/nl/markets/" />
+    <xhtml:link rel="alternate" hreflang="eo" href="https://qwertycoin.org/eo/markets/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qwertycoin.org/fr/markets/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qwertycoin.org/it/markets/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qwertycoin.org/ja/markets/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qwertycoin.org/pt/markets/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qwertycoin.org/ru/markets/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qwertycoin.org/es/markets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qwertycoin.org/markets/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

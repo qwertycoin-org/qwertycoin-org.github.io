@@ -811,6 +811,27 @@
     "github": "Qwertycoin organizo",
     "explorer": "QWC Mainnet Explorer"
   },
+  "markets": {
+    "metaTitle": "Demonstraĵo QWC Markets | Qwertycoin",
+    "metaDescription": "Nur-demonstra prognozmerkata prototipo kun senvaloraj demonstraj kreditoj kaj sen konekto al Mainnet aŭ monujo.",
+    "navLabel": "Markets-demonstraĵo",
+    "homeLabel": "Superrigardo pri Qwertycoin",
+    "eyebrow": "Loka prototipo",
+    "title": "Sekure esploru QWC Markets.",
+    "body": "Provu malgrandan bazon por prognozmerkatoj kun sendanĝeraj ekzemplodemandoj, ekzakta entjera kontado kaj limigitaj demonstraj kreditoj.",
+    "warningTitle": "Demonstraj kreditoj ne estas QWC.",
+    "warningBody": "La prototipo ne havas realajn deponojn, elpagojn, gardadon, monujan aliron, Mainnet-reĝimon aŭ anonimecan promeson.",
+    "cta": "Malfermi lokan demonstraĵon",
+    "statusBadge": "NUR DEMONSTRAĴO",
+    "statusTitle": "Bazo por revizio, ne financa produkto",
+    "statusBody": "Ĉi tiu mejloŝtono celas nur lokan teknikan revizion kaj estontan vastigon.",
+    "boundaries": [
+      "Neniu reala QWC moviĝas tra la aplikaĵo.",
+      "Monujaj ŝlosiloj kaj retumila monuja memoro ne estas alirataj.",
+      "Neniu spurilo, ekstera tiparo aŭ triaparta skripto estas ŝargata.",
+      "Mainnet postulas apartajn jurajn, sekurecajn, gardajn kaj operaciajn aprobojn."
+    ]
+  },
   "footer": {
     "body": "Qwertycoin kombinas privatajn pagojn, RandomX-minadon, EPoSe-servajn rekompencojn, la Web Wallet kaj publikan fontkodon.",
     "technology": "Teknologio",

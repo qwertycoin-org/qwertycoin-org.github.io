@@ -811,6 +811,27 @@
     "github": "Qwertycoin组织",
     "explorer": "QWC Mainnet Explorer"
   },
+  "markets": {
+    "metaTitle": "QWC Markets 演示 | Qwertycoin",
+    "metaDescription": "仅用于演示的预测市场原型，使用无价值的演示积分，不连接 Mainnet 或钱包。",
+    "navLabel": "Markets 演示",
+    "homeLabel": "Qwertycoin 概览",
+    "eyebrow": "本地原型",
+    "title": "安全体验 QWC Markets。",
+    "body": "使用无害的示例问题、精确整数记账和有限演示积分，体验小型预测市场基础。",
+    "warningTitle": "演示积分不是 QWC。",
+    "warningBody": "该原型不提供真实充值、提现、托管、钱包访问或 Mainnet 模式，也不承诺匿名性。",
+    "cta": "打开本地演示",
+    "statusBadge": "仅限演示",
+    "statusTitle": "用于审查的基础，而非金融产品",
+    "statusBody": "本里程碑仅用于本地技术审查和未来扩展。",
+    "boundaries": [
+      "应用不会转移任何真实 QWC。",
+      "应用不会访问钱包密钥或浏览器中的钱包存储。",
+      "应用不会加载跟踪工具、外部字体或第三方脚本。",
+      "启用 Mainnet 前必须另行完成法律、安全、托管和运营审批。"
+    ]
+  },
   "footer": {
     "body": "Qwertycoin结合了私人支付、RandomX挖矿、EPoSe服务奖励、Web Wallet和公共源代码。",
     "technology": "技术",

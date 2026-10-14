@@ -4,6 +4,7 @@
   "serviceNodesUrl": "https://explorer.qwertycoin.org/service-nodes",
   "githubUrl": "https://github.com/qwertycoin-org",
   "walletUrl": "https://wallet.qwertycoin.org/",
+  "marketsDemoUrl": "http://markets.qwertycoin.local:8080/",
   "docsUrl": "https://docs.qwertycoin.org/",
   "eposeOverviewUrl": "https://docs.qwertycoin.org/epose/overview",
   "serviceNodeGuideUrl": "https://docs.qwertycoin.org/epose/service-node-quickstart",

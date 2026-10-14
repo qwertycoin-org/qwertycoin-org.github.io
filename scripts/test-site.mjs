@@ -10,6 +10,12 @@ const localePages = new Map(await Promise.all(localeConfig.map(async (locale) =>
     ? path.join(dist, "index.html")
     : path.join(dist, locale.path.slice(1), "index.html"), "utf8")
 ])));
+const marketLocalePages = new Map(await Promise.all(localeConfig.map(async (locale) => [
+  locale.code,
+  await readFile(locale.code === "en"
+    ? path.join(dist, "markets", "index.html")
+    : path.join(dist, locale.path.slice(1), "markets", "index.html"), "utf8")
+])));
 const allLocalePages = [...localePages.values()];
 const index = await readFile(path.join(dist, "index.html"), "utf8");
 const germanIndex = await readFile(path.join(dist, "de", "index.html"), "utf8");
@@ -31,6 +37,7 @@ const networkConfig = JSON.parse(await readFile(path.join(root, "src", "config",
 const englishSource = await readFile(path.join(root, "src", "i18n", "en.json"), "utf8");
 const germanSource = await readFile(path.join(root, "src", "i18n", "de.json"), "utf8");
 const allLocaleSources = await Promise.all(localeConfig.map((locale) => readFile(path.join(root, "src", "i18n", `${locale.code}.json`), "utf8")));
+const localeSourceObjects = new Map(localeConfig.map((locale, index) => [locale.code, JSON.parse(allLocaleSources[index])]));
 
 function assertIncludes(haystack, needle, label = needle) {
   if (!haystack.includes(needle)) throw new Error(`Missing required content: ${label}`);
@@ -131,6 +138,26 @@ for (const locale of localeConfig) {
   }
 
   if (/flag-icon|emoji-flag/i.test(html)) throw new Error(`${locale.code} language menu must not use flags`);
+}
+
+if (networkConfig.marketsDemoUrl !== "http://markets.qwertycoin.local:8080/") {
+  throw new Error("Markets demo origin must remain explicit, local and outside the website origin");
+}
+
+for (const locale of localeConfig) {
+  const html = marketLocalePages.get(locale.code);
+  const source = localeSourceObjects.get(locale.code).markets;
+  const pathPrefix = locale.code === "en" ? "/markets/" : `${locale.path}markets/`;
+  const canonical = `https://qwertycoin.org${pathPrefix}`;
+  assertIncludes(html, `<html lang="${locale.code}">`, `${locale.code} markets HTML language`);
+  assertIncludes(html, `<link rel="canonical" href="${canonical}">`, `${locale.code} markets canonical`);
+  assertIncludes(html, source.title, `${locale.code} markets title`);
+  assertIncludes(html, source.warningTitle, `${locale.code} demo-credit warning`);
+  assertIncludes(html, source.warningBody, `${locale.code} hard-boundary warning`);
+  assertIncludes(html, `href="${networkConfig.marketsDemoUrl}" target="_blank" rel="noopener noreferrer"`, `${locale.code} isolated markets origin`);
+  assertIncludes(sitemap, `<loc>${canonical}</loc>`, `${locale.code} markets sitemap entry`);
+  if (/<iframe\b/i.test(html)) throw new Error(`${locale.code} markets entry must not embed the application`);
+  if (/wallet\.qwertycoin\.org|googletagmanager|analytics/i.test(html)) throw new Error(`${locale.code} markets entry crosses the static demo boundary`);
 }
 
 for (const locale of localeConfig) {

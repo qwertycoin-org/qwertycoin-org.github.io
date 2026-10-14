@@ -811,6 +811,27 @@
     "github": "Qwertycoin編成",
     "explorer": "QWC Mainnet Explorer"
   },
+  "markets": {
+    "metaTitle": "QWC Markets デモ | Qwertycoin",
+    "metaDescription": "価値のないデモクレジットを使用し、Mainnet やウォレットへ接続しない、デモ専用の予測市場プロトタイプです。",
+    "navLabel": "Markets デモ",
+    "homeLabel": "Qwertycoin の概要",
+    "eyebrow": "ローカルプロトタイプ",
+    "title": "QWC Markets を安全に試す。",
+    "body": "無害なサンプル質問、正確な整数会計、有限のデモクレジットを備えた小規模な予測市場の基盤を試せます。",
+    "warningTitle": "デモクレジットは QWC ではありません。",
+    "warningBody": "このプロトタイプには、実際の入出金、カストディ、ウォレットへのアクセス、Mainnet モード、匿名性の保証はありません。",
+    "cta": "ローカルデモを開く",
+    "statusBadge": "デモ専用",
+    "statusTitle": "金融商品ではなく、レビュー用の基盤",
+    "statusBody": "このマイルストーンは、ローカルでの技術レビューと将来の拡張だけを目的としています。",
+    "boundaries": [
+      "アプリケーション内で実際の QWC は移動しません。",
+      "ウォレットの鍵やブラウザー内のウォレット保存領域にはアクセスしません。",
+      "追跡機能、外部フォント、第三者スクリプトを読み込みません。",
+      "Mainnet には、法務、セキュリティ、カストディ、運用について別個の承認が必要です。"
+    ]
+  },
   "footer": {
     "body": "Qwertycoin は、プライベート支払い、RandomX マイニング、EPoSe サービス報酬、Web Wallet、および公開ソース コードを組み合わせています。",
     "technology": "テクノロジー",

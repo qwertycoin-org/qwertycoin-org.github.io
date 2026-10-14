@@ -811,6 +811,27 @@
     "github": "Qwertycoin-Organisation",
     "explorer": "QWC Mainnet Explorer"
   },
+  "markets": {
+    "metaTitle": "QWC-Markets-Demo | Qwertycoin",
+    "metaDescription": "Ein reiner Demo-Prototyp für Prognosemärkte mit wertlosen Demo-Guthaben, ohne Mainnet- oder Wallet-Verbindung.",
+    "navLabel": "Markets-Demo",
+    "homeLabel": "Qwertycoin-Übersicht",
+    "eyebrow": "Lokaler Prototyp",
+    "title": "QWC Markets sicher ausprobieren.",
+    "body": "Teste eine kleine Grundlage für Prognosemärkte mit unbedenklichen Beispielfragen, exakter Ganzzahlarithmetik und begrenzten Demo-Guthaben.",
+    "warningTitle": "Demo-Guthaben sind kein QWC.",
+    "warningBody": "Der Prototyp bietet keine echten Ein- oder Auszahlungen, keine Verwahrung, keinen Wallet-Zugriff, keinen Mainnet-Modus und verspricht keine Anonymität.",
+    "cta": "Lokale Demo öffnen",
+    "statusBadge": "NUR DEMO",
+    "statusTitle": "Eine Prüfgrundlage, kein Finanzprodukt",
+    "statusBody": "Dieser Meilenstein dient ausschließlich der lokalen technischen Prüfung und späteren Erweiterung.",
+    "boundaries": [
+      "Die Anwendung bewegt kein echtes QWC.",
+      "Sie greift weder auf Wallet-Schlüssel noch auf Wallet-Browserspeicher zu.",
+      "Sie lädt kein Tracking, keine externen Schriftarten und keine Drittanbieter-Skripte.",
+      "Mainnet erfordert getrennte rechtliche, technische, verwahrungsbezogene und betriebliche Freigaben."
+    ]
+  },
   "footer": {
     "body": "Qwertycoin verbindet vertrauliche digitale Zahlungen, offenes RandomX-Mining, EPoSE-Belohnungen für Netzwerkdienste und frei zugänglichen Quellcode.",
     "technology": "Technologie",

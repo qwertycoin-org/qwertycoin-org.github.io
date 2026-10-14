@@ -811,6 +811,27 @@
     "github": "Organización Qwertycoin",
     "explorer": "QWC Mainnet Explorer"
   },
+  "markets": {
+    "metaTitle": "Demostración de QWC Markets | Qwertycoin",
+    "metaDescription": "Un prototipo de mercado de predicción solo para demostración, con créditos sin valor y sin conexión a Mainnet ni al wallet.",
+    "navLabel": "Demo de Markets",
+    "homeLabel": "Resumen de Qwertycoin",
+    "eyebrow": "Prototipo local",
+    "title": "Explora QWC Markets de forma segura.",
+    "body": "Prueba una base pequeña para mercados de predicción con preguntas inofensivas, contabilidad entera exacta y créditos de demostración limitados.",
+    "warningTitle": "Los créditos de demostración no son QWC.",
+    "warningBody": "El prototipo no admite depósitos ni retiros reales, custodia, acceso al wallet, modo Mainnet ni promesas de anonimato.",
+    "cta": "Abrir demo local",
+    "statusBadge": "SOLO DEMO",
+    "statusTitle": "Una base para revisión, no un producto financiero",
+    "statusBody": "Este hito sirve exclusivamente para revisión técnica local y ampliaciones futuras.",
+    "boundaries": [
+      "La aplicación no mueve QWC real.",
+      "No accede a claves ni al almacenamiento del wallet en el navegador.",
+      "No carga seguimiento, fuentes externas ni scripts de terceros.",
+      "Mainnet exige aprobaciones legales, de seguridad, custodia y operación por separado."
+    ]
+  },
   "footer": {
     "body": "Qwertycoin combina pagos privados, minería RandomX, recompensas de servicio EPoSe, Web Wallet y código fuente público.",
     "technology": "Tecnología",

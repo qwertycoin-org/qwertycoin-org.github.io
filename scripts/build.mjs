@@ -3,7 +3,7 @@ import { createHash } from "node:crypto";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import locales from "../src/i18n/locales.json" with { type: "json" };
-import { renderNotFoundPage, renderPage, renderSitemap } from "../src/render-site.mjs";
+import { renderMarketsPage, renderNotFoundPage, renderPage, renderSitemap } from "../src/render-site.mjs";
 
 const root = new URL("..", import.meta.url).pathname;
 const dist = path.join(root, "dist");
@@ -162,6 +162,15 @@ for (const locale of locales) {
   const rootPageDir = locale.path === "/" ? root : path.join(root, locale.path);
   await mkdir(rootPageDir, { recursive: true });
   await writeFile(path.join(rootPageDir, "index.html"), html);
+
+  const marketsPath = locale.path === "/" ? "markets" : path.join(locale.path, "markets");
+  const marketsDistDir = path.join(dist, marketsPath);
+  const marketsRootDir = path.join(root, marketsPath);
+  await mkdir(marketsDistDir, { recursive: true });
+  await mkdir(marketsRootDir, { recursive: true });
+  const marketsHtml = renderMarketsPage(locale.code, assets);
+  await writeFile(path.join(marketsDistDir, "index.html"), marketsHtml);
+  await writeFile(path.join(marketsRootDir, "index.html"), marketsHtml);
 }
 
 const sitemap = renderSitemap();

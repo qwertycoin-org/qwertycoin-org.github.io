@@ -2031,3 +2031,16 @@ p { margin: var(--space-3) 0 0; }
     grid-template-columns: 1fr;
   }
 }
+/* QWC Markets entry remains a static, demo-only boundary page. */
+.markets-entry-main { min-height: calc(100vh - 180px); }
+.markets-entry-hero { min-height: calc(100vh - 180px); display: grid; align-items: center; }
+.markets-entry-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); gap: clamp(24px, 5vw, 72px); align-items: center; }
+.markets-entry-grid h1 { max-width: 13ch; font-size: clamp(3rem, 8vw, 6.6rem); margin: 12px 0 24px; }
+.markets-demo-alert { margin: 28px 0; }
+.markets-boundary-card { border-color: var(--color-line, #3b4147); }
+.markets-boundary-card ul { padding-left: 1.2rem; color: var(--color-text-muted, #b7bec7); }
+.markets-boundary-card li + li { margin-top: .65rem; }
+@media (max-width: 760px) {
+  .markets-entry-grid { grid-template-columns: 1fr; }
+  .markets-page-nav { display: flex; }
+}
