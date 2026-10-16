@@ -226,6 +226,16 @@ function resourceButton(label, href, variant = "secondary") {
   return `<a class="button ${variant}" href="${text(href)}" target="_blank" rel="noopener noreferrer">${text(label)}</a>`;
 }
 
+function faqAnswer(item) {
+  const paragraphs = item.answer.split("\n\n").map((paragraph) => `<p>${text(paragraph)}</p>`).join("");
+  const links = (item.links || []).map((link) => `<a href="${text(link.href)}"${link.href.startsWith("#") ? "" : ' target="_blank" rel="noopener noreferrer"'}>${text(link.label)}</a>`);
+  return `${paragraphs}${links.length ? `<p>${links.join(" · ")}</p>` : ""}`;
+}
+
+function faqItem(item, id) {
+  return `<details${id ? ` id="${id}"` : ""}><summary>${text(item.question)}</summary>${faqAnswer(item)}</details>`;
+}
+
 function faqSchema(t, locale) {
   return {
     "@context": "https://schema.org",
@@ -260,10 +270,10 @@ function faqSchema(t, locale) {
         "@id": `${absoluteUrl(locale)}#faq`,
         "inLanguage": locale.code,
         "isPartOf": { "@id": `${absoluteUrl(locale)}#webpage` },
-        "mainEntity": t.faq.items.map((item) => ({
+        "mainEntity": [...t.faq.items, ...Object.values(t.faq.legacyItems)].map((item) => ({
           "@type": "Question",
           "name": interpolate(item.question),
-          "acceptedAnswer": { "@type": "Answer", "text": interpolate(item.answer) }
+          "acceptedAnswer": { "@type": "Answer", "text": faqAnswer(item) }
         }))
       }
     ]
@@ -540,7 +550,7 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
         <div class="network-details"><div><span>${text(t.metrics.topHash)}</span><strong data-status="top-hash">${text(t.metrics.loading)}</strong></div><div><span>${text(t.metrics.stateHash)}</span><strong data-status="epose-hash">${text(t.metrics.loading)}</strong></div><div><span>${text(t.metrics.explorer)}</span><strong><a href="${network.explorerUrl}">explorer.qwertycoin.org</a></strong></div><div><span>${text(t.metrics.currentSource)}</span><strong>${text(t.metrics.sourcePending)}</strong></div></div></div>
       </div></section>
 
-      <section class="section" id="faq"><div class="section-inner">${sectionHeader(t.faq.eyebrow, t.faq.title, "")}<div class="faq-list">${t.faq.items.map((item) => `<details><summary>${text(item.question)}</summary><p>${text(item.answer)}</p></details>`).join("")}</div></div></section>
+      <section class="section" id="faq"><div class="section-inner">${sectionHeader(t.faq.eyebrow, t.faq.title, "")}<div class="faq-list">${t.faq.items.map((item) => faqItem(item)).join("")}</div><h3 class="faq-group-title" id="faq-legacy">${text(t.faq.legacyTitle)}</h3><div class="faq-list">${Object.entries(t.faq.legacyItems).map(([key, item]) => faqItem(item, `faq-legacy-${key}`)).join("")}</div></div></section>
       <section class="section alt" id="roadmap"><div class="section-inner">${sectionHeader(t.roadmap.eyebrow, t.roadmap.title, t.roadmap.body)}<div class="roadmap rail">${t.roadmap.items.map((item) => `<article class="roadmap-item"><div><span class="badge mainnet">${text(item.badge)}</span></div><div><h3>${text(item.title)}</h3><p>${text(item.body)}</p></div></article>`).join("")}</div></div></section>
       <section class="section" id="history"><div class="section-inner">${sectionHeader(t.history.eyebrow, t.history.title, t.history.body)}<div class="history-bridge"><div class="history-year"><strong>2018</strong><span>${text(t.history.bridge[0])}</span></div><div class="history-line" aria-hidden="true"><span></span></div><div class="history-year"><strong>2026</strong><span>${text(t.history.bridge[1])}</span></div></div><div class="timeline">${t.history.items.map((item) => `<article class="timeline-item"><div class="date">${text(item.date)}</div><div><h3>${text(item.title)}</h3><p>${text(item.body)}</p></div></article>`).join("")}</div><div class="alert">${text(t.history.alert)}</div></div></section>
       <section class="section dark" id="developers"><div class="section-inner">${sectionHeader(t.developers.eyebrow, t.developers.title, t.developers.body)}<div class="grid three"><article class="card"><h3>${text(t.developers.sourceTitle)}</h3><p><a href="https://github.com/qwertycoin-org/qwertycoin">${text(t.developers.sourceBody)}</a></p></article><article class="card"><h3>${text(t.developers.legacyTitle)}</h3><p>${text(t.developers.legacyBody)}</p></article><article class="card"><h3>${text(t.developers.registrationTitle)}</h3><p>${text(t.developers.registrationBody)} <a href="https://github.com/qwertycoin-org/qwertycoin/blob/main/docs/epose/SERVICE_NODE.md">${text(t.developers.registrationLink)}</a></p></article></div></div></section>

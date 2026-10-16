@@ -89,7 +89,7 @@
         "kind": "wallet",
         "badge": "QWC NUTZEN",
         "title": "Wallet öffnen",
-        "body": "Erstelle oder importiere deine QWC-Wallet direkt im Browser und bezahle vertraulich mit QWC.",
+        "body": "Erstelle im Browser eine QWC-Wallet für das aktuelle Netzwerk oder stelle eine solche wieder her. Sende und empfange damit vertrauliche Zahlungen. Dadurch wird kein Guthaben der alten Blockchain importiert.",
         "cta": "Web Wallet öffnen"
       },
       {
@@ -304,8 +304,8 @@
     "rewardFormulaCaption": "Quorum, Qualifikation, Empfängerauswahl und Belohnung – die aktiven EPoSE-Regeln auf einen Blick."
   },
   "faq": {
-    "eyebrow": "Häufige Fragen zu EPoSE",
-    "title": "Das Wichtigste für den Einstieg.",
+    "eyebrow": "Fragen und Antworten",
+    "title": "Wallets, Netzwerk und Service Nodes.",
     "items": [
       {
         "question": "Was ist Qwertycoin?",
@@ -313,11 +313,7 @@
       },
       {
         "question": "Wie nutze ich die Web Wallet?",
-        "answer": "Öffne die offizielle Web Wallet und erstelle eine neue Wallet oder importiere eine vorhandene. Beachte dabei die Sicherheitshinweise. Die Qwertycoin-Website selbst verarbeitet keine privaten Wallet-Schlüssel."
-      },
-      {
-        "question": "Kann ich eine alte QWC-Wallet verwenden?",
-        "answer": "Nein. Das heutige QWC-Netzwerk ist von der früheren Chain getrennt. Alte Wallet-Software und Blockchain-Daten sind mit diesem Netzwerk nicht kompatibel."
+        "answer": "Öffne die offizielle Web Wallet, um eine Wallet für das aktuelle Netzwerk anzulegen oder wiederherzustellen, und beachte die Sicherheitshinweise. Die Wiederherstellung einer Wallet des aktuellen Netzwerks importiert kein Guthaben der alten Blockchain. Die Hauptwebsite verarbeitet niemals Wallet-Schlüssel."
       },
       {
         "question": "Ersetzt EPoSE das Mining?",
@@ -347,7 +343,72 @@
         "question": "Warum ist EPoSE kein Proof of Stake?",
         "answer": "EPoSE belohnt nachgewiesene Dienste und nicht den Besitz gesperrter Coins. Service Nodes prüfen die Blockchain wie andere vollständige Nodes; neue Blöcke werden weiterhin von RandomX-Minern erzeugt."
       }
-    ]
+    ],
+    "legacyTitle": "Alte Wallets und Netzwerkneustart",
+    "legacyItems": {
+      "balances": {
+        "question": "Kann ich mein altes Qwertycoin-Guthaben auf das aktuelle Netzwerk übertragen?",
+        "answer": "Nein. Guthaben der alten Qwertycoin-Blockchain können nicht auf das aktuelle Netzwerk importiert, übertragen oder dort gutgeschrieben werden. Qwertycoin startete 2026 eine separate Blockchain mit eigener Genesis. Ein Wallet-Update, die Synchronisierung oder die Eingabe eines alten Seeds überträgt keine Coins zwischen diesen Netzwerken."
+      },
+      "wallets": {
+        "question": "Kann ich eine Wallet aus der Zeit vor dem Neustart 2026 verwenden?",
+        "answer": "Wallets für die alte Blockchain sind mit dem aktuellen Netzwerk nicht kompatibel. Lade über die offizielle Qwertycoin-Website eine unterstützte Wallet herunter und lege eine Wallet für das aktuelle Netzwerk an. Dadurch wird kein altes Guthaben wiederhergestellt oder übertragen. Bewahre vorhandene Wallet-Sicherungen und private Schlüssel sicher auf.",
+        "links": [
+          {
+            "label": "Offizielle Wallets und Downloads",
+            "href": "#wallet"
+          }
+        ]
+      },
+      "relaunch": {
+        "question": "Warum hat Qwertycoin eine neue Blockchain gestartet?",
+        "answer": "Die Übergangspläne wurden bereits 2023 diskutiert. Der Übergang war von der Community inspiriert und zwischen Community-Mitgliedern und Entwicklern gemeinsam abgestimmt. Dazu gehörten ein 1.000:1-Swap, ein anderer Mining-Algorithmus und eine Erneuerung der Codebasis, um die Probleme des auf 2018 zurückgehenden Codestands anzugehen. Auch die Unterstützung für den Betrieb des alten Netzwerks war zurückgegangen, sodass die Infrastruktur von zu wenigen Betreibern abhing. Die separate Blockchain von 2026 nutzt RandomX Proof of Work und setzt auf erneuerter Codebasis den lange gewünschten EPoSe-Mechanismus zur Qualifikation und Belohnung von Service Nodes um."
+      },
+      "1000-to-1": {
+        "question": "Bedeutet 1.000:1, dass ich meine alten Coins jetzt umtauschen kann?",
+        "answer": "Nein. Das Verhältnis 1.000:1 bezieht sich auf den historischen Swap-Wunsch der Community. Es ist kein verfügbares Umtauschangebot für Guthaben, die auf der alten Blockchain verblieben sind. Aus einem alten Wallet-Guthaben entsteht kein Anspruch auf diesen Betrag geteilt durch 1.000 im aktuellen Netzwerk."
+      },
+      "backups": {
+        "question": "Was soll ich tun, wenn ich noch eine alte Wallet habe?",
+        "answer": "Bewahre Wallet-Datei, Seed und private Schlüssel sicher auf. Gib deinen Seed oder private Schlüssel niemals an Personen weiter, die eine Migration oder Wiederherstellung des Guthabens anbieten. Falls du außerdem eine vollständige Sicherung der alten Blockchain hast, kontaktiere das Projekt über die offiziellen Kanäle. Eine Blockchain-Sicherung ist etwas anderes als eine Wallet-Sicherung. Versende keine Wallet-Dateien oder geheimen Schlüssel.\n\nDas heutige Projekt kann dieses alte Guthaben nicht in die neue Blockchain importieren. Nutze für die Teilnahme am aktuellen Netzwerk eine unterstützte Wallet von der offiziellen Qwertycoin-Website. Schau regelmäßig in die offiziellen Projektankündigungen, da größere Netzwerkänderungen Handlungen der Inhaber erfordern können.",
+        "links": [
+          {
+            "label": "Offizielle Projektkanäle",
+            "href": "#community"
+          },
+          {
+            "label": "Offizielle Wallets und Downloads",
+            "href": "#wallet"
+          }
+        ]
+      },
+      "keys": {
+        "question": "Sind alte Wallets und private Schlüssel ungültig geworden?",
+        "answer": "Nicht allein durch den Netzwerkneustart. Alte Wallet-Dateien und private Schlüssel wurden nicht pauschal ungültig gemacht. Schlüssel allein enthalten jedoch nicht die Blockchain-Historie, die zum Auffinden und Prüfen eines Guthabens benötigt wird. Das heutige Team besitzt keine Kopie der alten Blockchain mehr, betreibt diese Infrastruktur nicht mehr und kennt keine verbliebene aktive vollständige Legacy-Node. Das beweist nicht, dass keine private Sicherung existiert. Alte Wallets werden im Netzwerk von 2026 nicht unterstützt; ihre alten Guthaben können nicht importiert werden."
+      },
+      "chain-recovery": {
+        "question": "Könnte jemand die alte Blockchain aus einer Sicherung wiederherstellen?",
+        "answer": "Eine vollständige, intakte Kopie der alten Blockchain könnte mit kompatibler Software die Wiederherstellung ihrer Historie und deren Weitergabe an andere Nodes ermöglichen. Eine einzige erhaltene vollständige Kopie kann genügen, um diese Historie zu bewahren. Für neue Transaktionen wären zusätzlich Miner und ein funktionierendes Netzwerk nötig. Eine Wallet-Datei oder ein Seed allein kann nicht die gesamte Blockchain rekonstruieren. Die Wiederherstellung der alten Chain würde nur das alte Netzwerk wiederherstellen und niemals Coins oder Guthaben auf das Netzwerk von 2026 übertragen. Ohne Prüfung der vorhandenen Blockchain-Daten und Software lässt sich eine Wiederherstellung nicht garantieren."
+      },
+      "transition-token": {
+        "question": "Warum wurde 2025 ein vorübergehender Übergangstoken geschaffen?",
+        "answer": "Nach den seit 2023 geführten Diskussionen wurde der von der Community inspirierte Übergang gemeinsam mit den Entwicklern abgestimmt. Der 2025 geschaffene Transporttoken sollte die Guthaben teilnehmender Inhaber während des Übergangs abbilden und eine mögliche spätere Anrechnung bei einem Nachfolgenetzwerk erleichtern. Damit sollte ein Weg offenbleiben, Teilnehmer des ursprünglichen Qwertycoin-Projekts von 2018 wieder einzubinden.\n\nDieser historische Zweck ist keine Zusage einer heutigen oder zukünftigen Auszahlung. Token-Guthaben sind nicht automatisch im aktuellen Netzwerk einlösbar. Eine mögliche Beteiligung von Übergangstoken-Inhabern ist weiterhin Planung; bestätigte Regelungen werden gegebenenfalls offiziell angekündigt. Guthaben der alten Blockchain und Bestände an Übergangstoken sind getrennte Sachverhalte. Weder eine wiederhergestellte alte Wallet noch das historische Verhältnis 1.000:1 erzeugt automatisch ein Guthaben auf der Chain von 2026.",
+        "links": [
+          {
+            "label": "Historische Ankündigung von 2025 — kein aktuelles Swap-Angebot",
+            "href": "https://bitcointalk.org/index.php?topic=5552541.0"
+          }
+        ]
+      },
+      "network-support": {
+        "question": "Warum wurde der Betrieb des alten Netzwerks eingestellt, und wie hilft EPoSe?",
+        "answer": "Eine Blockchain braucht Menschen, die Nodes betreiben, ihre Historie speichern und verbreiten, Software pflegen und Blöcke minen. Das kostet Zeit, Hardware und Strom; bei gehosteter Infrastruktur kommen laufende Serverkosten hinzu. Wer QWC von einem anderen Inhaber an einer Börse kauft, bezahlt den Verkäufer und finanziert damit nicht automatisch Entwicklung oder Infrastruktur. Eine Offline-Wallet schützt Schlüssel, hält aber das Netzwerk nicht am Laufen.\n\nNach Angaben des Projektteams ging die unabhängige Unterstützung für das alte Netzwerk nach und nach verloren. In seiner letzten Betriebsphase 2025 waren nur noch zwei aktive Server bekannt. Diese wurden schließlich wegen fehlender Nutzer und Aktivität abgeschaltet. Von freiwilligen Betreibern kann nicht erwartet werden, Kosten unbegrenzt selbst zu tragen.\n\nDas Netzwerk von 2026 verbindet RandomX Proof of Work mit EPoSe. EPoSe belohnt qualifizierte Service-Node-Betreiber für ihren Infrastrukturbeitrag und schafft einen Anreiz zur unabhängigen Teilnahme. Es beseitigt weder Betriebskosten noch garantiert es Rentabilität; Miner und eine aktive Community bleiben notwendig."
+      },
+      "no-premine": {
+        "question": "Haben Entwickler beim Neustart alte Guthaben oder eine Sonderzuteilung erhalten?",
+        "answer": "Nein. Das Netzwerk von 2026 startete ohne Premine und ohne reservierte Entwicklerzuteilung. Auch alte Entwicklerguthaben wurden nicht automatisch übernommen. Für Entwickler und andere Teilnehmer gelten dieselben Protokollregeln: Coins müssen nach den Regeln des aktuellen Netzwerks erworben oder verdient werden, etwa durch Mining oder Belohnungen für qualifizierte Service Nodes. Das bedeutet nicht, dass alle dieselben Verluste erlitten haben, dieselben Mittel besitzen oder dieselben Mining-Ergebnisse erzielen. Die neue technische Grundlage macht Verluste aus dem alten Netzwerk nicht ungeschehen."
+      }
+    }
   },
   "serviceNodes": {
     "eyebrow": "Service Nodes",
@@ -631,7 +692,7 @@
       }
     ],
     "noteTitle": "Kompatibilitätshinweis",
-    "noteBody": "Das heutige QWC-Netzwerk ist von der früheren Chain getrennt. Alte Wallet-Software und Blockchain-Daten sind mit diesem Netzwerk nicht kompatibel."
+    "noteBody": "Die aktuelle Blockchain wurde 2026 mit eigener Genesis gestartet. Alte Wallet-Software ist damit nicht kompatibel; Guthaben der alten Blockchain lassen sich nicht importieren oder übertragen. Die Wiederherstellung einer Wallet des aktuellen Netzwerks ist ein anderer Vorgang. Ein Wallet-Update ist kein Netzwerk-Swap."
   },
   "network": {
     "eyebrow": "Netzwerk",
@@ -789,7 +850,7 @@
         "body": "Qwertycoin startet mit einer neuen Blockchain für vertrauliche Zahlungen, offenem RandomX-Mining und EPoSE-Belohnungen für Netzwerkdienste."
       }
     ],
-    "alert": "Das heutige QWC-Netzwerk ist von der früheren Chain getrennt. Alte Wallet-Software und Blockchain-Daten sind mit diesem Netzwerk nicht kompatibel."
+    "alert": "Die aktuelle Blockchain wurde 2026 mit eigener Genesis gestartet. Alte Wallet-Software ist damit nicht kompatibel; Guthaben der alten Blockchain lassen sich nicht importieren oder übertragen. Die Wiederherstellung einer Wallet des aktuellen Netzwerks ist ein anderer Vorgang. Ein Wallet-Update ist kein Netzwerk-Swap."
   },
   "developers": {
     "eyebrow": "Entwickler",

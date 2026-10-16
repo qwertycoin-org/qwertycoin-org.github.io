@@ -37,6 +37,29 @@ commands.
 
 ## Meaning Boundaries
 
+### Legacy-network terminology
+
+| Language | Legacy blockchain | Transition / transport token | Private key |
+| --- | --- | --- | --- |
+| English | legacy blockchain | transition / transport token | private key |
+| Deutsch | alte Blockchain | Übergangs- / Transporttoken | privater Schlüssel |
+| 简体中文 | 旧区块链 | 过渡代币 / 承载代币 | 私钥 |
+| Nederlands | oude blockchain | overgangstoken / transporttoken | privésleutel |
+| Esperanto | malnova blokĉeno | transira / transporta ĵetono | privata ŝlosilo |
+| Français | ancienne blockchain | jeton de transition / de transfert | clé privée |
+| Italiano | vecchia blockchain | token di transizione / di trasporto | chiave privata |
+| 日本語 | 旧ブロックチェーン | 移行トークン / 橋渡し用トークン | 秘密鍵 |
+| lojban | lo purci bloku porsi | lo zasni jdini sinxa | lo sivni ckiku |
+| Português | blockchain antiga | token de transição / de transporte | chave privada |
+| Русский | старый блокчейн | переходный / транспортный токен | закрытый ключ |
+| Español | cadena de bloques antigua | token de transición / de transporte | clave privada |
+
+The Lojban and Esperanto additions require fluent review; see the concrete
+questions in [FAQ_LEGACY_REVIEW.md](FAQ_LEGACY_REVIEW.md). In the Lojban FAQ,
+`lo xruti valsi` is a shortened descriptive form for the recovery phrase.
+
+### Protocol and economic boundaries
+
 - A registered node is not necessarily a qualified Service Node.
 - Qualification or reward eligibility never guarantees a payment.
 - Mining rewards and EPoSe service rewards are separate mechanisms.
@@ -45,3 +68,10 @@ commands.
 - Lojban phrases above are deliberately descriptive and provisional. They must
   receive fluent community review before being treated as normative Lojban
   terminology.
+- Current-network wallet restoration, legacy-wallet reconstruction using keys
+  and available legacy-chain data, restarting the legacy network, and any
+  separately announced transition-token participation are distinct operations.
+- The historical thousand-to-one proposal is not a current exchange offer or
+  entitlement. Legacy balances cannot be credited to the current chain.
+- EPoSe qualifies and rewards service nodes; RandomX remains responsible for
+  Proof of Work. Infrastructure rewards do not guarantee profit.

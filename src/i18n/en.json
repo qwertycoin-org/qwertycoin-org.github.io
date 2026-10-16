@@ -89,7 +89,7 @@
         "kind": "wallet",
         "badge": "USE QWC",
         "title": "Open a wallet",
-        "body": "Create or restore a QWC wallet in your browser, then send and receive private payments.",
+        "body": "Create or restore a QWC wallet for the current network in your browser, then send and receive private payments. This does not import a balance from the legacy blockchain.",
         "cta": "Open Web Wallet"
       },
       {
@@ -304,8 +304,8 @@
     "rewardFormulaCaption": "EPoSe quorum, qualification, recipient rotation and service reward — a compact representation of the active consensus rules."
   },
   "faq": {
-    "eyebrow": "EPoSe FAQ",
-    "title": "Short answers for new operators.",
+    "eyebrow": "Questions & answers",
+    "title": "Wallets, the network and service nodes.",
     "items": [
       {
         "question": "What is Qwertycoin?",
@@ -313,11 +313,7 @@
       },
       {
         "question": "How do I use the Web Wallet?",
-        "answer": "Open the official Web Wallet, create or restore a wallet there and follow its safety instructions. The main website never processes wallet keys."
-      },
-      {
-        "question": "Can I use an old QWC wallet?",
-        "answer": "No. The current QWC network is separate from the earlier chain. Legacy wallet software and blockchain data are not compatible with this network."
+        "answer": "Open the official Web Wallet to create or restore a wallet for the current network and follow its safety instructions. Restoring a current-network wallet is not a way to import balances from the legacy blockchain. The main website never processes wallet keys."
       },
       {
         "question": "Does EPoSe replace mining?",
@@ -347,7 +343,72 @@
         "question": "Why is EPoSe not Proof of Stake?",
         "answer": "EPoSe rewards proven service rather than locked stake. Service Nodes verify blockchain data like other full nodes, while RandomX miners perform proof-of-work block production."
       }
-    ]
+    ],
+    "legacyTitle": "Legacy wallets and network relaunch",
+    "legacyItems": {
+      "balances": {
+        "question": "Can I transfer my old Qwertycoin balance to the current network?",
+        "answer": "No. Balances from the legacy Qwertycoin blockchain cannot be imported, transferred or credited to the current network. Qwertycoin launched a separate blockchain with a fresh genesis in 2026. Updating a wallet, synchronizing it or entering an old seed does not move coins between these networks."
+      },
+      "wallets": {
+        "question": "Can I use a wallet from before the 2026 relaunch?",
+        "answer": "Wallets built for the legacy blockchain are not compatible with the current network. Download a supported wallet through the official Qwertycoin website and create a wallet for the current network. This does not recover or transfer an old balance. Keep existing wallet backups and private keys secure.",
+        "links": [
+          {
+            "label": "Official wallets and downloads",
+            "href": "#wallet"
+          }
+        ]
+      },
+      "relaunch": {
+        "question": "Why did Qwertycoin launch a new blockchain?",
+        "answer": "Transition plans were already being discussed in 2023. The transition was inspired by the community and agreed jointly by community members and developers. It included a 1,000:1 swap, a different mining algorithm and a rebuild to address the problems of the legacy codebase dating back to 2018. Support for maintaining the old network had also declined, leaving its infrastructure dependent on too few operators. The separate 2026 blockchain uses RandomX Proof of Work and implements the long-awaited EPoSe service-node qualification and reward mechanism on a renewed codebase."
+      },
+      "1000-to-1": {
+        "question": "Does the 1,000:1 ratio mean I can exchange my old coins now?",
+        "answer": "No. The 1,000:1 ratio refers to the community's historical swap proposal. It is not an exchange service available for balances remaining on the legacy blockchain. An old wallet balance does not create a claim to that balance divided by 1,000 on the current network."
+      },
+      "backups": {
+        "question": "What should I do if I still have an old wallet?",
+        "answer": "Keep the wallet file, seed and private keys secure. Never disclose your seed or private keys to anyone offering to migrate or recover the balance. If you also have a full backup of the legacy blockchain, contact the project through its official channels. A blockchain backup is different from a wallet backup; do not send wallet files or secret keys.\n\nThe current project cannot import that legacy balance into the new blockchain. To participate in the current network, use a supported wallet from the official Qwertycoin website. Check official project announcements regularly, as significant network changes can require action from holders.",
+        "links": [
+          {
+            "label": "Official project channels",
+            "href": "#community"
+          },
+          {
+            "label": "Official wallets and downloads",
+            "href": "#wallet"
+          }
+        ]
+      },
+      "keys": {
+        "question": "Have old wallets and private keys become invalid?",
+        "answer": "Not simply because the network was relaunched. Old wallet files and private keys have not been universally invalidated. Keys alone do not contain the blockchain history needed to locate and verify a balance. The current team no longer holds a copy of the legacy blockchain, no longer operates that infrastructure and is not aware of a surviving active full node. This does not prove that no private backup exists. Legacy wallets are not supported on the 2026 network, and their old balances cannot be imported into it."
+      },
+      "chain-recovery": {
+        "question": "Could someone restore the old blockchain from a backup?",
+        "answer": "A complete, intact copy of the legacy blockchain could allow its history to be restored using compatible software and shared with other nodes. One surviving full copy can be enough to preserve that history. Processing new transactions would also require miners and a functioning network. A wallet file or seed alone cannot reconstruct the entire blockchain. Restoring the old chain would only restore the legacy network; it would never transfer its coins or balances into the 2026 network. Recovery cannot be guaranteed without examining the available blockchain data and software."
+      },
+      "transition-token": {
+        "question": "Why was a temporary transition token created in 2025?",
+        "answer": "Following discussions that began in 2023, the community-inspired transition was agreed jointly with the developers. The temporary transport token created in 2025 was intended to represent participating holders' balances during the transition and make a possible future allocation easier to account for if a successor network was launched. Its purpose was to preserve a route for participants from the original Qwertycoin project launched in 2018 to become involved again.\n\nThis historical purpose is not a promise of a current or future payout, and token balances are not automatically redeemable on the current network. Possible participation for transition-token holders remains in the planning stage; any confirmed arrangements will be announced through official channels. Legacy-chain balances and transition-token holdings are separate matters. Neither a restored old wallet nor the historical 1,000:1 ratio creates an automatic balance on the 2026 chain.",
+        "links": [
+          {
+            "label": "Historical 2025 announcement — not a current swap offer",
+            "href": "https://bitcointalk.org/index.php?topic=5552541.0"
+          }
+        ]
+      },
+      "network-support": {
+        "question": "Why did the old network stop operating, and how does EPoSe help?",
+        "answer": "A blockchain needs people to run nodes, store and distribute its history, maintain software and mine blocks. These activities require time, equipment, electricity and, for hosted infrastructure, ongoing server costs. Buying QWC from another holder on an exchange pays the seller; it does not automatically fund development or infrastructure. An offline wallet protects keys but does not keep the network running.\n\nAccording to the project team, independent support for the old network gradually disappeared. By its final operating period in 2025, only two active servers were known to remain; these were eventually shut down because of the lack of users and activity. Voluntary operators cannot be expected to cover costs indefinitely.\n\nThe 2026 network combines RandomX Proof of Work with EPoSe, which rewards qualifying service-node operators for contributing infrastructure. This encourages independent participation but does not eliminate operating costs, guarantee profitability or replace miners and an active community."
+      },
+      "no-premine": {
+        "question": "Did developers receive old balances or a special allocation in the relaunch?",
+        "answer": "No. The 2026 network launched without a premine or a reserved developer allocation. Developers' legacy balances were not automatically carried over either. The same protocol rules apply to developers and other participants: coins must be acquired or earned under the current network's rules, including mining or qualifying service-node rewards. This does not mean that everyone suffered the same losses, has the same resources or achieves the same mining results. The new technical foundation does not erase losses from the old network."
+      }
+    }
   },
   "serviceNodes": {
     "eyebrow": "Service Nodes",
@@ -631,7 +692,7 @@
       }
     ],
     "noteTitle": "Compatibility note",
-    "noteBody": "The current QWC network is separate from the earlier chain. Legacy wallet software and blockchain data are not compatible with this network."
+    "noteBody": "The current blockchain started with its own genesis in 2026. Legacy wallet software is not compatible with it, and legacy balances cannot be imported or transferred to it. Restoring a wallet for the current network is a separate operation; a wallet update is not a network swap."
   },
   "network": {
     "eyebrow": "Network",
@@ -789,7 +850,7 @@
         "body": "Qwertycoin starts a new network with private payments, RandomX mining and EPoSe service rewards."
       }
     ],
-    "alert": "The current QWC network is separate from the earlier chain. Legacy wallet software and blockchain data are not compatible with this network."
+    "alert": "The current blockchain started with its own genesis in 2026. Legacy wallet software is not compatible with it, and legacy balances cannot be imported or transferred to it. Restoring a wallet for the current network is a separate operation; a wallet update is not a network swap."
   },
   "developers": {
     "eyebrow": "Developers",
