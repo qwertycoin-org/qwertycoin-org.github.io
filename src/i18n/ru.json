@@ -436,7 +436,7 @@
       {
         "badge": "ДОСТУПНО",
         "title": "Настольные кошельки",
-        "body": "Qwertycoin GUI 2.0.3 доступен для Windows, macOS, Apple Silicon и Linux, x86_64.",
+        "body": "Qwertycoin GUI 2.0.4 доступен для Windows, macOS, Apple Silicon и Linux, x86_64.",
         "icon": "development.svg"
       }
     ]
@@ -444,13 +444,13 @@
   "releases": {
     "eyebrow": "Кошельки",
     "title": "Кошельки и исходный код",
-    "body": "Открыт первый этап публичного тестирования QWC. Инструменты командной строки Web Wallet, Qwertycoin GUI 2.0.3, Core v2.0.3, официальный образ Docker и исходный код уже доступны.",
+    "body": "Открыт первый этап публичного тестирования QWC. Инструменты командной строки Web Wallet, Qwertycoin GUI 2.0.4, Core v2.0.4, официальный образ Docker и исходный код уже доступны.",
     "cards": [
       {
-        "badge": "ДОСТУПНО · v2.0.3",
+        "badge": "ДОСТУПНО · v2.0.4",
         "badgeClass": "mainnet",
         "title": "Настольные кошельки",
-        "body": "Загрузите текущую версию Qwertycoin GUI из официального выпуска GitHub. Пользователи GUI v2.0.2 должны установить v2.0.3 один раз с помощью прямой загрузки, поскольку программа обновления v2.0.2 не может следовать перенаправлению релиз-активов GitHub. Предпочтительными установщиками являются Windows Setup и macOS DMG; портативные пакеты ZIP и TAR.GZ остаются доступными в качестве альтернативы. Перед использованием проверьте загрузку и контрольную сумму.",
+        "body": "Загрузите текущую версию Qwertycoin GUI из официального выпуска GitHub. Пользователи GUI v2.0.2 должны установить v2.0.4 один раз с помощью прямой загрузки, поскольку программа обновления v2.0.2 не может следовать перенаправлению релиз-активов GitHub. Предпочтительными установщиками являются Windows Setup и macOS DMG; портативные пакеты ZIP и TAR.GZ остаются доступными в качестве альтернативы. Перед использованием проверьте загрузку и контрольную сумму.",
         "note": "Примечание о целостности: SHA256SUMS проверяет загруженные байты, а не личность издателя. Linux и Windows не имеют подписи; macOS имеет ad hoc-подпись и не нотаризован.",
         "glyph": "GUI",
         "downloadsLayout": "rows",
@@ -460,15 +460,15 @@
             "icon": "WIN",
             "downloadLabel": "Скачать установку Windows",
             "compatibility": "Протестировано на бегунке Windows Server 2025 · без подписи; старые версии Windows не проверялись",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64-setup.exe",
-            "sha256": "7f8c159fa956db2b6a9b55fd47600a1fe68f32dd26d1e665877a9cc37758eadd",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-windows-x86_64-setup.exe",
+            "sha256": "ab0df6ebc50e27f3b3e8098621f1030311b91963132216f1e2d5f27b6844ff4c",
             "shaLabel": "Настройка SHA-256",
             "preferredLabel": "Предпочитаемый установщик",
             "alternatives": [
               {
                 "downloadLabel": "Скачать портативный Windows ZIP",
-                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64.zip",
-                "sha256": "b4b2c28a5cee6ca7bd3f423de5b340706ee216a31bfa23d620b7a67150a197de",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-windows-x86_64.zip",
+                "sha256": "554abfce80619cf171b4629b10d5b4ecdfdb87afbff08ab027074cf048e7b7b1",
                 "shaLabel": "Почтовый индекс SHA-256"
               }
             ]
@@ -478,15 +478,15 @@
             "icon": "MAC",
             "downloadLabel": "Скачать macOS DMG",
             "compatibility": "macOS 15 или новее",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.dmg",
-            "sha256": "a4736597387770250b795fd1a4397693990522cf673cfb29d6cf9bb855071200",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-macos-arm64.dmg",
+            "sha256": "7709be6e220b4c8eccfb019cc0a42badb0c1727987d04fe63eccb7a00b313075",
             "shaLabel": "DMG SHA-256",
             "preferredLabel": "Предпочтительная загрузка",
             "alternatives": [
               {
                 "downloadLabel": "Скачать macOS TAR.GZ",
-                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.tar.gz",
-                "sha256": "ce239650afcc8eacee7b13d35f076a3ea617a81d4728b22d53d1ecc28a97fe26",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-macos-arm64.tar.gz",
+                "sha256": "e3b4a352d1ddc645ccb2a83b205c18cdf023f11fc30071b7348a09de956451a1",
                 "shaLabel": "TAR.GZ SHA-256"
               }
             ]
@@ -496,19 +496,19 @@
             "icon": "LNX",
             "downloadLabel": "Скачать Linux TAR.GZ",
             "compatibility": "Потолок совместимости GLIBC 2.35",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-linux-x86_64.tar.gz",
-            "sha256": "55cc8754df00c36017b7a0ffa35b90d3878c95477202059b6c596b5163c47680"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-linux-x86_64.tar.gz",
+            "sha256": "8dd1e9b2c3c88115b5a8161be3ce9f7f5b555237a5efc5809e253b51a73801c2"
           }
         ],
         "verificationLinks": [
           {
             "label": "SHA256SUMS",
             "icon": "SHA",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/SHA256SUMS"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/SHA256SUMS"
           },
           {
             "label": "Примечания к выпуску",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.3"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.4"
           },
           {
             "label": "Сообщить о проблеме",
@@ -518,7 +518,7 @@
         ]
       },
       {
-        "badge": "ДОСТУПНО · v2.0.3",
+        "badge": "ДОСТУПНО · v2.0.4",
         "badgeClass": "mainnet",
         "title": "Основные инструменты командной строки",
         "body": "Официальные пакеты Qwertycoin, содержащие qwertycoind, qwertycoin-wallet-cli и qwertycoin-wallet-rpc. Перед использованием проверьте архив и контрольную сумму; примечания к выпуску и статус аудита документируются для каждого выпуска GitHub.",
@@ -530,35 +530,35 @@
             "icon": "WIN",
             "downloadLabel": "Скачать Windows ZIP",
             "compatibility": "Протестировано на бегунке Windows Server 2025; нет более широкого заявления об устаревшем Windows",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-windows-x86_64.zip",
-            "sha256": "b0bab23137d5a4308b3d1cd582c17fd0069f392c265a74a1e0fd0f15b4becaaf"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/qwertycoin-v2.0.4-windows-x86_64.zip",
+            "sha256": "5ae459b2de491a3242b253f613ce1bb680d42c25c32151b78d3729b9ed984240"
           },
           {
             "label": "macOS Apple Silicon",
             "icon": "MAC",
             "downloadLabel": "Скачать macOS TAR.GZ",
             "compatibility": "macOS 15 или новее",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-macos-arm64.tar.gz",
-            "sha256": "c23194aff092d0cc8ef6eed9ce4a6d45ccb06c7b760b05e7fce0cd9992962fdf"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/qwertycoin-v2.0.4-macos-arm64.tar.gz",
+            "sha256": "215283f848cba9daade722433a95d5c906975814d9ead743b16f2149af4d088a"
           },
           {
             "label": "Linux x86_64",
             "icon": "LNX",
             "downloadLabel": "Скачать Linux TAR.GZ",
             "compatibility": "Потолок совместимости GLIBC 2.35/GLIBCXX 3.4.30",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-linux-x86_64.tar.gz",
-            "sha256": "8df9d4bd22610228f3330aaac348776fd86bcd853751cf9472e0fc4db271b675"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/qwertycoin-v2.0.4-linux-x86_64.tar.gz",
+            "sha256": "a93af785a5b5bb56049aab4f5083c1191d6282c313b9ba1ec156d3c497a79d92"
           }
         ],
         "verificationLinks": [
           {
             "label": "SHA256SUMS",
             "icon": "SHA",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/SHA256SUMS"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/SHA256SUMS"
           },
           {
             "label": "Примечания к выпуску",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.4"
           },
           {
             "label": "Сообщить о проблеме",
@@ -568,7 +568,7 @@
         ]
       },
       {
-        "badge": "ДОСТУПНО · 2.0.3",
+        "badge": "ДОСТУПНО · 2.0.4",
         "badgeClass": "mainnet",
         "title": "Изображение Docker",
         "body": "Запустите проверенный выпуск Core как контейнер Linux/amd64 без полномочий root. Mainnet и демон используются по умолчанию; постоянный именованный том хранит данные цепочки обновлений контейнера.",
@@ -595,7 +595,7 @@
           },
           {
             "label": "Основные примечания к выпуску",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.4"
           }
         ]
       },
