@@ -89,7 +89,7 @@
         "kind": "wallet",
         "badge": "USA QWC",
         "title": "Apri un portafoglio",
-        "body": "Crea o ripristina un portafoglio QWC nel tuo browser, quindi invia e ricevi pagamenti privati.",
+        "body": "Crea o ripristina nel browser un portafoglio QWC per la rete attuale, poi invia e ricevi pagamenti riservati. Questa operazione non importa saldi dalla vecchia blockchain.",
         "cta": "Apri Web Wallet"
       },
       {
@@ -304,8 +304,8 @@
     "rewardFormulaCaption": "Quorum EPoSe, qualifica, rotazione dei destinatari e ricompensa del servizio: una rappresentazione compatta delle regole del consenso attivo."
   },
   "faq": {
-    "eyebrow": "Domande frequenti su EPoSe",
-    "title": "Risposte brevi per i nuovi operatori.",
+    "eyebrow": "Domande e risposte",
+    "title": "Portafogli, rete e nodi di servizio.",
     "items": [
       {
         "question": "Cos'è Qwertycoin?",
@@ -313,11 +313,7 @@
       },
       {
         "question": "Come utilizzo lo Web Wallet?",
-        "answer": "Apri lo Web Wallet ufficiale, crea o ripristina un portafoglio lì e segui le sue istruzioni di sicurezza. Il sito Web principale non elabora mai le chiavi del portafoglio."
-      },
-      {
-        "question": "Posso usare un vecchio portafoglio QWC?",
-        "answer": "No. L'attuale rete QWC è separata dalla catena precedente. Il software del portafoglio legacy e i dati blockchain non sono compatibili con questa rete."
+        "answer": "Apri il Web Wallet ufficiale per creare o ripristinare un portafoglio della rete attuale e segui le istruzioni di sicurezza. Ripristinare un portafoglio della rete attuale non permette di importare un saldo dalla vecchia blockchain. Il sito principale non elabora mai le chiavi dei portafogli."
       },
       {
         "question": "EPoSe sostituisce il mining?",
@@ -347,7 +343,72 @@
         "question": "Perché EPoSe non è Proof of Stake?",
         "answer": "EPoSe premia il servizio comprovato piuttosto che la puntata bloccata. I nodi di servizio verificano i dati blockchain come gli altri nodi completi, mentre i miner RandomX eseguono la produzione di blocchi proof-of-work."
       }
-    ]
+    ],
+    "legacyTitle": "Vecchi portafogli e rilancio della rete",
+    "legacyItems": {
+      "balances": {
+        "question": "Posso trasferire il mio vecchio saldo Qwertycoin alla rete attuale?",
+        "answer": "No. I saldi della vecchia blockchain Qwertycoin non possono essere importati, trasferiti o accreditati sulla rete attuale. Nel 2026 Qwertycoin ha avviato una blockchain separata con un nuovo blocco di genesi. Aggiornare o sincronizzare un portafoglio, oppure inserire una vecchia frase di recupero, non sposta monete tra queste reti."
+      },
+      "wallets": {
+        "question": "Posso usare un portafoglio precedente al rilancio del 2026?",
+        "answer": "I portafogli realizzati per la vecchia blockchain non sono compatibili con la rete attuale. Scarica un portafoglio supportato dal sito ufficiale di Qwertycoin e crea un portafoglio per la rete attuale. Questo non recupera né trasferisce un vecchio saldo. Conserva al sicuro i backup esistenti e le chiavi private.",
+        "links": [
+          {
+            "label": "Portafogli e download ufficiali",
+            "href": "#wallet"
+          }
+        ]
+      },
+      "relaunch": {
+        "question": "Perché Qwertycoin ha avviato una nuova blockchain?",
+        "answer": "I piani di transizione erano già in discussione nel 2023. La transizione è nata da un'iniziativa della comunità ed è stata concordata insieme da membri della comunità e sviluppatori. Comprendeva uno swap di 1.000:1, un diverso algoritmo di mining e una ricostruzione per affrontare i problemi del vecchio codice risalente al 2018. Anche il sostegno alla manutenzione della vecchia rete era diminuito, lasciando l'infrastruttura dipendente da troppo pochi operatori. La blockchain separata del 2026 utilizza RandomX Proof of Work e implementa, su una base di codice rinnovata, l'atteso meccanismo EPoSe di qualificazione e ricompensa dei nodi di servizio."
+      },
+      "1000-to-1": {
+        "question": "Il rapporto 1.000:1 significa che posso cambiare le mie vecchie monete adesso?",
+        "answer": "No. Il rapporto 1.000:1 si riferisce alla proposta storica di swap della comunità. Non è un servizio di cambio disponibile per i saldi rimasti sulla vecchia blockchain. Un saldo in un vecchio portafoglio non dà diritto a ricevere quell'importo diviso per 1.000 sulla rete attuale."
+      },
+      "backups": {
+        "question": "Cosa devo fare se ho ancora un vecchio portafoglio?",
+        "answer": "Conserva al sicuro il file del portafoglio, la frase di recupero e le chiavi private. Non rivelare mai la frase di recupero o le chiavi private a chi offre di migrare o recuperare il saldo. Se possiedi anche un backup completo della vecchia blockchain, contatta il progetto attraverso i canali ufficiali. Un backup della blockchain è diverso da un backup del portafoglio: non inviare file di portafogli o chiavi segrete.\n\nIl progetto attuale non può importare quel vecchio saldo nella nuova blockchain. Per partecipare alla rete attuale, usa un portafoglio supportato dal sito ufficiale di Qwertycoin. Consulta regolarmente gli annunci ufficiali: cambiamenti importanti della rete possono richiedere un intervento da parte dei detentori.",
+        "links": [
+          {
+            "label": "Canali ufficiali del progetto",
+            "href": "#community"
+          },
+          {
+            "label": "Portafogli e download ufficiali",
+            "href": "#wallet"
+          }
+        ]
+      },
+      "keys": {
+        "question": "I vecchi portafogli e le chiavi private sono diventati invalidi?",
+        "answer": "Non per il solo fatto che la rete è stata rilanciata. I vecchi file dei portafogli e le chiavi private non sono stati invalidati in modo generalizzato. Le sole chiavi, però, non contengono la cronologia della blockchain necessaria a individuare e verificare un saldo. Il team attuale non possiede più una copia della vecchia blockchain, non gestisce più quell'infrastruttura e non è a conoscenza di un vecchio nodo completo ancora attivo. Questo non dimostra che non esistano backup privati. I vecchi portafogli non sono supportati sulla rete del 2026 e i loro saldi non possono esservi importati."
+      },
+      "chain-recovery": {
+        "question": "Qualcuno potrebbe ripristinare la vecchia blockchain da un backup?",
+        "answer": "Una copia completa e integra della vecchia blockchain potrebbe consentire di ripristinarne la cronologia con software compatibile e condividerla con altri nodi. Una sola copia completa superstite può bastare a preservare quella cronologia. Elaborare nuove transazioni richiederebbe anche miner e una rete funzionante. Un file di portafoglio o una frase di recupero da soli non possono ricostruire l'intera blockchain. Ripristinare la vecchia catena ripristinerebbe soltanto la vecchia rete, senza mai trasferire monete o saldi alla rete del 2026. Senza esaminare i dati della blockchain e il software disponibili, il recupero non può essere garantito."
+      },
+      "transition-token": {
+        "question": "Perché nel 2025 è stato creato un token temporaneo di transizione?",
+        "answer": "Dopo le discussioni iniziate nel 2023, la transizione ispirata dalla comunità è stata concordata insieme agli sviluppatori. Il token temporaneo di trasporto creato nel 2025 doveva rappresentare i saldi dei detentori partecipanti durante la transizione e agevolare il conteggio di un'eventuale assegnazione futura in caso di avvio di una rete successiva. L'obiettivo era mantenere una possibilità di coinvolgere nuovamente i partecipanti al progetto Qwertycoin originale, nato nel 2018.\n\nQuesta finalità storica non è una promessa di pagamento attuale o futuro. I saldi in token non sono automaticamente riscattabili sulla rete attuale. Un'eventuale partecipazione dei detentori di token di transizione resta in fase di pianificazione; eventuali accordi confermati saranno annunciati attraverso i canali ufficiali. I saldi della vecchia catena e il possesso di token di transizione sono questioni distinte. Né il ripristino di un vecchio portafoglio né il rapporto storico 1.000:1 generano automaticamente un saldo sulla catena del 2026.",
+        "links": [
+          {
+            "label": "Annuncio storico del 2025 — non è un'offerta di swap attuale",
+            "href": "https://bitcointalk.org/index.php?topic=5552541.0"
+          }
+        ]
+      },
+      "network-support": {
+        "question": "Perché la vecchia rete ha smesso di funzionare e in che modo aiuta EPoSe?",
+        "answer": "Una blockchain ha bisogno di persone che gestiscano nodi, conservino e distribuiscano la cronologia, mantengano il software ed estraggano blocchi. Queste attività richiedono tempo, attrezzature, elettricità e, per l'infrastruttura ospitata, costi ricorrenti dei server. Acquistare QWC da un altro detentore su una piattaforma paga il venditore, ma non finanzia automaticamente sviluppo o infrastruttura. Un portafoglio offline protegge le chiavi, ma non mantiene operativa la rete.\n\nSecondo il team del progetto, il sostegno indipendente alla vecchia rete è gradualmente venuto meno. Nell'ultima fase operativa del 2025 risultavano noti soltanto due server attivi, poi spenti per mancanza di utenti e attività. Non si può pretendere che operatori volontari coprano i costi a tempo indeterminato.\n\nLa rete del 2026 combina RandomX Proof of Work con EPoSe, che ricompensa gli operatori di nodi di servizio qualificati per il contributo all'infrastruttura. Ciò incentiva la partecipazione indipendente, ma non elimina i costi operativi, non garantisce redditività e non sostituisce miner e comunità attiva."
+      },
+      "no-premine": {
+        "question": "Gli sviluppatori hanno ricevuto vecchi saldi o un'assegnazione speciale nel rilancio?",
+        "answer": "No. La rete del 2026 è partita senza premine e senza un'assegnazione riservata agli sviluppatori. Nemmeno i vecchi saldi degli sviluppatori sono stati trasferiti automaticamente. A sviluppatori e altri partecipanti si applicano le stesse regole del protocollo: le monete vanno acquistate o guadagnate secondo le regole attuali, anche tramite mining o ricompense dei nodi di servizio qualificati. Questo non significa che tutti abbiano subito le stesse perdite, dispongano delle stesse risorse o ottengano gli stessi risultati di mining. La nuova base tecnica non cancella le perdite della vecchia rete."
+      }
+    }
   },
   "serviceNodes": {
     "eyebrow": "Nodi di servizio",
@@ -631,7 +692,7 @@
       }
     ],
     "noteTitle": "Nota di compatibilità",
-    "noteBody": "L'attuale rete QWC è separata dalla catena precedente. Il software del portafoglio legacy e i dati blockchain non sono compatibili con questa rete."
+    "noteBody": "La blockchain attuale è partita nel 2026 con un proprio blocco di genesi. Il vecchio software dei portafogli non è compatibile e i vecchi saldi non possono essere importati o trasferiti. Ripristinare un portafoglio della rete attuale è un'operazione diversa: aggiornare un portafoglio non equivale a uno swap tra reti."
   },
   "network": {
     "eyebrow": "Rete",
@@ -789,7 +850,7 @@
         "body": "Qwertycoin avvia una nuova rete con pagamenti privati, mining RandomX e premi di servizio EPoSe."
       }
     ],
-    "alert": "L'attuale rete QWC è separata dalla catena precedente. Il software del portafoglio legacy e i dati blockchain non sono compatibili con questa rete."
+    "alert": "La blockchain attuale è partita nel 2026 con un proprio blocco di genesi. Il vecchio software dei portafogli non è compatibile e i vecchi saldi non possono essere importati o trasferiti. Ripristinare un portafoglio della rete attuale è un'operazione diversa: aggiornare un portafoglio non equivale a uno swap tra reti."
   },
   "developers": {
     "eyebrow": "Sviluppatori",

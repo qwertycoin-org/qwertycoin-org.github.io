@@ -1554,6 +1554,16 @@ p { margin: var(--space-3) 0 0; }
   max-width: 1000px;
 }
 
+.faq-group-title {
+  margin-top: var(--space-8);
+}
+
+#faq,
+.faq-group-title,
+.faq-list details[id] {
+  scroll-margin-top: 100px;
+}
+
 .faq-list summary {
   color: var(--color-ink);
   font-family: var(--font-display);

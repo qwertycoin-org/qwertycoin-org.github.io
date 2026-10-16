@@ -18,6 +18,17 @@ const updateLocaleTargets = () => {
 updateLocaleTargets();
 window.addEventListener("hashchange", updateLocaleTargets);
 
+// Support links reveal their answer; native details remain usable without JS.
+const revealFaqTarget = () => {
+  const target = document.getElementById(window.location.hash.slice(1));
+  if (target instanceof HTMLDetailsElement && target.closest("#faq")) {
+    target.open = true;
+    target.scrollIntoView();
+  }
+};
+revealFaqTarget();
+window.addEventListener("hashchange", revealFaqTarget);
+
 let preferredLocale = null;
 try {
   preferredLocale = localStorage.getItem("qwc-preferred-locale");

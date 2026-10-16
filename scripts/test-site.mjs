@@ -327,6 +327,29 @@ for (const [localeCode, html] of localePages) {
   }
 }
 
+// Structured answers must be the same HTML that users can reveal in the FAQ.
+for (const [localeCode, html] of localePages) {
+  const structuredData = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+    .flatMap((match) => JSON.parse(match[1])["@graph"] || []);
+  const faqPages = structuredData.filter((entry) => entry["@type"] === "FAQPage");
+  if (faqPages.length !== 1) throw new Error(`${localeCode}: expected one FAQPage`);
+  const faqSection = html.match(/<section class="section" id="faq">([\s\S]*?)<\/section>/)?.[1] || "";
+  const visibleItems = [...faqSection.matchAll(/<details(?: id="([^"]+)")?><summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/g)];
+  const questions = faqPages[0].mainEntity;
+  if (!visibleItems.length || questions.length !== visibleItems.length) {
+    throw new Error(`${localeCode}: visible and structured FAQ counts differ`);
+  }
+  const escapeQuestion = (value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
+  visibleItems.forEach((item, index) => {
+    if (item[2] !== escapeQuestion(questions[index].name) || item[3] !== questions[index].acceptedAnswer.text) {
+      throw new Error(`${localeCode}: visible and structured FAQ item ${index} differ`);
+    }
+    if (item[1] && (html.match(new RegExp(`id="${item[1]}"`, "g")) || []).length !== 1) {
+      throw new Error(`${localeCode}: duplicate FAQ anchor ${item[1]}`);
+    }
+  });
+}
+
 for (const [localeCode, html] of localePages) {
   if (/\ssrc="https?:\/\//.test(html) || /\shref="https?:\/\/[^"]+\.(css|js)"/.test(html)) {
     throw new Error(`External scripts or stylesheets are not allowed in ${localeCode}`);

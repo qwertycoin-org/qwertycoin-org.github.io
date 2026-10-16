@@ -89,7 +89,7 @@
         "kind": "wallet",
         "badge": "ko pilno lo QWC",
         "title": "ko pilno lo jdini vasru",
-        "body": "ko zbasu gi'a xruti lo QWC jdini vasru ne lo do kibro catlu .i ba bo ko benji je cpacu lo sivni jdini",
+        "body": "ko zbasu ja xruti lo QWC jdini vasru be lo cabna samci'e ne'i lo do kibyca'o .i ba bo do ka'e sivni benji je cpacu lo jdini .i ti na gasnu lo nu nerkla lo jdini be lo purci bloku porsi",
         "cta": "ko pilno la'o gy. Web Wallet .gy."
       },
       {
@@ -304,8 +304,8 @@
     "rewardFormulaCaption": "lo la'o gy. EPoSe .gy. girzu sarcu namcu .e lo mapti .e lo te benji se porsi .e lo selfu jerna cu cmalu tarmi be lo cabna simxu tugni javni"
   },
   "faq": {
-    "eyebrow": "lo la'o gy. EPoSe .gy. preti",
-    "title": "lo tordu danfu be lo cnino jitro",
+    "eyebrow": "lo preti .e lo danfu",
+    "title": "lo jdini vasru .e lo samci'e .e lo selfu samci'e pagbu",
     "items": [
       {
         "question": "ma kau la'o gy. Qwertycoin .gy.",
@@ -313,11 +313,7 @@
       },
       {
         "question": "mi pilno la'o gy. Web Wallet .gy. ta'i ma",
-        "answer": "ko pilno lo javni la'o gy. Web Wallet .gy. gi'e zbasu gi'a xruti lo jdini vasru gi'e tezu'e lo snura gidva .i lo ralju kibro papri cu na roi pilno lo jdini vasru ckiku"
-      },
-      {
-        "question": "xu mi ka'e pilno lo purci QWC jdini vasru",
-        "answer": "na go'i .i lo cabna QWC samci'e cu drata lo purci bloku porsi .i lo purci jdini vasru sampla .e lo bloku porsi datni cu na mapti ti"
+        "answer": "ko kalri lo kulnu Web Wallet te zu'e lo nu zbasu ja xruti lo jdini vasru be lo cabna samci'e .i ko kurji lo snura javni .i lo nu xruti lo jdini vasru be lo cabna samci'e na rinka lo nu nerkla lo jdini be lo purci bloku porsi .i lo ralju kibystu na pilno lo jdini vasru ckiku"
       },
       {
         "question": "xu la'o gy. EPoSe .gy. basti lo bloku cupra",
@@ -347,7 +343,72 @@
         "question": "ki'u ma la'o gy. EPoSe .gy. na la'o gy. Proof of Stake .gy.",
         "answer": "la'o gy. EPoSe .gy. cu cnemu lo ba'e birti selfu gi'e na cnemu lo se mipri punji .i lo selfu samci'e pagbu cu cipra lo bloku porsi datni tai lo drata mulno samci'e pagbu ca lo nu lo la'o gy. RandomX .gy. bloku cupra cu jarco lo se gunka gi'e cupra lo bloku"
       }
-    ]
+    ],
+    "legacyTitle": "lo purci jdini vasru .e lo nu za'u re'u cfari lo samci'e",
+    "legacyItems": {
+      "balances": {
+        "question": "xu mi ka'e benji lo mi purci Qwertycoin jdini lo cabna samci'e",
+        "answer": "na go'i .i lo jdini be lo purci Qwertycoin bloku porsi na ka'e nerkla ja se benji ja se jmina lo jdini be lo cabna samci'e .i la'o gy. Qwertycoin .gy. cu cfari lo drata bloku porsi noi se krasi lo cnino pamoi bloku ca lo nanca be li 2026 .i lo nu cnino gasnu ja datni sarxe lo jdini vasru ja ciska lo purci xruti valsi na benji lo jdini fi lo pa samci'e fe lo drata"
+      },
+      "wallets": {
+        "question": "xu mi ka'e pilno lo jdini vasru poi purci lo nanca be li 2026 ke samci'e nuncfari",
+        "answer": "lo jdini vasru sampla be lo purci bloku porsi na mapti lo cabna samci'e .i ko cpacu lo se sarji sampla fi lo kulnu Qwertycoin kibystu gi'e zbasu lo jdini vasru be lo cabna samci'e .i ti na xruti ja benji lo purci jdini .i ko snura ralte lo do purci jdini vasru datni fukpi .e lo sivni ckiku",
+        "links": [
+          {
+            "label": "lo kulnu jdini vasru sampla .e lo se cpacu",
+            "href": "#wallet"
+          }
+        ]
+      },
+      "relaunch": {
+        "question": "ki'u ma la'o gy. Qwertycoin .gy. cfari lo cnino bloku porsi",
+        "answer": "lo nu galfi lo samci'e cu se casnu co'a lo nanca be li 2023 .i lo cecmu cu sidju lo nu cfari lo selpla .i lo cecmu prenu .e lo sampla zbasu cu kansi'u tugni lo selpla .i lo selpla cu vasru lo nu basti lo jdini be li 1000:1 kei .e lo nu galfi lo bloku cupra tadji kei .e lo nu za'u re'u zbasu lo sampla te zu'e lo nu cikre lo nabmi be lo purci sampla poi se krasi lo nanca be li 2018 .i lo nu sarji lo purci samci'e cu mleca .i dukse lo ka so'u lo jicmu samci'e jitro .i lo drata bloku porsi be lo nanca be li 2026 cu pilno la'o gy. RandomX .gy. te zu'e lo nu jarco lo se gunka gi'e zbasu lo bloku .i lo se cnino sampla cu pilno la'o gy. EPoSe .gy. te zu'e lo nu cipra lo ka mapti kei gi'e cnemu lo selfu samci'e pagbu .i lo cecmu cu ze'u pacna lo nu go'i"
+      },
+      "1000-to-1": {
+        "question": "xu lo 1000:1 cu sinxa lo du'u mi ca ka'e basti lo mi purci jdini",
+        "answer": "na go'i .i lo 1000:1 cu srana lo purci cecmu selpla be lo nu jdini basti .i na cabna se friti lo nu basti lo jdini poi stali lo purci bloku porsi .i lo purci jdini vasru se vasru na rinka lo nu se curmi lo nu cpacu lo ri se dilcu be li 1000 kei ne'i lo cabna samci'e"
+      },
+      "backups": {
+        "question": "mi ca ralte lo purci jdini vasru .i mi e'u zukte ma",
+        "answer": "ko snura ralte lo jdini vasru datnyvei .e lo xruti valsi .e lo sivni ckiku .i ko na jarco lo xruti valsi ja sivni ckiku lo prenu poi friti lo nu benji ja xruti lo jdini .i ganai do ji'a ralte lo mulno fukpi be lo purci bloku porsi gi ko tavla lo selpla prenu fo lo kulnu tadji .i lo bloku porsi fukpi cu drata lo jdini vasru fukpi .i ko na benji lo jdini vasru datnyvei ja mipri ckiku.\n\nlo cabna selpla na ka'e gasnu lo nu nerkla lo purci jdini lo cnino bloku porsi .i te zu'e lo nu kansa lo cabna samci'e kei ko pilno lo se sarji jdini vasru sampla poi cpacu fi lo kulnu Qwertycoin kibystu .i ko di'i tcidu lo kulnu selpla nunsku .i lo vajni samci'e nunbinxo ka'e nitcu lo nu lo jdini ponse cu zukte",
+        "links": [
+          {
+            "label": "lo kulnu tadji be lo nu tavla lo selpla prenu",
+            "href": "#community"
+          },
+          {
+            "label": "lo kulnu jdini vasru sampla .e lo se cpacu",
+            "href": "#wallet"
+          }
+        ]
+      },
+      "keys": {
+        "question": "xu lo purci jdini vasru .e lo sivni ckiku cu na drani ca lo cabna",
+        "answer": "lo nu za'u re'u cfari lo samci'e na rinka lo nu ro purci jdini vasru datnyvei ja sivni ckiku cu na drani .i lo ckiku po'o na vasru lo bloku porsi citri poi se nitcu lo nu facki je cipra lo jdini se vasru .i lo cabna selpla girzu cu na ca ralte lo purci bloku porsi fukpi gi'e na ca jitro lo purci jicmu samci'e .i lo girzu cu na djuno lo du'u da ca zukte mulno samci'e pagbu be lo purci samci'e .i ti na nibli lo du'u no sivni datni fukpi cu zasti .i lo purci jdini vasru na se sarji fi lo samci'e be lo nanca be li 2026 .i lo purci jdini na ka'e nerkla ri"
+      },
+      "chain-recovery": {
+        "question": "xu da ka'e xruti lo purci bloku porsi se pi'o lo datni fukpi",
+        "answer": "lo mulno je na spofu fukpi be lo purci bloku porsi ka'e gasnu lo nu xruti lo ri citri se pi'o lo mapti sampla gi'e benji lo citri lo drata samci'e pagbu .i pa stali mulno fukpi ka'e banzu lo nu ralte lo citri .i lo nu pruce lo cnino jdini nunbenji cu ji'a nitcu lo bloku cupra .e lo zukte samci'e .i lo jdini vasru datnyvei ja xruti valsi po'o na ka'e za'u re'u zbasu lo mulno bloku porsi .i lo nu xruti lo purci bloku porsi cu xruti lo purci samci'e po'o .i ti na za'u roi benji lo ri jdini lo samci'e be lo nanca be li 2026 .i pu lo nu cipra lo se ralte bloku porsi datni .e lo sampla kei lo nu xruti na se birti"
+      },
+      "transition-token": {
+        "question": "ki'u ma lo zasni jdini sinxa cu se zbasu ca lo nanca be li 2025 te zu'e lo nunbinxo",
+        "answer": "ba lo nu co'a casnu ca lo nanca be li 2023 kei lo cecmu cu sidju lo nu cfari lo nunbinxo selpla .i lo cecmu prenu .e lo sampla zbasu cu kansi'u tugni .i lo zasni jdini sinxa poi se zbasu ca lo nanca be li 2025 cu se platu lo nu jarco lo jdini be lo kansa ponse ca lo nunbinxo .i ri se platu ji'a lo nu frili vreji lo ka ce'u ka'e cpacu lo jdini ba lo nu da cfari lo balvi samci'e .i lo te zukte cu nu ralte lo tadji be lo nu za'u re'u kansa kei be fi lo prenu be lo pamoi Qwertycoin selpla poi cfari ca lo nanca be li 2018.\n\nlo purci te zukte na nibli lo nu nupre lo cabna ja balvi jdini nunbenji .i lo jdini sinxa se ponse na rinka lo nu zmiku cpacu lo jdini be lo cabna samci'e .i lo ka ce'u ka'e kansa kei be lo zasni jdini sinxa ponse cu ca se platu po'o .i lo se birti selpla cu ba se kulnu nunsku .i lo jdini be lo purci bloku porsi cu drata lo zasni jdini sinxa .i lo nu xruti lo purci jdini vasru ja pilno lo purci 1000:1 na rinka lo nu zmiku se jmina lo jdini be lo bloku porsi be lo nanca be li 2026",
+        "links": [
+          {
+            "label": "lo purci nanca be li 2025 nunsku .i na cabna jdini basti te friti",
+            "href": "https://bitcointalk.org/index.php?topic=5552541.0"
+          }
+        ]
+      },
+      "network-support": {
+        "question": "ki'u ma lo purci samci'e sisti lo nu zukte .i ma tadji lo nu la'o gy. EPoSe .gy. sidju",
+        "answer": "lo bloku porsi cu nitcu lo prenu poi jitro lo samci'e pagbu gi'e ralte je benji lo citri gi'e cikre lo sampla gi'e cupra lo bloku .i ti se nitcu lo temci .e lo tutci .e lo dikca .i lo se samci'e sabji cu ji'a se jdima di'i .i lo nu te vecnu lo QWC lo drata ponse ne'i lo jdini nunvecnu cu selpleji lo vecnu .i ti na zmiku dunda lo jdini lo sampla zbasu ja samci'e jicmu jitro .i lo na samci'e ke jdini vasru cu bandu lo ckiku gi'e na gasnu lo nu zukte lo samci'e.\n\nlo selpla girzu cu xusra lo du'u lo ka ce'u se sarji lo drata kei be lo purci samci'e cu za'o mleca .i ca lo fanmo zukte temci ca lo nanca be li 2025 kei lo girzu cu djuno lo du'u re zukte samci'e sabji cu stali .i ri ba sisti lo nu zukte ki'u lo ka so'u lo pilno .e lo nunzukte .i na se kanpe lo nu lo volsni jitro cu ze'e pleji.\n\nlo samci'e be lo nanca be li 2026 cu pilno la'o gy. RandomX .gy. lo nu jarco lo se gunka kei gi'e ji'a pilno la'o gy. EPoSe .gy. lo nu cnemu lo jitro be lo mapti selfu samci'e pagbu mu'i lo nu sabji lo jicmu samci'e .i ti mukti lo nu lo drata cu kansa .i ti na vimcu lo jdima gi'e na nupre lo jdini se zenba gi'e na basti lo bloku cupra .e lo zukte cecmu"
+      },
+      "no-premine": {
+        "question": "xu lo sampla zbasu cu cpacu lo purci jdini ja lo se steci jdini ca lo nuncfari",
+        "answer": "na go'i .i lo samci'e be lo nanca be li 2026 cu cfari secau lo nu pu cupra lo bloku gi'e ralte lo jdini kei .e lo nu se steci ralte lo jdini lo sampla zbasu .i lo purci jdini be lo sampla zbasu cu ji'a na zmiku se benji lo cnino samci'e .i lo mintu javni cu srana lo sampla zbasu .e lo drata kansa .i ro da cu nitcu lo nu cpacu ja jerna lo jdini tu'a lo javni be lo cabna samci'e .i lo nu cupra lo bloku .e lo nu se cnemu lo mapti selfu samci'e pagbu cu mupli .i ti na nibli lo du'u ro da mintu lo ka jdini cirko kei ja lo ka tutci ponse kei ja lo ka snada lo nu bloku cupra .i lo cnino saske jicmu na vimcu lo jdini se cirko be lo purci samci'e"
+      }
+    }
   },
   "serviceNodes": {
     "eyebrow": "lo selfu samci'e pagbu",
@@ -631,7 +692,7 @@
       }
     ],
     "noteTitle": "lo mapti se morji",
-    "noteBody": "lo cabna QWC samci'e cu drata lo purci bloku porsi .i lo purci jdini vasru sampla .e lo bloku porsi datni cu na mapti ti"
+    "noteBody": "lo cabna bloku porsi cu cfari ca lo nanca be li 2026 gi'e se krasi lo ri se steci pamoi bloku .i lo purci jdini vasru sampla na mapti ti .i lo purci jdini na ka'e nerkla ja se benji ti .i lo nu xruti lo jdini vasru be lo cabna samci'e cu drata .i lo nu cnino gasnu lo jdini vasru sampla cu na nu basti lo jdini fi lo pa samci'e fe lo drata"
   },
   "network": {
     "eyebrow": "lo samci'e",
@@ -789,7 +850,7 @@
         "body": "la'o gy. Qwertycoin .gy. cu co'a lo cnino samci'e poi pilno lo sivni jdini benji .e la'o gy. RandomX .gy. bloku cupra .e la'o gy. EPoSe .gy. selfu jerna"
       }
     ],
-    "alert": "lo cabna QWC samci'e cu drata lo purci bloku porsi .i lo purci jdini vasru sampla .e lo bloku porsi datni cu na mapti ti"
+    "alert": "lo cabna bloku porsi cu cfari ca lo nanca be li 2026 gi'e se krasi lo ri se steci pamoi bloku .i lo purci jdini vasru sampla na mapti ti .i lo purci jdini na ka'e nerkla ja se benji ti .i lo nu xruti lo jdini vasru be lo cabna samci'e cu drata .i lo nu cnino gasnu lo jdini vasru sampla cu na nu basti lo jdini fi lo pa samci'e fe lo drata"
   },
   "developers": {
     "eyebrow": "lo favgau",

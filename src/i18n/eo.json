@@ -89,7 +89,7 @@
         "kind": "wallet",
         "badge": "UZU QWC",
         "title": "Malfermu monujon",
-        "body": "Kreu aŭ restarigu QWC-monujon en via retumilo, tiam sendu kaj ricevu privatajn pagojn.",
+        "body": "Kreu aŭ restaŭru en via retumilo QWC-monujon por la nuna reto, poste sendu kaj ricevu privatajn pagojn. Tio ne importas saldon el la malnova blokĉeno.",
         "cta": "Malfermu Web Wallet"
       },
       {
@@ -304,8 +304,8 @@
     "rewardFormulaCaption": "EPoSe-kvorumo, kvalifiko, ricevanto-rotacio kaj serva rekompenco - kompakta reprezentado de la aktivaj konsentreguloj."
   },
   "faq": {
-    "eyebrow": "Oftaj Demandoj pri EPoSe",
-    "title": "Mallongaj respondoj por novaj funkciigistoj.",
+    "eyebrow": "Demandoj kaj respondoj",
+    "title": "Monujoj, la reto kaj servaj nodoj.",
     "items": [
       {
         "question": "Kio estas Qwertycoin?",
@@ -313,11 +313,7 @@
       },
       {
         "question": "Kiel mi uzas Web Wallet?",
-        "answer": "Malfermu la oficialan Web Wallet, kreu aŭ restarigu monujon tie kaj sekvu ĝiajn sekurecajn instrukciojn. La ĉefa retejo neniam prilaboras monujojn."
-      },
-      {
-        "question": "Ĉu mi povas uzi malnovan monujon QWC?",
-        "answer": "Ne. La nuna reto QWC estas aparta de la pli frua ĉeno. Heredaĵa monujo-programaro kaj blokĉeno-datumoj ne kongruas kun ĉi tiu reto."
+        "answer": "Malfermu la oficialan Web Wallet por krei aŭ restaŭri monujon por la nuna reto kaj sekvu ĝiajn sekurecajn instrukciojn. Restaŭri monujon de la nuna reto ne estas maniero importi saldojn el la malnova blokĉeno. La ĉefa retejo neniam prilaboras monujajn ŝlosilojn."
       },
       {
         "question": "Ĉu EPoSe anstataŭigas minadon?",
@@ -347,7 +343,72 @@
         "question": "Kial EPoSe ne estas Pruvo de Intereso?",
         "answer": "EPoSe rekompencas provitan servon prefere ol ŝlosita intereso. Servaj Nodoj kontrolas blokĉenajn datumojn kiel aliaj plenaj nodoj, dum RandomX-ministoj faras pruvo-de-laboran blokproduktadon."
       }
-    ]
+    ],
+    "legacyTitle": "Malnovaj monujoj kaj la relanĉo de la reto",
+    "legacyItems": {
+      "balances": {
+        "question": "Ĉu mi povas transdoni mian malnovan Qwertycoin-saldon al la nuna reto?",
+        "answer": "Ne. Saldoj de la malnova blokĉeno de Qwertycoin ne povas esti importitaj, transdonitaj aŭ kredititaj al la nuna reto. Qwertycoin lanĉis apartan blokĉenon kun nova geneza bloko en 2026. Ĝisdatigi aŭ sinkronigi monujon, aŭ enigi malnovan restaŭran frazon, ne movas monerojn inter tiuj retoj."
+      },
+      "wallets": {
+        "question": "Ĉu mi povas uzi monujon de antaŭ la relanĉo en 2026?",
+        "answer": "Monujoj por la malnova blokĉeno ne estas kongruaj kun la nuna reto. Elŝutu subtenatan monujon tra la oficiala retejo de Qwertycoin kaj kreu monujon por la nuna reto. Tio ne reakiras aŭ transdonas malnovan saldon. Sekure konservu ekzistantajn monujajn savkopiojn kaj privatajn ŝlosilojn.",
+        "links": [
+          {
+            "label": "Oficialaj monujoj kaj elŝutoj",
+            "href": "#wallet"
+          }
+        ]
+      },
+      "relaunch": {
+        "question": "Kial Qwertycoin lanĉis novan blokĉenon?",
+        "answer": "La transiraj planoj jam estis diskutataj en 2023. La transiro estis inspirita de la komunumo kaj kune interkonsentita de komunumanoj kaj programistoj. Ĝi inkluzivis interŝanĝon je 1 000:1, alian minadan algoritmon kaj rekonstruon por trakti la problemojn de la malnova kodbazo devenanta de 2018. Ankaŭ la subteno por prizorgi la malnovan reton malkreskis, tiel ke ĝia infrastrukturo dependis de tro malmultaj funkciigantoj. La aparta blokĉeno de 2026 uzas laborpruvon RandomX kaj realigas sur renovigita kodbazo la longe atenditan mekanismon EPoSe por kvalifiki kaj rekompenci servajn nodojn."
+      },
+      "1000-to-1": {
+        "question": "Ĉu la proporcio 1 000:1 signifas, ke mi povas interŝanĝi miajn malnovajn monerojn nun?",
+        "answer": "Ne. La proporcio 1 000:1 rilatas al la historia interŝanĝa propono de la komunumo. Ĝi ne estas nun disponebla interŝanĝa servo por saldoj restantaj sur la malnova blokĉeno. Saldo de malnova monujo ne donas rajton ricevi tiun sumon dividitan per 1 000 en la nuna reto."
+      },
+      "backups": {
+        "question": "Kion mi faru, se mi ankoraŭ havas malnovan monujon?",
+        "answer": "Sekure konservu la monujan dosieron, la restaŭran frazon kaj la privatajn ŝlosilojn. Neniam malkaŝu vian restaŭran frazon aŭ privatajn ŝlosilojn al iu proponanta migrigi aŭ reakiri la saldon. Se vi ankaŭ havas plenan savkopion de la malnova blokĉeno, kontaktu la projekton tra ĝiaj oficialaj kanaloj. Blokĉena savkopio malsamas al monuja savkopio; ne sendu monujajn dosierojn aŭ sekretajn ŝlosilojn.\n\nLa nuna projekto ne povas importi tiun malnovan saldon en la novan blokĉenon. Por partopreni la nunan reton, uzu subtenatan monujon de la oficiala retejo de Qwertycoin. Regule legu la oficialajn projektajn anoncojn, ĉar gravaj retaj ŝanĝoj povas postuli agojn de posedantoj.",
+        "links": [
+          {
+            "label": "Oficialaj kontaktkanaloj de la projekto",
+            "href": "#community"
+          },
+          {
+            "label": "Oficialaj monujoj kaj elŝutoj",
+            "href": "#wallet"
+          }
+        ]
+      },
+      "keys": {
+        "question": "Ĉu malnovaj monujoj kaj privataj ŝlosiloj fariĝis nevalidaj?",
+        "answer": "Ne nur pro la relanĉo de la reto. Malnovaj monujaj dosieroj kaj privataj ŝlosiloj ne estis ĝenerale nuligitaj. Tamen ŝlosiloj solaj ne enhavas la blokĉenan historion necesan por trovi kaj kontroli saldon. La nuna teamo ne plu posedas kopion de la malnova blokĉeno, ne plu funkciigas tiun infrastrukturon kaj ne konas ankoraŭ aktivan plenan nodon de la malnova reto. Tio ne pruvas, ke neniu privata savkopio ekzistas. Malnovaj monujoj ne estas subtenataj en la reto de 2026, kaj iliaj malnovaj saldoj ne povas esti importitaj en ĝin."
+      },
+      "chain-recovery": {
+        "question": "Ĉu iu povus restaŭri la malnovan blokĉenon el savkopio?",
+        "answer": "Plena, sendifekta kopio de la malnova blokĉeno povus ebligi restaŭri ĝian historion per kongrua programaro kaj dividi ĝin kun aliaj nodoj. Unu restinta plena kopio povas sufiĉi por konservi tiun historion. Por prilabori novajn transakciojn necesus ankaŭ ministoj kaj funkcianta reto. Monuja dosiero aŭ restaŭra frazo sola ne povas rekonstrui la tutan blokĉenon. Restaŭro de la malnova ĉeno restaŭrus nur la malnovan reton kaj neniam transdonus ĝiajn monerojn aŭ saldojn al la reto de 2026. Sen ekzameno de la disponeblaj blokĉenaj datumoj kaj programaro, reakiro ne estas garantiebla."
+      },
+      "transition-token": {
+        "question": "Kial oni kreis provizoran transiran ĵetonon en 2025?",
+        "answer": "Post diskutoj komencitaj en 2023, la komunume inspirita transiro estis kune interkonsentita kun la programistoj. La provizora transporta ĵetono kreita en 2025 celis reprezenti la saldojn de partoprenantaj posedantoj dum la transiro kaj faciligi la kalkuladon de eventuala posta asigno, se posteula reto estus lanĉita. Ĝia celo estis konservi vojon por denove partoprenigi homojn el la origina projekto Qwertycoin lanĉita en 2018.\n\nTiu historia celo ne estas promeso de nuna aŭ estonta pago. Ĵetonaj saldoj ne estas aŭtomate interŝanĝeblaj en la nuna reto. Ebla partopreno de posedantoj de transiraj ĵetonoj restas en la plana stadio; eventualaj konfirmitaj aranĝoj estos anoncitaj tra oficialaj kanaloj. Saldoj de la malnova ĉeno kaj posedo de transiraj ĵetonoj estas apartaj aferoj. Nek restaŭrita malnova monujo nek la historia proporcio 1 000:1 aŭtomate kreas saldon sur la ĉeno de 2026.",
+        "links": [
+          {
+            "label": "Historia anonco de 2025 — ne nuna interŝanĝa oferto",
+            "href": "https://bitcointalk.org/index.php?topic=5552541.0"
+          }
+        ]
+      },
+      "network-support": {
+        "question": "Kial la malnova reto ĉesis funkcii, kaj kiel EPoSe helpas?",
+        "answer": "Blokĉeno bezonas homojn, kiuj funkciigas nodojn, konservas kaj disvastigas ĝian historion, prizorgas programaron kaj minas blokojn. Tiuj agadoj postulas tempon, ekipaĵon, elektron kaj, por gastigita infrastrukturo, daŭrajn servilajn kostojn. Aĉeto de QWC de alia posedanto ĉe borso pagas la vendanton; ĝi ne aŭtomate financas programadon aŭ infrastrukturon. Senreta monujo protektas ŝlosilojn sed ne funkciigas la reton.\n\nLaŭ la projektteamo, sendependa subteno por la malnova reto iom post iom malaperis. En ĝia fina funkcia periodo en 2025 oni konis nur du ankoraŭ aktivajn servilojn. Ili fine estis malŝaltitaj pro manko de uzantoj kaj aktiveco. Oni ne povas atendi, ke volontulaj funkciigantoj senfine pagu la kostojn.\n\nLa reto de 2026 kunigas laborpruvon RandomX kun EPoSe, kiu rekompencas funkciigantojn de kvalifikitaj servaj nodoj pro ilia infrastruktura kontribuo. Tio instigas sendependan partoprenon, sed ne forigas funkciajn kostojn, ne garantias profiton kaj ne anstataŭas ministojn kaj aktivan komunumon."
+      },
+      "no-premine": {
+        "question": "Ĉu programistoj ricevis malnovajn saldojn aŭ specialan asignon ĉe la relanĉo?",
+        "answer": "Ne. La reto de 2026 komenciĝis sen antaŭminado kaj sen rezervita asigno por programistoj. Ankaŭ la malnovaj saldoj de programistoj ne estis aŭtomate transprenitaj. La samaj protokolaj reguloj validas por programistoj kaj aliaj partoprenantoj: moneroj devas esti akiritaj aŭ gajnitaj laŭ la reguloj de la nuna reto, inkluzive de minado aŭ rekompencoj por kvalifikitaj servaj nodoj. Tio ne signifas, ke ĉiuj suferis samajn perdojn, havas samajn rimedojn aŭ atingas samajn minajn rezultojn. La nova teknika fundamento ne forviŝas perdojn de la malnova reto."
+      }
+    }
   },
   "serviceNodes": {
     "eyebrow": "Servaj nodoj",
@@ -631,7 +692,7 @@
       }
     ],
     "noteTitle": "Kongrua noto",
-    "noteBody": "La nuna reto QWC estas aparta de la pli frua ĉeno. Heredaĵa monujo-programaro kaj blokĉeno-datumoj ne kongruas kun ĉi tiu reto."
+    "noteBody": "La nuna blokĉeno komenciĝis en 2026 per sia propra geneza bloko. Malnova monuja programaro ne estas kongrua kun ĝi, kaj malnovaj saldoj ne povas esti importitaj aŭ transdonitaj al ĝi. Restaŭro de monujo por la nuna reto estas alia operacio; ĝisdatigo de monujo ne estas interŝanĝo de moneroj inter blokĉenoj."
   },
   "network": {
     "eyebrow": "Reto",
@@ -789,7 +850,7 @@
         "body": "Qwertycoin komencas novan reton kun privataj pagoj, RandomX-minado kaj EPoSe-servaj rekompencoj."
       }
     ],
-    "alert": "La nuna reto QWC estas aparta de la pli frua ĉeno. Heredaĵa monujo-programaro kaj blokĉeno-datumoj ne kongruas kun ĉi tiu reto."
+    "alert": "La nuna blokĉeno komenciĝis en 2026 per sia propra geneza bloko. Malnova monuja programaro ne estas kongrua kun ĝi, kaj malnovaj saldoj ne povas esti importitaj aŭ transdonitaj al ĝi. Restaŭro de monujo por la nuna reto estas alia operacio; ĝisdatigo de monujo ne estas interŝanĝo de moneroj inter blokĉenoj."
   },
   "developers": {
     "eyebrow": "Programistoj",

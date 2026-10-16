@@ -89,7 +89,7 @@
         "kind": "wallet",
         "badge": "GEBRUIK QWC",
         "title": "Open een portemonnee",
-        "body": "Maak of herstel een QWC-portemonnee in uw browser en verzend en ontvang vervolgens privébetalingen.",
+        "body": "Maak of herstel in je browser een QWC-wallet voor het huidige netwerk en verstuur en ontvang privébetalingen. Hiermee importeer je geen tegoed van de oude blockchain.",
         "cta": "Web Wallet openen"
       },
       {
@@ -304,8 +304,8 @@
     "rewardFormulaCaption": "EPoSe-quorum, kwalificatie, rotatie van ontvangers en servicebeloning - een compacte weergave van de actieve consensusregels."
   },
   "faq": {
-    "eyebrow": "Veelgestelde vragen over de EPoSe",
-    "title": "Korte antwoorden voor nieuwe operators.",
+    "eyebrow": "Vragen en antwoorden",
+    "title": "Wallets, het netwerk en servicenodes.",
     "items": [
       {
         "question": "Wat is Qwertycoin?",
@@ -313,11 +313,7 @@
       },
       {
         "question": "Hoe gebruik ik de Web Wallet?",
-        "answer": "Open de officiële Web Wallet, maak of herstel daar een portemonnee en volg de veiligheidsinstructies. De hoofdwebsite verwerkt nooit portemonneesleutels."
-      },
-      {
-        "question": "Kan ik een oude QWC-portemonnee gebruiken?",
-        "answer": "Nee. Het huidige QWC-netwerk staat los van de eerdere keten. Oudere portemonneesoftware en blockchain-gegevens zijn niet compatibel met dit netwerk."
+        "answer": "Open de officiële Web Wallet om een wallet voor het huidige netwerk aan te maken of te herstellen en volg de veiligheidsinstructies. Het herstellen van een wallet voor het huidige netwerk importeert geen tegoed van de oude blockchain. De hoofdwebsite verwerkt nooit walletsleutels."
       },
       {
         "question": "Vervangt EPoSe mijnbouw?",
@@ -347,7 +343,72 @@
         "question": "Waarom is de EPoSe geen bewijs van inzet?",
         "answer": "EPoSe beloont bewezen service in plaats van een vaste inzet. Servicenodes verifiëren blockchain-gegevens zoals andere volledige knooppunten, terwijl RandomX-mijnwerkers proof-of-work-blokproductie uitvoeren."
       }
-    ]
+    ],
+    "legacyTitle": "Oude wallets en de herstart van het netwerk",
+    "legacyItems": {
+      "balances": {
+        "question": "Kan ik mijn oude Qwertycoin-tegoed naar het huidige netwerk overzetten?",
+        "answer": "Nee. Tegoeden op de oude Qwertycoin-blockchain kunnen niet worden geïmporteerd, overgedragen of bijgeschreven op het huidige netwerk. Qwertycoin startte in 2026 een aparte blockchain met een nieuw genesisblok. Een wallet bijwerken, synchroniseren of een oude herstelzin invoeren verplaatst geen munten tussen deze netwerken."
+      },
+      "wallets": {
+        "question": "Kan ik een wallet van vóór de herstart in 2026 gebruiken?",
+        "answer": "Wallets voor de oude blockchain zijn niet compatibel met het huidige netwerk. Download een ondersteunde wallet via de officiële Qwertycoin-website en maak een wallet voor het huidige netwerk aan. Dit herstelt of verplaatst geen oud tegoed. Bewaar bestaande walletback-ups en privésleutels veilig.",
+        "links": [
+          {
+            "label": "Officiële wallets en downloads",
+            "href": "#wallet"
+          }
+        ]
+      },
+      "relaunch": {
+        "question": "Waarom heeft Qwertycoin een nieuwe blockchain gestart?",
+        "answer": "De overgangsplannen werden al in 2023 besproken. De overgang kwam voort uit ideeën van de community en werd gezamenlijk door communityleden en ontwikkelaars afgestemd. De plannen omvatten een swap van 1.000:1, een ander miningalgoritme en een herbouw om de problemen van de oude codebasis uit 2018 aan te pakken. Ook de steun voor het onderhoud van het oude netwerk nam af, waardoor de infrastructuur van te weinig beheerders afhankelijk werd. De aparte blockchain uit 2026 gebruikt RandomX Proof of Work en implementeert op een vernieuwde codebasis het langverwachte EPoSe-mechanisme voor de kwalificatie en beloning van servicenodes."
+      },
+      "1000-to-1": {
+        "question": "Betekent 1.000:1 dat ik mijn oude munten nu kan omwisselen?",
+        "answer": "Nee. De verhouding 1.000:1 verwijst naar het historische swapvoorstel van de community. Het is geen beschikbare omwisseldienst voor tegoeden die op de oude blockchain zijn achtergebleven. Een oud wallettegoed geeft geen aanspraak op dat bedrag gedeeld door 1.000 op het huidige netwerk."
+      },
+      "backups": {
+        "question": "Wat moet ik doen als ik nog een oude wallet heb?",
+        "answer": "Bewaar het walletbestand, de herstelzin en de privésleutels veilig. Geef je herstelzin of privésleutels nooit aan iemand die aanbiedt je tegoed te migreren of te herstellen. Heb je ook een volledige back-up van de oude blockchain, neem dan via de officiële kanalen contact op met het project. Een blockchainback-up is iets anders dan een walletback-up; stuur geen walletbestanden of geheime sleutels op.\n\nHet huidige project kan dit oude tegoed niet in de nieuwe blockchain importeren. Gebruik voor deelname aan het huidige netwerk een ondersteunde wallet van de officiële Qwertycoin-website. Bekijk regelmatig de officiële projectaankondigingen: belangrijke netwerkveranderingen kunnen actie van houders vereisen.",
+        "links": [
+          {
+            "label": "Officiële projectkanalen",
+            "href": "#community"
+          },
+          {
+            "label": "Officiële wallets en downloads",
+            "href": "#wallet"
+          }
+        ]
+      },
+      "keys": {
+        "question": "Zijn oude wallets en privésleutels ongeldig geworden?",
+        "answer": "Niet alleen doordat het netwerk opnieuw is gestart. Oude walletbestanden en privésleutels zijn niet in hun geheel ongeldig verklaard. Sleutels alleen bevatten echter niet de blockchainhistorie die nodig is om een tegoed te vinden en te verifiëren. Het huidige team heeft geen kopie van de oude blockchain meer, beheert die infrastructuur niet meer en kent geen overgebleven actieve volledige node van de oude chain. Dat bewijst niet dat er geen privéback-up bestaat. Oude wallets worden niet ondersteund op het netwerk van 2026 en hun oude tegoeden kunnen er niet worden geïmporteerd."
+      },
+      "chain-recovery": {
+        "question": "Kan iemand de oude blockchain uit een back-up herstellen?",
+        "answer": "Een volledige, intacte kopie van de oude blockchain zou het mogelijk kunnen maken om de historie met compatibele software te herstellen en met andere nodes te delen. Eén overgebleven volledige kopie kan genoeg zijn om die historie te bewaren. Nieuwe transacties verwerken vereist daarnaast miners en een functionerend netwerk. Een walletbestand of herstelzin alleen kan niet de hele blockchain reconstrueren. Herstel van de oude chain herstelt uitsluitend het oude netwerk en verplaatst nooit munten of tegoeden naar het netwerk van 2026. Zonder onderzoek van de beschikbare blockchaingegevens en software kan herstel niet worden gegarandeerd."
+      },
+      "transition-token": {
+        "question": "Waarom werd in 2025 een tijdelijk overgangstoken gemaakt?",
+        "answer": "Na de discussies die in 2023 begonnen, werd de door de community geïnspireerde overgang gezamenlijk met de ontwikkelaars afgestemd. Het tijdelijke transporttoken uit 2025 moest de tegoeden van deelnemende houders tijdens de overgang vertegenwoordigen en de administratie van een eventuele latere toewijzing vergemakkelijken als er een opvolgend netwerk zou komen. Het doel was een weg open te houden om deelnemers aan het oorspronkelijke Qwertycoin-project uit 2018 opnieuw te betrekken.\n\nDit historische doel is geen belofte van een huidige of toekomstige uitbetaling. Tokentegoeden zijn niet automatisch inwisselbaar op het huidige netwerk. Mogelijke deelname voor houders van overgangstokens bevindt zich nog in de planningsfase; bevestigde regelingen worden zo nodig via de officiële kanalen bekendgemaakt. Tegoeden op de oude chain en bezit van overgangstokens zijn afzonderlijke zaken. Een herstelde oude wallet noch de historische verhouding 1.000:1 levert automatisch een tegoed op de chain van 2026 op.",
+        "links": [
+          {
+            "label": "Historische aankondiging uit 2025 — geen huidig swapaanbod",
+            "href": "https://bitcointalk.org/index.php?topic=5552541.0"
+          }
+        ]
+      },
+      "network-support": {
+        "question": "Waarom stopte het oude netwerk en hoe helpt EPoSe?",
+        "answer": "Een blockchain heeft mensen nodig die nodes draaien, de historie opslaan en verspreiden, software onderhouden en blokken minen. Dat kost tijd, apparatuur en elektriciteit; gehoste infrastructuur brengt ook doorlopende serverkosten mee. Als je QWC op een beurs van een andere houder koopt, betaal je de verkoper. Dat financiert niet automatisch ontwikkeling of infrastructuur. Een offline wallet beschermt sleutels, maar houdt het netwerk niet draaiende.\n\nVolgens het projectteam verdween de onafhankelijke ondersteuning van het oude netwerk geleidelijk. In de laatste operationele periode in 2025 waren nog maar twee actieve servers bekend. Die werden uiteindelijk wegens gebrek aan gebruikers en activiteit uitgeschakeld. Van vrijwillige beheerders kan niet worden verwacht dat ze de kosten onbeperkt blijven dragen.\n\nHet netwerk uit 2026 combineert RandomX Proof of Work met EPoSe, dat beheerders van gekwalificeerde servicenodes beloont voor hun infrastructuurbijdrage. Dit stimuleert onafhankelijke deelname, maar neemt de bedrijfskosten niet weg, garandeert geen winst en vervangt miners of een actieve community niet."
+      },
+      "no-premine": {
+        "question": "Kregen ontwikkelaars bij de herstart oude tegoeden of een speciale toewijzing?",
+        "answer": "Nee. Het netwerk van 2026 startte zonder premine en zonder gereserveerde toewijzing aan ontwikkelaars. Ook oude tegoeden van ontwikkelaars zijn niet automatisch overgenomen. Voor ontwikkelaars en andere deelnemers gelden dezelfde protocolregels: munten moeten volgens de regels van het huidige netwerk worden verkregen of verdiend, onder meer via mining of beloningen voor gekwalificeerde servicenodes. Dit betekent niet dat iedereen dezelfde verliezen heeft geleden, dezelfde middelen heeft of dezelfde miningresultaten behaalt. De nieuwe technische basis wist verliezen uit het oude netwerk niet uit."
+      }
+    }
   },
   "serviceNodes": {
     "eyebrow": "Servicenodes",
@@ -631,7 +692,7 @@
       }
     ],
     "noteTitle": "Compatibiliteitsopmerking",
-    "noteBody": "Het huidige QWC-netwerk staat los van de eerdere keten. Oudere portemonneesoftware en blockchain-gegevens zijn niet compatibel met dit netwerk."
+    "noteBody": "De huidige blockchain is in 2026 met een eigen genesisblok gestart. Oude walletsoftware is er niet mee compatibel en oude tegoeden kunnen niet worden geïmporteerd of overgedragen. Een wallet voor het huidige netwerk herstellen is een andere handeling; een walletupdate is geen netwerkswap."
   },
   "network": {
     "eyebrow": "Netwerk",
@@ -789,7 +850,7 @@
         "body": "Qwertycoin start een nieuw netwerk met privébetalingen, RandomX-mining en EPoSe-servicebeloningen."
       }
     ],
-    "alert": "Het huidige QWC-netwerk staat los van de eerdere keten. Oudere portemonneesoftware en blockchain-gegevens zijn niet compatibel met dit netwerk."
+    "alert": "De huidige blockchain is in 2026 met een eigen genesisblok gestart. Oude walletsoftware is er niet mee compatibel en oude tegoeden kunnen niet worden geïmporteerd of overgedragen. Een wallet voor het huidige netwerk herstellen is een andere handeling; een walletupdate is geen netwerkswap."
   },
   "developers": {
     "eyebrow": "Ontwikkelaars",
