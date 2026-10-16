@@ -436,7 +436,7 @@
       {
         "badge": "可用",
         "title": "桌面钱包",
-        "body": "Qwertycoin GUI 2.0.3 适用于 Windows、macOS、Apple Silicon 和 Linux x86_64。",
+        "body": "Qwertycoin GUI 2.0.4 适用于 Windows、macOS、Apple Silicon 和 Linux x86_64。",
         "icon": "development.svg"
       }
     ]
@@ -444,13 +444,13 @@
   "releases": {
     "eyebrow": "钱包",
     "title": "钱包和源代码",
-    "body": "第一个公开的 QWC 测试阶段已经开放。 Web Wallet、Qwertycoin GUI 2.0.3、Core v2.0.3命令行工具、官方Docker镜像和源代码现已提供。",
+    "body": "第一个公开的 QWC 测试阶段已经开放。 Web Wallet、Qwertycoin GUI 2.0.4、Core v2.0.4命令行工具、官方Docker镜像和源代码现已提供。",
     "cards": [
       {
-        "badge": "可用 · v2.0.3",
+        "badge": "可用 · v2.0.4",
         "badgeClass": "mainnet",
         "title": "桌面钱包",
-        "body": "从官方 GitHub 版本下载当前的 Qwertycoin GUI。 GUI v2.0.2 用户必须通过直接下载安装 v2.0.3 一次，因为 v2.0.2 更新程序无法遵循 GitHub 的发布资产重定向。 Windows Setup 和 macOS DMG 是首选安装程序；便携式 ZIP 和 TAR.GZ 包仍然可以作为替代方案。使用前验证下载和校验和。",
+        "body": "从官方 GitHub 版本下载当前的 Qwertycoin GUI。 GUI v2.0.2 用户必须通过直接下载安装 v2.0.4 一次，因为 v2.0.2 更新程序无法遵循 GitHub 的发布资产重定向。 Windows Setup 和 macOS DMG 是首选安装程序；便携式 ZIP 和 TAR.GZ 包仍然可以作为替代方案。使用前验证下载和校验和。",
         "note": "完整性说明：SHA256SUMS 验证下载的字节，而不是发布者身份。 Linux和Windows无符号； macOS 是临时签名且未经公证的。",
         "glyph": "GUI",
         "downloadsLayout": "rows",
@@ -460,15 +460,15 @@
             "icon": "WIN",
             "downloadLabel": "下载 Windows 安装程序",
             "compatibility": "在 Windows Server 2025 运行程序上进行测试 · 未签名；较旧的 Windows 版本未经验证",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64-setup.exe",
-            "sha256": "7f8c159fa956db2b6a9b55fd47600a1fe68f32dd26d1e665877a9cc37758eadd",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-windows-x86_64-setup.exe",
+            "sha256": "ab0df6ebc50e27f3b3e8098621f1030311b91963132216f1e2d5f27b6844ff4c",
             "shaLabel": "设置SHA-256",
             "preferredLabel": "首选安装人员",
             "alternatives": [
               {
                 "downloadLabel": "下载便携式 Windows ZIP",
-                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-windows-x86_64.zip",
-                "sha256": "b4b2c28a5cee6ca7bd3f423de5b340706ee216a31bfa23d620b7a67150a197de",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-windows-x86_64.zip",
+                "sha256": "554abfce80619cf171b4629b10d5b4ecdfdb87afbff08ab027074cf048e7b7b1",
                 "shaLabel": "邮编 SHA-256"
               }
             ]
@@ -478,15 +478,15 @@
             "icon": "MAC",
             "downloadLabel": "下载 macOS DMG",
             "compatibility": "macOS 15 或更新版本",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.dmg",
-            "sha256": "a4736597387770250b795fd1a4397693990522cf673cfb29d6cf9bb855071200",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-macos-arm64.dmg",
+            "sha256": "7709be6e220b4c8eccfb019cc0a42badb0c1727987d04fe63eccb7a00b313075",
             "shaLabel": "DMG SHA-256",
             "preferredLabel": "首选下载",
             "alternatives": [
               {
                 "downloadLabel": "下载 macOS TAR.GZ",
-                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-macos-arm64.tar.gz",
-                "sha256": "ce239650afcc8eacee7b13d35f076a3ea617a81d4728b22d53d1ecc28a97fe26",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-macos-arm64.tar.gz",
+                "sha256": "e3b4a352d1ddc645ccb2a83b205c18cdf023f11fc30071b7348a09de956451a1",
                 "shaLabel": "TAR.GZ SHA-256"
               }
             ]
@@ -496,19 +496,19 @@
             "icon": "LNX",
             "downloadLabel": "下载 Linux TAR.GZ",
             "compatibility": "GLIBC 2.35兼容上限",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/qwertycoin-gui-v2.0.3-linux-x86_64.tar.gz",
-            "sha256": "55cc8754df00c36017b7a0ffa35b90d3878c95477202059b6c596b5163c47680"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-linux-x86_64.tar.gz",
+            "sha256": "8dd1e9b2c3c88115b5a8161be3ce9f7f5b555237a5efc5809e253b51a73801c2"
           }
         ],
         "verificationLinks": [
           {
             "label": "SHA256SUMS",
             "icon": "SHA",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.3/SHA256SUMS"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/SHA256SUMS"
           },
           {
             "label": "发行说明",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.3"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.4"
           },
           {
             "label": "报告问题",
@@ -518,7 +518,7 @@
         ]
       },
       {
-        "badge": "可用 · v2.0.3",
+        "badge": "可用 · v2.0.4",
         "badgeClass": "mainnet",
         "title": "核心命令行工具",
         "body": "官方 Qwertycoin 套件包含 qwertycoind、qwertycoin-wallet-cli 和 qwertycoin-wallet-rpc。使用前验证存档和校验和；每个 GitHub 版本都记录了版本说明和审核状态。",
@@ -530,35 +530,35 @@
             "icon": "WIN",
             "downloadLabel": "下载 Windows ZIP",
             "compatibility": "在 Windows Server 2025 跑步机上测试；没有更广泛的遗产-Windows 声明",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-windows-x86_64.zip",
-            "sha256": "b0bab23137d5a4308b3d1cd582c17fd0069f392c265a74a1e0fd0f15b4becaaf"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/qwertycoin-v2.0.4-windows-x86_64.zip",
+            "sha256": "5ae459b2de491a3242b253f613ce1bb680d42c25c32151b78d3729b9ed984240"
           },
           {
             "label": "macOS Apple Silicon",
             "icon": "MAC",
             "downloadLabel": "下载 macOS TAR.GZ",
             "compatibility": "macOS 15 或更新版本",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-macos-arm64.tar.gz",
-            "sha256": "c23194aff092d0cc8ef6eed9ce4a6d45ccb06c7b760b05e7fce0cd9992962fdf"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/qwertycoin-v2.0.4-macos-arm64.tar.gz",
+            "sha256": "215283f848cba9daade722433a95d5c906975814d9ead743b16f2149af4d088a"
           },
           {
             "label": "Linux x86_64",
             "icon": "LNX",
             "downloadLabel": "下载 Linux TAR.GZ",
             "compatibility": "GLIBC 2.35 / GLIBCXX 3.4.30 兼容性上限",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/qwertycoin-v2.0.3-linux-x86_64.tar.gz",
-            "sha256": "8df9d4bd22610228f3330aaac348776fd86bcd853751cf9472e0fc4db271b675"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/qwertycoin-v2.0.4-linux-x86_64.tar.gz",
+            "sha256": "a93af785a5b5bb56049aab4f5083c1191d6282c313b9ba1ec156d3c497a79d92"
           }
         ],
         "verificationLinks": [
           {
             "label": "SHA256SUMS",
             "icon": "SHA",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.3/SHA256SUMS"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/SHA256SUMS"
           },
           {
             "label": "发行说明",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.4"
           },
           {
             "label": "报告问题",
@@ -568,7 +568,7 @@
         ]
       },
       {
-        "badge": "可用·2.0.3",
+        "badge": "可用·2.0.4",
         "badgeClass": "mainnet",
         "title": "Docker图片",
         "body": "作为非根 Linux/amd64 容器运行经过验证的 Core 版本。 Mainnet和守护进程为默认值；持久命名卷在容器更新期间保存链数据。",
@@ -595,7 +595,7 @@
           },
           {
             "label": "核心发行说明",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.3"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.4"
           }
         ]
       },
