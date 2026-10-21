@@ -501,28 +501,28 @@ if (!/id="releases"[\s\S]*Desktop wallets[\s\S]*Core command-line tools[\s\S]*Do
   throw new Error("Release cards must be ordered desktop wallets, Core command-line tools, Docker image, Web Wallet, source code");
 }
 
-const guiReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.4";
-const guiChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/SHA256SUMS";
+const guiReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.5";
+const guiChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/SHA256SUMS";
 const guiArtifacts = [
   {
-    name: "qwertycoin-gui-v2.0.4-windows-x86_64-setup.exe",
-    sha256: "ab0df6ebc50e27f3b3e8098621f1030311b91963132216f1e2d5f27b6844ff4c"
+    name: "qwertycoin-gui-v2.0.5-windows-x86_64-setup.exe",
+    sha256: "7543986c9c2743ceb4c482bc5356e40f7bed81297ef837f77713876ab8437935"
   },
   {
-    name: "qwertycoin-gui-v2.0.4-windows-x86_64.zip",
-    sha256: "554abfce80619cf171b4629b10d5b4ecdfdb87afbff08ab027074cf048e7b7b1"
+    name: "qwertycoin-gui-v2.0.5-windows-x86_64.zip",
+    sha256: "2eb0ee784bebe8f0c191705f8cef968b05be2cdcd5a4bc444c2bd89b2f2fef28"
   },
   {
-    name: "qwertycoin-gui-v2.0.4-macos-arm64.dmg",
-    sha256: "7709be6e220b4c8eccfb019cc0a42badb0c1727987d04fe63eccb7a00b313075"
+    name: "qwertycoin-gui-v2.0.5-macos-arm64.dmg",
+    sha256: "314ac73bfa6f3a74fd6cd1803b675f6b74ab6b26af88d7f8a0e3fad64f731b36"
   },
   {
-    name: "qwertycoin-gui-v2.0.4-macos-arm64.tar.gz",
-    sha256: "e3b4a352d1ddc645ccb2a83b205c18cdf023f11fc30071b7348a09de956451a1"
+    name: "qwertycoin-gui-v2.0.5-macos-arm64.tar.gz",
+    sha256: "7430aca40b57d017fb876ca60617e38d2f029d46a40afa02e09af2deb48c916f"
   },
   {
-    name: "qwertycoin-gui-v2.0.4-linux-x86_64.tar.gz",
-    sha256: "8dd1e9b2c3c88115b5a8161be3ce9f7f5b555237a5efc5809e253b51a73801c2"
+    name: "qwertycoin-gui-v2.0.5-linux-x86_64.tar.gz",
+    sha256: "f70380819bc6fcb2723e4dd27d955d681e4a20336e4ab59f1faae6c6fe0a551b"
   }
 ];
 
@@ -531,18 +531,18 @@ for (const html of allLocalePages) {
   assertIncludes(html, `href="${guiReleaseUrl}" target="_blank" rel="noopener"`, "GUI release notes link");
   assertIncludes(html, `href="${guiChecksumsUrl}" target="_blank" rel="noopener"`, "GUI checksum link");
   for (const artifact of guiArtifacts) {
-    const downloadUrl = `https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/${artifact.name}`;
+    const downloadUrl = `https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/${artifact.name}`;
     assertIncludes(html, `href="${downloadUrl}" target="_blank" rel="noopener"`, `${artifact.name} download link`);
     assertIncludes(html, `<code>${artifact.sha256}</code>`, `${artifact.name} SHA-256`);
   }
 
-  const dmgPosition = html.indexOf("qwertycoin-gui-v2.0.4-macos-arm64.dmg");
-  const tarPosition = html.indexOf("qwertycoin-gui-v2.0.4-macos-arm64.tar.gz");
+  const dmgPosition = html.indexOf("qwertycoin-gui-v2.0.5-macos-arm64.dmg");
+  const tarPosition = html.indexOf("qwertycoin-gui-v2.0.5-macos-arm64.tar.gz");
   if (dmgPosition < 0 || tarPosition < 0 || dmgPosition > tarPosition) {
     throw new Error("The preferred macOS DMG must be rendered before the TAR.GZ alternative");
   }
-  const setupPosition = html.indexOf("qwertycoin-gui-v2.0.4-windows-x86_64-setup.exe");
-  const zipPosition = html.indexOf("qwertycoin-gui-v2.0.4-windows-x86_64.zip");
+  const setupPosition = html.indexOf("qwertycoin-gui-v2.0.5-windows-x86_64-setup.exe");
+  const zipPosition = html.indexOf("qwertycoin-gui-v2.0.5-windows-x86_64.zip");
   if (setupPosition < 0 || zipPosition < 0 || setupPosition > zipPosition) {
     throw new Error("The preferred Windows Setup must be rendered before the portable ZIP alternative");
   }
@@ -573,10 +573,10 @@ assertIncludes(index, '<a class="release-link" href="https://hub.docker.com/r/qw
 assertIncludes(germanIndex, '<a class="release-link" href="https://hub.docker.com/r/qwertycoin/qwertycoin/tags" target="_blank" rel="noopener">Docker Hub öffnen</a>', "German Docker Hub button without prefix");
 assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md" target="_blank" rel="noopener">Docker quickstart</a>', "English Docker quickstart button without prefix");
 assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md" target="_blank" rel="noopener">Docker-Schnellstart</a>', "German Docker quickstart button without prefix");
-assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.4" target="_blank" rel="noopener">Release notes</a>', "English Core release notes button without prefix");
-assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.4" target="_blank" rel="noopener">Release-Hinweise</a>', "German Core release notes button without prefix");
-assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.4" target="_blank" rel="noopener">Core release notes</a>', "English Docker Core release notes button without prefix");
-assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.4" target="_blank" rel="noopener">Core-Release-Hinweise</a>', "German Docker Core release notes button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.5" target="_blank" rel="noopener">Release notes</a>', "English Core release notes button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.5" target="_blank" rel="noopener">Release-Hinweise</a>', "German Core release notes button without prefix");
+assertIncludes(index, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.5" target="_blank" rel="noopener">Core release notes</a>', "English Docker Core release notes button without prefix");
+assertIncludes(germanIndex, '<a class="release-link" href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.5" target="_blank" rel="noopener">Core-Release-Hinweise</a>', "German Docker Core release notes button without prefix");
 
 assertIncludes(index, "Preferred download", "English preferred DMG label");
 assertIncludes(germanIndex, "Empfohlener Download", "German preferred DMG label");
@@ -602,20 +602,20 @@ if (!/\.release-download-option-preferred \.release-link\s*\{[^}]*background:\s*
   throw new Error("Preferred installer downloads must have a visible primary treatment");
 }
 
-const coreReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.4";
-const coreChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/SHA256SUMS";
+const coreReleaseUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.5";
+const coreChecksumsUrl = "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.5/SHA256SUMS";
 const coreArtifacts = [
   {
-    name: "qwertycoin-v2.0.4-windows-x86_64.zip",
-    sha256: "5ae459b2de491a3242b253f613ce1bb680d42c25c32151b78d3729b9ed984240"
+    name: "qwertycoin-v2.0.5-windows-x86_64.zip",
+    sha256: "75153631199f81c6c1ebc1f3869cbd452fe2821bda2e41ac0d5128170f469265"
   },
   {
-    name: "qwertycoin-v2.0.4-macos-arm64.tar.gz",
-    sha256: "215283f848cba9daade722433a95d5c906975814d9ead743b16f2149af4d088a"
+    name: "qwertycoin-v2.0.5-macos-arm64.tar.gz",
+    sha256: "9f15212e22f7e642554885e56beae1d86ffcdf5693fb8149b4516c0bff11194a"
   },
   {
-    name: "qwertycoin-v2.0.4-linux-x86_64.tar.gz",
-    sha256: "a93af785a5b5bb56049aab4f5083c1191d6282c313b9ba1ec156d3c497a79d92"
+    name: "qwertycoin-v2.0.5-linux-x86_64.tar.gz",
+    sha256: "e2d9e003fa4dd8486874ba6e94f986a6b6f3f9fe0d77a58f0878ac9ac08de5bd"
   }
 ];
 
@@ -626,7 +626,7 @@ for (const html of allLocalePages) {
   assertIncludes(html, `href="${coreReleaseUrl}" target="_blank" rel="noopener"`, "Core release notes link");
   assertIncludes(html, `href="${coreChecksumsUrl}" target="_blank" rel="noopener"`, "Core checksum link");
   for (const artifact of coreArtifacts) {
-    const downloadUrl = `https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/${artifact.name}`;
+    const downloadUrl = `https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.5/${artifact.name}`;
     assertIncludes(html, `href="${downloadUrl}" target="_blank" rel="noopener"`, `${artifact.name} download link`);
     assertIncludes(html, `<code>${artifact.sha256}</code>`, `${artifact.name} SHA-256`);
   }

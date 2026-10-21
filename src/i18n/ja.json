@@ -479,7 +479,7 @@
   "wallet": {
     "eyebrow": "ウォレット",
     "title": "次のステップはウォレットです。",
-    "body": "Web Wallet、Qwertycoin GUI 2.0.0 およびソース コードは現在入手可能です。",
+    "body": "Web Wallet、Qwertycoin GUI 2.0.5 およびソース コードは現在入手可能です。",
     "cards": [
       {
         "badge": "利用可能",
@@ -497,7 +497,7 @@
       {
         "badge": "利用可能",
         "title": "デスクトップウォレット",
-        "body": "Qwertycoin GUI 2.0.4 は、Windows、macOS、Apple Silicon、Linux x86_64 で利用可能です。",
+        "body": "Qwertycoin GUI 2.0.5 は、Windows、macOS、Apple Silicon、Linux x86_64 で利用可能です。",
         "icon": "development.svg"
       }
     ]
@@ -505,13 +505,13 @@
   "releases": {
     "eyebrow": "ウォレット",
     "title": "ウォレットとソースコード",
-    "body": "最初の公開 QWC テストフェーズが開始されます。 Web Wallet、Qwertycoin GUI 2.0.4、Core v2.0.4 コマンドライン ツール、公式 Docker イメージおよびソース コードは現在入手可能です。",
+    "body": "最初の公開 QWC テストフェーズが開始されます。 Web Wallet、Qwertycoin GUI 2.0.5、Core v2.0.5 コマンドライン ツール、公式 Docker イメージおよびソース コードは現在入手可能です。",
     "cards": [
       {
-        "badge": "利用可能 · v2.0.4",
+        "badge": "利用可能 · v2.0.5",
         "badgeClass": "mainnet",
         "title": "デスクトップウォレット",
-        "body": "公式 GitHub リリースから現在の Qwertycoin GUI をダウンロードします。 GUI v2.0.2 ユーザーは、v2.0.2 アップデーターが GitHub のリリース アセット リダイレクトに従うことができないため、直接ダウンロードで v2.0.4 を一度インストールする必要があります。 Windows Setup および macOS DMG が推奨されるインストーラーです。ポータブル ZIP および TAR.GZ パッケージは、代替手段として引き続き利用可能です。使用前にダウンロードとチェックサムを確認してください。",
+        "body": "公式 GitHub リリースから現在の Qwertycoin GUI をダウンロードします。 GUI v2.0.2 ユーザーは、v2.0.2 アップデーターが GitHub のリリース アセット リダイレクトに従うことができないため、直接ダウンロードで v2.0.5 を一度インストールする必要があります。 Windows Setup および macOS DMG が推奨されるインストーラーです。ポータブル ZIP および TAR.GZ パッケージは、代替手段として引き続き利用可能です。使用前にダウンロードとチェックサムを確認してください。",
         "note": "整合性に関する注意: SHA256SUMS は、発行者の ID ではなく、ダウンロードされたバイトを検証します。 Linux と Windows は署名されていません。 macOS はアドホック署名されており、公証されていません。",
         "glyph": "GUI",
         "downloadsLayout": "rows",
@@ -521,15 +521,15 @@
             "icon": "WIN",
             "downloadLabel": "Windowsセットアップをダウンロード",
             "compatibility": "Windows Server 2025 ランナーでテスト済み、署名なし。古い Windows バージョンは検証されていません",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-windows-x86_64-setup.exe",
-            "sha256": "ab0df6ebc50e27f3b3e8098621f1030311b91963132216f1e2d5f27b6844ff4c",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/qwertycoin-gui-v2.0.5-windows-x86_64-setup.exe",
+            "sha256": "7543986c9c2743ceb4c482bc5356e40f7bed81297ef837f77713876ab8437935",
             "shaLabel": "セットアップ SHA-256",
             "preferredLabel": "優先インストーラー",
             "alternatives": [
               {
                 "downloadLabel": "ポータブル Windows ZIP をダウンロード",
-                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-windows-x86_64.zip",
-                "sha256": "554abfce80619cf171b4629b10d5b4ecdfdb87afbff08ab027074cf048e7b7b1",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/qwertycoin-gui-v2.0.5-windows-x86_64.zip",
+                "sha256": "2eb0ee784bebe8f0c191705f8cef968b05be2cdcd5a4bc444c2bd89b2f2fef28",
                 "shaLabel": "ジップSHA-256"
               }
             ]
@@ -539,15 +539,15 @@
             "icon": "MAC",
             "downloadLabel": "macOS DMGをダウンロード",
             "compatibility": "macOS 15以降",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-macos-arm64.dmg",
-            "sha256": "7709be6e220b4c8eccfb019cc0a42badb0c1727987d04fe63eccb7a00b313075",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/qwertycoin-gui-v2.0.5-macos-arm64.dmg",
+            "sha256": "314ac73bfa6f3a74fd6cd1803b675f6b74ab6b26af88d7f8a0e3fad64f731b36",
             "shaLabel": "DMG SHA-256",
             "preferredLabel": "優先ダウンロード",
             "alternatives": [
               {
                 "downloadLabel": "macOS TAR.GZをダウンロード",
-                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-macos-arm64.tar.gz",
-                "sha256": "e3b4a352d1ddc645ccb2a83b205c18cdf023f11fc30071b7348a09de956451a1",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/qwertycoin-gui-v2.0.5-macos-arm64.tar.gz",
+                "sha256": "7430aca40b57d017fb876ca60617e38d2f029d46a40afa02e09af2deb48c916f",
                 "shaLabel": "TAR.GZ SHA-256"
               }
             ]
@@ -557,19 +557,19 @@
             "icon": "LNX",
             "downloadLabel": "Linux TAR.GZをダウンロード",
             "compatibility": "GLIBC 2.35対応天井",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/qwertycoin-gui-v2.0.4-linux-x86_64.tar.gz",
-            "sha256": "8dd1e9b2c3c88115b5a8161be3ce9f7f5b555237a5efc5809e253b51a73801c2"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/qwertycoin-gui-v2.0.5-linux-x86_64.tar.gz",
+            "sha256": "f70380819bc6fcb2723e4dd27d955d681e4a20336e4ab59f1faae6c6fe0a551b"
           }
         ],
         "verificationLinks": [
           {
             "label": "SHA256SUMS",
             "icon": "SHA",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.4/SHA256SUMS"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/SHA256SUMS"
           },
           {
             "label": "リリースノート",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.4"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.5"
           },
           {
             "label": "問題を報告する",
@@ -579,7 +579,7 @@
         ]
       },
       {
-        "badge": "利用可能 · v2.0.4",
+        "badge": "利用可能 · v2.0.5",
         "badgeClass": "mainnet",
         "title": "コアコマンドラインツール",
         "body": "qwertycoind、qwertycoin-wallet-cli、qwertycoin-wallet-rpc を含む公式 Qwertycoin パッケージ。使用前にアーカイブとチェックサムを確認してください。リリース ノートと監査ステータスは、GitHub リリースごとに文書化されています。",
@@ -591,35 +591,35 @@
             "icon": "WIN",
             "downloadLabel": "Windows ZIPをダウンロード",
             "compatibility": "Windows Server 2025 ランナーでテスト済み。広範な従来の Windows 主張はありません",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/qwertycoin-v2.0.4-windows-x86_64.zip",
-            "sha256": "5ae459b2de491a3242b253f613ce1bb680d42c25c32151b78d3729b9ed984240"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.5/qwertycoin-v2.0.5-windows-x86_64.zip",
+            "sha256": "75153631199f81c6c1ebc1f3869cbd452fe2821bda2e41ac0d5128170f469265"
           },
           {
             "label": "macOS Apple Silicon",
             "icon": "MAC",
             "downloadLabel": "macOS TAR.GZをダウンロード",
             "compatibility": "macOS 15以降",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/qwertycoin-v2.0.4-macos-arm64.tar.gz",
-            "sha256": "215283f848cba9daade722433a95d5c906975814d9ead743b16f2149af4d088a"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.5/qwertycoin-v2.0.5-macos-arm64.tar.gz",
+            "sha256": "9f15212e22f7e642554885e56beae1d86ffcdf5693fb8149b4516c0bff11194a"
           },
           {
             "label": "Linux x86_64",
             "icon": "LNX",
             "downloadLabel": "Linux TAR.GZをダウンロード",
             "compatibility": "GLIBC 2.35 / GLIBCXX 3.4.30 互換天井",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/qwertycoin-v2.0.4-linux-x86_64.tar.gz",
-            "sha256": "a93af785a5b5bb56049aab4f5083c1191d6282c313b9ba1ec156d3c497a79d92"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.5/qwertycoin-v2.0.5-linux-x86_64.tar.gz",
+            "sha256": "e2d9e003fa4dd8486874ba6e94f986a6b6f3f9fe0d77a58f0878ac9ac08de5bd"
           }
         ],
         "verificationLinks": [
           {
             "label": "SHA256SUMS",
             "icon": "SHA",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.4/SHA256SUMS"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.5/SHA256SUMS"
           },
           {
             "label": "リリースノート",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.4"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.5"
           },
           {
             "label": "問題を報告する",
@@ -629,7 +629,7 @@
         ]
       },
       {
-        "badge": "利用可能 · 2.0.4",
+        "badge": "利用可能 · 2.0.5",
         "badgeClass": "mainnet",
         "title": "Dockerのイメージ",
         "body": "検証済みのコア リリースを非ルート Linux/amd64 コンテナーとして実行します。 Mainnet とデーモンがデフォルトです。永続的な名前付きボリュームは、コンテナーの更新全体にわたってチェーン データを保持します。",
@@ -656,7 +656,7 @@
           },
           {
             "label": "コアリリースノート",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.4"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.5"
           }
         ]
       },
