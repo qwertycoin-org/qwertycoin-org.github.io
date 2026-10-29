@@ -920,6 +920,27 @@ p { margin: var(--space-3) 0 0; }
   gap: var(--space-3);
 }
 
+.listing-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 64px;
+  max-width: 100%;
+}
+
+.listing-brand img {
+  display: block;
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.listing-brand h3 {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .listing-card p {
   margin: 0;
 }

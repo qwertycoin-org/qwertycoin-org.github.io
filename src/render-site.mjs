@@ -17,8 +17,8 @@ import exchanges from "./config/exchanges.json" with { type: "json" };
 const dictionaries = { en, de, "zh-Hans": zhHans, nl, eo, fr, it, ja, jbo, pt, ru, es };
 const searchLocales = locales.filter((locale) => locale.searchHreflang !== false);
 const listingProfiles = [
-  { name: "Blockspot.io", url: "https://blockspot.io/coin/qwertycoin-qwc/", kind: "current" },
-  { name: "CoinMarketCap", url: "https://coinmarketcap.com/currencies/qwertycoin/", kind: "legacy" }
+  { name: "Blockspot.io", url: "https://blockspot.io/coin/qwertycoin-qwc/", kind: "current", logo: "/assets/listings/blockspot-mark.svg" },
+  { name: "CoinMarketCap", url: "https://coinmarketcap.com/currencies/qwertycoin/", kind: "legacy", logo: "/assets/listings/coinmarketcap-mark.png" }
 ];
 
 const siteParams = {
@@ -563,7 +563,7 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
         ${sectionHeader(t.listings.eyebrow, t.listings.title, t.listings.body)}
         <div class="grid two listings-grid">${listingProfiles.map((profile) => `<article class="card listing-card">
           <span class="badge">${text(t.listings[profile.kind].badge)}</span>
-          <h3>${text(profile.name)}</h3>
+          <div class="listing-brand"><img src="${text(profile.logo)}" alt="" width="64" height="64" loading="lazy" decoding="async"><h3>${text(profile.name)}</h3></div>
           <p>${text(t.listings[profile.kind].body)}</p>
           <a href="${text(profile.url)}" target="_blank" rel="noopener noreferrer">${text(t.listings[profile.kind].link)} ${text(profile.name)} ↗</a>
         </article>`).join("\n")}</div>

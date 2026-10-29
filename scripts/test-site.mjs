@@ -167,8 +167,10 @@ for (const locale of localeConfig) {
   const listingsHtml = html.slice(listingsStart, footerStart);
   const cards = [...listingsHtml.matchAll(/<article class="card listing-card">([\s\S]*?)<\/article>/g)].map((match) => match[1]);
   if (cards.length !== 2) throw new Error(`${locale.code} must show two listing profiles`);
+  assertIncludes(cards[0], '<img src="/assets/listings/blockspot-mark.svg" alt="" width="64" height="64" loading="lazy" decoding="async">', `${locale.code} Blockspot logo`);
   assertIncludes(cards[0], labels.current.body, `${locale.code} current-network label`);
   assertIncludes(cards[0], 'href="https://blockspot.io/coin/qwertycoin-qwc/" target="_blank" rel="noopener noreferrer"', `${locale.code} current-network listing link`);
+  assertIncludes(cards[1], '<img src="/assets/listings/coinmarketcap-mark.png" alt="" width="64" height="64" loading="lazy" decoding="async">', `${locale.code} CoinMarketCap logo`);
   assertIncludes(cards[1], labels.legacy.body, `${locale.code} legacy-chain disclosure`);
   assertIncludes(cards[1], 'href="https://coinmarketcap.com/currencies/qwertycoin/" target="_blank" rel="noopener noreferrer"', `${locale.code} legacy listing link`);
 }
@@ -848,6 +850,8 @@ await stat(path.join(root, "assets", "qwertycoin-mark.svg"));
 await stat(path.join(root, "assets", "epose", "epose-consensus-formula.svg"));
 await stat(path.join(root, "assets", "epose", "epose-consensus-formula-de.svg"));
 await stat(path.join(root, "assets", "epose", "epose-consensus-formula-neutral.svg"));
+await stat(path.join(dist, "assets", "listings", "blockspot-mark.svg"));
+await stat(path.join(dist, "assets", "listings", "coinmarketcap-mark.png"));
 await stat(path.join(dist, "assets", "epose", "epose-consensus-formula.svg"));
 await stat(path.join(dist, "assets", "epose", "epose-consensus-formula-de.svg"));
 await stat(path.join(dist, "assets", "epose", "epose-consensus-formula-neutral.svg"));

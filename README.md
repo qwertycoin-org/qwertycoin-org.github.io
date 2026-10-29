@@ -13,6 +13,8 @@ This repository contains the Qwertycoin v2 relaunch site and preserves the relev
 
 The homepage links to independent third-party QWC directory profiles below the community section. The Blockspot.io profile describes the current network; the CoinMarketCap profile still reports supply from the previous chain and is labeled as legacy data. Neither profile is an authoritative source for current-chain figures.
 
+The directory logos are served locally: the official [Blockspot icon](https://blockspot.io/logo/) and [CoinMarketCap site icon](https://coinmarketcap.com/apple-touch-icon.png). They identify the linked third-party services; their trademarks remain with their owners and their appearance does not imply endorsement.
+
 The non-custodial browser wallet is a separate application at [wallet.qwertycoin.org](https://wallet.qwertycoin.org/).
 
 ## Requirements
