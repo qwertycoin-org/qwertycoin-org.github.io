@@ -11,9 +11,11 @@ This repository contains the Qwertycoin v2 relaunch site and preserves the relev
 - No wallet key handling on the main domain
 - No third-party JavaScript, external stylesheets, or externally hosted fonts
 
-The homepage links to independent third-party QWC directory profiles below the community section. The Blockspot.io profile describes the current network; the CoinMarketCap profile still reports supply from the previous chain and is labeled as legacy data. Neither profile is an authoritative source for current-chain figures.
+The homepage links to independent third-party resources below the community section: the current-network [Blockspot.io profile](https://blockspot.io/coin/qwertycoin-qwc/), the [MiningPoolStats QWC directory](https://miningpoolstats.stream/qwertycoin), and the [2026 Bitcointalk announcement](https://bitcointalk.org/index.php?topic=5594105). The separate Trade QWC section links directly to the Neoxa QWC/USDT market. These categories are not interchangeable: a directory or forum entry is not an exchange listing or a partnership.
 
-The directory logos are served locally: the official [Blockspot icon](https://blockspot.io/logo/) and [CoinMarketCap site icon](https://coinmarketcap.com/apple-touch-icon.png). They identify the linked third-party services; their trademarks remain with their owners and their appearance does not imply endorsement.
+Market-data profiles with outdated legacy-chain figures are excluded from this homepage selection until corrected. In particular, CoinMarketCap still shows the old chain's supply and Live Coin Watch still describes CryptoNight and an old trading date. Use the official explorer for current-chain data. Other P2/P3, historical, and unconfirmed entries from the 29 October 2026 editorial inventory remain unpublished.
+
+The listing marks are served locally: the official [Blockspot icon](https://blockspot.io/logo/), [MiningPoolStats site icon](https://miningpoolstats.stream/android-icon-192x192.png), and [Bitcointalk favicon](https://bitcointalk.org/favicon.ico). They identify independent third-party services; their trademarks remain with their owners and their appearance does not imply endorsement.
 
 The non-custodial browser wallet is a separate application at [wallet.qwertycoin.org](https://wallet.qwertycoin.org/).
 

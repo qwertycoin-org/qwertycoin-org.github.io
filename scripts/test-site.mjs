@@ -166,13 +166,19 @@ for (const locale of localeConfig) {
   }
   const listingsHtml = html.slice(listingsStart, footerStart);
   const cards = [...listingsHtml.matchAll(/<article class="card listing-card">([\s\S]*?)<\/article>/g)].map((match) => match[1]);
-  if (cards.length !== 2) throw new Error(`${locale.code} must show two listing profiles`);
+  if (cards.length !== 3) throw new Error(`${locale.code} must show three independent resources`);
   assertIncludes(cards[0], '<img src="/assets/listings/blockspot-mark.svg" alt="" width="64" height="64" loading="lazy" decoding="async">', `${locale.code} Blockspot logo`);
   assertIncludes(cards[0], labels.current.body, `${locale.code} current-network label`);
   assertIncludes(cards[0], 'href="https://blockspot.io/coin/qwertycoin-qwc/" target="_blank" rel="noopener noreferrer"', `${locale.code} current-network listing link`);
-  assertIncludes(cards[1], '<img src="/assets/listings/coinmarketcap-mark.png" alt="" width="64" height="64" loading="lazy" decoding="async">', `${locale.code} CoinMarketCap logo`);
-  assertIncludes(cards[1], labels.legacy.body, `${locale.code} legacy-chain disclosure`);
-  assertIncludes(cards[1], 'href="https://coinmarketcap.com/currencies/qwertycoin/" target="_blank" rel="noopener noreferrer"', `${locale.code} legacy listing link`);
+  assertIncludes(cards[1], '<img src="/assets/listings/miningpoolstats-mark.png" alt="" width="64" height="64" loading="lazy" decoding="async">', `${locale.code} MiningPoolStats logo`);
+  assertIncludes(cards[1], labels.mining.body, `${locale.code} mining-directory description`);
+  assertIncludes(cards[1], 'href="https://miningpoolstats.stream/qwertycoin" target="_blank" rel="noopener noreferrer"', `${locale.code} mining-directory link`);
+  assertIncludes(cards[2], '<img src="/assets/listings/bitcointalk-mark.png" alt="" width="64" height="64" loading="lazy" decoding="async">', `${locale.code} Bitcointalk logo`);
+  assertIncludes(cards[2], labels.community.body, `${locale.code} announcement description`);
+  assertIncludes(cards[2], 'href="https://bitcointalk.org/index.php?topic=5594105" target="_blank" rel="noopener noreferrer"', `${locale.code} current-announcement link`);
+  for (const stale of ['coinmarketcap.com/currencies/qwertycoin/', 'livecoinwatch.com/price/Qwertycoin-QWC']) {
+    if (listingsHtml.includes(stale)) throw new Error(`${locale.code} must not promote stale market-data profile: ${stale}`);
+  }
 }
 
 const participationContract = [
@@ -851,7 +857,8 @@ await stat(path.join(root, "assets", "epose", "epose-consensus-formula.svg"));
 await stat(path.join(root, "assets", "epose", "epose-consensus-formula-de.svg"));
 await stat(path.join(root, "assets", "epose", "epose-consensus-formula-neutral.svg"));
 await stat(path.join(dist, "assets", "listings", "blockspot-mark.svg"));
-await stat(path.join(dist, "assets", "listings", "coinmarketcap-mark.png"));
+await stat(path.join(dist, "assets", "listings", "miningpoolstats-mark.png"));
+await stat(path.join(dist, "assets", "listings", "bitcointalk-mark.png"));
 await stat(path.join(dist, "assets", "epose", "epose-consensus-formula.svg"));
 await stat(path.join(dist, "assets", "epose", "epose-consensus-formula-de.svg"));
 await stat(path.join(dist, "assets", "epose", "epose-consensus-formula-neutral.svg"));

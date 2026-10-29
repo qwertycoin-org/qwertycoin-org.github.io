@@ -875,16 +875,21 @@
   "listings": {
     "eyebrow": "Vermeldingen",
     "title": "QWC-vermeldingen en gidsen.",
-    "body": "Deze profielen zijn van onafhankelijke derden. Controleer netwerk- en aanbodcijfers in de officiële explorer.",
+    "body": "Deze onafhankelijke links van derden dienen verschillende doelen. Een vermeld profiel is geen handelsmarkt of partnerschap. Controleer netwerkgegevens in de officiële explorer.",
     "current": {
       "badge": "Huidig netwerk",
       "body": "Dit profiel beschrijft het huidige QWC-netwerk. De gids beheert zijn eigen cijfers.",
       "link": "Open vermelding op"
     },
-    "legacy": {
-      "badge": "Verouderde gegevens",
-      "body": "Dit profiel toont nog het aanbod van de vorige QWC-keten, niet van het huidige netwerk.",
-      "link": "Bekijk oud profiel op"
+    "mining": {
+      "badge": "Miningoverzicht",
+      "body": "Overzicht van pools en het netwerk voor RandomX QWC. Controleer pools en actuele cijfers voordat je gaat minen.",
+      "link": "Open miningoverzicht op"
+    },
+    "community": {
+      "badge": "Communitythread",
+      "body": "De aankondiging en discussie over de herstart van Qwertycoin in 2026, geen marktvermelding.",
+      "link": "Lees de discussie op"
     }
   },
   "footer": {

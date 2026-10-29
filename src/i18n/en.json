@@ -875,16 +875,21 @@
   "listings": {
     "eyebrow": "Listings",
     "title": "QWC listings and directories.",
-    "body": "These third-party profiles are independent. Check network and supply figures against the official explorer.",
+    "body": "These independent third-party links serve different purposes. A directory profile is not a trading venue or a partnership. Check network details against the official explorer.",
     "current": {
       "badge": "Current network",
       "body": "This profile describes the current QWC network. The directory maintains its own figures.",
       "link": "Open listing on"
     },
-    "legacy": {
-      "badge": "Legacy data",
-      "body": "This profile still shows supply from the previous QWC chain, not the current network.",
-      "link": "View legacy profile on"
+    "mining": {
+      "badge": "Mining directory",
+      "body": "Pool and network listings for RandomX QWC. Check each pool and its current figures before mining.",
+      "link": "Open mining directory on"
+    },
+    "community": {
+      "badge": "Community thread",
+      "body": "The 2026 Qwertycoin relaunch announcement and discussion, not a market listing.",
+      "link": "Read discussion on"
     }
   },
   "footer": {

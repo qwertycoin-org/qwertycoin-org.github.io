@@ -875,16 +875,21 @@
   "listings": {
     "eyebrow": "lo liste",
     "title": "lo QWC liste .e lo datni ckupau",
-    "body": "lo datni be ti cu se gunka lo drata selci. ko catlu lo drani datni be lo bangu .e lo rupnu namcu fi lo flalu bloku catlu",
+    "body": "ti poi na ponse lo zgana be ti cu se pilno fi lo drata se bilga .i lo se cmima be lo liste na du lo canja stu gi'e na du lo kansa .i ko cipra lo cabna be lo jecta poi se sidju fi lo flalu zgana",
     "current": {
       "badge": "lo cabna bangu",
       "body": "ti skicu lo cabna QWC bangu .i lo datni se gunka lo liste selci",
       "link": "ko catlu lo liste be"
     },
-    "legacy": {
-      "badge": "lo purci datni",
-      "body": "ti mupli lo rupnu namcu be lo purci QWC bloku porsi .i na mupli lo cabna bangu",
-      "link": "ko catlu lo purci datni be"
+    "mining": {
+      "badge": "lo liste be lo minra",
+      "body": "lo liste be lo minra girzu je lo cabna be la RandomX QWC .i ko cipra lo girzu je lo cabna pu lo nu do minra",
+      "link": "ko catlu lo liste be lo minra pe"
+    },
+    "community": {
+      "badge": "lo casnu be lo girzu",
+      "body": "lo nu la Qwertycoin cu se cfari za'u re vo so xa cu se jungau gi'e se casnu .i na canja liste",
+      "link": "ko tcidu lo casnu pe"
     }
   },
   "footer": {

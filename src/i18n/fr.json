@@ -875,16 +875,21 @@
   "listings": {
     "eyebrow": "Référencements",
     "title": "Référencements et annuaires QWC.",
-    "body": "Ces profils proviennent de tiers indépendants. Vérifiez les données du réseau et de l’offre dans l’explorateur officiel.",
+    "body": "Ces liens tiers indépendants ont des fonctions différentes. Une fiche dans un annuaire ne constitue ni un marché ni un partenariat. Vérifiez les données du réseau dans l’explorateur officiel.",
     "current": {
       "badge": "Réseau actuel",
       "body": "Ce profil décrit le réseau QWC actuel. L’annuaire tient ses propres chiffres à jour.",
       "link": "Ouvrir la fiche sur"
     },
-    "legacy": {
-      "badge": "Données anciennes",
-      "body": "Ce profil affiche encore l’offre de l’ancienne chaîne QWC, et non celle du réseau actuel.",
-      "link": "Voir l’ancienne fiche sur"
+    "mining": {
+      "badge": "Annuaire de minage",
+      "body": "Annuaire des pools et du réseau pour RandomX QWC. Vérifiez chaque pool et ses données actuelles avant de miner.",
+      "link": "Ouvrir l’annuaire de minage sur"
+    },
+    "community": {
+      "badge": "Discussion communautaire",
+      "body": "Annonce et discussion sur la relance de Qwertycoin en 2026, pas une cotation sur un marché.",
+      "link": "Lire la discussion sur"
     }
   },
   "footer": {

@@ -875,16 +875,21 @@
   "listings": {
     "eyebrow": "Listigoj",
     "title": "Listigoj kaj katalogoj de QWC.",
-    "body": "Tiuj profiloj apartenas al sendependaj triaj servoj. Kontrolu retajn kaj provizajn ciferojn per la oficiala esplorilo.",
+    "body": "Ĉi tiuj sendependaj triaj ligiloj havas malsamajn celojn. Kataloga profilo ne estas komerca merkato aŭ partnereco. Kontrolu retajn datumojn per la oficiala esplorilo.",
     "current": {
       "badge": "Nuna reto",
       "body": "Tiu profilo priskribas la nunan reton de QWC. La katalogo mem prizorgas siajn ciferojn.",
       "link": "Malfermu listigon ĉe"
     },
-    "legacy": {
-      "badge": "Malnovaj datumoj",
-      "body": "Tiu profilo ankoraŭ montras la provizon de la antaŭa ĉeno de QWC, ne de la nuna reto.",
-      "link": "Vidu malnovan profilon ĉe"
+    "mining": {
+      "badge": "Minada katalogo",
+      "body": "Katalogo de minaj kunigejoj kaj reto por RandomX QWC. Kontrolu ĉiun kunigejon kaj ĝiajn aktualajn datumojn antaŭ minado.",
+      "link": "Malfermi minadan katalogon ĉe"
+    },
+    "community": {
+      "badge": "Komunuma temo",
+      "body": "Anonco kaj diskuto pri la relanĉo de Qwertycoin en 2026, ne merkata listigo.",
+      "link": "Legi diskuton ĉe"
     }
   },
   "footer": {
