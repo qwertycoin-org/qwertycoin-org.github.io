@@ -890,6 +890,11 @@
       "badge": "Communitythread",
       "body": "De aankondiging en discussie over de herstart van Qwertycoin in 2026, geen marktvermelding.",
       "link": "Lees de discussie op"
+    },
+    "legacy": {
+      "badge": "Verouderde gegevens",
+      "body": "Dit profiel toont nog het aanbod van de vorige QWC-keten, niet van het huidige netwerk.",
+      "link": "Bekijk oud profiel op"
     }
   },
   "footer": {

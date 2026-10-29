@@ -890,6 +890,11 @@
       "badge": "Community thread",
       "body": "The 2026 Qwertycoin relaunch announcement and discussion, not a market listing.",
       "link": "Read discussion on"
+    },
+    "legacy": {
+      "badge": "Legacy data",
+      "body": "This profile still shows supply from the previous QWC chain, not the current network.",
+      "link": "View legacy profile on"
     }
   },
   "footer": {

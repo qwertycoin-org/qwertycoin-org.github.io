@@ -890,6 +890,11 @@
       "badge": "lo casnu be lo girzu",
       "body": "lo nu la Qwertycoin cu se cfari za'u re vo so xa cu se jungau gi'e se casnu .i na canja liste",
       "link": "ko tcidu lo casnu pe"
+    },
+    "legacy": {
+      "badge": "lo purci datni",
+      "body": "ti mupli lo rupnu namcu be lo purci QWC bloku porsi .i na mupli lo cabna bangu",
+      "link": "ko catlu lo purci datni be"
     }
   },
   "footer": {

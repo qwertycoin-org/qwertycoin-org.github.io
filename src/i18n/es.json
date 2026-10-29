@@ -890,6 +890,11 @@
       "badge": "Hilo de la comunidad",
       "body": "Anuncio y debate sobre el relanzamiento de Qwertycoin en 2026; no es un listado de mercado.",
       "link": "Leer el debate en"
+    },
+    "legacy": {
+      "badge": "Datos antiguos",
+      "body": "Este perfil aún muestra la oferta de la cadena QWC anterior, no de la red actual.",
+      "link": "Ver perfil antiguo en"
     }
   },
   "footer": {

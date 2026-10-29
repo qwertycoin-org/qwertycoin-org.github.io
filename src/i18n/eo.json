@@ -890,6 +890,11 @@
       "badge": "Komunuma temo",
       "body": "Anonco kaj diskuto pri la relanĉo de Qwertycoin en 2026, ne merkata listigo.",
       "link": "Legi diskuton ĉe"
+    },
+    "legacy": {
+      "badge": "Malnovaj datumoj",
+      "body": "Tiu profilo ankoraŭ montras la provizon de la antaŭa ĉeno de QWC, ne de la nuna reto.",
+      "link": "Vidu malnovan profilon ĉe"
     }
   },
   "footer": {
