@@ -20,6 +20,7 @@ const listingProfiles = [
   { name: "Blockspot.io", url: "https://blockspot.io/coin/qwertycoin-qwc/", kind: "current", logo: "/assets/listings/blockspot-mark.svg" },
   { name: "MiningPoolStats", url: "https://miningpoolstats.stream/qwertycoin", kind: "mining", logo: "/assets/listings/miningpoolstats-mark.png" },
   { name: "Bitcointalk", url: "https://bitcointalk.org/index.php?topic=5594105", kind: "community", logo: "/assets/listings/bitcointalk-mark.png" },
+  { name: "Coinranking", url: "https://coinranking.com/coin/1QwUFzI4O2xu_+qwertycoin-qwc", kind: "legacy", logo: "/assets/listings/coinranking-mark.svg" },
   { name: "CoinMarketCap", url: "https://coinmarketcap.com/currencies/qwertycoin/", kind: "legacy", logo: "/assets/listings/coinmarketcap-mark.png" }
 ];
 
@@ -563,7 +564,7 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
       <section class="section" id="community"><div class="section-inner">${sectionHeader(t.community.eyebrow, t.community.title, t.community.body)}<div class="grid three"><article class="card"><h3>GitHub</h3><p><a href="${network.githubUrl}">${text(t.community.github)}</a></p></article><article class="card"><h3>Explorer</h3><p><a href="${network.explorerUrl}">${text(t.community.explorer)}</a></p></article><article class="card"><h3>X / Twitter</h3><p><a href="https://x.com/Qwertycoin_QWC">@Qwertycoin_QWC</a></p></article></div></div></section>
       <section class="section alt listings-section" id="listings"><div class="section-inner">
         ${sectionHeader(t.listings.eyebrow, t.listings.title, t.listings.body)}
-        <div class="grid two listings-grid">${listingProfiles.map((profile) => `<article class="card listing-card">
+        <div class="listings-grid">${listingProfiles.map((profile) => `<article class="card listing-card">
           <span class="badge">${text(t.listings[profile.kind].badge)}</span>
           <div class="listing-brand"><img src="${text(profile.logo)}" alt="" width="64" height="64" loading="lazy" decoding="async"><h3>${text(profile.name)}</h3></div>
           <p>${text(t.listings[profile.kind].body)}</p>
