@@ -872,6 +872,21 @@
     "github": "Qwertycoin-organisatie",
     "explorer": "QWC Mainnet Explorer"
   },
+  "listings": {
+    "eyebrow": "Vermeldingen",
+    "title": "QWC-vermeldingen en gidsen.",
+    "body": "Deze profielen zijn van onafhankelijke derden. Controleer netwerk- en aanbodcijfers in de officiële explorer.",
+    "current": {
+      "badge": "Huidig netwerk",
+      "body": "Dit profiel beschrijft het huidige QWC-netwerk. De gids beheert zijn eigen cijfers.",
+      "link": "Open vermelding op"
+    },
+    "legacy": {
+      "badge": "Verouderde gegevens",
+      "body": "Dit profiel toont nog het aanbod van de vorige QWC-keten, niet van het huidige netwerk.",
+      "link": "Bekijk oud profiel op"
+    }
+  },
   "footer": {
     "body": "Qwertycoin combineert privébetalingen, RandomX-mining, EPoSe-servicebeloningen, de Web Wallet en openbare broncode.",
     "technology": "Technologie",

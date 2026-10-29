@@ -872,6 +872,21 @@
     "github": "Organización Qwertycoin",
     "explorer": "QWC Mainnet Explorer"
   },
+  "listings": {
+    "eyebrow": "Listados",
+    "title": "Listados y directorios de QWC.",
+    "body": "Estos perfiles pertenecen a terceros independientes. Comprueba los datos de la red y la oferta en el explorador oficial.",
+    "current": {
+      "badge": "Red actual",
+      "body": "Este perfil describe la red QWC actual. El directorio mantiene sus propios datos.",
+      "link": "Abrir listado en"
+    },
+    "legacy": {
+      "badge": "Datos antiguos",
+      "body": "Este perfil aún muestra la oferta de la cadena QWC anterior, no de la red actual.",
+      "link": "Ver perfil antiguo en"
+    }
+  },
   "footer": {
     "body": "Qwertycoin combina pagos privados, minería RandomX, recompensas de servicio EPoSe, Web Wallet y código fuente público.",
     "technology": "Tecnología",

@@ -11,6 +11,8 @@ This repository contains the Qwertycoin v2 relaunch site and preserves the relev
 - No wallet key handling on the main domain
 - No third-party JavaScript, external stylesheets, or externally hosted fonts
 
+The homepage links to independent third-party QWC directory profiles below the community section. The Blockspot.io profile describes the current network; the CoinMarketCap profile still reports supply from the previous chain and is labeled as legacy data. Neither profile is an authoritative source for current-chain figures.
+
 The non-custodial browser wallet is a separate application at [wallet.qwertycoin.org](https://wallet.qwertycoin.org/).
 
 ## Requirements

@@ -872,6 +872,21 @@
     "github": "Qwertycoin organizo",
     "explorer": "QWC Mainnet Explorer"
   },
+  "listings": {
+    "eyebrow": "Listigoj",
+    "title": "Listigoj kaj katalogoj de QWC.",
+    "body": "Tiuj profiloj apartenas al sendependaj triaj servoj. Kontrolu retajn kaj provizajn ciferojn per la oficiala esplorilo.",
+    "current": {
+      "badge": "Nuna reto",
+      "body": "Tiu profilo priskribas la nunan reton de QWC. La katalogo mem prizorgas siajn ciferojn.",
+      "link": "Malfermu listigon ĉe"
+    },
+    "legacy": {
+      "badge": "Malnovaj datumoj",
+      "body": "Tiu profilo ankoraŭ montras la provizon de la antaŭa ĉeno de QWC, ne de la nuna reto.",
+      "link": "Vidu malnovan profilon ĉe"
+    }
+  },
   "footer": {
     "body": "Qwertycoin kombinas privatajn pagojn, RandomX-minadon, EPoSe-servajn rekompencojn, la Web Wallet kaj publikan fontkodon.",
     "technology": "Teknologio",

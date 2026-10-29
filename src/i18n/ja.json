@@ -872,6 +872,21 @@
     "github": "Qwertycoin編成",
     "explorer": "QWC Mainnet Explorer"
   },
+  "listings": {
+    "eyebrow": "外部掲載",
+    "title": "QWC の掲載先とディレクトリ。",
+    "body": "これらは独立した第三者の情報です。ネットワークと供給量の数値は公式エクスプローラーで確認してください。",
+    "current": {
+      "badge": "現行ネットワーク",
+      "body": "このページは現行の QWC ネットワークを説明しています。数値は掲載サイトが管理します。",
+      "link": "掲載ページを開く："
+    },
+    "legacy": {
+      "badge": "旧チェーンのデータ",
+      "body": "このページの供給量は旧 QWC チェーンのもので、現行ネットワークの数値ではありません。",
+      "link": "旧情報を見る："
+    }
+  },
   "footer": {
     "body": "Qwertycoin は、プライベート支払い、RandomX マイニング、EPoSe サービス報酬、Web Wallet、および公開ソース コードを組み合わせています。",
     "technology": "テクノロジー",

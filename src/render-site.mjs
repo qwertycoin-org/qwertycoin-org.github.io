@@ -16,6 +16,10 @@ import exchanges from "./config/exchanges.json" with { type: "json" };
 
 const dictionaries = { en, de, "zh-Hans": zhHans, nl, eo, fr, it, ja, jbo, pt, ru, es };
 const searchLocales = locales.filter((locale) => locale.searchHreflang !== false);
+const listingProfiles = [
+  { name: "Blockspot.io", url: "https://blockspot.io/coin/qwertycoin-qwc/", kind: "current" },
+  { name: "CoinMarketCap", url: "https://coinmarketcap.com/currencies/qwertycoin/", kind: "legacy" }
+];
 
 const siteParams = {
   blocks: network.epose.epochLengthBlocks,
@@ -555,6 +559,15 @@ ${t.specs.originNote ? `          <p class="spec-origin-note">${text(t.specs.ori
       <section class="section" id="history"><div class="section-inner">${sectionHeader(t.history.eyebrow, t.history.title, t.history.body)}<div class="history-bridge"><div class="history-year"><strong>2018</strong><span>${text(t.history.bridge[0])}</span></div><div class="history-line" aria-hidden="true"><span></span></div><div class="history-year"><strong>2026</strong><span>${text(t.history.bridge[1])}</span></div></div><div class="timeline">${t.history.items.map((item) => `<article class="timeline-item"><div class="date">${text(item.date)}</div><div><h3>${text(item.title)}</h3><p>${text(item.body)}</p></div></article>`).join("")}</div><div class="alert">${text(t.history.alert)}</div></div></section>
       <section class="section dark" id="developers"><div class="section-inner">${sectionHeader(t.developers.eyebrow, t.developers.title, t.developers.body)}<div class="grid three"><article class="card"><h3>${text(t.developers.sourceTitle)}</h3><p><a href="https://github.com/qwertycoin-org/qwertycoin">${text(t.developers.sourceBody)}</a></p></article><article class="card"><h3>${text(t.developers.legacyTitle)}</h3><p>${text(t.developers.legacyBody)}</p></article><article class="card"><h3>${text(t.developers.registrationTitle)}</h3><p>${text(t.developers.registrationBody)} <a href="https://github.com/qwertycoin-org/qwertycoin/blob/main/docs/epose/SERVICE_NODE.md">${text(t.developers.registrationLink)}</a></p></article></div></div></section>
       <section class="section" id="community"><div class="section-inner">${sectionHeader(t.community.eyebrow, t.community.title, t.community.body)}<div class="grid three"><article class="card"><h3>GitHub</h3><p><a href="${network.githubUrl}">${text(t.community.github)}</a></p></article><article class="card"><h3>Explorer</h3><p><a href="${network.explorerUrl}">${text(t.community.explorer)}</a></p></article><article class="card"><h3>X / Twitter</h3><p><a href="https://x.com/Qwertycoin_QWC">@Qwertycoin_QWC</a></p></article></div></div></section>
+      <section class="section alt listings-section" id="listings"><div class="section-inner">
+        ${sectionHeader(t.listings.eyebrow, t.listings.title, t.listings.body)}
+        <div class="grid two listings-grid">${listingProfiles.map((profile) => `<article class="card listing-card">
+          <span class="badge">${text(t.listings[profile.kind].badge)}</span>
+          <h3>${text(profile.name)}</h3>
+          <p>${text(t.listings[profile.kind].body)}</p>
+          <a href="${text(profile.url)}" target="_blank" rel="noopener noreferrer">${text(t.listings[profile.kind].link)} ${text(profile.name)} ↗</a>
+        </article>`).join("\n")}</div>
+      </div></section>
     </main>
 
     <footer class="site-footer"><div class="footer-inner"><div>${brand(locale)}</div><div class="footer-links"><a href="#technology">${text(t.footer.technology)}</a><a href="${network.pool.url}" target="_blank" rel="noopener noreferrer">${text(t.footer.pool)}</a><a href="${network.docsUrl}" target="_blank" rel="noopener noreferrer">${text(t.footer.documentation)}</a><a href="#history">${text(t.footer.history)}</a><a href="#roadmap">${text(t.footer.roadmap)}</a></div></div></footer>

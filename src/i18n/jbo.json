@@ -872,6 +872,21 @@
     "github": "lo la'o gy. Qwertycoin .gy. kagni girzu",
     "explorer": "QWC Mainnet Explorer"
   },
+  "listings": {
+    "eyebrow": "lo liste",
+    "title": "lo QWC liste .e lo datni ckupau",
+    "body": "lo datni be ti cu se gunka lo drata selci. ko catlu lo drani datni be lo bangu .e lo rupnu namcu fi lo flalu bloku catlu",
+    "current": {
+      "badge": "lo cabna bangu",
+      "body": "ti skicu lo cabna QWC bangu .i lo datni se gunka lo liste selci",
+      "link": "ko catlu lo liste be"
+    },
+    "legacy": {
+      "badge": "lo purci datni",
+      "body": "ti mupli lo rupnu namcu be lo purci QWC bloku porsi .i na mupli lo cabna bangu",
+      "link": "ko catlu lo purci datni be"
+    }
+  },
   "footer": {
     "body": "la'o gy. Qwertycoin .gy. cu jorne lo sivni jdini benji .e lo la'o gy. RandomX .gy. bloku cupra .e lo la'o gy. EPoSe .gy. selfu jerna .e la'o gy. Web Wallet .gy. .e lo gubni samselpla",
     "technology": "lo samtcise",

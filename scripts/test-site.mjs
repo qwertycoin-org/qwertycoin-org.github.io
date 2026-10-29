@@ -155,6 +155,24 @@ const exchangeContract = [
 
 for (const [needle, html, label] of exchangeContract) assertIncludes(html, needle, label);
 
+for (const locale of localeConfig) {
+  const html = localePages.get(locale.code);
+  const labels = JSON.parse(allLocaleSources[localeConfig.indexOf(locale)]).listings;
+  const communityStart = html.indexOf('<section class="section" id="community">');
+  const listingsStart = html.indexOf('<section class="section alt listings-section" id="listings">');
+  const footerStart = html.indexOf('<footer class="site-footer">');
+  if (!(communityStart >= 0 && communityStart < listingsStart && listingsStart < footerStart)) {
+    throw new Error(`${locale.code} listings must follow community and precede the footer`);
+  }
+  const listingsHtml = html.slice(listingsStart, footerStart);
+  const cards = [...listingsHtml.matchAll(/<article class="card listing-card">([\s\S]*?)<\/article>/g)].map((match) => match[1]);
+  if (cards.length !== 2) throw new Error(`${locale.code} must show two listing profiles`);
+  assertIncludes(cards[0], labels.current.body, `${locale.code} current-network label`);
+  assertIncludes(cards[0], 'href="https://blockspot.io/coin/qwertycoin-qwc/" target="_blank" rel="noopener noreferrer"', `${locale.code} current-network listing link`);
+  assertIncludes(cards[1], labels.legacy.body, `${locale.code} legacy-chain disclosure`);
+  assertIncludes(cards[1], 'href="https://coinmarketcap.com/currencies/qwertycoin/" target="_blank" rel="noopener noreferrer"', `${locale.code} legacy listing link`);
+}
+
 const participationContract = [
   ['<a class="text-link" href="#participate">Choose your path</a>', index, "English hero participation link"],
   ['<a class="text-link" href="#participate">Einstieg wählen</a>', germanIndex, "German hero participation link"],

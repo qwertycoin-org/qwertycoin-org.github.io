@@ -872,6 +872,21 @@
     "github": "Qwertycoin组织",
     "explorer": "QWC Mainnet Explorer"
   },
+  "listings": {
+    "eyebrow": "收录平台",
+    "title": "QWC 收录与目录。",
+    "body": "这些第三方资料由各平台独立维护。请以官方浏览器核对网络和供应量数据。",
+    "current": {
+      "badge": "当前网络",
+      "body": "此资料介绍当前 QWC 网络。平台自行维护其数据。",
+      "link": "查看收录："
+    },
+    "legacy": {
+      "badge": "旧链数据",
+      "body": "此资料仍显示旧 QWC 链的供应量，不代表当前网络。",
+      "link": "查看旧版资料："
+    }
+  },
   "footer": {
     "body": "Qwertycoin结合了私人支付、RandomX挖矿、EPoSe服务奖励、Web Wallet和公共源代码。",
     "technology": "技术",

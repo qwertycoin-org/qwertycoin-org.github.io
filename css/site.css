@@ -913,6 +913,23 @@ p { margin: var(--space-3) 0 0; }
   gap: var(--space-5);
 }
 
+.listings-grid .listing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.listing-card p {
+  margin: 0;
+}
+
+.listing-card a {
+  margin-top: auto;
+  padding-top: var(--space-2);
+  font-weight: 700;
+}
+
 .card,
 .feature-card,
 .release-card,
