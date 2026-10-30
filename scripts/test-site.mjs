@@ -169,7 +169,7 @@ for (const locale of localeConfig) {
   if (communityCards.length !== 5) throw new Error(`${locale.code} must show five community and project links`);
   assertIncludes(communityCards[0], `href="/out/discord" target="_blank" rel="noopener noreferrer">${community.discord}</a>`, `${locale.code} Discord redirect link`);
   assertIncludes(communityCards[1], `href="https://bitcointalk.org/index.php?topic=5594105" target="_blank" rel="noopener noreferrer">${community.bitcointalk}</a>`, `${locale.code} current Bitcointalk thread`);
-  assertIncludes(communityCards[2], 'href="https://x.com/Qwertycoin_QWC"', `${locale.code} X account`);
+  assertIncludes(communityCards[2], 'href="/out/twitter" target="_blank" rel="noopener noreferrer">@Qwertycoin_QWC</a>', `${locale.code} X account redirect`);
   assertIncludes(communityCards[3], community.github, `${locale.code} GitHub link`);
   assertIncludes(communityCards[4], community.explorer, `${locale.code} explorer link`);
   const listingsHtml = html.slice(listingsStart, footerStart);
@@ -866,6 +866,16 @@ for (const whitepaperPath of ["/whitepaper", "/whitepaper/"]) {
 for (const discordPath of ["/out/discord", "/out/discord/"]) {
   const index = redirectLines.indexOf(`${discordPath} https://discord.gg/uezsGxeGyS 302`);
   if (index < 0 || index >= notFoundRule) throw new Error(`Missing or shadowed changeable Discord redirect: ${discordPath}`);
+}
+for (const [path, target] of [
+  ["telegram", "https://t.me/qwertycoin"],
+  ["twitter", "https://x.com/Qwertycoin_QWC"]
+]) {
+  for (const suffix of ["", "/"]) {
+    const source = `/out/${path}${suffix}`;
+    const index = redirectLines.indexOf(`${source} ${target} 302`);
+    if (index < 0 || index >= notFoundRule) throw new Error(`Missing or shadowed changeable social redirect: ${source}`);
+  }
 }
 assertIncludes(css, "grid-template-columns: repeat(4, minmax(0, 1fr));", "four-column desktop listings grid");
 
