@@ -867,10 +867,37 @@
   },
   "community": {
     "eyebrow": "Komunumo",
-    "title": "Aliĝu al la komunumo Qwertycoin.",
-    "body": "Sekvu evoluon, esploru la reton kaj helpu formi la sekvajn paŝojn de Qwertycoin.",
-    "github": "Qwertycoin organizo",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "Komunumo kaj projektaj ligiloj.",
+    "body": "Por demandoj kaj diskutoj uzu Discord aŭ la Bitcointalk-temon pri la relanĉo en 2026. Ankaŭ la fontkodo, novaĵoj kaj blokĉenaj datumoj estas ligitaj ĉi tie.",
+    "github": "Fontkodo kaj problemoj",
+    "explorer": "Blokoj kaj transakcioj",
+    "discord": "Aliĝi al la QWC-servilo",
+    "bitcointalk": "Legi la temon pri la relanĉo en 2026"
+  },
+  "listings": {
+    "eyebrow": "Aliloke",
+    "title": "QWC en aliaj retejoj.",
+    "body": "Blockspot kaj MiningPoolStats priskribas la nunan reton. Coinranking kaj CoinMarketCap ankoraŭ montras provizon de la malnova blokĉeno. Ni jam petis ĝisdatigojn de ambaŭ platformoj kaj kontaktas ilin por korekti la ciferojn.",
+    "current": {
+      "badge": "Projekta katalogo",
+      "body": "Blockspot listigas QWC kun informoj pri RandomX kaj ligiloj al la retejo kaj esplorilo.",
+      "link": "Malfermi la paĝon de Blockspot"
+    },
+    "mining": {
+      "badge": "Minada katalogo",
+      "body": "La QWC-paĝo kolektas RandomX-minajn kunigejojn kaj statistikojn pri reto kaj blokoj.",
+      "link": "Malfermi la paĝon de MiningPoolStats"
+    },
+    "coinranking": {
+      "badge": "Datumoj de la malnova ĉeno",
+      "body": "Coinranking ankoraŭ ne montras QWC-merkatojn kaj nombras provizon de la malnova blokĉeno.",
+      "link": "Malfermi la paĝon de Coinranking"
+    },
+    "coinmarketcap": {
+      "badge": "Datumoj de la malnova ĉeno",
+      "body": "La antaŭrigardo pri QWC ĉe CoinMarketCap ankoraŭ uzas provizajn ciferojn de la malnova blokĉeno.",
+      "link": "Malfermi la paĝon de CoinMarketCap"
+    }
   },
   "footer": {
     "body": "Qwertycoin kombinas privatajn pagojn, RandomX-minadon, EPoSe-servajn rekompencojn, la Web Wallet kaj publikan fontkodon.",

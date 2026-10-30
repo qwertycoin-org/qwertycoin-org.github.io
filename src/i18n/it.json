@@ -867,10 +867,37 @@
   },
   "community": {
     "eyebrow": "Comunità",
-    "title": "Unisciti alla comunità Qwertycoin.",
-    "body": "Segui lo sviluppo, esplora la rete e aiuta a definire i prossimi passi di Qwertycoin.",
-    "github": "Organizzazione Qwertycoin",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "Comunità e link del progetto.",
+    "body": "Per domande e discussioni usa Discord o il thread Bitcointalk sul rilancio del 2026. Qui trovi anche codice, aggiornamenti e dati della blockchain.",
+    "github": "Codice sorgente e segnalazioni",
+    "explorer": "Blocchi e transazioni",
+    "discord": "Entra nel server QWC",
+    "bitcointalk": "Leggi il thread sul rilancio del 2026"
+  },
+  "listings": {
+    "eyebrow": "Su altri siti",
+    "title": "QWC su altri siti.",
+    "body": "Blockspot e MiningPoolStats seguono la rete attuale. Coinranking e CoinMarketCap mostrano ancora dati sull’offerta della vecchia blockchain. Abbiamo richiesto un aggiornamento a entrambe le piattaforme e siamo in contatto con loro per correggere i dati.",
+    "current": {
+      "badge": "Directory di progetti",
+      "body": "Blockspot presenta QWC, RandomX e i link al sito e all’explorer.",
+      "link": "Apri la pagina Blockspot"
+    },
+    "mining": {
+      "badge": "Directory mining",
+      "body": "La pagina QWC raccoglie pool RandomX e statistiche sulla rete e sui blocchi.",
+      "link": "Apri la pagina MiningPoolStats"
+    },
+    "coinranking": {
+      "badge": "Dati della vecchia rete",
+      "body": "Coinranking non riporta ancora mercati QWC e conta l’offerta della vecchia blockchain.",
+      "link": "Apri la pagina Coinranking"
+    },
+    "coinmarketcap": {
+      "badge": "Dati della vecchia rete",
+      "body": "L’anteprima QWC di CoinMarketCap usa ancora i dati sull’offerta della vecchia blockchain.",
+      "link": "Apri la pagina CoinMarketCap"
+    }
   },
   "footer": {
     "body": "Qwertycoin combina pagamenti privati, mining RandomX, premi del servizio EPoSe, Web Wallet e codice sorgente pubblico.",

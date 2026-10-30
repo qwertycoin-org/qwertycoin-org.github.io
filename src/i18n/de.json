@@ -867,10 +867,37 @@
   },
   "community": {
     "eyebrow": "Community",
-    "title": "Mach bei Qwertycoin mit.",
-    "body": "Verfolge die Entwicklung, erkunde das Netzwerk und gestalte die nächsten Schritte gemeinsam mit uns.",
-    "github": "Qwertycoin-Organisation",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "Austausch und Projektlinks.",
+    "body": "Für Fragen und Diskussionen gibt es Discord und den Bitcointalk-Thread zum Neustart 2026. Quellcode, Meldungen und Blockchain-Daten sind ebenfalls verlinkt.",
+    "github": "Quellcode und Issues",
+    "explorer": "Blöcke und Transaktionen",
+    "discord": "Dem QWC-Server beitreten",
+    "bitcointalk": "Thread zum Neustart 2026 lesen"
+  },
+  "listings": {
+    "eyebrow": "Anderswo",
+    "title": "QWC auf anderen Seiten.",
+    "body": "Blockspot und MiningPoolStats erfassen das aktuelle Netzwerk. Coinranking und CoinMarketCap zeigen noch Bestandszahlen der alten Blockchain. Wir haben bei beiden Plattformen eine Aktualisierung beantragt und stehen mit ihnen in Kontakt, um die Angaben zu korrigieren.",
+    "current": {
+      "badge": "Projektverzeichnis",
+      "body": "Blockspot führt QWC mit Angaben zu RandomX sowie Links zur Website und zum Explorer.",
+      "link": "Blockspot-Seite öffnen"
+    },
+    "mining": {
+      "badge": "Mining-Verzeichnis",
+      "body": "Die QWC-Seite bündelt RandomX-Mining-Pools mit Netzwerk- und Blockstatistiken.",
+      "link": "MiningPoolStats-Seite öffnen"
+    },
+    "coinranking": {
+      "badge": "Daten der alten Chain",
+      "body": "Coinranking nennt noch keine QWC-Märkte und zählt weiterhin Coins der alten Blockchain.",
+      "link": "Coinranking-Seite öffnen"
+    },
+    "coinmarketcap": {
+      "badge": "Daten der alten Chain",
+      "body": "Die QWC-Vorschauseite von CoinMarketCap verwendet weiterhin Bestandszahlen der alten Blockchain.",
+      "link": "CoinMarketCap-Seite öffnen"
+    }
   },
   "footer": {
     "body": "Qwertycoin verbindet vertrauliche digitale Zahlungen, offenes RandomX-Mining, EPoSE-Belohnungen für Netzwerkdienste und frei zugänglichen Quellcode.",

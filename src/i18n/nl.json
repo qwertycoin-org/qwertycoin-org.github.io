@@ -867,10 +867,37 @@
   },
   "community": {
     "eyebrow": "Community",
-    "title": "Sluit u aan bij de Qwertycoin-community.",
-    "body": "Volg de ontwikkeling, verken het netwerk en help de volgende stappen van de Qwertycoin vorm te geven.",
-    "github": "Qwertycoin-organisatie",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "Community en projectlinks.",
+    "body": "Voor vragen en discussie kun je terecht op Discord of in de Bitcointalk-thread over de herstart van 2026. Code, projectnieuws en blockchaininformatie staan hier ook.",
+    "github": "Broncode en issues",
+    "explorer": "Blokken en transacties",
+    "discord": "Word lid van de QWC-server",
+    "bitcointalk": "Lees de thread over de herstart in 2026"
+  },
+  "listings": {
+    "eyebrow": "Op andere sites",
+    "title": "QWC op andere sites.",
+    "body": "Blockspot en MiningPoolStats volgen het huidige netwerk. Coinranking en CoinMarketCap tonen nog aanbodcijfers van de oude blockchain. We hebben beide platforms om een update gevraagd en staan met hen in contact om de cijfers te laten corrigeren.",
+    "current": {
+      "badge": "Projectgids",
+      "body": "Blockspot vermeldt QWC met informatie over RandomX en links naar de website en explorer.",
+      "link": "Open de Blockspot-pagina"
+    },
+    "mining": {
+      "badge": "Miningoverzicht",
+      "body": "De QWC-pagina bundelt RandomX-miningpools met netwerk- en blokstatistieken.",
+      "link": "Open de MiningPoolStats-pagina"
+    },
+    "coinranking": {
+      "badge": "Gegevens van de oude keten",
+      "body": "Coinranking toont nog geen QWC-markten en telt nog het aanbod van de oude blockchain.",
+      "link": "Open de Coinranking-pagina"
+    },
+    "coinmarketcap": {
+      "badge": "Gegevens van de oude keten",
+      "body": "De QWC-voorbeeldpagina van CoinMarketCap gebruikt nog aanbodcijfers van de oude blockchain.",
+      "link": "Open de CoinMarketCap-pagina"
+    }
   },
   "footer": {
     "body": "Qwertycoin combineert privébetalingen, RandomX-mining, EPoSe-servicebeloningen, de Web Wallet en openbare broncode.",

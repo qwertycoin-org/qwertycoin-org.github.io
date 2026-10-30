@@ -7,5 +7,12 @@
 /downloads /#releases 301
 /nodes /#network 301
 /explorer https://explorer.qwertycoin.org/ 301
-/* /404.html 404
 /whitepaper https://wp.qwertycoin.org/ 301
+/whitepaper/ https://wp.qwertycoin.org/ 301
+/out/discord https://discord.gg/uezsGxeGyS 302
+/out/discord/ https://discord.gg/uezsGxeGyS 302
+/out/telegram https://t.me/qwertycoin 302
+/out/telegram/ https://t.me/qwertycoin 302
+/out/twitter https://x.com/Qwertycoin_QWC 302
+/out/twitter/ https://x.com/Qwertycoin_QWC 302
+/* /404.html 404

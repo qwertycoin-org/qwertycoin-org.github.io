@@ -867,10 +867,37 @@
   },
   "community": {
     "eyebrow": "lo cecmu",
-    "title": "ko kansa lo la'o gy. Qwertycoin .gy. cecmu",
-    "body": "ko catlu lo favgau .e lo samci'e gi'e sidju lo nu tarmi lo la'o gy. Qwertycoin .gy. bavlamdei",
-    "github": "lo la'o gy. Qwertycoin .gy. kagni girzu",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "lo cecmu .e lo girzu skicu",
+    "body": "ko cusku lo do preti la Discord .a lo Bitcointalk casnu be lo nu la Qwertycoin cu se cfari za’u re vo so xa .i lo samfu .e lo nuzba .e lo bloku datni cu se judri vi",
+    "github": "lo samfu .e lo nabmi",
+    "explorer": "lo bloku .e lo canja",
+    "discord": "ko kansa lo QWC girzu",
+    "bitcointalk": "ko tcidu lo casnu be lo nu se cfari za’u re vo so xa"
+  },
+  "listings": {
+    "eyebrow": "lo drata stu",
+    "title": "lo QWC datni be lo drata stu",
+    "body": "la Blockspot .e la MiningPoolStats cu skicu lo cabna bangu .i la Coinranking .e la CoinMarketCap cu mupli lo purci rupnu namcu .i mi'a ba'o cpedu lo nu le re datni cu se cikre .i mi'a ca tavla le re",
+    "current": {
+      "badge": "lo girzu liste",
+      "body": "la Blockspot cu liste lo QWC .e lo RandomX datni .e lo judri be lo stu .e lo zgana",
+      "link": "ko catlu la Blockspot"
+    },
+    "mining": {
+      "badge": "lo minra liste",
+      "body": "lo QWC papri cu liste lo RandomX minra girzu .e lo bloku datni",
+      "link": "ko catlu la MiningPoolStats"
+    },
+    "coinranking": {
+      "badge": "lo purci datni",
+      "body": "la Coinranking na liste lo QWC canja stu gi’e mupli lo purci bloku porsi namcu",
+      "link": "ko catlu la Coinranking"
+    },
+    "coinmarketcap": {
+      "badge": "lo purci datni",
+      "body": "la CoinMarketCap cu mupli lo purci bloku porsi namcu pe lo QWC",
+      "link": "ko catlu la CoinMarketCap"
+    }
   },
   "footer": {
     "body": "la'o gy. Qwertycoin .gy. cu jorne lo sivni jdini benji .e lo la'o gy. RandomX .gy. bloku cupra .e lo la'o gy. EPoSe .gy. selfu jerna .e la'o gy. Web Wallet .gy. .e lo gubni samselpla",

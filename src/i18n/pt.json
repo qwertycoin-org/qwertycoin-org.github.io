@@ -867,10 +867,37 @@
   },
   "community": {
     "eyebrow": "Comunidade",
-    "title": "Junte-se à comunidade Qwertycoin.",
-    "body": "Acompanhe o desenvolvimento, explore a rede e ajude a moldar os próximos passos do Qwertycoin.",
-    "github": "Organização Qwertycoin",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "Comunidade e ligações do projeto.",
+    "body": "Para perguntas e conversas, use o Discord ou o tópico do Bitcointalk sobre o relançamento de 2026. O código, as novidades e a blockchain também estão ligados aqui.",
+    "github": "Código-fonte e problemas",
+    "explorer": "Blocos e transações",
+    "discord": "Entrar no servidor QWC",
+    "bitcointalk": "Ler o tópico do relançamento de 2026"
+  },
+  "listings": {
+    "eyebrow": "Noutros sites",
+    "title": "QWC noutros sites.",
+    "body": "Blockspot e MiningPoolStats cobrem a rede atual. Coinranking e CoinMarketCap ainda mostram valores de oferta da antiga blockchain. Já solicitámos uma atualização às duas plataformas e estamos em contacto com elas para corrigir os valores.",
+    "current": {
+      "badge": "Diretório de projetos",
+      "body": "Blockspot apresenta QWC com dados sobre RandomX e ligações para o site e o explorador.",
+      "link": "Abrir a página da Blockspot"
+    },
+    "mining": {
+      "badge": "Diretório de mineração",
+      "body": "A página QWC reúne pools RandomX e estatísticas da rede e dos blocos.",
+      "link": "Abrir a página da MiningPoolStats"
+    },
+    "coinranking": {
+      "badge": "Dados da cadeia antiga",
+      "body": "A Coinranking ainda não mostra mercados QWC e continua a contar a oferta da antiga blockchain.",
+      "link": "Abrir a página da Coinranking"
+    },
+    "coinmarketcap": {
+      "badge": "Dados da cadeia antiga",
+      "body": "A pré-visualização QWC da CoinMarketCap ainda usa dados de oferta da antiga blockchain.",
+      "link": "Abrir a página da CoinMarketCap"
+    }
   },
   "footer": {
     "body": "Qwertycoin combina pagamentos privados, mineração RandomX, recompensas de serviço EPoSe, Web Wallet e código-fonte público.",

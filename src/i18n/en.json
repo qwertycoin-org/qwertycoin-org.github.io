@@ -867,10 +867,37 @@
   },
   "community": {
     "eyebrow": "Community",
-    "title": "Join the Qwertycoin community.",
-    "body": "Follow development, explore the network and help shape Qwertycoin's next steps.",
-    "github": "Qwertycoin organization",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "Community and project links.",
+    "body": "For questions and discussion, use Discord or the 2026 Bitcointalk thread. The code, project updates and blockchain are linked here too.",
+    "github": "Source code and issues",
+    "explorer": "Blocks and transactions",
+    "discord": "Join the QWC server",
+    "bitcointalk": "Read the 2026 relaunch thread"
+  },
+  "listings": {
+    "eyebrow": "Elsewhere",
+    "title": "QWC on other sites.",
+    "body": "Blockspot and MiningPoolStats cover the current network. Coinranking and CoinMarketCap still show old-chain supply figures. We have requested updates from both platforms and are in contact with them to correct the figures.",
+    "current": {
+      "badge": "Project directory",
+      "body": "Blockspot lists QWC with RandomX details and links to the website and explorer.",
+      "link": "Open Blockspot page"
+    },
+    "mining": {
+      "badge": "Mining directory",
+      "body": "The QWC page groups RandomX mining pools with network and block statistics.",
+      "link": "Open MiningPoolStats page"
+    },
+    "coinranking": {
+      "badge": "Old-chain data",
+      "body": "Coinranking shows no QWC markets and still counts supply from the old blockchain.",
+      "link": "Open Coinranking page"
+    },
+    "coinmarketcap": {
+      "badge": "Old-chain data",
+      "body": "CoinMarketCap's QWC preview still uses supply figures from the old blockchain.",
+      "link": "Open CoinMarketCap page"
+    }
   },
   "footer": {
     "body": "Qwertycoin combines private payments, RandomX mining, EPoSe service rewards, the Web Wallet and public source code.",

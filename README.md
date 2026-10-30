@@ -11,6 +11,16 @@ This repository contains the Qwertycoin v2 relaunch site and preserves the relev
 - No wallet key handling on the main domain
 - No third-party JavaScript, external stylesheets, or externally hosted fonts
 
+The community section links to [Discord](https://qwertycoin.org/out/discord) and the [2026 Bitcointalk discussion](https://bitcointalk.org/index.php?topic=5594105), alongside GitHub, X and the official explorer. Below it, four independent third-party resources appear in this order: the current-network [Blockspot.io profile](https://blockspot.io/coin/qwertycoin-qwc/), the [MiningPoolStats QWC directory](https://miningpoolstats.stream/qwertycoin), the [Coinranking QWC profile](https://coinranking.com/coin/1QwUFzI4O2xu_+qwertycoin-qwc), and the [CoinMarketCap QWC profile](https://coinmarketcap.com/currencies/qwertycoin/) as the final card. The separate Trade QWC section links directly to the Neoxa QWC/USDT market. A directory or price profile is not an exchange listing or a partnership.
+
+Coinranking describes the 2026 relaunch but still shows legacy-chain supply and no current markets. CoinMarketCap also shows old-chain supply. Both cards explicitly label their figures as legacy data rather than current-network market data. Live Coin Watch still describes CryptoNight and an old trading date and remains excluded pending correction. Use the official explorer for current-chain data. Other P2/P3, historical, and unconfirmed entries from the 29 October 2026 editorial inventory remain unpublished.
+
+The listing marks are served locally: the official [Blockspot icon](https://blockspot.io/logo/), [MiningPoolStats site icon](https://miningpoolstats.stream/android-icon-192x192.png), [Coinranking site icon](https://coinranking.com/static/logo.svg), and [CoinMarketCap site icon](https://coinmarketcap.com/apple-touch-icon.png). They identify independent third-party services; their trademarks remain with their owners and their appearance does not imply endorsement.
+
+Both `/whitepaper` and `/whitepaper/` permanently redirect to the current whitepaper at [wp.qwertycoin.org](https://wp.qwertycoin.org/).
+
+Both `/out/discord` and `/out/discord/` temporarily redirect (HTTP 302) to the current Discord invite. Update the destination in `_redirects` if the invite changes. A permanent 301 would risk browsers retaining an obsolete invite. Wallet download links are not routed through `/out/` yet.
+
 The non-custodial browser wallet is a separate application at [wallet.qwertycoin.org](https://wallet.qwertycoin.org/).
 
 ## Requirements

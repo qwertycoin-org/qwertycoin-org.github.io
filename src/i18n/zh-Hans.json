@@ -867,10 +867,37 @@
   },
   "community": {
     "eyebrow": "社区",
-    "title": "加入 Qwertycoin 社区。",
-    "body": "跟踪开发、探索网络并帮助制定 Qwertycoin 的后续步骤。",
-    "github": "Qwertycoin组织",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "社区与项目链接。",
+    "body": "提问和讨论请前往 Discord，或阅读 Bitcointalk 上关于 2026 年重启的帖子。源代码、项目动态和区块链数据也可从这里查看。",
+    "github": "源代码与问题",
+    "explorer": "区块与交易",
+    "discord": "加入 QWC 服务器",
+    "bitcointalk": "阅读 2026 年重启帖"
+  },
+  "listings": {
+    "eyebrow": "其他网站",
+    "title": "其他网站上的 QWC。",
+    "body": "Blockspot 和 MiningPoolStats 介绍当前网络。Coinranking 和 CoinMarketCap 的供应量仍取自旧链。我们已向两个平台申请更新，并正与他们联系以更正这些数据。",
+    "current": {
+      "badge": "项目目录",
+      "body": "Blockspot 收录 QWC 的 RandomX 信息，并链接到官网和区块浏览器。",
+      "link": "打开 Blockspot 页面"
+    },
+    "mining": {
+      "badge": "挖矿目录",
+      "body": "QWC 页面汇集 RandomX 矿池及网络、区块统计。",
+      "link": "打开 MiningPoolStats 页面"
+    },
+    "coinranking": {
+      "badge": "旧链数据",
+      "body": "Coinranking 尚未列出 QWC 市场，供应量仍按旧链计算。",
+      "link": "打开 Coinranking 页面"
+    },
+    "coinmarketcap": {
+      "badge": "旧链数据",
+      "body": "CoinMarketCap 的 QWC 预览页仍使用旧链的供应量。",
+      "link": "打开 CoinMarketCap 页面"
+    }
   },
   "footer": {
     "body": "Qwertycoin结合了私人支付、RandomX挖矿、EPoSe服务奖励、Web Wallet和公共源代码。",
