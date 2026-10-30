@@ -867,34 +867,36 @@
   },
   "community": {
     "eyebrow": "Komunumo",
-    "title": "Aliĝu al la komunumo Qwertycoin.",
-    "body": "Sekvu evoluon, esploru la reton kaj helpu formi la sekvajn paŝojn de Qwertycoin.",
-    "github": "Qwertycoin organizo",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "Komunumo kaj projektaj ligiloj.",
+    "body": "Por demandoj kaj diskutoj uzu Discord aŭ la Bitcointalk-temon pri la relanĉo en 2026. Ankaŭ la fontkodo, novaĵoj kaj blokĉenaj datumoj estas ligitaj ĉi tie.",
+    "github": "Fontkodo kaj problemoj",
+    "explorer": "Blokoj kaj transakcioj",
+    "discord": "Aliĝi al la QWC-servilo",
+    "bitcointalk": "Legi la temon pri la relanĉo en 2026"
   },
   "listings": {
-    "eyebrow": "Listigoj",
-    "title": "Listigoj kaj katalogoj de QWC.",
-    "body": "Ĉi tiuj sendependaj triaj ligiloj havas malsamajn celojn. Kataloga profilo ne estas komerca merkato aŭ partnereco. Kontrolu retajn datumojn per la oficiala esplorilo.",
+    "eyebrow": "Aliloke",
+    "title": "QWC en aliaj retejoj.",
+    "body": "Blockspot kaj MiningPoolStats priskribas la nunan reton. Coinranking kaj CoinMarketCap ankoraŭ montras provizon de la malnova blokĉeno.",
     "current": {
-      "badge": "Nuna reto",
-      "body": "Tiu profilo priskribas la nunan reton de QWC. La katalogo mem prizorgas siajn ciferojn.",
-      "link": "Malfermu listigon ĉe"
+      "badge": "Projekta katalogo",
+      "body": "Blockspot listigas QWC kun informoj pri RandomX kaj ligiloj al la retejo kaj esplorilo.",
+      "link": "Malfermi la paĝon de Blockspot"
     },
     "mining": {
       "badge": "Minada katalogo",
-      "body": "Katalogo de minaj kunigejoj kaj reto por RandomX QWC. Kontrolu ĉiun kunigejon kaj ĝiajn aktualajn datumojn antaŭ minado.",
-      "link": "Malfermi minadan katalogon ĉe"
+      "body": "La QWC-paĝo kolektas RandomX-minajn kunigejojn kaj statistikojn pri reto kaj blokoj.",
+      "link": "Malfermi la paĝon de MiningPoolStats"
     },
-    "community": {
-      "badge": "Komunuma temo",
-      "body": "Anonco kaj diskuto pri la relanĉo de Qwertycoin en 2026, ne merkata listigo.",
-      "link": "Legi diskuton ĉe"
+    "coinranking": {
+      "badge": "Datumoj de la malnova ĉeno",
+      "body": "Coinranking ankoraŭ ne montras QWC-merkatojn kaj nombras provizon de la malnova blokĉeno.",
+      "link": "Malfermi la paĝon de Coinranking"
     },
-    "legacy": {
-      "badge": "Malnovaj datumoj",
-      "body": "Tiu profilo ankoraŭ montras la provizon de la antaŭa ĉeno de QWC, ne de la nuna reto.",
-      "link": "Vidu malnovan profilon ĉe"
+    "coinmarketcap": {
+      "badge": "Datumoj de la malnova ĉeno",
+      "body": "La antaŭrigardo pri QWC ĉe CoinMarketCap ankoraŭ uzas provizajn ciferojn de la malnova blokĉeno.",
+      "link": "Malfermi la paĝon de CoinMarketCap"
     }
   },
   "footer": {

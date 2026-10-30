@@ -867,34 +867,36 @@
   },
   "community": {
     "eyebrow": "Community",
-    "title": "Join the Qwertycoin community.",
-    "body": "Follow development, explore the network and help shape Qwertycoin's next steps.",
-    "github": "Qwertycoin organization",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "Community and project links.",
+    "body": "For questions and discussion, use Discord or the 2026 Bitcointalk thread. The code, project updates and blockchain are linked here too.",
+    "github": "Source code and issues",
+    "explorer": "Blocks and transactions",
+    "discord": "Join the QWC server",
+    "bitcointalk": "Read the 2026 relaunch thread"
   },
   "listings": {
-    "eyebrow": "Listings",
-    "title": "QWC listings and directories.",
-    "body": "These independent third-party links serve different purposes. A directory profile is not a trading venue or a partnership. Check network details against the official explorer.",
+    "eyebrow": "Elsewhere",
+    "title": "QWC on other sites.",
+    "body": "Blockspot and MiningPoolStats cover the current network. Coinranking and CoinMarketCap still show old-chain supply figures.",
     "current": {
-      "badge": "Current network",
-      "body": "This profile describes the current QWC network. The directory maintains its own figures.",
-      "link": "Open listing on"
+      "badge": "Project directory",
+      "body": "Blockspot lists QWC with RandomX details and links to the website and explorer.",
+      "link": "Open Blockspot page"
     },
     "mining": {
       "badge": "Mining directory",
-      "body": "Pool and network listings for RandomX QWC. Check each pool and its current figures before mining.",
-      "link": "Open mining directory on"
+      "body": "The QWC page groups RandomX mining pools with network and block statistics.",
+      "link": "Open MiningPoolStats page"
     },
-    "community": {
-      "badge": "Community thread",
-      "body": "The 2026 Qwertycoin relaunch announcement and discussion, not a market listing.",
-      "link": "Read discussion on"
+    "coinranking": {
+      "badge": "Old-chain data",
+      "body": "Coinranking shows no QWC markets and still counts supply from the old blockchain.",
+      "link": "Open Coinranking page"
     },
-    "legacy": {
-      "badge": "Legacy data",
-      "body": "This profile still shows supply from the previous QWC chain, not the current network.",
-      "link": "View legacy profile on"
+    "coinmarketcap": {
+      "badge": "Old-chain data",
+      "body": "CoinMarketCap's QWC preview still uses supply figures from the old blockchain.",
+      "link": "Open CoinMarketCap page"
     }
   },
   "footer": {

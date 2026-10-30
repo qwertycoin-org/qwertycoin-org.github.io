@@ -867,34 +867,36 @@
   },
   "community": {
     "eyebrow": "コミュニティ",
-    "title": "Qwertycoin コミュニティに参加してください。",
-    "body": "開発を追跡し、ネットワークを探索し、Qwertycoin の次のステップの形成を支援します。",
-    "github": "Qwertycoin編成",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "コミュニティとプロジェクトのリンク。",
+    "body": "質問や議論は Discord、または 2026 年の再始動を扱う Bitcointalk スレッドへ。ソースコード、最新情報、ブロックチェーンのデータもここから確認できます。",
+    "github": "ソースコードと課題",
+    "explorer": "ブロックと取引",
+    "discord": "QWC サーバーに参加",
+    "bitcointalk": "2026 年の再始動スレッドを読む"
   },
   "listings": {
-    "eyebrow": "外部掲載",
-    "title": "QWC の掲載先とディレクトリ。",
-    "body": "これらの独立した外部リンクは用途が異なります。ディレクトリへの掲載は取引市場や提携を意味しません。ネットワーク情報は公式エクスプローラーで確認してください。",
+    "eyebrow": "外部サイト",
+    "title": "外部サイトの QWC 情報。",
+    "body": "Blockspot と MiningPoolStats は現行ネットワークを扱っています。Coinranking と CoinMarketCap の供給量は旧チェーンのものです。",
     "current": {
-      "badge": "現行ネットワーク",
-      "body": "このページは現行の QWC ネットワークを説明しています。数値は掲載サイトが管理します。",
-      "link": "掲載ページを開く："
+      "badge": "プロジェクト一覧",
+      "body": "Blockspot は QWC の RandomX 情報と公式サイト、エクスプローラーへのリンクを掲載しています。",
+      "link": "Blockspot のページを開く"
     },
     "mining": {
       "badge": "マイニング一覧",
-      "body": "RandomX QWC のプールとネットワークの一覧です。採掘前に各プールと最新データを確認してください。",
-      "link": "マイニング一覧を見る："
+      "body": "QWC のページには RandomX のプールとネットワーク・ブロック統計がまとまっています。",
+      "link": "MiningPoolStats のページを開く"
     },
-    "community": {
-      "badge": "コミュニティスレッド",
-      "body": "2026年のQwertycoin再始動に関する告知と議論です。取引市場の掲載ではありません。",
-      "link": "議論を読む："
-    },
-    "legacy": {
+    "coinranking": {
       "badge": "旧チェーンのデータ",
-      "body": "このページの供給量は旧 QWC チェーンのもので、現行ネットワークの数値ではありません。",
-      "link": "旧情報を見る："
+      "body": "Coinranking には QWC の取引市場がなく、供給量も旧チェーンの値です。",
+      "link": "Coinranking のページを開く"
+    },
+    "coinmarketcap": {
+      "badge": "旧チェーンのデータ",
+      "body": "CoinMarketCap の QWC プレビューページは旧チェーンの供給量を使っています。",
+      "link": "CoinMarketCap のページを開く"
     }
   },
   "footer": {

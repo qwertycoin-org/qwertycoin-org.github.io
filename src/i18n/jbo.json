@@ -867,34 +867,36 @@
   },
   "community": {
     "eyebrow": "lo cecmu",
-    "title": "ko kansa lo la'o gy. Qwertycoin .gy. cecmu",
-    "body": "ko catlu lo favgau .e lo samci'e gi'e sidju lo nu tarmi lo la'o gy. Qwertycoin .gy. bavlamdei",
-    "github": "lo la'o gy. Qwertycoin .gy. kagni girzu",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "lo cecmu .e lo girzu skicu",
+    "body": "ko cusku lo do preti la Discord .a lo Bitcointalk casnu be lo nu la Qwertycoin cu se cfari za’u re vo so xa .i lo samfu .e lo nuzba .e lo bloku datni cu se judri vi",
+    "github": "lo samfu .e lo nabmi",
+    "explorer": "lo bloku .e lo canja",
+    "discord": "ko kansa lo QWC girzu",
+    "bitcointalk": "ko tcidu lo casnu be lo nu se cfari za’u re vo so xa"
   },
   "listings": {
-    "eyebrow": "lo liste",
-    "title": "lo QWC liste .e lo datni ckupau",
-    "body": "ti poi na ponse lo zgana be ti cu se pilno fi lo drata se bilga .i lo se cmima be lo liste na du lo canja stu gi'e na du lo kansa .i ko cipra lo cabna be lo jecta poi se sidju fi lo flalu zgana",
+    "eyebrow": "lo drata stu",
+    "title": "lo QWC datni be lo drata stu",
+    "body": "la Blockspot .e la MiningPoolStats cu skicu lo cabna bangu .i la Coinranking .e la CoinMarketCap cu mupli lo purci rupnu namcu",
     "current": {
-      "badge": "lo cabna bangu",
-      "body": "ti skicu lo cabna QWC bangu .i lo datni se gunka lo liste selci",
-      "link": "ko catlu lo liste be"
+      "badge": "lo girzu liste",
+      "body": "la Blockspot cu liste lo QWC .e lo RandomX datni .e lo judri be lo stu .e lo zgana",
+      "link": "ko catlu la Blockspot"
     },
     "mining": {
-      "badge": "lo liste be lo minra",
-      "body": "lo liste be lo minra girzu je lo cabna be la RandomX QWC .i ko cipra lo girzu je lo cabna pu lo nu do minra",
-      "link": "ko catlu lo liste be lo minra pe"
+      "badge": "lo minra liste",
+      "body": "lo QWC papri cu liste lo RandomX minra girzu .e lo bloku datni",
+      "link": "ko catlu la MiningPoolStats"
     },
-    "community": {
-      "badge": "lo casnu be lo girzu",
-      "body": "lo nu la Qwertycoin cu se cfari za'u re vo so xa cu se jungau gi'e se casnu .i na canja liste",
-      "link": "ko tcidu lo casnu pe"
-    },
-    "legacy": {
+    "coinranking": {
       "badge": "lo purci datni",
-      "body": "ti mupli lo rupnu namcu be lo purci QWC bloku porsi .i na mupli lo cabna bangu",
-      "link": "ko catlu lo purci datni be"
+      "body": "la Coinranking na liste lo QWC canja stu gi’e mupli lo purci bloku porsi namcu",
+      "link": "ko catlu la Coinranking"
+    },
+    "coinmarketcap": {
+      "badge": "lo purci datni",
+      "body": "la CoinMarketCap cu mupli lo purci bloku porsi namcu pe lo QWC",
+      "link": "ko catlu la CoinMarketCap"
     }
   },
   "footer": {

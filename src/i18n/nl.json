@@ -867,34 +867,36 @@
   },
   "community": {
     "eyebrow": "Community",
-    "title": "Sluit u aan bij de Qwertycoin-community.",
-    "body": "Volg de ontwikkeling, verken het netwerk en help de volgende stappen van de Qwertycoin vorm te geven.",
-    "github": "Qwertycoin-organisatie",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "Community en projectlinks.",
+    "body": "Voor vragen en discussie kun je terecht op Discord of in de Bitcointalk-thread over de herstart van 2026. Code, projectnieuws en blockchaininformatie staan hier ook.",
+    "github": "Broncode en issues",
+    "explorer": "Blokken en transacties",
+    "discord": "Word lid van de QWC-server",
+    "bitcointalk": "Lees de thread over de herstart in 2026"
   },
   "listings": {
-    "eyebrow": "Vermeldingen",
-    "title": "QWC-vermeldingen en gidsen.",
-    "body": "Deze onafhankelijke links van derden dienen verschillende doelen. Een vermeld profiel is geen handelsmarkt of partnerschap. Controleer netwerkgegevens in de officiële explorer.",
+    "eyebrow": "Op andere sites",
+    "title": "QWC op andere sites.",
+    "body": "Blockspot en MiningPoolStats volgen het huidige netwerk. Coinranking en CoinMarketCap tonen nog aanbodcijfers van de oude blockchain.",
     "current": {
-      "badge": "Huidig netwerk",
-      "body": "Dit profiel beschrijft het huidige QWC-netwerk. De gids beheert zijn eigen cijfers.",
-      "link": "Open vermelding op"
+      "badge": "Projectgids",
+      "body": "Blockspot vermeldt QWC met informatie over RandomX en links naar de website en explorer.",
+      "link": "Open de Blockspot-pagina"
     },
     "mining": {
       "badge": "Miningoverzicht",
-      "body": "Overzicht van pools en het netwerk voor RandomX QWC. Controleer pools en actuele cijfers voordat je gaat minen.",
-      "link": "Open miningoverzicht op"
+      "body": "De QWC-pagina bundelt RandomX-miningpools met netwerk- en blokstatistieken.",
+      "link": "Open de MiningPoolStats-pagina"
     },
-    "community": {
-      "badge": "Communitythread",
-      "body": "De aankondiging en discussie over de herstart van Qwertycoin in 2026, geen marktvermelding.",
-      "link": "Lees de discussie op"
+    "coinranking": {
+      "badge": "Gegevens van de oude keten",
+      "body": "Coinranking toont nog geen QWC-markten en telt nog het aanbod van de oude blockchain.",
+      "link": "Open de Coinranking-pagina"
     },
-    "legacy": {
-      "badge": "Verouderde gegevens",
-      "body": "Dit profiel toont nog het aanbod van de vorige QWC-keten, niet van het huidige netwerk.",
-      "link": "Bekijk oud profiel op"
+    "coinmarketcap": {
+      "badge": "Gegevens van de oude keten",
+      "body": "De QWC-voorbeeldpagina van CoinMarketCap gebruikt nog aanbodcijfers van de oude blockchain.",
+      "link": "Open de CoinMarketCap-pagina"
     }
   },
   "footer": {

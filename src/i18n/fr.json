@@ -867,34 +867,36 @@
   },
   "community": {
     "eyebrow": "Communauté",
-    "title": "Rejoignez la communauté Qwertycoin.",
-    "body": "Suivez le développement, explorez le réseau et contribuez à façonner les prochaines étapes du Qwertycoin.",
-    "github": "Organisation Qwertycoin",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "Communauté et liens du projet.",
+    "body": "Pour poser une question ou discuter, utilisez Discord ou le fil Bitcointalk consacré à la relance de 2026. Le code, les annonces et la blockchain sont également accessibles ici.",
+    "github": "Code source et tickets",
+    "explorer": "Blocs et transactions",
+    "discord": "Rejoindre le serveur QWC",
+    "bitcointalk": "Lire le fil sur la relance de 2026"
   },
   "listings": {
-    "eyebrow": "Référencements",
-    "title": "Référencements et annuaires QWC.",
-    "body": "Ces liens tiers indépendants ont des fonctions différentes. Une fiche dans un annuaire ne constitue ni un marché ni un partenariat. Vérifiez les données du réseau dans l’explorateur officiel.",
+    "eyebrow": "Sur d’autres sites",
+    "title": "QWC sur d’autres sites.",
+    "body": "Blockspot et MiningPoolStats couvrent le réseau actuel. Coinranking et CoinMarketCap affichent encore des chiffres d’offre issus de l’ancienne chaîne.",
     "current": {
-      "badge": "Réseau actuel",
-      "body": "Ce profil décrit le réseau QWC actuel. L’annuaire tient ses propres chiffres à jour.",
-      "link": "Ouvrir la fiche sur"
+      "badge": "Annuaire de projets",
+      "body": "Blockspot présente QWC, RandomX et des liens vers le site officiel et l’explorateur.",
+      "link": "Ouvrir la page Blockspot"
     },
     "mining": {
       "badge": "Annuaire de minage",
-      "body": "Annuaire des pools et du réseau pour RandomX QWC. Vérifiez chaque pool et ses données actuelles avant de miner.",
-      "link": "Ouvrir l’annuaire de minage sur"
+      "body": "La page QWC regroupe des pools RandomX ainsi que des statistiques sur le réseau et les blocs.",
+      "link": "Ouvrir la page MiningPoolStats"
     },
-    "community": {
-      "badge": "Discussion communautaire",
-      "body": "Annonce et discussion sur la relance de Qwertycoin en 2026, pas une cotation sur un marché.",
-      "link": "Lire la discussion sur"
+    "coinranking": {
+      "badge": "Données de l’ancienne chaîne",
+      "body": "Coinranking ne recense encore aucun marché QWC et compte toujours l’offre de l’ancienne chaîne.",
+      "link": "Ouvrir la page Coinranking"
     },
-    "legacy": {
-      "badge": "Données anciennes",
-      "body": "Ce profil affiche encore l’offre de l’ancienne chaîne QWC, et non celle du réseau actuel.",
-      "link": "Voir l’ancienne fiche sur"
+    "coinmarketcap": {
+      "badge": "Données de l’ancienne chaîne",
+      "body": "La page d’aperçu QWC de CoinMarketCap utilise encore les chiffres d’offre de l’ancienne chaîne.",
+      "link": "Ouvrir la page CoinMarketCap"
     }
   },
   "footer": {

@@ -915,7 +915,7 @@ p { margin: var(--space-3) 0 0; }
 
 .listings-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-5);
 }
 

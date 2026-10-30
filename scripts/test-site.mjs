@@ -157,33 +157,38 @@ for (const [needle, html, label] of exchangeContract) assertIncludes(html, needl
 
 for (const locale of localeConfig) {
   const html = localePages.get(locale.code);
-  const labels = JSON.parse(allLocaleSources[localeConfig.indexOf(locale)]).listings;
+  const { community, listings: labels } = JSON.parse(allLocaleSources[localeConfig.indexOf(locale)]);
   const communityStart = html.indexOf('<section class="section" id="community">');
   const listingsStart = html.indexOf('<section class="section alt listings-section" id="listings">');
   const footerStart = html.indexOf('<footer class="site-footer">');
   if (!(communityStart >= 0 && communityStart < listingsStart && listingsStart < footerStart)) {
     throw new Error(`${locale.code} listings must follow community and precede the footer`);
   }
+  const communityHtml = html.slice(communityStart, listingsStart);
+  const communityCards = [...communityHtml.matchAll(/<article class="card">([\s\S]*?)<\/article>/g)].map((match) => match[1]);
+  if (communityCards.length !== 5) throw new Error(`${locale.code} must show five community and project links`);
+  assertIncludes(communityCards[0], `href="/out/discord" target="_blank" rel="noopener noreferrer">${community.discord}</a>`, `${locale.code} Discord redirect link`);
+  assertIncludes(communityCards[1], `href="https://bitcointalk.org/index.php?topic=5594105" target="_blank" rel="noopener noreferrer">${community.bitcointalk}</a>`, `${locale.code} current Bitcointalk thread`);
+  assertIncludes(communityCards[2], 'href="https://x.com/Qwertycoin_QWC"', `${locale.code} X account`);
+  assertIncludes(communityCards[3], community.github, `${locale.code} GitHub link`);
+  assertIncludes(communityCards[4], community.explorer, `${locale.code} explorer link`);
   const listingsHtml = html.slice(listingsStart, footerStart);
   const cards = [...listingsHtml.matchAll(/<article class="card listing-card">([\s\S]*?)<\/article>/g)].map((match) => match[1]);
-  if (cards.length !== 5) throw new Error(`${locale.code} must show five independent resources`);
+  if (cards.length !== 4) throw new Error(`${locale.code} must show four independent resources`);
   assertIncludes(cards[0], '<img src="/assets/listings/blockspot-mark.svg" alt="" width="64" height="64" loading="lazy" decoding="async">', `${locale.code} Blockspot logo`);
   assertIncludes(cards[0], labels.current.body, `${locale.code} current-network label`);
   assertIncludes(cards[0], 'href="https://blockspot.io/coin/qwertycoin-qwc/" target="_blank" rel="noopener noreferrer"', `${locale.code} current-network listing link`);
   assertIncludes(cards[1], '<img src="/assets/listings/miningpoolstats-mark.png" alt="" width="64" height="64" loading="lazy" decoding="async">', `${locale.code} MiningPoolStats logo`);
   assertIncludes(cards[1], labels.mining.body, `${locale.code} mining-directory description`);
   assertIncludes(cards[1], 'href="https://miningpoolstats.stream/qwertycoin" target="_blank" rel="noopener noreferrer"', `${locale.code} mining-directory link`);
-  assertIncludes(cards[2], '<img src="/assets/listings/bitcointalk-mark.png" alt="" width="64" height="64" loading="lazy" decoding="async">', `${locale.code} Bitcointalk logo`);
-  assertIncludes(cards[2], labels.community.body, `${locale.code} announcement description`);
-  assertIncludes(cards[2], 'href="https://bitcointalk.org/index.php?topic=5594105" target="_blank" rel="noopener noreferrer"', `${locale.code} current-announcement link`);
-  assertIncludes(cards[3], '<img src="/assets/listings/coinranking-mark.svg" alt="" width="64" height="64" loading="lazy" decoding="async">', `${locale.code} Coinranking logo`);
-  assertIncludes(cards[3], labels.legacy.badge, `${locale.code} legacy-data badge`);
-  assertIncludes(cards[3], labels.legacy.body, `${locale.code} legacy-chain disclosure`);
-  assertIncludes(cards[3], 'href="https://coinranking.com/coin/1QwUFzI4O2xu_+qwertycoin-qwc" target="_blank" rel="noopener noreferrer"', `${locale.code} Coinranking link`);
-  assertIncludes(cards[4], '<img src="/assets/listings/coinmarketcap-mark.png" alt="" width="64" height="64" loading="lazy" decoding="async">', `${locale.code} CoinMarketCap logo`);
-  assertIncludes(cards[4], labels.legacy.badge, `${locale.code} final legacy-data badge`);
-  assertIncludes(cards[4], labels.legacy.body, `${locale.code} final legacy-chain disclosure`);
-  assertIncludes(cards[4], 'href="https://coinmarketcap.com/currencies/qwertycoin/" target="_blank" rel="noopener noreferrer"', `${locale.code} CoinMarketCap last-card link`);
+  assertIncludes(cards[2], '<img src="/assets/listings/coinranking-mark.svg" alt="" width="64" height="64" loading="lazy" decoding="async">', `${locale.code} Coinranking logo`);
+  assertIncludes(cards[2], labels.coinranking.badge, `${locale.code} old-chain badge`);
+  assertIncludes(cards[2], labels.coinranking.body, `${locale.code} old-chain disclosure`);
+  assertIncludes(cards[2], 'href="https://coinranking.com/coin/1QwUFzI4O2xu_+qwertycoin-qwc" target="_blank" rel="noopener noreferrer"', `${locale.code} Coinranking link`);
+  assertIncludes(cards[3], '<img src="/assets/listings/coinmarketcap-mark.png" alt="" width="64" height="64" loading="lazy" decoding="async">', `${locale.code} CoinMarketCap logo`);
+  assertIncludes(cards[3], labels.coinmarketcap.badge, `${locale.code} final old-chain badge`);
+  assertIncludes(cards[3], labels.coinmarketcap.body, `${locale.code} final old-chain disclosure`);
+  assertIncludes(cards[3], 'href="https://coinmarketcap.com/currencies/qwertycoin/" target="_blank" rel="noopener noreferrer"', `${locale.code} CoinMarketCap last-card link`);
   if (listingsHtml.includes('livecoinwatch.com/price/Qwertycoin-QWC')) {
     throw new Error(`${locale.code} must not promote stale Live Coin Watch data`);
   }
@@ -858,7 +863,11 @@ for (const whitepaperPath of ["/whitepaper", "/whitepaper/"]) {
   const index = redirectLines.indexOf(`${whitepaperPath} https://wp.qwertycoin.org/ 301`);
   if (index < 0 || index >= notFoundRule) throw new Error(`Missing or shadowed whitepaper redirect: ${whitepaperPath}`);
 }
-assertIncludes(css, "grid-template-columns: repeat(5, minmax(0, 1fr));", "five-column desktop listings grid");
+for (const discordPath of ["/out/discord", "/out/discord/"]) {
+  const index = redirectLines.indexOf(`${discordPath} https://discord.gg/uezsGxeGyS 302`);
+  if (index < 0 || index >= notFoundRule) throw new Error(`Missing or shadowed changeable Discord redirect: ${discordPath}`);
+}
+assertIncludes(css, "grid-template-columns: repeat(4, minmax(0, 1fr));", "four-column desktop listings grid");
 
 for (const text of [
   "[Website](https://qwertycoin.org/)",
@@ -875,7 +884,6 @@ await stat(path.join(root, "assets", "epose", "epose-consensus-formula-de.svg"))
 await stat(path.join(root, "assets", "epose", "epose-consensus-formula-neutral.svg"));
 await stat(path.join(dist, "assets", "listings", "blockspot-mark.svg"));
 await stat(path.join(dist, "assets", "listings", "miningpoolstats-mark.png"));
-await stat(path.join(dist, "assets", "listings", "bitcointalk-mark.png"));
 await stat(path.join(dist, "assets", "listings", "coinranking-mark.svg"));
 await stat(path.join(dist, "assets", "listings", "coinmarketcap-mark.png"));
 await stat(path.join(dist, "assets", "epose", "epose-consensus-formula.svg"));

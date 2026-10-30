@@ -9,4 +9,6 @@
 /explorer https://explorer.qwertycoin.org/ 301
 /whitepaper https://wp.qwertycoin.org/ 301
 /whitepaper/ https://wp.qwertycoin.org/ 301
+/out/discord https://discord.gg/uezsGxeGyS 302
+/out/discord/ https://discord.gg/uezsGxeGyS 302
 /* /404.html 404

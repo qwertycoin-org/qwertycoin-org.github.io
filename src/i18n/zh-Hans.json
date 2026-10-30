@@ -867,34 +867,36 @@
   },
   "community": {
     "eyebrow": "社区",
-    "title": "加入 Qwertycoin 社区。",
-    "body": "跟踪开发、探索网络并帮助制定 Qwertycoin 的后续步骤。",
-    "github": "Qwertycoin组织",
-    "explorer": "QWC Mainnet Explorer"
+    "title": "社区与项目链接。",
+    "body": "提问和讨论请前往 Discord，或阅读 Bitcointalk 上关于 2026 年重启的帖子。源代码、项目动态和区块链数据也可从这里查看。",
+    "github": "源代码与问题",
+    "explorer": "区块与交易",
+    "discord": "加入 QWC 服务器",
+    "bitcointalk": "阅读 2026 年重启帖"
   },
   "listings": {
-    "eyebrow": "收录平台",
-    "title": "QWC 收录与目录。",
-    "body": "这些独立的第三方链接用途不同。目录资料不等于交易市场或合作关系。请通过官方浏览器核对网络信息。",
+    "eyebrow": "其他网站",
+    "title": "其他网站上的 QWC。",
+    "body": "Blockspot 和 MiningPoolStats 介绍当前网络。Coinranking 和 CoinMarketCap 的供应量仍取自旧链。",
     "current": {
-      "badge": "当前网络",
-      "body": "此资料介绍当前 QWC 网络。平台自行维护其数据。",
-      "link": "查看收录："
+      "badge": "项目目录",
+      "body": "Blockspot 收录 QWC 的 RandomX 信息，并链接到官网和区块浏览器。",
+      "link": "打开 Blockspot 页面"
     },
     "mining": {
-      "badge": "矿池目录",
-      "body": "RandomX QWC 的矿池和网络目录。挖矿前请核实矿池及其最新数据。",
-      "link": "打开挖矿目录："
+      "badge": "挖矿目录",
+      "body": "QWC 页面汇集 RandomX 矿池及网络、区块统计。",
+      "link": "打开 MiningPoolStats 页面"
     },
-    "community": {
-      "badge": "社区帖子",
-      "body": "2026 年 Qwertycoin 重启公告与讨论，并非交易市场列表。",
-      "link": "阅读讨论："
-    },
-    "legacy": {
+    "coinranking": {
       "badge": "旧链数据",
-      "body": "此资料仍显示旧 QWC 链的供应量，不代表当前网络。",
-      "link": "查看旧版资料："
+      "body": "Coinranking 尚未列出 QWC 市场，供应量仍按旧链计算。",
+      "link": "打开 Coinranking 页面"
+    },
+    "coinmarketcap": {
+      "badge": "旧链数据",
+      "body": "CoinMarketCap 的 QWC 预览页仍使用旧链的供应量。",
+      "link": "打开 CoinMarketCap 页面"
     }
   },
   "footer": {
