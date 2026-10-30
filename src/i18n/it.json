@@ -877,7 +877,7 @@
   "listings": {
     "eyebrow": "Su altri siti",
     "title": "QWC su altri siti.",
-    "body": "Blockspot e MiningPoolStats seguono la rete attuale. Coinranking e CoinMarketCap mostrano ancora dati sull’offerta della vecchia blockchain.",
+    "body": "Blockspot e MiningPoolStats seguono la rete attuale. Coinranking e CoinMarketCap mostrano ancora dati sull’offerta della vecchia blockchain. Abbiamo richiesto un aggiornamento a entrambe le piattaforme e siamo in contatto con loro per correggere i dati.",
     "current": {
       "badge": "Directory di progetti",
       "body": "Blockspot presenta QWC, RandomX e i link al sito e all’explorer.",

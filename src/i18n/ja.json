@@ -877,7 +877,7 @@
   "listings": {
     "eyebrow": "外部サイト",
     "title": "外部サイトの QWC 情報。",
-    "body": "Blockspot と MiningPoolStats は現行ネットワークを扱っています。Coinranking と CoinMarketCap の供給量は旧チェーンのものです。",
+    "body": "Blockspot と MiningPoolStats は現行ネットワークを扱っています。Coinranking と CoinMarketCap の供給量は旧チェーンのものです。両社には更新を依頼済みで、数値の修正に向けて連絡を取っています。",
     "current": {
       "badge": "プロジェクト一覧",
       "body": "Blockspot は QWC の RandomX 情報と公式サイト、エクスプローラーへのリンクを掲載しています。",

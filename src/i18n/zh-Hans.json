@@ -877,7 +877,7 @@
   "listings": {
     "eyebrow": "其他网站",
     "title": "其他网站上的 QWC。",
-    "body": "Blockspot 和 MiningPoolStats 介绍当前网络。Coinranking 和 CoinMarketCap 的供应量仍取自旧链。",
+    "body": "Blockspot 和 MiningPoolStats 介绍当前网络。Coinranking 和 CoinMarketCap 的供应量仍取自旧链。我们已向两个平台申请更新，并正与他们联系以更正这些数据。",
     "current": {
       "badge": "项目目录",
       "body": "Blockspot 收录 QWC 的 RandomX 信息，并链接到官网和区块浏览器。",

@@ -877,7 +877,7 @@
   "listings": {
     "eyebrow": "На других сайтах",
     "title": "QWC на других сайтах.",
-    "body": "Blockspot и MiningPoolStats описывают текущую сеть. Coinranking и CoinMarketCap всё ещё показывают объём монет старого блокчейна.",
+    "body": "Blockspot и MiningPoolStats описывают текущую сеть. Coinranking и CoinMarketCap всё ещё показывают объём монет старого блокчейна. Мы запросили обновление у обеих платформ и поддерживаем с ними связь, чтобы исправить эти данные.",
     "current": {
       "badge": "Каталог проектов",
       "body": "На Blockspot есть сведения о QWC и RandomX, а также ссылки на сайт и обозреватель.",

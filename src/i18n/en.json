@@ -877,7 +877,7 @@
   "listings": {
     "eyebrow": "Elsewhere",
     "title": "QWC on other sites.",
-    "body": "Blockspot and MiningPoolStats cover the current network. Coinranking and CoinMarketCap still show old-chain supply figures.",
+    "body": "Blockspot and MiningPoolStats cover the current network. Coinranking and CoinMarketCap still show old-chain supply figures. We have requested updates from both platforms and are in contact with them to correct the figures.",
     "current": {
       "badge": "Project directory",
       "body": "Blockspot lists QWC with RandomX details and links to the website and explorer.",
