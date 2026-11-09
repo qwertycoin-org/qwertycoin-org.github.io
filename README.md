@@ -23,6 +23,52 @@ Both `/out/discord` and `/out/discord/` temporarily redirect (HTTP 302) to the c
 
 The non-custodial browser wallet is a separate application at [wallet.qwertycoin.org](https://wallet.qwertycoin.org/).
 
+## Stable download links for external posts
+
+The `/get/` aliases are intended for forums, social posts and QR codes that should
+continue pointing to the latest verified public stable release. Existing website
+download buttons retain their direct, versioned GitHub links; they are not replaced
+by these aliases. The aliases are explicit HTTP 302 redirects in `_redirects`, not
+runtime GitHub API lookups. Both forms with and without a trailing slash work.
+
+| Path | Target |
+| --- | --- |
+| `/get` | Website download overview |
+| `/get/cli/windows` | Core Windows x86_64 ZIP |
+| `/get/cli/linux` | Core Linux x86_64 TAR.GZ |
+| `/get/cli/macos` | Core macOS Apple Silicon TAR.GZ |
+| `/get/gui/windows` | GUI Windows x86_64 Setup EXE |
+| `/get/gui/windows/portable` | GUI Windows x86_64 ZIP |
+| `/get/gui/linux` | GUI Linux x86_64 TAR.GZ |
+| `/get/gui/macos` | GUI macOS Apple Silicon DMG |
+| `/get/gui/macos/portable` | GUI macOS Apple Silicon TAR.GZ |
+| `/get/cli/checksums` | Core SHA256SUMS |
+| `/get/gui/checksums` | GUI SHA256SUMS |
+| `/get/cli/notes` | Core release notes |
+| `/get/gui/notes` | GUI release notes |
+
+`_routes.json` excludes `/get` and `/get/*` from Pages Functions so that the
+static `_redirects` rules handle them. Other paths retain the existing middleware.
+The build copies both routing files into `dist/`.
+
+### Updating the aliases for a release
+
+1. Publish and verify the exact stable release and its packages/checksums first.
+   Do not point these aliases at drafts, prereleases or unfinished uploads.
+2. In `_redirects`, update every affected product's package, checksum and notes
+   destination together, including trailing-slash entries. Preserve source paths
+   and architecture/format contracts. A new architecture needs a new explicit
+   alias, not a silent change to an existing one.
+3. Review and deploy through a PR. The old destinations remain active until the
+   new site deployment; this is an explicit release-maintenance step, not automatic
+   GitHub "latest" resolution. Roll back all affected targets together if needed.
+4. Verify HTTP 302 and the exact `Location` on preview and production for every
+   alias. Keep permanent, versioned GitHub URLs available for reproducible installs.
+
+Never use these moving aliases as an updater trust source or as a substitute for
+version-bound checksums. When downloading at a release transition, use the
+`SHA256SUMS` from the same versioned GitHub release as the downloaded package.
+
 ## Requirements
 
 - Node.js 20 or newer

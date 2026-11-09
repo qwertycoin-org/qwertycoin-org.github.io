@@ -15,4 +15,32 @@
 /out/telegram/ https://t.me/qwertycoin 302
 /out/twitter https://x.com/Qwertycoin_QWC 302
 /out/twitter/ https://x.com/Qwertycoin_QWC 302
+# Stable public download aliases. Update only after verifying a published release.
+# Keep package, checksum and release-note targets aligned within each product.
+/get https://qwertycoin.org/#releases 302
+/get/ https://qwertycoin.org/#releases 302
+/get/cli/windows https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/qwertycoin-v2.0.6-windows-x86_64.zip 302
+/get/cli/windows/ https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/qwertycoin-v2.0.6-windows-x86_64.zip 302
+/get/cli/linux https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/qwertycoin-v2.0.6-linux-x86_64.tar.gz 302
+/get/cli/linux/ https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/qwertycoin-v2.0.6-linux-x86_64.tar.gz 302
+/get/cli/macos https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/qwertycoin-v2.0.6-macos-arm64.tar.gz 302
+/get/cli/macos/ https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/qwertycoin-v2.0.6-macos-arm64.tar.gz 302
+/get/gui/windows https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-windows-x86_64-setup.exe 302
+/get/gui/windows/ https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-windows-x86_64-setup.exe 302
+/get/gui/windows/portable https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-windows-x86_64.zip 302
+/get/gui/windows/portable/ https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-windows-x86_64.zip 302
+/get/gui/linux https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-linux-x86_64.tar.gz 302
+/get/gui/linux/ https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-linux-x86_64.tar.gz 302
+/get/gui/macos https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-macos-arm64.dmg 302
+/get/gui/macos/ https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-macos-arm64.dmg 302
+/get/gui/macos/portable https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-macos-arm64.tar.gz 302
+/get/gui/macos/portable/ https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-macos-arm64.tar.gz 302
+/get/cli/checksums https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/SHA256SUMS 302
+/get/cli/checksums/ https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/SHA256SUMS 302
+/get/gui/checksums https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/SHA256SUMS 302
+/get/gui/checksums/ https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/SHA256SUMS 302
+/get/cli/notes https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.6 302
+/get/cli/notes/ https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.6 302
+/get/gui/notes https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.6 302
+/get/gui/notes/ https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.6 302
 /* /404.html 404

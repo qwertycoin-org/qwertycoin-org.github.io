@@ -10,6 +10,7 @@ const dist = path.join(root, "dist");
 const entries = [
   "_headers",
   "_redirects",
+  "_routes.json",
   "assets",
   "css",
   "js",
