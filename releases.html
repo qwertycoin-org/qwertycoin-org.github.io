@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Download Qwertycoin | Wallet &amp; Core releases</title>
-  <meta name="description" content="Get the Qwertycoin desktop wallet or Core tools for Windows, Linux and macOS. Official downloads, installation steps and SHA-256 checksums.">
+  <meta name="description" content="Get the Qwertycoin desktop wallet, Core tools or official Docker image. Downloads for Windows, Linux and macOS, setup guides and SHA-256 checksums.">
   <link rel="canonical" href="https://qwertycoin.org/releases">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Qwertycoin">
   <meta property="og:title" content="Download Qwertycoin | Wallet &amp; Core releases">
-  <meta property="og:description" content="Get the Qwertycoin desktop wallet or Core tools for Windows, Linux and macOS. Official downloads, installation steps and SHA-256 checksums.">
+  <meta property="og:description" content="Get the Qwertycoin desktop wallet, Core tools or official Docker image. Downloads for Windows, Linux and macOS, setup guides and SHA-256 checksums.">
   <meta property="og:url" content="https://qwertycoin.org/releases">
   <meta property="og:locale" content="en_US">
   <meta property="og:image" content="https://qwertycoin.org/assets/og-image.png">
@@ -18,7 +18,7 @@
   <meta property="og:image:alt" content="Qwertycoin">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Download Qwertycoin | Wallet &amp; Core releases">
-  <meta name="twitter:description" content="Get the Qwertycoin desktop wallet or Core tools for Windows, Linux and macOS. Official downloads, installation steps and SHA-256 checksums.">
+  <meta name="twitter:description" content="Get the Qwertycoin desktop wallet, Core tools or official Docker image. Downloads for Windows, Linux and macOS, setup guides and SHA-256 checksums.">
   <meta name="twitter:image" content="https://qwertycoin.org/assets/og-image.png">
   <meta name="twitter:image:alt" content="Qwertycoin">
   <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32">
@@ -33,8 +33,8 @@
   </div></header>
   <main class="release-container">
     <section class="release-hero" aria-labelledby="release-title">
-      <p class="eyebrow">Official downloads</p><h1 id="release-title">Download Qwertycoin.</h1><p class="release-intro">Choose your operating system. Get the desktop wallet for everyday use, or Core for the command line and your own node.</p>
-      <nav class="release-jumps" aria-label="Official downloads"><a class="button primary" href="#gui">Desktop wallet</a><a class="button secondary" href="#cli">Core / command line</a></nav>
+      <p class="eyebrow">Official downloads</p><h1 id="release-title">Download Qwertycoin.</h1><p class="release-intro">Choose your operating system. Get the desktop wallet for everyday use, Core for the command line, or the Docker image for your own node.</p>
+      <nav class="release-jumps" aria-label="Official downloads"><a class="button primary" href="#gui">Desktop wallet</a><a class="button secondary" href="#cli">Core / command line</a><a class="button secondary" href="#docker">Docker image</a></nav>
       <p class="release-web-wallet">Prefer to use your browser? <a href="https://wallet.qwertycoin.org/" target="_blank" rel="noopener noreferrer">Open Web Wallet</a> · No installation required.</p>
     </section>
     <section class="release-section" id="gui" aria-labelledby="gui-title">
@@ -80,6 +80,14 @@
         <ol><li>Download and verify the TAR.GZ, then extract the complete archive.</li><li>Open a terminal in the extracted program folder. Use ./qwertycoind --help or ./qwertycoin-wallet-cli --help to get started.</li></ol>
       </article></div>
       <nav class="release-resources" aria-label="Core / command line"><a href="/get/cli/checksums">SHA256SUMS</a><a href="/get/cli/notes">Release notes</a><a href="https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.6">Direct GitHub downloads</a></nav>
+    </section>
+    <section class="release-section" id="docker" aria-labelledby="docker-title">
+      <div class="release-section-heading"><div><p class="eyebrow">Linux · amd64 (x86_64)</p><h2 id="docker-title">Docker image</h2><p>Run Qwertycoin Core in a container. The official image includes the daemon, CLI wallet and wallet RPC, with Compose guides for full nodes and EPoSE service nodes.</p></div><span class="release-product-label" aria-hidden="true">DOCKER</span></div>
+      <div class="download-card">
+        <dl class="checksum-commands"><div><dt>Pull the official image</dt><dd><code>docker pull docker.io/qwertycoin/qwertycoin:latest</code></dd></div><div><dt>Check the version</dt><dd><code>docker run --rm docker.io/qwertycoin/qwertycoin:latest --version</code></dd></div></dl>
+        <p>These commands download the image and check its version. For a persistent node or wallet, follow the Docker quickstart; for an EPoSE node, use the dedicated service-node guide.</p><p>The latest tag follows the newest stable image. Updating requires pulling the image and recreating the container while preserving chain, wallet and service-identity volumes. Pin an image digest if you need a fixed deployment.</p>
+      </div>
+      <nav class="release-resources" aria-label="Docker image"><a href="https://hub.docker.com/r/qwertycoin/qwertycoin/tags">Open Docker Hub</a><a href="https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md">Docker quickstart</a><a href="https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md#epose-service-node">EPoSE service-node guide</a></nav>
     </section>
     <section class="release-verification" aria-labelledby="verify-title">
       <p class="eyebrow">SHA-256</p><h2 id="verify-title">Check your download</h2><p>Before opening a package, download SHA256SUMS for the same product and release. Replace PACKAGE below with the downloaded filename and compare the full hash with that file’s entry.</p>
