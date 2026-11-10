@@ -2,7 +2,6 @@
 /de/index.html /de/ 301
 /wallet https://wallet.qwertycoin.org/ 301
 /webwallet https://wallet.qwertycoin.org/ 301
-/releases /#releases 301
 /download /#releases 301
 /downloads /#releases 301
 /nodes /#network 301
@@ -17,8 +16,8 @@
 /out/twitter/ https://x.com/Qwertycoin_QWC 302
 # Stable public download aliases. Update only after verifying a published release.
 # Keep package, checksum and release-note targets aligned within each product.
-/get https://qwertycoin.org/#releases 302
-/get/ https://qwertycoin.org/#releases 302
+/get https://qwertycoin.org/releases 302
+/get/ https://qwertycoin.org/releases 302
 /get/cli/windows https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/qwertycoin-v2.0.6-windows-x86_64.zip 302
 /get/cli/windows/ https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/qwertycoin-v2.0.6-windows-x86_64.zip 302
 /get/cli/linux https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/qwertycoin-v2.0.6-linux-x86_64.tar.gz 302

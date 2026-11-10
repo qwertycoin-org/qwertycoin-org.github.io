@@ -25,6 +25,16 @@ The non-custodial browser wallet is a separate application at [wallet.qwertycoin
 
 ## Stable download links for external posts
 
+Share **https://qwertycoin.org/releases** for the English download landing page.
+It includes all eight `/get` package links, per-platform installation steps,
+checksum commands, release notes and direct versioned GitHub release fallbacks.
+It works without JavaScript and includes Open Graph / X preview metadata.
+The build renders `releases.html` from `src/render-releases.mjs`; Cloudflare
+Pages serves it at `/releases`. Versions and direct release links are derived
+from `_redirects`, and the build rejects mismatched product release versions.
+Update the landing page's compatibility/install text when package requirements
+change. Existing homepage download links and language editions are unchanged.
+
 The `/get/` aliases are intended for forums, social posts and QR codes that should
 continue pointing to the latest verified public stable release. Existing website
 download buttons retain their direct, versioned GitHub links; they are not replaced
@@ -33,7 +43,7 @@ runtime GitHub API lookups. Both forms with and without a trailing slash work.
 
 | Path | Target |
 | --- | --- |
-| `/get` | Website download overview |
+| `/get` | `/releases` download landing page |
 | `/get/cli/windows` | Core Windows x86_64 ZIP |
 | `/get/cli/linux` | Core Linux x86_64 TAR.GZ |
 | `/get/cli/macos` | Core macOS Apple Silicon TAR.GZ |

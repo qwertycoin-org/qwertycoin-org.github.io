@@ -1,0 +1,48 @@
+/* Scoped landing-page styles; homepage assets and download links stay unchanged. */
+.releases-page .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; max-width: 1200px; min-height: 82px; margin: auto; padding: 0 clamp(1rem, 4vw, 3rem); }
+.release-home { padding: .7rem; text-underline-offset: .3em; }
+.release-resources, .release-footer nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+.release-container { max-width: 1200px; margin: auto; padding: 0 clamp(1rem, 4vw, 3rem); }
+.release-hero { padding: clamp(2.5rem, 7vw, 5rem) 0 2rem; }
+.release-hero h1 { max-width: 100%; margin: .6rem 0 1.4rem; font-size: clamp(2rem, 4.5vw, 3.7rem); line-height: 1.08; overflow-wrap: anywhere; }
+.release-intro { max-width: 700px; font-size: 1.1rem; }
+.release-jumps { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.8rem 0; }
+.release-web-wallet { padding: 1rem 1.2rem; border-left: 4px solid var(--color-accent); background: var(--color-primary-soft); font-size: .9rem; }
+.release-section { padding: 2.5rem 0; border-top: 2px solid var(--color-ink); scroll-margin-top: 1rem; }
+.release-section-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1.6rem; }
+.release-section-heading p { max-width: 730px; }
+.release-section-heading h2, .release-verification h2, .release-share h2 { font-size: clamp(1.5rem, 3vw, 2.3rem); margin: .5rem 0; }
+.release-product-label { font-family: var(--font-display); font-size: 1.25rem; border: 2px solid; padding: .7rem 1rem; background: var(--color-accent); }
+.download-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+.download-card { padding: 1.3rem; border: 2px solid var(--color-ink); border-radius: var(--radius-card); background: #fff9e9; box-shadow: 4px 4px 0 var(--color-ink); }
+.download-card h3 { font-family: var(--font-display); font-size: 1.5rem; margin: 0; }
+.download-platform { font-size: .84rem; min-height: 2.8em; color: var(--color-day-muted); }
+.download-card .button { width: 100%; font-size: .78rem; padding: .8rem .5rem; }
+.release-alternative { display: block; font-size: .84rem; margin-top: 1rem; text-underline-offset: .2em; }
+.download-card ol { padding-left: 1.2rem; margin: 1.5rem 0 0; font-size: .9rem; overflow-wrap: anywhere; }
+.download-card li + li { margin-top: .8rem; }
+.release-resources { margin-top: 1.6rem; font-size: .9rem; text-underline-offset: .25em; }
+.release-verification { padding: 2rem; border: 2px solid; border-radius: var(--radius-card); background: var(--color-surface-muted); }
+.release-verification > p { max-width: 900px; }
+.checksum-commands { display: grid; gap: 1rem; }
+.checksum-commands dt { font-size: .85rem; font-weight: 600; }
+.checksum-commands dd { margin: .3rem 0 0; }
+.checksum-commands code { display: block; padding: .8rem; background: var(--color-ink); color: white; border-radius: 4px; white-space: pre-wrap; overflow-wrap: anywhere; font-size: .85rem; }
+.release-verification details { border-top: 1px solid var(--color-line); padding: 1rem 0; }
+.release-verification summary { cursor: pointer; font-weight: 600; }
+.release-share { padding: 3rem 0; max-width: 750px; }
+.release-share-url { font-weight: 600; overflow-wrap: anywhere; text-underline-offset: .3em; }
+.release-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; border-top: 2px solid; padding: 1.8rem max(1rem, calc((100vw - 1104px) / 2)); font-size: .85rem; }
+.release-footer p { margin: 0; }
+@media (max-width: 850px) {
+  .download-grid { grid-template-columns: 1fr; }
+  .download-platform { min-height: 0; }
+  .download-card .button { width: auto; min-width: 200px; }
+  .release-product-label { display: none; }
+  .release-verification { padding: 1.2rem; }
+}
+@media (max-width: 480px) {
+  .releases-page .header-inner { min-height: 72px; gap: .5rem; }
+  .releases-page .brand { font-size: 1rem; }
+  .release-jumps .button { width: 100%; }
+}
