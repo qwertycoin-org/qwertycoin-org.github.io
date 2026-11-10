@@ -6,7 +6,7 @@ const copy = {
     home: "Home", skip: "Skip to downloads",
     eyebrow: "Official downloads", heading: "Download Qwertycoin.",
     intro: "Choose your operating system. Get the desktop wallet for everyday use, or Core for the command line and your own node.",
-    status: "Public test phase", statusText: "These releases are available for public testing; they are not an audit-ready release.",
+    webWalletIntro: "Prefer to use your browser?", webWallet: "Open Web Wallet", webWalletText: "No installation required.",
     gui: "Desktop wallet", guiText: "A graphical app to create or restore a wallet, send and receive QWC, and connect to the network.",
     cli: "Core / command line", cliText: "For node operators and terminal users. Includes qwertycoind, qwertycoin-wallet-cli and qwertycoin-wallet-rpc.",
     current: "Current download", checksums: "SHA256SUMS", notes: "Release notes", direct: "Direct GitHub downloads",
@@ -123,7 +123,7 @@ export function renderReleases(assets, products) {
     <section class="release-hero" aria-labelledby="release-title">
       <p class="eyebrow">${html(t.eyebrow)}</p><h1 id="release-title">${html(t.heading)}</h1><p class="release-intro">${html(t.intro)}</p>
       <nav class="release-jumps" aria-label="${html(t.eyebrow)}"><a class="button primary" href="#gui">${html(t.gui)}</a><a class="button secondary" href="#cli">${html(t.cli)}</a></nav>
-      <p class="release-status"><strong>${html(t.status)}</strong> ${html(t.statusText)}</p>
+      <p class="release-web-wallet">${html(t.webWalletIntro)} <a href="https://wallet.qwertycoin.org/" target="_blank" rel="noopener noreferrer">${html(t.webWallet)}</a> · ${html(t.webWalletText)}</p>
     </section>
     ${productSection("gui")}
     ${productSection("cli")}
