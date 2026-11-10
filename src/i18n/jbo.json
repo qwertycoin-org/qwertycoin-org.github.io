@@ -479,7 +479,7 @@
   "wallet": {
     "eyebrow": "lo jdini vasru",
     "title": "lo ba'e bavlamdei: lo jdini vasru",
-    "body": "la'o gy. Web Wallet .gy. .e la'o gy. Qwertycoin GUI 2.0.5 .gy. .e lo samselpla cu se cpacu ca lo cabna",
+    "body": "la'o gy. Web Wallet .gy. .e la'o gy. Qwertycoin GUI 2.0.6 .gy. .e lo samselpla cu se cpacu ca lo cabna",
     "cards": [
       {
         "badge": "se cpacu",
@@ -497,7 +497,7 @@
       {
         "badge": "se cpacu",
         "title": "lo skami jubme jdini vasru",
-        "body": "la'o gy. Qwertycoin GUI 2.0.5 .gy. cu se cpacu lo la'o gy. Windows .gy. .e lo la'o gy. macOS Apple Silicon .gy. .e lo la'o gy. Linux x86_64 .gy.",
+        "body": "la'o gy. Qwertycoin GUI 2.0.6 .gy. cu se cpacu lo la'o gy. Windows .gy. .e lo la'o gy. macOS Apple Silicon .gy. .e lo la'o gy. Linux x86_64 .gy.",
         "icon": "development.svg"
       }
     ]
@@ -505,13 +505,13 @@
   "releases": {
     "eyebrow": "lo jdini vasru",
     "title": "lo jdini vasru .e lo samselpla",
-    "body": "lo pamoi gubni QWC cipra temci cu kalri .i la'o gy. Web Wallet .gy. .e la'o gy. Qwertycoin GUI 2.0.5 .gy. .e lo la'o gy. Core v2.0.5 .gy. minde tutci .e lo javni la'o gy. Docker .gy. tarmi .e lo samselpla cu ca se cpacu",
+    "body": "lo pamoi gubni QWC cipra temci cu kalri .i la'o gy. Web Wallet .gy. .e la'o gy. Qwertycoin GUI 2.0.6 .gy. .e lo la'o gy. Core v2.0.6 .gy. minde tutci .e lo javni la'o gy. Docker .gy. tarmi .e lo samselpla cu ca se cpacu",
     "cards": [
       {
-        "badge": "se cpacu · v2.0.5",
+        "badge": "se cpacu · v2.0.6",
         "badgeClass": "mainnet",
         "title": "lo skami jubme jdini vasru",
-        "body": "ko cpacu lo cabna la'o gy. Qwertycoin GUI .gy. lo javni la'o gy. GitHub .gy. se fukpi .i lo la'o gy. GUI v2.0.2 .gy. pilno cu sarcu lo nu pa roi punji la'o gy. v2.0.5 .gy. se pi'o lo to'e ve'u te benji kei ki'u lo nu lo la'o gy. v2.0.2 .gy. ningau tutci cu na kakne lo nu tezu'e lo la'o gy. GitHub .gy. se fukpi redir .i lo la'o gy. Windows Setup .gy. .e lo la'o gy. macOS DMG .gy. cu se zmadu lo nu se punji .i lo la'o gy. portable ZIP .gy. .e lo la'o gy. TAR.GZ .gy. cu za'o se cpacu .i ko cipra lo te cpacu .e lo lerfu namcu pu lo nu pilno",
+        "body": "ko cpacu lo cabna la'o gy. Qwertycoin GUI .gy. lo javni la'o gy. GitHub .gy. se fukpi .i lo la'o gy. GUI v2.0.2 .gy. pilno cu sarcu lo nu pa roi punji la'o gy. v2.0.6 .gy. se pi'o lo to'e ve'u te benji kei ki'u lo nu lo la'o gy. v2.0.2 .gy. ningau tutci cu na kakne lo nu tezu'e lo la'o gy. GitHub .gy. se fukpi redir .i lo la'o gy. Windows Setup .gy. .e lo la'o gy. macOS DMG .gy. cu se zmadu lo nu se punji .i lo la'o gy. portable ZIP .gy. .e lo la'o gy. TAR.GZ .gy. cu za'o se cpacu .i ko cipra lo te cpacu .e lo lerfu namcu pu lo nu pilno",
         "note": "lo se morji be lo drani: la'o gy. SHA256SUMS .gy. cu cipra lo te cpacu bitmu gi'e na cipra lo gubni benji du'i .i la'o gy. Linux .gy. .e la'o gy. Windows .gy. cu na se tcita .i la'o gy. macOS .gy. cu se tcita fi lo la'o gy. ad hoc .gy. gi'e na se tcita se pi'o la'o gy. macOS notarization .gy.",
         "glyph": "GUI",
         "downloadsLayout": "rows",
@@ -521,15 +521,15 @@
             "icon": "WIN",
             "downloadLabel": "ko cpacu lo la'o gy. Windows Setup .gy.",
             "compatibility": "se cipra ne lo la'o gy. Windows Server 2025 runner .gy. · na se tcita .i lo purci la'o gy. Windows .gy. na se cipra",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/qwertycoin-gui-v2.0.5-windows-x86_64-setup.exe",
-            "sha256": "7543986c9c2743ceb4c482bc5356e40f7bed81297ef837f77713876ab8437935",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-windows-x86_64-setup.exe",
+            "sha256": "83656e72fc5d62a985f2fc24d71d23a4e604edf2456b201dcc71a3dd21491cfa",
             "shaLabel": "lo la'o gy. Setup SHA-256 .gy.",
             "preferredLabel": "lo se zmadu se punji",
             "alternatives": [
               {
                 "downloadLabel": "ko cpacu lo la'o gy. portable Windows ZIP .gy.",
-                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/qwertycoin-gui-v2.0.5-windows-x86_64.zip",
-                "sha256": "2eb0ee784bebe8f0c191705f8cef968b05be2cdcd5a4bc444c2bd89b2f2fef28",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-windows-x86_64.zip",
+                "sha256": "78ab17851b44d9f04fe8d7269f80e12822696f70e6b3987ab40f62e189519247",
                 "shaLabel": "lo la'o gy. ZIP SHA-256 .gy."
               }
             ]
@@ -539,15 +539,15 @@
             "icon": "MAC",
             "downloadLabel": "ko cpacu lo la'o gy. macOS DMG .gy.",
             "compatibility": "la'o gy. macOS 15 .gy. ja lo balvi",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/qwertycoin-gui-v2.0.5-macos-arm64.dmg",
-            "sha256": "314ac73bfa6f3a74fd6cd1803b675f6b74ab6b26af88d7f8a0e3fad64f731b36",
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-macos-arm64.dmg",
+            "sha256": "33260071d9c5395a3f571b57f7eae3bc482980dae7debc60f6e4816a7276b7c0",
             "shaLabel": "DMG SHA-256",
             "preferredLabel": "lo se zmadu te cpacu",
             "alternatives": [
               {
                 "downloadLabel": "ko cpacu lo la'o gy. macOS TAR.GZ .gy.",
-                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/qwertycoin-gui-v2.0.5-macos-arm64.tar.gz",
-                "sha256": "7430aca40b57d017fb876ca60617e38d2f029d46a40afa02e09af2deb48c916f",
+                "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-macos-arm64.tar.gz",
+                "sha256": "4cbfde9eb1de0d5942b2462f0439a969b8addb04214c4308800e299ebcdd075e",
                 "shaLabel": "TAR.GZ SHA-256"
               }
             ]
@@ -557,19 +557,19 @@
             "icon": "LNX",
             "downloadLabel": "ko cpacu lo la'o gy. Linux TAR.GZ .gy.",
             "compatibility": "lo la'o gy. GLIBC 2.35 .gy. mapti jimte",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/qwertycoin-gui-v2.0.5-linux-x86_64.tar.gz",
-            "sha256": "f70380819bc6fcb2723e4dd27d955d681e4a20336e4ab59f1faae6c6fe0a551b"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/qwertycoin-gui-v2.0.6-linux-x86_64.tar.gz",
+            "sha256": "d95b765404902a669f2efa6fcaffd43dd33af56d770d36ca6f972923daf8b170"
           }
         ],
         "verificationLinks": [
           {
             "label": "SHA256SUMS",
             "icon": "SHA",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.5/SHA256SUMS"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/download/v2.0.6/SHA256SUMS"
           },
           {
             "label": "lo se fukpi notci",
-            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.5"
+            "href": "https://github.com/qwertycoin-org/qwertycoin-gui/releases/tag/v2.0.6"
           },
           {
             "label": "ko jungau fi lo nabmi",
@@ -579,7 +579,7 @@
         ]
       },
       {
-        "badge": "se cpacu · v2.0.5",
+        "badge": "se cpacu · v2.0.6",
         "badgeClass": "mainnet",
         "title": "lo Core minde tutci",
         "body": "lo javni la'o gy. Qwertycoin .gy. bakfu cu vasru la'o gy. qwertycoind .gy. .e la'o gy. qwertycoin-wallet-cli .gy. .e la'o gy. qwertycoin-wallet-rpc .gy. .i ko cipra lo bakfu .e lo lerfu namcu pu lo nu pilno .i lo se fukpi notci .e lo cipra tcini cu se vreji ne ro la'o gy. GitHub .gy. se fukpi",
@@ -591,35 +591,35 @@
             "icon": "WIN",
             "downloadLabel": "ko cpacu lo la'o gy. Windows ZIP .gy.",
             "compatibility": "se cipra ne lo la'o gy. Windows Server 2025 runner .gy. .i no drata purci la'o gy. Windows .gy. se xusra",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.5/qwertycoin-v2.0.5-windows-x86_64.zip",
-            "sha256": "75153631199f81c6c1ebc1f3869cbd452fe2821bda2e41ac0d5128170f469265"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/qwertycoin-v2.0.6-windows-x86_64.zip",
+            "sha256": "2bfc8686f1bcacca331630865e0d2ee2abd8d124b748ebade71199b827416952"
           },
           {
             "label": "macOS Apple Silicon",
             "icon": "MAC",
             "downloadLabel": "ko cpacu lo la'o gy. macOS TAR.GZ .gy.",
             "compatibility": "la'o gy. macOS 15 .gy. ja lo balvi",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.5/qwertycoin-v2.0.5-macos-arm64.tar.gz",
-            "sha256": "9f15212e22f7e642554885e56beae1d86ffcdf5693fb8149b4516c0bff11194a"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/qwertycoin-v2.0.6-macos-arm64.tar.gz",
+            "sha256": "4749f2e55968a85fe039b06faa568058725001a978f255bfac2f9b4e5ff29204"
           },
           {
             "label": "Linux x86_64",
             "icon": "LNX",
             "downloadLabel": "ko cpacu lo la'o gy. Linux TAR.GZ .gy.",
             "compatibility": "lo la'o gy. GLIBC 2.35 / GLIBCXX 3.4.30 .gy. mapti jimte",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.5/qwertycoin-v2.0.5-linux-x86_64.tar.gz",
-            "sha256": "e2d9e003fa4dd8486874ba6e94f986a6b6f3f9fe0d77a58f0878ac9ac08de5bd"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/qwertycoin-v2.0.6-linux-x86_64.tar.gz",
+            "sha256": "0464ab2ddf1a623e9a5808fe54a1eb2142f9331baa6177f6b85797d92c8e5de7"
           }
         ],
         "verificationLinks": [
           {
             "label": "SHA256SUMS",
             "icon": "SHA",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.5/SHA256SUMS"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/download/v2.0.6/SHA256SUMS"
           },
           {
             "label": "lo se fukpi notci",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.5"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.6"
           },
           {
             "label": "ko jungau fi lo nabmi",
@@ -629,7 +629,7 @@
         ]
       },
       {
-        "badge": "se cpacu · 2.0.5",
+        "badge": "se cpacu · 2.0.6",
         "badgeClass": "mainnet",
         "title": "lo la'o gy. Docker .gy. tarmi",
         "body": "ko pilno lo se cipra Core se fukpi tai lo na ralju pilno la'o gy. Linux/amd64 .gy. vasru .i lo la'o gy. Mainnet .gy. .e lo daemon cu se cuxna ca lo pamoi .i lo za'o cmene vasru cu kurji lo bloku porsi datni ca lo vasru ningau",
@@ -656,7 +656,7 @@
           },
           {
             "label": "lo Core se fukpi notci",
-            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.5"
+            "href": "https://github.com/qwertycoin-org/qwertycoin/releases/tag/v2.0.6"
           }
         ]
       },
