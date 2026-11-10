@@ -2,13 +2,18 @@
 const copy = {
   en: {
     title: "Download Qwertycoin | Wallet & Core releases",
-    description: "Get the Qwertycoin desktop wallet or Core tools for Windows, Linux and macOS. Official downloads, installation steps and SHA-256 checksums.",
+    description: "Get the Qwertycoin desktop wallet, Core tools or official Docker image. Downloads for Windows, Linux and macOS, setup guides and SHA-256 checksums.",
     home: "Home", skip: "Skip to downloads",
     eyebrow: "Official downloads", heading: "Download Qwertycoin.",
-    intro: "Choose your operating system. Get the desktop wallet for everyday use, or Core for the command line and your own node.",
+    intro: "Choose your operating system. Get the desktop wallet for everyday use, Core for the command line, or the Docker image for your own node.",
     webWalletIntro: "Prefer to use your browser?", webWallet: "Open Web Wallet", webWalletText: "No installation required.",
     gui: "Desktop wallet", guiText: "A graphical app to create or restore a wallet, send and receive QWC, and connect to the network.",
     cli: "Core / command line", cliText: "For node operators and terminal users. Includes qwertycoind, qwertycoin-wallet-cli and qwertycoin-wallet-rpc.",
+    docker: "Docker image", dockerText: "Run Qwertycoin Core in a container. The official image includes the daemon, CLI wallet and wallet RPC, with Compose guides for full nodes and EPoSE service nodes.",
+    dockerPlatform: "Linux · amd64 (x86_64)", dockerPull: "Pull the official image", dockerVersion: "Check the version",
+    dockerSetup: "These commands download the image and check its version. For a persistent node or wallet, follow the Docker quickstart; for an EPoSE node, use the dedicated service-node guide.",
+    dockerUpdate: "The latest tag follows the newest stable image. Updating requires pulling the image and recreating the container while preserving chain, wallet and service-identity volumes. Pin an image digest if you need a fixed deployment.",
+    dockerHub: "Open Docker Hub", dockerQuickstart: "Docker quickstart", dockerEpose: "EPoSE service-node guide",
     current: "Current download", checksums: "SHA256SUMS", notes: "Release notes", direct: "Direct GitHub downloads",
     windows: "Windows", linux: "Linux", macos: "macOS", silicon: "Apple Silicon · macOS 15+ · not Intel",
     linuxCompat: "x86_64 · GLIBC 2.35 build target", windowsCompat: "x86_64 · unsigned",
@@ -122,11 +127,19 @@ export function renderReleases(assets, products) {
   <main class="release-container">
     <section class="release-hero" aria-labelledby="release-title">
       <p class="eyebrow">${html(t.eyebrow)}</p><h1 id="release-title">${html(t.heading)}</h1><p class="release-intro">${html(t.intro)}</p>
-      <nav class="release-jumps" aria-label="${html(t.eyebrow)}"><a class="button primary" href="#gui">${html(t.gui)}</a><a class="button secondary" href="#cli">${html(t.cli)}</a></nav>
+      <nav class="release-jumps" aria-label="${html(t.eyebrow)}"><a class="button primary" href="#gui">${html(t.gui)}</a><a class="button secondary" href="#cli">${html(t.cli)}</a><a class="button secondary" href="#docker">${html(t.docker)}</a></nav>
       <p class="release-web-wallet">${html(t.webWalletIntro)} <a href="https://wallet.qwertycoin.org/" target="_blank" rel="noopener noreferrer">${html(t.webWallet)}</a> · ${html(t.webWalletText)}</p>
     </section>
     ${productSection("gui")}
     ${productSection("cli")}
+    <section class="release-section" id="docker" aria-labelledby="docker-title">
+      <div class="release-section-heading"><div><p class="eyebrow">${html(t.dockerPlatform)}</p><h2 id="docker-title">${html(t.docker)}</h2><p>${html(t.dockerText)}</p></div><span class="release-product-label" aria-hidden="true">DOCKER</span></div>
+      <div class="download-card">
+        <dl class="checksum-commands"><div><dt>${html(t.dockerPull)}</dt><dd><code>docker pull docker.io/qwertycoin/qwertycoin:latest</code></dd></div><div><dt>${html(t.dockerVersion)}</dt><dd><code>docker run --rm docker.io/qwertycoin/qwertycoin:latest --version</code></dd></div></dl>
+        <p>${html(t.dockerSetup)}</p><p>${html(t.dockerUpdate)}</p>
+      </div>
+      <nav class="release-resources" aria-label="${html(t.docker)}"><a href="https://hub.docker.com/r/qwertycoin/qwertycoin/tags">${html(t.dockerHub)}</a><a href="https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md">${html(t.dockerQuickstart)}</a><a href="https://github.com/qwertycoin-org/qwertycoin/blob/main/docker/README.md#epose-service-node">${html(t.dockerEpose)}</a></nav>
+    </section>
     <section class="release-verification" aria-labelledby="verify-title">
       <p class="eyebrow">SHA-256</p><h2 id="verify-title">${html(t.verifyTitle)}</h2><p>${html(t.verifyIntro)}</p>
       <dl class="checksum-commands"><div><dt>Windows · PowerShell</dt><dd><code>Get-FileHash -Algorithm SHA256 .\\PACKAGE</code></dd></div><div><dt>Linux · Terminal</dt><dd><code>sha256sum ./PACKAGE</code></dd></div><div><dt>macOS · Terminal</dt><dd><code>shasum -a 256 ./PACKAGE</code></dd></div></dl>
