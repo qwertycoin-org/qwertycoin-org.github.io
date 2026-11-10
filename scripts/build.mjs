@@ -4,6 +4,7 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import locales from "../src/i18n/locales.json" with { type: "json" };
 import { renderNotFoundPage, renderPage, renderSitemap } from "../src/render-site.mjs";
+import { readReleaseTargets, renderReleases } from "../src/render-releases.mjs";
 
 const root = new URL("..", import.meta.url).pathname;
 const dist = path.join(root, "dist");
@@ -165,7 +166,17 @@ for (const locale of locales) {
   await writeFile(path.join(rootPageDir, "index.html"), html);
 }
 
-const sitemap = renderSitemap();
+const releasesCss = await readFile(path.join(root, "css", "releases.css"), "utf8");
+const releasesCssHash = createHash("sha256").update(releasesCss).digest("hex").slice(0, 12);
+const releasesCssName = `releases.${releasesCssHash}.css`;
+await writeFile(path.join(distCssVersionDir, releasesCssName), releasesCss);
+await writeFile(path.join(rootCssVersionDir, releasesCssName), releasesCss);
+const releaseTargets = readReleaseTargets(await readFile(path.join(root, "_redirects"), "utf8"));
+const releasesPage = renderReleases({ ...assets, releasesCss: `/css/v/${releasesCssName}` }, releaseTargets);
+await writeFile(path.join(dist, "releases.html"), releasesPage);
+await writeFile(path.join(root, "releases.html"), releasesPage);
+
+const sitemap = renderSitemap().replace("</urlset>", "  <url><loc>https://qwertycoin.org/releases</loc><changefreq>weekly</changefreq></url>\n</urlset>");
 await writeFile(path.join(dist, "sitemap.xml"), sitemap);
 await writeFile(path.join(root, "sitemap.xml"), sitemap);
 
